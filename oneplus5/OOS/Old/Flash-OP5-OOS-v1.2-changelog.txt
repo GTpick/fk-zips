@@ -1,0 +1,25 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos
+
+251696b736f0 Merge branch '7.1.x-base' into 7.1.x-flash-oos by Nathan Chancellor
+9f02d8ac63e5 Linux 4.4.84 by Greg Kroah-Hartman
+07200aded65d usb: qmi_wwan: add D-Link DWM-222 device ID by Hector Martin
+e9eebbb2d56c usb: optimize acpi companion search for usb port devices by Mathias Nyman
+ffc05fa2d8da perf/x86: Fix LBR related crashes on Intel Atom by Stephane Eranian
+e581ff7fdd29 pids: make task_tgid_nr_ns() safe by Oleg Nesterov
+34ecc5550c82 Revert "Use after free from pid_nr_ns()" by Nathan Chancellor
+042b9e6243d1 Sanitize 'move_pages()' permission checks by Linus Torvalds
+5f7ffc80afca irqchip/atmel-aic: Fix unbalanced refcount in aic_common_rtc_irq_fixup() by Boris Brezillon
+8c7cae4eeec2 irqchip/atmel-aic: Fix unbalanced of_node_put() in aic_common_irq_fixup() by Boris Brezillon
+6204fdc365f1 x86/asm/64: Clear AC on NMI entries by Andy Lutomirski
+e2434be286fe xen: fix bio vec merging by Roger Pau Monne
+92350a70bbdb mm: revert x86_64 and arm64 ELF_ET_DYN_BASE base changes by Kees Cook
+3fe9d6247075 mm/mempolicy: fix use after free when calling get_mempolicy by zhong jiang
+0a2edc89d18a ALSA: usb-audio: Add mute TLV for playback volumes on C-Media devices by Takashi Iwai
+440c57a94e38 ALSA: usb-audio: Apply sample rate quirk to Sennheiser headset by Takashi Iwai
+c4b5d461bca9 ALSA: seq: 2nd attempt at fixing race creating a queue by Daniel Mentz
+e66e44f8f595 Input: elan_i2c - Add antoher Lenovo ACPI ID for upcoming Lenovo NB by KT Liao
+346a682b26bf Input: elan_i2c - add ELAN0608 to the ACPI table by Kai-Heng Feng
+8e2373199533 crypto: x86/sha1 - Fix reads beyond the number of blocks passed by megha.dey@linux.intel.com
+9f2e47426a3f parisc: pci memory bar assignment fails with 64bit kernels on dino/cujo by Thomas Bogendoerfer
+e77840093eab audit: Fix use after free in audit_remove_watch_rule() by Jan Kara
+3e75db967028 netfilter: nf_ct_ext: fix possible panic after nf_ct_extend_unregister by Liping Zhang

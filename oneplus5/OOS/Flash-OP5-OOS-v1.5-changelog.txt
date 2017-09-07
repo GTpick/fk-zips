@@ -1,0 +1,211 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos
+
+9abeeab41af1 Merge branch '7.1.x-base' into 7.1.x-flash-oos-dev by Nathan Chancellor
+5ee8bf24b55f Linux 4.4.86 by Greg Kroah-Hartman
+97b59d6e415e drm/i915: fix compiler warning in drivers/gpu/drm/i915/intel_uncore.c by Greg Kroah-Hartman
+3ac55fad9a99 scsi: sg: reset 'res_in_use' after unlinking reserved array by Hannes Reinecke
+543f0ef87669 scsi: sg: protect accesses to 'reserved' page array by Hannes Reinecke
+622c710aa0ca arm64: fpsimd: Prevent registers leaking across exec by Dave Martin
+030b74516e8e x86/io: Add "memory" clobber to insb/insw/insl/outsb/outsw/outsl by Arnd Bergmann
+bf84446b16e0 arm64: mm: abort uaccess retries upon fatal signal by Mark Rutland
+870691cea8b3 lpfc: Fix Device discovery failures during switch reboot test. by James Smart
+afc41cecb9be p54: memset(0) whole array by Jiri Slaby
+0274fbd58bc6 lightnvm: initialize ppa_addr in dev_to_generic_addr() by Javier González
+43de3153dd5a gcov: support GCC 7.1 by Martin Liska
+12e3d9be0edc gcov: add support for gcc version >= 6 by Florian Meier
+fd229c5661b2 i2c: jz4780: drop superfluous init by Wolfram Sang
+04ddd8ed3466 btrfs: remove duplicate const specifier by Colin Ian King
+270491e1a06a ALSA: au88x0: Fix zero clear of stream->resources by Takashi Iwai
+15082bcc3735 scsi: isci: avoid array subscript warning by Arnd Bergmann
+82f821d2cef6 Flash optimization setup by Nathan Chancellor
+bf2d6d43b260 qbt1000: Terminate fingerprint TA name with null by Abir Ghosh
+319e2b1ab834 USB: f_qc_rndis: Prevent use-after-free for _rndis_qc by Pratham Pratap
+88916333ae94 msm: ipa: Fix for missing int overflow check in the refcount library by Utkarsh Saxena
+8ffdb89ad2f6 Make msm_serial_hs RT to improve bluetooth performance by Philip Cuadra
+5fa79c8c7e45 ASoC: msm: qdsp6v2: add size check to fix out of bounds issue by Vidyakumar Athota
+eb25e2f11a0f ASoC: msm: qdsp6v2: clear address on error by Siena Richard
+662f48e0c0b9 ASoC: sdm660_cdc: Prevent MICBIAS1 enable during headset record by Vatsal Bucha
+6e5c9e865330 ASoC: wcd9335: Add counter to maintain count of functions voting for max bw by Vatsal Bucha
+8c8ca0d740cc ASoC: msm-cpe: Resolve memory out of bound access by Revathi Uddaraju
+9909bdf6ac26 ASoC: msm8998: fix clock refcount for MI2S/AUXPCM shutdown by Banajit Goswami
+1b16a65032ba ASoC: msm_sdw: Move the delay logic inside bulk write loop by Laxminath Kasam
+2aa67ec8e81f ASoC: wcd934x: Update micbias noise filter resistance by Phani Kumar Uppalapati
+9d717e6dbdf6 ASoC: audio-ext-clk: enable pinctrl after clock enable by Laxminath Kasam
+3c34a1c1feca ASoC: Access tert mi2s LPI GPIO from machine driver by Laxminath Kasam
+93e8a9f8451b ASoC: wcd: Fix register write order for external mclk disable by Ramprasad Katkam
+ae4db145ecf6 ASoC: sdm660_cdc: Add writeable registers for Dig_cdc and sdw codec regmap by Ramprasad Katkam
+04e5b6e9dd1b ASoC: msm-cpe: Fix range checking in function fw_name_store by Xiaoyu Ye
+50ce84a3f877 ASoC: audio_notifier : Change logic for initial boot by Ramprasad Katkam
+e6ddd4793c67 ASoC: msm: qdsp6v2: fix to remove ftm_cfg mode update by Vidyakumar Athota
+851a2953c5d3 ASoC: APR: Fix missing APR deregister from asm by Ramprasad Katkam
+fe50beb0cf29 soc: q6dspv2: apr: fix client registration refcount by Banajit Goswami
+19fd2200807b ASoC: msm: qdspv6: Fix wrong smmu sid for ULL playback by Rohit Kumar
+19ef64a6ef0b ASoC: msm: remove unused msm-compr-q6-v2 by Xiaojun Sang
+a778d8a9b74b ASoC: wcd934x: Add support to restore IIR coefficients after power collapse by Aditya Bavanari
+35a7751a2e27 ASoC: msm-lsm-client: use kzalloc instead of kmalloc by Bhalchandra Gajare
+dfd25127a59d ASoC: msm: q6dspv2: fix APR deregistration logic in ASM during ADSP SSR by Banajit Goswami
+469b12a56b16 ASoC: msm: q6dspv2: add check for APR handle before using APR by Banajit Goswami
+10f8d3e6beee Asoc: msm: sdm660: Move mbhc_hs_detect to late_probe by Rohit Kumar
+f1596407cf8f ASoC: sdm660_cdc: Update volatile register set for cache bypass by Aditya Bavanari
+b3a13d6659c7 ASoC: msm: qdsp6v2: Fix voice call and record SSR test by Laxminath Kasam
+2734501bd6f6 ASoC: msm: qdsp6v2: Add routing controls for fm over mi2s by Laxminath Kasam
+a6338511a033 ASoC: sdm660_cdc: Avoid unclocked register access to digital codec by Laxminath Kasam
+4d41c64084df ASoC: sdm660_cdc: Update micbias regulator to power saving on use basis by Laxminath Kasam
+c90d5b0bf171 ASoC: codecs: Fix mbhc data NULL pointer dereferencing by Karthikeyan Mani
+f1b959f7a183 ASoC: msm: qdspv2: add spin lock to protect ac by Meng Wang
+66e38619ad6e ASoC: wcd934x: use analog mics in micbias mode for MAD by Bhalchandra Gajare
+d8fe9df8536c ASoC: qdsp6v2: Remove Eagle code by Alexy Joseph
+110997517180 ASoC: msm: Update proper clock frequency for slave mode by Laxminath Kasam
+aaafd9bcc742 ASoC: msm: qdsp6v2: Add support for fractional sampling rates by Satish Babu Patakokila
+bd808aa005ef ASoC: mbhc: Modify special headset detection by Walter Yang
+672bf32a9ea2 ASoC: wcd934x: Fix sequence for efuse sensing by Sudheer Papothi
+68b52537ef5a ion: fix logical-not comparison warning by Sudarshan Rajagopalan
+3d52f50b4572 ion:synchronize debugfs callback and ion_client_destroy by Neil Zhang
+0a6fbfa009c2 ion: revert downstream fix for debugfs synchronization by Prakash Gupta
+fe5d497eb85b ANDROID: ion: Fix uninitialized variable by Daniel Rosenberg
+f9700c1f7d91 ANDROID: ion: Protect kref from userspace manipulation by Daniel Rosenberg
+1de1f6766e42 msm: mdss: Don't constantly fire interrupts for DSI status check by Sultanxda
+7f5f837399bf msm: mdss: Don't cache the address of a stack variable in timings init by Sultanxda
+d97c520a4ac3 rwsem: fix missed wakeup due to reordering of load by Prateek Sood
+312d766db6fb cgroup: Fix potential race between cgroup_exit and migrate path by Neeraj Upadhyay
+bebc8d241bc8 genirq: Use irq_set_affinity_locked to change irq affinity by Maulik Shah
+2dd7a53366b9 hrtimer: Don't apply the BUG_ON() in migrate_hrtimer_list() for isolation by Pavankumar Kondeti
+5c334fd9c23e hrtimer: Don't drop the base lock when migration during isolation by Pavankumar Kondeti
+d24fe563778d hotplug cpu: ratelimit logs for thermal veto by Prateek Sood
+4e78a43f42e6 timer: Clear deferrable_pending while handling timer softirq by Neeraj Upadhyay
+c971c20c7dc8 sched: Add a check for cpu unbound deferrable timers by Prasad Sodagudi
+785caea12c20 cpu-hotplug: Fix false error message in cpu_up() by Pavankumar Kondeti
+20e58f9ec4f8 trace: resolve stack corruption due to string copy by Amey Telawane
+24c5b62e2a4a cpu-hotplug: Always use real time scheduling when hotplugging a CPU by Syed Rameez Mustafa
+3483098f733f sched: Fix the bug in select_best_cpu() that returns -1 as target_cpu by Pavankumar Kondeti
+c94353df84ad core_ctl: un-isolate BIG CPUs more aggressively by Pavankumar Kondeti
+f7122a8d71e6 sched: Improve short sleeping tasks detection by Pavankumar Kondeti
+d29308723508 sched/fair: remove printk while schedule is in progress by Caesar Wang
+35eb0d122127 sched/kasan: remove stale KASAN poison after hotplug by Mark Rutland
+c9c06840f939 kasan: add functions to clear stack poison by Mark Rutland
+e8c4b6164758 core_ctl: Harden the adjustment_possible() check for unisolation by Pavankumar Kondeti
+ea57e59f97e2 core_ctl: Update cluster->active_cpus in eval_need() by Pavankumar Kondeti
+94b46cd732ee core_ctl: Handle only CPU_ONLINE and CPU_DEAD notifications by Pavankumar Kondeti
+4c97cd79c9fb core_ctl: Take state_lock while preparing the global_state by Pavankumar Kondeti
+38b7edac8805 msm: mdss: fix the use after free problem in rotator ioctl by Krishna Manikandan
+bddd586cb2c2 msm: mdss: dp: avoid aux transactions if dp cable is disconnected by Narender Ankam
+43c71165b746 msm: mdss: do not print error in case sync_trigger is enabled by Sandeep Panda
+56e4ee1eed5b msm: mdss: Read status value from master controller by Rashi Bindra
+65e91fa72723 msm: mdss: Fix possible memory overwrite in pgc config by Sravan Kumar D.V.N
+99f3e201b635 msm: mdss: Fix possible leaks in PP LUT get functions by Sravan Kumar D.V.N
+ff4efd90736a msm: mdss: Avoid direct dereference user input in pp cache config by Sravan Kumar D.V.N
+93c4ee4c14ca msm: mdss: dp: fix no display issue on second connection by Narender Ankam
+feef9da587ab msm: mdss: Check htotal for calculating programmable fetch by Jayant Shekhar
+4fc02246a6d6 msm: mdss: apply bus throughput factor for high downscale cases by Krishna Chaitanya Devarakonda
+695922d50292 msm: mdss: Increase fbmem buf ref count before use by Jayant Shekhar
+f210bb91e4ea msm: mdss: information leak during buffer copy from userspace by Ashish Garg
+dcb183b6bf67 fbdev: msm: Add check for fence count by Sachin Bhayare
+9166c436c919 msm: mdss: Fix possible integer overflow by Sachin Bhayare
+6bb20bc8cb75 msm: sde: Set minimum traffic shaping in sde rotator by Benjamin Chan
+73862387aeeb msm: mdss: unmap buffers before starting Secure Display session by Krishna Chaitanya Devarakonda
+ef08e00ae775 msm: sde: map/unmap timestamp buffer for every rotator session by Krishna Chaitanya Devarakonda
+060f65a85fc1 msm: mdss: Correct PP register programming deferring by Ping Li
+068285b6b01b fbdev: msm: Add check for ioctl calls by Krishna Manikandan
+64e9aca30115 msm: mdss: fix the pixel clock calculation for fb modes by Sandeep Panda
+3b84e60ec77e msm: mdss: Change IOMMU map sequence during splash cleanup by Jayant Shekhar
+3aeaabc59bec msm: mdss: validate the buffer size before allocating memory by Ashish Garg
+48364413023b msm: mdss: validate number of cea blocks before reading from edid_buf by Ashish Garg
+4e6d3cb1a0e2 msm: mdss: validate page id before reading from edid buffer by Ashish Garg
+70c39da7492d msm: mdss: size check before writing to edid buffer by Ashish Garg
+36f24fd47b35 msm: mdss: handle vsync properly during dynamic resolution switch by Harsh Sahu
+efcd974af48a fbdev: msm: Reserve mixers with dspp for primary display by Krishna Manikandan
+065faa628ff2 msm: mdss: Buffer overflow while processing gamut table data by Bharath Gopal
+2c6bf50922a4 msm: mdss: Avoid NULL mixer during partial update ROI setup by Benjamin Chan
+6a89a9f9617c fbdev: msm: fix issue preventing cursor_buf address to be stored by Krishna Manikandan
+11b97b61725b fbdev: msm: fix unaligned access problem by Krishna Manikandan
+820c7a79c244 fbdev: msm: Allocate fd with O_CLOEXEC flag by Krishna Manikandan
+d413cccae7e3 msm: mdss: Clean-up payload for unsupported versions by Gopikrishnaiah Anandan
+b03c8671e7c5 msm: mdss: Correct MDSS display wakeup time calculation by Benjamin Chan
+6d72cf3d748f msm: mdss: Use 64-bit math for bandwidth calculation by Benjamin Chan
+3070196001bc msm: mdss: Fix number accuracy for backlight to brightness by Xu Yang
+7e371b6ae7b5 msm: mdss: add support for mdss throttle clock handling by Sachin Bhayare
+c4a370e77710 msm: mdss: Check if secure display is enabled during non-secure validate by Krishna Chaitanya Devarakonda
+1d8c80dce6c9 msm: mdss: fix memcpy source and dest memory buffer size mismatch by Harsh Sahu
+462a23ef47a6 msm: mdss: sink mode needs to be read from EDID by zhaoyuan
+15b39dd0adf9 msm: mdss: Update AD last strength during AD mode switch by Ping Li
+b3851b83735e msm: mdss: Avoid dfps update till unblank is complete by Jayant Shekhar
+739842a48778 msm: mdss: Correct source and destination buffer rectangles by Jayant Shekhar
+38592a6613fb msm: mdss: Fix QSEED3 MDP clock calculation for cmd mode panel by Benjamin Chan
+8ff78a1940c6 msm: mdss: ensure clocks are on till pixel transfer is completed by Ashish Garg
+387f6bf6d8ba msm: mdss: dp: fix display port crash caused by unclocked register access by Narender Ankam
+ca51467dc859 msm: mdss: remove client from device list if failed to register by Sandeep Panda
+98029b985725 msm: mdss: remove HDMI connected flags by zhaoyuan
+a0aa202744c2 msm: mdss: Set LM flush bit for DE/Scalar reg update by Sravan Kumar D.V.N
+b520fb5569d8 msm: mdss: do not update polarity for DSI interface by zhaoyuan
+d8633143767e msm: mdss: remove wait for vsync in display commit by Xu Yang
+4927a2933d31 msm: mdss: fix null pointer dereferencing by Harsh Sahu
+42e2ba06957c msm: mdss: Fix potential dereferencing of null pointer by Rajkumar Subbiah
+3c22470716ee msm: mdss: Add multi-rectangle validation support by Animesh Kishore
+96c413634831 msm: mdss: set HDMI max TMDS clock rate by zhaoyuan
+f481209efb51 msm: mdss: Relocate timing flush for avr vtotal setup by Rajkumar Subbiah
+20f4b3b3990c msm: mdss: Retrict use of DMA Multi-Rect for FB pan_display by Benjamin Chan
+b6a2114c956e msm: mdss: enable backlight gpio after commit is done by Ashish Garg
+8ac50f9363ce msm: mdss: Ensure MDSS GDSC switched off during FB PM suspend by Jayant Shekhar
+1eeedc047c1d msm: mdss: Add plane_count limit check for mdss_rotator buffer by Benjamin Chan
+d2d008760bc1 msm: mdss: Add plane_count range check in mdss WFD by Benjamin Chan
+9711f98614f1 msm: mdss: dp: gracefully handle cable disconnect by Aravind Venkateswaran
+3b0777fc131e msm: mdss: dp: fix HDCP 1.x state transitions by Tatenda Chipeperekwa
+eda206a15704 msm: mdss: dp: fix handling of EDID extension blocks by Tatenda Chipeperekwa
+9c4d376f92d4 msm: mdss: dp: read the DPCD if the AUX setting have changed by Tatenda Chipeperekwa
+f4f42b98c6bb msm: mdss: dp: ignore PHY AUX stop error by Aravind Venkateswaran
+65584ba5f301 msm: mdss: dp: fix programming sequence for aux transactions by Aravind Venkateswaran
+6a8f2c9d0e9e msm: mdss: dp: read edid data in shorter burst size by Aravind Venkateswaran
+16a173f50868 msm: mdss: dp: fix EDID read sequence by Aravind Venkateswaran
+6e3e4a39d135 msm: mdss: dp: retry failed AUX transactions by Aravind Venkateswaran
+3a7a06b31641 msm: mdss: dp: update parsing of AUX controller configurations by Tatenda Chipeperekwa
+4d7efdeff9bc msm: mdss: dp: increase AUX controller hardware timeout limits by Aravind Venkateswaran
+9e5eb11897c9 msm: mdss: dp: add interrupt handling for PHY AUX errors by Aravind Venkateswaran
+cfdb8b361484 msm: mdss: dp: fix handling of branch devices by Aravind Venkateswaran
+91b030fc3c30 msm: mdss: dp: implement failsafe for delayed power off/on events by Tatenda Chipeperekwa
+6a19031fe734 msm: mdss: dp: always set default resolution by Aravind Venkateswaran
+74aee23b639b msm: mdss: fix race condition during mdp debugfs release by Harsh Sahu
+1a7692c9e361 msm: mdss: add debug bus support for dsi block by Sandeep Panda
+7383df57fa71 msm: mdss: avoid fake ack and overflow errors during ESD by Sandeep Panda
+baf2a87ede2e msm: mdss: make panel status check and dfps update exclusive by Sandeep Panda
+7a002252c8ce msm: mdss: wait for one commit transfer for command mode after resume by Ashish Garg
+b006e9c49314 msm: mdss: Separate PP programming to advanced and deferred modes by Sravan Kumar D.V.N
+f4fc4e0903fd msm: mdss: dp: skip transfer unit setup on link training requests by Tatenda Chipeperekwa
+6686983bb34e msm: mdss: dp: fix notifications for link training tests by Tatenda Chipeperekwa
+ddc1016eff9e msm: mdss: add split link panel support in mdss by Ashish Garg
+745d3c898713 msm: mdss: configure SMART_PANEL_ALIGN_MODE for split display by Sandeep Panda
+ded65b4dd2df msm: mdss: add mdss smmu fault handler for sdm660 by Raviteja Tamatam
+bc4b65bb70fb crypto: msm: Fix several race condition issues in crypto drivers by Brahmaji K
+c4f3469132ee crypto: Change format specifier %p to %pK by mohamed sunfeer
+cf1ae7fd4df9 compat_qcedev: Fix accessing userspace memory in kernel space by mohamed sunfeer
+e821bfb4f66f qcdev: Check the digest length during the SHA operations by Brahmaji K
+2265ae6ba5fc crypto: msm: Fix buffer overflow issue by AnilKumar Chimata
+e13a3d17dfbe diag: Flush control workqueue immediately on channel close by Mohit Aggarwal
+ad2e26671b9e diag: dci: Add protection while querying event status by Mohit Aggarwal
+99297f3f8500 diag: Add protection while de-initializing clients by Mohit Aggarwal
+31157a7fab77 diag: Update stream for active PD mdlog session by Manoj Prabhu B
+341de7d71661 diag: Add proper checks to fix possible out-of-bound issue by Hardik Arya
+f21a238ff21f diag: Add protection while processing non-hdlc packets by Hardik Arya
+ab71d18a5493 diag: Proper update of user PD mdlog session variables by Manoj Prabhu B
+01b3d77a6e62 diag: dci: Add NULL pointer checks for dci buffers by Manoj Prabhu B
+9f4c8d013c46 diag: Synchronize mdlog read and write threads by Manoj Prabhu B
+d13321d0d248 diag: Enable masks for user pd memory device session by Mohit Aggarwal
+35abf31197c0 diag: Synchronize command registration table access by Mohit Aggarwal
+e8c0032be4f6 diag: Add proper synchronization checks to msg mask table by Gopikrishna Mogasati
+eb28e3c78289 diag: dci: Validate dci client entries prior to access by Manoj Prabhu B
+b8a84ae65dab diag: Validate proper mdlog session for a PD by Manoj Prabhu B
+ba516f903d2a diag: Open glink channels in workqueue context by Mohit Aggarwal
+66418c2c9fea diag: Add PD buffering mode configuration support by Manoj Prabhu B
+6a9187fc1cb0 diag: Validate memory device client's process descriptor by Gopikrishna Mogasati
+c82da9a80f5c diag: Fix to check for command length size by Gopikrishna Mogasati
+9f7f6291bbb1 diag: Split data stream for User PDs on LPASS by Manoj Prabhu B
+17eb699cc9cd diag: Add validity check for process descriptor by Gopikrishna Mogasati
+4994e0e2bcd8 diag: Update the read buffers status properly by Manoj Prabhu B
+403f4d5df40c diag: Place proper NULL pointer checks by Manoj Prabhu B
+84e4700e6897 diag: Check for diag glink handle on connect event by Sreelakshmi Gownipalli
+3015f60eb64b diag: Fix feature mask mismatch for peripherals by Manoj Prabhu B
+6f530394654a diag: Set context properly while sending command responses by Mohit Aggarwal
+9d0955c9a986 diag: Do not mark buffers free during channel opening by Mohit Aggarwal
+f9708977a61b drivers: char: Undo OnePlus's diag commit for fast forward by Nathan Chancellor
+8d7dfc15e9b1 scsi: ufs-qcom: Add check for ufs bootdevice by Asutosh Das
+562b3c7350fb scsi: ufs: fix error handing during hibern8 enter by Subhash Jadavani
+8882a1e3ba6e scsi: ufs: Serialise ufs clock gating and ungating by Sayali Lokhande

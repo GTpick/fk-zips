@@ -1,0 +1,245 @@
+
+Title: random: properly align get_random_int_hash
+Author: Eric Biggers <ebiggers3@gmail.com>
+Authored on: Wed, 4 May 2016 21:08:39 -0400
+Link: http://github.com/nathanchance/angler/commit/1d24bbbb686fd46e2595f235f0fd11a45022f6f6
+Added on: Mon, 5 Jun 2017 19:02:55 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nougat-mr2' of https://android.googlesource.com/kernel/msm into 7.1.2-flash
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Mon, 5 Jun 2017 18:12:49 -0700
+Link: http://github.com/nathanchance/angler/commit/bd44544147b3cb3bb5832f3b32c064a1fc3d9954
+Added on: Mon, 5 Jun 2017 18:13:27 -0700
+
+
+Title: ext4: remove redundant check for encrypted file on dio write path
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Wed, 24 May 2017 18:20:31 -0400
+Link: http://github.com/nathanchance/angler/commit/a10486ee40962978b0c063bc9c244fb89e13b89f
+Added on: Thu, 1 Jun 2017 05:16:35 -0700
+
+
+Title: ext4: remove unused d_name argument from ext4_search_dir() et al.
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Wed, 24 May 2017 18:10:49 -0400
+Link: http://github.com/nathanchance/angler/commit/28c75e8e9ddc1c2b5369a6cad9f3fb0fe0326616
+Added on: Thu, 1 Jun 2017 05:16:34 -0700
+
+
+Title: ext4: fix off-by-one on max nr_pages in ext4_find_unwritten_pgoff()
+Author: Eryu Guan <eguan@redhat.com>
+Authored on: Wed, 24 May 2017 18:02:20 -0400
+Link: http://github.com/nathanchance/angler/commit/d0e6904fb9a96fff2d858c86947078f34cdcb2cc
+Added on: Thu, 1 Jun 2017 05:16:34 -0700
+
+
+Title: ext4: fix SEEK_HOLE
+Author: Jan Kara <jack@suse.cz>
+Authored on: Sun, 21 May 2017 22:33:23 -0400
+Link: http://github.com/nathanchance/angler/commit/598eb3741f1ee89e397abd5d36158b2e1572ecca
+Added on: Thu, 1 Jun 2017 05:16:34 -0700
+
+
+Title: ext4: fix fdatasync(2) after extent manipulation operations
+Author: Jan Kara <jack@suse.cz>
+Authored on: Mon, 29 May 2017 13:24:55 -0400
+Link: http://github.com/nathanchance/angler/commit/62fa20a61261f1548dd6aeb14daea31198f8dfb0
+Added on: Thu, 1 Jun 2017 05:16:33 -0700
+
+
+Title: ANDROID: mnt: Fix next_descendent
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Mon, 29 May 2017 16:38:16 -0700
+Link: http://github.com/nathanchance/angler/commit/7da0f5b7bfef65ebc61f4a0099bd2d7854db39c9
+Added on: Thu, 1 Jun 2017 05:16:33 -0700
+
+
+Title: msm: kgsl: Allow draw context to perform only replay on recovery
+Author: Hareesh Gundu <hareeshg@codeaurora.org>
+Authored on: Thu, 13 Apr 2017 15:28:45 +0530
+Link: http://github.com/nathanchance/angler/commit/26ddef2ca1e30168bc6db1837e34107cac3f6b5a
+Added on: Thu, 1 Jun 2017 05:16:32 -0700
+
+
+Title: binder: use group leader instead of open thread
+Author: Todd Kjos <tkjos@google.com>
+Authored on: Mon, 6 Mar 2017 12:23:40 +0100
+Link: http://github.com/nathanchance/angler/commit/e3894bf9a2c3864a1add7f8fa970acf167d216a4
+Added on: Thu, 1 Jun 2017 05:16:32 -0700
+
+
+Title: android: binder: add padding to binder_fd_array_object.
+Author: Martijn Coenen <maco@android.com>
+Authored on: Tue, 7 Mar 2017 15:54:56 +0100
+Link: http://github.com/nathanchance/angler/commit/f41286093777563dcb36513c417803147fd58dae
+Added on: Thu, 1 Jun 2017 05:16:32 -0700
+
+
+Title: ANDROID: usb: gadget: f_accessory: Enabled Zero Length Packet (ZLP) for acc_write
+Author: Anson Jacob <ansonkuzhumbil@gmail.com>
+Authored on: Mon, 23 Jun 2014 19:07:44 +0800
+Link: http://github.com/nathanchance/angler/commit/e8a15124f3adeb9609377ac16f226b35a75a9c50
+Added on: Thu, 1 Jun 2017 05:16:31 -0700
+
+
+Title: bcmdhd:Fix empty channel list issue for dfs channels
+Author: Jithu Jance <jithu.jance@broadcom.com>
+Authored on: Thu, 30 Mar 2017 18:36:28 +0530
+Link: http://github.com/nathanchance/angler/commit/f6f4628fccf400775b87bcbcf117f3186c46de01
+Added on: Thu, 1 Jun 2017 05:16:31 -0700
+
+
+Title: usb: gadget: f_fs: Guard epfile->error
+Author: Jerry Zhang <zhangjerry@google.com>
+Authored on: Fri, 14 Apr 2017 17:29:35 -0700
+Link: http://github.com/nathanchance/angler/commit/e1e09b0aa40fc6b4c7b8a738976edffa8f916528
+Added on: Thu, 1 Jun 2017 05:16:31 -0700
+
+
+Title: UPSTREAM: usb: gadget: f_fs: add "no_disconnect" mode
+Author: Robert Baldyga <r.baldyga@samsung.com>
+Authored on: Fri, 7 Apr 2017 11:01:11 -0700
+Link: http://github.com/nathanchance/angler/commit/bce66b9759764e50077da7a8457f64bfdba15b02
+Added on: Thu, 1 Jun 2017 05:16:30 -0700
+
+
+Title: ext4 crypto: fix some error handling
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Authored on: Sat, 2 Apr 2016 18:13:38 -0400
+Link: http://github.com/nathanchance/angler/commit/72e2f192b84fd930b165e5eefee44f0f57214d7a
+Added on: Thu, 1 Jun 2017 05:16:30 -0700
+
+
+Title: dm bufio: avoid a possible ABBA deadlock
+Author: Mikulas Patocka <mpatocka@redhat.com>
+Authored on: Sun, 30 Apr 2017 17:33:26 -0400
+Link: http://github.com/nathanchance/angler/commit/f74580f61f9a62790878cb77cbd281d20beb597a
+Added on: Thu, 1 Jun 2017 05:16:30 -0700
+
+
+Title: mm/huge_memory.c: respect FOLL_FORCE/FOLL_COW for thp
+Author: Keno Fischer <keno@juliacomputing.com>
+Authored on: Tue, 24 Jan 2017 15:17:48 -0800
+Link: http://github.com/nathanchance/angler/commit/8495341e6d00f94017824cd2339133486a8126bf
+Added on: Thu, 1 Jun 2017 05:16:29 -0700
+
+
+Title: metag/uaccess: Fix access_ok()
+Author: James Hogan <james.hogan@imgtec.com>
+Authored on: Fri, 28 Apr 2017 10:50:26 +0100
+Link: http://github.com/nathanchance/angler/commit/45c15ced58b4707344563ed8d45e78159ae1ba41
+Added on: Thu, 1 Jun 2017 05:16:29 -0700
+
+
+Title: metag/uaccess: Check access_ok in strncpy_from_user
+Author: James Hogan <james.hogan@imgtec.com>
+Authored on: Tue, 2 May 2017 19:41:06 +0100
+Link: http://github.com/nathanchance/angler/commit/355b94f956e1b85b685413fdd7cd776332841db5
+Added on: Thu, 1 Jun 2017 05:16:29 -0700
+
+
+Title: stackprotector: Increase the per-task stack canary's random range from 32 bits to 64 bits on 64-bit platforms
+Author: Daniel Micay <danielmicay@gmail.com>
+Authored on: Thu, 4 May 2017 09:32:09 -0400
+Link: http://github.com/nathanchance/angler/commit/18ddfc846a599c1430aaa650dfde5f92d6345317
+Added on: Thu, 1 Jun 2017 05:16:28 -0700
+
+
+Title: ipv6: fix out of bound writes in __ip6_append_data()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Fri, 19 May 2017 14:17:48 -0700
+Link: http://github.com/nathanchance/angler/commit/1d39bc78c0e7d36e135a45ceeff866ea7acb4cd8
+Added on: Thu, 1 Jun 2017 05:16:28 -0700
+
+
+Title: ASoC: Add backend user count checking
+Author: Walter Yang <yandongy@codeaurora.org>
+Authored on: Thu, 2 Mar 2017 12:13:34 +0800
+Link: http://github.com/nathanchance/angler/commit/8b80faae52e5cca18ff114b5e69ac7733b2f14ab
+Added on: Mon, 10 Apr 2017 23:05:59 +0000
+
+
+Title: BACKPORT: msm: mdss: Fix invalid dma attachment during fb shutdown
+Author: Jonathan Solnit <jsolnit@google.com>
+Authored on: Wed, 5 Apr 2017 16:42:52 -0700
+Link: http://github.com/nathanchance/angler/commit/d9426433e5d3159ef4f58d55f1ddffbca88a1c13
+Added on: Mon, 10 Apr 2017 23:05:46 +0000
+
+
+Title: BACKPORT: msm: sensor: validating the flash initialization parameters
+Author: Sureshnaidu Laveti <lsuresh@codeaurora.org>
+Authored on: Thu, 15 Dec 2016 02:39:35 -0800
+Link: http://github.com/nathanchance/angler/commit/7386112740d7a4b07cdfa25f79db520b4456aacd
+Added on: Mon, 10 Apr 2017 23:05:35 +0000
+
+
+Title: ASoC: msm: acquire lock in ioctl
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Tue, 7 Mar 2017 11:06:55 -0800
+Link: http://github.com/nathanchance/angler/commit/e71466450101ef5b2ba8659ac7634fbbabd7f0b7
+Added on: Mon, 10 Apr 2017 23:05:26 +0000
+
+
+Title: msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates
+Author: Rajesh Bondugula <rajeshb@codeaurora.org>
+Authored on: Tue, 8 Nov 2016 11:52:55 -0800
+Link: http://github.com/nathanchance/angler/commit/dd28b054f8bb3a82131947dab0e039175ae18750
+Added on: Mon, 10 Apr 2017 23:02:09 +0000
+
+
+Title: FROMLIST: drivers: soc: add size check
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Tue, 28 Feb 2017 12:52:30 -0800
+Link: http://github.com/nathanchance/angler/commit/abd25f2aedf3c138a97baf3d5974732e269fcb1a
+Added on: Mon, 10 Apr 2017 23:01:54 +0000
+
+
+Title: msm: mdss: Fix integer overflow in cursor validaton
+Author: Naseer Ahmed <naseer@codeaurora.org>
+Authored on: Mon, 27 Mar 2017 12:43:14 -0400
+Link: http://github.com/nathanchance/angler/commit/ad2b5786760cef7510eb592ea5527a55a64cdb76
+Added on: Mon, 10 Apr 2017 23:01:45 +0000
+
+
+Title: qseecom: add mutex around qseecom_set_client_mem_param
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Mon, 27 Feb 2017 13:41:07 -0800
+Link: http://github.com/nathanchance/angler/commit/8f6531d7f08f04fbfc2c186662119620a9363a7a
+Added on: Mon, 10 Apr 2017 23:01:36 +0000
+
+
+Title: FROMLIST: msm: IPA: add the check on intf query
+Author: Skylar Chang <chiaweic@codeaurora.org>
+Authored on: Wed, 1 Mar 2017 16:08:27 -0800
+Link: http://github.com/nathanchance/angler/commit/5eac81653208185336b4e9279a784b2d62657680
+Added on: Mon, 10 Apr 2017 23:01:24 +0000
+
+
+Title: msm: camera: cpp: Fixing Heap overflow in output buffer
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Tue, 14 Mar 2017 10:49:35 -0700
+Link: http://github.com/nathanchance/angler/commit/a22dd9325893917dd4c401ac5b5980197590ae23
+Added on: Mon, 10 Apr 2017 23:01:13 +0000
+
+
+Title: input: synaptics_dsx: validate bounds of intr_reg_num
+Author: Andrew Chant <achant@google.com>
+Authored on: Mon, 10 Apr 2017 13:45:56 -0700
+Link: http://github.com/nathanchance/angler/commit/103f64f6f37d2099144fb58b343c7c1ca2c68d10
+Added on: Mon, 10 Apr 2017 14:07:38 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr2' into android-msm-angler-3.10-nyc-mr2-security-next
+Author: Ecco Park <eccopark@google.com>
+Authored on: Fri, 24 Mar 2017 16:36:21 -0700
+Link: http://github.com/nathanchance/angler/commit/63941f6b7a990aedebeb2ebb05e37e8dc8f1e0a3
+Added on: Fri, 24 Mar 2017 16:36:21 -0700
+
+
+Title: xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+Author: Andy Whitcroft <apw@canonical.com>
+Authored on: Wed, 22 Mar 2017 07:29:31 +0000
+Link: http://github.com/nathanchance/angler/commit/6d14b59050d47e342acaf3401b124f05fa4db197
+Added on: Fri, 24 Mar 2017 11:45:29 -0700
+

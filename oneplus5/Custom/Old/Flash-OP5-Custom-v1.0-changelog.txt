@@ -1,0 +1,13 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-custom
+
+56983cdef8a8 input: swap keycodes to make compatible with oppo by Brett Montague
+9ba087f624af input: synaptics: s3320: moved proc node "key_swap" for compatibility by XiNGRZ
+089fef99c766 input: synaptics: s3320: refactored button handling logics by XiNGRZ
+00c6ae9c399e input: synaptics: s3320: set the missing bits for all gestures by XiNGRZ
+07fef42c5c9e input: synaptics: s3320: use different keycode for up and down arrow by XiNGRZ
+523be420619f input: synaptics: s3320: hardcoded input_dev->name to "synaptics" by XiNGRZ
+f24345b1c9d9 input: synaptics: s3320: use proc nodes instead of bits for gesture toggling by XiNGRZ
+d952e92de291 input: synaptics: s3320: refactored gesture toggling logic by XiNGRZ
+468671b6b69b input: synaptics: s3320: format all the fucking code by XiNGRZ
+86a706379865 input: tri-state: rewritten tri-state-key driver by XiNGRZ
+ddd1f7a92ed6 Reset synaptics_driver_s3320.c back to stock OOS for custom additions by Nathan Chancellor

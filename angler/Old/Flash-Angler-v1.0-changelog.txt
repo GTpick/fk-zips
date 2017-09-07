@@ -1,0 +1,46 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+7e73f386ea00 Flash Kernel 1.0 by Nathan Chancellor
+5dea86e0c387 flash_defconfig: Disable IOSCHED_TEST by Nathan Chancellor
+735765dcdd85 Revert "ASoC: msm: lock read/write when add/free audio ion memory" by Nathan Chancellor
+67a8a574ca3c Revert sound optimize for size commits by Pranav Vashi
+71f4daaf0cb1 msm: do not log spam wake up interrupt by Pranav Vashi
+6107c2f06010 Flash Kernel 0.4 by Nathan Chancellor
+12bb8e55813c slub/memcg: cure the brainless abuse of sysfs attributes by Thomas Gleixner
+65406384e2aa ALSA: timer: remove legacy rtctimer by Alexandre Belloni
+5483814d071c ALSA: timer: Fix zero-division by continue of uninitialized instance by Takashi Iwai
+528352de9ad8 ALSA: Replace with IS_ENABLED() by Takashi Iwai
+e22c14cfd594 ALSA: timer: Fix negative queue usage by racy accesses by Takashi Iwai
+6f7fab056bf1 ALSA: timer: Call notifier in the same spinlock by Takashi Iwai
+a6f199033f31 ALSA: timer: Protect the whole snd_timer_close() with open race by Takashi Iwai
+186e63c6d52f ALSA: timer: Sync timer deletion at closing the system timer by Takashi Iwai
+c875dfa2a5b0 ALSA: timer: Introduce disconnect op to snd_timer_instance by Takashi Iwai
+5055f5283e9b ALSA: timer: fix NULL pointer dereference in read()/ioctl() race by Vegard Nossum
+60ae2059ef1e ALSA: timer: Fix race at concurrent reads by Takashi Iwai
+671057de6fc6 ALSA: timer: Handle disconnection more safely by Takashi Iwai
+b14486f31cce Revert "ALSA: timer: fix NULL pointer dereference in read()/ioctl() race" by Nathan Chancellor
+4a0c176d4446 drivers: char: mem: Fix wraparound check to allow mappings up to the end by Julius Werner
+9871405e7697 ipv6: Inhibit IPv4-mapped src address on the wire. by Jonathan T. Leighton
+6b7bae9809f0 cpufreq: chill/relaxed: Apply the logic of 1296b3e8e621 by Nathan Chancellor
+1296b3e8e621 cpufreq: conservative: Allow down_threshold to take values from 1 to 10 by Tomasz Wilczyński
+285258c9538e swap: cond_resched in swap_cgroup_prepare() by Yu Zhao
+d1b2f05e06d0 mm/memory-failure.c: use compound_head() flags for huge pages by James Morse
+19f98260e9a2 fs/exec.c: account for argv/envp pointers by Kees Cook
+850812f41421 lib/cmdline.c: fix get_options() overflow while parsing ranges by Ilya Matveychikov
+805a7da85893 Make the VTI code compile. by Lorenzo Colitti
+82d898271aa0 Flash Kernel 0.3 by Nathan Chancellor
+4023afd774ce flash_defconfig: enable UKSM by Nathan Chancellor
+1eee23515527 UKSM: initial support by Nai Xia
+3e3c65e29f77 Flash Kernel 0.2 by Nathan Chancellor
+dfddf70c91d8 alarmtimer: Rate limit periodic intervals by Thomas Gleixner
+3d8a8e154ce0 alarmtimer: Return relative times in timer_gettime by Richard Larocque
+ee9520220e75 alarmtimer: add verification for rtc dev in power_on_alarm_init by Mao Jinlong
+790db5da85fc rtc: alarm: Change wake-up source by Mohit Aggarwal
+10a784eb0125 alarm: init power_on_alarm in alarm_dev_init by Mao Jinlong
+1b1d94653454 rtc: alarm: Fix data handling issue with alarm->type by Venkatesh Yadav Abbarapu
+42ee5c5d3c1d Flash Kernel 0.1 by Nathan Chancellor
+f492484ccf36 msm: mdss: Kill log spam due to HBM by Nathan Chancellor
+1f8bb7036c48 msm: mdss: Optimize state_notifier entry by Nathan Chancellor
+19bce99c6e1a block_dev: implement readpages() to optimize sequential read by Akinobu Mita
+35dd58aea416 sched: Allow migrating kthreads into online but inactive CPUs by Tejun Heo
+d613d584dab2 flash_defconfig: Enable FB_MSM_TRIPLE_BUFFER by Pranav Vashi

@@ -1,0 +1,51 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+563571d801c6 Flash Kernel 2.5 by Nathan Chancellor
+1fc02b21d5df ANDROID: keychord: Fix for a memory leak in keychord. by Mohan Srinivasan
+7c65e4d15be3 ANDROID: keychord: Fix races in keychord_write. by Mohan Srinivasan
+805e0633b4c3 Use %zu to print resid (size_t). by Mohan Srinivasan
+c6ff1e4e533b ANDROID: keychord: Fix a slab out-of-bounds read. by Mohan Srinivasan
+d8bf6c39f1f8 UPSTREAM: brcmfmac: fix possible buffer overflow in brcmf_cfg80211_mgmt_tx() by Arend van Spriel
+2646e95a0d62 uid_sys_stats: fix overflow when io usage delta is negative by Jin Qian
+b38b0efe9359 ANDROID: sdcardfs: override credential for ioctl to lower fs by Jaegeuk Kim
+64e8f7a7a62f workqueue: implicit ordered attribute should be overridable by Tejun Heo
+dd6e631a0c2d workqueue: restore WQ_UNBOUND/max_active==1 to be ordered by Tejun Heo
+25d50725df08 Revert nearly all cpufreq_governor.c commits by Nathan Chancellor
+0956032df033 msm_thermal: Reenable thermal engine hotplug by Nathan Chancellor
+c3b55d266838 xfrm: Don't use sk_family for socket policy lookups by Steffen Klassert
+bfcbe4e7290b net: skb_needs_check() accepts CHECKSUM_NONE for tx by Eric Dumazet
+0764ef1d6cac net: sctp: fix race for one-to-many sockets in sendmsg's auto associate by Daniel Borkmann
+0552f578f7be net: reduce skb_warn_bad_offload() noise by Eric Dumazet
+982e813437ec net: remove open-coded skb_cow_head. by françois romieu
+e5d56f32216a pstore: Use dynamic spinlock initializer by Kees Cook
+d01520933913 pstore: Correctly initialize spinlock and flags by Kees Cook
+c2e5b1c8d784 pstore: Allow prz to control need for locking by Joel Fernandes
+b121b0f25225 pstore: Make spinlock per zone instead of global by Joel Fernandes
+098f98e4f796 ipv6: Should use consistent conditional judgement for ip6 fragment between __ip6_append_data and ip6_finish_output by Zheng Li
+463260fef2a6 ipv6: fix possible deadlock in ip6_fl_purge / ip6_fl_gc by Jan Stancek
+eb32005cfc1f ext4: Don't clear SGID when inheriting ACLs by Jan Kara
+36c237e26dbe ext4: fix overflow caused by missing cast in ext4_resize_fs() by Jerry Lee
+3be22fc09a4b ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize by Jan Kara
+effb5299f094 soc: qcom: glink_pkt: Use spinlock to protect Rx data packet list by Arun Kumar Neelakantam
+5b303551d42d crypto: msm: Fix buffer overflow issue by AnilKumar Chimata
+1b475774b1c0 msm: camera: sensor:validating the flash initialization parameters by kaiwang
+7b9cc4df6c48 ASoC: msm: qdsp6v2: add size check to fix out of bounds issue by Vidyakumar Athota
+477cedbcbefa coresight: tmc: Fix use after free issue with tmc read by Saranya Chidura
+7a2c6348a129 msm:ipa: Fix to kasan use-after-free issue by Mohammed Javid
+9957565e177c fbdev: msm: Allocate fd with O_CLOEXEC flag by Krishna Manikandan
+98e908ec79c6 ASoC: msm-lsm-client: use kzalloc instead of kmalloc by Bhalchandra Gajare
+7106ed09b933 msm: pcie: add bounds check for debugfs register write by Tony Truong
+6cfeef9dd736 cnss_pci: fix the race condition in firmware file setup by Sarada Prasanna Garnayak
+1b21cb629b9a ion: fix logical-not comparison warning by Sudarshan Rajagopalan
+1acda2bb58ce input: synaptics_dsx: validate bounds of intr_reg_num by Andrew Chant
+a6df64337ec5 input: touchscreen: validate bounds of intr_reg_num by Andrew Chant
+101251e81235 compat_qcedev: Fix accessing userspace memory in kernel space by mohamed sunfeer
+39c770b49624 net: usb: rmnet_usb_ctrl:Make sure list_head operate atomically by Liangliang Lu
+e0180660d47c arm64: switch to relative exception tables by Ard Biesheuvel
+ef263c80acba asmlinkage: Make main_extable_sort_needed visible by Andi Kleen
+a476e4590b8d extable: skip sorting if the table is empty by Uwe Kleine-König
+d07e01235354 extable: add support for relative extables to search and sort routines by Ard Biesheuvel
+ccbd4057829c lib/bsearch.c: micro-optimize pivot position calculation by Sergey Senozhatsky
+74059466102b perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race by Peter Zijlstra
+6a9500b0085b scsi: sg: check length passed to SG_NEXT_CMD_LEN by peter chang
+3c430f97c0b0 power: bcl: Remove useless __ref and __refdata flags by jollaman999

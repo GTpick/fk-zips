@@ -1,0 +1,44 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+91963ed6f079 Flash Kernel 2.2 by Nathan Chancellor
+0e1fc4acec3c kernel/workqueue.c: remove ifdefs over wq_power_efficient by Luis R. Rodriguez
+10316b52b275 dts: msm8994: Configure freq-mitigation-control-mask on all cores by Wang Han
+df2931b440e9 sched: always use blk_schedule_flush_plug in io_schedule_out by Shaohua Li
+1d7b7fc049c2 sched: Prevent recursion in io_schedule() by NeilBrown
+f8e6b9b1311f uid_sys_stats: make hash_table static by Greg Kroah-Hartman
+678fda13a730 cpuidle: Check for dev before deregistering it. by Konrad Rzeszutek Wilk
+c4215e0577db cpuidle: remove cpuidle_unregister_governor() by Viresh Kumar
+734d4a971efc cpuidle: don't call poll_idle_init() for every cpu by Viresh Kumar
+67ad508a07dc cpuidle: use drv instead of cpuidle_driver in show_current_driver() by Viresh Kumar
+f6e80391da1b cpuidle: call cpuidle_get_driver() from after taking cpuidle_driver_lock by Viresh Kumar
+0990480c12cc cpuidle: replace multiline statements with single line in cpuidle_idle_call() by Viresh Kumar
+506b7066f080 cpuidle: reduce code duplication inside cpuidle_idle_call() by Viresh Kumar
+e7bec3c55b27 cpuidle: merge two if() statements for checking error cases by Viresh Kumar
+023389fb9ba2 cpuidle: rearrange __cpuidle_register_device() to keep minimal exit points by Viresh Kumar
+34bb459b5eba cpuidle: rearrange code in __cpuidle_driver_init() by Viresh Kumar
+95a03d0eeac1 cpuidle: make __cpuidle_driver_init() return void by Viresh Kumar
+81f82e700e76 cpuidle: Comment the driver's framework code by Daniel Lezcano
+92a41c7e09cc cpuidle: make __cpuidle_device_init() return void by Viresh Kumar
+fc5f23cdf23a cpuidle: Check if device is already registered by Daniel Lezcano
+12cfbe5595b3 cpuidle: Introduce __cpuidle_device_init() by Daniel Lezcano
+38f30d08711b cpuidle: Introduce __cpuidle_unregister_device() by Daniel Lezcano
+924e70029ff1 cpuidle: Check cpuidle_enable_device() return value by Daniel Lezcano
+4384c0c566ef drivers: cpuidle: Do not select menu and ladder governors by Maulik Shah
+72c42482d6c5 cpuidle: improve governor Kconfig options by Daniel Lezcano
+4d0103d15432 cpuidle: fix improper return value on error by Pan Bian
+e50091cd922a cpuidle: kick all cpu after idle handler installed by Lianwei Wang
+d0e6abdf0538 drivers: cpuidle: Remove counting of last_residency by Xiaocheng Li
+21548c2e1f0f Revert "cpuidle: Add nop idle governor." by Steve Kondik
+2bafdd5532b4 cpuidle: lpm_levels: Remove duplicate cpuidle tracepoints by Archana Sathyakumar
+ca22cf8d8083 lpm-levels: Check for need_resched just before entering PSCI by Archana Sathyakumar
+41cbb2b463ee cpuidle: lpm-levels: Remove local_irq_enable from lpm_cpuidle_select by Srinivas Rao L
+7cfe9edda808 lpm-levels: Add QCOM cpuidle governor by Archana Sathyakumar
+4015cba11b5b msm: lpm-levels: Modify ftrace events to track latency/sleep time by Maulik Shah
+47e594c8ac32 msm: lpm-levels: Add ftrace events to track latency/sleep time by Anil Kumar Mamidala
+bc1c13b25bac msm: lpm-levels: Log CPU lpm enter exit events by Karthik Parsha
+dc1bf7adaef8 lpm-levels: Use residency instead of power and energy overhead values by Mahesh Sivasubramanian
+aeb9c9040b7b power: qcom: Select CPU_IDLE_MULTIPLE_DRIVERS by Murali Nalajala
+2d989f2625a9 cpuidle: declare cpuidle_dev in cpuidle.h by Paul Burton
+6eaa37469148 lpm-levels: Fix driver registration after API change by Steve Kondik
+8d09788e3e99 cpuidle: simplify multiple driver support by Daniel Lezcano
+499348d9754a drivers: lpm-levels: Don't allow idle low power modes during resume by Anji Jonnala

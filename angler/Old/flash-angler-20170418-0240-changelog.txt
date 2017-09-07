@@ -1,0 +1,511 @@
+
+Title: mnt: Add a per mount namespace limit on the number of mounts
+Author: Eric W. Biederman <ebiederm@xmission.com>
+Authored on: Wed, 28 Sep 2016 00:27:17 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4bcacc1bc2354d8926b57d829314ba0ce408e456
+Added on: Tue, 18 Apr 2017 00:42:13 -0700
+
+
+Title: fscrypt: remove broken support for detecting keyring key revocation
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Tue, 21 Feb 2017 15:07:11 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9966cbb04d719e2f3b880a441c27517c3e06419a
+Added on: Tue, 18 Apr 2017 00:42:13 -0700
+
+
+Title: net/llc: avoid BUG_ON() in skb_orphan()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Sun, 12 Feb 2017 14:03:52 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c95043325c1dcd8e8ce2688f008e6b0ae4d5ff6c
+Added on: Tue, 18 Apr 2017 00:42:13 -0700
+
+
+Title: sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+Author: Marcelo Ricardo Leitner <marcelo.leitner@gmail.com>
+Authored on: Mon, 6 Feb 2017 18:10:31 -0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/669f753a317b987bdd34c4884848b1cff76d87d5
+Added on: Tue, 18 Apr 2017 00:42:12 -0700
+
+
+Title: cpufreq: interactive: Skip timer when policy->min == policy->max
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Sat, 4 Mar 2017 13:58:42 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/fdd5376fb32619e662d9a6583c17bf58ed7e925e
+Added on: Tue, 18 Apr 2017 00:42:12 -0700
+
+
+Title: ping: implement proper locking
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Fri, 24 Mar 2017 19:36:13 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/898fb6f21348975b9e63877cdabb28750d81681d
+Added on: Tue, 18 Apr 2017 00:42:12 -0700
+
+
+Title: xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+Author: Andy Whitcroft <apw@canonical.com>
+Authored on: Thu, 23 Mar 2017 07:45:44 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/0c5d5a4ead88d5e605de825c4d3fff8f9812918d
+Added on: Tue, 18 Apr 2017 00:42:11 -0700
+
+
+Title: xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+Author: Andy Whitcroft <apw@canonical.com>
+Authored on: Wed, 22 Mar 2017 07:29:31 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b022025b7ddf415deef85cefe55b5c9f3f25c2fa
+Added on: Tue, 18 Apr 2017 00:42:11 -0700
+
+
+Title: cpufreq: interactive: make sure hispeed_freq is within the policy limits
+Author: Francisco Franco <franciscofranco.1990@gmail.com>
+Authored on: Tue, 11 Apr 2017 01:30:52 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/2cbcc8827ca379638061ce003c01fccd8d9c2547
+Added on: Tue, 18 Apr 2017 00:42:10 -0700
+
+
+Title: msm: qpnp-haptic: Work around poor fingerprint authentication haptics
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Sat, 15 Apr 2017 03:42:38 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/6496dccd4040ca6e1a503316f17c6662ca842366
+Added on: Tue, 18 Apr 2017 00:42:10 -0700
+
+
+Title: msm: qpnp-haptic: Use a high-priority workqueue for haptics
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Sat, 15 Apr 2017 03:40:27 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/ff57d6b52f0e7985af74845c31870d531dc706b1
+Added on: Tue, 18 Apr 2017 00:42:10 -0700
+
+
+Title: msm: qpnp-haptic: Start shutoff timer after haptics actually start
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Sat, 15 Apr 2017 03:38:40 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/58c8f332e3b5c5ff757ed837819a810ac895cbed
+Added on: Tue, 18 Apr 2017 00:42:09 -0700
+
+
+Title: msm: qpnp-haptic: Prevent redundant calls to disable vibrator
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Wed, 3 Aug 2016 00:25:14 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c1486a8680971b5cf6ce384771a9e5bb858da3a5
+Added on: Tue, 18 Apr 2017 00:42:09 -0700
+
+
+Title: msm: qpnp-haptic: Process haptics asynchronously
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Sat, 15 Apr 2017 03:34:43 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/978791f530f5571e710b80a3e93d969e492aa231
+Added on: Tue, 18 Apr 2017 00:42:07 -0700
+
+
+Title: qpnp-haptic: Dejank the haptics
+Author: Steve Kondik <steve@cyngn.com>
+Authored on: Wed, 20 Jul 2016 12:48:01 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a6381920500042bb4c631103f7217845dee3cc9a
+Added on: Tue, 18 Apr 2017 00:41:00 -0700
+
+
+Title: lpm-levels: Do not consider cluster residency in suspend
+Author: Srinivas Rao L <lsrao@codeaurora.org>
+Authored on: Thu, 29 Dec 2016 18:49:54 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/74a8d5fe41e6db20b26dcbe459b9b08c744f6faf
+Added on: Mon, 17 Apr 2017 22:43:30 -0700
+
+
+Title: sched: core: fix warning
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Mon, 17 Apr 2017 22:17:50 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c59295ea8df57063af16ef588cf4d40585d84597
+Added on: Mon, 17 Apr 2017 22:43:14 -0700
+
+
+Title: kernel: cpuidle: use idle_cpu_relaxed and cpu_relaxed
+Author: Francisco Franco <franciscofranco.1990@gmail.com>
+Authored on: Wed, 22 Mar 2017 02:05:56 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e5434290a23cd65bbe6209abe69ff768fd5b0503
+Added on: Mon, 17 Apr 2017 21:45:16 -0700
+
+
+Title: drivers: cpuidle: lpm-levels: Fix wakeup time for suspend
+Author: Mahesh Sivasubramanian <msivasub@codeaurora.org>
+Authored on: Wed, 20 Apr 2016 14:58:45 -0600
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9ef0fdeff5d5d3f255470920013070942b551ea5
+Added on: Mon, 17 Apr 2017 21:45:16 -0700
+
+
+Title: msm: limits: Check user buffer size before copying to local buffer
+Author: Manaf Meethalavalappu Pallikunhi <manafm@codeaurora.org>
+Authored on: Wed, 30 Mar 2016 17:12:16 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/21af15a2d607cb21879f68ae8335b97f4ccc4613
+Added on: Mon, 17 Apr 2017 21:45:15 -0700
+
+
+Title: msm: thermal: Maintain state in the mitigation device monitor
+Author: Manaf Meethalavalappu Pallikunhi <manafm@codeaurora.org>
+Authored on: Thu, 5 Jan 2017 19:52:19 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/d486eb627c761f75c80208ac801583c2b184703f
+Added on: Mon, 17 Apr 2017 21:45:15 -0700
+
+
+Title: clocksource: Fix abs() usage w/ 64bit values
+Author: John Stultz <john.stultz@linaro.org>
+Authored on: Mon, 14 Sep 2015 18:05:20 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a90645646881714848fc35906ae7815d3624c579
+Added on: Mon, 17 Apr 2017 21:45:15 -0700
+
+
+Title: sched/cputime: Fix invalid gtime in proc
+Author: Hiroshi Shimamoto <h-shimamoto@ct.jp.nec.com>
+Authored on: Thu, 19 Nov 2015 16:47:28 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/023283e4d7dd7fe46c8bf536b9224288dfef943d
+Added on: Mon, 17 Apr 2017 21:45:14 -0700
+
+
+Title: cpufreq: stats: Fix memory leaks when updating stats table
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Tue, 21 Mar 2017 14:10:50 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/be512a5d8b2be0a89cbfce69258d6e8bc65ad20a
+Added on: Mon, 17 Apr 2017 21:44:40 -0700
+
+
+Title: net: ipc_router: Fix memory leaks when releasing a remote port
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Tue, 21 Mar 2017 00:37:41 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7a5b24c2ad291922a489f76cd663f22b3665ee9d
+Added on: Sun, 16 Apr 2017 00:01:59 -0700
+
+
+Title: HID: i2c-hid: Add sleep between POWER ON and RESET
+Author: Brendan McGrath <redmcg@redmandi.dyndns.org>
+Authored on: Sat, 7 Jan 2017 08:01:38 +1100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1be18969e2325ea96d9051959736216bd8ba1f54
+Added on: Sat, 15 Apr 2017 23:50:22 -0700
+
+
+Title: cpufreq: move policy kobj to policy->cpu at resume
+Author: Viresh Kumar <viresh.kumar@linaro.org>
+Authored on: Thu, 17 Jul 2014 10:48:25 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/3b46cf50c70e0aadab2d806587e46aa863b293d2
+Added on: Sat, 15 Apr 2017 23:50:22 -0700
+
+
+Title: Revert "cpufreq: fix garbage kobjects on errors during suspend/resume"
+Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+Authored on: Sun, 8 Dec 2013 01:23:58 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/6fdb568543de3c4c55f6486e548ab7d67798e99f
+Added on: Sat, 15 Apr 2017 23:50:21 -0700
+
+
+Title: char: Drop bogus dependency of DEVPORT on !M68K
+Author: Geert Uytterhoeven <geert@linux-m68k.org>
+Authored on: Mon, 11 Apr 2016 10:40:55 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4f46c9af357f98cb3b22c337d0b063b25cc2cbb3
+Added on: Fri, 14 Apr 2017 23:04:30 -0700
+
+
+Title: net: socket: Make unnecessarily global sockfs_setattr() static
+Author: Tobias Klauser <tklauser@distanz.ch>
+Authored on: Tue, 10 Jan 2017 09:30:51 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7baadf0e15e60308b74c7b8ce72131948c62abcb
+Added on: Fri, 14 Apr 2017 23:02:58 -0700
+
+
+Title: net: ipv4: Don't crash if passing a null sk to ip_do_redirect.
+Author: Lorenzo Colitti <lorenzo@google.com>
+Authored on: Fri, 23 Dec 2016 00:33:57 +0900
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/2b9a95d5e2a6994ac8e85820627fd7da095b4b34
+Added on: Fri, 14 Apr 2017 23:02:19 -0700
+
+
+Title: ANDROID: uid_sys_stats: fix typo in init
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 14 Mar 2017 16:28:36 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e65c993a20d600c5bac1a61112f1ffc2069f0f06
+Added on: Wed, 12 Apr 2017 01:48:59 -0700
+
+
+Title: ANDROID: uid_sys_stats: change to use rt_mutex
+Author: Wei Wang <wvw@google.com>
+Authored on: Mon, 13 Mar 2017 12:22:21 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/45b0125c44a4961ba6f9a6f306d505c8cac3ddab
+Added on: Wed, 12 Apr 2017 01:48:59 -0700
+
+
+Title: ANDROID: uid_sys_stats: account for fsync syscalls
+Author: Jin Qian <jinqian@google.com>
+Authored on: Thu, 2 Mar 2017 13:39:43 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1f053e8718415a09312adc7eb87e478ea11571d0
+Added on: Wed, 12 Apr 2017 01:48:58 -0700
+
+
+Title: ANDROID: sched: add a counter to track fsync
+Author: Jin Qian <jinqian@google.com>
+Authored on: Thu, 2 Mar 2017 13:32:59 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/3217498b8d87f8266411b900f23d27b78cbcca66
+Added on: Wed, 12 Apr 2017 01:48:58 -0700
+
+
+Title: ANDROID: uid_sys_stats: fix negative write bytes.
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 28 Feb 2017 15:09:42 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4ccaf99f4b4ad10632ada0901b8037d0f003e5dd
+Added on: Wed, 12 Apr 2017 01:48:57 -0700
+
+
+Title: ANDROID: uid_sys_stats: remove unnecessary code in procstat switch
+Author: Jin Qian <jinqian@google.com>
+Authored on: Thu, 16 Feb 2017 18:07:05 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8646a0a9a1ba4c1c190fb661dc9d79db60b1c463
+Added on: Wed, 12 Apr 2017 01:48:57 -0700
+
+
+Title: ANDROID: uid_sys_stats: return full size when state is not changed.
+Author: Jin Qian <jinqian@google.com>
+Authored on: Thu, 19 Jan 2017 16:34:34 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e87071e2ea3a5cb4c1f3b333944e7f17c27fdee9
+Added on: Wed, 12 Apr 2017 01:48:57 -0700
+
+
+Title: ANDROID: uid_sys_stats: allow writing same state
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 17 Jan 2017 17:26:07 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/031568026d4060940de18bc349bf62a08e15c96d
+Added on: Wed, 12 Apr 2017 01:48:56 -0700
+
+
+Title: flash_defconfig: update UID_SYS_STATS
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Wed, 12 Apr 2017 01:22:20 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/66dd670f823ee2a093109fce5e298239985276a4
+Added on: Wed, 12 Apr 2017 01:48:56 -0700
+
+
+Title: ANDROID: uid_sys_stats: rename uid_cputime.c to uid_sys_stats.c
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 10 Jan 2017 16:11:07 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/00db5bdd64164e9282f0444a3fecef143b9d4854
+Added on: Wed, 12 Apr 2017 01:48:56 -0700
+
+
+Title: flash_defconfig: enable TASK defconfig options
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Wed, 12 Apr 2017 01:43:19 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/85c2542fd86551ed73d889762a7d7955fcf9c66c
+Added on: Wed, 12 Apr 2017 01:48:55 -0700
+
+
+Title: ANDROID: uid_cputime: add per-uid IO usage accounting
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 10 Jan 2017 16:10:35 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c977b8144e1b2ce4b9df7c7422501e26868e6ebf
+Added on: Wed, 12 Apr 2017 01:19:09 -0700
+
+
+Title: BACKPORT: udf: Check path length when reading symlink
+Author: Jan Kara <jack@suse.cz>
+Authored on: Thu, 18 Dec 2014 22:37:50 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/19d8f05a1f701ec65202756f3306b9cab1871646
+Added on: Wed, 12 Apr 2017 01:14:39 -0700
+
+
+Title: ANDROID: sdcardfs: Directly pass lower file for mmap
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Mon, 10 Apr 2017 20:54:30 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f3e82912ba242a39b916e5c09b90fa29a3ce9b62
+Added on: Wed, 12 Apr 2017 01:13:29 -0700
+
+
+Title: sched/deadline: Make find_later_rq() choose a closer cpu in topology
+Author: Byungchul Park <byungchul.park@lge.com>
+Authored on: Thu, 23 Mar 2017 19:32:36 +0900
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1850be92a68d9234c74c8ecf80663f254cae0a96
+Added on: Sat, 8 Apr 2017 01:54:57 -0700
+
+
+Title: ALSA: seq: Fix racy cell insertions during snd_seq_pool_done()
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Tue, 21 Mar 2017 13:56:04 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/535818972cb750ee8a99bf974f95a3e630613f1d
+Added on: Fri, 7 Apr 2017 23:24:21 -0700
+
+
+Title: crypto: cryptd - Assign statesize properly
+Author: Wang, Rui Y <rui.y.wang@intel.com>
+Authored on: Sun, 29 Nov 2015 22:45:34 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8b2949684a55e98f8c714fa64a3b886358f78281
+Added on: Fri, 7 Apr 2017 23:03:42 -0700
+
+
+Title: crypto: algif_hash - avoid zero-sized array
+Author: Jiri Slaby <jslaby@suse.cz>
+Authored on: Thu, 15 Dec 2016 14:31:01 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/819ee37e117717c0358b1ce807dcf651e6f2fa06
+Added on: Fri, 7 Apr 2017 23:03:30 -0700
+
+
+Title: libceph: force GFP_NOIO for socket allocations
+Author: Ilya Dryomov <idryomov@gmail.com>
+Authored on: Tue, 21 Mar 2017 13:44:28 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9d9a26e0223a24d8b4a2aa2a43f08058d0c6dd9f
+Added on: Fri, 7 Apr 2017 23:01:08 -0700
+
+
+Title: block: allow WRITE_SAME commands with the SG_IO ioctl
+Author: Sumit Semwal <sumit.semwal@linaro.org>
+Authored on: Sat, 25 Mar 2017 21:48:14 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8b2a4a09b3b89ebbaa66fba190083df949762123
+Added on: Fri, 7 Apr 2017 23:00:19 -0700
+
+
+Title: sched/rt: Add a missing rescheduling point
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Authored on: Tue, 24 Jan 2017 15:40:06 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e6a8ff447d3cb6274a3878ddee594399f0e4c6c1
+Added on: Fri, 7 Apr 2017 22:59:46 -0700
+
+
+Title: ANDROID: sdcardfs: update module info
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 9 Mar 2017 20:56:05 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e98a16c648b021b42696aafb61dc7974f0b6a213
+Added on: Fri, 7 Apr 2017 15:26:49 -0700
+
+
+Title: ANDROID: sdcardfs: use d_splice_alias
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 9 Mar 2017 22:11:08 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f1e4c013f5adce4e8c7c3a78aa9401c62da2b923
+Added on: Fri, 7 Apr 2017 00:09:53 -0700
+
+
+Title: ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 9 Mar 2017 21:42:01 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9199722bb6d9c107bb72a2c5d5f97d143c646918
+Added on: Fri, 7 Apr 2017 00:09:20 -0700
+
+
+Title: ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 9 Mar 2017 21:24:58 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/41b30e96bb6a4f767eda6a30f90b61c005de62e3
+Added on: Fri, 7 Apr 2017 00:07:27 -0700
+
+
+Title: ANDROID: sdcardfs: remove unnecessary call to do_munmap
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 9 Mar 2017 21:14:45 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c610fd6b50789f1cad963c1592a7d0145cd4743f
+Added on: Fri, 7 Apr 2017 00:05:41 -0700
+
+
+Title: BACKPORT: HID: input: generic hidinput_input_event handler
+Author: David Herrmann <dh.herrmann@gmail.com>
+Authored on: Mon, 15 Jul 2013 19:10:12 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e96ab51f2a9442340d35878ecf8a6dcb58cf3027
+Added on: Fri, 7 Apr 2017 00:04:46 -0700
+
+
+Title: msm: vidc: Check ion_handle for errors
+Author: Karthikeyan Periasamy <kperiasa@codeaurora.org>
+Authored on: Tue, 11 Oct 2016 12:21:42 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c33351558a342436d1445e29842c1fccc939dbc8
+Added on: Tue, 4 Apr 2017 11:31:20 -0700
+
+
+Title: arm64: angler_defconfig: Unsetting DEVPORT from angler configurations.
+Author: Max Bires <jbires@google.com>
+Authored on: Thu, 5 Jan 2017 15:48:38 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/dfa7b90fa15dc0f9cc3e0db509a4ead333d9324f
+Added on: Tue, 4 Apr 2017 11:31:20 -0700
+
+
+Title: Fixing an issue that caused DEVPORT to always be set.
+Author: Max Bires <jbires@google.com>
+Authored on: Thu, 5 Jan 2017 13:50:23 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/03ef5a742248913763284dd613183610ef7f10f5
+Added on: Tue, 4 Apr 2017 11:31:19 -0700
+
+
+Title: ANDROID: fix uninitialized variables
+Author: Wei Wang <wvw@google.com>
+Authored on: Mon, 12 Dec 2016 15:31:49 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a5137721244a26049c42a6fea4fea14fbf88d29e
+Added on: Tue, 4 Apr 2017 11:31:19 -0700
+
+
+Title: arm64/configs: angler: enable hwbinder domain.
+Author: Martijn Coenen <maco@android.com>
+Authored on: Wed, 26 Oct 2016 14:59:46 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/bb140e6d8b93fcec0de99ca1c5899154ac4bbd45
+Added on: Tue, 4 Apr 2017 11:31:16 -0700
+
+
+Title: android: binder: use copy_from_user_preempt_disabled
+Author: Martijn Coenen <maco@android.com>
+Authored on: Tue, 25 Oct 2016 13:48:44 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/6635fd300aa697f544b855ede370d8fb2893cc42
+Added on: Tue, 4 Apr 2017 11:10:24 -0700
+
+
+Title: android: binder: support for file-descriptor arrays.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Tue, 18 Oct 2016 13:58:55 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a7d6a98c1e9fb3f56ce108b5f3f080114e41c2bd
+Added on: Tue, 4 Apr 2017 11:09:18 -0700
+
+
+Title: android: binder: support for scatter-gather.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Fri, 30 Sep 2016 14:10:07 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f1983ae73150f7dd9fa9fd9ec9688adb2c0de424
+Added on: Tue, 4 Apr 2017 11:09:11 -0700
+
+
+Title: android: binder: add extra size to allocator.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Fri, 30 Sep 2016 14:05:40 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/bfd8e5bbd38ac629531d540e8df5b174f7aa36d1
+Added on: Tue, 4 Apr 2017 11:09:05 -0700
+
+
+Title: android: binder: refactor binder_transact()
+Author: Martijn Coenen <maco@google.com>
+Authored on: Thu, 29 Sep 2016 15:38:14 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f4b6e619d1230d37dd5ee109abac1f6f649c1281
+Added on: Tue, 4 Apr 2017 11:08:59 -0700
+
+
+Title: android: binder: support multiple /dev instances.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Fri, 30 Sep 2016 16:08:09 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f8a11712905c3aef17ec78448add4c1a5692e709
+Added on: Tue, 4 Apr 2017 11:08:52 -0700
+
+
+Title: android: binder: deal with contexts in debugfs.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Mon, 17 Oct 2016 15:17:31 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7a57c0bf0a0c26c7e56fc6846e7bd8ea880a445a
+Added on: Tue, 4 Apr 2017 11:08:45 -0700
+
+
+Title: android: binder: support multiple context managers.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Fri, 30 Sep 2016 15:51:48 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b41b106861add00bf2f883430ca27424c5060012
+Added on: Tue, 4 Apr 2017 11:08:39 -0700
+
+
+Title: android: binder: split flat_binder_object.
+Author: Martijn Coenen <maco@google.com>
+Authored on: Wed, 13 Jul 2016 12:06:49 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f3096d12224ee1aa6b844f8b5e2e470d53c437b8
+Added on: Tue, 4 Apr 2017 11:08:29 -0700
+
+
+Title: nanohub: detect wakeup signal stuck high and reset
+Author: Ben Fennema <fennema@google.com>
+Authored on: Tue, 31 Jan 2017 16:42:42 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/38749208b738ff8986ebef7b87aa732d8d9e5b19
+Added on: Tue, 4 Apr 2017 11:05:01 -0700
+

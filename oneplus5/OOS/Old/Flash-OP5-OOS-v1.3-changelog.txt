@@ -1,0 +1,14 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos
+
+156e22a1469a sweep2sleep: turn off screen by sweeping over navbar by flar2
+e5486019d916 mdss: rotator: Use FIFO kthread for rotator work by Naseer Ahmed
+28c4539d46c8 synaptics_s3320: Move the disable button logic from mdss_dsi by Nathan Chancellor
+a2a27830026f mdss: set power saving panel options by Francisco Franco
+4360ee8dd4fc ANDROID: check dir value of xfrm_userpolicy_id by Suren Baghdasaryan
+f1b5c66ab461 cpufreq: fallback to interactive if governor is not found by Nathan Chancellor
+cccbd6a24430 Merge branch '7.1.x-base' into 7.1.x-flash-oos-dev by Nathan Chancellor
+b8b7053e2fcb security: pfe: Fix two section mismatch warnings by Nathan Chancellor
+57f51b9fc89a flash_defconfig: Apply 9f888dd40b4ef388901ca59cc591f9e0c50127c1 by Nathan Chancellor
+201a5f36b926 Merge remote-tracking branch 'upstream/oneplus/QC8998_N_7.1' into 7.1.x-base by Nathan Chancellor
+9f888dd40b4e Synchronize codes for OxygenOS 4.5.10 The changes list: 1.add compatibility solution when one of tri_state gpio always in low state,set all the gpio as falling/rising eage trigger interrupt 2.add Xbox joystick support 3.fixed some nfc issues 4.remove unused codes by aaron
+9ec1d8ec6833 printk: Fix section mismatch warnings by Nathan Chancellor

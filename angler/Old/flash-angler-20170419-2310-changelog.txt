@@ -1,0 +1,105 @@
+
+Title: ANDROID: sdcardfs: Don't complain in fixup_lower_ownership
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Tue, 18 Apr 2017 22:49:38 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/378c8fd0f526ffaa33de8e764c6e51cbb409702b
+Added on: Wed, 19 Apr 2017 18:58:30 -0700
+
+
+Title: ANDROID: sdcardfs: Don't do d_add for lower fs
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Tue, 18 Apr 2017 22:25:15 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b1c221e1097e7a08b742be27abb5295f8866ec33
+Added on: Wed, 19 Apr 2017 18:58:19 -0700
+
+
+Title: ANDROID: sdcardfs: ->iget fixes
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Tue, 18 Apr 2017 12:45:48 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4f41d657b4dccc5a62f7c1bffc7729d3c797b7f9
+Added on: Wed, 19 Apr 2017 18:58:18 -0700
+
+
+Title: ANDROID: sdcardfs: Change cache GID value
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Mon, 17 Apr 2017 17:11:38 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/509a1857959910ac02edb6883eadf314b1f8eaa0
+Added on: Wed, 19 Apr 2017 18:58:08 -0700
+
+
+Title: format-security: move static strings to const
+Author: Kees Cook <keescook@chromium.org>
+Authored on: Mon, 17 Apr 2017 01:34:56 +1000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/311c2fac32b5292217cbb6c2ee833e816e795a85
+Added on: Wed, 19 Apr 2017 16:09:36 -0700
+
+
+Title: cpuidle: Indicate when a device has been unregistered
+Author: Dave Gerlach <d-gerlach@ti.com>
+Authored on: Tue, 5 Apr 2016 14:05:38 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/87a996bb83497e04af67c476ed46023a1c6d3634
+Added on: Wed, 19 Apr 2017 15:40:15 -0700
+
+
+Title: sched/idle: Move cpu/idle.c to sched/idle.c
+Author: Nicolas Pitre <nicolas.pitre@linaro.org>
+Authored on: Sun, 26 Jan 2014 23:42:01 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/dabde11f7a6967a0a5e4b0d661a2e4348fcfa1c5
+Added on: Wed, 19 Apr 2017 15:29:33 -0700
+
+
+Title: PM: convert do_each_thread to for_each_process_thread
+Author: Michal Hocko <mhocko@suse.cz>
+Authored on: Tue, 21 Oct 2014 09:27:15 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4ca2dd30ee597f01db1ce8dd2a7335fb1da42848
+Added on: Wed, 19 Apr 2017 15:20:22 -0700
+
+
+Title: perf: Optimize group_sched_in()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Mon, 24 Feb 2014 12:43:31 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/69ff037477f304e309a9879833b47de1a8c9ed36
+Added on: Wed, 19 Apr 2017 15:10:31 -0700
+
+
+Title: blu_active: Reset last evaluated jiffy in idle callback and make window alignment optional
+Author: engstk <eng.stk@sapo.pt>
+Authored on: Mon, 13 Mar 2017 22:07:08 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/89a2c0a16a60217fb90c3857ceb5dc62bc6b62c5
+Added on: Wed, 19 Apr 2017 01:45:49 -0700
+
+
+Title: mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+Author: Chris Salls <salls@cs.ucsb.edu>
+Authored on: Fri, 7 Apr 2017 23:48:11 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/3143d464ad5307426cc331263af07ca222df4046
+Added on: Wed, 19 Apr 2017 01:24:29 -0700
+
+
+Title: mm: Tighten x86 /dev/mem with zeroing reads
+Author: Kees Cook <keescook@chromium.org>
+Authored on: Wed, 5 Apr 2017 09:39:08 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/54c638da5beae43a148f773e6cd4bac016471ae2
+Added on: Wed, 19 Apr 2017 01:21:58 -0700
+
+
+Title: ext4: convert to mbcache2
+Author: Jan Kara <jack@suse.cz>
+Authored on: Mon, 22 Feb 2016 11:50:13 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/3a9089fbd68cb6046b33c0f104aee341154f6e8d
+Added on: Wed, 19 Apr 2017 00:53:10 -0700
+
+
+Title: mbcache2: reimplement mbcache
+Author: Jan Kara <jack@suse.cz>
+Authored on: Mon, 22 Feb 2016 11:49:09 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/078eb858e1d8f2a1c6fa9adc49b9349ba17d235b
+Added on: Wed, 19 Apr 2017 00:46:26 -0700
+
+
+Title: mm: new shrinker API
+Author: Dave Chinner <dchinner@redhat.com>
+Authored on: Wed, 28 Aug 2013 10:17:56 +1000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/cc593984060233333978ccf8d227eaff4a655e4f
+Added on: Wed, 19 Apr 2017 00:44:05 -0700
+

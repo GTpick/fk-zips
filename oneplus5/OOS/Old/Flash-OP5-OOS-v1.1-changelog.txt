@@ -1,0 +1,265 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos
+
+cd472ffe0346 icnss: Add support to handle SSR within SSR by Anurag Chouhan
+a4c53128404b icnss: Use fixed memory region for WLAN MSA0 memory by Hardik Kantilal Patel
+baf06afb339b icnss: fix the memory and kernel info leak due to the race condition by Sarada Prasanna Garnayak
+05b09d7c4ba0 icnss: pre-alloc memory leak check on probe failure and remove by Hardik Kantilal Patel
+bc086352f5ee Merge branch '7.1.x-base' into 7.1.x-flash-oos-dev by Nathan Chancellor
+648689090053 OP5: Fix frequencies sticking at max with GCC 6 and 7 by Nathan Chancellor
+2504a9ad3756 staging: lmk: revert to the clean kernel_common android-4.4 branch version by Francisco Franco
+10711d5e4f09 block, bfq: improve and refactor throughput-boosting logic by Paolo Valente
+fd482003812c block, bfq: consider also in_service_entity to state whether an entity is active by Paolo Valente
+926bb892d187 block, bfq: reset in_service_entity if it becomes idle by Paolo Valente
+61dc876a0fa0 Add extra checks related to entity scheduling by Paolo Valente
+e713f24e81b2 BFQ-v8r12 by Paolo Valente
+847a813e7e6b block, bfq: don't change ioprio class for a bfq_queue on a service tree by Paolo Valente
+190e65ebb464 Fix commit "don't dereference bic before null checking it" by Paolo Valente
+b4501d684844 block, bfq: stress that low_latency must be off to get max throughput by Paolo Valente
+79c42ee65061 block, bfq: update wr_busy_queues if needed on a queue split by Paolo Valente
+df29a201bcfa BFQ-v8r11 by Paolo Valente
+68650d4c136c block, bfq: don't dereference bic before null checking it by Colin Ian King
+613cb4ef935d block, bfq: use pointer entity->sched_data only if set by Paolo Valente
+fda5c7d2058e BFQ-v8r10 by Paolo Valente
+d0782bf3af71 BFQ-v8r10-rc1 by Paolo Valente
+5b5dd805d558 BUGFIX: Remove problematic check on max service duration by Paolo Valente
+6c5dcaddb9f9 BUGFIX: Handle failure of weight-counter allocation by Paolo Valente
+e47941b9266f BFQ-v8r9 by Paolo Valente
+5eaf4af79168 BUGIFX: remove use of bfq queues after free by Paolo Valente
+846d3a663ff8 BFQ-v8r8 by Paolo Valente
+f0feac6b983c block/bfq-cgroup: fix bfq_bic_update_cgroup() API by Oleksandr Natalenko
+6529d87c5a96 BFQ-v8r8-rc2 by Paolo Valente
+7ec52301dfe0 Avoid a second dispatch in case of budget exhaustion by Paolo Valente
+a46ab92c75d9 BFQ-v8r8-rc1 by Paolo Valente
+465bdbfbb6c1 Better tune weight-raising for slow flash-based devices by Luca Miccio
+cd81df00b3ba Fix check of the percentage of sequential dispatches by Paolo Valente
+800509d1cb37 BUGFIX: Put async queues on exit also without cgroups by Paolo Valente
+3ec8db23eef1 Add a ton of forgotten static qualifiers by Paolo Valente
+8e035b12bf2d Remove wrong compilation warning by Paolo Valente
+cf19af168363 BFQ-v8r7 by Paolo Valente
+858fb87cc28c BUGFIX: make BFQ compile also without hierarchical support by Paolo Valente
+391bc3bb6e74 BFQ-v8r6 by Paolo Valente
+331bf2914b2f BFQ v8r6-rc3 by Paolo Valente
+e52cedabc72b Stop bubble-up of next_in_service update if possible by Paolo Valente
+27d2e8829045 Fix bug in optimized update of next_in_service entity by Paolo Valente
+c70c83087713 BFQ v8r6-rc2 by Paolo Valente
+f0d84a0ee96d Add code to redirect trace log to console by Paolo Valente
+6921a7b12700 Fix wrong reset of in-service entities by Paolo Valente
+e7f59478441d Fix bug causing occasional loss of weight raising by Paolo Valente
+60da41a37f5a Optimize update of next_in_service entity by Paolo Valente
+5af7a4f285d1 Further improve code and comments for hierarchical code by Paolo Valente
+d196ead64271 Remove useless parameter from bfq_del_bfqq_busy by Paolo Valente
+7127a1469d60 Provide more details in switching-off-wr message by Paolo Valente
+20317934c05e Port and improve CFQ commit 41647e7a by Paolo Valente
+9343e251a50e BFQ v8r6-rc1 by Paolo Valente
+c17930606882 Improve and fix some bugs in hierarchical code by Paolo Valente
+68f2b6120adc Fix false-positive warning for uninitialized var by Paolo Valente
+303804c81344 Fix typo in comments on bfq_lookup_next_entity by Paolo Valente
+7ad07a4b0de1 Add and improve pointers in initial comments by Paolo Valente
+d960398ff37c Improve documentation by Paolo Valente
+d8617669fa8b BFQ-v8r5 by Paolo Valente
+03533e3a16e4 Fix type in bfq-iosched.txt by Paolo Valente
+0b1ee011b4dc Add parentheses to complex macros by Paolo Valente
+7536913a4b19 bfq-iosched.txt: add description of preemption by Paolo Valente
+b2a300ff9604 Remove stray disk word in first line by Paolo Valente
+409734545aa8 Improve help message in Kconfig.iosched by Paolo Valente
+4230e26a54c6 Improve bfq-iosched.txt by Paolo Valente
+6a4fb9a85796 BUGFIX: Replace max wrongly used for modulo numbers by Paolo Valente
+898a9f90eba4 Documentation/block: add bfq-iosched.txt by Paolo Valente
+1582880ae3f6 BFQ-v8r4 by Paolo Valente
+5efb2030ce44 block: bfq: fix Oops at system shutdown by Lee Tibbert
+d078fb5b425e Switch to ns for all rate timestamps, fixing also 32-bit issues by Paolo Valente
+a56d191e96c3 Let soft-rt wr start also while interactive wr is still in place by Paolo Valente
+bfff149d7511 Fix recovery of lost service for soft rt by Luca Miccio
+287c4bd18f8c Guarantee that wr is not lost for a spurious temporary merge by Paolo Valente
+79e7cb773b33 Fix use of slice_idle and use smaller type by Paolo Valente
+9db0927f34b7 Force one-request-at-a-time service scheme with strict_guarantees by Paolo Valente
+03e5d28f2247 Improve the peak-rate estimator by Paolo Valente
+99655e5c613a Fix and extend logs, make other micro-improvements by Paolo Valente
+efeffe20cc7f Fix handling of wait_request state by Paolo Valente
+3bca26a98135 Port to v4.8, 4th part: switch slice_idle and thinktime to ns by Paolo Valente
+55671c13ad53 Port to v4.8, 3rd part: switch slice_timer and fifo_expire to ns by Paolo Valente
+8c708466e284 Update copyrigths to acknowledge Linaro's support by Paolo Valente
+300c07b01251 BFQ v8r3 by Paolo Valente
+d65bf4630e8e Fix switch from soft rt to interactive by Paolo Valente
+a8c7b7d52f38 BFQ v8r2 by Paolo Valente
+d91074cac09b Port commit ae11889636: turn blkg_lookup_create into blkg_lookup by Paolo Valente
+f771fe8d8c63 Remove variables not used if tracing is disabled by Paolo Valente
+499da3f6c549 BFQ v8r1 by Paolo Valente
+2973e93b16d9 Privilege soft rt apps against interactive by Paolo Valente
+e3182db13c79 Add weight-changed log message by Paolo Valente
+4822af71a826 Changed weight type by Paolo Valente
+45bd3d7181fd Change suspect BUG_ON and add more BUG_ONs by Paolo Valente
+0bb8ed78a19d BFQ v8 by Paolo Valente
+4f8f867d80eb BFQ v8-rc6 by Paolo Valente
+447e9456ad80 Move inline and improve data-structure comments, remove stale fields by Paolo Valente
+65d8a3df8058 Further code cleanup by Paolo Valente
+d06fc5cb45a5 Remove stale field by Paolo Valente
+ffb15c2d8af5 Add missing comment by Paolo Valente
+16d8a879819b Removed stale fields and comments by Paolo Valente
+858d1ade9ea0 BUGFIX: remove a harmless but meaningless comparison by Paolo Valente
+236fd8744f42 BFQ v8-rc5 by Paolo Valente
+abeb9b11eaca Improve code by Paolo Valente
+f89d6458c0b3 BUGFIX: removed ref-incrememnt typo from a log message by Paolo Valente
+12ebdcb8ffcb BFQ v8-rc4 by Paolo Valente
+3bd190419e33 Tell whether cgroups support is enabled at boot by Paolo Valente
+1881064ab035 BUGFIX: fix typo in constant definition by Paolo Valente
+3ae708bf010a BFQ v8-rc3 by Paolo Valente
+4acdc88dd6fc Drop unnecessary synchronize_rcu by Paolo Valente
+d49d1275fdaa BUGFIX: Extend rcu locking in bfq_bic_update_cgroup by Paolo Valente
+cce4ccaa06a5 Port commit 30d7b9448f03f2c82d0fd44738674cc156a8ce0a by Paolo Valente
+0b3f0a00cd6a Port commits 322731ed0dd and d4aad7ff04d by Paolo Valente
+814af679e842 Port commit 2da8de0bb799bf2bdfa893e5a1e294eb6bafba62 by Paolo Valente
+dfb3cfa03efa Port commit d93a11f1cd890d4ea72f7cef75fac56801b099b3 by Paolo Valente
+90ad16c798e8 Use just queue_lock in bfq_check_ioprio_change by Paolo Valente
+2522331ea317 Port commit 563180a44b7d7978f44e9776eedfbbc550c2398d by Paolo Valente
+a57d061d29d9 Port commit bce6133b09013f70d41a678d262a12147ed43889 by Paolo Valente
+3c15c1a066c6 Port commit 95e5d6f62693f27d9011ec307eb32c6126314ea3 by Paolo Valente
+802b067d67a9 Port commit 4ebc1c61d6185604c97fd0b0355ab668052044ab by Paolo Valente
+4b2f84a76ee0 Fix conditional-compilation errors related to cgroups by Paolo Valente
+aac2c6b7f574 Announce as v8-rc2 by Paolo Valente
+cc1d623a48d9 Improve consistency with new IO controller by Paolo Valente
+ebe157583fd7 Fix computation of queue weight as a function of ioprio by Paolo Valente
+7bb2fb8c8ac8 Improve some comments by Paolo Valente
+6211688e8c53 Replace time_is_XXX_jiffies when appropriate by Paolo Valente
+53aac69ecb0d Replace max with more efficient max_t by Paolo Valente
+8de442f01db6 BUGFIX: fix wrong Kconfig.iosched dependency for BFQ_GROUP_IOSCHED by Paolo Valente
+9ff816ab3a1f Add strict-guarantees tunable by Paolo Valente
+2b6c878d581e Change default group weight by Paolo Valente
+17c447ea95fd Improve time handling to reduce wraparound issues by Paolo Valente
+7e638f023323 BUGFIX: remove incorrect group-related BUG_ON by Paolo Valente
+79e91939371b Add extra logging by Paolo Valente
+0183fbbebf11 BUGFIX: fix service-tree selection for non-leaf entities by Paolo Valente
+80a71f39889b Improve weight-raising mechanism by Paolo Valente
+3c56ee00b905 Improve peak-rate estimation and rate-based autotuning by Paolo Valente
+60e7229fa5a6 Port CFQ commits 3dde36ddea3 and e9ce335df51ff by Paolo Valente
+68236c0d7b52 Squash me by Paolo Valente
+75431d293c43 Improve EQM by Paolo Valente
+b2525d36211b Improve handling of bursts of queue activations by Paolo Valente
+8f2dc98a0acf Introduce preemption-based, idleless service guarantees by Paolo Valente
+f4933a3eee2d Improve use of async_charge_factor by Paolo Valente
+c991e27d7032 Turn next-in-service check into a WARNING, and improve comments on next_in_service by Paolo Valente
+02c9118c5643 Add group logging and more BUG_ONs for groups by Paolo Valente
+ac3b6ad1e9ae Serve also async queues based only on budget consumption by Paolo Valente
+94a6d2e14422 Remove apparently useless check on bfq_class_idle from dispatch_requests by Paolo Valente
+061c7e0acf28 Improve logging functions by Paolo Valente
+7b6c7f11cb5c BUGFIX: expire bfqq if needed in bfq_bfqq_move by Paolo Valente
+00fc86b10b33 Align blk-cgroup code with CFQ, and fix related small bugs by Paolo Valente
+af228ad22971 Reverse include order between blk.h and bfq.h by Paolo Valente
+ce6deef093bf Remove useless includes from bfq.h by Paolo Valente
+c88496c03a29 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0 by Mauro Andreolini
+6ce68febc1b3 flash_defconfig: Enable BFQ by Nathan Chancellor
+f440c3384513 block: introduce the BFQ-v7r11 I/O sched for 4.4.0 by Paolo Valente
+44047b1034a7 block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0 by Paolo Valente
+507c4bd607f5 Correctly unregister usb_psy by Adin Kwok
+c1fb5cefe177 cheeseburger: dt: introduce a common file for panel setup by codeworkx
+1a683ba4b646 cheeseburger: sound: properly configure wsa properties by codeworkx
+76d012dbd7f1 cpufreq: cpu-boost: don't boost the gold cluster unecessarily by Francisco Franco
+ec6b1ebcdbb9 cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0 by Francisco Franco
+7bb0c9de6fc2 cpufreq: cpu-boost: export input_boost_enable to userspace by franciscofranco
+e73cb64e16fe cpufreq: cpu-boost: don't boost over user set max freq by Francisco Franco
+8523cdcecd42 cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value by Francisco Franco
+411d6509e817 msm_performance: don't limit min and max cpu freq by flar2
+5cb08c6c5843 soc: qcom: socinfo: Protect current_image using semaphore lock. by Swetha Chikkaboraiah
+65b6fce1e43f soc:qcom: Synchronize service notifier task's by Avaneesh Kumar Dwivedi
+97b8c77c9bbf PM/devfreq: bw_hwmon: add mutex lock in polling interval case by Santosh Mardi
+6bdf3cb8f7e3 soc: qcom: fix to avoid memory allocation failures by Vidyakumar Athota
+825abbaf3f1c cpufreq: interactive: fix to come out of hysteresis mode by Ramakrishna Gottimukkula
+ba001727b8d3 msm: kgsl: Fix a dead loop issue while changing gpu frequency by Venkateswara Rao Tadikonda
+d5eed902a995 msm: kgsl: Use vma_area_struct with proper locks by Sunil Khatri
+4beaeaa4e56c msm: kgsl: Defer issue commands to worker thread by Hareesh Gundu
+51c823f1045e msm: kgsl: Use per page cache operation instead of bulk cache operation by Deepak Kumar
+01412f6a77dd msm: kgsl: Offload mementry destroy work to separate thread by Deepak Kumar
+ef79f20d2730 msm: kgsl: Perform cache operation with kernel address by Hareesh Gundu
+3bef2e42e148 msm: kgsl: Fix kgsl memory allocation and free race condition by Sunil Khatri
+151b8d31a5ca msm: kgsl: Fix the race between context create and destroy by Sunil Khatri
+ce74a722fcf4 msm: kgsl: Remove incorrect check to cap AB vote to IB vote by Deepak Kumar
+c6253c6c2760 msm: kgsl: Disable memory retention for core clock before entering SLUMBER by Deepak Kumar
+bfd45e036da4 ANDROID: android-verity: mark dev as rw for linear target by Badhri Jagan Sridharan
+7760a801d2cf ANDROID: dm: android-verity: allow disable dm-verity for Treble VTS by Bowgo Tsai
+5ed0d68dee6a ANDROID: dm: android-verity: fix table_make_digest() error handling by Greg Hackmann
+ea2ce785031b UPSTREAM: arm64: vdso: constify vm_special_mapping used for aarch32 vectors page by Jisheng Zhang
+327fbcba7f88 UPSTREAM: arm64: vdso: add __init section marker to alloc_vectors_page by Jisheng Zhang
+3771a0490268 UPSTREAM: arm64: Add support for CLOCK_MONOTONIC_RAW in clock_gettime() vDSO by Kevin Brodsky
+4bc4fe077d2d UPSTREAM: arm64: Refactor vDSO time functions by Kevin Brodsky
+9359571d925d Revert "arm64: gettimeofday change for timer rollover condition" by Nathan Chancellor
+8a5400452dc6 UPSTREAM: arm64: fix vdso-offsets.h dependency by Kevin Brodsky
+30cf28b3abec UPSTREAM: kbuild: drop FORCE from PHONY targets by Masahiro Yamada
+a1aefcbc3850 UPSTREAM: mm: add PHYS_PFN, use it in __phys_to_pfn() by Chen Gang
+04ce6e7909ab BACKPORT [UPSTREAM] ext4: convert to mbcache2 by Jan Kara
+0cefaa9b7ea3 BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache by Jan Kara
+5cff39e44128 ANDROID: memory_state_time: fix undefined behavior with missing DT properties by Arnd Bergmann
+d8d5cf3747f0 ANDROID: lowmemorykiller: account for unevictable pages by Tim Murray
+8fa8b840737f Use %zu to print resid (size_t). by Mohan Srinivasan
+33753f0bff6c ANDROID: keychord: Fix for a memory leak in keychord. by Mohan Srinivasan
+9d11e70a0ee0 ANDROID: keychord: Fix races in keychord_write. by Mohan Srinivasan
+056650c89c71 ANDROID: keychord: Fix a slab out-of-bounds read. by Mohan Srinivasan
+a7b8984df3f3 ANDROID: binder: don't queue async transactions to thread. by Martijn Coenen
+cb93600b2eef ANDROID: binder: don't enqueue death notifications to thread todo. by Martijn Coenen
+fd49017ff075 ANDROID: binder: call poll_wait() unconditionally. by Martijn Coenen
+95a915d55750 ANDROID: binder: Don't BUG_ON(!spin_is_locked()). by Martijn Coenen
+0c2c746bd5ef ANDROID: binder: don't check prio permissions on restore. by Martijn Coenen
+94fbadc843f0 Add BINDER_GET_NODE_DEBUG_INFO ioctl by Colin Cross
+4202980a503c ANDROID: binder: add RT inheritance flag to node. by Martijn Coenen
+b36bacef17ce ANDROID: binder: improve priority inheritance. by Martijn Coenen
+b9eaff26b042 ANDROID: binder: add min sched_policy to node. by Martijn Coenen
+53ae3d682842 ANDROID: binder: add support for RT prio inheritance. by Martijn Coenen
+ab5782116dfb ANDROID: binder: push new transactions to waiting threads. by Martijn Coenen
+2c44ec7063cb ANDROID: binder: remove proc waitqueue by Martijn Coenen
+c9374c5316e0 FROMLIST: binder: remove global binder lock by Todd Kjos
+e16b7cc92f75 FROMLIST: binder: fix death race conditions by Martijn Coenen
+aed03d354fe9 FROMLIST: binder: protect against stale pointers in print_binder_transaction by Todd Kjos
+0d8e3370c33d FROMLIST: binder: protect binder_ref with outer lock by Todd Kjos
+0f84fe788e15 FROMLIST: binder: use inner lock to protect thread accounting by Todd Kjos
+80561cea9c59 FROMLIST: binder: protect transaction_stack with inner lock. by Martijn Coenen
+aca7dbdae051 FROMLIST: binder: protect proc->threads with inner_lock by Todd Kjos
+d375c53a7eac FROMLIST: binder: protect proc->nodes with inner lock by Todd Kjos
+29323c185005 FROMLIST: binder: add spinlock to protect binder_node by Todd Kjos
+3616d318f1b1 FROMLIST: binder: add spinlocks to protect todo lists by Todd Kjos
+04d77ce99341 FROMLIST: binder: use inner lock to sync work dq and node counts by Todd Kjos
+fb035037ae33 FROMLIST: binder: introduce locking helper functions by Todd Kjos
+b936a1caf363 FROMLIST: binder: use node->tmp_refs to ensure node safety by Todd Kjos
+98867e41a797 FROMLIST: binder: refactor binder ref inc/dec for thread safety by Todd Kjos
+0468cc68e8d0 FROMLIST: binder: make sure accesses to proc/thread are safe by Todd Kjos
+b6791bb6a78f FROMLIST: binder: make sure target_node has strong ref by Todd Kjos
+4bb31ab959f2 FROMLIST: binder: guarantee txn complete / errors delivered in-order by Todd Kjos
+303e220a658c FROMLIST: binder: refactor binder_pop_transaction by Todd Kjos
+dfaf6d875191 FROMLIST: binder: use atomic for transaction_log index by Todd Kjos
+cd94bc257e37 FROMLIST: binder: add more debug info when allocation fails. by Martijn Coenen
+329885203d52 FROMLIST: binder: protect against two threads freeing buffer by Todd Kjos
+40399ea567a2 FROMLIST: binder: remove dead code in binder_get_ref_for_node by Todd Kjos
+0573a985dc7a FROMLIST: binder: don't modify thread->looper from other threads by Todd Kjos
+bcc0130a3426 FROMLIST: binder: avoid race conditions when enqueuing txn by Todd Kjos
+2b89eb883ec2 FROMLIST: binder: refactor queue management in binder_thread_read by Todd Kjos
+14af0b005ce6 FROMLIST: binder: add log information for binder transaction failures by Todd Kjos
+c9bf4107a237 FROMLIST: binder: make binder_last_id an atomic by Todd Kjos
+2150d30375bb FROMLIST: binder: change binder_stats to atomics by Badhri Jagan Sridharan
+d4e89fbf32b5 FROMLIST: binder: add protection for non-perf cases by Todd Kjos
+b5063372fb2f FROMLIST: binder: remove binder_debug_no_lock mechanism by Todd Kjos
+61afdadeb793 FROMLIST: binder: move binder_alloc to separate file by Todd Kjos
+7d25ae996b64 FROMLIST: binder: separate out binder_alloc functions by Todd Kjos
+587019800dfa FROMLIST: binder: remove unneeded cleanup code by Todd Kjos
+48785c3072a4 FROMLIST: binder: separate binder allocator structure from binder proc by Todd Kjos
+4255cb8102d8 Revert "android: binder: Disable preemption while holding the global binder lock." by Francisco Franco
+6c5cefd4a48b ANDROID: binder: add hwbinder,vndbinder to BINDER_DEVICES. by Martijn Coenen
+665ce1b536ed Revert "CHROMIUM: android: binder: Fix potential scheduling-while-atomic" by Mark Salyzyn
+4f6822b0c075 binder: use group leader instead of open thread by Martijn Coenen
+2a8aba8afdfb writeback: fix memory leak in wb_queue_work() by Tahsin Erdogan
+5c28d41426cc fs/fs-writeback.c: remove redundant if check by Tahsin Erdogan
+fa7044bd9336 mm, writeback: flush plugged IO in wakeup_flusher_threads() by Konstantin Khlebnikov
+554adcac21a6 writeback: Write dirty times for WB_SYNC_ALL writeback by Jan Kara
+41bff54ea5c5 fs/fs-writeback.c: inode writeback list tracking tracepoints by Brian Foster
+3c22d0998086 fs/fs-writeback.c: add a new writeback list for sync by Dave Chinner
+78fac57f41c1 writeback: inode cgroup wb switch should not call ihold() by Tahsin Erdogan
+688e23c6c36b mm,writeback: don't use memory reserves for wb_start_writeback by Tetsuo Handa
+7692f48aab3f Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE" by Daniel Mentz
+480979eaaae0 ASoC: wcdxxxx: queue work on power efficient wq by Pranav Vashi
+a5ebf6ed7b2e flash_defconfig: Enable 300HZ by Nathan Chancellor
+e8beab2098c7 sched: walt: fix window misalignment when HZ=300 by Joonwoo Park
+ad8e20bdf2c5 fbdev: msm: Fix direct references to HZ by Nathan Chancellor
+fb30bdbb31d0 cfq-iosched: Convert from jiffies to nanoseconds by Jeff Moyer
+a21eef481d9e drivers: i2c: Fix direct references to HZ by Humberto Borba
+4396cf6c0135 drivers: hwmon: Fix direct references to HZ by Humberto Borba
+f1a8652ba386 drivers: platform: gsi: Fix direct references to HZ by Humberto Borba
+e0b327762c6e drivers: ipa: Fix direct references to HZ by Humberto Borba
+e6ecf2dc0422 drivers: video: mdss: Fix direct references to HZ by Humberto Borba
+41d55a635996 Convert few critical drivers to use msecs_to_jiffies insted of HZ by Dorimanx

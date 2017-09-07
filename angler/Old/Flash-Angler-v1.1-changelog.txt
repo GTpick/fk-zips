@@ -1,0 +1,81 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+d237925e1bf1 Flash Kernel 1.1 by Nathan Chancellor
+89c6db5a5b3f Merge branch '7.1.2-base' into 7.1.2-flash-dev by Nathan Chancellor
+2eb1ae755aa5 Merge android-7.1.2_r0.24 into 7.1.2-base by Nathan Chancellor
+a21795dc6e07 Flash Kernel 1.06 by Nathan Chancellor
+00bd13e04685 Revert "sched/fair: Fix fairness issue on migration" by Ingo Molnar
+40dc5c570371 msm: performance: prevent userspace hints to decrease max cpu freq by franciscofranco
+cea5d5a3c170 msm: performance: prevent the driver from handling userspace min freq cpu boost hints. by franciscofranco
+b93a4a8ed937 soc: qcom: msm_perf: prevent perfd to change workload by anarkia1976
+b0b654cb86af Prepare to force disable touchboost by Nathan Chancellor
+19169336d2d2 sched: Change default hmp values for msm8992/msm8994 by jollaman999
+1a238036230e sched/fair: Fix and optimize the fork() path by Peter Zijlstra
+c726f84e761c sched/fair: Initialize throttle_count for new task-groups lazily by Konstantin Khlebnikov
+93f1483ca2d8 net: rmnet_data: Disable watchdog for rmnet by Pranav Vashi
+aba83cee3eee cpu: Handle smpboot_unpark_threads() uniformly by Paul E. McKenney
+cbdc11f337ba cpu: Defer smpboot kthread unparking until CPU known to scheduler by Paul E. McKenney
+0215d13e2293 smpboot: use kmemleak_not_leak for smpboot_thread_data by Vignesh Radhakrishnan
+3e6d9d84c92c ext4: fix data corruption with EXT4_GET_BLOCKS_ZERO by Jan Kara
+1c267dbd8ac7 perf/core: Drop kernel samples even though :u is specified by Jin Yao
+990eb071f9c8 fs/file.c: don't acquire files->file_lock in fd_install() by Eric Dumazet
+1c66774f9e9a power: msm-core: Add missing NULL pointer check in msm_core_ioctl() by Sultanxda
+60a8cb0a4444 power: msm-core: Compile out temperature polling by Sultanxda
+e03b94d61e73 block: I/O scheduler driver mod. delay setting noop when screen goes off. by Dorimanx
+fcbffa03122c flash_defconfig: Offload RCU callbacks from all CPUs by Sultanxda
+cfc09c21546e rcu: use %*pb[l] to print bitmaps including cpumasks and nodemasks by Tejun Heo
+c16980aa1d0c signal: Only reschedule timers on signals timers have sent by Eric W. Biederman
+9219a036d364 ALSA: timer: Fix race between read and ioctl by Takashi Iwai
+8b531fab4a0d ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT by Takashi Iwai
+e9fda3751dc3 KEYS: fix dereferencing NULL payload with nonzero length by Eric Biggers
+e69ef1fb206c KEYS: fix freeing uninitialized memory in key_update() by Eric Biggers
+26453137f92c KEYS: Call ->free_preparse() even after ->preparse() returns an error by David Howells
+c5af8b4cee32 selinux: fix double free in selinux_parse_opts_str() by Paul Moore
+73fd49684968 Set ctx->romnt regardless of readdir or iterate by Alberto97
+58d854a28f10 Revert "ASoC: msm: qdsp6v2: Make sure drain command is finished before pm" by Nathan Chancellor
+c590092d14ef ASoC: core: Don't assign an out-of-bounds address to rtd_aux by Sultanxda
+f1c4c23ed6e1 msm: mdss: Fix GCC 7.x warning properly by Pranav Vashi
+8801aaeda17f fs/block_dev: always invalidate cleancache in invalidate_bdev() by Andrey Ryabinin
+c37c7aad5be4 ipv6: xfrm: Handle errors reported by xfrm6_find_1stfragopt() by Ben Hutchings
+7605fb9981b3 log2: make order_base_2() behave correctly on const input value zero by Ard Biesheuvel
+02501d8527c6 arm64: implement TASK_SIZE_OF by Colin Cross
+e83b1189ce0b arm64: Fix mismerge by Nathan Chancellor
+5547b00553ad Merge additional July 2017 security update. by Andrew Chant
+c0afb15f903d UPSTREAM: net/packet: fix overflow in check for tp_reserve by Andrey Konovalov
+014b06707f1d UPSTREAM: net/packet: fix overflow in check for tp_frame_nr by Andrey Konovalov
+bd52f078197d Merge July 2017 security updates. by Andrew Chant
+3c9dc78e1b87 UPSTREAM: char: Drop bogus dependency of DEVPORT on !M68K by Geert Uytterhoeven
+6953317beb32 msm: kgsl: Fix kgsl memory allocation and free race condition by Dennis Cagle
+565b6aebbbe3 msm: camera: Add regulator enable and disable independent of CSID by Dennis Cagle
+ff4b7cd20398 msm: vidc: Allocate bus vote data during initialization by Vasantha Balla
+6592286d607c ashmem: remove cache maintenance support by Dennis Cagle
+725bad1ea812 BACKPORT: udf: Check path length when reading symlink by Jan Kara
+59cc32073173 ipv4: keep skb->dst around in presence of IP options by Eric Dumazet
+bb3e9cb630bc BACKPORT: UPSTREAM: dccp: fix freeing skb too early for IPV6_RECVPKTINFO by Andrey Konovalov
+3731ac3b89fd Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE" by Nick Desaulniers
+0026addbd185 net: wireless: bcmdhd: adding boundary check in wl_cfg80211_mgmt_tx by Insun Song
+08fc3c18549d BACKPORT: UPSTREAM: sg_start_req(): make sure that there's not too many elements in iovec by Al Viro
+b89051e63565 msm: mdss: fix race condition during mdp debugfs release by Harsh Sahu
+6d26507a7c42 msm: mdss: fix race condition in mdp debugfs by Ingrid Gallardo
+e58dd312d3d2 net: wireless: bcmdhd: adding boundary check in SWC gscan config by Insun Song
+4ad6b90a3fde arm64: angler_defconfig: Unsetting DEVPORT from angler configurations. by Max Bires
+244c98fb8faa Fixing an issue that caused DEVPORT to always be set. by Max Bires
+04a0461299e1 UPSTREAM: net/packet: fix overflow in check for priv area size by Andrey Konovalov
+fc4472ffe801 net: wireless: bcmdhd: arpoe/ndoe IOVAR bug patch by Insun Song
+8a9ae704ed8b BACKPORT: UPSTREAM: HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands by Scott Bauer
+61da6ad55b89 msm: camera2: cpp: Fix out-of-bounds frame or command buffer access by Dennis Cagle
+2bef9d1f303b soc: qcom: pil: Avoid possible buffer overflow during Modem boot by Nick Desaulniers
+839c87897e49 Revert "soc: qcom: pil: Avoid possible buffer overflow during Modem boot" by Stuart Scott
+52a318379208 soc: qcom: pil: Avoid possible buffer overflow during Modem boot by Dennis Cagle
+7235a048753d msm: camera: don't cut to 8bits for validating enum variable by Gaoxiang Chen
+f15804ea29ec msm: camera: sensor: Add boundary check for cci master by VijayaKumar T M
+9a1fda30259e FROMLIST: msm: qdsp6v2: set pointer to NULL after free by Siqi Lin
+
+
+http://github.com/nathanchance/AnyKernel2/commits/angler-flash-public-7.1.2
+
+c7ebb7dff380 Update init.profiles.rc by deani77
+d06421a92af9 Merge branch 'master' of https://github.com/osm0sis/AnyKernel2 into angler-flash-public-7.1.2 by Nathan Chancellor
+bed7deffb75c Ramdisk: Update GlassCannon profile by Nathan Chancellor
+b91ec4deda63 AK2: better fix for unknown hash type - https://github.com/osm0sis/AnyKernel2/commit/45bfc5d602582c53433bd2398bdc5876a7e260c9 broke the error catching on unpackbootimg - more easily worked around during repack, see linked commit for rationale for the assumption by osm0sis
+adc21ed2c375 AK2: allow next blank line (" ") for replace_section and remove_section - sometimes it's difficult to anchor to specific end lines due to variations across ROMs, so allow the end line to be blank " " - note this will also remove the trailing blank line so for replacements a trailing \n should be added to maintain spacing; this should be pretty intuitive since you are including the blank line as the end line search by osm0sis

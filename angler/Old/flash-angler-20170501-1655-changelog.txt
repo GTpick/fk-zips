@@ -1,0 +1,539 @@
+
+Title: tcp: fix a compile error in DBGUNDO()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Thu, 22 Sep 2016 17:54:00 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/06d96c8b03fa849fe982bf51140c7f23122e257e
+Added on: Mon, 1 May 2017 16:36:08 -0700
+
+
+Title: usb: hub: Wait for connection to be reestablished after port reset
+Author: Guenter Roeck <linux@roeck-us.net>
+Authored on: Thu, 1 Dec 2016 13:49:59 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/98766b16eede3e93e29ca83acc9e6cca1b9516c2
+Added on: Mon, 1 May 2017 16:36:07 -0700
+
+
+Title: uapi: fix linux/packet_diag.h userspace compilation error
+Author: Dmitry V. Levin <ldv@altlinux.org>
+Authored on: Tue, 7 Mar 2017 23:50:50 +0300
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e3ba7e6b9a1d78a1f77757b33936214d0ca4b98f
+Added on: Mon, 1 May 2017 16:36:07 -0700
+
+
+Title: give up on gcc ilog2() constant optimizations
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Authored on: Thu, 2 Mar 2017 12:17:22 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4c95f89d76c2d7bfd83e04719c52b1f9a838a2cc
+Added on: Mon, 1 May 2017 16:36:06 -0700
+
+
+Title: zram: do not use copy_page with non-page aligned address
+Author: Minchan Kim <minchan@kernel.org>
+Authored on: Thu, 13 Apr 2017 14:56:37 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/90f3f71bd62d462b8f247516c36a9f79a7ff465b
+Added on: Mon, 1 May 2017 16:36:05 -0700
+
+
+Title: net/packet: fix overflow in check for tp_reserve
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:22 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/20450b072cfc81f11069104b0345c160c22590ed
+Added on: Mon, 1 May 2017 16:36:05 -0700
+
+
+Title: net/packet: fix overflow in check for tp_frame_nr
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:21 +0200
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7d9661ccfb162b7601c5dd1e96a67d8a8e6e7ad2
+Added on: Mon, 1 May 2017 16:36:04 -0700
+
+
+Title: leds: leds-qpnp-flash: optimization of regulator data parsing
+Author: Jigarkumar Kishorkumar Zala <j_zala@codeaurora.org>
+Authored on: Wed, 7 Oct 2015 09:42:02 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e225112b18e87262d7c57f551879abad3d008731
+Added on: Mon, 1 May 2017 16:36:04 -0700
+
+
+Title: arch: Enable context tracking by default
+Author: Joe Maples <joe@frap129.org>
+Authored on: Thu, 14 Jul 2016 20:26:20 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/87b19db4a8d53918698bc7bc776672aca3bb5bc7
+Added on: Mon, 1 May 2017 16:36:03 -0700
+
+
+Title: flash_defconfig: kill LMK and enable MEMCG
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Mon, 24 Apr 2017 20:58:20 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8e2c37871292f54605f91be730383b3b54b42f6f
+Added on: Mon, 1 May 2017 16:36:02 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr1' into android-msm-angler-3.10-nyc-mr2
+Author: Ecco Park <eccopark@google.com>
+Authored on: Fri, 24 Mar 2017 15:59:06 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/cedc139f61870d3f4f8a80f9030b0836b56e2204
+Added on: Fri, 24 Mar 2017 15:59:06 -0700
+
+
+Title: net: wireless: bcmdhd: fix for IOVAR GET failed
+Author: Insun Song <insun.song@broadcom.com>
+Authored on: Fri, 24 Mar 2017 14:04:03 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4e38c573e81eb76f09bae425f035be392fbab370
+Added on: Fri, 24 Mar 2017 15:52:27 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr1' into android-msm-angler-3.10-nyc-mr2
+Author: Ecco Park <eccopark@google.com>
+Authored on: Fri, 24 Mar 2017 11:18:03 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/30075efe1e1c1187f4e3bb7b8c92bd03a0cf2052
+Added on: Fri, 24 Mar 2017 11:18:03 -0700
+
+
+Title: xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+Author: Andy Whitcroft <apw@canonical.com>
+Authored on: Wed, 22 Mar 2017 07:29:31 +0000
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c6529713cf71749f25ed17ae3f68877ab1155a7e
+Added on: Fri, 24 Mar 2017 11:10:32 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr1' into android-msm-angler-3.10-nyc-mr2
+Author: Ecco Park <eccopark@google.com>
+Authored on: Tue, 21 Mar 2017 13:53:27 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/ace193b4367d646b653ecf78df4dfe4eb4351241
+Added on: Tue, 21 Mar 2017 13:53:27 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr1-security-next' into android-msm-angler-3.10-nyc-mr1
+Author: Ecco Park <eccopark@google.com>
+Authored on: Tue, 21 Mar 2017 13:24:53 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/bdbc5f94ebab76c8cf40a024fd74105c75aa2307
+Added on: Tue, 21 Mar 2017 20:45:21 +0000
+
+
+Title: msm: mdss: install the rel_fence even if retire_fence is skipped
+Author: Steve Pfetsch <spfetsch@google.com>
+Authored on: Mon, 20 Mar 2017 17:05:28 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/d1e8c96954d1b24669b4f8e47ef69633512a551c
+Added on: Mon, 20 Mar 2017 17:26:26 -0700
+
+
+Title: Merge branch 'android-msm-angler-3.10-nyc-mr1' into android-msm-angler-3.10-nyc-mr2
+Author: Ecco Park <eccopark@google.com>
+Authored on: Wed, 15 Mar 2017 22:37:08 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/15b5a4b7760f2326701a0b79c99d4876db1c82dd
+Added on: Wed, 15 Mar 2017 22:37:08 -0700
+
+
+Title: net: wireless: bcmdhd: fix incorrect IOVAR buffer length use case
+Author: Insun Song <insun.song@broadcom.com>
+Authored on: Sat, 11 Mar 2017 13:29:14 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/adbb3a13307afd61e26d4e249429188a466b43c1
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: FROMLIST: ASoC: wcd9330: Fix out of bounds for mad input value
+Author: Karthikeyan Mani <kmani@codeaurora.org>
+Authored on: Wed, 14 Dec 2016 11:33:18 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/926e2bc9b0a5d296c68c9003efdff318a9b18db7
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: perf: Tighten (and fix) the grouping condition
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 23 Jan 2015 11:19:48 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/467131dbaae1127cd8a1af440f5a9a5258da307d
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: ALSA: pcm : Call kill_fasync() in stream lock
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Mon, 12 Dec 2016 17:33:06 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b971e87eaa5846e625b5f4a75e564bbfcad251a9
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: crypto: msm: check length before copying to buf in _debug_stats_read
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Mon, 6 Feb 2017 19:45:30 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/cfad32c06a5eb712fcce3378bde7eeb29aa194f7
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: FROMLIST: drivers: soc: add mutex to prevent response being processed twice
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Thu, 26 Jan 2017 15:02:42 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/361bc531e2a7e5502cbff10bcf1d340f710e68e3
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: slim-msm: Synchronize SSR callbacks
+Author: Dilip Kota <dkota@codeaurora.org>
+Authored on: Mon, 21 Mar 2016 11:28:51 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/becc99fee45c769356dc6329b7b4423a3d7dc231
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: power: qpnp-fg: Fix possible race condition in FG debugfs
+Author: Biswajit Paul <biswajitpaul@codeaurora.org>
+Authored on: Wed, 18 Jan 2017 16:46:38 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/be3acf3e30c344171cd828aab02a1d165c4fc93d
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: qseecom: improve input validatation for qseecom_send_service_cmd
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Wed, 11 Jan 2017 12:12:31 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7a1d66a12995f940456287d758f86668239ac2e8
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
+Author: Xiaoyu Ye <benyxy@codeaurora.org>
+Authored on: Mon, 19 Dec 2016 18:38:53 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1ab9d3a8398e79c5f52b8f075ed892cd35c8b4f5
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: qseecom: check buffer size when loading firmware images
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Thu, 20 Oct 2016 17:34:20 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c998346848e01090903ad9069b415b2c61ceee82
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates
+Author: Rajesh Bondugula <rajeshb@codeaurora.org>
+Authored on: Tue, 8 Nov 2016 11:52:55 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/bda0ab1d01ed6a6c7fd4df5862a6a65638156c11
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: ASoC: msm: qdsp6v2: return error when copy from userspace fails
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Mon, 5 Dec 2016 12:26:52 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/da148fd6b74392cf52342a24c24033111dd121e8
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: ASoC: soc: msm: initialize buffer to prevent kernel data leakage
+Author: Xiaojun Sang <xsang@codeaurora.org>
+Authored on: Fri, 16 Dec 2016 16:25:27 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/5695f5614e849cba663717a7c948ea444decb226
+Added on: Wed, 15 Mar 2017 21:06:11 -0700
+
+
+Title: FROMLIST: ASoC: soc: prevent risk of buffer overflow
+Author: Xiaojun Sang <xsang@codeaurora.org>
+Authored on: Fri, 4 Nov 2016 14:35:58 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a604011f81f406745b2ccc6cb3bd6e5b6dfc36bd
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: BACKPORT: msm: ADSPRPC: Check for buffer overflow condition
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Thu, 9 Feb 2017 20:24:00 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/2c0bbb22f1a7a2e1cdb94458a27c6811811b7861
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: msm: camera: flash: Validate the power setting size
+Author: Rajesh Bondugula <rajeshb@codeaurora.org>
+Authored on: Tue, 22 Nov 2016 11:04:04 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/0156dbc734c284ddaeaf0d92df56d4a18f474ecb
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: Prevent heap overflow in uvc driver
+Author: Robb Glasser <rglasser@google.com>
+Authored on: Tue, 14 Feb 2017 13:25:46 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b7b99e55bc7770187913ed092990852ea52d7892
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: FROMLIST: ASoC: msm-cpe-lsm: cleanup ioctl functions
+Author: Walter Yang <yandongy@codeaurora.org>
+Authored on: Wed, 21 Dec 2016 14:43:46 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/557a377d85bad4fdb622c96ae3b6dd2c299d48e1
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: FROMLIST: ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Mon, 23 Jan 2017 13:15:58 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b0b358993682fd89439a8f5f76822b319296ac9c
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: tracing: do not leak kernel addresses
+Author: Nick Desaulniers <ndesaulniers@google.com>
+Authored on: Fri, 3 Mar 2017 15:40:12 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/45e5a5e1b85f23843b90f3cddcfc26fa862ff80c
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: UPSTREAM: tracing: Fix trace_printk() to print when not using bprintk()
+Author: Steven Rostedt (Red Hat) <rostedt@goodmis.org>
+Authored on: Tue, 22 Mar 2016 17:30:58 -0400
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/28fb06421ab3d9256d32611138306470996cc4c1
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: msm: crypto: set CLR_CNTXT bit for crypto operations
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Wed, 9 Nov 2016 16:25:24 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b8269f42fa05a59207953de067e96c3b39e8b2a7
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: BACKPORT: trace: resolve stack corruption due to string copy
+Author: Amey Telawane <ameyt@codeaurora.org>
+Authored on: Mon, 1 Aug 2016 16:50:43 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/20c10a4584fdcb963e2dd5faa729454cec9516c4
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: msm: mdss: prevent info leak in panel_debug_base_reg_write
+Author: Steve Pfetsch <spfetsch@google.com>
+Authored on: Mon, 13 Mar 2017 12:54:19 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/688b50d3642a9f285842e924f165e9a22c3c113c
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: soc: qcom: scm: check for size_t overflow.
+Author: Andrew Chant <achant@google.com>
+Authored on: Tue, 14 Mar 2017 11:58:35 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/84e4cb59f55ac3077ed312a43a81c09b80915827
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: net: wireless: bcmdhd: fix incorrect IOVAR buffer length use case
+Author: Insun Song <insun.song@broadcom.com>
+Authored on: Sat, 11 Mar 2017 13:29:14 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/df1e0e6e2a0d24a583408ad654a396a73de0b141
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: BACKPORT: uio: fix potential use after free issue when accessing debug_buffer
+Author: Nick Desaulniers <ndesaulniers@google.com>
+Authored on: Wed, 1 Mar 2017 13:59:09 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/207d0d0857687463891a1f5fa6b37fb96e2b1815
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: msm: mdss: Install sync fences after user copy
+Author: Naseer Ahmed <naseer@codeaurora.org>
+Authored on: Wed, 1 Feb 2017 16:24:01 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/11127b5d3669cb892c38ca237a2f39037382af50
+Added on: Wed, 15 Mar 2017 21:06:10 -0700
+
+
+Title: net: wireless: bcmdhd: fix incorrect IOVAR buffer length use case
+Author: Insun Song <insun.song@broadcom.com>
+Authored on: Sat, 11 Mar 2017 13:29:14 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/d37a3c6ae114cd0379389704a8bde228194ae9e5
+Added on: Thu, 16 Mar 2017 01:02:21 +0000
+
+
+Title: FROMLIST: ASoC: wcd9330: Fix out of bounds for mad input value
+Author: Karthikeyan Mani <kmani@codeaurora.org>
+Authored on: Wed, 14 Dec 2016 11:33:18 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f3329fc3eda56f46f7bc9a28c2afb7b12f1e2277
+Added on: Wed, 15 Mar 2017 06:29:49 +0000
+
+
+Title: perf: Tighten (and fix) the grouping condition
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 23 Jan 2015 11:19:48 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/578af4489ab420152d0d3f4922bf50edf8fdd017
+Added on: Wed, 15 Mar 2017 06:29:41 +0000
+
+
+Title: ALSA: pcm : Call kill_fasync() in stream lock
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Mon, 12 Dec 2016 17:33:06 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/d19ce78708dde9660eff3a4759bdb471bdd1da82
+Added on: Wed, 15 Mar 2017 06:29:35 +0000
+
+
+Title: crypto: msm: check length before copying to buf in _debug_stats_read
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Mon, 6 Feb 2017 19:45:30 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b33e1f9d9b4d317575048b50891b499b50609dd0
+Added on: Wed, 15 Mar 2017 06:29:29 +0000
+
+
+Title: FROMLIST: drivers: soc: add mutex to prevent response being processed twice
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Thu, 26 Jan 2017 15:02:42 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/38e328ac2f3794d1ceeadfe69c7bea8c96955e31
+Added on: Wed, 15 Mar 2017 06:29:22 +0000
+
+
+Title: slim-msm: Synchronize SSR callbacks
+Author: Dilip Kota <dkota@codeaurora.org>
+Authored on: Mon, 21 Mar 2016 11:28:51 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1c922a1bf4a7b1ca732c1244ba0f5d2e99dcce16
+Added on: Wed, 15 Mar 2017 06:29:16 +0000
+
+
+Title: power: qpnp-fg: Fix possible race condition in FG debugfs
+Author: Biswajit Paul <biswajitpaul@codeaurora.org>
+Authored on: Wed, 18 Jan 2017 16:46:38 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/725f7cbb4a51b549e791f13606f7f2a42a33a75b
+Added on: Wed, 15 Mar 2017 06:29:08 +0000
+
+
+Title: qseecom: improve input validatation for qseecom_send_service_cmd
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Wed, 11 Jan 2017 12:12:31 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f8de3a61f749cc22e538309316b8b5150949d368
+Added on: Wed, 15 Mar 2017 06:29:02 +0000
+
+
+Title: ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
+Author: Xiaoyu Ye <benyxy@codeaurora.org>
+Authored on: Mon, 19 Dec 2016 18:38:53 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/82f5d38ca88c84a4c4dd1cda35a410b1d0c6d26d
+Added on: Wed, 15 Mar 2017 06:28:55 +0000
+
+
+Title: qseecom: check buffer size when loading firmware images
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Thu, 20 Oct 2016 17:34:20 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/11d3aba2888189a6bd54605f2f531168c8eb7111
+Added on: Wed, 15 Mar 2017 06:28:48 +0000
+
+
+Title: msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates
+Author: Rajesh Bondugula <rajeshb@codeaurora.org>
+Authored on: Tue, 8 Nov 2016 11:52:55 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/96b467a60af46bbdbca68907d76d790591962315
+Added on: Wed, 15 Mar 2017 06:27:34 +0000
+
+
+Title: ASoC: msm: qdsp6v2: return error when copy from userspace fails
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Mon, 5 Dec 2016 12:26:52 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/a2083796fdb6e75c10adb09b4986879d3f871530
+Added on: Wed, 15 Mar 2017 06:27:27 +0000
+
+
+Title: ASoC: soc: msm: initialize buffer to prevent kernel data leakage
+Author: Xiaojun Sang <xsang@codeaurora.org>
+Authored on: Fri, 16 Dec 2016 16:25:27 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8d523c8f0b7df3c61d72b6d31b52922086097c97
+Added on: Wed, 15 Mar 2017 06:27:20 +0000
+
+
+Title: FROMLIST: ASoC: soc: prevent risk of buffer overflow
+Author: Xiaojun Sang <xsang@codeaurora.org>
+Authored on: Fri, 4 Nov 2016 14:35:58 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8200ac7828652946d3a628965ae1d7c2c2afc9c6
+Added on: Wed, 15 Mar 2017 06:27:14 +0000
+
+
+Title: BACKPORT: msm: ADSPRPC: Check for buffer overflow condition
+Author: Dennis Cagle <d-cagle@codeaurora.org>
+Authored on: Thu, 9 Feb 2017 20:24:00 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/639d4abcce02f9f222599b52399d8bda929904f8
+Added on: Wed, 15 Mar 2017 06:27:07 +0000
+
+
+Title: msm: camera: flash: Validate the power setting size
+Author: Rajesh Bondugula <rajeshb@codeaurora.org>
+Authored on: Tue, 22 Nov 2016 11:04:04 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/de36880c681b19575ef09a633ec8f8532a28caca
+Added on: Wed, 15 Mar 2017 06:27:01 +0000
+
+
+Title: Prevent heap overflow in uvc driver
+Author: Robb Glasser <rglasser@google.com>
+Authored on: Tue, 14 Feb 2017 13:25:46 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8bc3ec72a02052187397d0de1a7b8bbe7340451c
+Added on: Wed, 15 Mar 2017 06:26:54 +0000
+
+
+Title: FROMLIST: ASoC: msm-cpe-lsm: cleanup ioctl functions
+Author: Walter Yang <yandongy@codeaurora.org>
+Authored on: Wed, 21 Dec 2016 14:43:46 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/b30ffbe3abc0ed7809df8875e238c472a20469f4
+Added on: Wed, 15 Mar 2017 06:26:48 +0000
+
+
+Title: FROMLIST: ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Mon, 23 Jan 2017 13:15:58 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1c5ef356fb5d4526b185d867dc8febfd4af4c87e
+Added on: Wed, 15 Mar 2017 06:26:40 +0000
+
+
+Title: tracing: do not leak kernel addresses
+Author: Nick Desaulniers <ndesaulniers@google.com>
+Authored on: Fri, 3 Mar 2017 15:40:12 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9ad8f2cc1bb73a3e2255dff4ee9c45c909869225
+Added on: Wed, 15 Mar 2017 06:26:32 +0000
+
+
+Title: UPSTREAM: tracing: Fix trace_printk() to print when not using bprintk()
+Author: Steven Rostedt (Red Hat) <rostedt@goodmis.org>
+Authored on: Tue, 22 Mar 2016 17:30:58 -0400
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/824b7cecb1b71e6975bd476b6b773a8db516003e
+Added on: Wed, 15 Mar 2017 06:26:24 +0000
+
+
+Title: msm: crypto: set CLR_CNTXT bit for crypto operations
+Author: Zhen Kong <zkong@codeaurora.org>
+Authored on: Wed, 9 Nov 2016 16:25:24 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7cb7a6501d1393aeb27d709973f296fce86ecf71
+Added on: Wed, 15 Mar 2017 06:26:18 +0000
+
+
+Title: BACKPORT: trace: resolve stack corruption due to string copy
+Author: Amey Telawane <ameyt@codeaurora.org>
+Authored on: Mon, 1 Aug 2016 16:50:43 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/5744a077305712106f1e6c53776a261be4011fc7
+Added on: Wed, 15 Mar 2017 06:26:11 +0000
+
+
+Title: msm: mdss: prevent info leak in panel_debug_base_reg_write
+Author: Steve Pfetsch <spfetsch@google.com>
+Authored on: Mon, 13 Mar 2017 12:54:19 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/26bbfd3c6c0a8f9c66f73a7b419e43a6ff415480
+Added on: Wed, 15 Mar 2017 06:26:05 +0000
+
+
+Title: soc: qcom: scm: check for size_t overflow.
+Author: Andrew Chant <achant@google.com>
+Authored on: Tue, 14 Mar 2017 11:58:35 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/1e9f18fbde745b886fab459234baf5ee4c246f5a
+Added on: Wed, 15 Mar 2017 06:25:59 +0000
+
+
+Title: net: wireless: bcmdhd: fix incorrect IOVAR buffer length use case
+Author: Insun Song <insun.song@broadcom.com>
+Authored on: Sat, 11 Mar 2017 13:29:14 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f5f9f691222cae2a8c3780ab56a53085ab01caff
+Added on: Wed, 15 Mar 2017 06:25:40 +0000
+
+
+Title: BACKPORT: uio: fix potential use after free issue when accessing debug_buffer
+Author: Nick Desaulniers <ndesaulniers@google.com>
+Authored on: Wed, 1 Mar 2017 13:59:09 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/e5f2714d3f62274e832e625d06e61d5fdc96d4bd
+Added on: Wed, 15 Mar 2017 06:25:22 +0000
+
+
+Title: msm: mdss: Install sync fences after user copy
+Author: Naseer Ahmed <naseer@codeaurora.org>
+Authored on: Wed, 1 Feb 2017 16:24:01 -0500
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/9f604a69edeea8c2bf26a23b92affbc7db1c41ff
+Added on: Tue, 14 Mar 2017 23:14:48 -0700
+
+
+Title: qseecom: whitelist support for kernel client and listener
+Author: Biswajit Paul <biswajitpaul@codeaurora.org>
+Authored on: Fri, 2 Sep 2016 22:09:23 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/0a21e4cece61404bec7a93ac52fa9230963301a7
+Added on: Tue, 28 Feb 2017 11:25:45 -0800
+

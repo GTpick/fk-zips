@@ -1,0 +1,77 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+5809b410adf1 Flash Kernel 2.1 by Nathan Chancellor
+d244bb49f18f ANDROID: sdcardfs: Remove unnecessary lock by Daniel Rosenberg
+1dc53d458efe state_notifier: Check delayed work status before cancel by Pranav Vashi
+a0efd7701956 iosched_switcher: Reduce restore delay by Pranav Vashi
+76e351e492aa Revert "block: I/O scheduler driver mod. delay setting noop when screen goes off." by Nathan Chancellor
+d78bb0c551d2 tracing: Use SOFTIRQ_OFFSET for softirq dectection for more accurate results by Pavankumar Kondeti
+918422467c99 sched/topology: Fix overlapping sched_group_mask by Peter Zijlstra
+ee9a48821e7e sched/topology: Optimize build_group_mask() by Lauro Ramos Venancio
+80fb6e342309 vt: fix unchecked __put_user() in tioclinux ioctls by Adam Borowski
+28fc8de2ec83 exec: Limit arg stack to at most 75% of _STK_LIM by Kees Cook
+b9f3b6c6c38b fs/exec.c: account for argv/envp pointers by Kees Cook
+46631f2d4daa kernel/extable.c: mark core_kernel_text notrace by Marcin Nowakowski
+0152f3a2a2cb cfg80211: Check if PMKID attribute is of expected size by Srinivas Dasari
+6b59cf04490b cfg80211: Validate frequencies nested in NL80211_ATTR_SCAN_FREQUENCIES by Srinivas Dasari
+34da6d027d49 cfg80211: Define nla_policy for NL80211_ATTR_LOCAL_MESH_POWER_MODE by Srinivas Dasari
+5a0f249263e8 ipv6: avoid unregistering inet6_dev for loopback by WANG Cong
+b243363c61a0 ipv6: dad: don't remove dynamic addresses if link is down by Sabrina Dubroca
+d63ba2e4232e ipv6: always add flag an address that failed DAD with DADFAILED by Lubomir Rintel
+f6240a2e5bcb arch: Remove CONFIG_IPV6_PRIVACY by Nathan Chancellor
+6acc8c9362f0 ipv6: Remove privacy config option. by David S. Miller
+54191f764ab4 net: prevent sign extension in dev_get_stats() by Eric Dumazet
+34d63353e3a0 tcp: reset sk_rx_dst in tcp_disconnect() by WANG Cong
+a603b1d48754 cpufreq: cpu-boost: Make cpufreq wq unbound by Pranav Vashi
+a3341986194a block: iosched_switcher: Use power efficient workqueues by Nathan Chancellor
+43fcf1cb7540 PM / devfreq: Use power efficient wq for unboost fn by Pranav Vashi
+e9ca2cf91034 PM / devfreq: Use reliable state notifier by Pranav Vashi
+70fd418ff6a3 Flash Kernel 2.1 beta 3 by Nathan Chancellor
+b945c0b02b77 ANDROID: uid_sys_stats: defer io stats calulation for dead tasks by Jin Qian
+4ac9bafd0717 ANDROID: uid_sys_stats: fix access of task_uid(task) by Ganesh Mahendran
+6a500b973315 ANDROID: uid_sys_stats: reduce update_io_stats overhead by Jin Qian
+b46816a3933b ANDROID: uid_sys_stats: fix typo in init by Jin Qian
+ec7399781c0a ANDROID: uid_sys_stats: change to use rt_mutex by Wei Wang
+7bdbfd2a3b0f ANDROID: uid_sys_stats: account for fsync syscalls by Jin Qian
+c0324bc231ca ANDROID: sched: add a counter to track fsync by Jin Qian
+15ab25e12b5d ANDROID: uid_sys_stats: fix negative write bytes. by Jin Qian
+5abb3d39dbd7 ANDROID: uid_sys_stats: remove unnecessary code in procstat switch by Jin Qian
+e3001b1ce421 ANDROID: uid_sys_stats: return full size when state is not changed. by Jin Qian
+ee6f886f8f8a ANDROID: uid_sys_stats: allow writing same state by Jin Qian
+197f6f7e7a8c flash_defconfig: Update UID_SYS_STATS by Nathan Chancellor
+0cd9d15616a8 misc: kconfig: Update UID_SYS_STATS to depend on TASKSTATS by Nathan Chancellor
+608c43ce4052 ANDROID: uid_sys_stats: rename uid_cputime.c to uid_sys_stats.c by Jin Qian
+25f2fcd25500 ANDROID: uid_cputime: add per-uid IO usage accounting by Jin Qian
+c0f063607a87 Flash Kernel 2.1 beta 2 by Nathan Chancellor
+0896e40e0d5d msm: sps: Fix race condition in SPS debugfs APIs by Siva Kumar Akkireddi
+9139b24ebc7a soc: qcom: msm_bus: add mutex lock for cllist data by Maria Yu
+f3b409f2804b msm : mdss: fix unaligned access problem by Harsh Sahu
+0df24ac64ce5 msm: camera: Use mutex lock to avoid race condition by VijayaKumar T M
+bd691bc932dd msm: camera: validate num_streams in stream_cfg_cmd before using it by Gaoxiang Chen
+033f42512eab msm: vidc: Copy user buffers to kernel memory before access by Surajit Podder
+6e1536686a07 msm: msm_bus: Add mutex to protect node_list by David Dai
+d7ef3b632a7a usb : dwc3: Initialize kernel stack variables properly by Sai Krishna Juturi
+d54135fdd6b4 input: touchscreen: remove data pointer from driver structure by Shantanu Jain
+ee8b48133e37 input: synaptics: fix for buggy code poined by SIL tool by Andrew Chant
+f856929ea553 msm: mdss: Buffer overflow while processing gamut table data by Bharath Gopal
+bf032b769239 drivers: soc: qcom: rpm_stats: Add mutex lock for shared data by Naresh Malladi
+71495969ad99 ipv6: addrconf: validate new MTU before applying it by Marcelo Leitner
+062158a3b618 msm: camera: fix untrusted pointer for power down setting by Haibin Liu
+eb85e43dbdd4 soc: qcom: rpm-smd-debug: initialize variables and check for return value by Naresh Malladi
+ecdfc0b98b89 msm: isp: Avoid unaligned register access by Abhishek Kondaveeti
+f4142ba64755 ASoC: msm: remove unused msm-compr-q6-v2 by Xiaojun Sang
+7cf455fd9e9a msm: camera: Allow driver file to be opend only once. by Trishansh Bhardwaj
+2c23602c49d8 mmc: card: block: check the user controlled parameters to avoid overflow by Siba Prasad
+6aefbf279bb9 msm: rmnet_ipa: fix memory overflow issue by Skylar Chang
+013a8abd4dcb crypto: msm: check invalid src and dst vbuf in qcedev.c by Zhen Kong
+248190e52fac msm: camera: Prevent info leak in kernel driver. by VijayaKumar T M
+0662554feb8b Flash Kernel 2.1 beta 1 by Nathan Chancellor
+4c366e352ca8 include/linux/kernel.h: change abs() macro so it uses consistent return type by Michal Nazarewicz
+c1c149a2a321 kernel.h: make abs() work with 64-bit types by Michal Nazarewicz
+4a0d3bbaca2d xhci: Manually give back cancelled URB if we can't queue it for cancel by Mathias Nyman
+b739d6b0db21 af_key: Add lock to key dump by Yuejie Shi
+089193366d6f sched/loadavg: Avoid loadavg spikes caused by delayed NO_HZ accounting by Matt Fleming
+5abea8313443 mmc: sdhci: Disable runtime pm when the sdio_irq is enabled by Hans de Goede
+16aa597c593c netfilter: nf_nat_snmp: Fix panic when snmp_trap_helper fails to register by Gao Feng
+ff9e2c217ae4 net: ipv6: send unsolicited NA if enabled for all interfaces by David Ahern
+0378d70545ea f2fs: Don't clear SGID when inheriting ACLs by Jaegeuk Kim

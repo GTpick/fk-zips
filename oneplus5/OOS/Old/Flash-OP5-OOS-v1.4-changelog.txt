@@ -1,0 +1,61 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos
+
+1cb5819eaab2 Merge branch '7.1.x-base' into 7.1.x-flash-oos by Nathan Chancellor
+ded9c624dacc Linux 4.4.85 by Greg Kroah-Hartman
+29d26f315b3b ACPI / APEI: Add missing synchronize_rcu() on NOTIFY_SCI removal by James Morse
+152fd11cf9bc ACPI: ioapic: Clear on-stack resource before using it by Joerg Roedel
+3b27da6a5f24 ntb_transport: fix bug calculating num_qps_mw by Logan Gunthorpe
+b2bf7b5aed55 ntb_transport: fix qp count bug by Logan Gunthorpe
+bdc0fba03168 ASoC: rsnd: don't call update callback if it was NULL by Kuninori Morimoto
+6c2d62be1791 ASoC: rsnd: ssi: 24bit data needs right-aligned settings by Kuninori Morimoto
+dace068837ea ASoC: rsnd: Add missing initialization of ADG req_rate by Geert Uytterhoeven
+f5d0a366c335 ASoC: rsnd: avoid pointless loop in rsnd_mod_interrupt() by Kuninori Morimoto
+28352b2684cf ASoC: rsnd: disable SRC.out only when stop timing by Kuninori Morimoto
+192ff70e3708 ASoC: simple-card: don't fail if sysclk setting is not supported by Aaro Koskinen
+bec284e83ee9 staging: rtl8188eu: add RNX-N150NUB support by Charles Milette
+48c1ecf2ce66 iio: hid-sensor-trigger: Fix the race with user space powering up sensors by Srinivas Pandruvada
+0188dd1fad82 iio: imu: adis16480: Fix acceleration scale factor for adis16480 by Dragos Bogdan
+cd24e21ce102 ANDROID: binder: fix proc->tsk check. by Martijn Coenen
+645e9a082936 Bluetooth: bnep: fix possible might sleep error in bnep_session by Jeffy Chen
+4c9f65f2b89f Bluetooth: cmtp: fix possible might sleep error in cmtp_session by Jeffy Chen
+70c547659b80 Bluetooth: hidp: fix possible might sleep error in hidp_session_thread by Jeffy Chen
+c6c5489dfa40 perf/core: Fix group {cpu,task} validation by Mark Rutland
+26d40fbc26d0 nfsd: Limit end of page list when decoding NFSv4 WRITE by Chuck Lever
+e7a50ae818d2 cifs: return ENAMETOOLONG for overlong names in cifs_open()/cifs_lookup() by Ronnie Sahlberg
+1cc7418f3df5 cifs: Fix df output for users with quota limits by Sachin Prabhu
+d88869e1fa70 tracing: Fix freeing of filter in create_filter() when set_str is false by Steven Rostedt (VMware)
+a4a7122577d7 drm: rcar-du: Fix H/V sync signal polarity configuration by Koji Matsuoka
+b2e9fd5ac513 drm: rcar-du: Fix display timing controller parameter by Koji Matsuoka
+ee2ef8d907c3 drm: rcar-du: Fix crash in encoder failure error path by Laurent Pinchart
+e8e7ef2c831f drm: rcar-du: lvds: Rename PLLEN bit to PLLON by Laurent Pinchart
+ca7b62765380 drm: rcar-du: lvds: Fix PLL frequency-related configuration by Laurent Pinchart
+c9132f5bb37f drm/atomic: If the atomic check fails, return its value first by Maarten Lankhorst
+5c089ab52c2a drm: Release driver tracking before making the object available again by Chris Wilson
+b3f48179c5bc i2c: designware: Fix system suspend by Ulf Hansson
+af1abfdf13e8 ARCv2: PAE40: Explicitly set MSB counterpart of SLC region ops addresses by Alexey Brodkin
+762e406a359a ALSA: hda - Add stereo mic quirk for Lenovo G50-70 (17aa:3978) by Takashi Iwai
+7d0ea3d7d554 ALSA: core: Fix unexpected error at replacing user TLV by Takashi Iwai
+ed59001c9971 Input: elan_i2c - add ELAN0602 ACPI ID to support Lenovo Yoga310 by KT Liao
+a79909a7a59e Input: trackpoint - add new trackpoint firmware ID by Aaron Ma
+acc92a1aab1c mei: me: add lewisburg device ids by Tomas Winkler
+42bb7bf35bb9 mei: me: add broxton pci device ids by Tomas Winkler
+3ecaab0f0d96 net_sched: fix order of queue length updates in qdisc_replace() by Konstantin Khlebnikov
+3097581dafca net: sched: fix NULL pointer dereference when action calls some targets by Xin Long
+3bc190579481 irda: do not leak initialized list.dev to userspace by Colin Ian King
+b1398f5fc1e1 tcp: when rearming RTO, if RTO time is in past then fire RTO ASAP by Neal Cardwell
+916e2d6d1c5a ipv6: repair fib6 tree in failure case by Wei Wang
+7f7fc9b9d5ab ipv6: reset fn->rr_ptr when replacing route by Wei Wang
+b40fbff171c4 tipc: fix use-after-free by Eric Dumazet
+a4e4e732ca05 sctp: fully initialize the IPv6 address in sctp_v6_to_addr() by Alexander Potapenko
+a92c6397d913 ipv4: better IP_MAX_MTU enforcement by Eric Dumazet
+b6a0d4bb3864 net_sched/sfq: update hierarchical backlog when drop packet by Konstantin Khlebnikov
+8cafd8e538b7 ipv4: fix NULL dereference in free_fib_info_rcu() by Eric Dumazet
+a0c9372f473b dccp: defer ccid_hc_tx_delete() at dismantle time by Eric Dumazet
+4682945211f3 dccp: purge write queue in dccp_destroy_sock() by Eric Dumazet
+efebd6dff86d af_key: do not use GFP_KERNEL in atomic contexts by Eric Dumazet
+116020f2794b Remove BFQ and move CFQ back to raw jiffies by Nathan Chancellor
+
+
+http://github.com/nathanchance/AnyKernel2/commits/oneplus5-flash-public-7.1.x
+
+adaa6d91d8ea Ramdisk: Remove BFQ by Nathan Chancellor

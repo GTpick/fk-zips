@@ -1,0 +1,1477 @@
+
+Title: Revert "printk: Add sys kernel interface to configure linux printk logging"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sat, 27 May 2017 13:30:52 -0700
+Link: http://github.com/nathanchance/angler/commit/5ca01f5334a0f1602fe38cccbcc414db9024c3b5
+Added on: Sat, 27 May 2017 13:30:52 -0700
+
+
+Title: ext4: Fix data corruption for mmap writes
+Author: Jan Kara <jack@suse.cz>
+Authored on: Thu, 25 May 2017 11:46:22 -0400
+Link: http://github.com/nathanchance/angler/commit/b0f51c091a52f5cdfffa255514c862fae735add6
+Added on: Sat, 27 May 2017 11:51:12 -0700
+
+
+Title: power: bcl: Update threshold type before queuing hotplug work
+Author: Manaf Meethalavalappu Pallikunhi <manafm@codeaurora.org>
+Authored on: Mon, 20 Apr 2015 12:50:25 +0530
+Link: http://github.com/nathanchance/angler/commit/6cbeb61f4ecb0dec4a19dfa1de0c6c1830994ae8
+Added on: Sat, 27 May 2017 11:51:12 -0700
+
+
+Title: flash_defconfig: Disable CONFIG_LAZYPLUG
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Fri, 26 May 2017 10:18:17 -0700
+Link: http://github.com/nathanchance/angler/commit/bcc99e5b386bb1c95a6566d98b62bf0b8d633818
+Added on: Fri, 26 May 2017 10:18:17 -0700
+
+
+Title: GCC 7.x: Fix all remaining warnings
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 25 May 2017 02:27:17 -0700
+Link: http://github.com/nathanchance/angler/commit/e4e3e528c84ae0272bbaf3f66277ab088cc4a444
+Added on: Thu, 25 May 2017 12:21:47 -0700
+
+
+Title: GCC 7.x: Makefile: Disable format-truncation globally
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 25 May 2017 01:31:45 -0700
+Link: http://github.com/nathanchance/angler/commit/89026187c8e4b7b47a2768b79cd3f56d539ed56c
+Added on: Thu, 25 May 2017 12:01:21 -0700
+
+
+Title: GCC 7.x: Makefile: Fix device not booting
+Author: ZaneZam <cyxman@yahoo.com>
+Authored on: Thu, 6 Apr 2017 21:47:13 +0200
+Link: http://github.com/nathanchance/angler/commit/0dd20af1f14236a5360e49d5959a01ffb79b0bec
+Added on: Thu, 25 May 2017 11:54:21 -0700
+
+
+Title: ANDROID: uid_sys_stats: defer io stats calulation for dead tasks
+Author: Jin Qian <jinqian@google.com>
+Authored on: Mon, 22 May 2017 12:08:06 -0700
+Link: http://github.com/nathanchance/angler/commit/b8b3b00e16ee809a1d4a599cb5922cbd3be1c6bb
+Added on: Thu, 25 May 2017 11:54:20 -0700
+
+
+Title: ANDROID: uid_sys_stats: fix access of task_uid(task)
+Author: Ganesh Mahendran <opensource.ganesh@gmail.com>
+Authored on: Tue, 25 Apr 2017 18:07:43 +0800
+Link: http://github.com/nathanchance/angler/commit/aedb1af652f79ef121b94b8950d9386f2a497497
+Added on: Thu, 25 May 2017 11:54:20 -0700
+
+
+Title: ANDROID: uid_sys_stats: reduce update_io_stats overhead
+Author: Jin Qian <jinqian@google.com>
+Authored on: Thu, 13 Apr 2017 17:07:58 -0700
+Link: http://github.com/nathanchance/angler/commit/ed64e447ad95655dca576411db819f1b44f81e5f
+Added on: Thu, 25 May 2017 11:54:20 -0700
+
+
+Title: Lazyplug: Don't run lazyplug_enter_lazy if not active
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 25 May 2017 10:34:09 -0700
+Link: http://github.com/nathanchance/angler/commit/ecd75c2d2fe9da55875d1308b9b54118e65666df
+Added on: Thu, 25 May 2017 11:54:19 -0700
+
+
+Title: proc: Remove additional SafetyNet flags from /proc/cmdline
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Mon, 22 May 2017 15:41:38 -0700
+Link: http://github.com/nathanchance/angler/commit/a86003aa7daab61df0dad49e7ea956f23374815c
+Added on: Thu, 25 May 2017 11:53:01 -0700
+
+
+Title: proc: Remove verifiedbootstate flag from /proc/cmdline
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Fri, 21 Oct 2016 01:37:16 -0700
+Link: http://github.com/nathanchance/angler/commit/4f336c2b6026edbbaebd486b8ae1c09cb4d29b0f
+Added on: Thu, 25 May 2017 11:53:00 -0700
+
+
+Title: Revert "SafetyNet bypass: Show androidboot.verifiedbootstate=green"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 25 May 2017 00:26:40 -0700
+Link: http://github.com/nathanchance/angler/commit/4f032a22bebcdd9db999910926c6fcd564c71e96
+Added on: Thu, 25 May 2017 11:53:00 -0700
+
+
+Title: CHROMIUM: add vmstat counts for different page fault types
+Author: Luigi Semenzato <semenzato@chromium.org>
+Authored on: Thu, 6 Apr 2017 14:32:27 -0700
+Link: http://github.com/nathanchance/angler/commit/a3892bb047d848e6b20cd011954db5c9a13d5a3d
+Added on: Wed, 24 May 2017 17:33:30 -0700
+
+
+Title: zram: update documentation
+Author: Sergey SENOZHATSKY <sergey.senozhatsky@gmail.com>
+Authored on: Thu, 24 Sep 2015 18:56:41 +0900
+Link: http://github.com/nathanchance/angler/commit/e03d5bafb30ddbda62b43836bd1c5244ba522fcd
+Added on: Wed, 24 May 2017 17:33:30 -0700
+
+
+Title: zram: revalidate disk under init_lock
+Author: Minchan Kim <minchan@kernel.org>
+Authored on: Tue, 10 Jan 2017 16:58:18 -0800
+Link: http://github.com/nathanchance/angler/commit/f6e48fefc0c4d26914439eca433638c31e18b253
+Added on: Wed, 24 May 2017 17:33:29 -0700
+
+
+Title: pid_ns: Sleep in TASK_INTERRUPTIBLE in zap_pid_ns_processes
+Author: Eric W. Biederman <ebiederm@xmission.com>
+Authored on: Thu, 11 May 2017 18:21:01 -0500
+Link: http://github.com/nathanchance/angler/commit/06d0c0956635b94d101e918807ab56740441bc08
+Added on: Wed, 24 May 2017 17:33:29 -0700
+
+
+Title: fs: compat: Remove warning from COMPATIBLE_IOCTL
+Author: Mark Charlebois <charlebm@gmail.com>
+Authored on: Fri, 28 Apr 2017 15:15:12 -0700
+Link: http://github.com/nathanchance/angler/commit/c041f5743003d2f95562c030cc02f0778d05f293
+Added on: Wed, 24 May 2017 17:33:29 -0700
+
+
+Title: CHROMIUM: net: xt_qtaguid: Remove unnecessary check for in_ifaddr.ifa_label != NULL
+Author: Matthias Kaehlcke <mka@chromium.org>
+Authored on: Tue, 11 Apr 2017 15:10:09 -0700
+Link: http://github.com/nathanchance/angler/commit/62478b0284961f3548b034ce0b238fbd1ef2304e
+Added on: Wed, 24 May 2017 17:33:28 -0700
+
+
+Title: dm ioctl: remove double parentheses
+Author: Matthias Kaehlcke <mka@chromium.org>
+Authored on: Mon, 17 Apr 2017 11:05:03 -0700
+Link: http://github.com/nathanchance/angler/commit/8fd582581748898a0b4b244947e506679d702a0c
+Added on: Wed, 24 May 2017 17:33:28 -0700
+
+
+Title: CHROMIUM: mm: lower oom dump burst limit to 1
+Author: Sonny Rao <sonnyrao@chromium.org>
+Authored on: Tue, 9 May 2017 14:58:01 -0700
+Link: http://github.com/nathanchance/angler/commit/7a1f9d9759d9a190789f47e154be361df9c2cfdc
+Added on: Wed, 24 May 2017 17:33:27 -0700
+
+
+Title: jiffies.h: declare jiffies and jiffies_64 with ____cacheline_aligned_in_smp
+Author: Matthias Kaehlcke <mka@chromium.org>
+Authored on: Mon, 8 May 2017 15:55:05 -0700
+Link: http://github.com/nathanchance/angler/commit/e32d54e0d1cd4240fbfec79f6982333340db7ee4
+Added on: Wed, 24 May 2017 17:33:27 -0700
+
+
+Title: CHROMIUM: android: binder: reset BINDER_LOOPER_STATE_NEED_RETURN earlier
+Author: Dmitry Torokhov <dtor@chromium.org>
+Authored on: Wed, 3 May 2017 16:22:24 -0700
+Link: http://github.com/nathanchance/angler/commit/b26b72b662f54ee18bb26c083e5db2904a1742d7
+Added on: Wed, 24 May 2017 01:14:40 -0700
+
+
+Title: CHROMIUM: android: binder: get rid of BINDER_LOOPER_STATE_WAITING
+Author: Dmitry Torokhov <dtor@chromium.org>
+Authored on: Mon, 1 May 2017 11:54:32 -0700
+Link: http://github.com/nathanchance/angler/commit/eb44623686984a1541085e1ecc9fe219dfda0f38
+Added on: Wed, 24 May 2017 01:12:55 -0700
+
+
+Title: FROMLIST: android: binder: check result of binder_get_thread() in binder_poll()
+Author: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+Authored on: Mon, 8 May 2017 13:43:23 -0700
+Link: http://github.com/nathanchance/angler/commit/589f1091ac44d8f7f22412b900f67061207e910e
+Added on: Wed, 24 May 2017 01:05:35 -0700
+
+
+Title: sysctl: Drop reference added by grab_header in proc_sys_readdir
+Author: Zhou Chengming <zhouchengming1@huawei.com>
+Authored on: Fri, 6 Jan 2017 09:32:32 +0800
+Link: http://github.com/nathanchance/angler/commit/b043242fe9e6e08ff95c04dcf39c94682e4d0884
+Added on: Wed, 24 May 2017 00:58:43 -0700
+
+
+Title: [readdir] convert procfs
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Thu, 16 May 2013 12:07:31 -0400
+Link: http://github.com/nathanchance/angler/commit/35f0b6b304de6e5e4c2f52252e4b897fbed003ed
+Added on: Wed, 24 May 2017 00:58:42 -0700
+
+
+Title: [readdir] switch dcache_readdir() users to ->iterate()
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Wed, 15 May 2013 20:23:06 -0400
+Link: http://github.com/nathanchance/angler/commit/9a1b203de4bca052549bbf4719cf4df7ff128af1
+Added on: Wed, 24 May 2017 00:58:38 -0700
+
+
+Title: sock: tigthen lockdep checks for sock_owned_by_user
+Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
+Authored on: Fri, 8 Apr 2016 15:11:27 +0200
+Link: http://github.com/nathanchance/angler/commit/f511599d02f033e07b0d646d304ac3c6796e9227
+Added on: Tue, 23 May 2017 23:34:42 -0700
+
+
+Title: net: Fix build failure due to lockdep_sock_is_held().
+Author: David S. Miller <davem@davemloft.net>
+Authored on: Thu, 7 Apr 2016 20:40:25 -0400
+Link: http://github.com/nathanchance/angler/commit/63898d51580cbe3c8d949a55d529d637c086eacc
+Added on: Tue, 23 May 2017 23:34:34 -0700
+
+
+Title: sock: make lockdep_sock_is_held static inline
+Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
+Authored on: Thu, 7 Apr 2016 23:53:35 +0200
+Link: http://github.com/nathanchance/angler/commit/c9357b3d5b3f8e26b156da68f83bb5118cf7b2af
+Added on: Tue, 23 May 2017 23:34:23 -0700
+
+
+Title: net: introduce lockdep_is_held and update various places to use it
+Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
+Authored on: Tue, 5 Apr 2016 17:10:15 +0200
+Link: http://github.com/nathanchance/angler/commit/1be8cd38eab4a94d9a8cff79ec0a711d317db038
+Added on: Tue, 23 May 2017 23:34:04 -0700
+
+
+Title: ANDROID: sdcardfs: Check for NULL in revalidate
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Mon, 22 May 2017 13:23:56 -0700
+Link: http://github.com/nathanchance/angler/commit/09110b43cc62bb1d8cad879b675fd1b24e13d85d
+Added on: Tue, 23 May 2017 23:27:03 -0700
+
+
+Title: sched/topology: Rename sched_group_cpus()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Mon, 1 May 2017 11:03:12 +0200
+Link: http://github.com/nathanchance/angler/commit/34aa87e6d1eb9007da67acaa335f6ffe644a116d
+Added on: Tue, 23 May 2017 23:20:01 -0700
+
+
+Title: sched/topology: Rename sched_group_mask()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Mon, 1 May 2017 10:47:02 +0200
+Link: http://github.com/nathanchance/angler/commit/0c4991f330c4e844c7c8831c418c9e3f0a07ad76
+Added on: Tue, 23 May 2017 23:11:55 -0700
+
+
+Title: sched/topology: Simplify sched_group_mask() usage
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Mon, 1 May 2017 08:51:05 +0200
+Link: http://github.com/nathanchance/angler/commit/66544ea6b7824b3437b481e5ef42cdcc5472ac39
+Added on: Tue, 23 May 2017 21:57:05 -0700
+
+
+Title: sched/topology: Rewrite get_group()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Wed, 3 May 2017 14:18:06 +0200
+Link: http://github.com/nathanchance/angler/commit/e4d5cec8cf44b1ff2e193852e43c39b802304fd3
+Added on: Tue, 23 May 2017 21:31:40 -0700
+
+
+Title: sched/topology: Add a few comments
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 28 Apr 2017 10:54:26 +0200
+Link: http://github.com/nathanchance/angler/commit/920027ec1ba17f5f9ae9175b76793a189f0f1f9e
+Added on: Tue, 23 May 2017 21:14:13 -0700
+
+
+Title: sched/topology: Fix overlapping sched_group_capacity
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Tue, 25 Apr 2017 14:31:11 +0200
+Link: http://github.com/nathanchance/angler/commit/1edd6c3057a5dc94e5dda0a17e870a2b44efa400
+Added on: Tue, 23 May 2017 20:58:45 -0700
+
+
+Title: sched/topology: Add sched_group_capacity debugging
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Wed, 26 Apr 2017 17:35:35 +0200
+Link: http://github.com/nathanchance/angler/commit/de308ff4b2bc7af55e93b12cd00adaced764e033
+Added on: Tue, 23 May 2017 20:53:11 -0700
+
+
+Title: sched/topology: Small cleanup
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Tue, 25 Apr 2017 15:29:40 +0200
+Link: http://github.com/nathanchance/angler/commit/0c24e11f9efa22be97fa2bf7b0682f119dd7317b
+Added on: Tue, 23 May 2017 20:53:10 -0700
+
+
+Title: sched/topology: Fix overlapping sched_group_mask
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Tue, 25 Apr 2017 14:00:49 +0200
+Link: http://github.com/nathanchance/angler/commit/d5f9e35c0489f1f94b1e6aa3c6a973ffd7d8ef91
+Added on: Tue, 23 May 2017 20:53:10 -0700
+
+
+Title: sched/topology: Remove FORCE_SD_OVERLAP
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Wed, 26 Apr 2017 17:36:41 +0200
+Link: http://github.com/nathanchance/angler/commit/a0fcbcf5eecd9b986c003dfc9425c9c879a5e79d
+Added on: Tue, 23 May 2017 20:53:10 -0700
+
+
+Title: sched/topology: Move comment about asymmetric node setups
+Author: Lauro Ramos Venancio <lvenanci@redhat.com>
+Authored on: Thu, 20 Apr 2017 16:51:42 -0300
+Link: http://github.com/nathanchance/angler/commit/6267eaa9138a9018c2ed413fae3bcbe9129576f3
+Added on: Tue, 23 May 2017 20:53:10 -0700
+
+
+Title: sched/topology: Optimize build_group_mask()
+Author: Lauro Ramos Venancio <lvenanci@redhat.com>
+Authored on: Thu, 20 Apr 2017 16:51:40 -0300
+Link: http://github.com/nathanchance/angler/commit/918bb48e54364f302980b6a9e580fb43e51619ca
+Added on: Tue, 23 May 2017 20:53:09 -0700
+
+
+Title: sched/topology: Verify the first group matches the child domain
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 14 Apr 2017 18:20:48 +0200
+Link: http://github.com/nathanchance/angler/commit/b5b41cb7bcc4378f655f801ef7a3df66200cb8ba
+Added on: Tue, 23 May 2017 20:53:09 -0700
+
+
+Title: sched/topology: Simplify build_overlap_sched_groups()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 14 Apr 2017 17:32:07 +0200
+Link: http://github.com/nathanchance/angler/commit/7efd3cec9faefbba2c2becb83397c635c36ed714
+Added on: Tue, 23 May 2017 20:53:09 -0700
+
+
+Title: sched/topology: Fix building of overlapping sched-groups
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 14 Apr 2017 17:24:02 +0200
+Link: http://github.com/nathanchance/angler/commit/0641db55fe80cce0bc2a9bb38603df32f0233457
+Added on: Tue, 23 May 2017 20:53:08 -0700
+
+
+Title: sched/fair, cpumask: Export for_each_cpu_wrap()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 14 Apr 2017 14:20:05 +0200
+Link: http://github.com/nathanchance/angler/commit/49e4d542c242832f0cbdf54f3d59a7067fbfc9e6
+Added on: Tue, 23 May 2017 20:53:08 -0700
+
+
+Title: sched/topology: Refactor function build_overlap_sched_groups()
+Author: Lauro Ramos Venancio <lvenanci@redhat.com>
+Authored on: Thu, 13 Apr 2017 10:56:07 -0300
+Link: http://github.com/nathanchance/angler/commit/930316beec85eb20fd36f924b64a9b25647575ea
+Added on: Tue, 23 May 2017 20:52:09 -0700
+
+
+Title: drivers: char: mem: Check for address space wraparound with mmap()
+Author: Julius Werner <jwerner@chromium.org>
+Authored on: Fri, 12 May 2017 14:42:58 -0700
+Link: http://github.com/nathanchance/angler/commit/81ebe2bd88adab749fd66b25a75fe50c758bfe24
+Added on: Mon, 22 May 2017 23:13:07 -0700
+
+
+Title: watchdog: pcwd_usb: fix NULL-deref at probe
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Mon, 13 Mar 2017 13:49:45 +0100
+Link: http://github.com/nathanchance/angler/commit/cf412b9b062f91a685c99317cbfada9bfa9f4c84
+Added on: Mon, 22 May 2017 23:13:06 -0700
+
+
+Title: USB: hub: fix non-SS hub-descriptor handling
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Wed, 10 May 2017 18:18:28 +0200
+Link: http://github.com/nathanchance/angler/commit/d2f808654f5a62713afd52c5851fc7cb1a032c5e
+Added on: Mon, 22 May 2017 23:13:06 -0700
+
+
+Title: USB: hub: fix SS hub-descriptor handling
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Wed, 10 May 2017 18:18:27 +0200
+Link: http://github.com/nathanchance/angler/commit/b0dbc52a63f913b39ac44f3dc17bccfe82ea1047
+Added on: Mon, 22 May 2017 23:13:06 -0700
+
+
+Title: USB: iowarrior: fix info ioctl on big-endian hosts
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Thu, 11 May 2017 11:36:02 +0200
+Link: http://github.com/nathanchance/angler/commit/4f0ad959add1c4d4b6e089b52eeaf553228a69e1
+Added on: Mon, 22 May 2017 23:13:05 -0700
+
+
+Title: uwb: fix device quirk on big-endian hosts
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Fri, 12 May 2017 12:06:32 +0200
+Link: http://github.com/nathanchance/angler/commit/2340e987bd08ff763cd3d2f619526400e1aab1d2
+Added on: Mon, 22 May 2017 23:13:05 -0700
+
+
+Title: USB: core: replace %p with %pK
+Author: Vamsi Krishna Samavedam <vskrishn@codeaurora.org>
+Authored on: Tue, 16 May 2017 14:38:08 +0200
+Link: http://github.com/nathanchance/angler/commit/6b7bea81eea214476a9ed5d0635654c3625ad423
+Added on: Mon, 22 May 2017 23:13:05 -0700
+
+
+Title: USB: serial: io_ti: fix div-by-zero in set_termios
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Thu, 11 May 2017 11:41:21 +0200
+Link: http://github.com/nathanchance/angler/commit/26a89866c8cd634a01f04a1cfd1d3d5553b355bb
+Added on: Mon, 22 May 2017 23:13:04 -0700
+
+
+Title: USB: serial: mct_u232: fix big-endian baud-rate handling
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Thu, 11 May 2017 11:41:20 +0200
+Link: http://github.com/nathanchance/angler/commit/293c5d5a21bcb36cc4d1db204cb47dd21806a892
+Added on: Mon, 22 May 2017 23:13:04 -0700
+
+
+Title: ipv6: sctp: fix lockdep splat in sctp_v6_get_dst()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Mon, 7 Dec 2015 08:25:21 -0800
+Link: http://github.com/nathanchance/angler/commit/b7cd623cb5c3594c17736357a926f4916126e746
+Added on: Mon, 22 May 2017 19:36:38 -0700
+
+
+Title: ipv6: sctp: add rcu protection around np->opt
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 2 Dec 2015 21:48:14 -0800
+Link: http://github.com/nathanchance/angler/commit/090783beb237ab3c72b0b30247a00f8c379da326
+Added on: Mon, 22 May 2017 19:18:42 -0700
+
+
+Title: Bluetooth: Fix user channel for 32bit userspace on 64bit kernel
+Author: Szymon Janc <szymon.janc@codecoup.pl>
+Authored on: Mon, 24 Apr 2017 18:25:04 -0700
+Link: http://github.com/nathanchance/angler/commit/9abb57cdd81533b5bc1347e0e9c5e2c63f1a475b
+Added on: Mon, 22 May 2017 18:59:05 -0700
+
+
+Title: md/raid1: avoid reusing a resync bio after error handling.
+Author: NeilBrown <neilb@suse.com>
+Authored on: Thu, 6 Apr 2017 12:06:37 +1000
+Link: http://github.com/nathanchance/angler/commit/1ca15b78dd8c12ad0df4ebbece580c374729a67c
+Added on: Mon, 22 May 2017 18:58:46 -0700
+
+
+Title: usb: hub: Do not attempt to autosuspend disconnected devices
+Author: Guenter Roeck <linux@roeck-us.net>
+Authored on: Mon, 20 Mar 2017 14:30:50 -0700
+Link: http://github.com/nathanchance/angler/commit/72dc4d0ad4c587ab8686232c9892eb95f0e6a995
+Added on: Mon, 22 May 2017 18:51:01 -0700
+
+
+Title: dccp/tcp: do not inherit mc_list from parent
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Tue, 9 May 2017 06:29:19 -0700
+Link: http://github.com/nathanchance/angler/commit/dcf10a158b56f680b936dca03c3f90c792352f37
+Added on: Mon, 22 May 2017 17:42:45 -0700
+
+
+Title: ipv6/dccp: do not inherit ipv6_mc_list from parent
+Author: WANG Cong <xiyou.wangcong@gmail.com>
+Authored on: Tue, 9 May 2017 16:59:54 -0700
+Link: http://github.com/nathanchance/angler/commit/4242e896cd271905866abe26dfc709e502b704bc
+Added on: Mon, 22 May 2017 17:41:22 -0700
+
+
+Title: sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 17 May 2017 07:16:40 -0700
+Link: http://github.com/nathanchance/angler/commit/58a36f221f31eefcddeeab6c2881b3a2f45a4cd0
+Added on: Mon, 22 May 2017 17:38:18 -0700
+
+
+Title: ipv6: Prevent overrun when parsing v6 header options
+Author: Craig Gallek <kraig@google.com>
+Authored on: Tue, 16 May 2017 14:36:23 -0400
+Link: http://github.com/nathanchance/angler/commit/15584eb93d1dfd60c8b370233027b6698d909bb3
+Added on: Mon, 22 May 2017 17:37:31 -0700
+
+
+Title: kernel: Fix potential refcount leak in su check
+Author: Tom Marshall <tdm.code@gmail.com>
+Authored on: Thu, 18 May 2017 23:50:22 +0000
+Link: http://github.com/nathanchance/angler/commit/218069d8a1db84817ebddc86563eabe92f934a78
+Added on: Mon, 22 May 2017 12:36:31 -0700
+
+
+Title: Get rid of Intellithermal
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Mon, 22 May 2017 10:33:46 -0700
+Link: http://github.com/nathanchance/angler/commit/65355465e03b82ed0df467bd2a3b027796366450
+Added on: Mon, 22 May 2017 10:56:26 -0700
+
+
+Title: Drivers: Add Lazyplug guards
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Mon, 22 May 2017 00:34:28 -0700
+Link: http://github.com/nathanchance/angler/commit/48ad106f0ed4a9f00b5e408b40f497b13f9a1459
+Added on: Mon, 22 May 2017 10:56:25 -0700
+
+
+Title: ext4: enforce online defrag restriction for encrypted files
+Author: Eric Whitney <enwlinux@gmail.com>
+Authored on: Mon, 29 Aug 2016 15:45:11 -0400
+Link: http://github.com/nathanchance/angler/commit/27bab273fa075becf0e064a1febc4365297f48e6
+Added on: Mon, 22 May 2017 10:56:25 -0700
+
+
+Title: ext4: validate s_reserved_gdt_blocks on mount
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Tue, 5 Jul 2016 20:01:52 -0400
+Link: http://github.com/nathanchance/angler/commit/bc46564f2dfe6694590aba5508a3ed38f12f57df
+Added on: Mon, 22 May 2017 10:56:25 -0700
+
+
+Title: ext4: fix oops on corrupted filesystem
+Author: Jan Kara <jack@suse.cz>
+Authored on: Thu, 5 May 2016 11:10:15 -0400
+Link: http://github.com/nathanchance/angler/commit/66b2a5e3c2e65551e73f3c82e741beecff57bca3
+Added on: Mon, 22 May 2017 10:56:24 -0700
+
+
+Title: ext4: clean up error handling when orphan list is corrupted
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sat, 30 Apr 2016 00:49:54 -0400
+Link: http://github.com/nathanchance/angler/commit/92d3258db483b3e340bb9de4a77f030fafef2929
+Added on: Mon, 22 May 2017 10:56:24 -0700
+
+
+Title: ext4: fix data exposure after a crash
+Author: Jan Kara <jack@suse.cz>
+Authored on: Sun, 24 Apr 2016 00:56:03 -0400
+Link: http://github.com/nathanchance/angler/commit/f5a1ed5bf8ee0903721b0c1b55212eb91bc62df1
+Added on: Mon, 22 May 2017 10:56:23 -0700
+
+
+Title: ext4/fscrypto: avoid RCU lookup in d_revalidate
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 12 Apr 2016 16:05:36 -0700
+Link: http://github.com/nathanchance/angler/commit/9308d1e156cd14fa386f7a916584f7ba3e63a47f
+Added on: Mon, 22 May 2017 10:56:23 -0700
+
+
+Title: ext4: ignore quota mount options if the quota feature is enabled
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sun, 3 Apr 2016 17:03:37 -0400
+Link: http://github.com/nathanchance/angler/commit/2e94b2bc8d1eef577cbaf4ba4b6ddc65b24adf80
+Added on: Mon, 22 May 2017 10:56:23 -0700
+
+
+Title: ext4: iterate over buffer heads correctly in move_extent_per_page()
+Author: Eryu Guan <guaneryu@gmail.com>
+Authored on: Sun, 21 Feb 2016 18:38:44 -0500
+Link: http://github.com/nathanchance/angler/commit/324e0578674237be2fc248dba7bd970c2a7681d7
+Added on: Mon, 22 May 2017 10:56:22 -0700
+
+
+Title: ext4: fix crashes in dioread_nolock mode
+Author: Jan Kara <jack@suse.cz>
+Authored on: Fri, 19 Feb 2016 00:33:21 -0500
+Link: http://github.com/nathanchance/angler/commit/4234160668e5d75c3a7ba0dcde26505a551509ea
+Added on: Mon, 22 May 2017 10:56:22 -0700
+
+
+Title: ext4: fix bh->b_state corruption
+Author: Jan Kara <jack@suse.com>
+Authored on: Fri, 19 Feb 2016 00:18:25 -0500
+Link: http://github.com/nathanchance/angler/commit/c9dfcc7ccf15740599e153301180a57c3bf544a9
+Added on: Mon, 22 May 2017 10:56:22 -0700
+
+
+Title: ext4: don't read blocks from disk after extents being swapped
+Author: Eryu Guan <guaneryu@gmail.com>
+Authored on: Fri, 12 Feb 2016 01:20:43 -0500
+Link: http://github.com/nathanchance/angler/commit/4e458d5f75ef159e08fe3b460f5da7ebdfece6b2
+Added on: Mon, 22 May 2017 10:56:21 -0700
+
+
+Title: ext4: bugfix for mmaped pages in mpage_release_unused_pages()
+Author: wangguang <wang.guang55@zte.com.cn>
+Authored on: Thu, 15 Sep 2016 11:32:46 -0400
+Link: http://github.com/nathanchance/angler/commit/31ea94d8f92149b9e1c640468f40b9404dce02b8
+Added on: Mon, 22 May 2017 10:56:21 -0700
+
+
+Title: ext4: return -ENOMEM instead of success
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Authored on: Sat, 10 Dec 2016 09:56:01 -0500
+Link: http://github.com/nathanchance/angler/commit/ef717e2c96fbb1c7c63c1afbdc84f6b519df5aff
+Added on: Mon, 22 May 2017 10:56:21 -0700
+
+
+Title: ext4: fix deadlock between inline_data and ext4_expand_extra_isize_ea()
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Wed, 11 Jan 2017 21:50:46 -0500
+Link: http://github.com/nathanchance/angler/commit/9acf02e09322cf301f37080bef4274ffe4ca530b
+Added on: Mon, 22 May 2017 10:56:20 -0700
+
+
+Title: ext4: avoid deadlock when expanding inode size
+Author: Jan Kara <jack@suse.cz>
+Authored on: Thu, 11 Aug 2016 12:38:55 -0400
+Link: http://github.com/nathanchance/angler/commit/324b5490b50bc1d1dea5126bdec10cecf2e09aec
+Added on: Mon, 22 May 2017 10:56:20 -0700
+
+
+Title: ext4: fix inline data error paths
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sat, 4 Feb 2017 23:04:00 -0500
+Link: http://github.com/nathanchance/angler/commit/53db54c8c9c34d16d4d9ff2f1c9c45b0d0014a3d
+Added on: Mon, 22 May 2017 10:56:19 -0700
+
+
+Title: ext4: lock the xattr block before checksuming it
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sat, 25 Mar 2017 17:22:47 -0400
+Link: http://github.com/nathanchance/angler/commit/a2dd53089bdbea05ce78193dc5608bff45355ee3
+Added on: Mon, 22 May 2017 10:56:19 -0700
+
+
+Title: md linear: fix a race between linear_add() and linear_congested()
+Author: colyli@suse.de <colyli@suse.de>
+Authored on: Sat, 28 Jan 2017 21:11:49 +0800
+Link: http://github.com/nathanchance/angler/commit/ac4e01c0fdd5244ef93787e1cf905b5f4cb2ae7e
+Added on: Mon, 22 May 2017 10:56:19 -0700
+
+
+Title: dm table: fix missing dm_put_target_type() in dm_table_add_target()
+Author: tang.junhui <tang.junhui@zte.com.cn>
+Authored on: Fri, 21 Oct 2016 09:35:32 +0800
+Link: http://github.com/nathanchance/angler/commit/15030c1c325944a2231e842c9e29281015deb3b9
+Added on: Mon, 22 May 2017 10:56:18 -0700
+
+
+Title: RAID10: ignore discard error
+Author: Shaohua Li <shli@fb.com>
+Authored on: Thu, 6 Oct 2016 14:13:52 -0700
+Link: http://github.com/nathanchance/angler/commit/3f34e294f4d8e8bd6b4dc3341550e0de6e7591b9
+Added on: Mon, 22 May 2017 10:56:18 -0700
+
+
+Title: md: be careful not lot leak internal curr_resync value into metadata. -- (all)
+Author: NeilBrown <neilb@suse.com>
+Authored on: Fri, 28 Oct 2016 15:59:41 +1100
+Link: http://github.com/nathanchance/angler/commit/87e95409705232ae9dd7054d293251296c61d8c4
+Added on: Mon, 22 May 2017 10:56:18 -0700
+
+
+Title: dm thin: grab a virtual cell before looking up the mapping
+Author: Joe Thornber <ejt@redhat.com>
+Authored on: Fri, 10 Oct 2014 09:41:09 +0100
+Link: http://github.com/nathanchance/angler/commit/2244d788e39d3a3f055416eb7d8531e7003c5c59
+Added on: Mon, 22 May 2017 10:56:17 -0700
+
+
+Title: dm thin: requeue bios to DM core if no_free_space and in read-only mode
+Author: Mike Snitzer <snitzer@redhat.com>
+Authored on: Thu, 5 Dec 2013 15:47:24 -0500
+Link: http://github.com/nathanchance/angler/commit/e54a7db0bde108d5056be794b50a1f1487a61804
+Added on: Mon, 22 May 2017 10:56:17 -0700
+
+
+Title: dm bufio: change __GFP_IO to __GFP_FS in shrinker callbacks
+Author: Mikulas Patocka <mpatocka@redhat.com>
+Authored on: Thu, 16 Oct 2014 14:45:20 -0400
+Link: http://github.com/nathanchance/angler/commit/99735ec8e24a73f21d24a86543d97329499a8c3a
+Added on: Mon, 22 May 2017 10:56:16 -0700
+
+
+Title: dm cache: fix race causing dirty blocks to be marked as clean
+Author: Anssi Hannula <anssi.hannula@iki.fi>
+Authored on: Fri, 5 Sep 2014 03:11:28 +0300
+Link: http://github.com/nathanchance/angler/commit/165952d3f203f965b68266826faf03ed39724aa9
+Added on: Mon, 22 May 2017 10:56:16 -0700
+
+
+Title: dm cache: fix race affecting dirty block count
+Author: Anssi Hannula <anssi.hannula@iki.fi>
+Authored on: Fri, 1 Aug 2014 11:55:47 -0400
+Link: http://github.com/nathanchance/angler/commit/accf543c90edc8b19544eaa2c92cada238085bc7
+Added on: Mon, 22 May 2017 10:56:16 -0700
+
+
+Title: dm cache: add block sizes and total cache blocks to status output
+Author: Mike Snitzer <snitzer@redhat.com>
+Authored on: Thu, 9 Jan 2014 16:04:12 -0500
+Link: http://github.com/nathanchance/angler/commit/663ffb36e0a2b8030a35ab026e1b85505a42176a
+Added on: Mon, 22 May 2017 10:56:15 -0700
+
+
+Title: dm bufio: fully initialize shrinker
+Author: Greg Thelen <gthelen@google.com>
+Authored on: Thu, 31 Jul 2014 09:07:19 -0700
+Link: http://github.com/nathanchance/angler/commit/a57b13ba5591b469d999262c677e9352c47131b1
+Added on: Mon, 22 May 2017 10:56:15 -0700
+
+
+Title: dm cache: fix a lock-inversion
+Author: Joe Thornber <ejt@redhat.com>
+Authored on: Thu, 3 Apr 2014 16:16:44 +0100
+Link: http://github.com/nathanchance/angler/commit/c607436bd95192aae5b7662c633311fc6f776480
+Added on: Mon, 22 May 2017 10:56:15 -0700
+
+
+Title: dm: take care to copy the space map roots before locking the superblock
+Author: Joe Thornber <ejt@redhat.com>
+Authored on: Thu, 27 Mar 2014 14:13:23 +0000
+Link: http://github.com/nathanchance/angler/commit/0dcc769800c8d3a6bb17ddef4af5be6eea1121c4
+Added on: Mon, 22 May 2017 10:56:14 -0700
+
+
+Title: dm cache: prevent corruption caused by discard_block_size > cache_block_size
+Author: Mike Snitzer <snitzer@redhat.com>
+Authored on: Thu, 20 Mar 2014 10:11:15 -0400
+Link: http://github.com/nathanchance/angler/commit/e0380495a4bb4d57b9b98dc8496dac33420b2432
+Added on: Mon, 22 May 2017 10:56:14 -0700
+
+
+Title: dm cache mq: fix memory allocation failure for large cache devices
+Author: Heinz Mauelshagen <heinzm@redhat.com>
+Authored on: Fri, 28 Feb 2014 12:02:56 -0500
+Link: http://github.com/nathanchance/angler/commit/f7aa9e97d6c798c50f7c1eddf7bff4fdde1723aa
+Added on: Mon, 22 May 2017 10:56:14 -0700
+
+
+Title: dm cache: fix truncation bug when mapping I/O to >2TB fast device
+Author: Heinz Mauelshagen <heinzm@redhat.com>
+Authored on: Thu, 27 Feb 2014 22:46:48 +0100
+Link: http://github.com/nathanchance/angler/commit/58cbf2148e05d2b21bdd52a45810b5166ae39e48
+Added on: Mon, 22 May 2017 10:56:13 -0700
+
+
+Title: dm mpath: fix stalls when handling invalid ioctls
+Author: Hannes Reinecke <hare@suse.de>
+Authored on: Wed, 26 Feb 2014 10:07:04 +0100
+Link: http://github.com/nathanchance/angler/commit/e2d3044e579c4330a7a5fc984f8d38b0adc87b1b
+Added on: Mon, 22 May 2017 10:56:13 -0700
+
+
+Title: f2fs: switch to using fscrypt_match_name()
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Mon, 24 Apr 2017 10:00:12 -0700
+Link: http://github.com/nathanchance/angler/commit/66c3daf34231108701b44e24f122039f420f9a11
+Added on: Mon, 22 May 2017 10:56:13 -0700
+
+
+Title: fscrypt: introduce helper function for filename matching
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Mon, 24 Apr 2017 10:00:10 -0700
+Link: http://github.com/nathanchance/angler/commit/cb880b1dbfb78cd95637ca2111c30a0044decb66
+Added on: Mon, 22 May 2017 10:56:12 -0700
+
+
+Title: fscrypt: fix context consistency check when key(s) unavailable
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Fri, 7 Apr 2017 10:58:37 -0700
+Link: http://github.com/nathanchance/angler/commit/796ae7ee480badc55461c11b36da83d394ec47d7
+Added on: Mon, 22 May 2017 10:56:12 -0700
+
+
+Title: fscrypt: Move key structure and constants to uapi
+Author: Joe Richey <joerichey@google.com>
+Authored on: Thu, 6 Apr 2017 16:14:05 -0700
+Link: http://github.com/nathanchance/angler/commit/4995fb552628a9e35c5f6deac8d82086dd40703e
+Added on: Mon, 22 May 2017 10:56:12 -0700
+
+
+Title: fscrypt: remove unnecessary checks for NULL operations
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Tue, 4 Apr 2017 14:39:41 -0700
+Link: http://github.com/nathanchance/angler/commit/0f176304973326c6e36b8eee2872d850fedf8235
+Added on: Mon, 22 May 2017 10:56:11 -0700
+
+
+Title: fscrypt: eliminate ->prepare_context() operation
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Wed, 22 Feb 2017 13:25:14 -0800
+Link: http://github.com/nathanchance/angler/commit/df6495ec2dc2b6815868a728598e44e0a48005de
+Added on: Mon, 22 May 2017 10:56:11 -0700
+
+
+Title: fscrypt: avoid collisions when presenting long encrypted filenames
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Mon, 24 Apr 2017 10:00:09 -0700
+Link: http://github.com/nathanchance/angler/commit/5b14d4bd8b7f3d44799032c105e3f4fab36f8b3c
+Added on: Mon, 22 May 2017 10:56:10 -0700
+
+
+Title: f2fs: sync f2fs_lookup() with ext4_lookup()
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Fri, 7 Apr 2017 10:58:39 -0700
+Link: http://github.com/nathanchance/angler/commit/60954ac59345419c13ca5c367a13836c6ec8d261
+Added on: Mon, 22 May 2017 10:56:10 -0700
+
+
+Title: f2fs: fix a mount fail for wrong next_scan_nid
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Wed, 26 Apr 2017 15:56:52 +0800
+Link: http://github.com/nathanchance/angler/commit/3a34b758255b15a88100c77ac74a2418e54d3073
+Added on: Mon, 22 May 2017 10:56:10 -0700
+
+
+Title: f2fs: relocate inode_{,un}lock in F2FS_IOC_SETFLAGS
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 3 May 2017 23:59:13 +0800
+Link: http://github.com/nathanchance/angler/commit/4cefcff8f550bb09417d949a3cc52d604aa3c806
+Added on: Mon, 22 May 2017 10:56:09 -0700
+
+
+Title: f2fs: show available_nids in f2fs/status
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Mon, 1 May 2017 18:13:03 -0700
+Link: http://github.com/nathanchance/angler/commit/bdf08991494602b4ecf7585505b08347181c8f9b
+Added on: Mon, 22 May 2017 10:56:09 -0700
+
+
+Title: f2fs: flush dirty nats periodically
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Mon, 1 May 2017 18:09:44 -0700
+Link: http://github.com/nathanchance/angler/commit/977e0fb068163139b1e306e925d8b7eca91b8445
+Added on: Mon, 22 May 2017 10:56:09 -0700
+
+
+Title: f2fs: introduce CP_TRIMMED_FLAG to avoid unneeded discard
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Fri, 28 Apr 2017 13:56:08 +0800
+Link: http://github.com/nathanchance/angler/commit/4f365a7c983ff578e24e91b89ce0150abaeb9e9f
+Added on: Mon, 22 May 2017 10:56:08 -0700
+
+
+Title: f2fs: allow cpc->reason to indicate more than one reason
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Thu, 27 Apr 2017 20:40:39 +0800
+Link: http://github.com/nathanchance/angler/commit/4e143247c43585fb553c5b4901dc84697c0a5e51
+Added on: Mon, 22 May 2017 10:56:08 -0700
+
+
+Title: f2fs: release cp and dnode lock before IPU
+Author: Hou Pengyang <houpengyang@huawei.com>
+Authored on: Thu, 27 Apr 2017 00:17:21 +0800
+Link: http://github.com/nathanchance/angler/commit/c83221df0740a04482270c587abf016c24c9c034
+Added on: Mon, 22 May 2017 10:56:07 -0700
+
+
+Title: f2fs: shrink size of struct discard_cmd
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 26 Apr 2017 17:39:55 +0800
+Link: http://github.com/nathanchance/angler/commit/d7f581a17df8f7c2f18add79268521cb1692f11f
+Added on: Mon, 22 May 2017 10:56:07 -0700
+
+
+Title: f2fs: don't hold cmd_lock during waiting discard command
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 26 Apr 2017 17:39:54 +0800
+Link: http://github.com/nathanchance/angler/commit/c871d16c94f1ffbb440f1e154fe07537fc1908d5
+Added on: Mon, 22 May 2017 10:56:07 -0700
+
+
+Title: f2fs: nullify fio->encrypted_page for each writes
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Wed, 26 Apr 2017 11:11:12 -0700
+Link: http://github.com/nathanchance/angler/commit/c0b7b651cf93cadf5fd700e355b1f829022e4169
+Added on: Mon, 22 May 2017 10:56:06 -0700
+
+
+Title: f2fs: introduce valid_ipu_blkaddr to clean up
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Mon, 24 Apr 2017 15:20:16 -0700
+Link: http://github.com/nathanchance/angler/commit/2da0ba87003c248836158c7ea95d2e0b6ebe82b1
+Added on: Mon, 22 May 2017 10:56:06 -0700
+
+
+Title: f2fs: lookup extent cache first under IPU scenario
+Author: Hou Pengyang <houpengyang@huawei.com>
+Authored on: Tue, 25 Apr 2017 12:45:13 +0000
+Link: http://github.com/nathanchance/angler/commit/ee2e1cb20b1896d6b26f21f22cece7d20fa8957d
+Added on: Mon, 22 May 2017 10:56:05 -0700
+
+
+Title: f2fs: reconstruct code to write a data page
+Author: Hou Pengyang <houpengyang@huawei.com>
+Authored on: Tue, 25 Apr 2017 12:45:12 +0000
+Link: http://github.com/nathanchance/angler/commit/e9acdec721613b9495f5b6a277769d3f4f4ea007
+Added on: Mon, 22 May 2017 10:56:05 -0700
+
+
+Title: f2fs: introduce __wait_discard_cmd
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 25 Apr 2017 20:21:38 +0800
+Link: http://github.com/nathanchance/angler/commit/9606971f103348603aa68be67e748d73b715834c
+Added on: Mon, 22 May 2017 10:56:05 -0700
+
+
+Title: f2fs: introduce __issue_discard_cmd
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 25 Apr 2017 20:21:37 +0800
+Link: http://github.com/nathanchance/angler/commit/f5b912eba1cd749c8d96438617e7f5786d62c261
+Added on: Mon, 22 May 2017 10:56:04 -0700
+
+
+Title: f2fs: enable small discard by default
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 25 Apr 2017 00:21:35 +0800
+Link: http://github.com/nathanchance/angler/commit/6167c8eb2a7c3945346e97f533a99fff0114d226
+Added on: Mon, 22 May 2017 10:56:04 -0700
+
+
+Title: f2fs: delay awaking discard thread
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 25 Apr 2017 00:21:34 +0800
+Link: http://github.com/nathanchance/angler/commit/56fd850692f09229885ec2bea6903417eebd5d0a
+Added on: Mon, 22 May 2017 10:56:04 -0700
+
+
+Title: f2fs: seperate read nat page from nat_tree_lock
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Sat, 22 Apr 2017 18:06:26 +0800
+Link: http://github.com/nathanchance/angler/commit/456ee8d6aaa076efb559ea122e7d250e621f2478
+Added on: Mon, 22 May 2017 10:56:03 -0700
+
+
+Title: f2fs: skip encrypted inode in ASYNC IPU policy
+Author: Hou Pengyang <houpengyang@huawei.com>
+Authored on: Fri, 21 Apr 2017 12:41:48 +0000
+Link: http://github.com/nathanchance/angler/commit/c1d44dfaa4a536edc532cc68641fda2220395880
+Added on: Mon, 22 May 2017 10:56:03 -0700
+
+
+Title: f2fs: improve definition of statistic macros
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Wed, 19 Apr 2017 19:38:33 +0200
+Link: http://github.com/nathanchance/angler/commit/d1e137204505bcacf2164613d5bc99197fcafeba
+Added on: Mon, 22 May 2017 10:56:02 -0700
+
+
+Title: f2fs: assign allocation hint for warm/cold data
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 18 Apr 2017 15:03:15 -0700
+Link: http://github.com/nathanchance/angler/commit/1956d9f04b4daf3f819104aa3626b5e26d93f4df
+Added on: Mon, 22 May 2017 10:56:02 -0700
+
+
+Title: f2fs: fix _IOW usage
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 18 Apr 2017 13:47:25 -0700
+Link: http://github.com/nathanchance/angler/commit/f535baffc47bc821ffc505eb719e8cd30db371b1
+Added on: Mon, 22 May 2017 10:56:02 -0700
+
+
+Title: f2fs: introduce async IPU policy
+Author: Hou Pengyang <houpengyang@huawei.com>
+Authored on: Tue, 18 Apr 2017 11:57:16 +0000
+Link: http://github.com/nathanchance/angler/commit/3b47b3bb24d09f57d85cbe2f416d209955537406
+Added on: Mon, 22 May 2017 10:56:01 -0700
+
+
+Title: f2fs: add undiscard blocks stat
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 18 Apr 2017 19:27:39 +0800
+Link: http://github.com/nathanchance/angler/commit/e7f21bce2fcab05735465b1cfcf70cb05a022c60
+Added on: Mon, 22 May 2017 10:56:01 -0700
+
+
+Title: f2fs: unlock cp_rwsem early for IPU writes
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 18 Apr 2017 19:23:39 +0800
+Link: http://github.com/nathanchance/angler/commit/dd00beb97e21892bc815471e5f2aac732b7417b8
+Added on: Mon, 22 May 2017 10:56:00 -0700
+
+
+Title: f2fs: introduce __check_rb_tree_consistence
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Mon, 17 Apr 2017 18:21:43 +0800
+Link: http://github.com/nathanchance/angler/commit/74a6db2a6bf4e7bb90a984e6c299274ad5585214
+Added on: Mon, 22 May 2017 10:56:00 -0700
+
+
+Title: f2fs: trace __submit_discard_cmd
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Sat, 15 Apr 2017 14:09:38 +0800
+Link: http://github.com/nathanchance/angler/commit/3e1a9ad4a676b6c59db75a993c748e375b19cc0b
+Added on: Mon, 22 May 2017 10:56:00 -0700
+
+
+Title: f2fs: in prior to issue big discard
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Sat, 15 Apr 2017 14:09:37 +0800
+Link: http://github.com/nathanchance/angler/commit/a1abe46eed25294ca9f73360f6d80b99999d4139
+Added on: Mon, 22 May 2017 10:55:59 -0700
+
+
+Title: f2fs: clean up discard_cmd_control structure
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Sat, 15 Apr 2017 14:09:36 +0800
+Link: http://github.com/nathanchance/angler/commit/80190c01b85ac9215ffece19ceff3d18ce0bc8c0
+Added on: Mon, 22 May 2017 10:55:59 -0700
+
+
+Title: f2fs: use rb-tree to track pending discard commands
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Fri, 14 Apr 2017 23:24:55 +0800
+Link: http://github.com/nathanchance/angler/commit/acfa282ff386de6c73d7fce4bdde9062c30a79e3
+Added on: Mon, 22 May 2017 10:55:59 -0700
+
+
+Title: f2fs: avoid dirty node pages in check_only recovery
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 14 Apr 2017 15:46:23 -0700
+Link: http://github.com/nathanchance/angler/commit/df8586f6944cf2d3968f115a083668b1127250af
+Added on: Mon, 22 May 2017 10:55:58 -0700
+
+
+Title: f2fs: fix not to set fsync/dentry mark
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Wed, 12 Apr 2017 12:02:00 -0700
+Link: http://github.com/nathanchance/angler/commit/a75c60acae1b15de5c60585e277a6114db1ae0bc
+Added on: Mon, 22 May 2017 10:55:58 -0700
+
+
+Title: f2fs: allocate hot_data for atomic writes
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Wed, 12 Apr 2017 10:01:33 -0700
+Link: http://github.com/nathanchance/angler/commit/fc13b4408409ddb1021ca5217a7d04c8d115bc27
+Added on: Mon, 22 May 2017 10:55:58 -0700
+
+
+Title: f2fs: give time to flush dirty pages for checkpoint
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 11 Apr 2017 19:15:33 -0700
+Link: http://github.com/nathanchance/angler/commit/df9b58b6a0f587ab22622f863fc5025056b52e25
+Added on: Mon, 22 May 2017 10:55:57 -0700
+
+
+Title: f2fs: fix fs corruption due to zero inode page
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 11 Apr 2017 19:01:26 -0700
+Link: http://github.com/nathanchance/angler/commit/10e710bcfdf04775c80a43ce763bd8246cd9a119
+Added on: Mon, 22 May 2017 10:55:57 -0700
+
+
+Title: f2fs: shrink blk plug region
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Mon, 27 Mar 2017 18:14:05 +0800
+Link: http://github.com/nathanchance/angler/commit/f7d84cbecbe38a3ecad3c5aa708a46b1776e69f6
+Added on: Mon, 22 May 2017 10:55:57 -0700
+
+
+Title: f2fs: extract rb-tree operation infrastructure
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 11 Apr 2017 09:25:22 +0800
+Link: http://github.com/nathanchance/angler/commit/f723c6113143205eb701e1d6b9ccf6c059359ee4
+Added on: Mon, 22 May 2017 10:55:56 -0700
+
+
+Title: f2fs: avoid frequent checkpoint during f2fs_gc
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 7 Apr 2017 17:25:54 -0700
+Link: http://github.com/nathanchance/angler/commit/21719162d393aeb4ef5c8402847e003971c55068
+Added on: Mon, 22 May 2017 10:55:56 -0700
+
+
+Title: f2fs: fix comment on f2fs_flush_merged_bios() after 86531d6b
+Author: Tomohiro Kusumi <tkusumi@tuxera.com>
+Authored on: Wed, 5 Apr 2017 22:49:44 +0300
+Link: http://github.com/nathanchance/angler/commit/c22c153f51e1ea04c6e06b62a91e817c34ab8f8a
+Added on: Mon, 22 May 2017 10:55:55 -0700
+
+
+Title: f2fs: prevent waiter encountering incorrect discard states
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 5 Apr 2017 18:26:26 +0800
+Link: http://github.com/nathanchance/angler/commit/5af5039bfb6f0ea43b8a9f4d6755566f649aa3a0
+Added on: Mon, 22 May 2017 10:55:55 -0700
+
+
+Title: f2fs: introduce f2fs_wait_discard_bios
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 5 Apr 2017 18:19:49 +0800
+Link: http://github.com/nathanchance/angler/commit/ff4dccef77e2240ebb07b3adbb50427260c6f92d
+Added on: Mon, 22 May 2017 10:55:55 -0700
+
+
+Title: f2fs: split discard_cmd_list
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 5 Apr 2017 18:19:48 +0800
+Link: http://github.com/nathanchance/angler/commit/f18572e76acc8fb839b70db426af0807a41ec793
+Added on: Mon, 22 May 2017 10:55:54 -0700
+
+
+Title: Revert "f2fs: put allocate_segment after refresh_sit_entry"
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 4 Apr 2017 16:45:30 -0700
+Link: http://github.com/nathanchance/angler/commit/9cb3abe18e5026825781dbc8ae673af934841c39
+Added on: Mon, 22 May 2017 10:55:54 -0700
+
+
+Title: f2fs: split make_dentry_ptr() into block and inline versions
+Author: Tomohiro Kusumi <tkusumi@tuxera.com>
+Authored on: Tue, 4 Apr 2017 13:01:22 +0300
+Link: http://github.com/nathanchance/angler/commit/72fe8578cea8e5a4f41a1732e82ee9aaba1204ed
+Added on: Mon, 22 May 2017 10:55:53 -0700
+
+
+Title: f2fs: submit bio of in-place-update pages
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Thu, 30 Mar 2017 21:02:46 -0700
+Link: http://github.com/nathanchance/angler/commit/7c657a220b2d4a77bbb9b2fc5f03863447f13de6
+Added on: Mon, 22 May 2017 10:55:53 -0700
+
+
+Title: f2fs: remove the redundant variable definition
+Author: Kaixu Xia <xiakaixu@huawei.com>
+Authored on: Sun, 2 Apr 2017 02:39:48 +0800
+Link: http://github.com/nathanchance/angler/commit/06854ab3ee40e8ca2f6a50acbb04b9aa10892fc4
+Added on: Mon, 22 May 2017 10:55:53 -0700
+
+
+Title: f2fs: avoid IO split due to mixed WB_SYNC_ALL and WB_SYNC_NONE
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 28 Mar 2017 18:07:38 -0700
+Link: http://github.com/nathanchance/angler/commit/a942accc28b1445185a24299ddbe5df8b413fe0f
+Added on: Mon, 22 May 2017 10:55:52 -0700
+
+
+Title: f2fs: write small sized IO to hot log
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 24 Mar 2017 20:05:13 -0400
+Link: http://github.com/nathanchance/angler/commit/e858c08fa6552b5a7a74f535233bcb4399383ff0
+Added on: Mon, 22 May 2017 10:55:52 -0700
+
+
+Title: f2fs: use bitmap in discard_entry
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 28 Mar 2017 18:18:50 +0800
+Link: http://github.com/nathanchance/angler/commit/cb90b1ecd11851dca80b0a43e72c5e0a5ed7107a
+Added on: Mon, 22 May 2017 10:55:52 -0700
+
+
+Title: f2fs: clean up destroy_discard_cmd_control
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Mon, 27 Mar 2017 18:14:04 +0800
+Link: http://github.com/nathanchance/angler/commit/e5d7faea845cff1274c935036b2e05d379039fc8
+Added on: Mon, 22 May 2017 10:55:51 -0700
+
+
+Title: f2fs: count discard command entry
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Sat, 25 Mar 2017 17:19:59 +0800
+Link: http://github.com/nathanchance/angler/commit/f192ee8cfe788892b8899e78f957c8bad5b3ef89
+Added on: Mon, 22 May 2017 10:55:51 -0700
+
+
+Title: f2fs: show issued flush/discard count
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Sat, 25 Mar 2017 17:19:58 +0800
+Link: http://github.com/nathanchance/angler/commit/e714d33e4f8e094a7761c31eb5f0797f2dfea5e3
+Added on: Mon, 22 May 2017 10:55:50 -0700
+
+
+Title: f2fs: relax node version check for victim data in gc
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 21 Mar 2017 10:59:50 -0400
+Link: http://github.com/nathanchance/angler/commit/c0c581402ad120adbb7bf7dec650b14bbcc02601
+Added on: Mon, 22 May 2017 10:55:50 -0700
+
+
+Title: f2fs: start SSR much eariler to avoid FG_GC
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 24 Mar 2017 21:08:56 -0400
+Link: http://github.com/nathanchance/angler/commit/dd332624000d5efc9a1fa1e9603e7037f1d58f40
+Added on: Mon, 22 May 2017 10:55:50 -0700
+
+
+Title: f2fs: allow write page cache when writting cp
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Mon, 13 Mar 2017 20:22:18 +0800
+Link: http://github.com/nathanchance/angler/commit/ef50659b06fc63756ab4a2abd6bb0ee50b73783b
+Added on: Mon, 22 May 2017 10:55:49 -0700
+
+
+Title: f2fs: don't reserve additional space in xattr block
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Thu, 23 Mar 2017 13:38:26 +0800
+Link: http://github.com/nathanchance/angler/commit/5e6bf2d733545985619dc5f493f50a4833ba418f
+Added on: Mon, 22 May 2017 10:55:49 -0700
+
+
+Title: f2fs: clean up xattr operation
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Thu, 23 Mar 2017 13:38:25 +0800
+Link: http://github.com/nathanchance/angler/commit/608613e5aa40ce912e335af0e17ffae5077ea06e
+Added on: Mon, 22 May 2017 10:55:48 -0700
+
+
+Title: f2fs: don't track volatile file in dirty inode list
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 22 Mar 2017 17:23:46 +0800
+Link: http://github.com/nathanchance/angler/commit/850774da9e14ef72b645c1f8f4e58008c8750987
+Added on: Mon, 22 May 2017 10:55:48 -0700
+
+
+Title: f2fs: show the max number of volatile operations
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 22 Mar 2017 17:23:45 +0800
+Link: http://github.com/nathanchance/angler/commit/03a5973bcf674aa937113fdc9b8525850e99b0e6
+Added on: Mon, 22 May 2017 10:55:48 -0700
+
+
+Title: f2fs: fix race condition in between free nid allocator/initializer
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 22 Mar 2017 14:45:05 +0800
+Link: http://github.com/nathanchance/angler/commit/110ba107d48440703b3d3374d7bc9113aef2e363
+Added on: Mon, 22 May 2017 10:55:47 -0700
+
+
+Title: f2fs: use set_page_private marcro in f2fs_trace_pid
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Wed, 22 Mar 2017 11:59:30 +0800
+Link: http://github.com/nathanchance/angler/commit/a265d18aefa1cc8bd4d32fbad739aa3d3d2b4a54
+Added on: Mon, 22 May 2017 10:55:47 -0700
+
+
+Title: f2fs: fix recording invalid last_victim
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Tue, 21 Mar 2017 20:09:45 +0800
+Link: http://github.com/nathanchance/angler/commit/8895c00452b3a57ffdf592ce55aaf31429f62bd7
+Added on: Mon, 22 May 2017 10:55:46 -0700
+
+
+Title: f2fs: more reasonable mem_size calculating of ino_entry
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 18 Mar 2017 09:26:13 +0800
+Link: http://github.com/nathanchance/angler/commit/ba14993d75eb8f829efd85c55bd465a12a73129e
+Added on: Mon, 22 May 2017 10:55:46 -0700
+
+
+Title: f2fs: calculate the f2fs_stat_info into base_mem
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 18 Mar 2017 09:25:05 +0800
+Link: http://github.com/nathanchance/angler/commit/c4b534de70f2e95287b241b30ed3c57d0653d78e
+Added on: Mon, 22 May 2017 10:55:46 -0700
+
+
+Title: f2fs: avoid stat_inc_atomic_write for non-atomic file
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 18 Mar 2017 09:20:55 +0800
+Link: http://github.com/nathanchance/angler/commit/159c06f5b85b2a484d6fdf7981341ce384855138
+Added on: Mon, 22 May 2017 10:55:45 -0700
+
+
+Title: f2fs: sanity check of crc_offset from raw checkpoint
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Wed, 15 Mar 2017 21:12:50 +0800
+Link: http://github.com/nathanchance/angler/commit/0af97710a641f8d57aab97cc704a287623b29b69
+Added on: Mon, 22 May 2017 10:55:45 -0700
+
+
+Title: f2fs: cleanup the disk level filename updating
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 16:28:46 +0800
+Link: http://github.com/nathanchance/angler/commit/09fa34231601f0931a66ce297211511e86da2d43
+Added on: Mon, 22 May 2017 10:55:44 -0700
+
+
+Title: f2fs: cover update_free_nid_bitmap with nid_list_lock
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Mon, 13 Mar 2017 20:10:41 +0800
+Link: http://github.com/nathanchance/angler/commit/a828cf3bc77d2ee99af8b108ebc2ff36a5abdd5c
+Added on: Mon, 22 May 2017 10:55:44 -0700
+
+
+Title: f2fs: fix bad prefetchw of NULL page
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Mon, 13 Mar 2017 16:35:13 +0800
+Link: http://github.com/nathanchance/angler/commit/ac7f2024ff6daa835e8e40582d670c8afc5e21a1
+Added on: Mon, 22 May 2017 10:55:44 -0700
+
+
+Title: f2fs: clear FI_DATA_EXIST flag in truncate_inline_inode
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 20:43:20 +0800
+Link: http://github.com/nathanchance/angler/commit/b0df5596398f96c765f140b928cee30d7f626f34
+Added on: Mon, 22 May 2017 10:55:43 -0700
+
+
+Title: f2fs: move mnt_want_write_file after arguments checking
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 17:55:07 +0800
+Link: http://github.com/nathanchance/angler/commit/9cb8ef29f134cd692b3c5230c2af30f19b359365
+Added on: Mon, 22 May 2017 10:55:43 -0700
+
+
+Title: f2fs: check new size by inode_newsize_ok in f2fs_insert_range
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 17:54:52 +0800
+Link: http://github.com/nathanchance/angler/commit/229e272e2fca744ae0335f217a1a93a1c79c3870
+Added on: Mon, 22 May 2017 10:55:42 -0700
+
+
+Title: f2fs: avoid copy date to user-space if move file range fail
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 17:54:26 +0800
+Link: http://github.com/nathanchance/angler/commit/cc1afb75bfdf79c91e1a956be2735716357b5f8e
+Added on: Mon, 22 May 2017 10:55:42 -0700
+
+
+Title: f2fs: drop duplicate new_size assign in f2fs_zero_range
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Fri, 10 Mar 2017 17:54:03 +0800
+Link: http://github.com/nathanchance/angler/commit/10213cc9205eeff30563795c7606d033eb59ff05
+Added on: Mon, 22 May 2017 10:55:42 -0700
+
+
+Title: f2fs: adjust the way of calculating nat block
+Author: Fan Li <fanofcode.li@samsung.com>
+Authored on: Wed, 8 Mar 2017 13:39:16 +0800
+Link: http://github.com/nathanchance/angler/commit/9904b98ac5f4d9ce6d5f0f8d0e0decc62949fed0
+Added on: Mon, 22 May 2017 10:55:41 -0700
+
+
+Title: f2fs: add fault injection on f2fs_truncate
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Thu, 9 Mar 2017 15:24:24 -0800
+Link: http://github.com/nathanchance/angler/commit/82d0f1f211b9efcd13d5e2e864d4428943041f8d
+Added on: Mon, 22 May 2017 10:55:41 -0700
+
+
+Title: f2fs: check range before defragment
+Author: Sheng Yong <shengyong1@huawei.com>
+Authored on: Wed, 8 Mar 2017 10:47:12 +0800
+Link: http://github.com/nathanchance/angler/commit/108d22e050503bcd3e8712c5ae01a563f16fd958
+Added on: Mon, 22 May 2017 10:55:40 -0700
+
+
+Title: f2fs: use parameter max_items instead of PIDVEC_SIZE
+Author: Sheng Yong <shengyong1@huawei.com>
+Authored on: Wed, 8 Mar 2017 10:47:11 +0800
+Link: http://github.com/nathanchance/angler/commit/636e2cfa0b13c499fa256c9a8d21fbe98c0a77ab
+Added on: Mon, 22 May 2017 10:55:40 -0700
+
+
+Title: f2fs: add a punch discard command function
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Thu, 2 Mar 2017 10:36:20 +0800
+Link: http://github.com/nathanchance/angler/commit/96847fd3729f502e401d9873b7f99c49636d36e0
+Added on: Mon, 22 May 2017 10:55:40 -0700
+
+
+Title: f2fs: allocate a bio for discarding when actually issuing it
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 7 Mar 2017 18:02:02 -0800
+Link: http://github.com/nathanchance/angler/commit/9c8cd3a42d9b6d8ca0801b62bd31fac1f2fc74cb
+Added on: Mon, 22 May 2017 10:55:39 -0700
+
+
+Title: f2fs: skip writeback meta pages if cp_mutex acquire failed
+Author: Yunlei He <heyunlei@huawei.com>
+Authored on: Wed, 1 Mar 2017 18:07:10 +0800
+Link: http://github.com/nathanchance/angler/commit/30fe159e7ebb22220ba1da6b66a904f5c9e0f590
+Added on: Mon, 22 May 2017 10:55:39 -0700
+
+
+Title: f2fs: show more precise message on orphan recovery failure
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 7 Mar 2017 13:54:56 -0800
+Link: http://github.com/nathanchance/angler/commit/d7090a6774062502502cf5438bb528f0494e7d33
+Added on: Mon, 22 May 2017 10:55:38 -0700
+
+
+Title: f2fs: remove dead macro PGOFS_OF_NEXT_DNODE
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Tue, 28 Feb 2017 21:34:37 +0800
+Link: http://github.com/nathanchance/angler/commit/f7ffbcad33236ddec6f313fe1056f8382857bd6d
+Added on: Mon, 22 May 2017 10:55:38 -0700
+
+
+Title: f2fs: drop duplicate radix tree lookup of nat_entry_set
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Tue, 28 Feb 2017 21:34:47 +0800
+Link: http://github.com/nathanchance/angler/commit/7dbd37fa7dd53d13d4faeddb0188fe2e484173c8
+Added on: Mon, 22 May 2017 10:55:38 -0700
+
+
+Title: f2fs: make sure trace all f2fs_issue_flush
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 4 Mar 2017 22:13:10 +0800
+Link: http://github.com/nathanchance/angler/commit/1b109a057669be4309cdaecc9ae131a4e8391759
+Added on: Mon, 22 May 2017 10:55:37 -0700
+
+
+Title: f2fs: don't allow volatile writes for non-regular file
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Fri, 17 Mar 2017 15:43:57 +0800
+Link: http://github.com/nathanchance/angler/commit/526e33429c22b04764a3c803edc95a8d6f94c4c0
+Added on: Mon, 22 May 2017 10:55:37 -0700
+
+
+Title: f2fs: don't allow atomic writes for not regular files
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 17 Mar 2017 10:04:15 +0800
+Link: http://github.com/nathanchance/angler/commit/5cd0ff91912bf7d9474b37cb134b2d43861322b3
+Added on: Mon, 22 May 2017 10:55:37 -0700
+
+
+Title: f2fs: fix stale ATOMIC_WRITTEN_PAGE private pointer
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 17 Mar 2017 09:55:52 +0800
+Link: http://github.com/nathanchance/angler/commit/78120e979a052f35808fee51699174fe2b08aa50
+Added on: Mon, 22 May 2017 10:55:36 -0700
+
+
+Title: f2fs: build stat_info before orphan inode recovery
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 7 Mar 2017 13:41:22 -0800
+Link: http://github.com/nathanchance/angler/commit/7c69c3243449c4cb5f07b941f3ba22ef44a625b3
+Added on: Mon, 22 May 2017 10:55:36 -0700
+
+
+Title: f2fs: fix the fault of calculating blkstart twice
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Wed, 8 Mar 2017 09:49:53 +0800
+Link: http://github.com/nathanchance/angler/commit/e81bea855f234158b8a5caa864e925c537a168d2
+Added on: Mon, 22 May 2017 10:55:35 -0700
+
+
+Title: f2fs: fix the fault of checking F2FS_LINK_MAX for rename inode
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 4 Mar 2017 21:48:28 +0800
+Link: http://github.com/nathanchance/angler/commit/003ab109be4a7cfe9a92b76f609c00e57b52f84b
+Added on: Mon, 22 May 2017 10:55:35 -0700
+
+
+Title: f2fs: don't allow to get pino when filename is encrypted
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 7 Mar 2017 11:22:45 -0800
+Link: http://github.com/nathanchance/angler/commit/c0eae8d30a8a4af8f6623d53fb1065d21fbd5e19
+Added on: Mon, 22 May 2017 10:55:35 -0700
+
+
+Title: f2fs: fix wrong error injection for evict_inode
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Tue, 7 Mar 2017 13:32:20 -0800
+Link: http://github.com/nathanchance/angler/commit/04640db96e1c73dc5233a7dca01893d53606d83e
+Added on: Mon, 22 May 2017 10:55:34 -0700
+
+
+Title: f2fs: le32_to_cpu for ckpt->cp_pack_total_block_count
+Author: Kinglong Mee <kinglongmee@gmail.com>
+Authored on: Sat, 11 Mar 2017 21:18:01 +0800
+Link: http://github.com/nathanchance/angler/commit/273bf83a929335289c6694e62fbde5f9670a0c46
+Added on: Mon, 22 May 2017 10:55:34 -0700
+
+
+Title: f2fs: combine nat_bits and free_nid_bitmap cache
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 8 Mar 2017 20:07:49 +0800
+Link: http://github.com/nathanchance/angler/commit/e3f316c0f0a03f9aa43fbb921981de545b3787f2
+Added on: Mon, 22 May 2017 10:55:33 -0700
+
+
+Title: f2fs: skip scanning free nid bitmap of full NAT blocks
+Author: Chao Yu <yuchao0@huawei.com>
+Authored on: Wed, 1 Mar 2017 17:09:07 +0800
+Link: http://github.com/nathanchance/angler/commit/bc6dd6c8146539d8661261b9d4f88f04e28e4c72
+Added on: Mon, 22 May 2017 10:55:33 -0700
+
+
+Title: msm_thermal: Add hotplug_enabled parameter
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Fri, 19 May 2017 14:25:14 -0700
+Link: http://github.com/nathanchance/angler/commit/e4bdba28c84c6635f06ade7bfe236308868ad411
+Added on: Mon, 22 May 2017 10:55:33 -0700
+

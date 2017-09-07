@@ -1,0 +1,2 @@
+# I have globally ignored zip files; this is the only repo I have where they should be committed
+!*.zip

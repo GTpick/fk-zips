@@ -1,0 +1,26 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+b43aee2f31fb Flash Kernel 2.3 by Nathan Chancellor
+9dd1e8a0e93a xfrm: policy: check policy direction value by Vladis Dronov
+b44ecb809fa5 fs/exec: fix use after free in execve by Andrea Arcangeli
+0725c9563728 msm: camera: Add NULL check in msm_actuator by Xu Han
+1526a85b1bde msm: camera: isp: Add missing mutex unlock by Pranav Vashi
+6135964073bb proc: prevent stacking filesystems on top by Jann Horn
+dfc9bce40c3f mm: compaction: compact all zones when suspended by Pranav Vashi
+3fab9b906b3d mm: compaction: fix the page state calculation in too_many_isolated by Vinayak Menon
+aac42d5b4181 PM / devfreq: Use max priority for state notifier by Pranav Vashi
+fdfc5a0b302f alarmtimer: don't rate limit one-shot timers by Greg Hackmann
+2226cbe6fcaf alarmtimer: Rate limit periodic intervals by Thomas Gleixner
+baa321ae0e28 af_key: Fix sadb_x_ipsecrequest parsing by Herbert Xu
+827f2c809e9c PM / Domains: Fix unsafe iteration over modified list of device links by Krzysztof Kozlowski
+b29dac36223d ASoC: compress: Derive substream from stream based on direction by Satish Babu Patakokila
+500265c3dc8c NFC: Add sockaddr length checks before accessing sa_family in bind handlers by Mateusz Jurczyk
+5f6c560cfb02 nfc: Fix the sockaddr length sanitization in llcp_sock_connect by Mateusz Jurczyk
+ad91fd511799 nfc: Ensure presence of required attributes in the activate_target handler by Mateusz Jurczyk
+bb90f44cd513 USB: hcd: Mark secondary HCD as dead if the primary one died by Rafael J. Wysocki
+62d816bdcd4e NFC: fix broken device allocation by Johan Hovold
+cbf84c967c9e usb-storage: fix deadlock involving host lock and scsi_done by Alan Stern
+d51a2c551fde ./Makefile: tell gcc optimizer to never introduce new data races by Jiri Kosina
+ea4039760a27 Reduced CPU Load-Average by Shoaib0597
+076097f9e0bc Fixed High-Load Average due to Drivers by Shoaib0597
+86bf63321ec5 Makefile: Remove ccache by Nathan Chancellor

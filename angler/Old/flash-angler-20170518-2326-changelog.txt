@@ -1,0 +1,1407 @@
+
+Title: Revert "Makefile: Add a few flags from Electron"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 18 May 2017 22:24:28 -0700
+Link: http://github.com/nathanchance/angler/commit/06bf674ad95d721a8f2771d3ce744f8e641b14f5
+Added on: Thu, 18 May 2017 22:24:47 -0700
+
+
+Title: ANDROID: sdcardfs: Add linux/kref.h include
+Author: Dmitry Shmidt <dimitrysh@google.com>
+Authored on: Wed, 17 May 2017 13:05:20 -0700
+Link: http://github.com/nathanchance/angler/commit/d231bacb015728da914769541b1869c4ddac68d0
+Added on: Thu, 18 May 2017 20:53:15 -0700
+
+
+Title: cpufreq: flash: add screen off max frequency tunable
+Author: imoseyon <imoseyon@gmail.com>
+Authored on: Wed, 18 Nov 2015 22:29:21 -0800
+Link: http://github.com/nathanchance/angler/commit/fd85305e7f0e1f89c95777801f0680abf69e00e7
+Added on: Thu, 18 May 2017 20:25:35 -0700
+
+
+Title: cpufreq: interactive: add screen off max frequency tunable
+Author: imoseyon <imoseyon@gmail.com>
+Authored on: Wed, 18 Nov 2015 22:29:21 -0800
+Link: http://github.com/nathanchance/angler/commit/0a0d20e67a0db56eaf0e5099d6ffb8ae1c1bd0a4
+Added on: Thu, 18 May 2017 20:25:00 -0700
+
+
+Title: kernel: Only expose su when daemon is running
+Author: Tom Marshall <tdm.code@gmail.com>
+Authored on: Wed, 25 Jan 2017 18:01:03 +0100
+Link: http://github.com/nathanchance/angler/commit/feddad6ff1ffe97003f55667c0c3fdc9e81142fc
+Added on: Thu, 18 May 2017 18:50:11 -0700
+
+
+Title: Makefile: Revert back to O2 on host and Os on target
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 18 May 2017 00:50:20 -0700
+Link: http://github.com/nathanchance/angler/commit/63e7c9ed1876ba930f94b3cafbb0747545d23597
+Added on: Thu, 18 May 2017 00:50:20 -0700
+
+
+Title: cpufreq: flash: add powersave bias tunable
+Author: Joe Maples <joe@frap129.org>
+Authored on: Fri, 12 May 2017 21:08:01 -0500
+Link: http://github.com/nathanchance/angler/commit/f5d6919818c621e2d8ceddaf810ede0a732cd4f0
+Added on: Tue, 16 May 2017 21:02:56 -0700
+
+
+Title: cpufreq: interactive: add powersave bias tunable
+Author: Joe Maples <joe@frap129.org>
+Authored on: Fri, 12 May 2017 21:08:01 -0500
+Link: http://github.com/nathanchance/angler/commit/56a9a58e492ae1f53e84fb49a099a1a26eefcc43
+Added on: Tue, 16 May 2017 21:02:55 -0700
+
+
+Title: cpufreq: flash: Ignore hispeed_freq logic for notification
+Author: Junjie Wu <junjiew@codeaurora.org>
+Authored on: Wed, 19 Aug 2015 15:45:37 -0700
+Link: http://github.com/nathanchance/angler/commit/42cca0d805d98160db6d171451295766d09e7b7a
+Added on: Tue, 16 May 2017 21:02:55 -0700
+
+
+Title: cpufreq: interactive: Ignore hispeed_freq logic for notification
+Author: Junjie Wu <junjiew@codeaurora.org>
+Authored on: Wed, 19 Aug 2015 15:45:37 -0700
+Link: http://github.com/nathanchance/angler/commit/19b04e8850c1f80c4e2053bde157580dc2918770
+Added on: Tue, 16 May 2017 21:02:55 -0700
+
+
+Title: cpufreq: flash: Make skipping delay for migration optional
+Author: Junjie Wu <junjiew@codeaurora.org>
+Authored on: Wed, 22 Jul 2015 17:38:49 -0700
+Link: http://github.com/nathanchance/angler/commit/430d948d43b9d5825ab61e93f42439c984302604
+Added on: Tue, 16 May 2017 21:02:54 -0700
+
+
+Title: cpufreq: interactive: Make skipping delay for migration optional
+Author: Junjie Wu <junjiew@codeaurora.org>
+Authored on: Wed, 22 Jul 2015 17:38:49 -0700
+Link: http://github.com/nathanchance/angler/commit/5f5cd80afad59383ef83b1b8315b7bbc0af21842
+Added on: Tue, 16 May 2017 21:02:54 -0700
+
+
+Title: Revert "Revert "cpufreq: flash: Skip delay in frequency changes due to migration""
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 14 May 2017 14:10:05 -0700
+Link: http://github.com/nathanchance/angler/commit/45b8fc4b101978c67cd204516d1b631a26cad160
+Added on: Tue, 16 May 2017 21:02:54 -0700
+
+
+Title: Revert "Revert "cpufreq: interactive: Skip delay in frequency changes due to migration""
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 14 May 2017 14:10:05 -0700
+Link: http://github.com/nathanchance/angler/commit/cbc21df690dce7879a356d576968ce825e157cfb
+Added on: Tue, 16 May 2017 21:02:53 -0700
+
+
+Title: cpufreq: flash: add fastlane tunables
+Author: engstk <eng.stk@sapo.pt>
+Authored on: Sat, 4 Mar 2017 04:23:29 +0000
+Link: http://github.com/nathanchance/angler/commit/d19a16b91a5dd62318811df0c4971a69b52bab65
+Added on: Tue, 16 May 2017 21:02:53 -0700
+
+
+Title: cpufreq: interactive: add fastlane tunables
+Author: engstk <eng.stk@sapo.pt>
+Authored on: Sat, 4 Mar 2017 04:23:29 +0000
+Link: http://github.com/nathanchance/angler/commit/3d3dd40968eb624ba0fef7de0af0058139d353c6
+Added on: Tue, 16 May 2017 21:02:53 -0700
+
+
+Title: dts: mmc: remove wakeup on idle flag
+Author: Lianwei Wang <a22439@motorola.com>
+Authored on: Wed, 23 Sep 2015 17:34:10 -0700
+Link: http://github.com/nathanchance/angler/commit/7e0c0df7fff0d3f306f0e62b4451376fa2cbe13d
+Added on: Tue, 16 May 2017 21:02:52 -0700
+
+
+Title: perf/core: Fix RCU problem with cgroup context switching code
+Author: Stephane Eranian <eranian@google.com>
+Authored on: Thu, 12 Nov 2015 11:00:03 +0100
+Link: http://github.com/nathanchance/angler/commit/6319136a73cc8c4c7ce5fb35800a40802c262ea2
+Added on: Tue, 16 May 2017 21:02:52 -0700
+
+
+Title: power: bcl: Use real-time workqueue for hotplug
+Author: Ram Chandrasekar <rkumbako@codeaurora.org>
+Authored on: Mon, 9 Feb 2015 17:19:13 -0700
+Link: http://github.com/nathanchance/angler/commit/7a38ecb9f469aba1777292241fe4dfee352ef395
+Added on: Tue, 16 May 2017 21:02:51 -0700
+
+
+Title: kbuild: add fine grained build dependencies for exported symbols
+Author: Nicolas Pitre <nicolas.pitre@linaro.org>
+Authored on: Fri, 22 Jan 2016 13:41:57 -0500
+Link: http://github.com/nathanchance/angler/commit/28a2b67b4409c71e6b8375965d9c7e56366953f1
+Added on: Tue, 16 May 2017 21:02:51 -0700
+
+
+Title: export.h: allow for per-symbol configurable EXPORT_SYMBOL()
+Author: Nicolas Pitre <nicolas.pitre@linaro.org>
+Authored on: Fri, 22 Jan 2016 01:32:26 -0500
+Link: http://github.com/nathanchance/angler/commit/ee4b8542a8c5de0f68a95f95a09e9934bd50cf7b
+Added on: Tue, 16 May 2017 21:02:51 -0700
+
+
+Title: kbuild: de-duplicate fixdep usage
+Author: Nicolas Pitre <nicolas.pitre@linaro.org>
+Authored on: Wed, 17 Feb 2016 15:50:06 -0500
+Link: http://github.com/nathanchance/angler/commit/cf2782fb91d3e04f50091627aa1692ce3c2994da
+Added on: Tue, 16 May 2017 21:02:50 -0700
+
+
+Title: fixdep: accept extra dependencies on stdin
+Author: Nicolas Pitre <nicolas.pitre@linaro.org>
+Authored on: Fri, 12 Feb 2016 15:00:50 -0500
+Link: http://github.com/nathanchance/angler/commit/aba1dc5473dbbbee069e2ec623c68e58dde34ce1
+Added on: Tue, 16 May 2017 21:02:50 -0700
+
+
+Title: kbuild: fixdep: Check fstat(2) return value
+Author: Tom Rini <trini@konsulko.com>
+Authored on: Mon, 7 Dec 2015 16:26:08 -0500
+Link: http://github.com/nathanchance/angler/commit/4f81cf5536ac87c91be950aa71fee559e2f80c5e
+Added on: Tue, 16 May 2017 21:02:50 -0700
+
+
+Title: fixdep: constify strrcmp arguments
+Author: Nicolas Iooss <nicolas.iooss_linux@m4x.org>
+Authored on: Wed, 18 Nov 2015 19:07:15 +0100
+Link: http://github.com/nathanchance/angler/commit/b25cf87a1c7df3168602586d036096896531943c
+Added on: Tue, 16 May 2017 21:02:49 -0700
+
+
+Title: kbuild: fixdep: drop meaningless hash table initialization
+Author: Masahiro Yamada <yamada.masahiro@socionext.com>
+Authored on: Fri, 24 Jul 2015 14:18:46 +0900
+Link: http://github.com/nathanchance/angler/commit/569036d17b301eff810f7c678c79545f76df830e
+Added on: Tue, 16 May 2017 21:02:49 -0700
+
+
+Title: kbuild: fixdep: optimize code slightly
+Author: Masahiro Yamada <yamada.masahiro@socionext.com>
+Authored on: Fri, 24 Jul 2015 14:18:45 +0900
+Link: http://github.com/nathanchance/angler/commit/526fcc4564bc48f293108d6c3384ee1d2a0fb2e4
+Added on: Tue, 16 May 2017 21:02:49 -0700
+
+
+Title: kernel: build bin2c based on config option CONFIG_BUILD_BIN2C
+Author: Vivek Goyal <vgoyal@redhat.com>
+Authored on: Fri, 8 Aug 2014 14:25:41 -0700
+Link: http://github.com/nathanchance/angler/commit/67fbea2d6cfea2bbf28618b346df6b823b5f47e6
+Added on: Tue, 16 May 2017 21:02:48 -0700
+
+
+Title: bin2c: move bin2c in scripts/basic
+Author: Vivek Goyal <vgoyal@redhat.com>
+Authored on: Fri, 8 Aug 2014 14:25:38 -0700
+Link: http://github.com/nathanchance/angler/commit/4c9c82dc9d37a9243b149d9b81cdc66e620d5c78
+Added on: Tue, 16 May 2017 21:02:48 -0700
+
+
+Title: kbuild: trivial - use tabs for code indent where possible
+Author: Masahiro Yamada <yamada.m@jp.panasonic.com>
+Authored on: Tue, 10 Jun 2014 19:08:13 +0900
+Link: http://github.com/nathanchance/angler/commit/3059111686eed1511ec0d1cd4aa84590352cdcf3
+Added on: Tue, 16 May 2017 21:02:48 -0700
+
+
+Title: clockevents: Prevent shift out of bounds
+Author: Thomas Gleixner <tglx@linutronix.de>
+Authored on: Mon, 20 Oct 2014 15:07:50 +0400
+Link: http://github.com/nathanchance/angler/commit/ec5e438e2c794d9b2bc75cc854adb19c02da412c
+Added on: Tue, 16 May 2017 21:02:47 -0700
+
+
+Title: UPSTREAM: net/packet: fix overflow in check for priv area size
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:20 +0200
+Link: http://github.com/nathanchance/angler/commit/26b4eb993ec5bacb25b9106010dcf7492e9216c8
+Added on: Tue, 16 May 2017 21:02:47 -0700
+
+
+Title: ANDROID: make PF_KEY SHA256 use RFC-compliant truncation.
+Author: Lorenzo Colitti <lorenzo@google.com>
+Authored on: Wed, 10 May 2017 23:54:04 +0900
+Link: http://github.com/nathanchance/angler/commit/6934f5675e2e81baeee4937d477107c631dba40c
+Added on: Tue, 16 May 2017 21:02:46 -0700
+
+
+Title: ANDROID: sdcardfs: Move top to its own struct
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Mon, 15 May 2017 14:03:15 -0700
+Link: http://github.com/nathanchance/angler/commit/2853647b0c1ca50c865baaa407b2e8bc2a583805
+Added on: Tue, 16 May 2017 21:02:42 -0700
+
+
+Title: ANDROID: sdcardfs: Use to kstrout
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 16 Mar 2017 19:32:59 -0700
+Link: http://github.com/nathanchance/angler/commit/562917d1a90b2740b8c5661c97a09dc62fc2fb9b
+Added on: Tue, 16 May 2017 20:55:34 -0700
+
+
+Title: ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
+Author: Gao Xiang <gaoxiang25@huawei.com>
+Authored on: Wed, 10 May 2017 23:01:15 +0800
+Link: http://github.com/nathanchance/angler/commit/514c4d3f31dbf2ddc9cbbe9310141594fa9e3907
+Added on: Tue, 16 May 2017 20:55:07 -0700
+
+
+Title: f2fs: fix out-of free segments
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Thu, 20 Apr 2017 13:51:57 -0700
+Link: http://github.com/nathanchance/angler/commit/912048a137c9c0805d82b88241970ae2acf78953
+Added on: Tue, 16 May 2017 20:36:29 -0700
+
+
+Title: f2fs: add ioctl to flush data from faster device to cold area
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Thu, 13 Apr 2017 15:17:00 -0700
+Link: http://github.com/nathanchance/angler/commit/4e47cceeda83ae18d10121ab821eb85b98bfd3f2
+Added on: Tue, 16 May 2017 20:36:28 -0700
+
+
+Title: f2fs: allocate node and hot data in the beginning of partition
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 24 Mar 2017 20:41:45 -0400
+Link: http://github.com/nathanchance/angler/commit/cc4cb1ff50154f36edba7d0a3b018c98680b8de4
+Added on: Tue, 16 May 2017 20:36:28 -0700
+
+
+Title: f2fs: fix multiple f2fs_add_link() having same name for inline dentry
+Author: Sheng Yong <shengyong1@huawei.com>
+Authored on: Sat, 22 Apr 2017 10:39:20 +0800
+Link: http://github.com/nathanchance/angler/commit/d24923ab95e1975b42c9e24c9b1512294e4334f2
+Added on: Tue, 16 May 2017 20:36:27 -0700
+
+
+Title: ext4: evict inline data when writing to memory map
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Sun, 30 Apr 2017 00:10:50 -0400
+Link: http://github.com/nathanchance/angler/commit/9f556c180aa0e39ebf04f989df1210c148557606
+Added on: Tue, 16 May 2017 20:36:27 -0700
+
+
+Title: f2fs: check entire encrypted bigname when finding a dentry
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Mon, 24 Apr 2017 10:00:08 -0700
+Link: http://github.com/nathanchance/angler/commit/8a3a9062988559ceb824226421cc7d8a69d47b98
+Added on: Tue, 16 May 2017 20:36:27 -0700
+
+
+Title: f2fs: clean up some macros in terms of GET_SEGNO
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 7 Apr 2017 15:08:17 -0700
+Link: http://github.com/nathanchance/angler/commit/6a6efd12bf338554ac50afd6cbeec43bd7879dc4
+Added on: Tue, 16 May 2017 20:36:26 -0700
+
+
+Title: f2fs: clean up get_valid_blocks with consistent parameter
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 7 Apr 2017 14:33:22 -0700
+Link: http://github.com/nathanchance/angler/commit/7c08ddbcdbb79783768d521ec36c7a6b53de29be
+Added on: Tue, 16 May 2017 20:36:26 -0700
+
+
+Title: f2fs: use segment number for get_valid_blocks
+Author: Jaegeuk Kim <jaegeuk@kernel.org>
+Authored on: Fri, 7 Apr 2017 14:27:07 -0700
+Link: http://github.com/nathanchance/angler/commit/d7a6eebee4a54d0ba04a0b0b2130c54a8c476059
+Added on: Tue, 16 May 2017 20:36:26 -0700
+
+
+Title: f2fs: guard macro variables with braces
+Author: Tomohiro Kusumi <tkusumi@tuxera.com>
+Authored on: Sun, 9 Apr 2017 02:11:36 +0300
+Link: http://github.com/nathanchance/angler/commit/556a7dda4748d5c94099accd9d79eac642a8b575
+Added on: Tue, 16 May 2017 20:36:25 -0700
+
+
+Title: initramfs: avoid "label at end of compound statement" error
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Authored on: Sat, 6 May 2017 10:27:13 -0700
+Link: http://github.com/nathanchance/angler/commit/2a0a5f5068014f5c993101d80725955459c9929a
+Added on: Tue, 16 May 2017 20:36:25 -0700
+
+
+Title: initramfs: Always do fput() and load modules after rootfs populate
+Author: Stafford Horne <shorne@gmail.com>
+Authored on: Thu, 4 May 2017 21:15:56 +0900
+Link: http://github.com/nathanchance/angler/commit/ff7c7d66bc7fa69379719625e70d07463cf778fc
+Added on: Tue, 16 May 2017 20:36:25 -0700
+
+
+Title: initramfs: finish fput() before accessing any binary from initramfs
+Author: Lokesh Vutla <lokeshvutla@ti.com>
+Authored on: Mon, 27 Feb 2017 14:28:12 -0800
+Link: http://github.com/nathanchance/angler/commit/10f8a61aecfaa0b240076e9b5e484b65f9f17c48
+Added on: Tue, 16 May 2017 20:36:24 -0700
+
+
+Title: target/fileio: Fix zero-length READ and WRITE handling
+Author: Bart Van Assche <bart.vanassche@sandisk.com>
+Authored on: Thu, 4 May 2017 15:50:47 -0700
+Link: http://github.com/nathanchance/angler/commit/085a14f528295c2b06bb3bed71e879b1107388af
+Added on: Tue, 16 May 2017 20:36:24 -0700
+
+
+Title: arm64: uaccess: ensure extension of access_ok() addr
+Author: Mark Rutland <mark.rutland@arm.com>
+Authored on: Wed, 3 May 2017 16:09:35 +0100
+Link: http://github.com/nathanchance/angler/commit/1816901cc86fb913f7c21b50cd7e42b444a0cbce
+Added on: Tue, 16 May 2017 20:36:24 -0700
+
+
+Title: f2fs: sanity check segment count
+Author: Jin Qian <jinqian@google.com>
+Authored on: Tue, 25 Apr 2017 16:28:48 -0700
+Link: http://github.com/nathanchance/angler/commit/53278d0e6c886ca1af19cdda170eeaa7ffa32ead
+Added on: Tue, 16 May 2017 20:36:23 -0700
+
+
+Title: tcp: fix wraparound issue in tcp_lp
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Mon, 1 May 2017 15:29:48 -0700
+Link: http://github.com/nathanchance/angler/commit/59e9d7839adc3114b6a83ba459bd97cc6ac83157
+Added on: Tue, 16 May 2017 20:36:23 -0700
+
+
+Title: ipv6: reorder ip6_route_dev_notifier after ipv6_dev_notf
+Author: WANG Cong <xiyou.wangcong@gmail.com>
+Authored on: Mon, 8 May 2017 10:12:13 -0700
+Link: http://github.com/nathanchance/angler/commit/4c75b157e0e04b765485ea2300ff5331637d6acd
+Added on: Tue, 16 May 2017 20:36:23 -0700
+
+
+Title: ipv6: initialize route null entry in addrconf_init()
+Author: WANG Cong <xiyou.wangcong@gmail.com>
+Authored on: Wed, 3 May 2017 22:07:31 -0700
+Link: http://github.com/nathanchance/angler/commit/65de498a49662d8277e04e6c320e1c2cf570eac9
+Added on: Tue, 16 May 2017 20:36:22 -0700
+
+
+Title: ipv4, ipv6: ensure raw socket message is big enough to hold an IP header
+Author: Alexander Potapenko <glider@google.com>
+Authored on: Wed, 3 May 2017 17:06:58 +0200
+Link: http://github.com/nathanchance/angler/commit/bb6a1777c6754832b14d0d7d21c2a5cd590deb59
+Added on: Tue, 16 May 2017 20:36:22 -0700
+
+
+Title: tcp: do not underestimate skb->truesize in tcp_trim_head()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 26 Apr 2017 17:15:40 -0700
+Link: http://github.com/nathanchance/angler/commit/afc2a2dd690aed747af604eb4250b9ccecba8431
+Added on: Tue, 16 May 2017 20:36:22 -0700
+
+
+Title: ASoC: msm: qdsp6v2: set pointer to NULL after free.
+Author: Xiaojun Sang <xsang@codeaurora.org>
+Authored on: Fri, 24 Feb 2017 16:13:20 +0800
+Link: http://github.com/nathanchance/angler/commit/98802d53aafb7ea8bc648c582053060a44ea45dd
+Added on: Tue, 16 May 2017 20:36:21 -0700
+
+
+Title: drivers: soc: add size check
+Author: Siena Richard <sienar@codeaurora.org>
+Authored on: Tue, 28 Feb 2017 12:52:30 -0800
+Link: http://github.com/nathanchance/angler/commit/69a040e04f55ec526ede0b7b9c6dd3c786b8f361
+Added on: Tue, 16 May 2017 20:36:21 -0700
+
+
+Title: locking/static_keys: Add static_key_{en,dis}able() helpers
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Fri, 24 Jul 2015 15:03:40 +0200
+Link: http://github.com/nathanchance/angler/commit/7d0f684dbc8467c99d43317ceef68e9fd8b1856d
+Added on: Tue, 16 May 2017 20:36:21 -0700
+
+
+Title: include/linux/jump_label.h: expose the reference count
+Author: Mel Gorman <mgorman@suse.de>
+Authored on: Thu, 28 Aug 2014 19:35:18 +0100
+Link: http://github.com/nathanchance/angler/commit/7410e02eb4019e856e4dc4eea7aa689502e92501
+Added on: Tue, 16 May 2017 20:36:20 -0700
+
+
+Title: jump_label: Split jumplabel ratelimit
+Author: Andrew Jones <drjones@redhat.com>
+Authored on: Fri, 9 Aug 2013 19:51:57 +0530
+Link: http://github.com/nathanchance/angler/commit/f6a380ce980be3de17dde7333503de9079e7bab0
+Added on: Tue, 16 May 2017 20:36:20 -0700
+
+
+Title: SELinux: Report when status has been changed
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 11 May 2017 21:23:34 -0700
+Link: http://github.com/nathanchance/angler/commit/0412eb5cc2df3e7d85e226d521c58c95958882f9
+Added on: Tue, 16 May 2017 20:36:19 -0700
+
+
+Title: flash_defconfig: Enable fingerprint boost
+Author: Joe Maples <joe@frap129.org>
+Authored on: Thu, 11 May 2017 22:36:50 -0500
+Link: http://github.com/nathanchance/angler/commit/de67854e823051208685f01cf9c246b64fa98ca0
+Added on: Tue, 16 May 2017 20:36:19 -0700
+
+
+Title: cpufreq: Introduce fingerprint boost driver
+Author: Joe Maples <joe@frap129.org>
+Authored on: Thu, 11 May 2017 22:36:29 -0500
+Link: http://github.com/nathanchance/angler/commit/6d843f757e37562cf9146558071f4ec98cb7a137
+Added on: Tue, 16 May 2017 20:36:19 -0700
+
+
+Title: lazyplug: Disable initially
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 11 May 2017 00:01:58 -0700
+Link: http://github.com/nathanchance/angler/commit/45d6017a6e703c022ece808f082fdd32b292625a
+Added on: Tue, 16 May 2017 20:36:18 -0700
+
+
+Title: flash_defconfig: Enable I/O sched switcher
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Tue, 25 Apr 2017 14:44:44 -0700
+Link: http://github.com/nathanchance/angler/commit/dcfd283ed505538bbc9dd796d074a4a85372e472
+Added on: Tue, 16 May 2017 20:36:18 -0700
+
+
+Title: iosched_switcher: Use reliable state notifier
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Authored on: Sun, 7 May 2017 03:04:08 +0530
+Link: http://github.com/nathanchance/angler/commit/c53f137b515c24b2b21855485b49c7d3961aca84
+Added on: Tue, 16 May 2017 20:36:18 -0700
+
+
+Title: mmc: queue: Configure the I/O sched switcher for mmc block devices
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Tue, 2 May 2017 10:27:13 -0700
+Link: http://github.com/nathanchance/angler/commit/ccba3e9a225228e51c7b7f5197f05893cef10f90
+Added on: Tue, 16 May 2017 20:36:17 -0700
+
+
+Title: block: Add driver to change the I/O scheduler when the screen turns off
+Author: Sultanxda <sultanxda@gmail.com>
+Authored on: Tue, 25 Apr 2017 14:38:45 -0700
+Link: http://github.com/nathanchance/angler/commit/74e622c5df9a537385b40b80f5deb67f4c40571d
+Added on: Tue, 16 May 2017 20:36:17 -0700
+
+
+Title: lazyplug: Only use super aggressive profile when screen is off
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Wed, 10 May 2017 22:22:50 -0700
+Link: http://github.com/nathanchance/angler/commit/849590524dd4725211a20a732752b4a131140293
+Added on: Tue, 16 May 2017 20:36:17 -0700
+
+
+Title: lazyplug: Add MSM8992 + Hexa core support
+Author: Joe Maples <joe@frap129.org>
+Authored on: Wed, 10 May 2017 11:39:52 -0500
+Link: http://github.com/nathanchance/angler/commit/1f900a7cf848e78abd8adf26b166f246c5bd8e0d
+Added on: Tue, 16 May 2017 20:36:16 -0700
+
+
+Title: lazyplug: Boost on fingerprint scan
+Author: Joe Maples <joe@frap129.org>
+Authored on: Tue, 9 May 2017 20:18:13 -0500
+Link: http://github.com/nathanchance/angler/commit/386fbbe5365d7c8af2a49a8c4fd2a81623d297ab
+Added on: Tue, 16 May 2017 20:36:16 -0700
+
+
+Title: lazyplug: Use state notifier instead of display state
+Author: RyTek <rytek1128@outlook.com>
+Authored on: Thu, 4 May 2017 20:29:43 -0500
+Link: http://github.com/nathanchance/angler/commit/3914a426d44d4ab8a5a7cabc995330e3c3bd94ba
+Added on: Tue, 16 May 2017 20:36:16 -0700
+
+
+Title: Revert "impulse: Use display_state.h to drop necessity of state notifier"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 14 May 2017 15:04:45 -0700
+Link: http://github.com/nathanchance/angler/commit/587fe9f1bcef203ac6fe0b190e3c569e7dcba8b1
+Added on: Tue, 16 May 2017 20:36:15 -0700
+
+
+Title: flash_defconfig: enable STATE_NOTIFIER
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Wed, 10 May 2017 18:27:30 -0700
+Link: http://github.com/nathanchance/angler/commit/f079c580b8e4624fdf0d3611b3330b6c08568687
+Added on: Tue, 16 May 2017 20:36:15 -0700
+
+
+Title: state_notifier: Reduce defer on suspend call to 1 second
+Author: Joe Maples <joe@frap129.org>
+Authored on: Wed, 10 May 2017 21:45:20 -0500
+Link: http://github.com/nathanchance/angler/commit/175e31bbc8fd87fccce9cc954a09559baead0b99
+Added on: Tue, 16 May 2017 20:36:15 -0700
+
+
+Title: state_notifier: Queue work on any core
+Author: Joe Maples <joe@frap129.org>
+Authored on: Wed, 10 May 2017 21:44:21 -0500
+Link: http://github.com/nathanchance/angler/commit/24d1e97ecf3e93d9b86b78d72eab44e8fc703d5b
+Added on: Tue, 16 May 2017 20:36:14 -0700
+
+
+Title: state_notifier: enable by default
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Wed, 10 May 2017 18:28:16 -0700
+Link: http://github.com/nathanchance/angler/commit/f3fe2a51bf338b92bd1331ce8c3842006f687c08
+Added on: Tue, 16 May 2017 20:36:14 -0700
+
+
+Title: state_notifier: added related track into mdss events
+Author: anarkia1976 <stefano.villa1976@gmail.com>
+Authored on: Fri, 4 Dec 2015 14:56:01 +0100
+Link: http://github.com/nathanchance/angler/commit/34d16b40114f2b6016a5afa6c60668c36d45618f
+Added on: Tue, 16 May 2017 20:36:14 -0700
+
+
+Title: Angler: Add state notifier driver
+Author: Pranav Vashi <neobuddy89@gmail.com>
+Authored on: Sun, 20 Mar 2016 12:23:13 +0530
+Link: http://github.com/nathanchance/angler/commit/b40d4ff66efccbadeaf94bbd6263e8819ff03708
+Added on: Tue, 16 May 2017 20:36:13 -0700
+
+
+Title: lazyplug: Remove unused int
+Author: Joe Maples <joe@frap129.org>
+Authored on: Thu, 4 May 2017 20:06:20 -0500
+Link: http://github.com/nathanchance/angler/commit/78a9bd9e1482e0a163368ad173c13e7ce5c3f4b5
+Added on: Tue, 16 May 2017 20:36:13 -0700
+
+
+Title: lazyplug: Fix cpu_online call in unplug_cpu
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:48:57 -0500
+Link: http://github.com/nathanchance/angler/commit/b26a70f5c79beff58556cae49a8e45b4cf5b4c6a
+Added on: Tue, 16 May 2017 20:36:13 -0700
+
+
+Title: lazyplug: Online CPUs with screen on
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:41:55 -0500
+Link: http://github.com/nathanchance/angler/commit/29557f603e3bf3f5ca0261637c95d9db73d441a7
+Added on: Tue, 16 May 2017 20:36:12 -0700
+
+
+Title: lazyplug: We know lazyplug is active, reduce overhead
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:35:13 -0500
+Link: http://github.com/nathanchance/angler/commit/467c991dec0e64eb738e6127ec27b510b69b9e4b
+Added on: Tue, 16 May 2017 20:36:12 -0700
+
+
+Title: lazyplug: Remove input handler
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:27:30 -0500
+Link: http://github.com/nathanchance/angler/commit/3e6adba1413dc2a3223d62a9fd844566a0740f1b
+Added on: Tue, 16 May 2017 20:36:12 -0700
+
+
+Title: lazyplug: queue work on any online core
+Author: RyTek <rytek1128@outlook.com>
+Authored on: Thu, 20 Apr 2017 12:54:11 +0700
+Link: http://github.com/nathanchance/angler/commit/d1cdb39e7785d359a873e7406d7a5d70ed2c10e4
+Added on: Tue, 16 May 2017 20:36:11 -0700
+
+
+Title: lazyplug: enhance cpu hotplug
+Author: RyTek <rytek1128@outlook.com>
+Authored on: Thu, 20 Apr 2017 15:38:43 +0700
+Link: http://github.com/nathanchance/angler/commit/a5ec93f4ee62d724f5bba50b01b6e144e0d31b67
+Added on: Tue, 16 May 2017 20:36:11 -0700
+
+
+Title: lazyplug: Allow max cores to be tunable
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:19:02 -0500
+Link: http://github.com/nathanchance/angler/commit/000897f5a05e691915dd3d69984102c8a30a4b1e
+Added on: Tue, 16 May 2017 20:36:10 -0700
+
+
+Title: UPSTREAM: tty: n_hdlc: get rid of racy n_hdlc.tbuf
+Author: Alexander Popov <alex.popov@linux.com>
+Authored on: Tue, 28 Feb 2017 19:54:40 +0300
+Link: http://github.com/nathanchance/angler/commit/5624e16bc3842ebe1f0e82b68d9fce84f40327f9
+Added on: Tue, 16 May 2017 20:36:10 -0700
+
+
+Title: UPSTREAM: TTY: n_hdlc, fix lockdep false positive
+Author: Jiri Slaby <jslaby@suse.cz>
+Authored on: Thu, 26 Nov 2015 19:28:26 +0100
+Link: http://github.com/nathanchance/angler/commit/1d72dc1bec758cb697e6ba33d78a673facf403e8
+Added on: Tue, 16 May 2017 20:36:10 -0700
+
+
+Title: ANDROID: Add untag hacks to inet_release function
+Author: Chenbo Feng <fengc@google.com>
+Authored on: Wed, 19 Apr 2017 14:22:47 -0700
+Link: http://github.com/nathanchance/angler/commit/03f002b2ffc006f0d7ea8935b2eb1f7bbc3d718d
+Added on: Tue, 16 May 2017 20:36:09 -0700
+
+
+Title: ANDROID: sdcardfs: Don't iput if we didn't igrab
+Author: Daniel Roseberg <drosen@google.com>
+Authored on: Tue, 9 May 2017 13:36:35 -0700
+Link: http://github.com/nathanchance/angler/commit/482c8e23af60033f86a8e1c33d736f4477c304eb
+Added on: Tue, 16 May 2017 20:36:09 -0700
+
+
+Title: Makefile: Add a few flags from Electron
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 13:23:53 -0500
+Link: http://github.com/nathanchance/angler/commit/2f786501a441c8bc8ce58f64fc063c87b9cf7fff
+Added on: Tue, 16 May 2017 20:36:09 -0700
+
+
+Title: maple: Tune presets a bit
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 7 May 2017 15:03:15 -0500
+Link: http://github.com/nathanchance/angler/commit/106e3df28755ff96e7052ac4058de7e47d266b7c
+Added on: Tue, 16 May 2017 20:36:08 -0700
+
+
+Title: thermal: Disable polling by default
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sat, 6 May 2017 13:53:54 -0500
+Link: http://github.com/nathanchance/angler/commit/6f00ad8b6002e5ee9f6fa7ff1cf4fffe64e399e0
+Added on: Tue, 16 May 2017 20:36:08 -0700
+
+
+Title: intelli_thermal v3.0: initial coding for Linux 3.10 Qualcomm kernels
+Author: Paul Reioux <reioux@gmail.com>
+Authored on: Sat, 17 Jan 2015 12:19:39 -0600
+Link: http://github.com/nathanchance/angler/commit/c25cf47c0b3736b32b744339f624997173228d09
+Added on: Tue, 16 May 2017 20:36:08 -0700
+
+
+Title: Revert "thermal: disable thermal-engine hotplug and poll instead"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 7 May 2017 00:01:48 -0700
+Link: http://github.com/nathanchance/angler/commit/08c6635950aeaaed3f396be62ffac6e868792654
+Added on: Tue, 16 May 2017 20:36:07 -0700
+
+
+Title: Revert "drivers: thermal: msm: raise temperature limit to 52C"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 7 May 2017 00:01:40 -0700
+Link: http://github.com/nathanchance/angler/commit/c91cd65fb02bfb91995b357f9b0648091978c047
+Added on: Tue, 16 May 2017 20:36:07 -0700
+
+
+Title: flash_defconfig: Make Maple the default I/O scheduler
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sat, 6 May 2017 23:55:52 -0700
+Link: http://github.com/nathanchance/angler/commit/fed69edfc0ff64b0d3b5bccc2567d4de879bc293
+Added on: Tue, 16 May 2017 20:36:07 -0700
+
+
+Title: sound: soc: codecs: fix warning
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sat, 6 May 2017 21:48:53 -0700
+Link: http://github.com/nathanchance/angler/commit/36a16d9524e2741b43de1df79bca9910451829ce
+Added on: Tue, 16 May 2017 20:36:06 -0700
+
+
+Title: sound: soc: msm8994: fix declaration-after-statement warning
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sat, 6 May 2017 21:40:01 -0700
+Link: http://github.com/nathanchance/angler/commit/004a57147281c01ff7bb0665d7a57a4f56958a9b
+Added on: Tue, 16 May 2017 20:36:06 -0700
+
+
+Title: sound: Introduce PDesireAudio 10.1
+Author: Tristan Marsell <tristan.marsell@t-online.de>
+Authored on: Sun, 26 Mar 2017 14:23:00 +0200
+Link: http://github.com/nathanchance/angler/commit/c67f3b1312783b529929c42ac93a541ab2f80d7a
+Added on: Tue, 16 May 2017 20:36:06 -0700
+
+
+Title: sound: PDesireAudio: Add PDesireAudio Initialization on plug event & printk debugging
+Author: Tristan Marsell <tristan.marsell@t-online.de>
+Authored on: Sun, 26 Mar 2017 11:09:41 +0200
+Link: http://github.com/nathanchance/angler/commit/7cb37d11f23b1614b7a14c470fb179b0631bc1bc
+Added on: Tue, 16 May 2017 20:36:05 -0700
+
+
+Title: sound: Introduce PDesireAudio 10.0
+Author: PDesire <tristan.marsell@t-online.de>
+Authored on: Sun, 12 Mar 2017 09:49:26 +0100
+Link: http://github.com/nathanchance/angler/commit/c5972d14d4d81fc3af1886975c1bab7f93ed7dcc
+Added on: Tue, 16 May 2017 20:36:05 -0700
+
+
+Title: Fixed Implict declaration of method pdesireaudio_uhqa_mode
+Author: Tristan Marsell <tristan.marsell@t-online.de>
+Authored on: Sat, 28 Jan 2017 21:36:43 +0100
+Link: http://github.com/nathanchance/angler/commit/ade0e97a0540aff6d506481b9e7d97cf621dacee
+Added on: Tue, 16 May 2017 20:36:04 -0700
+
+
+Title: PDesire UHQA Driver
+Author: Tristan Marsell <tristan.marsell@t-online.de>
+Authored on: Sat, 21 Jan 2017 09:15:59 +0100
+Link: http://github.com/nathanchance/angler/commit/9c41a1196c236abf44e877a2093cb099962bd71f
+Added on: Tue, 16 May 2017 20:36:04 -0700
+
+
+Title: CHROMIUM: DROP: mm/oom_kill: Avoid deadlock; allow multiple victims
+Author: Douglas Anderson <dianders@chromium.org>
+Authored on: Thu, 30 Mar 2017 16:43:24 -0700
+Link: http://github.com/nathanchance/angler/commit/3699b652fc691ccbe238c986e3c52b72fc116478
+Added on: Tue, 16 May 2017 20:36:04 -0700
+
+
+Title: CHROMIUM: DROP: mm/oom_kill: Double-check before killing a child in our place
+Author: Douglas Anderson <dianders@chromium.org>
+Authored on: Thu, 30 Mar 2017 16:29:36 -0700
+Link: http://github.com/nathanchance/angler/commit/59901e0002c649845c747be044c9c979760b8784
+Added on: Tue, 16 May 2017 20:36:03 -0700
+
+
+Title: BACKPORT: mm: oom_kill: don't ignore oom score on exiting tasks
+Author: Johannes Weiner <hannes@cmpxchg.org>
+Authored on: Thu, 17 Mar 2016 14:17:26 -0700
+Link: http://github.com/nathanchance/angler/commit/22c642302d50ecd1486f7fd76d7f4badadaeec0f
+Added on: Tue, 16 May 2017 20:36:03 -0700
+
+
+Title: ktime: add ms_to_ktime() and ktime_add_ms() helpers
+Author: Daniel Borkmann <dborkman@redhat.com>
+Authored on: Tue, 25 Jun 2013 18:17:26 +0200
+Link: http://github.com/nathanchance/angler/commit/21f5da038fbfec5562201f100b38dc62cf35bca2
+Added on: Tue, 16 May 2017 20:36:03 -0700
+
+
+Title: mm: kmemleak_alloc_percpu() should follow the gfp from per_alloc()
+Author: Larry Finger <Larry.Finger@lwfinger.net>
+Authored on: Wed, 24 Jun 2015 16:58:51 -0700
+Link: http://github.com/nathanchance/angler/commit/808151f6cd2cb102fe1289738160a2d782dd0b12
+Added on: Tue, 16 May 2017 20:36:02 -0700
+
+
+Title: percpu: fix synchronization between synchronous map extension and chunk destruction
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Wed, 25 May 2016 11:48:25 -0400
+Link: http://github.com/nathanchance/angler/commit/3b0ccef711221c4492fbc979cfcc1e1b01a8ce07
+Added on: Tue, 16 May 2017 20:36:02 -0700
+
+
+Title: percpu: fix synchronization between chunk->map_extend_work and chunk destruction
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Wed, 25 May 2016 11:48:25 -0400
+Link: http://github.com/nathanchance/angler/commit/22576936e11fadc484ff0f06f38bf9468560e71f
+Added on: Tue, 16 May 2017 20:36:02 -0700
+
+
+Title: percpu: Fix trivial typos in comments
+Author: Yannick Guerrini <yguerrini@tomshardware.fr>
+Authored on: Fri, 6 Mar 2015 23:30:42 +0100
+Link: http://github.com/nathanchance/angler/commit/ead233f9e9ed94e490c44273930a57f627b7872d
+Added on: Tue, 16 May 2017 20:36:01 -0700
+
+
+Title: percpu: off by one in BUG_ON()
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Authored on: Wed, 29 Oct 2014 11:45:04 +0300
+Link: http://github.com/nathanchance/angler/commit/c1da2e6144ef080cb680dc6f0661136ffa510fe4
+Added on: Tue, 16 May 2017 20:36:01 -0700
+
+
+Title: percpu: fix how @gfp is interpreted by the percpu allocator
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Wed, 8 Oct 2014 12:01:52 -0400
+Link: http://github.com/nathanchance/angler/commit/f94f6c938486e0643dae279f7e676252c935405b
+Added on: Tue, 16 May 2017 20:36:01 -0700
+
+
+Title: Revert "percpu: free percpu allocation info for uniprocessor system"
+Author: Guenter Roeck <linux@roeck-us.net>
+Authored on: Sun, 21 Sep 2014 15:04:53 -0700
+Link: http://github.com/nathanchance/angler/commit/f9cacb9991143128ee5206b0d4b7f873fe655187
+Added on: Tue, 16 May 2017 20:36:00 -0700
+
+
+Title: percpu: fix locking regression in the failure path of pcpu_alloc()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 9 Sep 2014 08:02:45 +0900
+Link: http://github.com/nathanchance/angler/commit/609499a17673cbbaa1ef0d8e6f5a9c36589e16f1
+Added on: Tue, 16 May 2017 20:36:00 -0700
+
+
+Title: percpu: implement asynchronous chunk population
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:05 -0400
+Link: http://github.com/nathanchance/angler/commit/d07ce7666aa1616fc3515d55a4e8d5a5f27f99f9
+Added on: Tue, 16 May 2017 20:36:00 -0700
+
+
+Title: percpu: rename pcpu_reclaim_work to pcpu_balance_work
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:05 -0400
+Link: http://github.com/nathanchance/angler/commit/85effea447ba555ac55f46c98148b2b31de80291
+Added on: Tue, 16 May 2017 20:35:59 -0700
+
+
+Title: percpu: implmeent pcpu_nr_empty_pop_pages and chunk->nr_populated
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:05 -0400
+Link: http://github.com/nathanchance/angler/commit/1baeb77bfda266d66c3954168f46e5e13a56a663
+Added on: Tue, 16 May 2017 20:35:59 -0700
+
+
+Title: percpu: make sure chunk->map array has available space
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:05 -0400
+Link: http://github.com/nathanchance/angler/commit/10b7a81dde6c9c3aff3652bafe11f4e2117b9613
+Added on: Tue, 16 May 2017 20:35:59 -0700
+
+
+Title: percpu: implement [__]alloc_percpu_gfp()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:04 -0400
+Link: http://github.com/nathanchance/angler/commit/57db6f7ad51fd04e389b58a6b762feb34f5a6731
+Added on: Tue, 16 May 2017 20:35:58 -0700
+
+
+Title: percpu: indent the population block in pcpu_alloc()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:04 -0400
+Link: http://github.com/nathanchance/angler/commit/d7b6b8d192ba7fcb5a70e86b52c09181b7d1ba13
+Added on: Tue, 16 May 2017 20:35:58 -0700
+
+
+Title: percpu: make pcpu_alloc_area() capable of allocating only from populated areas
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:02 -0400
+Link: http://github.com/nathanchance/angler/commit/cd6bfe9de3136e3c41b4249aedc6637ecef81d30
+Added on: Tue, 16 May 2017 20:35:57 -0700
+
+
+Title: percpu: restructure locking
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:02 -0400
+Link: http://github.com/nathanchance/angler/commit/474dc42b0080f69d29bafd5c75dcfb97b395c8da
+Added on: Tue, 16 May 2017 20:35:57 -0700
+
+
+Title: percpu: make percpu-km set chunk->populated bitmap properly
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:02 -0400
+Link: http://github.com/nathanchance/angler/commit/e02218949204d7db146e8df2930325ca2569dbd2
+Added on: Tue, 16 May 2017 20:35:57 -0700
+
+
+Title: percpu: move region iterations out of pcpu_[de]populate_chunk()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:02 -0400
+Link: http://github.com/nathanchance/angler/commit/0a10ebf380e65fe99d841a1268b422412be2ef5d
+Added on: Tue, 16 May 2017 20:35:56 -0700
+
+
+Title: percpu: move common parts out of pcpu_[de]populate_chunk()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:01 -0400
+Link: http://github.com/nathanchance/angler/commit/b5bcdeca03d8e558e8eaa42404037672b56edb9c
+Added on: Tue, 16 May 2017 20:35:56 -0700
+
+
+Title: percpu: remove @may_alloc from pcpu_get_pages()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:01 -0400
+Link: http://github.com/nathanchance/angler/commit/3250c7fd9e013e6ff6d3e6057003854cf7d8ad3d
+Added on: Tue, 16 May 2017 20:35:56 -0700
+
+
+Title: percpu: remove the usage of separate populated bitmap in percpu-vm
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Tue, 2 Sep 2014 14:46:01 -0400
+Link: http://github.com/nathanchance/angler/commit/b2793220c739eff7e7624d5df5287c01369d054e
+Added on: Tue, 16 May 2017 20:35:55 -0700
+
+
+Title: percpu: free percpu allocation info for uniprocessor system
+Author: Honggang Li <enjoymindful@gmail.com>
+Authored on: Tue, 12 Aug 2014 21:36:15 +0800
+Link: http://github.com/nathanchance/angler/commit/65474bb320cbb8f30efeedd47de64343c17f9a40
+Added on: Tue, 16 May 2017 20:35:55 -0700
+
+
+Title: percpu: Use ALIGN macro instead of hand coding alignment calculation
+Author: Christoph Lameter <cl@gentwo.org>
+Authored on: Thu, 19 Jun 2014 09:59:18 -0500
+Link: http://github.com/nathanchance/angler/commit/d700292ffb2a6fb107a17332554005763b8ab824
+Added on: Tue, 16 May 2017 20:35:55 -0700
+
+
+Title: percpu: renew the max_contig if we merge the head and previous block
+Author: Jianyu Zhan <nasa4836@gmail.com>
+Authored on: Fri, 28 Mar 2014 20:55:21 +0800
+Link: http://github.com/nathanchance/angler/commit/a366b8a04dde690587eceec47c35747f0e6798f9
+Added on: Tue, 16 May 2017 20:35:54 -0700
+
+
+Title: percpu: allocation size should be even
+Author: Al Viro <viro@ZenIV.linux.org.uk>
+Authored on: Mon, 17 Mar 2014 16:01:27 -0400
+Link: http://github.com/nathanchance/angler/commit/a44e69f41ada01d943fcef0edd9cef3df95f1e20
+Added on: Tue, 16 May 2017 20:35:54 -0700
+
+
+Title: percpu: speed alloc_pcpu_area() up
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Thu, 6 Mar 2014 20:52:32 -0500
+Link: http://github.com/nathanchance/angler/commit/33bbc2a25226507d6b7c1386d0008bb59db504ad
+Added on: Tue, 16 May 2017 20:35:54 -0700
+
+
+Title: percpu: store offsets instead of lengths in ->map[]
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Thu, 6 Mar 2014 21:13:18 -0500
+Link: http://github.com/nathanchance/angler/commit/54aa16c7fae2fe3552b9f112a66b0321ca029974
+Added on: Tue, 16 May 2017 20:35:53 -0700
+
+
+Title: perpcu: fold pcpu_split_block() into the only caller
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Thu, 6 Mar 2014 21:08:24 -0500
+Link: http://github.com/nathanchance/angler/commit/3568ab58ec9f0c49e630f81678d6b054508fee0c
+Added on: Tue, 16 May 2017 20:35:53 -0700
+
+
+Title: percpu: use VMALLOC_TOTAL instead of VMALLOC_END - VMALLOC_START
+Author: Laura Abbott <lauraa@codeaurora.org>
+Authored on: Thu, 2 Jan 2014 13:53:21 -0800
+Link: http://github.com/nathanchance/angler/commit/4455bd9334f7f4c5f4272a28cca9f352f763b047
+Added on: Tue, 16 May 2017 20:35:53 -0700
+
+
+Title: percpu: fix bootmem error handling in pcpu_page_first_chunk()
+Author: Michael Holzheu <holzheu@linux.vnet.ibm.com>
+Authored on: Tue, 17 Sep 2013 16:57:34 +0200
+Link: http://github.com/nathanchance/angler/commit/d0a465274ded78c9942c9151a571835201aad0cf
+Added on: Tue, 16 May 2017 20:35:52 -0700
+
+
+Title: include/linux/mm.h: add PAGE_ALIGNED() helper
+Author: Andrew Morton <akpm@linux-foundation.org>
+Authored on: Wed, 3 Jul 2013 15:02:11 -0700
+Link: http://github.com/nathanchance/angler/commit/dbd1c40b04ee5ff4ce09d7dd9b59edadca15e22e
+Added on: Tue, 16 May 2017 20:35:52 -0700
+
+
+Title: flash_defconfig: Enable JUMP_LABEL
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Fri, 5 May 2017 18:04:42 -0700
+Link: http://github.com/nathanchance/angler/commit/0a39f8b2ecf2ea0aa4b529f88a76e4a5348873c5
+Added on: Tue, 16 May 2017 20:35:52 -0700
+
+
+Title: PM / runtime: Avoid false-positive warnings from might_sleep_if()
+Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+Authored on: Sat, 4 Feb 2017 00:44:36 +0100
+Link: http://github.com/nathanchance/angler/commit/f224309bdd4794484781dc8f591928fba6817169
+Added on: Tue, 16 May 2017 20:35:51 -0700
+
+
+Title: PM / suspend: Always use deepest C-state in the "freeze" sleep state
+Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+Authored on: Mon, 5 May 2014 00:51:54 +0200
+Link: http://github.com/nathanchance/angler/commit/026641243d4f31dc408537d3c851d117d784da55
+Added on: Tue, 16 May 2017 20:35:51 -0700
+
+
+Title: PM / sleep: fix freeze_ops NULL pointer dereferences
+Author: Zhang Rui <rui.zhang@intel.com>
+Authored on: Tue, 15 Jul 2014 14:26:13 +0200
+Link: http://github.com/nathanchance/angler/commit/a7bf1beacdcb769d5fe36f29cc2646d1944fdaec
+Added on: Tue, 16 May 2017 20:35:50 -0700
+
+
+Title: ACPI / PM: Hold ACPI scan lock over the "freeze" sleep state
+Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+Authored on: Thu, 15 May 2014 23:29:57 +0200
+Link: http://github.com/nathanchance/angler/commit/6076e543f2ccf3feb52857951970787ec6009b56
+Added on: Tue, 16 May 2017 20:35:50 -0700
+
+
+Title: irq_work: Introduce arch_irq_work_has_interrupt()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Sat, 6 Sep 2014 15:43:02 +0200
+Link: http://github.com/nathanchance/angler/commit/7a607889e421d51f369939feeee3937b072673b1
+Added on: Tue, 16 May 2017 20:35:50 -0700
+
+
+Title: irq_work: Force raised irq work to run on irq work interrupt
+Author: Frederic Weisbecker <fweisbec@gmail.com>
+Authored on: Sat, 16 Aug 2014 18:37:19 +0200
+Link: http://github.com/nathanchance/angler/commit/af55a35d17ef3f04e3a30d71772da3fe8427a876
+Added on: Tue, 16 May 2017 20:35:49 -0700
+
+
+Title: irq_work: Remove BUG_ON in irq_work_run()
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Wed, 25 Jun 2014 07:13:07 +0200
+Link: http://github.com/nathanchance/angler/commit/19ad7bdd051fe86630247ccf2adb3781703585ba
+Added on: Tue, 16 May 2017 20:35:49 -0700
+
+
+Title: irq_work: Implement remote queueing
+Author: Frederic Weisbecker <fweisbec@gmail.com>
+Authored on: Thu, 8 May 2014 01:37:48 +0200
+Link: http://github.com/nathanchance/angler/commit/9d59d95bd7bf52605c7fdf3a0a9f2af6111901b8
+Added on: Tue, 16 May 2017 20:35:49 -0700
+
+
+Title: irq_work: Split raised and lazy lists
+Author: Frederic Weisbecker <fweisbec@gmail.com>
+Authored on: Fri, 23 May 2014 18:10:21 +0200
+Link: http://github.com/nathanchance/angler/commit/283fe4346f28a79cc1dcb4f5a8eabea29b17756e
+Added on: Tue, 16 May 2017 20:35:48 -0700
+
+
+Title: mdss: dsi: fix DSI clk rate update during dynamic resolution switch
+Author: Anusha Koduru <kanusha@codeaurora.org>
+Authored on: Mon, 1 Jun 2015 19:00:51 +0530
+Link: http://github.com/nathanchance/angler/commit/c94355de7c49f5eae7362696d1ebb0624fed33e3
+Added on: Tue, 16 May 2017 20:35:48 -0700
+
+
+Title: cpu-hotplug: export cpu_hotplug_enable/cpu_hotplug_disable
+Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Authored on: Wed, 5 Aug 2015 00:52:47 -0700
+Link: http://github.com/nathanchance/angler/commit/2848756630a848403f2fcff1c807e879d581b56e
+Added on: Tue, 16 May 2017 20:35:48 -0700
+
+
+Title: cpu-hotplug: convert cpu_hotplug_disabled to a counter
+Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Authored on: Wed, 5 Aug 2015 00:52:46 -0700
+Link: http://github.com/nathanchance/angler/commit/f7d019200c7d0d6f68636f0fa1ebf94ad1d34f19
+Added on: Tue, 16 May 2017 20:35:47 -0700
+
+
+Title: readahead: make context readahead more conservative
+Author: Fengguang Wu <fengguang.wu@intel.com>
+Authored on: Wed, 11 Sep 2013 14:21:47 -0700
+Link: http://github.com/nathanchance/angler/commit/d3e9a5633fcf9e0bdb422ab2dcfcdeb129b81bf3
+Added on: Tue, 16 May 2017 20:35:47 -0700
+
+
+Title: readahead: Fix an error (thx ramgear)
+Author: hellsgod <hellsgod@gmx.ch>
+Authored on: Fri, 20 Sep 2013 11:59:13 +0200
+Link: http://github.com/nathanchance/angler/commit/a011625deebff0fd2665ddf1dd4e5083876f90cc
+Added on: Tue, 16 May 2017 20:35:46 -0700
+
+
+Title: Readahead: Optimize divide/multiply by power of 2 using L/R shift (thx ramgear)
+Author: hellsgod <hellsgod@gmx.ch>
+Authored on: Mon, 16 Sep 2013 17:39:52 +0200
+Link: http://github.com/nathanchance/angler/commit/0b5a51ecca96550695e1bb642c938894725d778f
+Added on: Tue, 16 May 2017 20:35:46 -0700
+
+
+Title: cpuset: fix a locking issue in cpuset_migrate_mm()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Thu, 27 Feb 2014 18:19:03 +0800
+Link: http://github.com/nathanchance/angler/commit/d73b16681821c3e2e8506b81b9a1c824b1e9f9a9
+Added on: Tue, 16 May 2017 20:35:46 -0700
+
+
+Title: cpuset: rename @cont to @cgrp
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Fri, 14 Jun 2013 11:18:27 +0800
+Link: http://github.com/nathanchance/angler/commit/682aa991948b26529131ca72596f6197460b6908
+Added on: Tue, 16 May 2017 20:35:45 -0700
+
+
+Title: cpuset: fix to migrate mm correctly in a corner case
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Thu, 13 Jun 2013 15:11:44 +0800
+Link: http://github.com/nathanchance/angler/commit/6f14f8f2c2e65f97623e6ef8df9fea5706d57d13
+Added on: Tue, 16 May 2017 20:35:45 -0700
+
+
+Title: cpuset: allow to move tasks to empty cpusets
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:16:46 +0800
+Link: http://github.com/nathanchance/angler/commit/7ef0c94ec89946a23f2aea39c987f2c97f869db9
+Added on: Tue, 16 May 2017 20:35:45 -0700
+
+
+Title: cpuset: allow to keep tasks in empty cpusets
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:16:29 +0800
+Link: http://github.com/nathanchance/angler/commit/82ace82d23c2a1936f844e8c6f9b01ff08c1799e
+Added on: Tue, 16 May 2017 20:35:44 -0700
+
+
+Title: cpuset: introduce effective_{cpumask|nodemask}_cpuset()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:15:22 +0800
+Link: http://github.com/nathanchance/angler/commit/d40fc9250e70a731472e8e9373162323b3af2a45
+Added on: Tue, 16 May 2017 20:35:44 -0700
+
+
+Title: cpuset: record old_mems_allowed in struct cpuset
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:15:08 +0800
+Link: http://github.com/nathanchance/angler/commit/c49ef88e45fed4b0661efab2ba62d4383beac56e
+Added on: Tue, 16 May 2017 20:35:44 -0700
+
+
+Title: cpuset: remove async hotplug propagation work
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:14:47 +0800
+Link: http://github.com/nathanchance/angler/commit/2aad72c3da927d436e69682df1b9d45969a665b1
+Added on: Tue, 16 May 2017 20:35:43 -0700
+
+
+Title: cpuset: let hotplug propagation work wait for task attaching
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Sun, 9 Jun 2013 17:14:22 +0800
+Link: http://github.com/nathanchance/angler/commit/deb1570d8543ba9b2c39acd50c7e76b99148828b
+Added on: Tue, 16 May 2017 20:35:43 -0700
+
+
+Title: cpuset: get rid of the useless forward declaration of cpuset
+Author: Zhao Hongjiang <zhaohongjiang@huawei.com>
+Authored on: Sat, 27 Jul 2013 11:56:49 +0800
+Link: http://github.com/nathanchance/angler/commit/e9a15dab336c7b34ee202ea7a6f7253ba61b8570
+Added on: Tue, 16 May 2017 20:35:43 -0700
+
+
+Title: cgroup: fix deadlock on cgroup_mutex via drop_parsed_module_refcounts()
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Thu, 27 Jun 2013 19:37:23 -0700
+Link: http://github.com/nathanchance/angler/commit/6c42eec1f6aa2691d62ae020dc648ef368872dec
+Added on: Tue, 16 May 2017 20:35:42 -0700
+
+
+Title: cgroup: clean up the cftype array for the base cgroup files
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Mon, 3 Jun 2013 19:14:34 -0700
+Link: http://github.com/nathanchance/angler/commit/578e8aa35f24c1ca87b42183808f85c8caacef0e
+Added on: Tue, 16 May 2017 20:35:42 -0700
+
+
+Title: cgroup: mark "notify_on_release" and "release_agent" cgroup files insane
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Mon, 3 Jun 2013 19:13:55 -0700
+Link: http://github.com/nathanchance/angler/commit/3d5a525305b5f618816f8c4455a1654c537c04be
+Added on: Tue, 16 May 2017 20:35:42 -0700
+
+
+Title: cgroup: mark "tasks" cgroup file as insane
+Author: Tejun Heo <tj@kernel.org>
+Authored on: Mon, 3 Jun 2013 19:13:02 -0700
+Link: http://github.com/nathanchance/angler/commit/15dc4c012ba9f6c3d141ae1f8c6aa2c04db20dee
+Added on: Tue, 16 May 2017 20:35:41 -0700
+
+
+Title: cpuset: remove redundant check in cpuset_cpus_allowed_fallback()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Wed, 5 Jun 2013 17:15:11 +0800
+Link: http://github.com/nathanchance/angler/commit/920556bfc6942e3b55a17d27786fff380bd99719
+Added on: Tue, 16 May 2017 20:35:41 -0700
+
+
+Title: cpuset: cleanup guarantee_online_{cpus|mems}()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Wed, 5 Jun 2013 17:15:23 +0800
+Link: http://github.com/nathanchance/angler/commit/db514302c4dc7f90a0dc91cfcbaef9dd6b208341
+Added on: Tue, 16 May 2017 20:35:41 -0700
+
+
+Title: cpuset: remove unnecessary variable in cpuset_attach()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Wed, 5 Jun 2013 17:15:35 +0800
+Link: http://github.com/nathanchance/angler/commit/dbdc7362a3ab11f83ce08e8f7e32a6fe240bb298
+Added on: Tue, 16 May 2017 20:35:40 -0700
+
+
+Title: cpuset: remove cpuset_test_cpumask()
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Wed, 5 Jun 2013 17:15:48 +0800
+Link: http://github.com/nathanchance/angler/commit/cb73bf62654cd969ed79d29ecae297eec4341f03
+Added on: Tue, 16 May 2017 20:35:40 -0700
+
+
+Title: cpuset: re-structure update_cpumask() a bit
+Author: Li Zefan <lizefan@huawei.com>
+Authored on: Wed, 5 Jun 2013 17:15:59 +0800
+Link: http://github.com/nathanchance/angler/commit/cac524f5e65874705fbbb7cba101ac0ff9da4867
+Added on: Tue, 16 May 2017 20:35:40 -0700
+
+
+Title: drivers: clk: qcom: silence another kernel warning
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Fri, 5 May 2017 16:52:39 -0700
+Link: http://github.com/nathanchance/angler/commit/df6e78f3a10405689b7a9dc5cb9a745cb475dcd8
+Added on: Tue, 16 May 2017 20:35:39 -0700
+
+
+Title: drivers: video: msm: mdss: more silence
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Fri, 5 May 2017 16:50:12 -0700
+Link: http://github.com/nathanchance/angler/commit/37cc46d31c414221e35574920f58068923e774e0
+Added on: Tue, 16 May 2017 20:35:39 -0700
+
+
+Title: drivers: i2c: silence log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:17:05 -0700
+Link: http://github.com/nathanchance/angler/commit/3cb53d3ec0cbf935423f836b42cfaf8ba000c459
+Added on: Tue, 16 May 2017 20:35:39 -0700
+
+
+Title: drivers: power: qcom: msm-pm: silencio!
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:13:41 -0700
+Link: http://github.com/nathanchance/angler/commit/f4c3c97b33f3a1e8b4346c36e98ec7198be4c50d
+Added on: Tue, 16 May 2017 20:35:38 -0700
+
+
+Title: drivers: power: qpnp-smbcharger: quiet some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:13:22 -0700
+Link: http://github.com/nathanchance/angler/commit/6f04463a1fe603f54f574a63c46a6266834705b3
+Added on: Tue, 16 May 2017 20:35:38 -0700
+
+
+Title: drivers: video: mdss: silence some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:10:03 -0700
+Link: http://github.com/nathanchance/angler/commit/140937120353f008da30ed8514305d49fe54b45e
+Added on: Tue, 16 May 2017 20:35:38 -0700
+
+
+Title: drivers: pci: msm: quiet some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:07:07 -0700
+Link: http://github.com/nathanchance/angler/commit/1ed201a7ca7b81824d5312430c94afa4f56de134
+Added on: Tue, 16 May 2017 20:35:37 -0700
+
+
+Title: drivers: leds-qpnp: silence log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 23:01:39 -0700
+Link: http://github.com/nathanchance/angler/commit/543c320d65c828caa935ad420b6372873cfd3a09
+Added on: Tue, 16 May 2017 20:35:37 -0700
+
+
+Title: drivers: clk: qcom: silence kernel warning
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:59:46 -0700
+Link: http://github.com/nathanchance/angler/commit/bd56f31e098f9609d55cee361a916c4e8f760ad3
+Added on: Tue, 16 May 2017 20:35:37 -0700
+
+
+Title: drivers: qcom: peripheral-loader: quiet
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:58:12 -0700
+Link: http://github.com/nathanchance/angler/commit/e525a3d84cc8981a0d2af44ce38e039a026d809d
+Added on: Tue, 16 May 2017 20:35:36 -0700
+
+
+Title: drivers: power: bcl: disable some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:53:29 -0700
+Link: http://github.com/nathanchance/angler/commit/6d0707ce658a0a72db3954ef421583fb63eb603e
+Added on: Tue, 16 May 2017 20:35:36 -0700
+
+
+Title: arch: arm/arm64: silence some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:52:21 -0700
+Link: http://github.com/nathanchance/angler/commit/5d9e01a8371ad96dfe65c652c56cee903dfde47b
+Added on: Tue, 16 May 2017 20:35:36 -0700
+
+
+Title: msm: mdss: silence!
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:51:15 -0700
+Link: http://github.com/nathanchance/angler/commit/44f81938a3613da4af0e7e9df3a985dd217721cf
+Added on: Tue, 16 May 2017 20:35:35 -0700
+
+
+Title: sdcardfs: disable some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:48:41 -0700
+Link: http://github.com/nathanchance/angler/commit/fc1523de7dd44f402d7b8d323c5beebebe9679e8
+Added on: Tue, 16 May 2017 20:35:35 -0700
+
+
+Title: kernel: cpu: disable some log spam
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Thu, 4 May 2017 22:46:52 -0700
+Link: http://github.com/nathanchance/angler/commit/331d28e275627400a967341f3c136ea0e7e6f864
+Added on: Tue, 16 May 2017 20:35:35 -0700
+
+
+Title: timerfd: Protect the might cancel mechanism proper
+Author: Thomas Gleixner <tglx@linutronix.de>
+Authored on: Tue, 31 Jan 2017 15:24:03 +0100
+Link: http://github.com/nathanchance/angler/commit/f45ed26c69925e7b4a53db9964a12babfa19066c
+Added on: Tue, 16 May 2017 20:35:34 -0700
+
+
+Title: lib: clean up put_cpu_var usage
+Author: Shaohua Li <shli@fb.com>
+Authored on: Tue, 27 Sep 2016 08:42:42 -0700
+Link: http://github.com/nathanchance/angler/commit/15a2125a4111a5c1a984d1ea15dab831098ae6e2
+Added on: Tue, 16 May 2017 20:35:34 -0700
+
+
+Title: arm64: check for upper PAGE_SHIFT bits in pfn_valid()
+Author: Greg Hackmann <ghackmann@google.com>
+Authored on: Thu, 28 Aug 2014 14:00:10 -0700
+Link: http://github.com/nathanchance/angler/commit/925627c8167d503ae7791291635a3f1daec2a3f6
+Added on: Tue, 16 May 2017 20:35:34 -0700
+
+
+Title: msm_performance: Expand hotplug config guards
+Author: Joe Maples <joe@frap129.org>
+Authored on: Mon, 1 May 2017 10:31:25 -0500
+Link: http://github.com/nathanchance/angler/commit/a561396403505b2b93583d1ce7bc9639d704b361
+Added on: Tue, 16 May 2017 20:35:33 -0700
+
+
+Title: bcmdhd: We get it, negative 30 is invalid
+Author: Joe Maples <joe@frap129.org>
+Authored on: Mon, 1 May 2017 09:47:29 -0500
+Link: http://github.com/nathanchance/angler/commit/5a03428b4b6d9e0b0b57bee55706897e4da9285b
+Added on: Tue, 16 May 2017 20:35:33 -0700
+
+
+Title: flash_defconfig: Disable CPU Subsystem dumping support
+Author: Joe Maples <joe@frap129.org>
+Authored on: Sun, 30 Apr 2017 20:54:59 -0500
+Link: http://github.com/nathanchance/angler/commit/353ffce017afd65484463c9f9ad6226e9353b69a
+Added on: Tue, 16 May 2017 20:35:32 -0700
+
+
+Title: mdss: Do not wait for kickoff in display commit
+Author: Naseer Ahmed <naseer@codeaurora.org>
+Authored on: Mon, 11 Jul 2016 15:48:03 -0400
+Link: http://github.com/nathanchance/angler/commit/dfbc1b6c51b6a2c1024e336a72cadb07369c0a88
+Added on: Tue, 16 May 2017 20:35:32 -0700
+
+
+Title: drivers: soc: qcom: Remove prints from the idle path
+Author: Mahesh Sivasubramanian <msivasub@codeaurora.org>
+Authored on: Wed, 8 Mar 2017 15:38:23 -0700
+Link: http://github.com/nathanchance/angler/commit/5f8d66d9bcb86f41ad6163442f15f683ca637dfc
+Added on: Tue, 16 May 2017 20:35:32 -0700
+
+
+Title: cpufreq: Fix checkpatch errors and warnings
+Author: Stratos Karafotis <stratosk@semaphore.gr>
+Authored on: Wed, 19 Mar 2014 23:29:17 +0200
+Link: http://github.com/nathanchance/angler/commit/546ca03c67ed41c6e48da745fc8fa61fd249f7f6
+Added on: Tue, 16 May 2017 20:35:29 -0700
+

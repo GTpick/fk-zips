@@ -1,0 +1,16 @@
+http://github.com/nathanchance/angler/commits/7.1.2-flash
+
+7353b77c91d9 Flash Kernel 2.4 by Nathan Chancellor
+a9555a4a918e Merge branch '7.1.2-base' into 7.1.2-flash by Nathan Chancellor
+9ae078e0eaf8 Merge android-7.1.2_r0.26 into 7.1.2-base by Nathan Chancellor
+5b0be8f02fec Merge android-msm-angler-3.10-nyc-mr2-security-next into android-msm-angler-3.10-nyc-mr2 by Stuart Scott
+5d70d641f440 USB: f_qc_rndis: Prevent use-after-free for _rndis_qc by Pratham Pratap
+ada4869e7da0 msm: ipa: Fix for missing int overflow check in the refcount library by Utkarsh Saxena
+4d576a4311b8 ASoC: msm: qdspv2: add result check when audio process fail by kunleiz
+afba606957ec UPSTREAM: timerfd: Protect the might cancel mechanism proper by Thomas Gleixner
+64b103bd5d95 msm: kgsl: Fix the race between context create and destroy by Sunil Khatri
+d4e8bc6c31d6 BACKPORT: f2fs: sanity check checkpoint segno and blkoff by Jin Qian
+0561402944df qcdev: Check the digest length during the SHA operations by Dennis Cagle
+8479c2bc60f5 UPSTREAM: f2fs: sanity check segment count by Jin Qian
+e7fdc1ca00f1 net: wireless: bcmdhd: additional length check for BRCM EVENT frame. by Insun Song
+1af290d1e7d7 Merge android-msm-angler-3.10-nyc-mr2 into android-msm-angler-3.10-nyc-mr2-security-next by Stuart Scott

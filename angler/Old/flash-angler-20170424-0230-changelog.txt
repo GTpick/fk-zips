@@ -1,0 +1,91 @@
+
+Title: input: synaptics: put offset checks under mutex.
+Author: Andrew Chant <achant@google.com>
+Authored on: Tue, 17 Jan 2017 07:37:52 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/3f8a9dd142b6f8649147eebcd0a20e1681475d9a
+Added on: Sun, 23 Apr 2017 15:35:44 -0700
+
+
+Title: input: synaptics: allocate heap memory for temp buf
+Author: Biswajit Paul <biswajitpaul@codeaurora.org>
+Authored on: Thu, 30 Jun 2016 19:00:50 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/dd8f24b0dcd4859a3f9bb1bec09ebb34471a7576
+Added on: Sun, 23 Apr 2017 15:35:37 -0700
+
+
+Title: cgroup: refactor allow_attach function into common code
+Author: Rom Lemarchand <romlem@android.com>
+Authored on: Fri, 7 Nov 2014 12:48:17 -0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/c76663fee637e91baeb2d87e16f22d9ee94d7376
+Added on: Sun, 23 Apr 2017 12:59:37 -0700
+
+
+Title: Fix the return type explicitly
+Author: Joe Korty <joe.korty@ccur.com>
+Authored on: Wed, 25 May 2016 17:38:14 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/55819a5c946d1295298c970fb9c73eab6c7dde6f
+Added on: Sun, 23 Apr 2017 11:46:05 -0700
+
+
+Title: Revert "sched: core: fix warning"
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Sun, 23 Apr 2017 11:39:03 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/f81670fe1b2f5c4054654e5da9b4b7cabb71029f
+Added on: Sun, 23 Apr 2017 11:41:19 -0700
+
+
+Title: KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+Author: Eric Biggers <ebiggers@google.com>
+Authored on: Tue, 18 Apr 2017 15:31:09 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/11a4ba2e9553b9ab4ada748852bd4c43d2402799
+Added on: Sat, 22 Apr 2017 11:47:24 -0700
+
+
+Title: KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+Author: David Howells <dhowells@redhat.com>
+Authored on: Tue, 18 Apr 2017 15:31:07 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/8127c4b940546431acdda1f74cf62be740a3821e
+Added on: Sat, 22 Apr 2017 11:47:12 -0700
+
+
+Title: KEYS: Change the name of the dead type to ".dead" to prevent user access
+Author: David Howells <dhowells@redhat.com>
+Authored on: Tue, 18 Apr 2017 15:31:08 +0100
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/4774c3486c5646630e40d8cd7224c7af8d806d0c
+Added on: Sat, 22 Apr 2017 11:47:01 -0700
+
+
+Title: ring-buffer: Have ring_buffer_iter_empty() return true when empty
+Author: Steven Rostedt (VMware) <rostedt@goodmis.org>
+Authored on: Wed, 19 Apr 2017 14:29:46 -0400
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/7c050e65dee3ec96874bb0f5ec63b9341c534c2a
+Added on: Sat, 22 Apr 2017 11:46:46 -0700
+
+
+Title: ASoC: msm: qdspv2: add mutex to prevent access same memory simultaneously
+Author: kunleiz <kunleiz@codeaurora.org>
+Authored on: Sun, 26 Mar 2017 20:07:43 +0800
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/13c96452acf0a5d27393596088642ffec296447b
+Added on: Fri, 21 Apr 2017 23:26:14 -0700
+
+
+Title: msm: vidc: Protect debug_buffer access in core_info_read with lock.
+Author: Abdulla Anam <abdullahanam@codeaurora.org>
+Authored on: Wed, 22 Mar 2017 14:00:10 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/80365456107204b3c096ebd35acfc5351e7ae134
+Added on: Fri, 21 Apr 2017 23:25:07 -0700
+
+
+Title: soc: qcom: socinfo: Protect current_image using semaphore lock.
+Author: Swetha Chikkaboraiah <schikk@codeaurora.org>
+Authored on: Mon, 27 Mar 2017 15:00:17 +0530
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/d2ce2ea3da15eae4402c2f7d64b7cb508af1569c
+Added on: Fri, 21 Apr 2017 23:22:37 -0700
+
+
+Title: Revert "ANDROID: sdcardfs: Don't do d_add for lower fs"
+Author: Daniel Rosenberg <drosen@google.com>
+Authored on: Thu, 20 Apr 2017 12:00:30 -0700
+Link: http://github.com/Flash-ROM/kernel_huawei_angler/commit/623506db5519ea809f36c4002d8ac36d9bdcf86c
+Added on: Fri, 21 Apr 2017 01:40:02 -0700
+

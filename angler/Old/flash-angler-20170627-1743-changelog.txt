@@ -1,0 +1,1626 @@
+
+Title: Merge 3.10.107 into 7.1.2-base
+Author: Nathan Chancellor <natechancellor@gmail.com>
+Authored on: Tue, 27 Jun 2017 13:13:31 -0700Link: http://github.com/nathanchance/angler/commit/ae21223fca36a7483dcf144d8235333091962544
+Added on: Tue, 27 Jun 2017 13:13:31 -0700
+
+
+Title: Linux 3.10.107
+Author: Willy Tarreau <w@1wt.eu>
+Authored on: Tue, 27 Jun 2017 11:49:32 +0200Link: http://github.com/nathanchance/angler/commit/0e3d5747a3ef9986d7617cec396850bf9d039309
+Added on: Tue, 27 Jun 2017 11:49:32 +0200
+
+
+Title: Allow stack to grow up to address space limit
+Author: Helge Deller <deller@gmx.de>
+Authored on: Mon, 19 Jun 2017 17:34:05 +0200Link: http://github.com/nathanchance/angler/commit/0fcba8f954460c56217897bdffbf62060815329a
+Added on: Thu, 22 Jun 2017 15:21:26 +0200
+
+
+Title: mm: fix new crash in unmapped_area_topdown()
+Author: Hugh Dickins <hughd@google.com>
+Authored on: Tue, 20 Jun 2017 02:10:44 -0700Link: http://github.com/nathanchance/angler/commit/28ebf89579a055259280252f68f6c26d986e3ce3
+Added on: Thu, 22 Jun 2017 15:21:11 +0200
+
+
+Title: mm: larger stack guard gap, between vmas
+Author: Hugh Dickins <hughd@google.com>
+Authored on: Mon, 19 Jun 2017 04:03:24 -0700Link: http://github.com/nathanchance/angler/commit/1ad9a25dd06fda9bdc27875e1cedb8277accb212
+Added on: Wed, 21 Jun 2017 15:42:43 +0200
+
+
+Title: x86/mm/32: Enable full randomization on i386 and X86_32
+Author: Hector Marco-Gisbert <hecmargi@upv.es>
+Authored on: Thu, 10 Mar 2016 20:51:00 +0100Link: http://github.com/nathanchance/angler/commit/a5eec86eff34e9a1e503612ebd64ef9bc44acc48
+Added on: Tue, 20 Jun 2017 14:04:55 +0200
+
+
+Title: x86: standardize mmap_rnd() usage
+Author: Kees Cook <keescook@chromium.org>
+Authored on: Tue, 14 Apr 2015 15:47:45 -0700Link: http://github.com/nathanchance/angler/commit/2d49a81a8a89b2a398e358fad5bb819f9d1f2528
+Added on: Tue, 20 Jun 2017 14:04:54 +0200
+
+
+Title: ipv6: check raw payload size correctly in ioctl
+Author: Jamie Bainbridge <jbainbri@redhat.com>
+Authored on: Wed, 26 Apr 2017 10:43:27 +1000Link: http://github.com/nathanchance/angler/commit/36805c5166899a5a013821d3e15b84409ae1ceb6
+Added on: Tue, 20 Jun 2017 14:04:54 +0200
+
+
+Title: printk: use rcuidle console tracepoint
+Author: Sergey Senozhatsky <sergey.senozhatsky.work@gmail.com>
+Authored on: Sat, 18 Feb 2017 03:42:54 -0800Link: http://github.com/nathanchance/angler/commit/d46354fc25ca29a05ed43194b56d2b1f6816f934
+Added on: Tue, 20 Jun 2017 14:04:54 +0200
+
+
+Title: tun: read vnet_hdr_sz once
+Author: Willem de Bruijn <willemb@google.com>
+Authored on: Fri, 3 Feb 2017 18:20:48 -0500Link: http://github.com/nathanchance/angler/commit/302c74b132987d69752aedeb33b232076d2006df
+Added on: Tue, 20 Jun 2017 14:04:54 +0200
+
+
+Title: kvm: nVMX: Allow L1 to intercept software exceptions (#BP and #OF)
+Author: Jim Mattson <jmattson@google.com>
+Authored on: Mon, 12 Dec 2016 11:01:37 -0800Link: http://github.com/nathanchance/angler/commit/58e4633a0841c48ce32f14cd797ec5482ecfa83b
+Added on: Tue, 20 Jun 2017 14:04:53 +0200
+
+
+Title: ftrace/x86: Fix triple fault with graph tracing and suspend-to-ram
+Author: Josh Poimboeuf <jpoimboe@redhat.com>
+Authored on: Thu, 13 Apr 2017 17:53:55 -0500Link: http://github.com/nathanchance/angler/commit/b3d2d8af5b4791f60a1ced720a251c7f89badff7
+Added on: Tue, 20 Jun 2017 14:04:53 +0200
+
+
+Title: nfsd: check for oversized NFSv2/v3 arguments
+Author: J. Bruce Fields <bfields@redhat.com>
+Authored on: Fri, 21 Apr 2017 16:10:18 -0400Link: http://github.com/nathanchance/angler/commit/2103905323896cd854cd881676d1fe5f0bf48124
+Added on: Tue, 20 Jun 2017 14:04:53 +0200
+
+
+Title: p9_client_readdir() fix
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Fri, 14 Apr 2017 17:22:18 -0400Link: http://github.com/nathanchance/angler/commit/37a23f22c72f6c90fd438db1f2abca3b342850a2
+Added on: Tue, 20 Jun 2017 14:04:52 +0200
+
+
+Title: xen/x86: don't lose event interrupts
+Author: Stefano Stabellini <sstabellini@kernel.org>
+Authored on: Fri, 15 Apr 2016 18:23:00 -0700Link: http://github.com/nathanchance/angler/commit/1e46601d54d1649e4cea55790f8ad2c64e7f94d5
+Added on: Tue, 20 Jun 2017 14:04:52 +0200
+
+
+Title: RDS: Fix the atomicity for congestion map update
+Author: santosh.shilimkar@oracle.com <santosh.shilimkar@oracle.com>
+Authored on: Thu, 14 Apr 2016 10:43:27 -0700Link: http://github.com/nathanchance/angler/commit/403642a01b6dceaff7054480d6a52f3b5e07cb8e
+Added on: Tue, 20 Jun 2017 14:04:52 +0200
+
+
+Title: MIPS: Fix crash registers on non-crashing CPUs
+Author: Corey Minyard <cminyard@mvista.com>
+Authored on: Mon, 11 Apr 2016 09:10:19 -0500Link: http://github.com/nathanchance/angler/commit/32b0616ee1b1d3d14c27475257f77f7d719d0f1a
+Added on: Tue, 20 Jun 2017 14:04:52 +0200
+
+
+Title: ip6mr: fix notification device destruction
+Author: Nikolay Aleksandrov <nikolay@cumulusnetworks.com>
+Authored on: Fri, 21 Apr 2017 20:42:16 +0300Link: http://github.com/nathanchance/angler/commit/ab93db27afea344e37a1a28f3e067fd4dd5c996e
+Added on: Tue, 20 Jun 2017 14:04:51 +0200
+
+
+Title: sctp: listen on the sock only when it's state is listening or closed
+Author: Xin Long <lucien.xin@gmail.com>
+Authored on: Thu, 6 Apr 2017 13:10:52 +0800Link: http://github.com/nathanchance/angler/commit/075de215620bbd06c0aa075c6b983143352530ed
+Added on: Tue, 20 Jun 2017 14:04:51 +0200
+
+
+Title: net: neigh: guard against NULL solicit() method
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Thu, 23 Mar 2017 12:39:21 -0700Link: http://github.com/nathanchance/angler/commit/4d1b81c2669bc6ab4ff24d649c876469aba412a9
+Added on: Tue, 20 Jun 2017 14:04:51 +0200
+
+
+Title: gfs2: avoid uninitialized variable warning
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Tue, 26 Jan 2016 13:08:10 -0500Link: http://github.com/nathanchance/angler/commit/c1b42042a542f2493c7a1f0658c8cace120d7cff
+Added on: Tue, 20 Jun 2017 14:04:50 +0200
+
+
+Title: hostap: avoid uninitialized variable use in hfa384x_get_rid
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Thu, 28 Jan 2016 22:58:28 +0100Link: http://github.com/nathanchance/angler/commit/f6d81f27fcdcbe570dda26bff0ba8ae582f6f3a4
+Added on: Tue, 20 Jun 2017 14:04:50 +0200
+
+
+Title: tty: nozomi: avoid a harmless gcc warning
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Mon, 25 Jan 2016 22:54:56 +0100Link: http://github.com/nathanchance/angler/commit/899866934d21292b65884fd68c71efcc8c8a1148
+Added on: Tue, 20 Jun 2017 14:04:50 +0200
+
+
+Title: net/packet: fix overflow in check for tp_reserve
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:22 +0200Link: http://github.com/nathanchance/angler/commit/a8069aeebf93c1f3a397364a44cddaa90ff472f3
+Added on: Tue, 20 Jun 2017 14:04:49 +0200
+
+
+Title: net/packet: fix overflow in check for tp_frame_nr
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:21 +0200Link: http://github.com/nathanchance/angler/commit/492980ca268c3a213a71f5c0aef116b58c665e16
+Added on: Tue, 20 Jun 2017 14:04:49 +0200
+
+
+Title: powerpc: Reject binutils 2.24 when building little endian
+Author: Michael Ellerman <mpe@ellerman.id.au>
+Authored on: Thu, 23 Apr 2015 17:27:12 +1000Link: http://github.com/nathanchance/angler/commit/187d3b3274a52c80c38dffbe033cbb20a76c7648
+Added on: Tue, 20 Jun 2017 14:04:49 +0200
+
+
+Title: x86/mce/AMD: Give a name to MCA bank 3 when accessed with legacy MSRs
+Author: Yazen Ghannam <yazen.ghannam@amd.com>
+Authored on: Thu, 30 Mar 2017 13:17:14 +0200Link: http://github.com/nathanchance/angler/commit/2c6896abfa6e0396b96e08c6edcd3a29f02f655b
+Added on: Tue, 20 Jun 2017 14:04:49 +0200
+
+
+Title: ubi/upd: Always flush after prepared for an update
+Author: Sebastian Siewior <bigeasy@linutronix.de>
+Authored on: Wed, 22 Feb 2017 17:15:21 +0100Link: http://github.com/nathanchance/angler/commit/e898332100f2b505a59229de796b99e67c979453
+Added on: Tue, 20 Jun 2017 14:04:48 +0200
+
+
+Title: Drivers: hv: get rid of timeout in vmbus_open()
+Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Authored on: Thu, 9 Jun 2016 17:08:56 -0700Link: http://github.com/nathanchance/angler/commit/0854b58f1f6c8d2540bffcbc1ed5b94f47b96a72
+Added on: Tue, 20 Jun 2017 14:04:48 +0200
+
+
+Title: Drivers: hv: don't leak memory in vmbus_establish_gpadl()
+Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Authored on: Fri, 3 Jun 2016 17:09:24 -0700Link: http://github.com/nathanchance/angler/commit/0c792ee191ef1297a37d9aadd3a4ffc6696d1429
+Added on: Tue, 20 Jun 2017 14:04:48 +0200
+
+
+Title: net: ipv6: check route protocol when deleting routes
+Author: Mantas M <grawity@gmail.com>
+Authored on: Fri, 16 Dec 2016 10:30:59 +0200Link: http://github.com/nathanchance/angler/commit/3fa16561f160d629f79321616a3e0dab5434e8d3
+Added on: Tue, 20 Jun 2017 14:04:47 +0200
+
+
+Title: catc: Use heap buffer for memory size test
+Author: Ben Hutchings <ben@decadent.org.uk>
+Authored on: Sat, 4 Feb 2017 16:57:04 +0000Link: http://github.com/nathanchance/angler/commit/6b7c152578ab00cdb7da05481dafb4a99b1a316d
+Added on: Tue, 20 Jun 2017 14:04:47 +0200
+
+
+Title: catc: Combine failure cleanup code in catc_probe()
+Author: Ben Hutchings <ben@decadent.org.uk>
+Authored on: Sat, 4 Feb 2017 16:56:56 +0000Link: http://github.com/nathanchance/angler/commit/f3487f846cf73c13adafe99ee3d078a18d189dae
+Added on: Tue, 20 Jun 2017 14:04:47 +0200
+
+
+Title: virtio-console: avoid DMA from stack
+Author: Omar Sandoval <osandov@fb.com>
+Authored on: Wed, 1 Feb 2017 00:02:27 -0800Link: http://github.com/nathanchance/angler/commit/fad5324503f33bf6547c7227de9de936e11f24a2
+Added on: Tue, 20 Jun 2017 14:04:47 +0200
+
+
+Title: mm: Tighten x86 /dev/mem with zeroing reads
+Author: Kees Cook <keescook@chromium.org>
+Authored on: Wed, 5 Apr 2017 09:39:08 -0700Link: http://github.com/nathanchance/angler/commit/081fb3dc1515e39f57953e7f51aebe8c9de32fb5
+Added on: Tue, 20 Jun 2017 14:04:46 +0200
+
+
+Title: platform/x86: acer-wmi: setup accelerometer when ACPI device was found
+Author: Lee, Chun-Yi <joeyli.kernel@gmail.com>
+Authored on: Fri, 28 Apr 2017 16:23:59 +0800Link: http://github.com/nathanchance/angler/commit/c9b40c2b9b2320c6d8f2fb5095b02ec50139f065
+Added on: Tue, 20 Jun 2017 14:04:46 +0200
+
+
+Title: platform/x86: acer-wmi: setup accelerometer when machine has appropriate notify event
+Author: Chun-Yi Lee <joeyli.kernel@gmail.com>
+Authored on: Thu, 3 Nov 2016 08:18:52 +0800Link: http://github.com/nathanchance/angler/commit/9b2b8b099bbd744f19b031eb9f4e81e49a93ed04
+Added on: Tue, 20 Jun 2017 14:04:46 +0200
+
+
+Title: char: lack of bool string made CONFIG_DEVPORT always on
+Author: Max Bires <jbires@google.com>
+Authored on: Tue, 3 Jan 2017 08:18:07 -0800Link: http://github.com/nathanchance/angler/commit/c0dd8fff25130e93d2a7c0bfe2bca2d4db60fe89
+Added on: Tue, 20 Jun 2017 14:04:45 +0200
+
+
+Title: xen, fbfront: fix connecting to backend
+Author: Juergen Gross <jgross@suse.com>
+Authored on: Fri, 7 Apr 2017 17:28:23 +0200Link: http://github.com/nathanchance/angler/commit/3fa1aeb6d3bb3776ab57ae798be5c289b790b955
+Added on: Tue, 20 Jun 2017 14:04:45 +0200
+
+
+Title: iscsi-target: Drop work-around for legacy GlobalSAN initiator
+Author: Nicholas Bellinger <nab@linux-iscsi.org>
+Authored on: Sun, 2 Apr 2017 13:36:44 -0700Link: http://github.com/nathanchance/angler/commit/66940417cbafc16e90ab4a44615c9ea34abe2f38
+Added on: Tue, 20 Jun 2017 14:04:45 +0200
+
+
+Title: iscsi-target: Fix TMR reference leak during session shutdown
+Author: Nicholas Bellinger <nab@linux-iscsi.org>
+Authored on: Thu, 23 Mar 2017 17:19:24 -0700Link: http://github.com/nathanchance/angler/commit/e71bfbe70c000fe63e66e03c6f55cc608df89a09
+Added on: Tue, 20 Jun 2017 14:04:44 +0200
+
+
+Title: x86/vdso: Plug race between mapping and ELF header setup
+Author: Thomas Gleixner <tglx@linutronix.de>
+Authored on: Mon, 10 Apr 2017 17:14:28 +0200Link: http://github.com/nathanchance/angler/commit/5e25d2de95789d010837ca2e51b606db4f507fcd
+Added on: Tue, 20 Jun 2017 14:04:44 +0200
+
+
+Title: net/packet: fix overflow in check for priv area size
+Author: Andrey Konovalov <andreyknvl@google.com>
+Authored on: Wed, 29 Mar 2017 16:11:20 +0200Link: http://github.com/nathanchance/angler/commit/56bc42d0db996003318b06d9c0033506da007c23
+Added on: Tue, 20 Jun 2017 14:04:44 +0200
+
+
+Title: mtd: bcm47xxpart: fix parsing first block after aligned TRX
+Author: Rafał Miłecki <rafal@milecki.pl>
+Authored on: Sun, 20 Nov 2016 16:09:30 +0100Link: http://github.com/nathanchance/angler/commit/db930d85d2d3b3ca25b8f36527c194132cd045b6
+Added on: Tue, 20 Jun 2017 14:04:44 +0200
+
+
+Title: mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+Author: Chris Salls <salls@cs.ucsb.edu>
+Authored on: Fri, 7 Apr 2017 23:48:11 -0700Link: http://github.com/nathanchance/angler/commit/ef67ca9962ce88f252dff0fee1f68212a87fa366
+Added on: Tue, 20 Jun 2017 14:04:43 +0200
+
+
+Title: powerpc: Don't try to fix up misaligned load-with-reservation instructions
+Author: Paul Mackerras <paulus@ozlabs.org>
+Authored on: Tue, 4 Apr 2017 14:56:05 +1000Link: http://github.com/nathanchance/angler/commit/4261679ad36ca1703436d54914ab0505598bf706
+Added on: Tue, 20 Jun 2017 14:04:43 +0200
+
+
+Title: metag/usercopy: Zero rest of buffer from copy_from_user
+Author: James Hogan <james.hogan@imgtec.com>
+Authored on: Fri, 31 Mar 2017 11:14:02 +0100Link: http://github.com/nathanchance/angler/commit/aaf47bf25e589947f1db0758cbda6908ae108f49
+Added on: Tue, 20 Jun 2017 14:04:43 +0200
+
+
+Title: metag/usercopy: Drop unused macros
+Author: James Hogan <james.hogan@imgtec.com>
+Authored on: Fri, 31 Mar 2017 10:37:44 +0100Link: http://github.com/nathanchance/angler/commit/0f84dfc9b7b8114dbbe8e41f9bd1e4c8dbcdfacc
+Added on: Tue, 20 Jun 2017 14:04:42 +0200
+
+
+Title: Reset TreeId to zero on SMB2 TREE_CONNECT
+Author: Jan-Marek Glogowski <glogow@fbihome.de>
+Authored on: Mon, 20 Feb 2017 12:25:58 +0100Link: http://github.com/nathanchance/angler/commit/903377e0196f22aa783a71d763c02ae164b29c60
+Added on: Tue, 20 Jun 2017 14:04:42 +0200
+
+
+Title: drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl()
+Author: Li Qiang <liq3ea@gmail.com>
+Authored on: Mon, 27 Mar 2017 20:10:53 -0700Link: http://github.com/nathanchance/angler/commit/404f763e1b9f6de4db0edff73c18ef4683f67cd3
+Added on: Tue, 20 Jun 2017 14:04:42 +0200
+
+
+Title: drm/vmwgfx: Remove getparam error message
+Author: Thomas Hellstrom <thellstrom@vmware.com>
+Authored on: Mon, 27 Mar 2017 13:06:05 +0200Link: http://github.com/nathanchance/angler/commit/3a363044271d8007c711d8fad2ad86270c5dab50
+Added on: Tue, 20 Jun 2017 14:04:42 +0200
+
+
+Title: drm/vmwgfx: avoid calling vzalloc with a 0 size in vmw_get_cap_3d_ioctl()
+Author: Murray McAllister <murray.mcallister@insomniasec.com>
+Authored on: Mon, 27 Mar 2017 11:15:12 +0200Link: http://github.com/nathanchance/angler/commit/354b332cb731caca4811707ae175d08a46cff28e
+Added on: Tue, 20 Jun 2017 14:04:41 +0200
+
+
+Title: drm/vmwgfx: NULL pointer dereference in vmw_surface_define_ioctl()
+Author: Murray McAllister <murray.mcallister@insomniasec.com>
+Authored on: Mon, 27 Mar 2017 11:12:53 +0200Link: http://github.com/nathanchance/angler/commit/30cd45a69bc69b191b0f6c14b317a6aeb4771439
+Added on: Tue, 20 Jun 2017 14:04:41 +0200
+
+
+Title: HID: i2c-hid: Add sleep between POWER ON and RESET
+Author: Brendan McGrath <redmcg@redmandi.dyndns.org>
+Authored on: Sat, 7 Jan 2017 08:01:38 +1100Link: http://github.com/nathanchance/angler/commit/02f1f3f6b8eea3f16c8ada4da8a89688bf4cd525
+Added on: Tue, 20 Jun 2017 14:04:41 +0200
+
+
+Title: HID: hid-lg: Fix immediate disconnection of Logitech Rumblepad 2
+Author: Ardinartsev Nikita <pinguin255@gmail.com>
+Authored on: Thu, 26 Jan 2017 16:54:42 +0300Link: http://github.com/nathanchance/angler/commit/2ee4455f07c9e4fffe2ff126c003f31f55b26ff6
+Added on: Tue, 20 Jun 2017 14:04:40 +0200
+
+
+Title: padata: avoid race in reordering
+Author: Jason A. Donenfeld <Jason@zx2c4.com>
+Authored on: Thu, 23 Mar 2017 12:24:43 +0100Link: http://github.com/nathanchance/angler/commit/7a76e42ecca6c06b1551120df6ea5c35f524f6ed
+Added on: Tue, 20 Jun 2017 14:04:40 +0200
+
+
+Title: rtc: s35390a: improve irq handling
+Author: Uwe Kleine-König <uwe@kleine-koenig.org>
+Authored on: Sat, 2 Jul 2016 17:28:10 +0200Link: http://github.com/nathanchance/angler/commit/535c7d619017d41a03a5b8b475a8348a9646af2b
+Added on: Tue, 20 Jun 2017 14:04:40 +0200
+
+
+Title: rtc: s35390a: implement reset routine as suggested by the reference
+Author: Uwe Kleine-König <uwe@kleine-koenig.org>
+Authored on: Sat, 2 Jul 2016 17:28:09 +0200Link: http://github.com/nathanchance/angler/commit/df4be7e66b1e801140e65b275bcc67809610ad7a
+Added on: Tue, 20 Jun 2017 14:04:40 +0200
+
+
+Title: rtc: s35390a: make sure all members in the output are set
+Author: Uwe Kleine-König <uwe@kleine-koenig.org>
+Authored on: Mon, 3 Apr 2017 23:32:38 +0200Link: http://github.com/nathanchance/angler/commit/231b0f80d19c96a2083fc735a116882e8db92df5
+Added on: Tue, 20 Jun 2017 14:04:39 +0200
+
+
+Title: ACPI / power: Avoid maybe-uninitialized warning
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Wed, 19 Apr 2017 19:47:04 +0200Link: http://github.com/nathanchance/angler/commit/1812b5cac00ba52bca38743bedca01ad3c08d338
+Added on: Tue, 20 Jun 2017 14:04:39 +0200
+
+
+Title: ACPI: Fix incompatibility with mcount-based function graph tracing
+Author: Josh Poimboeuf <jpoimboe@redhat.com>
+Authored on: Thu, 16 Mar 2017 08:56:28 -0500Link: http://github.com/nathanchance/angler/commit/42fdd36a05233cadd17a24e530c527203c2f02a8
+Added on: Tue, 20 Jun 2017 14:04:39 +0200
+
+
+Title: libceph: force GFP_NOIO for socket allocations
+Author: Ilya Dryomov <idryomov@gmail.com>
+Authored on: Tue, 21 Mar 2017 13:44:28 +0100Link: http://github.com/nathanchance/angler/commit/edaad97b7b66222e51a2462f60d06fe3ebb55bca
+Added on: Tue, 20 Jun 2017 14:04:38 +0200
+
+
+Title: metag/ptrace: Reject partial NT_METAG_RPIPE writes
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Mon, 27 Mar 2017 15:10:57 +0100Link: http://github.com/nathanchance/angler/commit/80fb16c096858f6bb6aac539644bc474cf276281
+Added on: Tue, 20 Jun 2017 14:04:38 +0200
+
+
+Title: metag/ptrace: Provide default TXSTATUS for short NT_PRSTATUS
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Mon, 27 Mar 2017 15:10:56 +0100Link: http://github.com/nathanchance/angler/commit/137b9e272f4c4f93a7681c20b109663b45e22ada
+Added on: Tue, 20 Jun 2017 14:04:38 +0200
+
+
+Title: metag/ptrace: Preserve previous registers for short regset write
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Mon, 27 Mar 2017 15:10:55 +0100Link: http://github.com/nathanchance/angler/commit/1dc7c2d250c5d5900b9d3f40b2e6b2dc99bf0f63
+Added on: Tue, 20 Jun 2017 14:04:38 +0200
+
+
+Title: sparc/ptrace: Preserve previous registers for short regset write
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Mon, 27 Mar 2017 15:10:59 +0100Link: http://github.com/nathanchance/angler/commit/e1e277ff7334f0d9765c28cf2ff02da5b4d434ff
+Added on: Tue, 20 Jun 2017 14:04:37 +0200
+
+
+Title: c6x/ptrace: Remove useless PTRACE_SETREGSET implementation
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Mon, 27 Mar 2017 15:10:53 +0100Link: http://github.com/nathanchance/angler/commit/7d3e34e259aaaea83cfb73d545bd60c8f579463c
+Added on: Tue, 20 Jun 2017 14:04:37 +0200
+
+
+Title: virtio_balloon: init 1st buffer in stats vq
+Author: Ladi Prosek <lprosek@redhat.com>
+Authored on: Thu, 23 Mar 2017 08:04:18 +0100Link: http://github.com/nathanchance/angler/commit/e2e1170de69a3d518eeb3339068b1ef75ffe0be6
+Added on: Tue, 20 Jun 2017 14:04:37 +0200
+
+
+Title: crypto: algif_hash - avoid zero-sized array
+Author: Jiri Slaby <jslaby@suse.cz>
+Authored on: Thu, 15 Dec 2016 14:31:01 +0100Link: http://github.com/nathanchance/angler/commit/0907dbed07d2aeb1c729a61fe114dcf6b8bb85fb
+Added on: Tue, 20 Jun 2017 14:04:36 +0200
+
+
+Title: fbcon: Fix vc attr at deinit
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Wed, 11 Jan 2017 17:09:50 +0100Link: http://github.com/nathanchance/angler/commit/88085d855b3ed3e892e3ed072ae0784f12a3a91e
+Added on: Tue, 20 Jun 2017 14:04:36 +0200
+
+
+Title: uvcvideo: uvc_scan_fallback() for webcams with broken chain
+Author: Henrik Ingo <henrik.ingo@avoinelama.fi>
+Authored on: Sat, 25 Mar 2017 21:48:16 +0530Link: http://github.com/nathanchance/angler/commit/935896e82abfebe9786716f2fa45703752a099bf
+Added on: Tue, 20 Jun 2017 14:04:36 +0200
+
+
+Title: mmc: sdhci: Do not disable interrupts while waiting for clock
+Author: Adrian Hunter <adrian.hunter@intel.com>
+Authored on: Mon, 20 Mar 2017 19:50:29 +0200Link: http://github.com/nathanchance/angler/commit/ecf229c3de27f918fede7409aaf4cbde471ecb27
+Added on: Tue, 20 Jun 2017 14:04:35 +0200
+
+
+Title: ACM gadget: fix endianness in notifications
+Author: Oliver Neukum <oneukum@suse.com>
+Authored on: Tue, 14 Mar 2017 12:09:56 +0100Link: http://github.com/nathanchance/angler/commit/7eb0374df6d09b065f7b8e5eeb6daea5001e56c9
+Added on: Tue, 20 Jun 2017 14:04:35 +0200
+
+
+Title: tcp: initialize icsk_ack.lrcvtime at session start time
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 22 Mar 2017 08:10:21 -0700Link: http://github.com/nathanchance/angler/commit/f754ccc27550ca3e63ac7761a54874ad95044051
+Added on: Tue, 20 Jun 2017 14:04:35 +0200
+
+
+Title: ipv4: provide stronger user input validation in nl_fib_input()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Tue, 21 Mar 2017 19:22:28 -0700Link: http://github.com/nathanchance/angler/commit/7dbfa253c3832f4107ce019d026c7892b7d7ec1a
+Added on: Tue, 20 Jun 2017 14:04:35 +0200
+
+
+Title: igb: add i211 to i210 PHY workaround
+Author: Todd Fujinaka <todd.fujinaka@intel.com>
+Authored on: Fri, 17 Mar 2017 00:48:19 +0000Link: http://github.com/nathanchance/angler/commit/6e37a689238c8bbb5e1de45588a00aa716967089
+Added on: Tue, 20 Jun 2017 14:04:34 +0200
+
+
+Title: igb: Workaround for igb i210 firmware issue
+Author: Chris J Arges <christopherarges@gmail.com>
+Authored on: Fri, 17 Mar 2017 00:48:19 +0000Link: http://github.com/nathanchance/angler/commit/cc7f31bf7726f63038c5e3caa014db9e383314df
+Added on: Tue, 20 Jun 2017 14:04:34 +0200
+
+
+Title: cpufreq: Fix and clean up show_cpuinfo_cur_freq()
+Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+Authored on: Wed, 15 Mar 2017 00:12:16 +0100Link: http://github.com/nathanchance/angler/commit/741c8ac523d0f45031c07bd26a057af3d9b4e5a8
+Added on: Tue, 20 Jun 2017 14:04:34 +0200
+
+
+Title: s390/pci: fix use after free in dma_init
+Author: Sebastian Ott <sebott@linux.vnet.ibm.com>
+Authored on: Fri, 15 Apr 2016 09:41:35 +0200Link: http://github.com/nathanchance/angler/commit/ab6c86a0042d93b3ca15bbea29e22266a85a400f
+Added on: Tue, 20 Jun 2017 14:04:33 +0200
+
+
+Title: Drivers: hv: balloon: don't crash when memory is added in non-sorted order
+Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Authored on: Sat, 30 Apr 2016 19:21:35 -0700Link: http://github.com/nathanchance/angler/commit/2b49b1938b5c74e90748d56999edf939e3251f24
+Added on: Tue, 20 Jun 2017 14:04:33 +0200
+
+
+Title: ACPI / video: skip evaluating _DOD when it does not exist
+Author: Alex Hung <alex.hung@canonical.com>
+Authored on: Fri, 27 May 2016 15:47:06 +0800Link: http://github.com/nathanchance/angler/commit/4bbe571cd9552b96303e0228818f9d002065e85b
+Added on: Tue, 20 Jun 2017 14:04:33 +0200
+
+
+Title: crypto: cryptd - Assign statesize properly
+Author: Wang, Rui Y <rui.y.wang@intel.com>
+Authored on: Sun, 29 Nov 2015 22:45:34 +0800Link: http://github.com/nathanchance/angler/commit/a4da2b00fdab6cb7d60c4e3d7907933a62a3a893
+Added on: Tue, 20 Jun 2017 14:04:33 +0200
+
+
+Title: crypto: ghash-clmulni - Fix load failure
+Author: Wang, Rui Y <rui.y.wang@intel.com>
+Authored on: Sun, 29 Nov 2015 22:45:33 +0800Link: http://github.com/nathanchance/angler/commit/4324a47c8e6c5bd6d4672a29b6c541d4f516cc1c
+Added on: Tue, 20 Jun 2017 14:04:32 +0200
+
+
+Title: cancel the setfilesize transation when io error happen
+Author: Zhaohongjiang <zhaohongjiang@huawei.com>
+Authored on: Mon, 12 Oct 2015 15:28:39 +1100Link: http://github.com/nathanchance/angler/commit/42be60ff1c448307ba0fb8ac05eeab591796b3e6
+Added on: Tue, 20 Jun 2017 14:04:32 +0200
+
+
+Title: give up on gcc ilog2() constant optimizations
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Authored on: Thu, 2 Mar 2017 12:17:22 -0800Link: http://github.com/nathanchance/angler/commit/46d284b7ac7435478a7bc934256c736e4615885f
+Added on: Tue, 20 Jun 2017 14:04:32 +0200
+
+
+Title: futex: Add missing error handling to FUTEX_REQUEUE_PI
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Sat, 4 Mar 2017 10:27:19 +0100Link: http://github.com/nathanchance/angler/commit/4401c71d0caf324b075cd0aa5c6f77e99d5a6ac7
+Added on: Tue, 20 Jun 2017 14:04:31 +0200
+
+
+Title: futex: Fix potential use-after-free in FUTEX_REQUEUE_PI
+Author: Peter Zijlstra <peterz@infradead.org>
+Authored on: Sat, 4 Mar 2017 10:27:18 +0100Link: http://github.com/nathanchance/angler/commit/8f4a52d25a0d395f94299707bc3198a3dd3acc4c
+Added on: Tue, 20 Jun 2017 14:04:31 +0200
+
+
+Title: dccp: fix memory leak during tear-down of unsuccessful connection request
+Author: Hannes Frederic Sowa <hannes@stressinduktion.org>
+Authored on: Mon, 13 Mar 2017 00:01:30 +0100Link: http://github.com/nathanchance/angler/commit/3710b15ed5301d3af5e274f244f135206b794100
+Added on: Tue, 20 Jun 2017 14:04:31 +0200
+
+
+Title: ipv6: avoid write to a possibly cloned skb
+Author: Florian Westphal <fw@strlen.de>
+Authored on: Mon, 13 Mar 2017 16:24:28 +0100Link: http://github.com/nathanchance/angler/commit/cb93d3f48930b2e435614570613e7c1d7810a6d1
+Added on: Tue, 20 Jun 2017 14:04:31 +0200
+
+
+Title: uapi: fix linux/packet_diag.h userspace compilation error
+Author: Dmitry V. Levin <ldv@altlinux.org>
+Authored on: Tue, 7 Mar 2017 23:50:50 +0300Link: http://github.com/nathanchance/angler/commit/ce01649fc5a0ed37320149e2e6810ff7fe94e170
+Added on: Tue, 20 Jun 2017 14:04:30 +0200
+
+
+Title: tcp: fix various issues for sockets morphing to listen state
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Fri, 3 Mar 2017 14:08:21 -0800Link: http://github.com/nathanchance/angler/commit/9b4c2e72f845a640a8dea56b8feebcf426df140b
+Added on: Tue, 20 Jun 2017 14:04:30 +0200
+
+
+Title: dccp: Unlock sock before calling sk_free()
+Author: Arnaldo Carvalho de Melo <acme@redhat.com>
+Authored on: Wed, 1 Mar 2017 16:35:07 -0300Link: http://github.com/nathanchance/angler/commit/0363343e50f8aad7462cd0f2017d9eb4ae402138
+Added on: Tue, 20 Jun 2017 14:04:30 +0200
+
+
+Title: net: don't call strlen() on the user buffer in packet_bind_spkt()
+Author: Alexander Potapenko <glider@google.com>
+Authored on: Wed, 1 Mar 2017 12:57:20 +0100Link: http://github.com/nathanchance/angler/commit/bc00602be132ecdedf68834e09fb14a76be73078
+Added on: Tue, 20 Jun 2017 14:04:29 +0200
+
+
+Title: l2tp: avoid use-after-free caused by l2tp_ip_backlog_recv
+Author: Paul Hüber <phueber@kernsp.in>
+Authored on: Sun, 26 Feb 2017 17:58:19 +0100Link: http://github.com/nathanchance/angler/commit/3475371514112e50da257ed505a5012abfc55094
+Added on: Tue, 20 Jun 2017 14:04:29 +0200
+
+
+Title: mvsas: fix misleading indentation
+Author: Luis de Bethencourt <luisbg@osg.samsung.com>
+Authored on: Mon, 30 Nov 2015 14:32:17 +0000Link: http://github.com/nathanchance/angler/commit/57f208211a18c6f58ed3f69cd8b7edee77cac9a7
+Added on: Tue, 20 Jun 2017 14:04:29 +0200
+
+
+Title: cpmac: remove hopeless #warning
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Mon, 16 Jan 2017 14:20:54 +0100Link: http://github.com/nathanchance/angler/commit/ab4de16c2dd1ecf1329dd40a9807d43240dbba87
+Added on: Tue, 20 Jun 2017 14:04:28 +0200
+
+
+Title: mtd: pmcmsp: use kstrndup instead of kmalloc+strncpy
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Fri, 3 Feb 2017 10:49:17 +0100Link: http://github.com/nathanchance/angler/commit/c4240148b4c6881ab6760af923910271eb17651b
+Added on: Tue, 20 Jun 2017 14:04:28 +0200
+
+
+Title: crypto: improve gcc optimization flags for serpent and wp512
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Fri, 3 Feb 2017 23:33:23 +0100Link: http://github.com/nathanchance/angler/commit/4f9f8485123d8bf492a66cddd1e8d2c87e9dfeb2
+Added on: Tue, 20 Jun 2017 14:04:28 +0200
+
+
+Title: xhci: fix 10 second timeout on removal of PCI hotpluggable xhci controllers
+Author: Mathias Nyman <mathias.nyman@linux.intel.com>
+Authored on: Fri, 8 Apr 2016 16:25:10 +0300Link: http://github.com/nathanchance/angler/commit/2ebbe4f6313f16f619369785d3d849318531ae10
+Added on: Tue, 20 Jun 2017 14:04:28 +0200
+
+
+Title: drivers: hv: Turn off write permission on the hypercall page
+Author: K. Y. Srinivasan <kys@microsoft.com>
+Authored on: Wed, 8 Feb 2017 18:30:56 -0700Link: http://github.com/nathanchance/angler/commit/8d05f356cc2b32d16371037aa24dc6e0b8d31316
+Added on: Tue, 20 Jun 2017 14:04:27 +0200
+
+
+Title: fat: fix using uninitialized fields of fat_inode/fsinfo_inode
+Author: OGAWA Hirofumi <hirofumi@mail.parknet.co.jp>
+Authored on: Thu, 9 Mar 2017 16:17:37 -0800Link: http://github.com/nathanchance/angler/commit/496355ec8c2f26fa65a5650ce4a0d89a3fc2bf46
+Added on: Tue, 20 Jun 2017 14:04:27 +0200
+
+
+Title: drm/ttm: Make sure BOs being swapped out are cacheable
+Author: Michel Dänzer <michel.daenzer@amd.com>
+Authored on: Wed, 25 Jan 2017 17:21:31 +0900Link: http://github.com/nathanchance/angler/commit/51f2df44a30f0d7c32d84d7dc570eda8829291b0
+Added on: Tue, 20 Jun 2017 14:04:27 +0200
+
+
+Title: drm/ast: Fix test for VGA enabled
+Author: Y.C. Chen <yc_chen@aspeedtech.com>
+Authored on: Wed, 22 Feb 2017 15:10:50 +1100Link: http://github.com/nathanchance/angler/commit/6ac27411ce2cc9cb8e48df29d92992741414e1e4
+Added on: Tue, 20 Jun 2017 14:04:27 +0200
+
+
+Title: mac80211: flush delayed work when entering suspend
+Author: Matt Chen <matt.chen@intel.com>
+Authored on: Sun, 22 Jan 2017 02:16:58 +0800Link: http://github.com/nathanchance/angler/commit/6958f50ab442e17848b8949e8bc468d09b823c5a
+Added on: Tue, 20 Jun 2017 14:04:26 +0200
+
+
+Title: xtensa: move parse_tag_fdt out of #ifdef CONFIG_BLK_DEV_INITRD
+Author: Max Filippov <jcmvbkbc@gmail.com>
+Authored on: Tue, 3 Jan 2017 09:37:34 -0800Link: http://github.com/nathanchance/angler/commit/0c51e5d46aeba36a10f0b7a71901bde4ff4bc76e
+Added on: Tue, 20 Jun 2017 14:04:26 +0200
+
+
+Title: s390: TASK_SIZE for kernel threads
+Author: Martin Schwidefsky <schwidefsky@de.ibm.com>
+Authored on: Fri, 24 Feb 2017 07:43:51 +0100Link: http://github.com/nathanchance/angler/commit/71116d6a8d98c68f7561af3c641dd0764b69d73a
+Added on: Tue, 20 Jun 2017 14:04:26 +0200
+
+
+Title: KVM: s390: fix task size check
+Author: Martin Schwidefsky <schwidefsky@de.ibm.com>
+Authored on: Fri, 26 Jul 2013 15:04:03 +0200Link: http://github.com/nathanchance/angler/commit/f7bbcabc5e963cc49e3e1b4e82f80117487868e7
+Added on: Tue, 20 Jun 2017 14:04:26 +0200
+
+
+Title: KVM: PPC: Book3S PR: Fix illegal opcode emulation
+Author: Thomas Huth <thuth@redhat.com>
+Authored on: Wed, 18 May 2016 21:01:20 +0200Link: http://github.com/nathanchance/angler/commit/9f3a56a47922f7652f6051a99747a8b445fd3600
+Added on: Tue, 20 Jun 2017 14:04:25 +0200
+
+
+Title: KVM: VMX: use correct vmcs_read/write for guest segment selector/base
+Author: Chao Peng <chao.p.peng@linux.intel.com>
+Authored on: Tue, 21 Feb 2017 03:50:01 -0500Link: http://github.com/nathanchance/angler/commit/d1e71d5f34ccb5f172c26ee5bdfd19c414db387c
+Added on: Tue, 20 Jun 2017 14:04:25 +0200
+
+
+Title: powerpc/xmon: Fix data-breakpoint
+Author: Ravi Bangoria <ravi.bangoria@linux.vnet.ibm.com>
+Authored on: Tue, 22 Nov 2016 14:55:59 +0530Link: http://github.com/nathanchance/angler/commit/96a14fea86b2a4a05b31e90ccaae2b5fe87ceb11
+Added on: Tue, 20 Jun 2017 14:04:25 +0200
+
+
+Title: bcma: use (get|put)_device when probing/removing device driver
+Author: Rafał Miłecki <rafal@milecki.pl>
+Authored on: Sat, 28 Jan 2017 14:31:22 +0100Link: http://github.com/nathanchance/angler/commit/4289b9c0f9a6fca7eb96db454e0bad3abc0e6956
+Added on: Tue, 20 Jun 2017 14:04:24 +0200
+
+
+Title: NFSv4: fix getacl ERANGE for some ACL buffer sizes
+Author: Weston Andros Adamson <dros@primarydata.com>
+Authored on: Thu, 23 Feb 2017 14:54:21 -0500Link: http://github.com/nathanchance/angler/commit/249eb349b072475604f6e4508890b75767b19848
+Added on: Tue, 20 Jun 2017 14:04:24 +0200
+
+
+Title: rdma_cm: fail iwarp accepts w/o connection params
+Author: Steve Wise <swise@opengridcomputing.com>
+Authored on: Tue, 21 Feb 2017 11:21:57 -0800Link: http://github.com/nathanchance/angler/commit/11f43b27cb874a0c791044d64a84096688ebc5f1
+Added on: Tue, 20 Jun 2017 14:04:24 +0200
+
+
+Title: ath5k: drop bogus warning on drv_set_key with unsupported cipher
+Author: Felix Fietkau <nbd@nbd.name>
+Authored on: Wed, 11 Jan 2017 16:32:13 +0200Link: http://github.com/nathanchance/angler/commit/f84c0647638e1a5b0950f79c8d43665deddf8ae8
+Added on: Tue, 20 Jun 2017 14:04:24 +0200
+
+
+Title: samples/seccomp: fix 64-bit comparison macros
+Author: Mathias Svensson <idolf@google.com>
+Authored on: Fri, 6 Jan 2017 13:32:39 -0800Link: http://github.com/nathanchance/angler/commit/109b4210244d8e93c37735a2a0f5988bb0ccc6c6
+Added on: Tue, 20 Jun 2017 14:04:23 +0200
+
+
+Title: sd: get disk reference in sd_check_events()
+Author: Hannes Reinecke <hare@suse.de>
+Authored on: Tue, 26 Apr 2016 08:06:58 +0200Link: http://github.com/nathanchance/angler/commit/1ba4fc4b0772b130c3acc9cd377f3039b9b24f8f
+Added on: Tue, 20 Jun 2017 14:04:23 +0200
+
+
+Title: ipc/shm: Fix shmat mmap nil-page protection
+Author: Davidlohr Bueso <dave@stgolabs.net>
+Authored on: Mon, 27 Feb 2017 14:28:24 -0800Link: http://github.com/nathanchance/angler/commit/20bfb0a079b45828a5937d1e3133234f06af9223
+Added on: Tue, 20 Jun 2017 14:04:23 +0200
+
+
+Title: mm: vmpressure: fix sending wrong events on underflow
+Author: Vinayak Menon <vinmenon@codeaurora.org>
+Authored on: Fri, 24 Feb 2017 14:59:39 -0800Link: http://github.com/nathanchance/angler/commit/281c8f7385d876de909e6cd97bf8100e5246c95f
+Added on: Tue, 20 Jun 2017 14:04:22 +0200
+
+
+Title: MIPS: Fix special case in 64 bit IP checksumming.
+Author: Ralf Baechle <ralf@linux-mips.org>
+Authored on: Thu, 26 Jan 2017 02:16:47 +0100Link: http://github.com/nathanchance/angler/commit/95589a7820c1fbc58882c13c71c182ed4dd82ce0
+Added on: Tue, 20 Jun 2017 14:04:22 +0200
+
+
+Title: af_packet: remove a stray tab in packet_set_ring()
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Authored on: Tue, 18 Feb 2014 15:20:51 +0300Link: http://github.com/nathanchance/angler/commit/c0c294a36ea7b8f5ade83caf8a43692086318afd
+Added on: Tue, 20 Jun 2017 14:04:22 +0200
+
+
+Title: rtlwifi: rtl_usb: Fix for URB leaking when doing ifconfig up/down
+Author: Michael Schenk <michael.schenk@albis-elcon.com>
+Authored on: Thu, 26 Jan 2017 11:25:04 -0600Link: http://github.com/nathanchance/angler/commit/5751935fcfe0adcedbc88f801ae777f76ec6efdf
+Added on: Tue, 20 Jun 2017 14:04:22 +0200
+
+
+Title: tty: serial: msm: Fix module autoload
+Author: Javier Martinez Canillas <javier@osg.samsung.com>
+Authored on: Mon, 2 Jan 2017 11:57:20 -0300Link: http://github.com/nathanchance/angler/commit/298feed49af39a701a50e94d21ea674ae6daa680
+Added on: Tue, 20 Jun 2017 14:04:21 +0200
+
+
+Title: irda: Fix lockdep annotations in hashbin_delete().
+Author: David S. Miller <davem@davemloft.net>
+Authored on: Fri, 17 Feb 2017 16:19:39 -0500Link: http://github.com/nathanchance/angler/commit/5988be39d31cb1ab9cc21d86254f2082ff8a9d25
+Added on: Tue, 20 Jun 2017 14:04:21 +0200
+
+
+Title: rtc: interface: ignore expired timers when enqueuing new timers
+Author: Colin Ian King <colin.king@canonical.com>
+Authored on: Mon, 16 May 2016 17:22:54 +0100Link: http://github.com/nathanchance/angler/commit/296a1ab22e2a153f428d8b3c7c47fc4076c05760
+Added on: Tue, 20 Jun 2017 14:04:21 +0200
+
+
+Title: futex: Move futex_init() to core_initcall
+Author: Yang Yang <yang.yang29@zte.com.cn>
+Authored on: Fri, 30 Dec 2016 16:17:55 +0800Link: http://github.com/nathanchance/angler/commit/bbd20686c604f34caf8e77f7cde01a17042e92e4
+Added on: Tue, 20 Jun 2017 14:04:20 +0200
+
+
+Title: siano: make it work again with CONFIG_VMAP_STACK
+Author: Mauro Carvalho Chehab <mchehab@s-opensource.com>
+Authored on: Tue, 14 Feb 2017 17:47:57 -0200Link: http://github.com/nathanchance/angler/commit/7160035d0356504cc70ae030ad60648b61faafd0
+Added on: Tue, 20 Jun 2017 14:04:20 +0200
+
+
+Title: vfs: fix uninitialized flags in splice_to_pipe()
+Author: Miklos Szeredi <mszeredi@redhat.com>
+Authored on: Thu, 16 Feb 2017 17:49:02 +0100Link: http://github.com/nathanchance/angler/commit/fe75d1a6b0d2658a154e460cb00d390900c64e2a
+Added on: Tue, 20 Jun 2017 14:04:20 +0200
+
+
+Title: packet: round up linear to header len
+Author: Willem de Bruijn <willemb@google.com>
+Authored on: Tue, 7 Feb 2017 15:57:21 -0500Link: http://github.com/nathanchance/angler/commit/c6cc07d404144f75945b6f96ede9510c1468f4b8
+Added on: Tue, 20 Jun 2017 14:04:19 +0200
+
+
+Title: macvtap: read vnet_hdr_size once
+Author: Willem de Bruijn <willemb@google.com>
+Authored on: Fri, 3 Feb 2017 18:20:49 -0500Link: http://github.com/nathanchance/angler/commit/b0899f80092e17d83979cd6c2825a5d4ee2cdcf7
+Added on: Tue, 20 Jun 2017 14:04:19 +0200
+
+
+Title: tcp: fix 0 divide in __tcp_select_window()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 1 Feb 2017 08:33:53 -0800Link: http://github.com/nathanchance/angler/commit/5c235ec479dcdec8d7ba8f6126b6a92df3f56c32
+Added on: Tue, 20 Jun 2017 14:04:19 +0200
+
+
+Title: sched/debug: Don't dump sched debug info in SysRq-W
+Author: Rabin Vincent <rabinv@axis.com>
+Authored on: Mon, 4 Apr 2016 15:42:02 +0200Link: http://github.com/nathanchance/angler/commit/4718919e008905508b5cfa5c3531f6b3cc05cdf8
+Added on: Tue, 20 Jun 2017 14:04:19 +0200
+
+
+Title: ARC: [arcompact] brown paper bag bug in unaligned access delay slot fixup
+Author: Vineet Gupta <Vineet.Gupta1@synopsys.com>
+Authored on: Tue, 7 Feb 2017 09:44:58 -0800Link: http://github.com/nathanchance/angler/commit/e2ec1495b015a5c13ce20c0a6137c49dd825d929
+Added on: Tue, 20 Jun 2017 14:04:18 +0200
+
+
+Title: mm, fs: check for fatal signals in do_generic_file_read()
+Author: Michal Hocko <mhocko@suse.com>
+Authored on: Fri, 3 Feb 2017 13:13:29 -0800Link: http://github.com/nathanchance/angler/commit/6ee1806c1f515818d4ff31ffff5b3ea376e954bc
+Added on: Tue, 20 Jun 2017 14:04:18 +0200
+
+
+Title: mm/memory_hotplug.c: check start_pfn in test_pages_in_a_zone()
+Author: Toshi Kani <toshi.kani@hpe.com>
+Authored on: Fri, 3 Feb 2017 13:13:20 -0800Link: http://github.com/nathanchance/angler/commit/18f626429a5a6a1b9a9742e944bdeb3536f030f5
+Added on: Tue, 20 Jun 2017 14:04:18 +0200
+
+
+Title: ata: sata_mv:- Handle return value of devm_ioremap.
+Author: Arvind Yadav <arvind.yadav.cs@gmail.com>
+Authored on: Mon, 12 Dec 2016 23:13:27 +0530Link: http://github.com/nathanchance/angler/commit/bb3d39c70fe12ab44c4dff3785c3ff322adde851
+Added on: Tue, 20 Jun 2017 14:04:18 +0200
+
+
+Title: crypto: api - Clear CRYPTO_ALG_DEAD bit before registering an alg
+Author: Salvatore Benedetto <salvatore.benedetto@intel.com>
+Authored on: Fri, 13 Jan 2017 11:54:08 +0000Link: http://github.com/nathanchance/angler/commit/055d0a8d61f484a2a95b3a02c3381c50333a690b
+Added on: Tue, 20 Jun 2017 14:04:17 +0200
+
+
+Title: drm/nouveau/nv1a,nv1f/disp: fix memory clock rate retrieval
+Author: Ilia Mirkin <imirkin@alum.mit.edu>
+Authored on: Thu, 19 Jan 2017 22:56:30 -0500Link: http://github.com/nathanchance/angler/commit/bb47c5c64ff12025cc56190e7adb19fc44b8604c
+Added on: Tue, 20 Jun 2017 14:04:17 +0200
+
+
+Title: af_unix: move unix_mknod() out of bindlock
+Author: WANG Cong <xiyou.wangcong@gmail.com>
+Authored on: Mon, 23 Jan 2017 11:17:35 -0800Link: http://github.com/nathanchance/angler/commit/ddee2228ae6cf9225b3ac78e687f40954470c141
+Added on: Tue, 20 Jun 2017 14:04:17 +0200
+
+
+Title: ipv6: addrconf: Avoid addrconf_disable_change() using RCU read-side lock
+Author: Kefeng Wang <wangkefeng.wang@huawei.com>
+Authored on: Thu, 19 Jan 2017 16:26:21 +0800Link: http://github.com/nathanchance/angler/commit/cba3e28f6cf5fced79dabb01f6075342af3f8a6d
+Added on: Tue, 20 Jun 2017 14:04:17 +0200
+
+
+Title: nfs: Don't increment lock sequence ID after NFS4ERR_MOVED
+Author: Chuck Lever <chuck.lever@oracle.com>
+Authored on: Sun, 22 Jan 2017 14:04:29 -0500Link: http://github.com/nathanchance/angler/commit/379fa3e80f2a79fcf9f5c7facc43620257491e68
+Added on: Tue, 20 Jun 2017 14:04:16 +0200
+
+
+Title: parisc: Don't use BITS_PER_LONG in userspace-exported swab.h header
+Author: Helge Deller <deller@gmx.de>
+Authored on: Sat, 28 Jan 2017 11:52:02 +0100Link: http://github.com/nathanchance/angler/commit/485f99073ea17248d3938859e7d87e59406dbb8a
+Added on: Tue, 20 Jun 2017 14:04:16 +0200
+
+
+Title: ARC: [arcompact] handle unaligned access delay slot corner case
+Author: Vineet Gupta <vgupta@synopsys.com>
+Authored on: Fri, 27 Jan 2017 10:45:27 -0800Link: http://github.com/nathanchance/angler/commit/b5882ec2fe3c937c863aab441e96b3f47f72f035
+Added on: Tue, 20 Jun 2017 14:04:16 +0200
+
+
+Title: ISDN: eicon: silence misleading array-bounds warning
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Fri, 27 Jan 2017 13:32:14 +0100Link: http://github.com/nathanchance/angler/commit/ddf2415ce73a4282359a1f40907cc03d2bb55cc1
+Added on: Tue, 20 Jun 2017 14:04:16 +0200
+
+
+Title: sysctl: fix proc_doulongvec_ms_jiffies_minmax()
+Author: Eric Dumazet <edumazet@google.com>
+Authored on: Wed, 25 Jan 2017 18:20:55 -0800Link: http://github.com/nathanchance/angler/commit/db2b7cd8f8489e8c4a55d7556b61282c7b7cc98d
+Added on: Tue, 20 Jun 2017 14:04:15 +0200
+
+
+Title: tile/ptrace: Preserve previous registers for short regset write
+Author: Dave Martin <Dave.Martin@arm.com>
+Authored on: Fri, 6 Jan 2017 17:54:51 +0000Link: http://github.com/nathanchance/angler/commit/3cc334c2acc9b4ff326da43fab18673803985edf
+Added on: Tue, 20 Jun 2017 14:04:15 +0200
+
+
+Title: bnx2x: Correct ringparam estimate when DOWN
+Author: Mintz, Yuval <Yuval.Mintz@cavium.com>
+Authored on: Sun, 4 Dec 2016 15:30:17 +0200Link: http://github.com/nathanchance/angler/commit/baaee1b72396821153c6ffaedf04c3422420e0bb
+Added on: Tue, 20 Jun 2017 14:04:15 +0200
+
+
+Title: serial: 8250_pci: Detach low-level driver during PCI error recovery
+Author: Gabriel Krisman Bertazi <krisman@linux.vnet.ibm.com>
+Authored on: Mon, 28 Nov 2016 19:34:42 -0200Link: http://github.com/nathanchance/angler/commit/1d662dc0cc20dc54fd2b43291be66e51675dae8d
+Added on: Tue, 20 Jun 2017 14:04:14 +0200
+
+
+Title: move the call of __d_drop(anon) into __d_materialise_unique(dentry, anon)
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Thu, 11 Sep 2014 18:55:50 -0400Link: http://github.com/nathanchance/angler/commit/64df8d3b3fdd06a877ccac395f60dd54dd515897
+Added on: Tue, 20 Jun 2017 14:04:14 +0200
+
+
+Title: sg: Fix double-free when drives detach during SG_IO
+Author: Calvin Owens <calvinowens@fb.com>
+Authored on: Fri, 30 Oct 2015 16:57:00 -0700Link: http://github.com/nathanchance/angler/commit/dda50d926e8a3f215857ab7091cd6b11d588881a
+Added on: Tue, 20 Jun 2017 14:04:14 +0200
+
+
+Title: bna: Add synchronization for tx ring.
+Author: Benjamin Poirier <bpoirier@suse.com>
+Authored on: Mon, 7 Nov 2016 17:57:56 +0800Link: http://github.com/nathanchance/angler/commit/0570afff43287ff3ffff86731ced73748f74149f
+Added on: Tue, 20 Jun 2017 14:04:14 +0200
+
+
+Title: vfio/pci: Fix integer overflows, bitmask check
+Author: Vlad Tsyrklevich <vlad@tsyrklevich.net>
+Authored on: Wed, 12 Oct 2016 18:51:24 +0200Link: http://github.com/nathanchance/angler/commit/37ccd2be0e783b1fb8860ccd8b168109c22655c6
+Added on: Tue, 20 Jun 2017 14:04:13 +0200
+
+
+Title: apparmor: do not expose kernel stack
+Author: Heinrich Schuchardt <xypron.glpk@gmx.de>
+Authored on: Fri, 10 Jun 2016 23:34:26 +0200Link: http://github.com/nathanchance/angler/commit/f466ca6552401524c229af56d1d120a96fa9184a
+Added on: Tue, 20 Jun 2017 14:04:13 +0200
+
+
+Title: apparmor: fix module parameters can be changed after policy is locked
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Wed, 22 Jun 2016 18:01:08 -0700Link: http://github.com/nathanchance/angler/commit/a078d77fb083a364341b376c8cfec25c00f50ee2
+Added on: Tue, 20 Jun 2017 14:04:13 +0200
+
+
+Title: apparmor: fix oops in profile_unpack() when policy_db is not present
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Wed, 15 Jun 2016 10:00:55 +0300Link: http://github.com/nathanchance/angler/commit/1259d17c102f9a5b3a063d32c567b6bbeb0fa285
+Added on: Tue, 20 Jun 2017 14:04:12 +0200
+
+
+Title: apparmor: don't check for vmalloc_addr if kvzalloc() failed
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Wed, 15 Jun 2016 09:57:55 +0300Link: http://github.com/nathanchance/angler/commit/4b0f1ec2fa2d7dc4bd80cf8e8e10a27c5af3dc52
+Added on: Tue, 20 Jun 2017 14:04:12 +0200
+
+
+Title: apparmor: add missing id bounds check on dfa verification
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Thu, 2 Jun 2016 02:37:02 -0700Link: http://github.com/nathanchance/angler/commit/efbb2d5b9dad87aea586b21ba861aba605d35bf7
+Added on: Tue, 20 Jun 2017 14:04:12 +0200
+
+
+Title: apparmor: check that xindex is in trans_table bounds
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Thu, 17 Mar 2016 12:02:54 -0700Link: http://github.com/nathanchance/angler/commit/57ad1701a19192ff71267818f980f20e0293e9cd
+Added on: Tue, 20 Jun 2017 14:04:12 +0200
+
+
+Title: apparmor: internal paths should be treated as disconnected
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Fri, 25 Jul 2014 04:02:10 -0700Link: http://github.com/nathanchance/angler/commit/8b201a9c604722c1f934ede797a020d3ae42159e
+Added on: Tue, 20 Jun 2017 14:04:11 +0200
+
+
+Title: apparmor: fix disconnected bind mnts reconnection
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Fri, 25 Jul 2014 04:02:08 -0700Link: http://github.com/nathanchance/angler/commit/31d3307054aececcc1197eb119ebc35a5f4b60fc
+Added on: Tue, 20 Jun 2017 14:04:11 +0200
+
+
+Title: apparmor: exec should not be returning ENOENT when it denies
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Fri, 25 Jul 2014 04:02:03 -0700Link: http://github.com/nathanchance/angler/commit/8d14bc992000791b414bd536fe3516303c5c039e
+Added on: Tue, 20 Jun 2017 14:04:11 +0200
+
+
+Title: apparmor: fix uninitialized lsm_audit member
+Author: John Johansen <john.johansen@canonical.com>
+Authored on: Sun, 8 Jun 2014 11:20:54 -0700Link: http://github.com/nathanchance/angler/commit/e41dd348186f9fbbf799a944697c64b01a03fb04
+Added on: Tue, 20 Jun 2017 14:04:10 +0200
+
+
+Title: Fix regression which breaks DFS mounting
+Author: Sachin Prabhu <sprabhu@redhat.com>
+Authored on: Thu, 26 Jan 2017 14:28:49 +0100Link: http://github.com/nathanchance/angler/commit/0e872a0d773a10de75253a54e512346c132098f9
+Added on: Tue, 20 Jun 2017 14:04:10 +0200
+
+
+Title: Move check for prefix path to within cifs_get_root()
+Author: Sachin Prabhu <sprabhu@redhat.com>
+Authored on: Thu, 26 Jan 2017 14:28:02 +0100Link: http://github.com/nathanchance/angler/commit/685957ca255636425c6f6fe3e97aef0f227b8980
+Added on: Tue, 20 Jun 2017 14:04:10 +0200
+
+
+Title: Compare prepaths when comparing superblocks
+Author: Sachin Prabhu <sprabhu@redhat.com>
+Authored on: Thu, 26 Jan 2017 14:27:27 +0100Link: http://github.com/nathanchance/angler/commit/5c33dcb4788ac9cd1de9e340543badae18e0d1b3
+Added on: Tue, 20 Jun 2017 14:04:09 +0200
+
+
+Title: Fix memory leaks in cifs_do_mount()
+Author: Sachin Prabhu <sprabhu@redhat.com>
+Authored on: Fri, 29 Jul 2016 22:38:19 +0100Link: http://github.com/nathanchance/angler/commit/528d066d3ddd524e84ca037911cee45031b4e517
+Added on: Tue, 20 Jun 2017 14:04:09 +0200
+
+
+Title: vmxnet3: Wake queue from reset work
+Author: Benjamin Poirier <bpoirier@suse.com>
+Authored on: Mon, 3 Oct 2016 10:47:50 +0800Link: http://github.com/nathanchance/angler/commit/40fb18bddcd4780ae8c106a81312bab9ac0bd28c
+Added on: Tue, 20 Jun 2017 14:04:09 +0200
+
+
+Title: NFSv4: Ensure nfs_atomic_open set the dentry verifier on ENOENT
+Author: Trond Myklebust <trond.myklebust@primarydata.com>
+Authored on: Thu, 23 Oct 2014 19:33:14 +0300Link: http://github.com/nathanchance/angler/commit/da39d112afd21b10d71dc09c6a4dd4dfd1f96dfe
+Added on: Tue, 20 Jun 2017 14:04:09 +0200
+
+
+Title: ARM: dts: da850-evm: fix read access to SPI flash
+Author: Fabien Parent <fparent@baylibre.com>
+Authored on: Tue, 17 Jan 2017 13:57:42 +0100Link: http://github.com/nathanchance/angler/commit/1c17617887d36f4db701de1dc2398a7ed649dd52
+Added on: Tue, 20 Jun 2017 14:04:08 +0200
+
+
+Title: ARM: 8634/1: hw_breakpoint: blacklist Scorpion CPUs
+Author: Mark Rutland <mark.rutland@arm.com>
+Authored on: Fri, 6 Jan 2017 13:12:47 +0100Link: http://github.com/nathanchance/angler/commit/d6797dd0b0e7f2d8a828617b8c6f9c66d72b9386
+Added on: Tue, 20 Jun 2017 14:04:08 +0200
+
+
+Title: qla2xxx: Fix crash due to null pointer access
+Author: Quinn Tran <quinn.tran@cavium.com>
+Authored on: Fri, 23 Dec 2016 18:06:10 -0800Link: http://github.com/nathanchance/angler/commit/2044077298b44481e2961c5c1b8764ed96e8d279
+Added on: Tue, 20 Jun 2017 14:04:08 +0200
+
+
+Title: x86/PCI: Ignore _CRS on Supermicro X8DTH-i/6/iF/6F
+Author: Bjorn Helgaas <bhelgaas@google.com>
+Authored on: Wed, 28 Dec 2016 14:55:16 -0600Link: http://github.com/nathanchance/angler/commit/369ca806e103aeeacb154cde201a49f68049826e
+Added on: Tue, 20 Jun 2017 14:04:07 +0200
+
+
+Title: pinctrl: sh-pfc: Do not unconditionally support PIN_CONFIG_BIAS_DISABLE
+Author: Niklas Söderlund <niklas.soderlund+renesas@ragnatech.se>
+Authored on: Sat, 12 Nov 2016 17:04:24 +0100Link: http://github.com/nathanchance/angler/commit/9cbef9a41d483fd988089ae1bf6b800a709d6635
+Added on: Tue, 20 Jun 2017 14:04:07 +0200
+
+
+Title: sysrq: attach sysrq handler correctly for 32-bit kernel
+Author: Akinobu Mita <akinobu.mita@gmail.com>
+Authored on: Fri, 6 Jan 2017 02:14:16 +0900Link: http://github.com/nathanchance/angler/commit/a5464db93860e420aede7804a9d65a38cc087e51
+Added on: Tue, 20 Jun 2017 14:04:07 +0200
+
+
+Title: vme: Fix wrong pointer utilization in ca91cx42_slave_get
+Author: Augusto Mecking Caringi <augustocaringi@gmail.com>
+Authored on: Tue, 10 Jan 2017 10:45:00 +0000Link: http://github.com/nathanchance/angler/commit/23913c7fb34cf707471d63311926ec6e68421ec7
+Added on: Tue, 20 Jun 2017 14:04:07 +0200
+
+
+Title: i2c: fix kernel memory disclosure in dev interface
+Author: Vlad Tsyrklevich <vlad@tsyrklevich.net>
+Authored on: Mon, 9 Jan 2017 22:53:36 +0700Link: http://github.com/nathanchance/angler/commit/f8ddf9677f60e00b0137379ebf266b2809ba002e
+Added on: Tue, 20 Jun 2017 14:04:06 +0200
+
+
+Title: Input: i8042 - add Clevo P650RS to the i8042 reset list
+Author: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+Authored on: Thu, 13 Apr 2017 15:36:31 -0700Link: http://github.com/nathanchance/angler/commit/b7f592498930c207185a81e93dc013dff301ffd4
+Added on: Tue, 20 Jun 2017 14:03:30 +0200
+
+
+Title: Input: mpr121 - set missing event capability
+Author: Akinobu Mita <akinobu.mita@gmail.com>
+Authored on: Sun, 15 Jan 2017 14:44:05 -0800Link: http://github.com/nathanchance/angler/commit/091db5264d8cd317a83a41ec6b4456a8cb687618
+Added on: Tue, 20 Jun 2017 14:03:30 +0200
+
+
+Title: Input: mpr121 - handle multiple bits change of status register
+Author: Akinobu Mita <akinobu.mita@gmail.com>
+Authored on: Sun, 15 Jan 2017 14:44:30 -0800Link: http://github.com/nathanchance/angler/commit/39106815f8ce7a47a3f6f4de499d891cc3f2a5cc
+Added on: Tue, 20 Jun 2017 14:03:29 +0200
+
+
+Title: Input: tca8418 - use the interrupt trigger from the device tree
+Author: Maxime Ripard <maxime.ripard@free-electrons.com>
+Authored on: Tue, 17 Jan 2017 13:24:22 -0800Link: http://github.com/nathanchance/angler/commit/4a878a06235c1445fbd68c2219837ca7697c346b
+Added on: Tue, 20 Jun 2017 14:03:29 +0200
+
+
+Title: Input: joydev - do not report stale values on first open
+Author: Raphael Assenat <raph@raphnet.net>
+Authored on: Thu, 29 Dec 2016 10:23:09 -0800Link: http://github.com/nathanchance/angler/commit/840c242b63c8bbc156f6c954e826f71da07f24f7
+Added on: Tue, 20 Jun 2017 14:03:29 +0200
+
+
+Title: Input: kbtab - validate number of endpoints before using them
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Thu, 16 Mar 2017 11:41:55 -0700Link: http://github.com/nathanchance/angler/commit/3f25fb3f2e7e6cd5677bcf2f7363a9e7037b9997
+Added on: Tue, 20 Jun 2017 14:03:29 +0200
+
+
+Title: Input: iforce - validate number of endpoints before using them
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Thu, 16 Mar 2017 11:34:02 -0700Link: http://github.com/nathanchance/angler/commit/f0819a498be8d63256dc176dc4de7b6286de7d47
+Added on: Tue, 20 Jun 2017 14:03:28 +0200
+
+
+Title: Input: i8042 - add noloop quirk for Dell Embedded Box PC 3000
+Author: Kai-Heng Feng <kai.heng.feng@canonical.com>
+Authored on: Tue, 7 Mar 2017 09:31:29 -0800Link: http://github.com/nathanchance/angler/commit/4fccf698ed2aef12f4e150b6ee090b92fc3e7c64
+Added on: Tue, 20 Jun 2017 14:03:28 +0200
+
+
+Title: Input: xpad - use correct product id for x360w controllers
+Author: Pavel Rojtberg <rojtberg@gmail.com>
+Authored on: Tue, 27 Dec 2016 11:44:51 -0800Link: http://github.com/nathanchance/angler/commit/e2c835ec044d59f9511f205cc358454fd6822d49
+Added on: Tue, 20 Jun 2017 14:03:28 +0200
+
+
+Title: HID: hid-cypress: validate length of report
+Author: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Authored on: Fri, 6 Jan 2017 15:33:36 +0100Link: http://github.com/nathanchance/angler/commit/a48d5b1570ac6f5fd02028e5a71431d1f7e778db
+Added on: Tue, 20 Jun 2017 14:03:27 +0200
+
+
+Title: igmp: Make igmp group member RFC 3376 compliant
+Author: Michal Tesar <mtesar@redhat.com>
+Authored on: Mon, 2 Jan 2017 14:38:36 +0100Link: http://github.com/nathanchance/angler/commit/461527f71c537ce9d972a116f08f2bbd0c5ac105
+Added on: Tue, 20 Jun 2017 14:03:27 +0200
+
+
+Title: drop_monitor: consider inserted data in genlmsg_end
+Author: Reiter Wolfgang <wr0112358@gmail.com>
+Authored on: Tue, 3 Jan 2017 01:39:10 +0100Link: http://github.com/nathanchance/angler/commit/e88f37a15a772296ae3850ebe24b385ccd951dd5
+Added on: Tue, 20 Jun 2017 14:03:27 +0200
+
+
+Title: drop_monitor: add missing call to genlmsg_end
+Author: Reiter Wolfgang <wr0112358@gmail.com>
+Authored on: Sat, 31 Dec 2016 21:11:57 +0100Link: http://github.com/nathanchance/angler/commit/0cfc0624b1a8359ed127856bfc7e1118cf8eb5c9
+Added on: Tue, 20 Jun 2017 14:03:27 +0200
+
+
+Title: netvsc: reduce maximum GSO size
+Author: stephen hemminger <stephen@networkplumber.org>
+Authored on: Tue, 6 Dec 2016 13:43:54 -0800Link: http://github.com/nathanchance/angler/commit/437529843ff158e2f132b04c014abd2d0707bba1
+Added on: Tue, 20 Jun 2017 14:03:26 +0200
+
+
+Title: tick/broadcast: Prevent NULL pointer dereference
+Author: Thomas Gleixner <tglx@linutronix.de>
+Authored on: Thu, 15 Dec 2016 12:10:37 +0100Link: http://github.com/nathanchance/angler/commit/468316bf28200b76195c11f7f3a9693978484a99
+Added on: Tue, 20 Jun 2017 14:03:26 +0200
+
+
+Title: net: ti: cpmac: Fix compiler warning due to type confusion
+Author: Paul Burton <paul.burton@imgtec.com>
+Authored on: Fri, 2 Sep 2016 15:22:48 +0100Link: http://github.com/nathanchance/angler/commit/8f587770ccc4525fb026d1fe43aaac4d9ec70efb
+Added on: Tue, 20 Jun 2017 14:03:26 +0200
+
+
+Title: cred/userns: define current_user_ns() as a function
+Author: Arnd Bergmann <arnd@arndb.de>
+Authored on: Tue, 22 Mar 2016 14:27:11 -0700Link: http://github.com/nathanchance/angler/commit/de2e2803e68126872b822a731ef6bcbeaa6553d1
+Added on: Tue, 20 Jun 2017 14:03:25 +0200
+
+
+Title: ftrace/x86: Set ftrace_stub to weak to prevent gcc from using short jumps to it
+Author: Steven Rostedt <rostedt@goodmis.org>
+Authored on: Mon, 16 May 2016 23:00:35 -0400Link: http://github.com/nathanchance/angler/commit/fa51c867f4d587ff6d9b75ee9e9cb9e107165e7a
+Added on: Tue, 20 Jun 2017 14:03:25 +0200
+
+
+Title: sg_write()/bsg_write() is not fit to be called under KERNEL_DS
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Fri, 16 Dec 2016 13:42:06 -0500Link: http://github.com/nathanchance/angler/commit/823a2a0330f25ccea8ef64ee4a378e37ca51361c
+Added on: Tue, 20 Jun 2017 14:03:25 +0200
+
+
+Title: powerpc/ps3: Fix system hang with GCC 5 builds
+Author: Geoff Levand <geoff@infradead.org>
+Authored on: Tue, 29 Nov 2016 10:47:32 -0800Link: http://github.com/nathanchance/angler/commit/b1230ef86d56322ebc21b1dbd7fa91250ca5d266
+Added on: Tue, 20 Jun 2017 14:03:24 +0200
+
+
+Title: nfs_write_end(): fix handling of short copies
+Author: Al Viro <viro@zeniv.linux.org.uk>
+Authored on: Mon, 5 Sep 2016 21:42:32 -0400Link: http://github.com/nathanchance/angler/commit/768ce7b007bcff58f2100123dc1ca1722f71d340
+Added on: Tue, 20 Jun 2017 14:03:24 +0200
+
+
+Title: libceph: verify authorize reply on connect
+Author: Ilya Dryomov <idryomov@gmail.com>
+Authored on: Fri, 2 Dec 2016 16:35:09 +0100Link: http://github.com/nathanchance/angler/commit/93c83e37a5790c86626ef00ade1350770a904c9d
+Added on: Tue, 20 Jun 2017 14:03:24 +0200
+
+
+Title: s390/vmlogrdr: fix IUCV buffer allocation
+Author: Gerald Schaefer <gerald.schaefer@de.ibm.com>
+Authored on: Mon, 21 Nov 2016 12:13:58 +0100Link: http://github.com/nathanchance/angler/commit/8cfc539f624a1c145ae237bfc187c66a89dc9316
+Added on: Tue, 20 Jun 2017 14:03:24 +0200
+
+
+Title: scsi: sd: Fix capacity calculation with 32-bit sector_t
+Author: Martin K. Petersen <martin.petersen@oracle.com>
+Authored on: Tue, 4 Apr 2017 10:42:30 -0400Link: http://github.com/nathanchance/angler/commit/937f07614dcd8da04621e1e67589555a47a828d2
+Added on: Tue, 20 Jun 2017 14:03:23 +0200
+
+
+Title: scsi: sr: Sanity check returned mode data
+Author: Martin K. Petersen <martin.petersen@oracle.com>
+Authored on: Fri, 17 Mar 2017 08:47:14 -0400Link: http://github.com/nathanchance/angler/commit/d427ab53d49580344f2d515c0ffd261fc3b483df
+Added on: Tue, 20 Jun 2017 14:03:23 +0200
+
+
+Title: scsi: lpfc: Add shutdown method for kexec
+Author: Anton Blanchard <anton@samba.org>
+Authored on: Mon, 13 Feb 2017 08:49:20 +1100Link: http://github.com/nathanchance/angler/commit/dfda822cbb76b105d0094b122e4c025642e3b218
+Added on: Tue, 20 Jun 2017 14:03:23 +0200
+
+
+Title: target/pscsi: Fix TYPE_TAPE + TYPE_MEDIMUM_CHANGER export
+Author: Nicholas Bellinger <nab@linux-iscsi.org>
+Authored on: Thu, 3 Nov 2016 23:06:53 -0700Link: http://github.com/nathanchance/angler/commit/22e0bbbc6f30e61aa735f59f738caadf3c9784af
+Added on: Tue, 20 Jun 2017 14:03:22 +0200
+
+
+Title: scsi: storvsc: properly set residual data length on errors
+Author: Long Li <longli@microsoft.com>
+Authored on: Wed, 14 Dec 2016 18:46:03 -0800Link: http://github.com/nathanchance/angler/commit/d49e93f927b14e1ac95aaa5847ee1175b177a07c
+Added on: Tue, 20 Jun 2017 14:03:22 +0200
+
+
+Title: scsi: storvsc: properly handle SRB_ERROR when sense message is present
+Author: Long Li <longli@microsoft.com>
+Authored on: Wed, 14 Dec 2016 18:46:02 -0800Link: http://github.com/nathanchance/angler/commit/d9b6a466adbf115d0428eff73ef78e7d01646396
+Added on: Tue, 20 Jun 2017 14:03:22 +0200
+
+
+Title: scsi: don't BUG_ON() empty DMA transfers
+Author: Johannes Thumshirn <jthumshirn@suse.de>
+Authored on: Tue, 31 Jan 2017 10:16:00 +0100Link: http://github.com/nathanchance/angler/commit/c243c6149a5c64efe60fb032f6ffdba8c408211f
+Added on: Tue, 20 Jun 2017 14:03:22 +0200
+
+
+Title: scsi: move the nr_phys_segments assert into scsi_init_io
+Author: Christoph Hellwig <hch@lst.de>
+Authored on: Sat, 28 Jun 2014 11:51:01 +0200Link: http://github.com/nathanchance/angler/commit/cf8ec2cf8d05900c8322942da7635e1386b502a3
+Added on: Tue, 20 Jun 2017 14:03:21 +0200
+
+
+Title: scsi: avoid a permanent stop of the scsi device's request queue
+Author: Wei Fang <fangwei1@huawei.com>
+Authored on: Tue, 13 Dec 2016 09:25:21 +0800Link: http://github.com/nathanchance/angler/commit/b3ffb4cb387985c8572f49478a822abf8125f53c
+Added on: Tue, 20 Jun 2017 14:03:21 +0200
+
+
+Title: drivers/gpu/drm/ast: Fix infinite loop if read fails
+Author: Russell Currey <ruscur@russell.cc>
+Authored on: Thu, 15 Dec 2016 16:12:41 +1100Link: http://github.com/nathanchance/angler/commit/0175d92323beef4bfdb24addd53144a0f4f49373
+Added on: Tue, 20 Jun 2017 14:03:21 +0200
+
+
+Title: ssb: Fix error routine when fallback SPROM fails
+Author: Larry Finger <Larry.Finger@lwfinger.net>
+Authored on: Sat, 5 Nov 2016 14:08:57 -0500Link: http://github.com/nathanchance/angler/commit/048eeebe865bd568d570e328ecc98fbd72489f4c
+Added on: Tue, 20 Jun 2017 14:03:20 +0200
+
+
+Title: xfs: clear _XBF_PAGES from buffers when readahead page
+Author: Darrick J. Wong <darrick.wong@oracle.com>
+Authored on: Wed, 25 Jan 2017 20:24:57 -0800Link: http://github.com/nathanchance/angler/commit/4e448d489e0d63267294541cef8f81d7f1b88095
+Added on: Tue, 20 Jun 2017 14:03:20 +0200
+
+
+Title: xfs: set AGI buffer type in xlog_recover_clear_agi_bucket
+Author: Eric Sandeen <sandeen@sandeen.net>
+Authored on: Mon, 5 Dec 2016 12:31:06 +1100Link: http://github.com/nathanchance/angler/commit/dfd97b52341c677e9767a17e3a7dbf0a3fd68601
+Added on: Tue, 20 Jun 2017 14:03:20 +0200
+
+
+Title: arm/xen: Use alloc_percpu rather than __alloc_percpu
+Author: Julien Grall <julien.grall@arm.com>
+Authored on: Wed, 7 Dec 2016 12:24:40 +0000Link: http://github.com/nathanchance/angler/commit/afeef476bbff8f8b8ff5cb129b72fbf544a51941
+Added on: Tue, 20 Jun 2017 14:03:19 +0200
+
+
+Title: USB: UHCI: report non-PME wakeup signalling for Intel hardware
+Author: Alan Stern <stern@rowland.harvard.edu>
+Authored on: Fri, 21 Oct 2016 16:49:07 -0400Link: http://github.com/nathanchance/angler/commit/50da0b03025fe051b25501652b96664ecdfeda43
+Added on: Tue, 20 Jun 2017 14:03:19 +0200
+
+
+Title: usb: gadget: composite: correctly initialize ep->maxpacket
+Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+Authored on: Wed, 28 Sep 2016 10:38:11 +0300Link: http://github.com/nathanchance/angler/commit/d4dfd03c3f10a885acd6c62344697f805a5b94ab
+Added on: Tue, 20 Jun 2017 14:03:19 +0200
+
+
+Title: usb: hub: Wait for connection to be reestablished after port reset
+Author: Guenter Roeck <linux@roeck-us.net>
+Authored on: Thu, 1 Dec 2016 13:49:59 -0800Link: http://github.com/nathanchance/angler/commit/1ea3d6c8d5111691a678da52ea1c1809c3cedc1d
+Added on: Tue, 20 Jun 2017 14:03:19 +0200
+
+
+Title: usb: dwc3: gadget: delay unmap of bounced requests
+Author: Janusz Dziedzic <januszx.dziedzic@intel.com>
+Authored on: Mon, 13 Mar 2017 14:11:32 +0200Link: http://github.com/nathanchance/angler/commit/91c86d706c740499ef68dbc0724347c12dc3ac76
+Added on: Tue, 20 Jun 2017 14:03:18 +0200
+
+
+Title: usb: host: xhci-plat: Fix timeout on removal of hot pluggable xhci controllers
+Author: Guenter Roeck <linux@roeck-us.net>
+Authored on: Thu, 9 Mar 2017 15:39:37 +0200Link: http://github.com/nathanchance/angler/commit/a3fdfc6427e7e838223bc4077da66cc00f02451e
+Added on: Tue, 20 Jun 2017 14:03:18 +0200
+
+
+Title: usb: dwc3: gadget: make Set Endpoint Configuration macros safe
+Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+Authored on: Tue, 31 Jan 2017 13:24:54 +0200Link: http://github.com/nathanchance/angler/commit/8cada854ab704ca486754043a42a7b7777506c2a
+Added on: Tue, 20 Jun 2017 14:03:18 +0200
+
+
+Title: USB: cdc-acm: fix failed open not being detected
+Author: Johan Hovold <jhovold@gmail.com>
+Authored on: Mon, 26 May 2014 19:23:43 +0200Link: http://github.com/nathanchance/angler/commit/817a471a34a6a31a2fed5b69bc920507f41f9969
+Added on: Tue, 20 Jun 2017 14:03:17 +0200
+
+
+Title: USB: cdc-acm: fix open and suspend race
+Author: Johan Hovold <jhovold@gmail.com>
+Authored on: Mon, 26 May 2014 19:23:42 +0200Link: http://github.com/nathanchance/angler/commit/256d49baf399fae3921083cfb6a8e59ad393fee8
+Added on: Tue, 20 Jun 2017 14:03:17 +0200
+
+
+Title: USB: cdc-acm: fix double usb_autopm_put_interface() in acm_port_activate()
+Author: Alexey Khoroshilov <khoroshilov@ispras.ru>
+Authored on: Sat, 12 Apr 2014 02:10:45 +0400Link: http://github.com/nathanchance/angler/commit/f8dc9ab9dcf2133919763e00ba646fca891f248b
+Added on: Tue, 20 Jun 2017 14:03:17 +0200
+
+
+Title: usb: gadget: composite: always set ep->mult to a sensible value
+Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+Authored on: Wed, 28 Sep 2016 12:33:31 +0300Link: http://github.com/nathanchance/angler/commit/7b1a80c8b132b2bebe9193d2a9325d1c20fe4063
+Added on: Tue, 20 Jun 2017 14:03:17 +0200
+
+
+Title: USB: serial: io_ti: bind to interface after fw download
+Author: Johan Hovold <johan@kernel.org>
+Authored on: Tue, 3 Jan 2017 16:39:46 +0100Link: http://github.com/nathanchance/angler/commit/a1bf279fac23144553a60a4d30ae60fea718e07f
+Added on: Tue, 20 Jun 2017 14:03:17 +0200
+
+
+Title: xhci: free xhci virtual devices with leaf nodes first
+Author: Mathias Nyman <mathias.nyman@linux.intel.com>
+Authored on: Tue, 3 Jan 2017 18:28:43 +0200Link: http://github.com/nathanchance/angler/commit/e233c671b6a91ecf0149d8fec0c1baa6b8d628c6
+Added on: Tue, 20 Jun 2017 14:03:16 +0200
+
+
+Title: USB: gadgetfs: fix checks of wTotalLength in config descriptors
+Author: Alan Stern <stern@rowland.harvard.edu>
+Authored on: Fri, 9 Dec 2016 15:24:24 -0500Link: http://github.com/nathanchance/angler/commit/bde22e32dfe73c1463a43dceb66b1a72714e0e2d
+Added on: Tue, 20 Jun 2017 14:03:16 +0200
+
+
+Title: USB: gadgetfs: fix use-after-free bug
+Author: Alan Stern <stern@rowland.harvard.edu>
+Authored on: Fri, 9 Dec 2016 15:18:43 -0500Link: http://github.com/nathanchance/angler/commit/6ccec4b1ed141625123261ac2e7b9ce849698aac
+Added on: Tue, 20 Jun 2017 14:03:16 +0200
+
+
+Title: USB: gadgetfs: fix unbounded memory allocation bug
+Author: Alan Stern <stern@rowland.harvard.edu>
+Authored on: Fri, 9 Dec 2016 15:17:46 -0500Link: http://github.com/nathanchance/angler/commit/66e87b46965c4208dbfa3404f507ea8db56e33ca
+Added on: Tue, 20 Jun 2017 14:03:15 +0200
+
+
+Title: usb: gadgetfs: restrict upper bound on device configuration size
+Author: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Authored on: Tue, 6 Dec 2016 08:36:29 +0100Link: http://github.com/nathanchance/angler/commit/133caaf57f3b8b57db1aa3fca3d343f3672fdf1a
+Added on: Tue, 20 Jun 2017 14:03:15 +0200
+
+
+Title: ALSA: usb-audio: Add QuickCam Communicate Deluxe/S7500 to volume_control_quirks
+Author: Con Kolivas <con@kolivas.org>
+Authored on: Fri, 9 Dec 2016 15:15:57 +1100Link: http://github.com/nathanchance/angler/commit/7563f274e645922cb7475fd7e15eb86d06026ef8
+Added on: Tue, 20 Jun 2017 14:03:15 +0200
+
+
+Title: ALSA: seq: Don't break snd_use_lock_sync() loop by timeout
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Sun, 9 Apr 2017 10:41:27 +0200Link: http://github.com/nathanchance/angler/commit/42860dabff821117bdb1716a938f4e6b0d424965
+Added on: Tue, 20 Jun 2017 14:03:15 +0200
+
+
+Title: ALSA: seq: Fix race during FIFO resize
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Fri, 24 Mar 2017 17:07:57 +0100Link: http://github.com/nathanchance/angler/commit/28e0ebdd57cd3287ac821068364b74c70af3861c
+Added on: Tue, 20 Jun 2017 14:03:14 +0200
+
+
+Title: ALSA: seq: Fix racy cell insertions during snd_seq_pool_done()
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Tue, 21 Mar 2017 13:56:04 +0100Link: http://github.com/nathanchance/angler/commit/2dbb155d5902591f3c87196645b4fd722e540809
+Added on: Tue, 20 Jun 2017 14:03:14 +0200
+
+
+Title: ALSA: seq: Fix link corruption by event error handling
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Tue, 28 Feb 2017 22:15:51 +0100Link: http://github.com/nathanchance/angler/commit/2dbfb5cbe934be0354e8c726096199ba0b64c109
+Added on: Tue, 20 Jun 2017 14:03:14 +0200
+
+
+Title: ALSA: timer: Reject user params with too small ticks
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Tue, 28 Feb 2017 14:49:07 +0100Link: http://github.com/nathanchance/angler/commit/7a3085a36da3ee4b6b53c9f86d5186aec1caba64
+Added on: Tue, 20 Jun 2017 14:03:13 +0200
+
+
+Title: ALSA: seq: Don't handle loop timeout at snd_seq_pool_done()
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Mon, 6 Feb 2017 15:09:48 +0100Link: http://github.com/nathanchance/angler/commit/28567fb4bc02fc0fdb7fd328cddfcd623f5dc65c
+Added on: Tue, 20 Jun 2017 14:03:13 +0200
+
+
+Title: ALSA: seq: Fix race at creating a queue
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Wed, 8 Feb 2017 12:35:39 +0100Link: http://github.com/nathanchance/angler/commit/6dd5cf43dfa0353f9a1bd7b3e71f4c2703c7042f
+Added on: Tue, 20 Jun 2017 14:03:13 +0200
+
+
+Title: ALSA: hda - Fix up GPIO for ASUS ROG Ranger
+Author: Takashi Iwai <tiwai@suse.de>
+Authored on: Tue, 6 Dec 2016 16:20:36 +0100Link: http://github.com/nathanchance/angler/commit/bbcdcb830eb0d37bcd2bc43c9f2eedcd4a134fce
+Added on: Tue, 20 Jun 2017 14:03:13 +0200
+
+
+Title: can: usb_8dev: Fix memory leak of priv->cmd_msg_buffer
+Author: Marc Kleine-Budde <mkl@pengutronix.de>
+Authored on: Thu, 2 Mar 2017 12:03:40 +0100Link: http://github.com/nathanchance/angler/commit/d2ab6e524ffb26caf0680aaf2963082d26d2b77d
+Added on: Tue, 20 Jun 2017 14:03:12 +0200
+
+
+Title: can: bcm: fix hrtimer/tasklet termination in bcm op removal
+Author: Oliver Hartkopp <socketcan@hartkopp.net>
+Authored on: Wed, 18 Jan 2017 21:30:51 +0100Link: http://github.com/nathanchance/angler/commit/d5361ee850ef3e69a92883e46ccbb5ed6ccb9323
+Added on: Tue, 20 Jun 2017 14:03:12 +0200
+
+
+Title: can: ti_hecc: add missing prepare and unprepare of the clock
+Author: Yegor Yefremov <yegorslists@googlemail.com>
+Authored on: Wed, 18 Jan 2017 11:35:57 +0100Link: http://github.com/nathanchance/angler/commit/2adddc0a8fc6bccaa475c2cb40c10f11adb80f35
+Added on: Tue, 20 Jun 2017 14:03:12 +0200
+
+
+Title: can: c_can_pci: fix null-pointer-deref in c_can_start() - set device pointer
+Author: Einar Jón <tolvupostur@gmail.com>
+Authored on: Fri, 12 Aug 2016 13:50:41 +0200Link: http://github.com/nathanchance/angler/commit/165cc0330b7cdb071ae8d652905cbc538bdc78ad
+Added on: Tue, 20 Jun 2017 14:03:12 +0200
+
+
+Title: can: peak: fix bad memory access and free sequence
+Author: 추지호 <jiho.chu@samsung.com>
+Authored on: Thu, 8 Dec 2016 12:01:13 +0000Link: http://github.com/nathanchance/angler/commit/3e7b58a3c45e296eefe6ae0b822c7c7ee95dfc78
+Added on: Tue, 20 Jun 2017 14:02:48 +0200
+
+
+Title: can: raw: raw_setsockopt: limit number of can_filter that can be set
+Author: Marc Kleine-Budde <mkl@pengutronix.de>
+Authored on: Mon, 5 Dec 2016 11:44:23 +0100Link: http://github.com/nathanchance/angler/commit/cf7969002086e294d8b1b5377b00d1a8de98a3ab
+Added on: Tue, 20 Jun 2017 08:03:01 +0200
+
+
+Title: ocfs2: fix BUG_ON() in ocfs2_ci_checkpointed()
+Author: Tariq Saeed <tariq.x.saeed@oracle.com>
+Authored on: Fri, 4 Sep 2015 15:44:31 -0700Link: http://github.com/nathanchance/angler/commit/1918581a164b0e44ff403e7d7db073ef93fab1d2
+Added on: Tue, 20 Jun 2017 08:03:01 +0200
+
+
+Title: ocfs2: fix crash caused by stale lvb with fsdlm plugin
+Author: Eric Ren <zren@suse.com>
+Authored on: Tue, 10 Jan 2017 16:57:33 -0800Link: http://github.com/nathanchance/angler/commit/4b93c1da7b6bef1ad8f7ae9a3858bf46c9d2d417
+Added on: Tue, 20 Jun 2017 08:03:00 +0200
+
+
+Title: cifs: Do not send echoes before Negotiate is complete
+Author: Sachin Prabhu <sprabhu@redhat.com>
+Authored on: Sun, 16 Apr 2017 20:37:24 +0100Link: http://github.com/nathanchance/angler/commit/4549e4af6df0499ee53cc873f3de93751902d125
+Added on: Tue, 20 Jun 2017 08:03:00 +0200
+
+
+Title: fs/cifs: make share unaccessible at root level mountable
+Author: Aurelien Aptel <aaptel@suse.com>
+Authored on: Thu, 26 Jan 2017 14:25:49 +0100Link: http://github.com/nathanchance/angler/commit/a9baa44162bf847ea97ea179e9b37d25a75a8c99
+Added on: Tue, 20 Jun 2017 08:03:00 +0200
+
+
+Title: CIFS: remove bad_network_name flag
+Author: Germano Percossi <germano.percossi@citrix.com>
+Authored on: Fri, 7 Apr 2017 12:29:37 +0100Link: http://github.com/nathanchance/angler/commit/60f2c2fa044c5e127bfa01b2c0bae00d7711acc1
+Added on: Tue, 20 Jun 2017 08:03:00 +0200
+
+
+Title: CIFS: Fix a possible memory corruption in push locks
+Author: Pavel Shilovsky <pshilov@microsoft.com>
+Authored on: Tue, 29 Nov 2016 16:14:43 -0800Link: http://github.com/nathanchance/angler/commit/f9e74c2ad12ad9b0f4135046c3d835de835843ef
+Added on: Tue, 20 Jun 2017 08:02:59 +0200
+
+
+Title: CIFS: Fix missing nls unload in smb2_reconnect()
+Author: Pavel Shilovsky <pshilov@microsoft.com>
+Authored on: Tue, 29 Nov 2016 11:30:58 -0800Link: http://github.com/nathanchance/angler/commit/85beff453d806fa682f4d54430fc0fa96f6d4cd9
+Added on: Tue, 20 Jun 2017 08:02:59 +0200
+
+
+Title: CIFS: Fix a possible memory corruption during reconnect
+Author: Pavel Shilovsky <pshilov@microsoft.com>
+Authored on: Fri, 4 Nov 2016 11:50:31 -0700Link: http://github.com/nathanchance/angler/commit/e008a962311a875a828cbae54b43285858aaa6c8
+Added on: Tue, 20 Jun 2017 08:02:59 +0200
+
+
+Title: md linear: fix a race between linear_add() and linear_congested()
+Author: colyli@suse.de <colyli@suse.de>
+Authored on: Sat, 28 Jan 2017 21:11:49 +0800Link: http://github.com/nathanchance/angler/commit/d45256ff3ed6edf2d61caf25b37643eed9001908
+Added on: Tue, 20 Jun 2017 08:02:59 +0200
+
+
+Title: md:raid1: fix a dead loop when read from a WriteMostly disk
+Author: Wei Fang <fangwei1@huawei.com>
+Authored on: Mon, 21 Mar 2016 19:18:32 +0800Link: http://github.com/nathanchance/angler/commit/7a56cc091820dc84e1260a74ec316d4a4b12d372
+Added on: Tue, 20 Jun 2017 08:02:58 +0200
+
+
+Title: md/raid5: limit request size according to implementation limits
+Author: Konstantin Khlebnikov <khlebnikov@yandex-team.ru>
+Authored on: Sun, 27 Nov 2016 19:32:32 +0300Link: http://github.com/nathanchance/angler/commit/523d7696aa00e1a7417a425b0c8f53b22c4d65cd
+Added on: Tue, 20 Jun 2017 08:02:58 +0200
+
+
+Title: dm space map metadata: fix 'struct sm_metadata' leak on failed create
+Author: Benjamin Marzinski <bmarzins@redhat.com>
+Authored on: Wed, 30 Nov 2016 17:56:14 -0600Link: http://github.com/nathanchance/angler/commit/8255960354cc202bf6bc714ccd7879a202d468d5
+Added on: Tue, 20 Jun 2017 08:02:38 +0200
+
+
+Title: dm crypt: mark key as invalid until properly loaded
+Author: Ondrej Kozina <okozina@redhat.com>
+Authored on: Wed, 2 Nov 2016 15:02:08 +0100Link: http://github.com/nathanchance/angler/commit/3044e1958de35175526af69f0bba20d415229744
+Added on: Tue, 20 Jun 2017 08:02:38 +0200
+
+
+Title: block: fix del_gendisk() vs blkdev_ioctl crash
+Author: Dan Williams <dan.j.williams@intel.com>
+Authored on: Tue, 29 Dec 2015 14:02:29 -0800Link: http://github.com/nathanchance/angler/commit/1dd3d3e635c3b9538d693a616b150ddeb3662963
+Added on: Tue, 20 Jun 2017 08:02:37 +0200
+
+
+Title: block: allow WRITE_SAME commands with the SG_IO ioctl
+Author: Mauricio Faria de Oliveira <mauricfo@linux.vnet.ibm.com>
+Authored on: Sat, 25 Mar 2017 21:48:14 +0530Link: http://github.com/nathanchance/angler/commit/5cb0174119e4743c9f4b8f17115a8a2386c0f4a2
+Added on: Tue, 20 Jun 2017 08:02:37 +0200
+
+
+Title: block: fix use-after-free in sys_ioprio_get()
+Author: Omar Sandoval <osandov@fb.com>
+Authored on: Fri, 1 Jul 2016 00:39:35 -0700Link: http://github.com/nathanchance/angler/commit/0f3a4aaafa82dfbc98606e56453fabbd6c27a3ce
+Added on: Tue, 20 Jun 2017 08:02:37 +0200
+
+
+Title: ext4: fix inode checksum calculation problem if i_extra_size is small
+Author: Daeho Jeong <daeho.jeong@samsung.com>
+Authored on: Thu, 1 Dec 2016 11:49:12 -0500Link: http://github.com/nathanchance/angler/commit/cd0d925440c191543502b5fa5cc6c6243e601aca
+Added on: Tue, 20 Jun 2017 08:02:37 +0200
+
+
+Title: ext4: return EROFS if device is r/o and journal replay is needed
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sun, 5 Feb 2017 01:26:48 -0500Link: http://github.com/nathanchance/angler/commit/48a5889bfdf956a7426df6c07f6eda8602e6a918
+Added on: Tue, 20 Jun 2017 08:02:36 +0200
+
+
+Title: ext4: preserve the needs_recovery flag when the journal is aborted
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sat, 4 Feb 2017 23:38:06 -0500Link: http://github.com/nathanchance/angler/commit/399562b67718b4679e0f228131811b1c1725cf10
+Added on: Tue, 20 Jun 2017 08:02:36 +0200
+
+
+Title: ext4: trim allocation requests to group size
+Author: Jan Kara <jack@suse.cz>
+Authored on: Fri, 27 Jan 2017 14:34:30 -0500Link: http://github.com/nathanchance/angler/commit/98f58e05231f835dfb09359e3b5e3a886fe8f189
+Added on: Tue, 20 Jun 2017 08:02:36 +0200
+
+
+Title: ext4: fix fencepost in s_first_meta_bg validation
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Wed, 15 Feb 2017 01:26:39 -0500Link: http://github.com/nathanchance/angler/commit/77bd57e66e071d866323132e1250350d7c90159f
+Added on: Tue, 20 Jun 2017 08:02:36 +0200
+
+
+Title: jbd2: don't leak modified metadata buffers on an aborted journal
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Sat, 4 Feb 2017 23:14:19 -0500Link: http://github.com/nathanchance/angler/commit/45f1a95e8e169b8fc67d77b603ed2615301626f3
+Added on: Tue, 20 Jun 2017 08:02:35 +0200
+
+
+Title: ext4: validate s_first_meta_bg at mount time
+Author: Eryu Guan <guaneryu@gmail.com>
+Authored on: Thu, 1 Dec 2016 15:08:37 -0500Link: http://github.com/nathanchance/angler/commit/188b2ebb367591a1841825294f21f30186743186
+Added on: Tue, 20 Jun 2017 08:02:11 +0200
+
+
+Title: ext4: add sanity checking to count_overhead()
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Fri, 18 Nov 2016 13:37:47 -0500Link: http://github.com/nathanchance/angler/commit/d61f4e22b4d2946ffb60e2ea61716681f247076c
+Added on: Mon, 19 Jun 2017 20:28:15 +0200
+
+
+Title: ext4: fix in-superblock mount options processing
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Fri, 18 Nov 2016 13:24:26 -0500Link: http://github.com/nathanchance/angler/commit/bd652ad14e9b9839f05f95117a00906af97b833f
+Added on: Mon, 19 Jun 2017 20:28:15 +0200
+
+
+Title: ext4: use more strict checks for inodes_per_block on mount
+Author: Theodore Ts'o <tytso@mit.edu>
+Authored on: Fri, 18 Nov 2016 13:28:30 -0500Link: http://github.com/nathanchance/angler/commit/408d8245b80b5426d670de4b4ec60f24b05eb0ef
+Added on: Mon, 19 Jun 2017 20:28:15 +0200
+
+
+Title: Btrfs: fix memory leak in reading btree blocks
+Author: Liu Bo <bo.li.liu@oracle.com>
+Authored on: Wed, 3 Aug 2016 12:33:01 -0700Link: http://github.com/nathanchance/angler/commit/de714a8a75b6985452fe6e5d3f6393eb1da2eb3d
+Added on: Mon, 19 Jun 2017 20:28:15 +0200
+
+
+Title: Revert "Btrfs: don't delay inode ref updates during log, replay"
+Author: Jeff Mahoney <jeffm@suse.com>
+Authored on: Fri, 2 Dec 2016 22:21:55 -0500Link: http://github.com/nathanchance/angler/commit/0ee88216358c4a1821022763cb84d2b0550bf1e2
+Added on: Mon, 19 Jun 2017 20:28:14 +0200
+
