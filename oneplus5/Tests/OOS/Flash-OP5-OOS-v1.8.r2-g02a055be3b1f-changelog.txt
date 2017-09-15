@@ -1,0 +1,420 @@
+http://github.com/nathanchance/oneplus5/commits/7.1.x-flash-oos-for-1.8
+
+Abhijeet Dharmapurikar (1):
+      power_supply: introduce PR_SWAP property
+
+Ajay Agarwal (3):
+      USB: gadget: ffs: Fix USBCV compliance failure due to adbd
+      usb: gadget: ffs: Fix runtime PM usage count for multiple set_alt
+      usb: gadget: MIDI: Add support for SuperSpeed enumeration
+
+Akhil P Oommen (1):
+      staging: android: sync: fix list corruption in fence struct
+
+Alex Sarraf (1):
+      input: misc: hbtp-input: Support for FB_BLANK_NORMAL event
+
+Alexander Potapenko (1):
+      block: Initialize cfqq->ioprio_class in cfq_get_queue()
+
+Amir Samuelov (9):
+      soc: qcom: spcom: propagate response timeout error
+      spcom: use mutex on spcom_unlock_ion_buf()
+      spcom: avoid user commands via /dev/spcom
+      spcom: increment channel reference count after successful glink_open()
+      spcom: silent error messages until spss link is up
+      spcom: check error from ion_import_dma_buf()
+      spcom: always wait for glink LOCAL_DISCONNECT event after glink_close()
+      spcom: ignore CONNECTED notification while closing the channel
+      spcom: avoid race condition when handling commands
+
+Arun Kumar Neelakantam (1):
+      soc: qcom: glink_smem_native_xprt: recovery from SSR in tasklet only
+
+Avaneesh Kumar Dwivedi (3):
+      Revert "soc:qcom: Synchronize service notifier task's"
+      soc: qcom: Register for indication cb after obtaining state of remote pd
+      soc: qcom: Notify to app pd clients in ind_ack thread
+
+Banajit Goswami (1):
+      soc: q6dspv2: apr: fix client registration refcount
+
+Chris Lew (1):
+      soc: qcom: glink: Change GFP_ATOMIC flag for intentless rx
+
+Dedy Lansky (5):
+      wil6210: use print_hex_dump_debug instead of print_hex_dump_bytes
+      wil6210: store bss object and use cfg80211_connect_bss()
+      wil6210: use WMI_DISCONNECT_CMDID upon connect timeout
+      wil6210: correctly report locally generated disconnect in STA mode
+      wil6210: fix array out of bounds access in pmc
+
+Dhoat Harpal (8):
+      soc: qcom: glink_ssr: Add kref for cb_data
+      soc: qcom: glink: Get additional reference in glink open
+      soc: qcom: glink_smem_native_xport: Check smem item in non cache region
+      soc: qcom: glink: Reset qos rate when xprt is down
+      soc: qcom: glink_smem_native_xport: Allocate smem item in non cache region
+      soc: qcom: glink: Remove magic number logic
+      soc: qcom: glink: Move get reference to valid location
+      soc: qcom: glink: Initialize dummy xprt with dummy functions
+
+Divya Ojha (2):
+      drivers: qcom: ultrasound: check concurrent device open operations
+      ASoC: msm: qdsp6v2: make audio debugfs read and release exclusive
+
+Gaurav Kohli (1):
+      firmware_class: Avoid memory leak when FW_OPT_NOCACHE is set
+
+Hamad Kadmany (8):
+      wil6210: add sysfs file for enable/disable fst link loss
+      wil6210: Fix protection against connections during reset
+      wil6210: Improve AP stop handling
+      wil6210: add option to load FTM FW
+      wil6210: Enable write ioctl
+      wil6210: fix sequence for scan-abort during reset
+      wil6210: fix check for sparrow D0 FW file
+      wil6210: protect against invalid length of tx management frame
+
+Hemant Kumar (13):
+      usb: gadget: f_ncm: allocate/free net device upon driver bind/unbind
+      usb: dwc3: Increase polling interval for set transfer resource ep cmd
+      USB: phy: qusb: Turn on vdd along with 1p8/3p3 LDOs when PMI requests
+      usb: phy-msm-qusb-v2: Add support for reference counting of regulators
+      usb: policy_engine: Close pd phy after exceeding SINK hard reset count
+      Revert "usb: pdphy: Widen voltage range setting for VDD regulator"
+      Revert "usb: phy-msm-qusb-v2: Add support for ref counting of regulators"
+      Revert "USB: qusb: Turn on vdd along with 1p8/3p3 LDOs when PMI requests"
+      Revert "usb: phy: qusb: Support specifying vdda33 levels from device tree"
+      usb: pd: policy_engine: Disable vconn first upon disconnect
+      usb: pd: policy_engine: Handle Get_Source_Cap properly from PE_SRC_Ready
+      usb: pd: policy_engine: Handle spec revision properly
+      usb: gadget: Disable USB2 LPM Support
+
+Hou Tao (1):
+      cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode
+
+Imran Khan (1):
+      firmware_class: Avoid pending list corruption
+
+Jack Pham (15):
+      usb: phy: qusb: Support specifying vdda33 levels from device tree
+      usb: pdphy: Widen voltage range setting for VDD regulator
+      usb: pd: Re-check for disconnect after PR swap
+      usb: pd: Rerun usbpd_sm if RX queue is not empty
+      usb: xhci: Avoid accessing dangling virt_dev in xhci_stop_device
+      usb: xhci: Free leaked command in case xhci_queue_stop_endpoint fails
+      usb: pd: Don't draw current during sink hard reset
+      usb: pd: Set PD_IN_HARD_RESET as soon as hard reset received
+      usb: pdphy: Prevent sending when message is just received
+      usb: pd: Increment MessageID only on successful TX
+      usb: pd: Notify charger when PR Swap is in progress
+      usb: pd: Keep PROP_PR_SWAP set during ERROR_RECOVERY
+      usb: pd: Add delay before sending Source Capabilities
+      usb: pd: avoid missed connection notification
+      usb: pd: force disconnect upon unexpected SRC->SNK transition
+
+Jan Kara (4):
+      cfq-iosched: Convert to use highres timers
+      cfq-iosched: Convert slice_resid from u64 to s64
+      cfq-iosched: Fix regression in bonnie++ rewrite performance
+      cfq-iosched: Charge at least 1 jiffie instead of 1 ns
+
+Jeff Moyer (2):
+      cfq-iosched: Convert from jiffies to nanoseconds
+      cfq-iosched: Expose microsecond interfaces
+
+John Youn (5):
+      usb: dwc3: gadget: clear events in top-half handler
+      usb: dwc3: DWC_usb31 controller check
+      usb: dwc3: Add a check for the DWC_usb3 core
+      usb: dwc3: Implement interrupt moderation
+      usb: dwc3: Workaround for irq mask issue
+
+Kishor PK (1):
+      soc: qcom: pil: Avoid possible buffer overflow during Modem boot
+
+Lazar Alexei (1):
+      wil6210: restore power save state after internal FW reset
+
+Liangliang Lu (1):
+      usb: gadget: mtp: Move mutex_init() to alloc_inst_mtp_ptp()
+
+Lior David (5):
+      wil6210: do not start regular scan on stopped p2p device
+      wil6210: add oob_mode for AP certification
+      wil6210: add option to ignore OTA regulatory hints
+      wil6210: support 8KB RX buffers
+      wil6210: protect against invalid length of tx management frame
+
+Markus Elfring (1):
+      cfq-iosched: Adjust one function call together with a variable assignment
+
+Matthias Kaehlcke (1):
+      cfq-iosched: Delete unused function min_vdisktime()
+
+Maya Erez (6):
+      wil6210: prevent access to 11AD device if resume fails
+      wil6210: missing reinit_completion in HALP voting
+      wil6210: add support for PCIe D3hot in system suspend
+      wil6210: restore bus voting before resuming the device
+      wil6210: fix wil->platform_ops.suspend failure handling
+      wil6210: stop TX queues when suspending
+
+Mayank Rana (5):
+      usb: core: Enable xhci irq after starting controller
+      usb: dwc3: Use high priority worker as bottom half handler
+      USB: dwc3: msm: Fix error handling with dwc3_msm_ep_queue()
+      f_gsi: Use kernel buffer instead of user space provided buffer
+      dwc3: Add required support to get lfps_rxterm interrupt from SS_PHY
+
+Nathan Chancellor (2):
+      Revert "staging: lmk: revert to the clean kernel_common android-4.4 branch version"
+      wil6210: Reset to clean CAF state for fast forward
+
+Park Ju Hyung (1):
+      interactive: avoid calling usecs_to_jiffies() repeatedly
+
+Prasad Sodagudi (1):
+      drivers:  Warning fixes to disable CC_OPTIMIZE_FOR_SIZE
+
+Puja Gupta (1):
+      soc: qcom: Fix checks for QMI response values
+
+Ramprasad Katkam (3):
+      mfd: wcd9xxx-core: Synchronize codec down and reset calls from slimbus.
+      mfd: wcd9xxx-core: Set device down flag early during SSR
+      soc: q6dspv2: apr: Add separate notifier nodes for adsp/modem notifications
+
+Ritesh Harjani (1):
+      cfq: Give a chance for arming slice idle timer in case of group_idle
+
+Rohit Kumar (1):
+      drivers: mfd: wcd934x: Set CDC_TOP_TOP_CFG1 register as non-volatile
+
+Sai Krishna Juturi (1):
+      usb : dwc3: Initialize kernel stack variables properly
+
+Sai krishna juturi (1):
+      usb: gadget: f_mtp: Handle OS descriptors properly
+
+Satya Durga Srinivasu Prabhala (1):
+      soc: qcom: remove debugfs interface from ssr, service locator & notifier
+
+Se Wang (Patrick) Oh (2):
+      clocksource: add API to force re-selection of the best clocksource
+      ARM: arch_timer: force re-selection of the best clocksource
+
+Shantanu Jain (1):
+      input: touchscreen: remove synaptics v2.6 touch driver
+
+Siba Prasad (1):
+      mmc: host: sdhci-msm-ice: Initialize local variable in ice_cmdq_cfg()
+
+Siena Richard (1):
+      ASoC: msm: qdsp6v2: extend validation of virtual address
+
+Stephane Gasparini (1):
+      kernel/fs: fix I/O wait not accounted for RW O_DSYNC
+
+Subbaraman Narayanamurthy (3):
+      misc: qpnp-misc: change from spmi to platform driver
+      misc: qpnp-misc: add support for clients to read register from misc device
+      misc: qpnp-misc: change the initcall level for qpnp-misc driver
+
+Surendar Karka (1):
+      drivers: soc: apr: remove GLINK_TX_REQ_INTENT flag in apr write
+
+Tahsin Erdogan (1):
+      block: do not merge requests without consulting with io scheduler
+
+Tharun Kumar Merugu (1):
+      msm: adsprpc: Avoid leak info of pointers addresses to dmesg
+
+Tony Truong (8):
+      msm: pcie: add bounds check for debugfs register write
+      msm: pcie: add sysfs entry for PCIe enumeration
+      msm: pcie: add the checking of userspace input length
+      msm: pcie: log PCIe LTSSM state during link training
+      msm: pcie: update teardown sequence for PCIe MSI interrupt
+      msm: pcie: support PCIe MSI QGIC with stage 1 SMMU enabled
+      msm: pcie: support QGIC MSI with SMMU fastmap enabled
+      msm: pcie: switch GPIO to sleep state before asserting PERST
+
+Veerabhadrarao Badiganti (1):
+      mmc: sdhci-msm: Store clock scaling frequencies in a dedicated table
+
+Vidyakumar Athota (1):
+      soc: qcom: avoid calling sleeping functions in interrupt context
+
+Vijayavardhan Vennapusa (10):
+      USB: f_qdss: Fix crash issue during connect_work
+      USB: composite: Advertise USB version as 0x200 if max speed is HS
+      usb-phy-qusb: powerdown PHY during disconnect to avoid leakage
+      policy_engine: Don't allow MODE change if no active connection
+      f_audio_source: Use f_audiosource as first device name
+      policy_engine: Add module parameter to start USB stack
+      Policy_engine: Add module parameter to disable PD
+      USB: policy_engine: Enable VBUS after VCONN before PE_SRC_Startup
+      USB: phy-msm-qusb: Enable autoresume only when device is connected
+      USB: phy-msm-qusb-v2: Enable autoresume only when device is connected
+
+Yan He (1):
+      msm: pcie: add IOMMU_DEVICE for MMIO mapping
+
+Ziqi Chen (1):
+      usb: dwc3: initialize ep0_usb_req.request.dma to avoid crash
+
+kunleiz (2):
+      ASoC: msm: qdspv2: add mutex to prevent access same memory simultaneously
+      ASoC: msm: qdspv2: add result check when audio process fail
+
+yidongh (2):
+      ASoC: msm: qdspv2: initialize struct member before being used
+      ASoC: APR: initialize struct member before being used
+
+ .../input/touchscreen/synaptics_dsxv26_i2c.txt     |   57 -
+ .../devicetree/bindings/misc/qpnp-misc.txt         |   24 +-
+ block/bio.c                                        |    2 +-
+ block/blk-merge.c                                  |    6 +
+ block/cfq-iosched.c                                |  394 +-
+ block/deadline-iosched.c                           |    2 +-
+ block/elevator.c                                   |   22 +-
+ drivers/base/firmware_class.c                      |    4 +
+ drivers/bluetooth/bluetooth-power.c                |    4 +-
+ drivers/bluetooth/btfm_slim_codec.c                |    4 +-
+ drivers/char/adsprpc.c                             |   12 +-
+ drivers/clk/msm/clock-osm.c                        |    6 +-
+ drivers/clocksource/arm_arch_timer.c               |    1 +
+ drivers/cpufreq/cpufreq_interactive.c              |   28 +-
+ drivers/gpio/gpiolib-acpi.c                        |    2 +-
+ drivers/input/misc/hbtp_input.c                    |   36 +-
+ drivers/input/touchscreen/Kconfig                  |    1 -
+ drivers/input/touchscreen/Makefile                 |    1 -
+ .../input/touchscreen/synaptics_dsx_2.6/Kconfig    |  127 -
+ .../input/touchscreen/synaptics_dsx_2.6/Makefile   |   17 -
+ .../synaptics_dsx_2.6/synaptics_dsx_active_pen.c   |  624 ---
+ .../synaptics_dsx_2.6/synaptics_dsx_core.c         | 4711 --------------------
+ .../synaptics_dsx_2.6/synaptics_dsx_core.h         |  500 ---
+ .../synaptics_dsx_2.6/synaptics_dsx_fw_update.c    | 4440 ------------------
+ .../synaptics_dsx_2.6/synaptics_dsx_gesture.c      | 2308 ----------
+ .../synaptics_dsx_2.6/synaptics_dsx_i2c.c          |  712 ---
+ .../synaptics_dsx_2.6/synaptics_dsx_proximity.c    |  692 ---
+ .../synaptics_dsx_2.6/synaptics_dsx_rmi_dev.c      | 1058 -----
+ .../synaptics_dsx_2.6/synaptics_dsx_rmi_hid_i2c.c  | 1006 -----
+ .../synaptics_dsx_2.6/synaptics_dsx_spi.c          |  634 ---
+ .../synaptics_dsx_test_reporting.c                 | 4162 -----------------
+ .../synaptics_dsx_2.6/synaptics_dsx_video.c        |  416 --
+ drivers/leds/leds-qpnp-flash-v2.c                  |    3 +-
+ drivers/md/dm-android-verity.c                     |    2 +-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |    4 +-
+ .../platform/msm/sde/rotator/sde_rotator_r1.c      |    4 +-
+ drivers/mfd/wcd934x-regmap.c                       |    1 -
+ drivers/mfd/wcd9xxx-core.c                         |   46 +-
+ drivers/misc/qcom/qdsp6v2/audio_hwacc_effects.c    |   34 +
+ drivers/misc/qcom/qdsp6v2/audio_utils_aio.c        |   69 +-
+ drivers/misc/qcom/qdsp6v2/ultrasound/usf.c         |   13 +-
+ drivers/misc/qpnp-misc.c                           |  138 +-
+ drivers/mmc/card/block.c                           |    2 +-
+ drivers/mmc/host/sdhci-msm-ice.c                   |    2 +-
+ drivers/mmc/host/sdhci-msm.c                       |   10 +-
+ drivers/net/wireless/ath/wil6210/Kconfig           |    2 +-
+ drivers/net/wireless/ath/wil6210/cfg80211.c        |  122 +-
+ drivers/net/wireless/ath/wil6210/debugfs.c         |   60 +-
+ drivers/net/wireless/ath/wil6210/fw_inc.c          |    4 +-
+ drivers/net/wireless/ath/wil6210/interrupt.c       |    6 +
+ drivers/net/wireless/ath/wil6210/main.c            |  137 +-
+ drivers/net/wireless/ath/wil6210/pcie_bus.c        |   66 +-
+ drivers/net/wireless/ath/wil6210/pm.c              |  230 +-
+ drivers/net/wireless/ath/wil6210/pmc.c             |    4 +-
+ drivers/net/wireless/ath/wil6210/rx_reorder.c      |   12 +-
+ drivers/net/wireless/ath/wil6210/sysfs.c           |  176 +
+ drivers/net/wireless/ath/wil6210/txrx.c            |   95 +-
+ drivers/net/wireless/ath/wil6210/wil6210.h         |   72 +-
+ drivers/net/wireless/ath/wil6210/wil_platform.h    |    5 +-
+ drivers/net/wireless/ath/wil6210/wmi.c             |  288 +-
+ drivers/net/wireless/ath/wil6210/wmi.h             |  100 +-
+ drivers/pci/host/pci-msm.c                         |  276 +-
+ drivers/platform/msm/msm_11ad/msm_11ad.c           |   12 +-
+ drivers/power/power_supply_sysfs.c                 |    1 +
+ drivers/power/qcom/debug_core.c                    |    6 +-
+ drivers/regulator/cpr3-hmss-regulator.c            |    4 +-
+ drivers/regulator/cpr3-regulator.c                 |    3 +-
+ drivers/regulator/cprh-kbss-regulator.c            |    2 +-
+ drivers/soc/qcom/glink.c                           |  126 +-
+ drivers/soc/qcom/glink_private.h                   |    5 +-
+ drivers/soc/qcom/glink_smem_native_xprt.c          |   13 +-
+ drivers/soc/qcom/glink_ssr.c                       |   84 +-
+ drivers/soc/qcom/msm_bus/msm_bus_rules.c           |    2 +-
+ drivers/soc/qcom/pil-msa.c                         |   10 +-
+ drivers/soc/qcom/qdsp6v2/apr.c                     |   18 +-
+ drivers/soc/qcom/qdsp6v2/apr_tal_glink.c           |    3 +-
+ drivers/soc/qcom/service-locator.c                 |  147 +-
+ drivers/soc/qcom/service-notifier.c                |  253 +-
+ drivers/soc/qcom/spcom.c                           |  294 +-
+ drivers/soc/qcom/subsystem_restart.c               |  105 +-
+ drivers/soc/qcom/wcd-dsp-glink.c                   |   58 +-
+ drivers/soundwire/swr-wcd-ctrl.c                   |    2 +-
+ drivers/staging/android/lowmemorykiller.c          |  435 +-
+ drivers/staging/android/sync_debug.c               |    2 +-
+ drivers/thermal/msm-tsens.c                        |    2 +-
+ drivers/usb/dwc3/core.c                            |   34 +-
+ drivers/usb/dwc3/core.h                            |   31 +
+ drivers/usb/dwc3/debugfs.c                         |   10 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |   23 +-
+ drivers/usb/dwc3/ep0.c                             |    2 +
+ drivers/usb/dwc3/gadget.c                          |   36 +-
+ drivers/usb/dwc3/gadget.h                          |    1 +
+ drivers/usb/gadget/composite.c                     |    6 +-
+ drivers/usb/gadget/function/f_audio_source.c       |    8 +-
+ drivers/usb/gadget/function/f_fs.c                 |   43 +-
+ drivers/usb/gadget/function/f_gsi.c                |    4 +-
+ drivers/usb/gadget/function/f_midi.c               |   55 +-
+ drivers/usb/gadget/function/f_mtp.c                |    9 +-
+ drivers/usb/gadget/function/f_ncm.c                |   58 +-
+ drivers/usb/gadget/function/f_qdss.c               |   26 +-
+ drivers/usb/host/xhci-hub.c                        |   12 +-
+ drivers/usb/host/xhci-plat.c                       |    4 +-
+ drivers/usb/host/xhci.c                            |    8 +
+ drivers/usb/pd/policy_engine.c                     |  189 +-
+ drivers/usb/pd/qpnp-pdphy.c                        |   32 +-
+ drivers/usb/pd/usbpd.h                             |    7 -
+ drivers/usb/phy/phy-msm-qusb-v2.c                  |   17 +-
+ drivers/usb/phy/phy-msm-qusb.c                     |   17 +-
+ drivers/usb/phy/phy-msm-ssusb-qmp.c                |   10 +-
+ drivers/video/fbdev/msm/mdss_dp_util.c             |    2 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |    2 +-
+ drivers/video/fbdev/msm/mdss_hdmi_util.c           |    4 +-
+ drivers/video/fbdev/msm/mdss_mdp_layer.c           |    4 +-
+ drivers/video/fbdev/msm/mdss_mdp_util.c            |    4 +-
+ drivers/video/fbdev/msm/mdss_rotator.c             |    2 +-
+ include/linux/clocksource.h                        |    1 +
+ include/linux/elevator.h                           |   11 +-
+ include/linux/input/synaptics_dsx_v2_6.h           |  115 -
+ include/linux/mfd/wcd9xxx/core.h                   |    2 +-
+ include/linux/mmc/host.h                           |    2 +
+ include/linux/power_supply.h                       |    1 +
+ include/linux/qpnp-misc.h                          |   22 +-
+ include/soc/qcom/msm_qmi_interface.h               |    2 +-
+ include/soc/qcom/subsystem_restart.h               |    3 +-
+ kernel/irq/msi.c                                   |    2 +-
+ kernel/time/clocksource.c                          |   48 +-
+ kernel/time/posix-cpu-timers.c                     |    2 +-
+ net/unix/af_unix.c                                 |    2 +-
+ 128 files changed, 3462 insertions(+), 22994 deletions(-)
+ delete mode 100644 Documentation/devicetree/bindings/input/touchscreen/synaptics_dsxv26_i2c.txt
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/Kconfig
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/Makefile
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_active_pen.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_core.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_core.h
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_fw_update.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_gesture.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_i2c.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_proximity.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_rmi_dev.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_rmi_hid_i2c.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_spi.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_test_reporting.c
+ delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_video.c
+ delete mode 100644 include/linux/input/synaptics_dsx_v2_6.h
