@@ -1,0 +1,41 @@
+http://github.com/nathanchance/angler/commits/8.0.0-flash
+
+Ben Seri (1):
+      Bluetooth: Properly check L2CAP config option output buffer length
+
+Nathan Chancellor (2):
+      flash_defconfig: Enable NETFILTER_XT_TARGET_HL
+      Flash Kernel 3.1
+
+ arch/arm64/configs/flash_defconfig |  3 +-
+ net/bluetooth/l2cap_core.c         | 80 ++++++++++++++++++++------------------
+ 2 files changed, 45 insertions(+), 38 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/angler-flash-public-8.0.0
+
+Chris Renshaw (1):
+      Backend: fix module copying on devices with links
+
+Nathan Chancellor (2):
+      AnyKernel: 7.1.2 is now unsupported, hello 8.0.0!
+      Merge branch 'master' of https://github.com/osm0sis/AnyKernel2 into angler-flash-public-8.0.0
+
+osm0sis (8):
+      Backend: miscellaneous fixes
+      AK2: silence possible expected mount stderr with AVB signing
+      AK2: rename pxa1088- AOSP variant tools to pxa- per upcoming AIK release
+      AK2: add DHTB signed image support
+      README: optional binaries update
+      tools: update to latest builds, including busybox (1.27.2)
+      AK2: add KRNL and NOOK signed image support
+      README: add rkcrc to optional binaries
+
+ META-INF/com/google/android/update-binary |  12 +++++++-----
+ README.md                                 |   4 +++-
+ anykernel.sh                              |   4 ++--
+ tools/ak2-core.sh                         |  29 +++++++++++++++++++++++------
+ tools/busybox                             | Bin 1194084 -> 1259620 bytes
+ tools/mkbootimg                           | Bin 72232 -> 72212 bytes
+ tools/unpackbootimg                       | Bin 64036 -> 64036 bytes
+ 7 files changed, 35 insertions(+), 14 deletions(-)

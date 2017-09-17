@@ -1,7 +1,0 @@
-http://github.com/nathanchance/angler/commits/8.0.0-flash
-
-
-
-http://github.com/nathanchance/AnyKernel2/commits/angler-flash-public-8.0.0
-
-20d836a644df AnyKernel: 7.1.2 is now unsupported, hello 8.0.0! by Nathan Chancellor
