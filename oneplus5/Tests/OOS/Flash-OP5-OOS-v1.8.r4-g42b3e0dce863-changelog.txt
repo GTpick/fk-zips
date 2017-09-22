@@ -609,3 +609,18 @@ zhangyi (F) (2):
  delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_test_reporting.c
  delete mode 100644 drivers/input/touchscreen/synaptics_dsx_2.6/synaptics_dsx_video.c
  delete mode 100644 include/linux/input/synaptics_dsx_v2_6.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/oneplus5-flash-public-7.1.x
+
+Nathan Chancellor (1):
+      Merge branch 'master' of https://github.com/osm0sis/AnyKernel2 into oneplus5-flash-public-7.1.x
+
+osm0sis (3):
+      AK2: fix abort ui_prints from slot detection checks
+      Backend: fix -debugging functionality on abort, clean up abort
+      AK2: fix patch_fstab substring replacement
+
+ META-INF/com/google/android/update-binary | 26 ++++++++++++++++----------
+ tools/ak2-core.sh                         | 22 ++++++++++++----------
+ 2 files changed, 28 insertions(+), 20 deletions(-)
