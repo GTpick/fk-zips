@@ -1,0 +1,430 @@
+http://github.com/nathanchance/op5/commits/7.1.x-custom-for-1.10
+
+Ankit Sharma (2):
+      leds: qpnp-flash-v2: Change minimum current configuration
+      leds: qpnp-flash-v2: Enable charger mitigation
+
+Brett Montague (1):
+      input: swap keycodes to make compatible with oppo
+
+Daniel Roseberg (1):
+      ANDROID: sdcardfs: Don't iput if we didn't igrab
+
+Daniel Rosenberg (70):
+      ANDROID: sdcardfs: override umask on mkdir and create
+      ANDROID: sdcardfs: Check for other cases on path lookup
+      ANDROID: sdcardfs: Fix locking for permission fix up
+      ANDROID: sdcardfs: Switch package list to RCU
+      ANDROID: sdcardfs: Added top to sdcardfs_inode_info
+      ANDROID: sdcardfs: Move directory unlock before touch
+      ANDROID: vfs: Allow filesystems to access their private mount data
+      ANDROID: vfs: Add permission2 for filesystems with per mount permissions
+      ANDROID: vfs: Add setattr2 for filesystems with per mount permissions
+      ANDROID: sdcardfs: User new permission2 functions
+      ANDROID: sdcardfs: Add gid and mask to private mount data
+      ANDROID: sdcardfs: Use per mount permissions
+      ANDROID: sdcardfs: Change magic value
+      ANDROID: sdcardfs: Fix locking issue with permision fix up
+      ANDROID: sdcardfs: Switch ->d_inode to d_inode()
+      ANDROID: sdcardfs: Allow non-owners to touch
+      ANDROID: sdcardfs: Refactor configfs interface
+      ANDROID: sdcardfs: add support for user permission isolation
+      ANDROID: sdcardfs: Remove redundant operation
+      ANDROID: sdcardfs: Add GID Derivation to sdcardfs
+      ANDROID: sdcardfs: switch to full_name_hash and qstr
+      ANDROID: sdcardfs: Switch strcasecmp for internal call
+      ANDROID: sdcardfs: Fix incorrect hash
+      ANDROID: sdcardfs: Add missing path_put
+      ANDROID: sdcardfs: Don't bother deleting freelist
+      ANDROID: sdcardfs: implement vm_ops->page_mkwrite
+      ANDROID: sdcardfs: support direct-IO (DIO) operations
+      ANDROID: sdcardfs: Fix case insensitive lookup
+      ANDROID: sdcardfs: rate limit warning print
+      ANDROID: sdcardfs: Replace get/put with d_lock
+      ANDROID: sdcardfs: Use spin_lock_nested
+      ANDROID: sdcardfs: Switch to internal case insensitive compare
+      ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
+      ANDROID: sdcardfs: Get the blocksize from the lower fs
+      ANDROID: sdcardfs: declare MODULE_ALIAS_FS
+      ANDROID: sdcardfs: Use case insensitive hash function
+      ANDROID: sdcardfs: move path_put outside of spinlock
+      ANDROID: sdcardfs: Remove uninformative prints
+      ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
+      ANDROID: sdcardfs: Fix gid issue
+      ANDROID: sdcardfs: correct order of descriptors
+      ANDROID: sdcardfs: Fix formatting
+      ANDROID: sdcardfs: Fix style issues with comments
+      ANDROID: sdcardfs: remove unneeded null check
+      ANDROID: sdcardfs: Use pr_[...] instead of printk
+      ANDROID: sdcardfs: Use to kstrout
+      ANDROID: sdcardfs: Use seq_puts over seq_printf
+      ANDROID: sdcardfs: Fix style issues in macros
+      ANDROID: sdcardfs: remove unnecessary call to do_munmap
+      ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
+      ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
+      ANDROID: sdcardfs: add read_iter/write_iter opeations
+      ANDROID: sdcardfs: use d_splice_alias
+      ANDROID: sdcardfs: update module info
+      ANDROID: sdcardfs: Directly pass lower file for mmap
+      Android: sdcardfs: Change cache GID value
+      ANDROID: sdcardfs: ->iget fixes
+      Android: sdcardfs: Don't do d_add for lower fs
+      Android: sdcardfs: Don't complain in fixup_lower_ownership
+      Revert "Android: sdcardfs: Don't do d_add for lower fs"
+      ANDROID: sdcardfs: Use filesystem specific hash
+      Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
+      ANDROID: sdcardfs: Copy meta-data from lower inode
+      ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
+      ANDROID: sdcardfs: Call lower fs's revalidate
+      ANDROID: sdcardfs: Move top to its own struct
+      ANDROID: sdcardfs: Check for NULL in revalidate
+      ANDROID: mnt: Fix next_descendent
+      ANDROID: sdcardfs: d_splice_alias can return error values
+      ANDROID: sdcardfs: Remove unnecessary lock
+
+Gao Xiang (2):
+      ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
+      ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
+
+Greg Hackmann (1):
+      ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
+
+Jaegeuk Kim (1):
+      ANDROID: sdcardfs: override credential for ioctl to lower fs
+
+Jan Kara (2):
+      block: Move bdi_unregister() to del_gendisk()
+      block: Make del_gendisk() safer for disks without queues
+
+Juri Lelli (1):
+      sched/walt: kill {min,max}_capacity
+
+Kiran Gunda (1):
+      leds: qpnp-flash-v2: Calculate the IRES current dynamically
+
+Martinusbe (1):
+      op5: tri_state_key: allow for additional settings
+
+Matthias Kaehlcke (2):
+      cpumask: Add helper cpumask_available()
+      genirq: Use cpumask_available() for check of cpumask variable
+
+Michal Hocko (1):
+      BACKPORT: partial: mm, oom_reaper: do not mmput synchronously from the oom reaper context
+
+Nathan Chancellor (18):
+      Reset synaptics_driver_s3320.c back to stock OOS for custom additions
+      Merge branch '7.1.x-flash-oos-dev' into 7.1.x-flash-custom-dev
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Merge branch '7.1.x-flash-oos-dev' into 7.1.x-flash-custom-dev
+      sdcardfs: Revert OnePlus changes
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom-dev
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Merge branch '7.1.x-flash-oos' into 7.1.x-flash-custom
+      Revert "qcacld-3.0: Revert to OnePlus repos for OOS"
+      Merge branch '7.1.x-oos' into 7.1.x-custom
+      Merge branch '7.1.x-oos' into 7.1.x-custom
+      wakeup: Revert individual wakelock blocking
+      boeffla_wl_blocker: Block default wakelocks we had before
+      flash_defconfig: Enable BOEFFLA_WL_BLOCKER
+      Merge branch '7.1.x-oos-for-1.10' into 7.1.x-custom-for-1.10
+
+Neeraj Soni (1):
+      fs: ecryptfs: Cache to be cleared after file write
+
+Sahitya Tummala (3):
+      fs/mbcache: fix use after free issue in mb_cache_shrink_scan()
+      fs/mbcache: fix mb_cache_lru_list corruption
+      fs/dcache: Fix indefinite wait in d_invalidate()
+
+Scott Mertz (2):
+      pwm: qpnp-pwm: add api for synchronous enable of pwms
+      leds: leds-qpnp: add synchronized rgb control
+
+Sherry Yang (3):
+      FROMLIST: android: binder: Drop lru lock in isolate callback
+      FROMLIST: android: binder: Remove unused vma argument
+      FROMLIST: android: binder: Don't get mm from task
+
+Subbaraman Narayanamurthy (5):
+      leds: qpnp-wled: improve OVP fault interrupt handling
+      leds: qpnp-wled: add support to control PSM dynamically
+      leds: qpnp-flash-v2: Fix some issues
+      leds: qpnp-flash-v2: Fix pinctrl configuration
+      leds: qpnp-flash-v2: Add support for LPG strobe
+
+Sultanxda (7):
+      misc: fpc1020: Clean up PM routines and move them into dedicated worker
+      misc: fpc1020: Report key input when interrupt is fired with screen off
+      misc: fpc1020: Set fingerprintd priority to max when screen is off
+      misc: fpc1020: Clean up interrupt handler
+      misc: fpc1020: Increase fingerprintd nice value when screen is off
+      misc: fpc1020: Simplify proximity shut-off
+      misc: fpc1020: Wait for uevent to send before exiting IRQ handler
+
+XiNGRZ (11):
+      input: tri-state: rewritten tri-state-key driver
+      input: synaptics: s3320: format all the fucking code
+      input: synaptics: s3320: refactored gesture toggling logic
+      input: synaptics: s3320: use proc nodes instead of bits for gesture toggling
+      input: synaptics: s3320: hardcoded input_dev->name to "synaptics"
+      input: synaptics: s3320: use different keycode for up and down arrow
+      input: synaptics: s3320: set the missing bits for all gestures
+      input: synaptics: s3320: refactored button handling logics
+      input: synaptics: s3320: moved proc node "key_swap" for compatibility
+      input: fpc1020: format all the OnePlus stuffs
+      input: fpc1020: reduced gpio reads during determining fpc sensor
+
+alvin_liang (1):
+      ANDROID: sdcardfs: fix external storage exporting incorrect uid
+
+andip71 (3):
+      boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+      boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+      boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+
+codeworkx (2):
+      cheeseburger: leds: enable rgb sync
+      leds: leds-gpnp: Revert [16859]:[BSP]Add driver for RGB blink feature
+
+fluxi (1):
+      misc: fpc1020: Honor proximity state
+
+gaurav jindal (1):
+      drivers: cpufreq_interactive: handle error for module load fail
+
+ .../bindings/leds/leds-qpnp-flash-v2.txt           |   11 +-
+ .../devicetree/bindings/leds/leds-qpnp-wled.txt    |    3 +
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi           |    6 +-
+ arch/arm/boot/dts/qcom/msm8998-pinctrl.dtsi        |   14 +-
+ arch/arm/boot/dts/qcom/sdm660-pinctrl.dtsi         |   14 +-
+ arch/arm64/configs/flash_defconfig                 |    1 +
+ block/blk-core.c                                   |    2 -
+ block/genhd.c                                      |   11 +-
+ drivers/android/binder_alloc.c                     |   57 +-
+ drivers/android/binder_alloc.h                     |    1 -
+ drivers/base/power/Makefile                        |    1 +
+ drivers/base/power/boeffla_wl_blocker.c            |  236 ++
+ drivers/base/power/boeffla_wl_blocker.h            |   23 +
+ drivers/base/power/main.c                          |    4 +
+ drivers/base/power/wakeup.c                        |  267 +-
+ drivers/cpufreq/cpufreq_interactive.c              |    8 +-
+ drivers/input/misc/fpc1020_tee.c                   |  540 ++-
+ drivers/input/misc/tri_state_key.c                 |  577 ++--
+ drivers/input/touchscreen/synaptics_driver_s3320.c | 3625 +++++++++++---------
+ drivers/leds/leds-qpnp-flash-v2.c                  |  379 +-
+ drivers/leds/leds-qpnp-wled.c                      |   85 +-
+ drivers/leds/leds-qpnp.c                           |  204 +-
+ drivers/pwm/pwm-qpnp.c                             |  125 +
+ drivers/staging/fw-api/fw/wmi_services.h           |   15 +-
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |  198 +-
+ drivers/staging/fw-api/fw/wmi_unified.h            | 1635 ++++++++-
+ drivers/staging/fw-api/fw/wmi_version.h            |    2 +-
+ .../dp/inc/cdp_txrx_flow_ctrl_legacy.h             |    3 +
+ .../staging/qca-wifi-host-cmn/hif/src/ce/ce_diag.c |   26 +-
+ .../staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c |   27 +-
+ .../staging/qca-wifi-host-cmn/hif/src/hif_napi.c   |   15 +-
+ drivers/staging/qca-wifi-host-cmn/htc/htc_recv.c   |    1 -
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_atomic.h |   92 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_nbuf.h   |    6 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_time.h   |   28 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_util.h   |   25 +
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_atomic.h |   93 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_nbuf.h   |    3 +
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_timer.h  |   37 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_util.h   |   28 +
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_nbuf.c     |  122 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_api.h    |   12 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |   65 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_priv.h   |    5 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_tlv.h    |   12 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_api.c    |   21 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |  137 +-
+ drivers/staging/qcacld-3.0/Kbuild                  |    7 +-
+ drivers/staging/qcacld-3.0/core/cds/inc/cds_api.h  |   60 +-
+ .../qcacld-3.0/core/cds/inc/cds_concurrency.h      |   36 +-
+ .../staging/qcacld-3.0/core/cds/inc/cds_config.h   |    1 +
+ .../qcacld-3.0/core/cds/inc/cds_reg_service.h      |   10 +-
+ .../staging/qcacld-3.0/core/cds/inc/cds_sched.h    |    6 +
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |  249 +-
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |  332 +-
+ drivers/staging/qcacld-3.0/core/cds/src/cds_mq.c   |    4 +-
+ .../qcacld-3.0/core/cds/src/cds_reg_service.c      |    8 +-
+ .../staging/qcacld-3.0/core/cds/src/cds_sched.c    |   58 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt.c       |   17 +-
+ .../staging/qcacld-3.0/core/dp/htt/htt_internal.h  |   11 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_rx.c    |  112 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_tx.c    |    4 +-
+ .../qcacld-3.0/core/dp/ol/inc/ol_htt_rx_api.h      |    6 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_rx.c    |   17 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_rx_defrag.c |    5 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_tx.c    |   83 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_desc.c   |    2 +
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_desc.h   |    7 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_queue.c  |    2 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |  101 +-
+ .../qcacld-3.0/core/dp/txrx/ol_txrx_types.h        |    2 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_assoc.h       |    2 +
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h |  390 ++-
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_lro.h |   25 +
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_main.h        |  131 +-
+ .../core/hdd/inc/wlan_hdd_packet_filter_rules.h    |    8 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_tdls.h        |   58 +
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_wext.h        |    2 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_wowl.h        |   10 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_assoc.c       |   99 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  166 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  588 +++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.h    |   56 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_debugfs.c     |   11 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_disa.c        |   24 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   48 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ext_scan.c    |   64 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ftm.c |    3 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |  104 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ioctl.c       |  422 ++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ioctl.h       |   10 +
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ipa.c |   66 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_lro.c |   64 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_main.c        |  590 +++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_memdump.c     |   38 +-
+ .../core/hdd/src/wlan_hdd_nan_datapath.c           |    6 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ocb.c |    5 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_p2p.c |    7 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_power.c       |   36 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_regulatory.c  |   11 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.c        |   62 +-
+ .../core/hdd/src/wlan_hdd_softap_tx_rx.c           |    5 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_stats.c       |    6 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_tdls.c        |  246 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_tsf.c |   12 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_tx_rx.c       |   80 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_wext.c        |  345 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_wowl.c        |   25 +-
+ .../staging/qcacld-3.0/core/mac/inc/ani_global.h   |   13 +-
+ .../qcacld-3.0/core/mac/inc/qwlan_version.h        |    6 +-
+ drivers/staging/qcacld-3.0/core/mac/inc/sir_api.h  |   68 +-
+ .../qcacld-3.0/core/mac/inc/sir_mac_prot_def.h     |    6 +-
+ drivers/staging/qcacld-3.0/core/mac/inc/wni_cfg.h  |   13 +-
+ .../qcacld-3.0/core/mac/src/include/dot11f.h       |    4 +-
+ .../qcacld-3.0/core/mac/src/include/sir_debug.h    |   17 +
+ .../qcacld-3.0/core/mac/src/pe/include/lim_api.h   |    4 +-
+ .../core/mac/src/pe/include/lim_session.h          |    4 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_api.c       |   28 +-
+ .../core/mac/src/pe/lim/lim_assoc_utils.c          |   63 +-
+ .../core/mac/src/pe/lim/lim_link_monitoring_algo.c |   10 +
+ .../core/mac/src/pe/lim/lim_process_action_frame.c |   11 -
+ .../mac/src/pe/lim/lim_process_assoc_req_frame.c   |   16 +-
+ .../core/mac/src/pe/lim/lim_process_auth_frame.c   |  128 +-
+ .../core/mac/src/pe/lim/lim_process_deauth_frame.c |   12 +-
+ .../mac/src/pe/lim/lim_process_disassoc_frame.c    |   15 +-
+ .../mac/src/pe/lim/lim_process_message_queue.c     |   30 +-
+ .../mac/src/pe/lim/lim_process_mlm_rsp_messages.c  |   24 +-
+ .../mac/src/pe/lim/lim_process_sme_req_messages.c  |   25 +-
+ .../core/mac/src/pe/lim/lim_process_tdls.c         |   82 +-
+ .../core/mac/src/pe/lim/lim_prop_exts_utils.c      |   46 +-
+ .../core/mac/src/pe/lim/lim_scan_result_utils.c    |   51 +-
+ .../core/mac/src/pe/lim/lim_security_utils.c       |   15 +-
+ .../core/mac/src/pe/lim/lim_security_utils.h       |   11 +-
+ .../mac/src/pe/lim/lim_send_management_frames.c    |   29 +-
+ .../core/mac/src/pe/lim/lim_send_messages.c        |    1 +
+ .../mac/src/pe/lim/lim_send_sme_rsp_messages.c     |   22 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_session.c   |   43 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.c     |   81 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.h     |    3 +
+ .../qcacld-3.0/core/mac/src/pe/rrm/rrm_api.c       |   22 +-
+ .../core/mac/src/sys/legacy/src/utils/src/dot11f.c |   25 +-
+ .../mac/src/sys/legacy/src/utils/src/log_api.c     |    7 +-
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |   62 +-
+ .../src/sys/legacy/src/utils/src/utils_parser.c    |    2 +
+ .../staging/qcacld-3.0/core/pld/inc/pld_common.h   |   30 +-
+ .../staging/qcacld-3.0/core/pld/src/pld_common.c   |   55 +
+ drivers/staging/qcacld-3.0/core/pld/src/pld_pcie.c |   20 +-
+ drivers/staging/qcacld-3.0/core/pld/src/pld_pcie.h |   19 +
+ drivers/staging/qcacld-3.0/core/pld/src/pld_snoc.c |   25 +-
+ drivers/staging/qcacld-3.0/core/pld/src/pld_snoc.h |   20 +
+ drivers/staging/qcacld-3.0/core/sap/dfs/src/dfs.c  |   26 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |    8 +-
+ .../staging/qcacld-3.0/core/sme/inc/csr_internal.h |    7 +
+ .../qcacld-3.0/core/sme/inc/csr_neighbor_roam.h    |    3 +
+ drivers/staging/qcacld-3.0/core/sme/inc/sme_api.h  |   74 +-
+ .../staging/qcacld-3.0/core/sme/inc/sme_inside.h   |    1 +
+ .../staging/qcacld-3.0/core/sme/inc/sme_internal.h |    3 +
+ .../qcacld-3.0/core/sme/inc/sme_power_save_api.h   |    8 +-
+ .../qcacld-3.0/core/sme/src/common/sme_api.c       |  294 +-
+ .../qcacld-3.0/core/sme/src/common/sme_ft_api.c    |    6 +-
+ .../core/sme/src/common/sme_power_save.c           |    3 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_roam.c     |  203 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_scan.c     |  732 ++--
+ .../qcacld-3.0/core/sme/src/csr/csr_inside_api.h   |   53 +-
+ .../core/sme/src/csr/csr_neighbor_roam.c           |    4 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_tdls_process.c |    3 +
+ .../staging/qcacld-3.0/core/sme/src/qos/sme_qos.c  |    9 -
+ .../qcacld-3.0/core/utils/epping/src/epping_txrx.c |    8 +
+ .../utils/host_diag_log/inc/host_diag_core_event.h |    2 +
+ .../core/utils/logging/src/wlan_logging_sock_svc.c |    4 +-
+ .../core/utils/pktlog/include/pktlog_ac_api.h      |    1 +
+ .../qcacld-3.0/core/utils/pktlog/linux_ac.c        |  166 +-
+ .../qcacld-3.0/core/utils/pktlog/pktlog_ac.c       |   87 +-
+ drivers/staging/qcacld-3.0/core/wma/inc/wma.h      |  118 +-
+ drivers/staging/qcacld-3.0/core/wma/inc/wma_api.h  |    3 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_internal.h |   28 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_tgt_cfg.h  |    2 +
+ .../qcacld-3.0/core/wma/src/wlan_qct_wma_legacy.c  |   28 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c |   54 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |  520 ++-
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |  258 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |  150 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |   42 +-
+ .../qcacld-3.0/core/wma/src/wma_nan_datapath.c     |    8 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_power.c    |   19 +-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  145 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |  283 +-
+ fs/attr.c                                          |   12 +-
+ fs/coredump.c                                      |    2 +-
+ fs/dcache.c                                        |    2 +-
+ fs/ecryptfs/main.c                                 |    3 +-
+ fs/exec.c                                          |    2 +-
+ fs/inode.c                                         |    6 +-
+ fs/internal.h                                      |    4 +-
+ fs/mbcache.c                                       |   33 +-
+ fs/namei.c                                         |  177 +-
+ fs/namespace.c                                     |    4 +-
+ fs/notify/fanotify/fanotify_user.c                 |    2 +-
+ fs/notify/inotify/inotify_user.c                   |    2 +-
+ fs/open.c                                          |   37 +-
+ fs/pnode.c                                         |   11 +-
+ fs/proc_namespace.c                                |    8 +-
+ fs/sdcardfs/Kconfig                                |   15 +-
+ fs/sdcardfs/Makefile                               |    7 +-
+ fs/sdcardfs/dentry.c                               |   89 +-
+ fs/sdcardfs/derived_perm.c                         |  516 ++-
+ fs/sdcardfs/file.c                                 |  147 +-
+ fs/sdcardfs/inode.c                                |  716 ++--
+ fs/sdcardfs/lookup.c                               |  244 +-
+ fs/sdcardfs/main.c                                 |  401 ++-
+ fs/sdcardfs/mmap.c                                 |   88 +-
+ fs/sdcardfs/multiuser.h                            |   44 +-
+ fs/sdcardfs/packagelist.c                          |  961 ++++--
+ fs/sdcardfs/sdcardfs.h                             |  468 ++-
+ fs/sdcardfs/super.c                                |  226 +-
+ fs/super.c                                         |   28 +-
+ fs/utimes.c                                        |    2 +-
+ include/linux/cpumask.h                            |   10 +
+ include/linux/fs.h                                 |   19 +
+ include/linux/leds-qpnp-flash.h                    |    3 +-
+ include/linux/mm_types.h                           |    2 +
+ include/linux/namei.h                              |    1 +
+ include/linux/qpnp/pwm.h                           |    5 +
+ include/linux/sched.h                              |    5 +
+ include/uapi/linux/magic.h                         |    1 +
+ kernel/fork.c                                      |   49 +-
+ kernel/irq/manage.c                                |    2 +-
+ kernel/power/Kconfig                               |    4 +
+ kernel/sched/walt.c                                |   45 +-
+ 229 files changed, 15738 insertions(+), 6963 deletions(-)
+ create mode 100644 drivers/base/power/boeffla_wl_blocker.c
+ create mode 100644 drivers/base/power/boeffla_wl_blocker.h
