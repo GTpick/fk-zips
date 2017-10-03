@@ -1,0 +1,168 @@
+http://github.com/nathanchance/op5/commits/7.1.x-custom-for-1.12
+
+Andreas Gruenbacher (2):
+      vfs: Return -ENXIO for negative SEEK_HOLE / SEEK_DATA offsets
+      gfs2: Fix debugfs glocks dump
+
+Avraham Stern (1):
+      mac80211: flush hw_roc_start work before cancelling the ROC
+
+Bo Yan (1):
+      tracing: Erase irqsoff trace with empty write
+
+Christoph Hellwig (1):
+      bsg-lib: don't free job in bsg_prepare_job
+
+Dennis Yang (1):
+      md/raid5: preserve STRIPE_ON_UNPLUG_LIST in break_stripe_batch_list
+
+Eric Biggers (4):
+      KEYS: fix writing past end of user-supplied buffer in keyring_read()
+      KEYS: prevent creating a different user's keyrings
+      KEYS: prevent KEYCTL_READ on negative key
+      x86/fpu: Don't let userspace set bogus xcomp_bv
+
+Frederic Barrat (1):
+      cxl: Fix driver use count
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.90-rc1
+
+Haozhong Zhang (2):
+      KVM: VMX: do not change SN bit in vmx_update_pi_irte()
+      KVM: VMX: remove WARN_ON_ONCE in kvm_vcpu_trigger_posted_interrupt
+
+Ido Schimmel (1):
+      UPSTREAM: ipv6: fib: Unlink replaced routes from their nodes
+
+Jan H. Schönherr (1):
+      KVM: VMX: Do not BUG() on out-of-bounds guest IRQ
+
+Jim Mattson (1):
+      kvm: nVMX: Don't allow L2 to access the hardware CR8
+
+LEROY Christophe (2):
+      crypto: talitos - Don't provide setkey for non hmac hashing algs.
+      crypto: talitos - fix sha224
+
+Marc Zyngier (1):
+      arm64: Make sure SPsel is always set
+
+Myungho Jung (1):
+      timer/sysclt: Restrict timer migration sysctl values to 0 and 1
+
+Naohiro Aota (2):
+      btrfs: fix NULL pointer dereference from free_reloc_roots()
+      btrfs: propagate error to btrfs_cmp_data_prepare caller
+
+Nathan Chancellor (2):
+      Merge branch '7.1.x-base-4.4.90' into 7.1.x-oos-for-1.12
+      Merge branch '7.1.x-oos-for-1.12' into 7.1.x-custom-for-1.12
+
+Nicolai Stange (1):
+      PCI: Fix race condition with driver_override
+
+Oleg Nesterov (1):
+      seccomp: fix the usage of get/put_seccomp_filter() in seccomp_get_filter()
+
+Paolo Bonzini (1):
+      KVM: VMX: use cmpxchg64
+
+Paul Mackerras (1):
+      KVM: PPC: Book3S: Fix race and leak in kvm_vm_ioctl_create_spapr_tce()
+
+Robert Jarzmik (3):
+      dmaengine: mmp-pdma: add number of requestors
+      ARM: pxa: add the number of DMA requestor lines
+      ARM: pxa: fix the number of DMA requestor lines
+
+Shaohua Li (1):
+      md/raid5: fix a race condition in stripe batch
+
+Shu Wang (1):
+      cifs: release auth_key.response for reconnect.
+
+Siva Kumar Akkireddi (1):
+      msm: sps: Fix race condition in SPS debugfs APIs
+
+Stefano Stabellini (1):
+      swiotlb-xen: implement xen_swiotlb_dma_mmap callback
+
+Steve French (3):
+      Fix SMB3.1.1 guest authentication to Samba
+      SMB: Validate negotiate (to protect against downgrade) even if signing off
+      SMB3: Don't ignore O_SYNC/O_DSYNC and O_DIRECT flags
+
+Tahsin Erdogan (1):
+      tracing: Fix trace_pipe behavior for instance traces
+
+Todd Kjos (1):
+      FROMLIST: binder: fix use-after-free in binder_transaction()
+
+Tyrel Datwyler (1):
+      powerpc/pseries: Fix parent_dn reference leak in add_dt_node()
+
+Vladis Dronov (2):
+      nl80211: check for the required netlink attributes presence
+      video: fbdev: aty: do not leak uninitialized padding in clk to userspace
+
+Will Deacon (1):
+      arm64: fault: Route pte translation faults via do_translation_fault
+
+Xin Long (1):
+      scsi: scsi_transport_iscsi: fix the issue that iscsi_if_rx doesn't parse nlmsg properly
+
+satoru takeuchi (1):
+      btrfs: prevent to set invalid default subvolid
+
+ Makefile                                  |  4 +-
+ arch/arm/boot/dts/pxa27x.dtsi             |  1 +
+ arch/arm/boot/dts/pxa3xx.dtsi             |  1 +
+ arch/arm/mach-pxa/devices.c               |  4 +-
+ arch/arm/mach-pxa/pxa25x.c                |  2 +-
+ arch/arm/mach-pxa/pxa27x.c                |  2 +-
+ arch/arm/mach-pxa/pxa3xx.c                |  2 +-
+ arch/arm/plat-pxa/include/plat/dma.h      |  2 +-
+ arch/arm/xen/mm.c                         |  1 +
+ arch/arm64/kernel/head.S                  |  1 +
+ arch/arm64/mm/fault.c                     |  2 +-
+ arch/powerpc/kvm/book3s_64_vio.c          | 46 ++++++++-------
+ arch/powerpc/platforms/pseries/mobility.c |  4 +-
+ arch/x86/kernel/fpu/regset.c              | 11 ++++
+ arch/x86/kernel/fpu/signal.c              |  4 +-
+ arch/x86/kvm/vmx.c                        | 65 ++++++++++++---------
+ block/bsg-lib.c                           |  1 -
+ drivers/android/binder.c                  | 93 ++++++++++++++++++++++---------
+ drivers/crypto/talitos.c                  |  7 ++-
+ drivers/md/raid5.c                        | 13 ++++-
+ drivers/misc/cxl/api.c                    |  4 ++
+ drivers/misc/cxl/file.c                   |  8 ++-
+ drivers/pci/pci-sysfs.c                   | 11 +++-
+ drivers/platform/msm/sps/sps.c            | 15 ++++-
+ drivers/platform/msm/sps/spsi.h           | 17 ------
+ drivers/scsi/scsi_transport_iscsi.c       |  2 +-
+ drivers/video/fbdev/aty/atyfb_base.c      |  2 +-
+ drivers/xen/swiotlb-xen.c                 | 19 +++++++
+ fs/btrfs/ioctl.c                          |  6 +-
+ fs/btrfs/relocation.c                     |  2 +-
+ fs/cifs/connect.c                         |  8 +++
+ fs/cifs/file.c                            |  7 +++
+ fs/cifs/smb2pdu.c                         | 19 +++++--
+ fs/gfs2/glock.c                           | 21 +++----
+ fs/read_write.c                           |  4 +-
+ include/linux/key.h                       |  2 +
+ include/linux/platform_data/mmp_dma.h     |  1 +
+ include/xen/swiotlb-xen.h                 |  5 ++
+ kernel/seccomp.c                          | 23 +++++---
+ kernel/sysctl.c                           |  2 +
+ kernel/time/timer.c                       |  2 +-
+ kernel/trace/trace.c                      | 12 +++-
+ net/ipv6/ip6_fib.c                        |  2 +
+ net/mac80211/offchannel.c                 |  2 +
+ net/wireless/nl80211.c                    |  3 +
+ security/keys/internal.h                  |  2 +-
+ security/keys/key.c                       |  2 +
+ security/keys/keyctl.c                    |  5 ++
+ security/keys/keyring.c                   | 37 ++++++------
+ security/keys/process_keys.c              |  8 ++-
+ 50 files changed, 354 insertions(+), 165 deletions(-)
