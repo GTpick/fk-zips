@@ -1,0 +1,39 @@
+http://github.com/nathanchance/op5/commits/7.1.x-custom
+
+Nathan Chancellor (3):
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_N_7.1' into 7.1.x-base
+      Merge branch '7.1.x-base' into 7.1.x-oos
+      Merge branch '7.1.x-oos' into 7.1.x-custom
+
+aaron (1):
+      Synchronize codes for OxygenOS 4.5.12
+
+ arch/arm/boot/dts/qcom/cheeseburger-backup.dtsi |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-dvt1.dtsi   |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-evb.dtsi    |   8 +-
+ arch/arm/boot/dts/qcom/cheeseburger-evt1.dtsi   |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-evt2.dtsi   |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-evt3.dtsi   |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-pvt.dtsi    |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-pvt1.dtsi   |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-t0.dtsi     |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger-t1.dtsi     |   4 -
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi        |  23 +-
+ arch/arm/boot/dts/qcom/msm-pmi8998.dtsi         |   4 +-
+ arch/arm64/configs/msmcortex-perf_defconfig     |   2 +
+ arch/arm64/configs/msmcortex_defconfig          |   2 +
+ arch/arm64/include/asm/io.h                     |  23 +
+ drivers/gpio/gpiolib.c                          |  43 +-
+ drivers/input/misc/qpnp-power-on.c              |  21 +
+ drivers/pinctrl/qcom/pinctrl-msm.c              |  40 ++
+ drivers/power/supply/qcom/Makefile              |   2 +-
+ drivers/power/supply/qcom/oneplus_fastcg.c      | 193 ++++++++-
+ drivers/power/supply/qcom/op_dash_adapter.c     | 551 ++++++++++++++++++++++++
+ drivers/power/supply/qcom/op_dash_adapter.h     | 226 ++++++++++
+ drivers/power/supply/qcom/smb-lib.c             |  75 +++-
+ drivers/power/supply/qcom/smb-lib.h             |   1 +
+ include/linux/gpio/driver.h                     |   6 +
+ include/linux/power/oem_external_fg.h           |  28 ++
+ 26 files changed, 1206 insertions(+), 78 deletions(-)
+ create mode 100644 drivers/power/supply/qcom/op_dash_adapter.c
+ create mode 100644 drivers/power/supply/qcom/op_dash_adapter.h
