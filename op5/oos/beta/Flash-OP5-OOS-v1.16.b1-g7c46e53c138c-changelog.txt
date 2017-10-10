@@ -1,0 +1,420 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos-for-1.16
+
+Aditya Bavanari (1):
+      ASoC: msm: qdsp6v2: Fix dangling pointer access
+
+Adrian Salido (1):
+      HID: i2c-hid: allocate hid buffers for real worst case
+
+Alan Stern (8):
+      USB: gadgetfs: Fix crash caused by inadequate synchronization
+      USB: gadgetfs: fix copy_to_user while holding spinlock
+      usb-storage: unusual_devs entry to fix write-access regression for Seagate external drives
+      USB: dummy-hcd: fix connection failures (wrong speed)
+      USB: dummy-hcd: fix infinite-loop resubmission bug
+      USB: dummy-hcd: Fix erroneous synchronization change
+      USB: g_mass_storage: Fix deadlock when driver is unbound
+      USB: uas: fix bug in handling of alternate settings
+
+Alexander Shishkin (1):
+      stm class: Fix a use-after-free
+
+Andrey Konovalov (2):
+      uwb: properly check kthread_run return value
+      uwb: ensure that endpoint is interrupt
+
+Anurag Chouhan (1):
+      icnss: Add support to validate the result and error code
+
+Archana Obannagari (1):
+      msm: kgsl: Fixing an uninitialized variable in _gpuobj_map_useraddr()
+
+Archana Sriram (1):
+      msm: kgsl: Fix calculation of size in _load_regfile
+
+Arend Van Spriel (1):
+      brcmfmac: setup passive scan if requested by user-space
+
+Asutosh Das (1):
+      scsi: ufs-qcom: Aggressively turn-off phy regulators
+
+Casey Schaufler (1):
+      lsm: fix smack_inode_removexattr and xattr_getsecurity memleak
+
+Chris Lew (1):
+      diag: Update msg, log and event information
+
+Christophe JAILLET (2):
+      iio: adc: twl4030: Fix an error handling path in 'twl4030_madc_probe()'
+      iio: adc: twl4030: Disable the vusb3v1 rugulator in the error handling path of 'twl4030_madc_probe()'
+
+Dan Carpenter (1):
+      USB: devio: Don't corrupt user memory
+
+Darrick J. Wong (1):
+      ext4: in ext4_seek_{hole,data}, return -ENXIO for negative offsets
+
+David Eccher (1):
+      usb: gadget: inode.c: fix unbalanced spin_lock in ep0_write
+
+Deepak Kushwah (1):
+      msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+
+Depeng Shao (1):
+      msm: camera: sensor: Validate sensor related name length
+
+Dmitry Fleytman (1):
+      usb: Increase quirk delay for USB devices
+
+Dragos Bogdan (2):
+      iio: ad_sigma_delta: Implement a dedicated reset function
+      iio: ad7793: Fix the serial interface reset
+
+Greg Kroah-Hartman (3):
+      USB: core: harden cdc_parse_cdc_header
+      USB: fix out-of-bounds in usb_set_configuration
+      Linux 4.4.92-rc1
+
+Guneshwor Singh (1):
+      ALSA: compress: Remove unused variable
+
+Harsh Shandilya (2):
+      leds: boeffla_touchkey_control: Use fb_notifier over lcd_notifier
+      leds: boeffla_touchkey_control: Use pr_* macros for logging
+
+Hemant Kumar (2):
+      usb: gadget: u_ether: Add NULL check in helper APIs
+      usb: gadget: f_cdev: Fix NULL pointer dereference in cser_free_inst
+
+Jan Kara (3):
+      ext4: fix data corruption for mmap writes
+      ext4: Don't clear SGID when inheriting ACLs
+      ext4: provide ext4_issue_zeroout()
+
+Jani Nikula (1):
+      drm/i915/bios: ignore HDMI on port A
+
+Jim Dickerson (1):
+      usb: pci-quirks.c: Corrected timeout values used in handshake
+
+Keith Busch (1):
+      nvme: protect against simultaneous shutdown invocations
+
+Krishna Chaitanya Devarakonda (1):
+      msm: mdss: Fix potential race condition in rotator
+
+Li Jun (1):
+      usb: gadget: mass_storage: set msg_registered after msg registered
+
+Liangliang Lu (1):
+      usb: gadget: f_fs: Do not free IPC log buffer when free instance
+
+Luca Coelho (1):
+      iwlwifi: add workaround to disable wide channels in 5GHz
+
+Lukas Wunner (2):
+      iio: adc: mcp320x: Fix readout of negative voltages
+      iio: adc: mcp320x: Fix oops on module unload
+
+Manaf Meethalavalappu Pallikunhi (1):
+      msm: thermal: Check cpu variables are initialized before setting threshold
+
+Manoj Prabhu B (2):
+      diag: Synchronize msg mask read and write on a peripheral
+      diag: Process glink buffers in workqueue context
+
+Markus Elfring (1):
+      UPSTREAM: [media] v4l2-async: Use kmalloc_array() in v4l2_async_notifier_unregister()
+
+Martin K. Petersen (1):
+      scsi: sd: Do not override max_sectors_kb sysfs setting
+
+Mathias Nyman (1):
+      xhci: fix finding correct bus_state structure for USB 3.1 hosts
+
+Matt Fornero (1):
+      iio: core: Return error for failed read_reg
+
+Maulik Shah (1):
+      drivers: cpuidle: Minimize round off errors in wake up time
+
+Michal Hocko (3):
+      BACKPORT: mm: introduce kv[mz]alloc helpers
+      UPSTREAM: mm, vmalloc: properly track vmalloc users
+      BACKPORT: mm, vmalloc: fix vmalloc users tracking properly
+
+Mohammed Javid (2):
+      msm: ipa: Fix to use after free issue
+      msm: ipa: Cache CNE event
+
+Narender Ankam (2):
+      msm: mdss: hdmi: validate HDMI EDID's max number of CEA blocks
+      msm: mdss: dp: fix div by zero error
+
+Nathan Chancellor (5):
+      leds: boeffla_touchkey_control: Satisfy checkpatch.pl
+      flash_defconfig: Enable BOEFFLA_TOUCH_KEY_CONTROL
+      qdsp6v2: msm-pcm-voice-v2: Fix tty_mode
+      Merge branch '7.1.x-base-for-1.15' into 7.1.x-oos-for-1.15
+      msm: ipa_v2: Fix memset-elt-size warning
+
+Neeraj Soni (1):
+      security: pfe: Synchronize the file key usage
+
+Nicolai Stange (1):
+      driver core: platform: Don't read past the end of "driver_override" buffer
+
+Nicolas Ferre (1):
+      usb: gadget: udc: atmel: set vbus irqflags explicitly
+
+Olaf Hering (1):
+      Drivers: hv: fcopy: restore correct transfer length
+
+Peter Zijlstra (1):
+      sched/cpuset/pm: Fix cpuset vs. suspend-resume bugs
+
+Phani Kumar Uppalapati (1):
+      Revert "ASoC: wcd9335: enable APC in Tx path"
+
+Prakash Gupta (2):
+      iommu: free io pgtable during domain detach.
+      iommu: fix smmu_secure_pool access list after free issue
+
+Prateek Sood (1):
+      cgroup/cpuset: remove circular dependency deadlock
+
+Ramesh V (2):
+      msm: camera: isp: Fix frame skip pattern
+      msm: camera: isp: Avoid stats data corruption.
+
+Ritesh Harjani (1):
+      mmc: mmc: Fix mmc_partial_init for HS400 mode
+
+Sahitya Tummala (1):
+      mmc: sdhci: Fix SDHCI_QUIRK2_IGNORE_DATATOUT_FOR_R1BCMD handling
+
+Sayali Lokhande (1):
+      mmc: core: Select HS mode in device first and then in the host
+
+Shrey Vijay (1):
+      i2c-msm-v2: Avoid accessing unassigned memory
+
+Shu Wang (1):
+      ftrace: Fix kmemleak in unregister_ftrace_graph
+
+Skylar Chang (3):
+      msm: ipa: ipa_usb: teth_prot and ttype validation
+      msm: ipa3: add lock for num_q6_rule
+      msm: ipa: protect q6_proxy_clk_vote
+
+Stefan Popa (1):
+      staging: iio: ad7192: Fix - use the dedicated reset function avoiding dma from stack.
+
+Subash Abhinov Kasiviswanathan (1):
+      netfilter: xt_socket: Restore mark from full sockets only
+
+Sunil Khatri (1):
+      msm: kgsl: Protect the bind object against bad dereference
+
+Takashi Iwai (2):
+      ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
+      ALSA: usx2y: Suppress kernel warning at page allocation failures
+
+Tanvi Aggarwal (1):
+      msm: sensor: flash: add conditional check for ioctl
+
+Tejaswi Tanikella (1):
+      ipv4: Drop packets if checksum is invalidated
+
+Tharun Kumar Merugu (2):
+      msm: ADSPRPC: Add exec permission for hyp_assign_phys
+      msm: adsprpc: Separate hyp_assign call for audio remote heap protection
+
+Theodore Ts'o (1):
+      ext4: don't allow encrypted operations without keys
+
+Tomasz Figa (2):
+      CHROMIUM: mm: Take kvmalloc_array() from upstream
+      CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Trishansh Bhardwaj (1):
+      msm: camera: Return -NOTTY on invalid ioctl command.
+
+Udaya Bhaskara Reddy Mallavarapu (1):
+      drivers: media: broadcast: Fix security vulnerability issue
+
+Utkarsh Saxena (1):
+      msm: ipa: Add assert upon send command failure
+
+Vatsal Bucha (1):
+      ASoC: wsa881x: Fix wsa881x speaker damage
+
+Veerabhadrarao Badiganti (4):
+      mmc: host: Update the USE_PIO_FOR_EMMC_TUNING quirk value
+      mmc: sdhci-msm: Don't enable PWRSAVE_DLL for all latest sdhc hosts
+      mmc: host: sdhci-msm: Enable SDHC FIFO explicitly
+      mmc: core: Correct the checks while setting clock scaling frequencies
+
+Vidyakumar Athota (1):
+      soc: qcom: initialize glink link state
+
+Vijay Viswanath (1):
+      mmc: sdhci: Add logs when ignoring timeout due to quirk
+
+VijayaKumar T M (1):
+      msm: camera: isp: Check null pointer for VFE0 base
+
+Vijayavardhan Vennapusa (2):
+      dwc3-msm: Add delay between consecutive register reads in while loop
+      USB: dwc3-msm: Protect enabling phy irqs with mutex
+
+Yoshihiro Shimoda (2):
+      usb: renesas_usbhs: fix the BCLR setting condition for non-DCP pipe
+      usb: renesas_usbhs: fix usbhsf_fifo_clear() for RX direction
+
+andip71 (4):
+      leds: Boeffla touchkey control driver 1.2.0 for OnePlus5 (OOS)
+      leds: Boeffla touchkey control driver 1.3.0 for OnePlus5
+      leds: Boeffla touchkey control - no touchkey LED on OxygenOS when fingerprint unlock
+      leds: Boeffla touchkey control driver update to version 1.3.1
+
+tharun kumar (1):
+      msm: ADSPRPC: validate user buffers after copying from user
+
+ .../devicetree/bindings/qdsp/msm-fastrpc.txt       |   3 +
+ Makefile                                           |   4 +-
+ arch/arm64/configs/flash_defconfig                 |   1 +
+ drivers/base/platform.c                            |   3 +-
+ drivers/char/adsprpc.c                             |  24 +-
+ drivers/char/diag/diag_masks.c                     |  52 +--
+ drivers/char/diag/diagfwd_glink.c                  |  56 +++-
+ drivers/char/diag/diagfwd_glink.h                  |   2 +-
+ drivers/char/diag/diagfwd_peripheral.c             |  24 +-
+ drivers/cpuidle/lpm-levels.c                       |  15 +-
+ drivers/gpu/drm/i915/intel_bios.c                  |   7 +
+ drivers/gpu/msm/adreno_a5xx.c                      |  12 +-
+ drivers/gpu/msm/kgsl.c                             |  60 ++--
+ drivers/hid/i2c-hid/i2c-hid.c                      |   3 +-
+ drivers/hv/hv_fcopy.c                              |   4 +
+ drivers/hwtracing/stm/core.c                       |   2 +-
+ drivers/i2c/busses/i2c-msm-v2.c                    |  19 +-
+ drivers/iio/adc/ad7793.c                           |   4 +-
+ drivers/iio/adc/ad_sigma_delta.c                   |  28 ++
+ drivers/iio/adc/mcp320x.c                          |  25 +-
+ drivers/iio/adc/twl4030-madc.c                     |  10 +-
+ drivers/iio/industrialio-core.c                    |   4 +-
+ drivers/input/misc/fpc1020_tee.c                   |   7 +
+ drivers/input/touchscreen/synaptics_driver_s3320.c |  16 +
+ drivers/iommu/arm-smmu.c                           |  15 +-
+ drivers/leds/Kconfig                               |   6 +
+ drivers/leds/Makefile                              |   3 +
+ drivers/leds/boeffla_touchkey_control.c            | 348 +++++++++++++++++++++
+ drivers/leds/leds-gpio.c                           |  53 ++++
+ drivers/media/platform/msm/camera_v2/isp/msm_isp.c |  30 +-
+ .../media/platform/msm/camera_v2/isp/msm_isp40.c   |   6 +
+ .../media/platform/msm/camera_v2/isp/msm_isp44.c   |   6 +
+ .../media/platform/msm/camera_v2/isp/msm_isp46.c   |   6 +
+ .../media/platform/msm/camera_v2/isp/msm_isp47.c   |   6 +
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |   2 +-
+ drivers/media/platform/msm/camera_v2/msm.c         |  10 +
+ .../msm/camera_v2/sensor/flash/msm_flash.c         |   3 +
+ .../msm/camera_v2/sensor/msm_sensor_driver.c       |  15 +
+ .../platform/msm/dvb/demux/mpq_dmx_plugin_common.c |   8 +-
+ drivers/media/platform/msm/vidc/msm_vidc_debug.c   |   2 +-
+ drivers/media/v4l2-core/v4l2-async.c               |   4 +-
+ drivers/media/v4l2-core/v4l2-ctrls.c               |  25 +-
+ drivers/media/v4l2-core/v4l2-event.c               |   8 +-
+ drivers/media/v4l2-core/v4l2-ioctl.c               |   6 +-
+ drivers/media/v4l2-core/v4l2-subdev.c              |   5 +-
+ drivers/media/v4l2-core/videobuf2-dma-sg.c         |   8 +-
+ drivers/mmc/core/mmc.c                             |  19 +-
+ drivers/mmc/host/sdhci-msm.c                       |  11 +-
+ drivers/mmc/host/sdhci.c                           |  19 +-
+ drivers/mmc/host/sdhci.h                           |   2 +-
+ drivers/net/usb/usbnet.c                           |   4 +
+ drivers/net/wireless/brcm80211/brcmfmac/cfg80211.c |  19 +-
+ .../net/wireless/brcm80211/brcmfmac/fwil_types.h   |   5 +
+ drivers/net/wireless/iwlwifi/iwl-nvm-parse.c       |  70 ++++-
+ drivers/nvme/host/nvme.h                           |   2 +
+ drivers/nvme/host/pci.c                            |   3 +
+ drivers/platform/msm/ipa/ipa_clients/ipa_usb.c     |  18 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa.c              |  29 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_i.h            |  10 +
+ drivers/platform/msm/ipa/ipa_v2/ipa_rt.c           |  13 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_uc.c           |   6 +
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa.c              |  31 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            |  11 +
+ drivers/platform/msm/ipa/ipa_v3/ipa_rt.c           |  17 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_utils.c        |  14 +-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |  15 +-
+ drivers/scsi/sd.c                                  |  19 +-
+ drivers/scsi/ufs/ufs-qcom.c                        |  18 ++
+ drivers/scsi/ufs/ufshcd.h                          |   2 +
+ drivers/soc/qcom/icnss.c                           |  28 +-
+ drivers/soc/qcom/wcd-dsp-glink.c                   |  38 +--
+ drivers/staging/iio/adc/ad7192.c                   |   4 +-
+ drivers/thermal/msm_thermal.c                      |   2 +-
+ drivers/usb/core/config.c                          |  16 +-
+ drivers/usb/core/devio.c                           |   6 +-
+ drivers/usb/core/hub.c                             |   2 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |  19 +-
+ drivers/usb/gadget/function/f_cdev.c               |   6 +-
+ drivers/usb/gadget/function/f_fs.c                 |  36 ++-
+ drivers/usb/gadget/function/f_mass_storage.c       |  27 +-
+ drivers/usb/gadget/function/f_mass_storage.h       |  14 -
+ drivers/usb/gadget/function/u_ether.c              |  21 ++
+ drivers/usb/gadget/legacy/inode.c                  |  49 ++-
+ drivers/usb/gadget/legacy/mass_storage.c           |  20 +-
+ drivers/usb/gadget/udc/atmel_usba_udc.c            |   4 +-
+ drivers/usb/gadget/udc/dummy_hcd.c                 |  56 +++-
+ drivers/usb/host/pci-quirks.c                      |   8 +-
+ drivers/usb/host/xhci.h                            |   2 +-
+ drivers/usb/renesas_usbhs/fifo.c                   |  21 +-
+ drivers/usb/storage/uas-detect.h                   |  15 +-
+ drivers/usb/storage/uas.c                          |  10 +-
+ drivers/usb/storage/unusual_devs.h                 |   7 +
+ drivers/uwb/hwa-rc.c                               |   2 +
+ drivers/uwb/uwbd.c                                 |  12 +-
+ drivers/video/fbdev/msm/mdss_dp.c                  |   1 +
+ drivers/video/fbdev/msm/mdss_dp_aux.c              |   5 +
+ drivers/video/fbdev/msm/mdss_hdmi_edid.c           |   7 +
+ drivers/video/fbdev/msm/mdss_rotator.c             |   4 +-
+ fs/ext4/acl.c                                      |  22 +-
+ fs/ext4/crypto.c                                   |   6 +-
+ fs/ext4/ext4.h                                     |   5 +-
+ fs/ext4/extents.c                                  |  12 +-
+ fs/ext4/file.c                                     |   4 +-
+ fs/ext4/inode.c                                    |  39 ++-
+ fs/ext4/namei.c                                    |  12 +
+ fs/xattr.c                                         |   2 +-
+ include/linux/boeffla_touchkey_control.h           |  47 +++
+ include/linux/cpu.h                                |   2 +
+ include/linux/cpuset.h                             |   6 +
+ include/linux/diagchar.h                           |  13 +-
+ include/linux/iio/adc/ad_sigma_delta.h             |   3 +
+ include/linux/mm.h                                 |  22 ++
+ include/linux/vmalloc.h                            |  11 +
+ include/uapi/linux/usb/ch9.h                       |   1 +
+ kernel/cpu.c                                       |   5 +
+ kernel/cpuset.c                                    |  49 ++-
+ kernel/power/process.c                             |   5 +-
+ kernel/sched/core.c                                |   7 +-
+ kernel/trace/ftrace.c                              |  14 -
+ mm/nommu.c                                         |   5 +
+ mm/util.c                                          |  46 +++
+ mm/vmalloc.c                                       |  14 +
+ net/ipv4/tcp_ipv4.c                                |   6 +
+ net/netfilter/xt_socket.c                          |   4 +-
+ security/pfe/pfk_kc.c                              |  62 ++--
+ security/smack/smack_lsm.c                         |  55 ++--
+ sound/core/compress_offload.c                      |   3 +-
+ sound/soc/codecs/wcd9335.c                         |   3 -
+ sound/soc/codecs/wsa881x.c                         |   2 +
+ sound/soc/msm/qdsp6v2/msm-pcm-voice-v2.c           |   2 +-
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  22 +-
+ sound/usb/card.c                                   |  20 ++
+ sound/usb/usx2y/usb_stream.c                       |   6 +-
+ 134 files changed, 1788 insertions(+), 520 deletions(-)
+ create mode 100644 drivers/leds/boeffla_touchkey_control.c
+ create mode 100644 include/linux/boeffla_touchkey_control.h
