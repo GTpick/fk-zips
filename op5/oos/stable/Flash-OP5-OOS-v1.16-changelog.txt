@@ -1,0 +1,233 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Aditya Bavanari (1):
+      ASoC: msm: qdsp6v2: Fix dangling pointer access
+
+Anurag Chouhan (1):
+      icnss: Add support to validate the result and error code
+
+Archana Obannagari (1):
+      msm: kgsl: Fixing an uninitialized variable in _gpuobj_map_useraddr()
+
+Archana Sriram (1):
+      msm: kgsl: Fix calculation of size in _load_regfile
+
+Asutosh Das (1):
+      scsi: ufs-qcom: Aggressively turn-off phy regulators
+
+Chris Lew (1):
+      diag: Update msg, log and event information
+
+Deepak Kushwah (1):
+      msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+
+Depeng Shao (1):
+      msm: camera: sensor: Validate sensor related name length
+
+Ganesh Mahendran (1):
+      ANDROID: binder: fix node sched policy calculation
+
+Hemant Kumar (2):
+      usb: gadget: u_ether: Add NULL check in helper APIs
+      usb: gadget: f_cdev: Fix NULL pointer dereference in cser_free_inst
+
+Jan Kara (1):
+      ext4: provide ext4_issue_zeroout()
+
+Krishna Chaitanya Devarakonda (1):
+      msm: mdss: Fix potential race condition in rotator
+
+Liangliang Lu (1):
+      usb: gadget: f_fs: Do not free IPC log buffer when free instance
+
+Manaf Meethalavalappu Pallikunhi (1):
+      msm: thermal: Check cpu variables are initialized before setting threshold
+
+Manoj Prabhu B (2):
+      diag: Synchronize msg mask read and write on a peripheral
+      diag: Process glink buffers in workqueue context
+
+Maulik Shah (1):
+      drivers: cpuidle: Minimize round off errors in wake up time
+
+Mohammed Javid (2):
+      msm: ipa: Fix to use after free issue
+      msm: ipa: Cache CNE event
+
+Narender Ankam (2):
+      msm: mdss: hdmi: validate HDMI EDID's max number of CEA blocks
+      msm: mdss: dp: fix div by zero error
+
+Nathan Chancellor (1):
+      msm: ipa_v2: Fix memset-elt-size warning
+
+Neeraj Soni (1):
+      security: pfe: Synchronize the file key usage
+
+Phani Kumar Uppalapati (1):
+      Revert "ASoC: wcd9335: enable APC in Tx path"
+
+Prakash Gupta (2):
+      iommu: free io pgtable during domain detach.
+      iommu: fix smmu_secure_pool access list after free issue
+
+Prateek Sood (1):
+      cgroup/cpuset: remove circular dependency deadlock
+
+Ramesh V (2):
+      msm: camera: isp: Fix frame skip pattern
+      msm: camera: isp: Avoid stats data corruption.
+
+Ritesh Harjani (1):
+      mmc: mmc: Fix mmc_partial_init for HS400 mode
+
+Sachin Bhayare (1):
+      drm/msm/sde: count null character for blob length
+
+Sahitya Tummala (1):
+      mmc: sdhci: Fix SDHCI_QUIRK2_IGNORE_DATATOUT_FOR_R1BCMD handling
+
+Sayali Lokhande (1):
+      mmc: core: Select HS mode in device first and then in the host
+
+Shrey Vijay (1):
+      i2c-msm-v2: Avoid accessing unassigned memory
+
+Skylar Chang (3):
+      msm: ipa: ipa_usb: teth_prot and ttype validation
+      msm: ipa3: add lock for num_q6_rule
+      msm: ipa: protect q6_proxy_clk_vote
+
+Subash Abhinov Kasiviswanathan (1):
+      netfilter: xt_socket: Restore mark from full sockets only
+
+Sunil Khatri (1):
+      msm: kgsl: Protect the bind object against bad dereference
+
+Tanvi Aggarwal (1):
+      msm: sensor: flash: add conditional check for ioctl
+
+Tejaswi Tanikella (1):
+      ipv4: Drop packets if checksum is invalidated
+
+Tharun Kumar Merugu (2):
+      msm: ADSPRPC: Add exec permission for hyp_assign_phys
+      msm: adsprpc: Separate hyp_assign call for audio remote heap protection
+
+Trishansh Bhardwaj (1):
+      msm: camera: Return -NOTTY on invalid ioctl command.
+
+Udaya Bhaskara Reddy Mallavarapu (1):
+      drivers: media: broadcast: Fix security vulnerability issue
+
+Utkarsh Saxena (1):
+      msm: ipa: Add assert upon send command failure
+
+Vatsal Bucha (1):
+      ASoC: wsa881x: Fix wsa881x speaker damage
+
+Veerabhadrarao Badiganti (4):
+      mmc: host: Update the USE_PIO_FOR_EMMC_TUNING quirk value
+      mmc: sdhci-msm: Don't enable PWRSAVE_DLL for all latest sdhc hosts
+      mmc: host: sdhci-msm: Enable SDHC FIFO explicitly
+      mmc: core: Correct the checks while setting clock scaling frequencies
+
+Vidyakumar Athota (1):
+      soc: qcom: initialize glink link state
+
+Vijay Viswanath (1):
+      mmc: sdhci: Add logs when ignoring timeout due to quirk
+
+VijayaKumar T M (1):
+      msm: camera: isp: Check null pointer for VFE0 base
+
+Vijayavardhan Vennapusa (2):
+      dwc3-msm: Add delay between consecutive register reads in while loop
+      USB: dwc3-msm: Protect enabling phy irqs with mutex
+
+tharun kumar (1):
+      msm: ADSPRPC: validate user buffers after copying from user
+
+ .../devicetree/bindings/qdsp/msm-fastrpc.txt       |  3 ++
+ drivers/android/binder.c                           |  2 +-
+ drivers/char/adsprpc.c                             | 24 +++++++--
+ drivers/char/diag/diag_masks.c                     | 52 ++++++++++--------
+ drivers/char/diag/diagfwd_glink.c                  | 56 ++++++++++++++++---
+ drivers/char/diag/diagfwd_glink.h                  |  2 +-
+ drivers/char/diag/diagfwd_peripheral.c             | 24 ++++++++-
+ drivers/cpuidle/lpm-levels.c                       | 15 +++++-
+ drivers/gpu/drm/msm/sde/sde_crtc.c                 |  2 +-
+ drivers/gpu/drm/msm/sde/sde_kms.h                  |  4 +-
+ drivers/gpu/msm/adreno_a5xx.c                      | 12 +++--
+ drivers/gpu/msm/kgsl.c                             | 60 +++++++++++----------
+ drivers/i2c/busses/i2c-msm-v2.c                    | 19 +++----
+ drivers/iommu/arm-smmu.c                           | 15 +++++-
+ drivers/media/platform/msm/camera_v2/isp/msm_isp.c | 30 ++++++++---
+ .../media/platform/msm/camera_v2/isp/msm_isp40.c   |  6 +++
+ .../media/platform/msm/camera_v2/isp/msm_isp44.c   |  6 +++
+ .../media/platform/msm/camera_v2/isp/msm_isp46.c   |  6 +++
+ .../media/platform/msm/camera_v2/isp/msm_isp47.c   |  6 +++
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |  2 +-
+ drivers/media/platform/msm/camera_v2/msm.c         | 10 ++++
+ .../msm/camera_v2/sensor/flash/msm_flash.c         |  3 ++
+ .../msm/camera_v2/sensor/msm_sensor_driver.c       | 15 ++++++
+ .../platform/msm/dvb/demux/mpq_dmx_plugin_common.c |  8 ++-
+ drivers/media/platform/msm/vidc/msm_vidc_debug.c   |  2 +-
+ drivers/mmc/core/mmc.c                             | 19 ++++---
+ drivers/mmc/host/sdhci-msm.c                       | 11 +++-
+ drivers/mmc/host/sdhci.c                           | 19 ++++---
+ drivers/mmc/host/sdhci.h                           |  2 +-
+ drivers/platform/msm/ipa/ipa_clients/ipa_usb.c     | 18 ++++---
+ drivers/platform/msm/ipa/ipa_v2/ipa.c              | 29 ++++++++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_i.h            | 10 ++++
+ drivers/platform/msm/ipa/ipa_v2/ipa_rt.c           | 13 +++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_uc.c           |  6 +++
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        | 12 ++++-
+ drivers/platform/msm/ipa/ipa_v3/ipa.c              | 31 +++++++++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            | 11 ++++
+ drivers/platform/msm/ipa/ipa_v3/ipa_rt.c           | 17 ++++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_utils.c        | 14 ++++-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        | 15 +++++-
+ drivers/scsi/ufs/ufs-qcom.c                        | 18 +++++++
+ drivers/scsi/ufs/ufshcd.h                          |  2 +
+ drivers/soc/qcom/icnss.c                           | 28 +++++-----
+ drivers/soc/qcom/wcd-dsp-glink.c                   | 38 ++++++-------
+ drivers/thermal/msm_thermal.c                      |  2 +-
+ drivers/usb/dwc3/dwc3-msm.c                        | 19 ++++++-
+ drivers/usb/gadget/function/f_cdev.c               |  6 ++-
+ drivers/usb/gadget/function/f_fs.c                 | 36 +++++++++----
+ drivers/usb/gadget/function/u_ether.c              | 21 ++++++++
+ drivers/video/fbdev/msm/mdss_dp.c                  |  1 +
+ drivers/video/fbdev/msm/mdss_dp_aux.c              |  5 ++
+ drivers/video/fbdev/msm/mdss_hdmi_edid.c           |  7 +++
+ drivers/video/fbdev/msm/mdss_rotator.c             |  4 +-
+ fs/ext4/crypto.c                                   |  6 +--
+ fs/ext4/ext4.h                                     |  5 +-
+ fs/ext4/extents.c                                  | 12 +----
+ fs/ext4/inode.c                                    | 15 ++++++
+ include/linux/cpu.h                                |  2 +
+ include/linux/diagchar.h                           | 13 ++---
+ kernel/cpu.c                                       |  5 ++
+ kernel/cpuset.c                                    | 33 +++++++-----
+ net/ipv4/tcp_ipv4.c                                |  6 +++
+ net/netfilter/xt_socket.c                          |  4 +-
+ security/pfe/pfk_kc.c                              | 62 ++++++++++------------
+ sound/soc/codecs/wcd9335.c                         |  3 --
+ sound/soc/codecs/wsa881x.c                         |  2 +
+ sound/soc/msm/qdsp6v2/q6asm.c                      | 22 ++++----
+ 67 files changed, 713 insertions(+), 275 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-7.1.x
+
+Nathan Chancellor (1):
+      Merge branch 'master' of https://github.com/osm0sis/AnyKernel2 into op5-flash-7.1.x
+
+osm0sis (3):
+      Example: clean ups and fixes for current functions
+      anykernel: be clear ownership is also necessary to be set
+      AK2: improve cpio ramdisk unpacking
+
+ anykernel.sh      | 7 ++++---
+ tools/ak2-core.sh | 3 ++-
+ 2 files changed, 6 insertions(+), 4 deletions(-)
