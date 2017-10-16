@@ -1,0 +1,16 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-7.1.x
+
+Nathan Chancellor (5):
+      AK2: Improve patch_fstab
+      AK2: Sanitize patch_fstab for proper commas
+      AK2: Allow users to use either "" or " " for empty strings
+      Merge branch 'master' of https://github.com/osm0sis/AnyKernel2 into op5-flash-7.1.x
+      OP5: Disable dm-verity
+
+ anykernel.sh      | 7 +++++++
+ tools/ak2-core.sh | 8 ++++----
+ 2 files changed, 11 insertions(+), 4 deletions(-)
