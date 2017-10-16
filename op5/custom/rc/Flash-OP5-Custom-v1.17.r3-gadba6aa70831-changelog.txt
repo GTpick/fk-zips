@@ -1,0 +1,122 @@
+http://github.com/nathanchance/op5/commits/7.1.x-custom-for-1.17
+
+Alan Stern (1):
+      USB: dummy-hcd: Fix deadlock caused by disconnect detection
+
+Andreas Engel (1):
+      USB: serial: cp210x: add support for ELV TFD500
+
+Andreas Gruenbacher (1):
+      direct-io: Prevent NULL pointer access in submit_page_section
+
+Andrew Gabbasov (1):
+      usb: gadget: composite: Fix use-after-free in usb_composite_overwrite_options
+
+Arend Van Spriel (1):
+      brcmfmac: add length check in brcmf_cfg80211_escan_handler()
+
+Darrick J. Wong (1):
+      ext4: in ext4_seek_{hole,data}, return -ENXIO for negative offsets
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.93-rc1
+
+Haozhong Zhang (1):
+      KVM: nVMX: fix guest CR4 loading when emulating L2 to L1 exit
+
+Henryk Heisig (1):
+      USB: serial: option: add support for TP-Link LTE module
+
+Herbert Xu (1):
+      crypto: shash - Fix zero-length shash ahash digest crash
+
+Jaejoong Kim (1):
+      HID: usbhid: fix out-of-bounds bug
+
+Jeffrey Chu (1):
+      USB: serial: ftdi_sio: add id for Cypress WICED dev board
+
+Joerg Roedel (1):
+      iommu/amd: Finish TLB flush in amd_iommu_unmap()
+
+Johan Hovold (1):
+      USB: serial: console: fix use-after-free after failed setup
+
+Kazuya Mizuguchi (1):
+      usb: renesas_usbhs: Fix DMAC sequence for receiving zero-length packet
+
+Luca Coelho (1):
+      iwlwifi: mvm: use IWL_HCMD_NOCOPY for MCAST_FILTER_CMD
+
+Mathias Krause (1):
+      x86/alternatives: Fix alt_max_short macro to really be a max()
+
+Nathan Chancellor (2):
+      Merge branch '7.1.x-base-for-1.17' into 7.1.x-oos-for-1.17
+      Merge branch '7.1.x-oos-for-1.17' into 7.1.x-custom-for-1.17
+
+Paul Burton (1):
+      MIPS: math-emu: Remove pr_err() calls from fpu_emu()
+
+Paul E. McKenney (1):
+      rcu: Allow for page faults in NMI handlers
+
+Pavel Shilovsky (1):
+      CIFS: Reconnect expired SMB sessions
+
+Peng Xu (1):
+      nl80211: Define policy for packet pattern attributes
+
+Peter Ujfalusi (1):
+      dmaengine: edma: Align the memcpy acnt array size with the transfer
+
+Shrirang Bagul (1):
+      USB: serial: qcserial: add Dell DW5818, DW5819
+
+Takashi Iwai (5):
+      ALSA: usb-audio: Kill stray URB at exiting
+      ALSA: seq: Fix use-after-free at creating a port
+      ALSA: seq: Fix copy_from_user() call inside lock
+      ALSA: caiaq: Fix stray URB at probe error path
+      ALSA: line6: Fix leftover URB at error-path during probe
+
+Vitaly Mayatskikh (1):
+      fix unbalanced page refcounting in bio_map_user_iov
+
+ Makefile                                           |  4 ++--
+ arch/mips/math-emu/cp1emu.c                        |  2 --
+ arch/x86/include/asm/alternative-asm.h             |  4 +++-
+ arch/x86/include/asm/alternative.h                 |  6 ++---
+ arch/x86/kvm/vmx.c                                 |  2 +-
+ block/bio.c                                        |  8 +++++++
+ crypto/shash.c                                     |  8 ++++---
+ drivers/dma/edma.c                                 | 19 ++++++++++++---
+ drivers/hid/usbhid/hid-core.c                      | 12 +++++++++-
+ drivers/iommu/amd_iommu.c                          |  1 +
+ drivers/net/wireless/brcm80211/brcmfmac/cfg80211.c | 18 ++++++++++++---
+ drivers/net/wireless/iwlwifi/mvm/mac80211.c        | 10 +++++++-
+ drivers/usb/gadget/composite.c                     |  5 ++++
+ drivers/usb/gadget/udc/dummy_hcd.c                 |  9 +++++---
+ drivers/usb/renesas_usbhs/fifo.c                   |  2 +-
+ drivers/usb/serial/console.c                       |  1 +
+ drivers/usb/serial/cp210x.c                        |  1 +
+ drivers/usb/serial/ftdi_sio.c                      |  2 ++
+ drivers/usb/serial/ftdi_sio_ids.h                  |  7 ++++++
+ drivers/usb/serial/option.c                        |  2 ++
+ drivers/usb/serial/qcserial.c                      |  4 ++++
+ fs/cifs/cifsglob.h                                 |  2 ++
+ fs/cifs/cifssmb.c                                  |  7 ++++++
+ fs/cifs/connect.c                                  |  7 ++++++
+ fs/cifs/smb2ops.c                                  | 16 +++++++++++++
+ fs/direct-io.c                                     |  3 ++-
+ include/sound/seq_virmidi.h                        |  1 +
+ kernel/rcu/tree.c                                  | 12 ++++++++++
+ net/wireless/nl80211.c                             | 12 ++++++++--
+ sound/core/seq/seq_clientmgr.c                     |  6 ++++-
+ sound/core/seq/seq_ports.c                         |  7 ++++--
+ sound/core/seq/seq_virmidi.c                       | 27 +++++++++++++++-------
+ sound/usb/caiaq/device.c                           | 12 +++++++---
+ sound/usb/line6/driver.c                           |  7 +++---
+ sound/usb/mixer.c                                  | 12 ++++++++--
+ sound/usb/mixer.h                                  |  2 ++
+ 36 files changed, 214 insertions(+), 46 deletions(-)
