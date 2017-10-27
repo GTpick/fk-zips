@@ -1,0 +1,204 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Alan Stern (1):
+      USB: core: fix out-of-bounds access bug in usb_get_bos_descriptor()
+
+Arnd Bergmann (1):
+      brcmsmac: make some local variables 'static const' to reduce stack size
+
+Ben Hutchings (1):
+      ALSA: seq: Enable 'use' locking in all configurations
+
+Ben Skeggs (1):
+      drm/nouveau/mmu: flush tlbs before deleting page tables
+
+David Howells (2):
+      KEYS: don't let add_key() update an uninstantiated key
+      KEYS: Fix race between updating and finding a negative key
+
+David Kozub (1):
+      clockevents/drivers/cs5535: Improve resilience to spurious interrupts
+
+Eric Biggers (5):
+      KEYS: encrypted: fix dereference of NULL user_key_payload
+      lib/digsig: fix dereference of NULL user_key_payload
+      fscrypt: fix dereference of NULL user_key_payload
+      fscrypto: require write access to mount to set encryption policy
+      FS-Cache: fix dereference of NULL user_key_payload
+
+Eric Sesterhenn (1):
+      pkcs7: Prevent NULL pointer dereference, since sinfo is not always set.
+
+Felipe Balbi (1):
+      usb: quirks: add quirk for WORLDE MINI MIDI keyboard
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.95
+
+Hans de Goede (1):
+      USB: devio: Revert "USB: devio: Don't corrupt user memory"
+
+Ilia Mirkin (1):
+      drm/nouveau/bsp/g92: disable by default
+
+Jaegeuk Kim (2):
+      f2fs crypto: replace some BUG_ON()'s with error checks
+      f2fs crypto: add missing locking for keyring_key access
+
+Jan Luebbe (1):
+      bus: mbus: fix window size calculation for 4GB windows
+
+Johan Hovold (1):
+      USB: serial: metro-usb: add MS7820 device id
+
+John David Anglin (2):
+      parisc: Avoid trashing sr2 and sr3 in LWS code
+      parisc: Fix double-word compare and exchange in LWS code on 32-bit kernels
+
+Jonathan Liu (2):
+      usb: musb: sunxi: Explicitly release USB PHY on exit
+      usb: musb: Check for host-mode using is_host_active() on reset interrupt
+
+Jussi Laako (1):
+      ALSA: usb-audio: Add native DSD support for Pro-Ject Pre Box S2 Digital
+
+Larry Finger (1):
+      rtlwifi: rtl8821ae: Fix connection lost problem
+
+Maksim Salau (1):
+      usb: cdc_acm: Add quirk for Elatec TWN3
+
+Mathias Nyman (1):
+      usb: hub: Allow reset retry for USB2 devices on connect bounce
+
+Nathan Chancellor (4):
+      f2fs: Revert OnePlus changes
+      f2fs: Add commits from upstream after OOS revert
+      Merge branch '7.1.x-base' into 7.1.x-oos
+      flash_defconfig: Disable F2FS_FS
+
+Oleg Nesterov (1):
+      sched/autogroup: Fix autogroup_move_group() to never skip sched_move_task()
+
+Pontus Andersson (1):
+      i2c: ismt: Separate I2C block read from SMBus block read
+
+Stefan Mätje (1):
+      can: esd_usb2: Fix can_dlc value for received RTR, frames
+
+Takashi Iwai (1):
+      ALSA: hda: Remove superfluous '-' added by printk conversion
+
+Wolfgang Grandegger (1):
+      can: gs_usb: fix busy loop if no more TX context is available
+
+ Makefile                                           |    2 +-
+ arch/arm64/configs/flash_defconfig                 |    6 +-
+ arch/parisc/kernel/syscall.S                       |   55 +-
+ crypto/asymmetric_keys/pkcs7_parser.c              |    3 +
+ drivers/bus/mvebu-mbus.c                           |    2 +-
+ drivers/clocksource/cs5535-clockevt.c              |    3 +-
+ drivers/gpu/drm/nouveau/nvkm/engine/bsp/g84.c      |    2 +-
+ drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c     |    2 +
+ drivers/i2c/busses/i2c-ismt.c                      |    5 +-
+ drivers/net/can/usb/esd_usb2.c                     |    2 +-
+ drivers/net/can/usb/gs_usb.c                       |   10 +-
+ .../net/wireless/brcm80211/brcmsmac/phy/phy_n.c    |  197 ++-
+ .../net/wireless/realtek/rtlwifi/rtl8821ae/hw.c    |    2 +-
+ drivers/usb/class/cdc-acm.c                        |    3 +
+ drivers/usb/core/config.c                          |    6 +-
+ drivers/usb/core/devio.c                           |    6 +-
+ drivers/usb/core/hub.c                             |   11 +-
+ drivers/usb/core/quirks.c                          |    4 +
+ drivers/usb/musb/musb_core.c                       |    6 +-
+ drivers/usb/musb/sunxi.c                           |    2 +
+ drivers/usb/serial/metro-usb.c                     |    1 +
+ fs/crypto/Kconfig                                  |   18 -
+ fs/crypto/Makefile                                 |    3 -
+ fs/crypto/crypto.c                                 |  568 ---------
+ fs/crypto/fname.c                                  |  414 ------
+ fs/crypto/keyinfo.c                                |  333 -----
+ fs/crypto/policy.c                                 |  250 ----
+ fs/ext4/crypto_key.c                               |    6 +
+ fs/f2fs/Kconfig                                    |   21 +-
+ fs/f2fs/Makefile                                   |    2 +
+ fs/f2fs/acl.c                                      |   21 +-
+ fs/f2fs/acl.h                                      |    3 +-
+ fs/f2fs/checkpoint.c                               |  547 +++-----
+ fs/f2fs/crypto.c                                   |  490 +++++++
+ fs/f2fs/crypto_fname.c                             |  438 +++++++
+ fs/f2fs/crypto_key.c                               |  259 ++++
+ fs/f2fs/crypto_policy.c                            |  248 ++++
+ fs/f2fs/data.c                                     | 1330 ++++++++-----------
+ fs/f2fs/debug.c                                    |   88 +-
+ fs/f2fs/dir.c                                      |  468 ++++---
+ fs/f2fs/extent_cache.c                             |  315 +++--
+ fs/f2fs/f2fs.h                                     | 1104 ++++++----------
+ fs/f2fs/f2fs_crypto.h                              |  150 +++
+ fs/f2fs/file.c                                     | 1337 ++++++--------------
+ fs/f2fs/gc.c                                       |  382 +++---
+ fs/f2fs/gc.h                                       |    8 +
+ fs/f2fs/hash.c                                     |    2 +-
+ fs/f2fs/inline.c                                   |  278 ++--
+ fs/f2fs/inode.c                                    |  199 ++-
+ fs/f2fs/namei.c                                    |  411 +++---
+ fs/f2fs/node.c                                     |  933 +++++---------
+ fs/f2fs/node.h                                     |  134 +-
+ fs/f2fs/recovery.c                                 |  256 ++--
+ fs/f2fs/segment.c                                  |  898 +++++--------
+ fs/f2fs/segment.h                                  |   65 +-
+ fs/f2fs/shrinker.c                                 |   14 +-
+ fs/f2fs/super.c                                    |  972 +++-----------
+ fs/f2fs/trace.c                                    |    6 +-
+ fs/f2fs/xattr.c                                    |   71 +-
+ fs/f2fs/xattr.h                                    |    3 +-
+ fs/fscache/object-list.c                           |    7 +
+ include/linux/f2fs_fs.h                            |   54 +-
+ include/linux/key.h                                |   49 +-
+ include/linux/mbus.h                               |    4 +-
+ include/trace/events/f2fs.h                        |   85 +-
+ kernel/sched/auto_group.c                          |   23 +-
+ lib/digsig.c                                       |    6 +
+ net/dns_resolver/dns_key.c                         |    2 +-
+ security/keys/big_key.c                            |    4 +-
+ security/keys/encrypted-keys/encrypted.c           |    9 +-
+ security/keys/gc.c                                 |    8 +-
+ security/keys/key.c                                |   41 +-
+ security/keys/keyctl.c                             |    9 +-
+ security/keys/keyring.c                            |   10 +-
+ security/keys/proc.c                               |    7 +-
+ security/keys/process_keys.c                       |    2 +-
+ security/keys/request_key.c                        |    7 +-
+ security/keys/request_key_auth.c                   |    2 +-
+ security/keys/trusted.c                            |    2 +-
+ security/keys/user_defined.c                       |    4 +-
+ sound/core/seq/seq_lock.c                          |    4 -
+ sound/core/seq/seq_lock.h                          |   12 -
+ sound/pci/hda/hda_codec.c                          |    2 +-
+ sound/usb/quirks.c                                 |    1 +
+ 84 files changed, 5315 insertions(+), 8414 deletions(-)
+ delete mode 100644 fs/crypto/Kconfig
+ delete mode 100644 fs/crypto/Makefile
+ delete mode 100644 fs/crypto/crypto.c
+ delete mode 100644 fs/crypto/fname.c
+ delete mode 100644 fs/crypto/keyinfo.c
+ delete mode 100644 fs/crypto/policy.c
+ create mode 100644 fs/f2fs/crypto.c
+ create mode 100644 fs/f2fs/crypto_fname.c
+ create mode 100644 fs/f2fs/crypto_key.c
+ create mode 100644 fs/f2fs/crypto_policy.c
+ create mode 100644 fs/f2fs/f2fs_crypto.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-7.1.x
+
+John Cortez (1):
+      Ramdisk: Supply power to USB-OTG
+
+Nathan Chancellor (2):
+      AnyKernel: Alert of supported versions
+      AnyKernel: Fix mounting system for support status
+
+ anykernel.sh          | 10 ++++++++++
+ ramdisk/init.flash.rc |  4 +++-
+ 2 files changed, 13 insertions(+), 1 deletion(-)
