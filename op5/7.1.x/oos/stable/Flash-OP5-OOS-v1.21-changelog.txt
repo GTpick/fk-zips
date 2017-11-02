@@ -1,0 +1,22 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Nathan Chancellor (3):
+      Merge branch 'oneplus/QC8998_N_7.1' of https://github.com/OnePlusOSS/android_kernel_oneplus_msm8998 into 7.1.x-base
+      Merge branch '7.1.x-base' into 7.1.x-oos
+      op_dash_adapter: Fix misleading indentation warning
+
+shankai (1):
+      Synchronize codes for OxygenOS 4.5.14
+
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi    |    3 +
+ drivers/clk/msm/clock-gcc-8998.c            |    4 +
+ drivers/input/misc/qpnp-power-on.c          |   21 -
+ drivers/power/supply/qcom/oneplus_fastcg.c  |   36 +-
+ drivers/power/supply/qcom/op_dash_adapter.c | 1152 ++++++++++++++-------------
+ drivers/power/supply/qcom/smb-lib.c         |   47 +-
+ drivers/usb/gadget/function/f_gsi.c         |   11 +
+ include/dt-bindings/clock/msm-clocks-8998.h |    2 +
+ include/linux/power/oem_external_fg.h       |    2 +-
+ net/rmnet_data/rmnet_data_handlers.c        |    4 +-
+ 10 files changed, 654 insertions(+), 628 deletions(-)
+ mode change 100755 => 100644 drivers/input/misc/qpnp-power-on.c
