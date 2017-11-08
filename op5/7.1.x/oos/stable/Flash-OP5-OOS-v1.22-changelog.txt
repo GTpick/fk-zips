@@ -1,0 +1,165 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Alexander Boyko (1):
+      staging: lustre: ptlrpc: skip lock if export failed
+
+Alexander Usyskin (1):
+      mei: return error on notification request to a disconnected client
+
+Arnd Bergmann (2):
+      ARM: 8715/1: add a private asm/unaligned.h
+      mmc: s3cmci: include linux/interrupt.h for tasklet_struct
+
+Arvind Yadav (1):
+      exynos4-is: fimc-is: Unmap region obtained by of_iomap()
+
+Ashish Samant (1):
+      ocfs2: fstrim: Fix start offset of first cluster group during fstrim
+
+Chris Brandt (1):
+      i2c: riic: correctly finish transfers
+
+Dan Carpenter (1):
+      drm/msm: fix an integer overflow test
+
+Eric Biggers (2):
+      KEYS: return full count in keyring_read() if buffer is too small
+      KEYS: fix out-of-bounds read during ASN.1 parsing
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.97
+
+Grygorii Strashko (1):
+      PM / wakeirq: report a wakeup_event on dedicated wekup irq
+
+Hans de Goede (1):
+      mfd: axp20x: Fix axp288 PEK_DBR and PEK_DBF irqs being swapped
+
+Jan Beulich (1):
+      xen/manage: correct return value check on xenbus_scanf()
+
+Jan Kara (2):
+      ext4: fix stripe-unaligned allocations
+      ext4: do not use stripe_width if it is not set
+
+Javier Martinez Canillas (1):
+      platform/x86: intel_mid_thermal: Fix module autoload
+
+Juergen Gross (1):
+      xen: don't print error message in case of missing Xenstore entry
+
+Kasin Li (1):
+      drm/msm: Fix potential buffer overflow issue
+
+Larry Finger (2):
+      staging: rtl8712u: Fix endian settings for structs describing network packets
+      staging: r8712u: Fix Sparse warning in rtl871x_xmit.c
+
+Linus Torvalds (1):
+      Fix tracing sample code warning.
+
+Linus Walleij (1):
+      mfd: ab8500-sysctrl: Handle probe deferral
+
+Mark Rutland (1):
+      arm64: ensure __dump_instr() checks addr_limit
+
+Namhyung Kim (1):
+      perf tools: Fix build failure on perl script context
+
+Nathan Chancellor (1):
+      Merge branch '7.1.x-base' into 7.1.x-oos
+
+Oleh Kravchenko (1):
+      cx231xx: Fix I2C on Internal Master 3 Bus
+
+Raghava Aditya Renukunta (1):
+      scsi: aacraid: Process Error for response I/O
+
+Rex Zhu (1):
+      drm/amdgpu: when dpm disabled, also need to stop/start vce.
+
+Ricard Wanderlof (1):
+      ASoC: adau17x1: Workaround for noise bug in ADC
+
+Ronnie Sahlberg (1):
+      cifs: check MaxPathNameComponentLength != 0 before using it
+
+Stefan Haberland (1):
+      s390/dasd: check for device error pointer within state change interrupts
+
+Steven Rostedt (VMware) (1):
+      tracing/samples: Fix creation and deletion of simple_thread_fn creation
+
+Sudip Mukherjee (1):
+      bt8xx: fix memory leak
+
+Taeung Song (1):
+      perf tools: Only increase index if perf_evsel__new_idx() succeeds
+
+Takashi Iwai (2):
+      ALSA: timer: Add missing mutex lock for compat ioctls
+      ALSA: seq: Fix nested rwsem annotation for lockdep splat
+
+Ulf Hansson (1):
+      ARM: pxa: Don't rely on public mmc header to include leds.h
+
+Yan Markman (1):
+      ARM: dts: mvebu: pl310-cache disable double-linefill
+
+Yang Sheng (1):
+      staging: lustre: llite: don't invoke direct_IO for the EOF case
+
+frank zago (1):
+      staging: lustre: hsm: stack overrun in hai_dump_data_field
+
+ Makefile                                           |   2 +-
+ arch/arm/boot/dts/armada-375.dtsi                  |   4 +-
+ arch/arm/boot/dts/armada-38x.dtsi                  |   4 +-
+ arch/arm/boot/dts/armada-39x.dtsi                  |   4 +-
+ arch/arm/include/asm/Kbuild                        |   1 -
+ arch/arm/include/asm/unaligned.h                   |  27 ++
+ arch/arm/mach-pxa/balloon3.c                       |   1 +
+ arch/arm/mach-pxa/colibri-pxa270-income.c          |   1 +
+ arch/arm/mach-pxa/corgi.c                          |   1 +
+ arch/arm/mach-pxa/trizeps4.c                       |   1 +
+ arch/arm/mach-pxa/vpac270.c                        |   1 +
+ arch/arm/mach-pxa/zeus.c                           |   1 +
+ arch/arm/mach-pxa/zylonite.c                       |   1 +
+ arch/arm64/kernel/traps.c                          |   2 +-
+ drivers/base/power/wakeirq.c                       |   7 +
+ drivers/gpu/drm/amd/amdgpu/amdgpu_vce.c            |   9 +
+ drivers/gpu/drm/msm/msm_gem_submit.c               |   7 +-
+ drivers/i2c/busses/i2c-riic.c                      |  30 ++-
+ drivers/media/pci/bt8xx/dvb-bt8xx.c                |   1 +
+ drivers/media/platform/exynos4-is/fimc-is.c        |   8 +-
+ drivers/media/usb/cx231xx/cx231xx-core.c           |   7 +-
+ drivers/mfd/ab8500-sysctrl.c                       |  14 +-
+ drivers/mfd/axp20x.c                               |   8 +-
+ drivers/misc/mei/client.c                          |   3 +
+ drivers/mmc/host/s3cmci.c                          |   1 +
+ drivers/platform/x86/intel_mid_thermal.c           |   1 +
+ drivers/s390/block/dasd.c                          |   7 +-
+ drivers/scsi/aacraid/aachba.c                      | 289 +++++++++++----------
+ .../lustre/lustre/include/lustre/lustre_user.h     |  18 +-
+ drivers/staging/lustre/lustre/ldlm/ldlm_lock.c     |   7 +
+ drivers/staging/lustre/lustre/llite/rw26.c         |   4 +
+ drivers/staging/lustre/lustre/ptlrpc/service.c     |  21 +-
+ drivers/staging/rtl8712/ieee80211.h                |  84 +++---
+ drivers/staging/rtl8712/rtl871x_xmit.c             |   7 +-
+ drivers/xen/manage.c                               |  12 +-
+ fs/cifs/dir.c                                      |   5 +-
+ fs/ext4/mballoc.c                                  |   6 +-
+ fs/ext4/super.c                                    |   4 +-
+ fs/ocfs2/alloc.c                                   |  24 +-
+ lib/asn1_decoder.c                                 |   3 +
+ samples/trace_events/trace-events-sample.c         |  14 +-
+ security/keys/keyring.c                            |  39 ++-
+ sound/core/seq/seq_clientmgr.c                     |   2 +-
+ sound/core/timer_compat.c                          |  17 +-
+ sound/soc/codecs/adau17x1.c                        |  24 +-
+ sound/soc/codecs/adau17x1.h                        |   2 +
+ tools/perf/scripts/perl/Perf-Trace-Util/Build      |   4 +-
+ tools/perf/util/parse-events.c                     |   3 +-
+ 48 files changed, 464 insertions(+), 279 deletions(-)
+ create mode 100644 arch/arm/include/asm/unaligned.h
