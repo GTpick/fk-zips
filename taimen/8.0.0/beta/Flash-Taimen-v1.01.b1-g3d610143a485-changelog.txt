@@ -1,0 +1,40 @@
+http://github.com/nathanchance/wahoo/commits/8.0.0-queue-1.01
+
+Brendan Jackman (7):
+      UPSTREAM: sched/fair: Force balancing on nohz balance if local group has capacity
+      BACKPORT: sched/fair: Move select_task_rq_fair slow-path into its own function
+      UPSTREAM: sched/fair: Remove unnecessary comparison with -1
+      BACKPORT: sched/fair: Fix find_idlest_group when local group is not allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when no groups are allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when the local group is idlest
+      UPSTREAM: sched/fair: Sync task util before slow-path wakeup
+
+Chris Redpath (2):
+      ANDROID: sched/fair: Select correct capacity state for energy_diff
+      BACKPORT: sched/fair: Make it possible to account fair load avg consistently
+
+Jonathan Basseri (1):
+      BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+
+Mark Salyzyn (1):
+      FROMLIST: arm64: Avoid aligning normal memory pointers in __memcpy_{to,from}io
+
+Peter Zijlstra (6):
+      UPSTREAM: sched/fair: Fix and optimize the fork() path
+      BACKPORT: sched/fair: Fix PELT integrity for new tasks
+      UPSTREAM: sched/core: Add missing update_rq_clock() in post_init_entity_util_avg()
+      UPSTREAM: sched/core: Add missing update_rq_clock() in detach_task_cfs_rq()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call for task_hot()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call in set_user_nice()
+
+Vincent Guittot (2):
+      BACKPORT: sched/cgroup: Fix cpu_cgroup_fork() handling
+      UPSTREAM: sched/core: Fix find_idlest_group() for fork
+
+ arch/arm64/kernel/io.c |  12 ++-
+ include/linux/sched.h  |   5 +-
+ kernel/sched/core.c    | 113 ++++++++++++++++++-------
+ kernel/sched/fair.c    | 225 ++++++++++++++++++++++++++++++-------------------
+ kernel/sched/sched.h   |  16 +++-
+ net/xfrm/xfrm_state.c  |   1 +
+ 6 files changed, 245 insertions(+), 127 deletions(-)
