@@ -1,0 +1,181 @@
+http://github.com/nathanchance/wahoo/commits/8.0.0-queue-1.03
+
+Andy Lutomirski (1):
+      UPSTREAM: sched/core: Allow putting thread_info into task_struct
+
+Ard Biesheuvel (1):
+      UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+
+Brendan Jackman (11):
+      Revert "sched/fair: ensure utilization signals are synchronized before use"
+      sched/fair: Sync task util before EAS wakeup
+      UPSTREAM: sched/fair: Force balancing on nohz balance if local group has capacity
+      BACKPORT: sched/fair: Move select_task_rq_fair slow-path into its own function
+      UPSTREAM: sched/fair: Remove unnecessary comparison with -1
+      BACKPORT: sched/fair: Fix find_idlest_group when local group is not allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when no groups are allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when the local group is idlest
+      UPSTREAM: sched/fair: Sync task util before slow-path wakeup
+      FROMLIST: sched/fair: Use wake_q length as a hint for wake_wide
+      sched/core: Warn if ENERGY_AWARE is enabled but data is missing
+
+Chris Redpath (8):
+      schedstats/eas: guard properly to avoid breaking non-smp schedstats users
+      sched/fair: Update signals of nohz cpus if we are going idle
+      sched/fair: Try to estimate possible idle states.
+      sched/fair: Add a backup_cpu to find_best_target
+      cpufreq/sched: Use cpu max freq rather than policy max
+      ANDROID: sched/fair: Select correct capacity state for energy_diff
+      BACKPORT: sched/fair: Make it possible to account fair load avg consistently
+      sched/fair: consider task utilization in group_norm_util()
+
+Dietmar Eggemann (1):
+      sched/fair: remove erroneous RCU_LOCKDEP_WARN from start_cpu()
+
+Joe Maples (1):
+      Makefile: Compile with O3
+
+Joel Fernandes (5):
+      UPSTREAM: cpufreq: schedutil: Make iowait boost more energy efficient
+      UPSTREAM: cpufreq: schedutil: Use unsigned int for iowait boost
+      sched/core: fix have_sched_energy_data build warning
+      Revert "sched/core: fix have_sched_energy_data build warning"
+      Revert "sched/core: Warn if ENERGY_AWARE is enabled but data is missing"
+
+Jonathan Basseri (1):
+      BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+
+Joonwoo Park (15):
+      sched: deadline: WALT: account cumulative runnable avg
+      sched: WALT: fix broken cumulative runnable average accounting
+      sched: EAS/WALT: use cr_avg instead of prev_runnable_sum
+      sched: EAS: schedfreq: fix CPU util over estimation
+      sched: WALT: fix potential overflow
+      cpufreq: sched: WALT: don't apply capacity margin twice
+      sched: EAS/WALT: take into account of waking task's load
+      sched: EAS: fix incorrect energy delta calculation due to rounding error
+      sched: EAS: kill incorrect nohz idle cpu kick
+      sched: WALT: fix window mis-alignment
+      sched/fair: prevent meaningless active migration
+      cpufreq: sched: update capacity request upon tick always
+      sched: EAS/WALT: finish accounting prior to task_tick
+      sched: WALT: account cumulative window demand
+      sched: EAS: upmigrate misfit current task
+
+Juri Lelli (1):
+      UPSTREAM: cpufreq: schedutil: use now as reference when aggregating shared policy requests
+
+Ke Wang (3):
+      sched: EAS: Fix the condition to distinguish energy before/after
+      sched: EAS: update trg_cpu to backup_cpu if no energy saving for target_cpu
+      sched: EAS: Fix the calculation of group util in group_idle_state()
+
+Leo Yan (3):
+      sched/fair: kick nohz idle balance for misfit task
+      cpufreq: schedutil: clamp util to CPU maximum capacity
+      sched/fair: remove useless variable in find_best_target
+
+Mark Salyzyn (1):
+      FROMLIST: arm64: Avoid aligning normal memory pointers in __memcpy_{to,from}io
+
+Nathan Chancellor (5):
+      flash_defconfig: Remove CPU_FREQ_GOV_SCHED
+      De-modularize touchscreen drivers
+      De-modularize battery drivers
+      Revert "ANDROID: arm64: crypto, LLVMLinux: use %c constraint code in ASM_EXPORT"
+      arm64: Optimize for our feature set and chipset
+
+Olav Haugan (1):
+      sched: Update task->on_rq when tasks are moving between runqueues
+
+Patrick Bellasi (6):
+      sched/fair: streamline find_best_target heuristics
+      events: add tracepoint for find_best_target
+      sched/fair: trace energy_diff for non boosted tasks
+      sched/fair: ignore backup CPU when not valid
+      sched/fair: enforce EAS mode
+      sched/fair: consider task utilization in group_max_util()
+
+Peter Zijlstra (6):
+      UPSTREAM: sched/fair: Fix and optimize the fork() path
+      BACKPORT: sched/fair: Fix PELT integrity for new tasks
+      UPSTREAM: sched/core: Add missing update_rq_clock() in post_init_entity_util_avg()
+      UPSTREAM: sched/core: Add missing update_rq_clock() in detach_task_cfs_rq()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call for task_hot()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call in set_user_nice()
+
+Prasad Sodagudi (1):
+      sched: avoid pushing tasks to an offline CPU
+
+Rafael J. Wysocki (1):
+      BACKPORT: cpufreq: schedutil: Use policy-dependent transition delays
+
+Russ Weight (1):
+      sched/tune: access schedtune_initialized under CGROUP_SCHEDTUNE
+
+Satya Durga Srinivasu Prabhala (1):
+      soc: qcom: scm: fix boot issue when compiled with clang
+
+Sayali Lokhande (1):
+      scsi: ufs: Fix stack overflow read in ufs debugfs driver
+
+Sergey Senozhatsky (1):
+      lib/bsearch.c: micro-optimize pivot position calculation
+
+Srivatsa Vaddagiri (1):
+      sched: Extend active balance to accept 'push_task' argument
+
+Vikram Mulukutla (2):
+      sched: walt: Leverage existing helper APIs to apply invariance
+      sched: walt: Correct WALT window size initialization
+
+Vincent Guittot (2):
+      BACKPORT: sched/cgroup: Fix cpu_cgroup_fork() handling
+      UPSTREAM: sched/core: Fix find_idlest_group() for fork
+
+Viresh Kumar (1):
+      cpufreq: Drop schedfreq governor
+
+msdx321 (1):
+      power: {lge,htc}_battery: Use late_initcall instead of module_initcall
+
+ Makefile                            |  15 +-
+ arch/arm64/Makefile                 |   4 +
+ arch/arm64/configs/flash_defconfig  |  17 +-
+ arch/arm64/crypto/sha1-ce-core.S    |   6 +-
+ arch/arm64/crypto/sha1-ce-glue.c    |  11 +-
+ arch/arm64/crypto/sha2-ce-core.S    |   6 +-
+ arch/arm64/crypto/sha2-ce-glue.c    |  13 +-
+ arch/arm64/kernel/io.c              |  12 +-
+ drivers/cpufreq/Kconfig             |  13 -
+ drivers/power/htc_battery.c         |   2 +-
+ drivers/power/lge_battery.c         |   2 +-
+ drivers/scsi/ufs/ufs-qcom-debugfs.c |   3 +-
+ drivers/soc/qcom/scm.c              |  60 ++-
+ include/linux/cpufreq.h             |  10 +-
+ include/linux/init_task.h           |   9 +
+ include/linux/sched.h               |  45 +-
+ include/linux/sched/sysctl.h        |   1 -
+ include/linux/thread_info.h         |  15 +
+ include/trace/events/sched.h        |  51 +-
+ init/Kconfig                        |   7 +
+ init/init_task.c                    |   7 +-
+ kernel/module.c                     |  24 -
+ kernel/sched/Makefile               |   1 -
+ kernel/sched/core.c                 | 258 +++++-----
+ kernel/sched/cpufreq_sched.c        | 516 -------------------
+ kernel/sched/cpufreq_schedutil.c    |  72 ++-
+ kernel/sched/deadline.c             |  11 +-
+ kernel/sched/fair.c                 | 991 ++++++++++++++++++++++++------------
+ kernel/sched/idle_task.c            |   3 +-
+ kernel/sched/rt.c                   |  56 +-
+ kernel/sched/sched.h                | 137 ++---
+ kernel/sched/stats.c                |   5 +-
+ kernel/sched/stop_task.c            |   3 +-
+ kernel/sched/walt.c                 | 419 ++++-----------
+ kernel/sched/walt.h                 |   4 +-
+ kernel/sysctl.c                     |   7 -
+ lib/bsearch.c                       |  22 +-
+ net/xfrm/xfrm_state.c               |   1 +
+ 38 files changed, 1217 insertions(+), 1622 deletions(-)
+ delete mode 100644 kernel/sched/cpufreq_sched.c
