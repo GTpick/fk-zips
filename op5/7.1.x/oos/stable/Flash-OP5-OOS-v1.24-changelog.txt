@@ -1,0 +1,114 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Alan Stern (1):
+      usb: usbtest: fix NULL pointer dereference
+
+Andrei Vagin (1):
+      net/unix: don't show information about sockets from other namespaces
+
+Bart Van Assche (1):
+      target/iscsi: Fix iSCSI task reassignment handling
+
+Bilal Amarni (1):
+      security/keys: add CONFIG_KEYS_COMPAT to Kconfig
+
+Chi-hsien Lin (1):
+      brcmfmac: remove setting IBSS mode when stopping AP
+
+Cong Wang (1):
+      tun: call dev_get_valid_name() before register_netdevice()
+
+Craig Gallek (1):
+      tun/tap: sanitize TUNSETSNDBUF input
+
+Dmitry Torokhov (1):
+      Input: ims-psu - check if CDC union descriptor is sane
+
+Eric Dumazet (6):
+      tcp: fix tcp_mtu_probe() vs highest_sack
+      packet: avoid panic in packet_getsockopt()
+      ipv6: flowlabel: do not leave opt->tot_len with garbage
+      tcp/dccp: fix ireq->opt races
+      tcp/dccp: fix lockdep splat in inet_csk_route_req()
+      tcp/dccp: fix other lockdep splats accessing ireq_opt
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.99
+
+Guillaume Nault (2):
+      l2tp: check ps->sock before running pppol2tp_session_ioctl()
+      ppp: fix race in ppp device destruction
+
+Jason A. Donenfeld (1):
+      mac80211: use constant time comparison with keys
+
+Johannes Berg (2):
+      mac80211: accept key reinstall without changing anything
+      mac80211: don't compare TKIP TX MIC key in reinstall prevention
+
+Julien Gomes (1):
+      tun: allow positive return values on dev_get_valid_name() call
+
+Nathan Chancellor (1):
+      Merge branch '7.1.x-base' into 7.1.x-oos
+
+Nicholas Bellinger (1):
+      target: Fix node_acl demo-mode + uncached dynamic shutdown regression
+
+Richard Alpe (1):
+      tipc: fix link attribute propagation bug
+
+Takashi Iwai (1):
+      ALSA: seq: Cancel pending autoload work at unbinding device
+
+Willy Tarreau (1):
+      misc: panel: properly restore atomic counter on error path
+
+Xin Long (4):
+      sctp: add the missing sock_owned_by_user check in sctp_icmp_redirect
+      ip6_gre: only increase err_count for some certain type icmpv6 in ip6gre_err
+      sctp: reset owner sk for data chunks on out queues when migrating a sock
+      ipip: only increase err_count for some certain type icmp in ipip_err
+
+ Makefile                                           |  2 +-
+ arch/powerpc/Kconfig                               |  5 --
+ arch/s390/Kconfig                                  |  3 --
+ arch/sparc/Kconfig                                 |  3 --
+ arch/x86/Kconfig                                   |  4 --
+ drivers/input/misc/ims-pcu.c                       | 16 +++++-
+ drivers/net/macvtap.c                              |  2 +
+ drivers/net/ppp/ppp_generic.c                      | 20 ++++++++
+ drivers/net/tun.c                                  |  7 +++
+ drivers/net/wireless/brcm80211/brcmfmac/cfg80211.c |  3 --
+ drivers/staging/panel/panel.c                      | 23 +++++++--
+ drivers/target/iscsi/iscsi_target.c                | 19 +++----
+ drivers/target/target_core_tpg.c                   |  4 +-
+ drivers/target/target_core_transport.c             |  4 +-
+ drivers/usb/misc/usbtest.c                         |  5 +-
+ include/linux/netdevice.h                          |  3 ++
+ include/net/inet_sock.h                            |  8 ++-
+ include/net/tcp.h                                  |  6 +--
+ include/target/target_core_base.h                  |  1 +
+ net/core/dev.c                                     |  6 +--
+ net/dccp/ipv4.c                                    | 13 +++--
+ net/ipv4/cipso_ipv4.c                              | 24 +++------
+ net/ipv4/inet_connection_sock.c                    |  9 ++--
+ net/ipv4/ipip.c                                    | 58 ++++++++++++++++------
+ net/ipv4/syncookies.c                              |  2 +-
+ net/ipv4/tcp_input.c                               |  2 +-
+ net/ipv4/tcp_ipv4.c                                | 21 ++++----
+ net/ipv4/tcp_output.c                              |  3 +-
+ net/ipv6/ip6_flowlabel.c                           |  1 +
+ net/ipv6/ip6_gre.c                                 | 11 ++--
+ net/ipv6/ip6_output.c                              |  4 +-
+ net/l2tp/l2tp_ppp.c                                |  3 ++
+ net/mac80211/key.c                                 | 53 ++++++++++++++++++--
+ net/packet/af_packet.c                             | 24 ++++++---
+ net/sctp/input.c                                   |  2 +-
+ net/sctp/socket.c                                  | 32 ++++++++++++
+ net/tipc/link.c                                    | 28 +++--------
+ net/tipc/link.h                                    |  1 -
+ net/unix/diag.c                                    |  2 +
+ security/keys/Kconfig                              |  4 ++
+ sound/core/seq/seq_device.c                        |  3 ++
+ 41 files changed, 298 insertions(+), 146 deletions(-)
