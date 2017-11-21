@@ -1,0 +1,355 @@
+http://github.com/nathanchance/op5/commits/7.1.x-oos
+
+Aaron Sierra (1):
+      igb: reset the PHY before reading the PHY ID
+
+Adam Wallis (1):
+      dmaengine: dmatest: warn user when dma test times out
+
+Adrian Salido (1):
+      msm: mdss: save state of vsync handler
+
+Alan Stern (1):
+      USB: usbfs: compute urb->actual_length for isochronous
+
+Alexey Khoroshilov (1):
+      backlight: adp5520: Fix error handling in adp5520_bl_probe()
+
+Andrey Konovalov (1):
+      media: dib0700: fix invalid dvb_detach argument
+
+Arvind Yadav (3):
+      media: imon: Fix null-ptr-deref in imon_probe
+      drm/sti: sti_vtg: Handle return NULL error from devm_ioremap_nocache
+      gpu: drm: mgag200: mgag200_main:- Handle error from pci_iomap
+
+Banajit Goswami (2):
+      soc: q6dspv2: add api to vote for upgrading thread priority
+      ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade
+
+Bernhard Rosenkraenzer (1):
+      USB: Add delay-init quirk for Corsair K70 LUX keyboards
+
+Bjørn Mork (2):
+      net: cdc_ether: fix divide by 0 on bad descriptors
+      net: qmi_wwan: fix divide by 0 on bad descriptors
+
+Chen Gang (1):
+      mm: add PHYS_PFN, use it in __phys_to_pfn()
+
+Chris Lew (1):
+      soc: qcom: glink: Add new APIs to toggle RX thread priority
+
+Daniel Borkmann (1):
+      bpf: don't let ldimm64 leak map addresses on unprivileged
+
+David Lin (7):
+      msm: qdsp6v2: fix inconsistent spin_lock
+      msm: mdss: fix inconsistent mutex_lock
+      wcd9335: fix inconsistent mutex_lock
+      qdsp6v2: fix inconsistent mutex_lock
+      slimbus: fix inconsistent mutex_lock
+      msm: mdss: fix inconsistent mutex_lock
+      msm_cci: fix inconsistent mutex_lock
+
+Dmitry Torokhov (1):
+      ANDROID: hid: uhid: implement refcount for open and close
+
+Dmitry V. Levin (2):
+      uapi: fix linux/rds.h userspace compilation error
+      uapi: fix linux/rds.h userspace compilation errors
+
+Douglas Fischer (1):
+      USB: serial: qcserial: add pid/vid for Sierra Wireless EM7355 fw update
+
+Eino-Ville Talvala (1):
+      msm_ispif: Increase timeout to 10 seconds from 1 second.
+
+Emil Tantilov (4):
+      ixgbe: fix AER error handling
+      ixgbe: handle close/suspend race with netif_device_detach/present
+      ixgbe: add mask for 64 RSS queues
+      ixgbe: do not disable FEC from the driver
+
+Eric Biggers (1):
+      arm: crypto: reduce priority of bit-sliced AES cipher
+
+Francisco Franco (2):
+      power: suspend: remove OP fuckery, QC's sleepstate driver already deals with this
+      sleepstate: clean up OP leftovers for an upcoming commit
+
+Galo Navarro (1):
+      staging: rtl8188eu: fix incorrect ERROR tags from logs
+
+Geert Uytterhoeven (3):
+      ata: ATA_BMDMA should depend on HAS_DMA
+      ata: SATA_HIGHBANK should depend on HAS_DMA
+      ata: SATA_MV should depend on HAS_DMA
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.100
+
+Hannu Lounento (1):
+      igb: Fix hw_dbg logging in igb_update_flash_i210
+
+James Smart (5):
+      scsi: lpfc: Add missing memory barrier
+      scsi: lpfc: FCoE VPort enable-disable does not bring up the VPort
+      scsi: lpfc: Correct host name in symbolic_name field
+      scsi: lpfc: Correct issue leading to oops during link reset
+      scsi: lpfc: Clear the VendorVersion in the PLOGI/PLOGI ACC payload
+
+Jan Beulich (1):
+      xen-blkback: don't leak stack data via response ring
+
+Jan Kara (1):
+      ext4: fix data exposure after a crash
+
+Jannik Becher (1):
+      staging: rtl8712: fixed little endian problem
+
+Javier Martinez Canillas (1):
+      scsi: ufs-qcom: Fix module autoload
+
+Johan Hovold (2):
+      USB: serial: garmin_gps: fix I/O after failed probe and remove
+      USB: serial: garmin_gps: fix memory leak on probe errors
+
+Jon Mason (1):
+      arm64: dts: NS2: reserve memory for Nitro firmware
+
+Kailang Yang (1):
+      ALSA: hda/realtek - Add new codec ID ALC299
+
+Kaixu Xia (1):
+      UPSTREAM: writeback: fix the wrong congested state variable definition
+
+Kumar Behera (1):
+      msm: cpp: Reduce cpp timeout on MC error
+
+Leif Liddy (1):
+      Bluetooth: btusb: fix QCA Rome suspend/resume
+
+Marcin Nowakowski (2):
+      MIPS: init: Ensure bootmem does not corrupt reserved memory
+      MIPS: init: Ensure reserved memory regions are not added to bootmem
+
+Martijn Coenen (3):
+      ANDROID: binder: Add thread->process_todo flag.
+      ANDROID: binder: show high watermark of alloc->pages.
+      ANDROID: binder: clarify deferred thread work.
+
+Matthias Kaehlcke (2):
+      BACKPORT: selinux: Remove redundant check for unknown labeling behavior
+      UPSTREAM: jiffies.h: declare jiffies and jiffies_64 with ____cacheline_aligned_in_smp
+
+Naseer Ahmed (1):
+      msm: mdss: Remove unnecessary op mode config
+
+Nathan Chancellor (1):
+      Merge branch '7.1.x-base' into 7.1.x-oos
+
+Naveen Ramaraj (3):
+      soc: qcom: sleepstate: Increase notifier priority
+      net: ipc_router: Add dynamic enable/disable wakeup source feature
+      soc: qcom: sleepstate: Enable/Disable IPCRTR wakelocks
+
+Ngai-Mint Kwan (1):
+      fm10k: request reset when mbx->state changes
+
+Nick Desaulniers (1):
+      FROMLIST: arm64: avoid overflow in VA_START and PAGE_OFFSET
+
+Paolo Bonzini (1):
+      KVM: x86: fix singlestepping over syscall
+
+Paul Burton (2):
+      MIPS: End asm function prologue macros with .insn
+      MIPS: Netlogic: Exclude netlogic,xlp-pic code from XLR builds
+
+Petr Mladek (1):
+      BACKPORT: kthread: allow to cancel kthread work
+
+Philip Cuadra (4):
+      tty: move tty_port workqueue to be a kthread
+      tty:  check before stopping kthread
+      tty: add tty_port_set_policy function
+      msm_serial_hs: make the Bluetooth tty thread RT
+
+Praveen Chavan (1):
+      msm: vidc: Fix instance formats initialization issue
+
+Rob Herring (1):
+      UPSTREAM: tty: serial_core: add tty NULL check to uart_tx_stopped
+
+Roger Quadros (1):
+      extcon: palmas: Check the parent instance to prevent the NULL
+
+Roopesh Rajashekharaiah Nataraja (2):
+      diag: Fix reference count mismatch
+      serial: msm_serial_hs: optimize total tty port support
+
+Sasha Levin (2):
+      Revert "crypto: xts - Add ECB dependency"
+      Revert "uapi: fix linux/rds.h userspace compilation errors"
+
+Sherry Yang (2):
+      FROMLIST: android: binder: Change binder_shrinker to static
+      FROMLIST: android: binder: Fix null ptr dereference in debug msg
+
+Takashi Iwai (2):
+      ALSA: vx: Don't try to update capture stream before running
+      ALSA: vx: Fix possible transfer overflow
+
+Tim Murray (1):
+      BACKPORT: mm: fix pageblock heuristic
+
+Todd Fujinaka (1):
+      igb: close/suspend race in netif_device_detach
+
+Todd Kjos (1):
+      FROMLIST: binder: fix proc->files use-after-free
+
+Tony Lindgren (4):
+      ARM: dts: Fix compatible for ti81xx uarts for 8250
+      ARM: dts: Fix am335x and dm814x scm syscon to probe children
+      ARM: OMAP2+: Fix init for multiple quirks for the same SoC
+      ARM: dts: Fix omap3 off mode pull defines
+
+Tony Nguyen (1):
+      ixgbe: Reduce I2C retry count on X550 devices
+
+Uwe Kleine-König (1):
+      backlight: lcd: Fix race condition during register
+
+Veerabhadrarao Badiganti (2):
+      mmc: core: Initialize the devfreq table with default frequencies
+      mmc: core: Fix the issue with clock scaling in resume-scaling
+
+Xin Long (1):
+      sctp: do not peel off an assoc from one netns to another one
+
+andip71 (2):
+      leds-qpnp: Notification LED control - V1.1b
+      leds-qpnp: Notification LED control - V1.1c
+
+c_mtharu (1):
+      sdm660: adsprpc: Map uncached buffers as non-coherent
+
+jonghyun26.kim (1):
+      power_supply: Fix unbalanced the power supplies
+
+matt_huang (1):
+      pwm: qpnp: Fix qcom HW known issue
+
+ .../bindings/arm/msm/msm_ipc_router_glink_xprt.txt |   2 +
+ Makefile                                           |   2 +-
+ arch/arm/boot/dts/am33xx.dtsi                      |   3 +-
+ arch/arm/boot/dts/dm814x.dtsi                      |   9 +-
+ arch/arm/boot/dts/dm816x.dtsi                      |   6 +-
+ arch/arm/crypto/aesbs-glue.c                       |   6 +-
+ arch/arm/mach-omap2/pdata-quirks.c                 |   1 -
+ arch/arm64/boot/dts/broadcom/ns2.dtsi              |   2 +
+ arch/arm64/include/asm/memory.h                    |   6 +-
+ arch/mips/include/asm/asm.h                        |  10 +-
+ arch/mips/kernel/setup.c                           |  78 ++++++-
+ arch/mips/netlogic/common/irq.c                    |   4 +-
+ arch/x86/include/asm/kvm_emulate.h                 |   1 +
+ arch/x86/kvm/emulate.c                             |   1 +
+ arch/x86/kvm/x86.c                                 |  52 ++---
+ crypto/Kconfig                                     |   1 -
+ drivers/android/binder.c                           | 214 ++++++++++++-------
+ drivers/android/binder_alloc.c                     |   8 +-
+ drivers/android/binder_alloc.h                     |   2 +
+ drivers/ata/Kconfig                                |   3 +
+ drivers/block/xen-blkback/blkback.c                |  23 +-
+ drivers/block/xen-blkback/common.h                 |  25 +--
+ drivers/bluetooth/btusb.c                          |   6 +
+ drivers/char/adsprpc.c                             |   3 +-
+ drivers/char/diag/diag_memorydevice.c              |   4 +-
+ drivers/dma/dmatest.c                              |   1 +
+ drivers/extcon/extcon-palmas.c                     |   5 +
+ drivers/gpu/drm/mgag200/mgag200_main.c             |   2 +
+ drivers/gpu/drm/sti/sti_vtg.c                      |   4 +
+ drivers/hid/uhid.c                                 |  17 +-
+ drivers/leds/leds-qpnp.c                           | 237 ++++++++++++++++++++-
+ .../media/platform/msm/camera_v2/ispif/msm_ispif.c |   2 +-
+ .../platform/msm/camera_v2/pproc/cpp/msm_cpp.c     |   2 +-
+ .../platform/msm/camera_v2/sensor/cci/msm_cci.c    |   2 +-
+ drivers/media/platform/msm/vidc/msm_vdec.c         |  28 ++-
+ drivers/media/platform/msm/vidc/msm_venc.c         |  28 ++-
+ drivers/media/rc/imon.c                            |   5 +
+ drivers/media/usb/dvb-usb/dib0700_devices.c        |  24 +--
+ drivers/mmc/core/core.c                            |  42 +++-
+ drivers/net/ethernet/intel/fm10k/fm10k_mbx.c       |  10 +-
+ drivers/net/ethernet/intel/fm10k/fm10k_pci.c       |   6 +-
+ drivers/net/ethernet/intel/igb/e1000_82575.c       |  11 +
+ drivers/net/ethernet/intel/igb/e1000_i210.c        |   4 +-
+ drivers/net/ethernet/intel/igb/igb_main.c          |  21 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_lib.c       |   8 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_main.c      |  23 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_phy.c       |   4 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_x550.c      |   2 -
+ drivers/net/usb/cdc_ether.c                        |   2 +-
+ drivers/net/usb/qmi_wwan.c                         |   2 +-
+ drivers/power/power_supply_core.c                  |   4 +-
+ drivers/pwm/pwm-qpnp.c                             |   4 +
+ drivers/scsi/lpfc/lpfc_attr.c                      |  17 ++
+ drivers/scsi/lpfc/lpfc_els.c                       |   6 +
+ drivers/scsi/lpfc/lpfc_hw.h                        |   6 +
+ drivers/scsi/lpfc/lpfc_sli.c                       |   3 +
+ drivers/scsi/lpfc/lpfc_vport.c                     |   8 +
+ drivers/scsi/ufs/ufs-qcom.c                        |   1 +
+ drivers/slimbus/slimbus.c                          |   4 +-
+ drivers/soc/qcom/glink.c                           |  85 +++++++-
+ drivers/soc/qcom/glink_smem_native_xprt.c          |  54 +++++
+ drivers/soc/qcom/glink_xprt_if.h                   |   4 +-
+ drivers/soc/qcom/ipc_router_glink_xprt.c           |  19 ++
+ drivers/soc/qcom/qdsp6v2/apr.c                     |  64 ++++++
+ drivers/soc/qcom/qdsp6v2/apr_tal_glink.c           |  32 +++
+ drivers/soc/qcom/smp2p_sleepstate.c                |  31 ++-
+ drivers/staging/rtl8188eu/include/rtw_debug.h      |   2 +-
+ drivers/staging/rtl8712/rtl871x_ioctl_linux.c      |   2 +-
+ drivers/tty/serial/msm_serial_hs.c                 |   4 +-
+ drivers/tty/tty_buffer.c                           |  28 ++-
+ drivers/tty/tty_port.c                             |  10 +
+ drivers/usb/core/devio.c                           |  14 ++
+ drivers/usb/core/quirks.c                          |   3 +
+ drivers/usb/serial/garmin_gps.c                    |  22 +-
+ drivers/usb/serial/qcserial.c                      |   1 +
+ drivers/video/backlight/adp5520_bl.c               |  12 +-
+ drivers/video/backlight/lcd.c                      |   4 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |   2 -
+ drivers/video/fbdev/msm/mdss_mdp.h                 |   1 +
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c         |  12 +-
+ drivers/video/fbdev/msm/mdss_mdp_pp.c              |   6 +-
+ drivers/video/fbdev/msm/mdss_mdp_splash_logo.c     |   7 +-
+ include/dt-bindings/pinctrl/omap.h                 |   4 +-
+ include/linux/ipc_router.h                         |  10 +
+ include/linux/ipc_router_xprt.h                    |   4 +
+ include/linux/jiffies.h                            |  11 +-
+ include/linux/kthread.h                            |   4 +
+ include/linux/qdsp6v2/apr.h                        |   4 +-
+ include/linux/qdsp6v2/apr_tal.h                    |   6 +
+ include/linux/serial_core.h                        |   2 +-
+ include/linux/tty.h                                |   8 +-
+ include/soc/qcom/glink.h                           |  29 ++-
+ include/uapi/linux/rds.h                           | 102 ++++-----
+ kernel/kthread.c                                   |  96 ++++++++-
+ kernel/power/suspend.c                             |  18 --
+ mm/backing-dev.c                                   |   4 +-
+ mm/compaction.c                                    |   2 +-
+ mm/internal.h                                      |   6 +-
+ mm/page_alloc.c                                    |  23 +-
+ net/ipc_router/ipc_router_core.c                   |  26 ++-
+ net/sctp/socket.c                                  |   4 +
+ security/selinux/hooks.c                           |  16 --
+ sound/drivers/vx/vx_pcm.c                          |   8 +-
+ sound/pci/hda/patch_realtek.c                      |  10 +
+ sound/pci/vx222/vx222_ops.c                        |  12 +-
+ sound/pcmcia/vx/vxp_ops.c                          |  12 +-
+ sound/soc/codecs/wcd9335.c                         |   1 +
+ sound/soc/msm/qdsp6v2/msm-lsm-client.c             |  10 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              |  22 ++
+ sound/soc/msm/qdsp6v2/q6voice.c                    |   1 +
+ 110 files changed, 1480 insertions(+), 411 deletions(-)
