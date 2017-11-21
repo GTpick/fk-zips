@@ -1,0 +1,365 @@
+http://github.com/nathanchance/wahoo/commits/8.0.0
+
+Aaron Sierra (1):
+      igb: reset the PHY before reading the PHY ID
+
+Adam Wallis (1):
+      dmaengine: dmatest: warn user when dma test times out
+
+Alan Stern (1):
+      USB: usbfs: compute urb->actual_length for isochronous
+
+Alexey Khoroshilov (1):
+      backlight: adp5520: Fix error handling in adp5520_bl_probe()
+
+Andrey Konovalov (1):
+      media: dib0700: fix invalid dvb_detach argument
+
+Ard Biesheuvel (1):
+      UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+
+Arvind Yadav (3):
+      media: imon: Fix null-ptr-deref in imon_probe
+      drm/sti: sti_vtg: Handle return NULL error from devm_ioremap_nocache
+      gpu: drm: mgag200: mgag200_main:- Handle error from pci_iomap
+
+Bernhard Rosenkraenzer (1):
+      USB: Add delay-init quirk for Corsair K70 LUX keyboards
+
+Bjørn Mork (2):
+      net: cdc_ether: fix divide by 0 on bad descriptors
+      net: qmi_wwan: fix divide by 0 on bad descriptors
+
+Chen Gang (1):
+      mm: add PHYS_PFN, use it in __phys_to_pfn()
+
+Daniel Borkmann (1):
+      bpf: don't let ldimm64 leak map addresses on unprivileged
+
+Dmitry V. Levin (2):
+      uapi: fix linux/rds.h userspace compilation error
+      uapi: fix linux/rds.h userspace compilation errors
+
+Douglas Fischer (1):
+      USB: serial: qcserial: add pid/vid for Sierra Wireless EM7355 fw update
+
+Emil Tantilov (4):
+      ixgbe: fix AER error handling
+      ixgbe: handle close/suspend race with netif_device_detach/present
+      ixgbe: add mask for 64 RSS queues
+      ixgbe: do not disable FEC from the driver
+
+Eric Biggers (1):
+      arm: crypto: reduce priority of bit-sliced AES cipher
+
+Galo Navarro (1):
+      staging: rtl8188eu: fix incorrect ERROR tags from logs
+
+Geert Uytterhoeven (3):
+      ata: ATA_BMDMA should depend on HAS_DMA
+      ata: SATA_HIGHBANK should depend on HAS_DMA
+      ata: SATA_MV should depend on HAS_DMA
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.100
+
+Hannu Lounento (1):
+      igb: Fix hw_dbg logging in igb_update_flash_i210
+
+Hong-Mei Li (1):
+      cpuidle:lpm: Fix div by zero bug
+
+James Smart (5):
+      scsi: lpfc: Add missing memory barrier
+      scsi: lpfc: FCoE VPort enable-disable does not bring up the VPort
+      scsi: lpfc: Correct host name in symbolic_name field
+      scsi: lpfc: Correct issue leading to oops during link reset
+      scsi: lpfc: Clear the VendorVersion in the PLOGI/PLOGI ACC payload
+
+Jan Beulich (1):
+      xen-blkback: don't leak stack data via response ring
+
+Jan Kara (1):
+      ext4: fix data exposure after a crash
+
+Jannik Becher (1):
+      staging: rtl8712: fixed little endian problem
+
+Javier Martinez Canillas (1):
+      scsi: ufs-qcom: Fix module autoload
+
+Joe Maples (5):
+      Makefile: Compile with O3
+      arm64: strcmp: Align to cache and preload
+      micro-optimization: Use DSTRLEN to remove incorrect strlen uses
+      mdss: Make wait event interruptible
+      PM: Port fingprintd quick thaw from OnePlus
+
+Johan Hovold (2):
+      USB: serial: garmin_gps: fix I/O after failed probe and remove
+      USB: serial: garmin_gps: fix memory leak on probe errors
+
+Jon Mason (1):
+      arm64: dts: NS2: reserve memory for Nitro firmware
+
+Jonathan Basseri (1):
+      BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+
+Kailang Yang (1):
+      ALSA: hda/realtek - Add new codec ID ALC299
+
+Leif Liddy (1):
+      Bluetooth: btusb: fix QCA Rome suspend/resume
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Log hotplug events
+
+Marcin Nowakowski (2):
+      MIPS: init: Ensure bootmem does not corrupt reserved memory
+      MIPS: init: Ensure reserved memory regions are not added to bootmem
+
+Mark Salyzyn (1):
+      FROMLIST: arm64: Avoid aligning normal memory pointers in __memcpy_{to,from}io
+
+Maulik Shah (1):
+      lpm-levels: Select lpm for isolated cpu when sleep is disabled
+
+Naresh Malladi (2):
+      lpm-levels: Remove IPI check on hot plugged cores
+      cpuidle: lpm-levels: Check for negative sleep times
+
+Nathan Chancellor (5):
+      De-modularize touchscreen drivers
+      De-modularize battery drivers
+      Revert "ANDROID: arm64: crypto, LLVMLinux: use %c constraint code in ASM_EXPORT"
+      arm64: Optimize for our feature set and chipset
+      Merge 4.4.100 into 8.0.0
+
+Ngai-Mint Kwan (1):
+      fm10k: request reset when mbx->state changes
+
+Paolo Bonzini (1):
+      KVM: x86: fix singlestepping over syscall
+
+Paul Burton (2):
+      MIPS: End asm function prologue macros with .insn
+      MIPS: Netlogic: Exclude netlogic,xlp-pic code from XLR builds
+
+Roger Quadros (1):
+      extcon: palmas: Check the parent instance to prevent the NULL
+
+Sasha Levin (2):
+      Revert "crypto: xts - Add ECB dependency"
+      Revert "uapi: fix linux/rds.h userspace compilation errors"
+
+Satya Durga Srinivasu Prabhala (1):
+      soc: qcom: scm: fix boot issue when compiled with clang
+
+Sayali Lokhande (1):
+      scsi: ufs: Fix stack overflow read in ufs debugfs driver
+
+Sergey Senozhatsky (1):
+      lib/bsearch.c: micro-optimize pivot position calculation
+
+Srinivas Rao L (1):
+      lpm-levels: Enter shallowest state if predicted sleep length is less
+
+Syed Rameez Mustafa (1):
+      sched: turn off the TTWU_QUEUE feature
+
+Takashi Iwai (2):
+      ALSA: vx: Don't try to update capture stream before running
+      ALSA: vx: Fix possible transfer overflow
+
+Todd Fujinaka (1):
+      igb: close/suspend race in netif_device_detach
+
+Tony Lindgren (4):
+      ARM: dts: Fix compatible for ti81xx uarts for 8250
+      ARM: dts: Fix am335x and dm814x scm syscon to probe children
+      ARM: OMAP2+: Fix init for multiple quirks for the same SoC
+      ARM: dts: Fix omap3 off mode pull defines
+
+Tony Nguyen (1):
+      ixgbe: Reduce I2C retry count on X550 devices
+
+Uwe Kleine-König (1):
+      backlight: lcd: Fix race condition during register
+
+Xin Long (1):
+      sctp: do not peel off an assoc from one netns to another one
+
+msdx321 (3):
+      power: {lge,htc}_battery: Use late_initcall instead of module_initcall
+      ASoC: wcd9335: queue work on power efficient wq
+      ASoC: wcd934x: queue work on power efficient wq
+
+subhashj@codeaurora.org (1):
+      scsi: ufs: add capability to keep auto bkops always enabled
+
+ Documentation/security/Smack.txt                   |   6 +-
+ Makefile                                           |  17 +---
+ arch/arm/boot/dts/am33xx.dtsi                      |   3 +-
+ arch/arm/boot/dts/dm814x.dtsi                      |   9 +-
+ arch/arm/boot/dts/dm816x.dtsi                      |   6 +-
+ arch/arm/crypto/aesbs-glue.c                       |   6 +-
+ arch/arm/mach-omap2/pdata-quirks.c                 |   1 -
+ arch/arm64/Makefile                                |   4 +
+ arch/arm64/boot/dts/broadcom/ns2.dtsi              |   2 +
+ arch/arm64/configs/flash_defconfig                 |  16 ++--
+ arch/arm64/crypto/sha1-ce-core.S                   |   6 +-
+ arch/arm64/crypto/sha1-ce-glue.c                   |  11 +--
+ arch/arm64/crypto/sha2-ce-core.S                   |   6 +-
+ arch/arm64/crypto/sha2-ce-glue.c                   |  13 +--
+ arch/arm64/kernel/io.c                             |  12 +--
+ arch/arm64/lib/strcmp.S                            |   8 ++
+ arch/ia64/kernel/machvec.c                         |   2 +-
+ arch/mips/alchemy/common/prom.c                    |   2 +-
+ arch/mips/include/asm/asm.h                        |  10 +-
+ arch/mips/kernel/setup.c                           |  78 +++++++++++++++-
+ arch/mips/loongson64/common/machtype.c             |   2 +-
+ arch/mips/netlogic/common/irq.c                    |   4 +-
+ arch/powerpc/mm/numa.c                             |   2 +-
+ arch/powerpc/platforms/85xx/xes_mpc85xx.c          |   2 +-
+ arch/powerpc/platforms/pseries/dlpar.c             |  10 +-
+ arch/sh/mm/consistent.c                            |   2 +-
+ arch/sparc/kernel/apc.c                            |   2 +-
+ arch/um/drivers/line.c                             |   2 +-
+ arch/um/drivers/mconsole_kern.c                    |  12 +--
+ arch/um/drivers/pty.c                              |   6 +-
+ arch/x86/boot/early_serial_console.c               |   2 +-
+ arch/x86/include/asm/kvm_emulate.h                 |   1 +
+ arch/x86/kernel/pci-calgary_64.c                   |   4 +-
+ arch/x86/kvm/emulate.c                             |   1 +
+ arch/x86/kvm/x86.c                                 |  52 +++++------
+ arch/x86/xen/setup.c                               |   2 +-
+ crypto/Kconfig                                     |   1 -
+ drivers/acpi/fan.c                                 |   2 +-
+ drivers/ata/Kconfig                                |   3 +
+ drivers/block/xen-blkback/blkback.c                |  23 ++---
+ drivers/block/xen-blkback/common.h                 |  25 +----
+ drivers/block/xen-blkback/xenbus.c                 |   2 +-
+ drivers/bluetooth/btmrvl_sdio.c                    |  12 +--
+ drivers/bluetooth/btusb.c                          |   6 ++
+ drivers/char/rdbg.c                                |   2 +-
+ drivers/clk/zynq/clkc.c                            |   2 +-
+ drivers/cpuidle/lpm-levels-of.c                    |   3 +-
+ drivers/cpuidle/lpm-levels.c                       |  25 +++--
+ drivers/crypto/msm/qcrypto.c                       |   2 +-
+ drivers/dma/dmatest.c                              |   1 +
+ drivers/esoc/esoc_bus.c                            |   2 +-
+ drivers/extcon/extcon-palmas.c                     |   5 +
+ drivers/firmware/efi/libstub/efi-stub-helper.c     |   4 +-
+ drivers/gpu/drm/amd/amdgpu/amdgpu_pm.c             |  12 +--
+ drivers/gpu/drm/mgag200/mgag200_main.c             |   2 +
+ drivers/gpu/drm/radeon/radeon_pm.c                 |  26 +++---
+ drivers/gpu/drm/sti/sti_vtg.c                      |   4 +
+ drivers/hid/hid-sensor-custom.c                    |  16 ++--
+ drivers/hid/hid-sony.c                             |   6 +-
+ drivers/isdn/i4l/isdn_net.c                        |   2 +-
+ drivers/leds/leds-qpnp-flash-v2.c                  |   6 +-
+ drivers/macintosh/via-pmu-led.c                    |   4 +-
+ drivers/macintosh/windfarm_fcu_controls.c          |   2 +-
+ drivers/media/rc/imon.c                            |   5 +
+ drivers/media/usb/dvb-usb/dib0700_devices.c        |  24 ++---
+ drivers/media/usb/uvc/uvc_driver.c                 |   4 +-
+ .../fpr_FingerprintCard/fpc1020_platform_tee.c     |  10 +-
+ drivers/misc/qseecom.c                             |   2 +-
+ drivers/mtd/devices/block2mtd.c                    |   4 +-
+ drivers/net/ethernet/intel/fm10k/fm10k_mbx.c       |  10 +-
+ drivers/net/ethernet/intel/fm10k/fm10k_pci.c       |   6 +-
+ drivers/net/ethernet/intel/igb/e1000_82575.c       |  11 +++
+ drivers/net/ethernet/intel/igb/e1000_i210.c        |   4 +-
+ drivers/net/ethernet/intel/igb/igb_main.c          |  21 +++--
+ drivers/net/ethernet/intel/ixgbe/ixgbe_lib.c       |   8 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_main.c      |  23 ++---
+ drivers/net/ethernet/intel/ixgbe/ixgbe_phy.c       |   4 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_x550.c      |   2 -
+ drivers/net/ethernet/qlogic/qede/qede_ethtool.c    |   2 +-
+ drivers/net/ethernet/sun/cassini.c                 |  14 +--
+ drivers/net/usb/cdc_ether.c                        |   2 +-
+ drivers/net/usb/qmi_wwan.c                         |   2 +-
+ drivers/net/wireless/mwifiex/main.c                |  20 ++--
+ drivers/pinctrl/devicetree.c                       |   2 +-
+ drivers/pinctrl/pinctrl-digicolor.c                |   2 +-
+ drivers/pinctrl/pinctrl-falcon.c                   |   2 +-
+ drivers/pinctrl/pinctrl-xway.c                     |   2 +-
+ drivers/power/htc_battery.c                        |   2 +-
+ drivers/power/lge_battery.c                        |   2 +-
+ drivers/scsi/bnx2fc/bnx2fc_fcoe.c                  |   2 +-
+ drivers/scsi/fnic/fnic_fcs.c                       |  12 +--
+ drivers/scsi/lpfc/lpfc_attr.c                      |  39 +++++---
+ drivers/scsi/lpfc/lpfc_els.c                       |   6 ++
+ drivers/scsi/lpfc/lpfc_hw.h                        |   6 ++
+ drivers/scsi/lpfc/lpfc_sli.c                       |   3 +
+ drivers/scsi/lpfc/lpfc_vport.c                     |   8 ++
+ drivers/scsi/qla2xxx/qla_gs.c                      |   2 +-
+ drivers/scsi/scsi_sysfs.c                          |   4 +-
+ drivers/scsi/ufs/ufs-qcom-debugfs.c                |   3 +-
+ drivers/scsi/ufs/ufs-qcom.c                        |   1 +
+ drivers/scsi/wd33c93.c                             |   2 +-
+ drivers/soc/qcom/scm.c                             |  60 +++++++-----
+ drivers/staging/lustre/lustre/lmv/lmv_obd.c        |   2 +-
+ drivers/staging/lustre/lustre/mgc/mgc_request.c    |   2 +-
+ .../staging/lustre/lustre/ptlrpc/lproc_ptlrpc.c    |   2 +-
+ drivers/staging/rtl8188eu/include/rtw_debug.h      |   2 +-
+ drivers/staging/rtl8188eu/os_dep/rtw_android.c     |   2 +-
+ drivers/staging/rtl8712/rtl871x_ioctl_linux.c      |   2 +-
+ drivers/staging/sm750fb/sm750.c                    |  22 ++---
+ drivers/target/iscsi/iscsi_target_tpg.c            |   2 +-
+ drivers/usb/core/devio.c                           |  14 +++
+ drivers/usb/core/quirks.c                          |   3 +
+ drivers/usb/gadget/function/f_ncm.c                |   2 +-
+ drivers/usb/serial/garmin_gps.c                    |  22 ++++-
+ drivers/usb/serial/qcserial.c                      |   1 +
+ drivers/video/backlight/adp5520_bl.c               |  12 ++-
+ drivers/video/backlight/lcd.c                      |   4 +-
+ drivers/video/fbdev/msm/mdss_dp.c                  |   2 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |   2 +-
+ fs/btrfs/super.c                                   |   2 +-
+ fs/cifs/cifs_spnego.c                              |   4 +-
+ fs/cifs/connect.c                                  |   4 +-
+ fs/cifs/sess.c                                     |   2 +-
+ fs/reiserfs/dir.c                                  |   8 +-
+ include/asm-generic/memory_model.h                 |   4 +-
+ include/dt-bindings/pinctrl/omap.h                 |   4 +-
+ include/linux/efi.h                                |   2 +-
+ include/linux/pfn.h                                |   1 +
+ include/linux/string.h                             |  11 +++
+ include/uapi/linux/rds.h                           | 102 ++++++++++-----------
+ kernel/module.c                                    |  24 -----
+ kernel/power/Kconfig                               |   5 +
+ kernel/power/process.c                             |  21 +++++
+ kernel/power/suspend.c                             |   6 ++
+ kernel/sched/features.h                            |   2 +-
+ lib/bsearch.c                                      |  22 +++--
+ lib/dynamic_debug.c                                |   2 +-
+ net/netfilter/nf_conntrack_irc.c                   |   4 +-
+ net/netfilter/nf_conntrack_sip.c                   |  34 +++----
+ net/netfilter/nf_nat_irc.c                         |  10 +-
+ net/netfilter/nf_nat_sip.c                         |   4 +-
+ net/nfc/llcp_core.c                                |   2 +-
+ net/sctp/socket.c                                  |   4 +
+ net/tipc/eth_media.c                               |   2 +-
+ net/tipc/ib_media.c                                |   2 +-
+ net/xfrm/xfrm_state.c                              |   1 +
+ security/keys/encrypted-keys/encrypted.c           |   2 +-
+ security/pfe/pfk_kc.c                              |   2 +-
+ sound/drivers/vx/vx_pcm.c                          |   8 +-
+ sound/pci/hda/patch_realtek.c                      |  10 ++
+ sound/pci/vx222/vx222_ops.c                        |  12 +--
+ sound/pcmcia/vx/vxp_ops.c                          |  12 +--
+ sound/soc/codecs/msm_sdw/msm_sdw_cdc.c             |   2 +-
+ sound/soc/codecs/tfa/tfa_dsp.c                     |   6 +-
+ sound/soc/codecs/wcd9335.c                         |  13 ++-
+ sound/soc/codecs/wcd934x/wcd934x.c                 |  13 ++-
+ sound/soc/msm/msm8996.c                            |   2 +-
+ sound/soc/msm/qdsp6v2/q6voice.c                    |  12 +--
+ tools/iio/iio_utils.c                              |   6 +-
+ tools/perf/builtin-help.c                          |   4 +-
+ tools/perf/builtin-kmem.c                          |   4 +-
+ tools/perf/builtin-script.c                        |  12 +--
+ tools/perf/builtin-stat.c                          |   2 +-
+ tools/perf/util/dso.c                              |   2 +-
+ tools/perf/util/event.c                            |   6 +-
+ 165 files changed, 821 insertions(+), 558 deletions(-)
