@@ -1,0 +1,210 @@
+http://github.com/nathanchance/op5/commits/8.0.0-custom
+
+Aaron Sierra (1):
+      igb: reset the PHY before reading the PHY ID
+
+Adam Wallis (1):
+      dmaengine: dmatest: warn user when dma test times out
+
+Alan Stern (1):
+      USB: usbfs: compute urb->actual_length for isochronous
+
+Alexey Khoroshilov (1):
+      backlight: adp5520: Fix error handling in adp5520_bl_probe()
+
+Andrey Konovalov (1):
+      media: dib0700: fix invalid dvb_detach argument
+
+Arvind Yadav (3):
+      media: imon: Fix null-ptr-deref in imon_probe
+      drm/sti: sti_vtg: Handle return NULL error from devm_ioremap_nocache
+      gpu: drm: mgag200: mgag200_main:- Handle error from pci_iomap
+
+Bernhard Rosenkraenzer (1):
+      USB: Add delay-init quirk for Corsair K70 LUX keyboards
+
+Bjørn Mork (2):
+      net: cdc_ether: fix divide by 0 on bad descriptors
+      net: qmi_wwan: fix divide by 0 on bad descriptors
+
+Chen Gang (1):
+      mm: add PHYS_PFN, use it in __phys_to_pfn()
+
+Daniel Borkmann (1):
+      bpf: don't let ldimm64 leak map addresses on unprivileged
+
+Dmitry V. Levin (2):
+      uapi: fix linux/rds.h userspace compilation error
+      uapi: fix linux/rds.h userspace compilation errors
+
+Douglas Fischer (1):
+      USB: serial: qcserial: add pid/vid for Sierra Wireless EM7355 fw update
+
+Emil Tantilov (4):
+      ixgbe: fix AER error handling
+      ixgbe: handle close/suspend race with netif_device_detach/present
+      ixgbe: add mask for 64 RSS queues
+      ixgbe: do not disable FEC from the driver
+
+Eric Biggers (1):
+      arm: crypto: reduce priority of bit-sliced AES cipher
+
+Galo Navarro (1):
+      staging: rtl8188eu: fix incorrect ERROR tags from logs
+
+Geert Uytterhoeven (3):
+      ata: ATA_BMDMA should depend on HAS_DMA
+      ata: SATA_HIGHBANK should depend on HAS_DMA
+      ata: SATA_MV should depend on HAS_DMA
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.100
+
+Hannu Lounento (1):
+      igb: Fix hw_dbg logging in igb_update_flash_i210
+
+James Smart (5):
+      scsi: lpfc: Add missing memory barrier
+      scsi: lpfc: FCoE VPort enable-disable does not bring up the VPort
+      scsi: lpfc: Correct host name in symbolic_name field
+      scsi: lpfc: Correct issue leading to oops during link reset
+      scsi: lpfc: Clear the VendorVersion in the PLOGI/PLOGI ACC payload
+
+Jan Beulich (1):
+      xen-blkback: don't leak stack data via response ring
+
+Jan Kara (1):
+      ext4: fix data exposure after a crash
+
+Jannik Becher (1):
+      staging: rtl8712: fixed little endian problem
+
+Javier Martinez Canillas (1):
+      scsi: ufs-qcom: Fix module autoload
+
+Johan Hovold (2):
+      USB: serial: garmin_gps: fix I/O after failed probe and remove
+      USB: serial: garmin_gps: fix memory leak on probe errors
+
+Jon Mason (1):
+      arm64: dts: NS2: reserve memory for Nitro firmware
+
+Kailang Yang (1):
+      ALSA: hda/realtek - Add new codec ID ALC299
+
+Leif Liddy (1):
+      Bluetooth: btusb: fix QCA Rome suspend/resume
+
+Marcin Nowakowski (2):
+      MIPS: init: Ensure bootmem does not corrupt reserved memory
+      MIPS: init: Ensure reserved memory regions are not added to bootmem
+
+Martijn Coenen (1):
+      ANDROID: binder: clarify deferred thread work.
+
+Nathan Chancellor (1):
+      Merge 4.4.100 into 8.0.0-custom
+
+Ngai-Mint Kwan (1):
+      fm10k: request reset when mbx->state changes
+
+Paolo Bonzini (1):
+      KVM: x86: fix singlestepping over syscall
+
+Paul Burton (2):
+      MIPS: End asm function prologue macros with .insn
+      MIPS: Netlogic: Exclude netlogic,xlp-pic code from XLR builds
+
+Roger Quadros (1):
+      extcon: palmas: Check the parent instance to prevent the NULL
+
+Sasha Levin (2):
+      Revert "crypto: xts - Add ECB dependency"
+      Revert "uapi: fix linux/rds.h userspace compilation errors"
+
+Takashi Iwai (2):
+      ALSA: vx: Don't try to update capture stream before running
+      ALSA: vx: Fix possible transfer overflow
+
+Todd Fujinaka (1):
+      igb: close/suspend race in netif_device_detach
+
+Todd Kjos (1):
+      FROMLIST: binder: fix proc->files use-after-free
+
+Tony Lindgren (4):
+      ARM: dts: Fix compatible for ti81xx uarts for 8250
+      ARM: dts: Fix am335x and dm814x scm syscon to probe children
+      ARM: OMAP2+: Fix init for multiple quirks for the same SoC
+      ARM: dts: Fix omap3 off mode pull defines
+
+Tony Nguyen (1):
+      ixgbe: Reduce I2C retry count on X550 devices
+
+Uwe Kleine-König (1):
+      backlight: lcd: Fix race condition during register
+
+Xin Long (1):
+      sctp: do not peel off an assoc from one netns to another one
+
+subhashj@codeaurora.org (1):
+      scsi: ufs: add capability to keep auto bkops always enabled
+
+ Makefile                                      |   2 +-
+ arch/arm/boot/dts/am33xx.dtsi                 |   3 +-
+ arch/arm/boot/dts/dm814x.dtsi                 |   9 ++-
+ arch/arm/boot/dts/dm816x.dtsi                 |   6 +-
+ arch/arm/crypto/aesbs-glue.c                  |   6 +-
+ arch/arm/mach-omap2/pdata-quirks.c            |   1 -
+ arch/arm64/boot/dts/broadcom/ns2.dtsi         |   2 +
+ arch/mips/include/asm/asm.h                   |  10 ++-
+ arch/mips/kernel/setup.c                      |  78 +++++++++++++++++++-
+ arch/mips/netlogic/common/irq.c               |   4 +-
+ arch/x86/include/asm/kvm_emulate.h            |   1 +
+ arch/x86/kvm/emulate.c                        |   1 +
+ arch/x86/kvm/x86.c                            |  52 ++++++-------
+ crypto/Kconfig                                |   1 -
+ drivers/android/binder.c                      |  78 ++++++++++----------
+ drivers/ata/Kconfig                           |   3 +
+ drivers/block/xen-blkback/blkback.c           |  23 +++---
+ drivers/block/xen-blkback/common.h            |  25 ++-----
+ drivers/bluetooth/btusb.c                     |   6 ++
+ drivers/dma/dmatest.c                         |   1 +
+ drivers/extcon/extcon-palmas.c                |   5 ++
+ drivers/gpu/drm/mgag200/mgag200_main.c        |   2 +
+ drivers/gpu/drm/sti/sti_vtg.c                 |   4 +
+ drivers/media/rc/imon.c                       |   5 ++
+ drivers/media/usb/dvb-usb/dib0700_devices.c   |  24 +++---
+ drivers/net/ethernet/intel/fm10k/fm10k_mbx.c  |  10 ++-
+ drivers/net/ethernet/intel/fm10k/fm10k_pci.c  |   6 +-
+ drivers/net/ethernet/intel/igb/e1000_82575.c  |  11 +++
+ drivers/net/ethernet/intel/igb/e1000_i210.c   |   4 +-
+ drivers/net/ethernet/intel/igb/igb_main.c     |  21 +++---
+ drivers/net/ethernet/intel/ixgbe/ixgbe_lib.c  |   8 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_main.c |  23 +++---
+ drivers/net/ethernet/intel/ixgbe/ixgbe_phy.c  |   4 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_x550.c |   2 -
+ drivers/net/usb/cdc_ether.c                   |   2 +-
+ drivers/net/usb/qmi_wwan.c                    |   2 +-
+ drivers/scsi/lpfc/lpfc_attr.c                 |  17 +++++
+ drivers/scsi/lpfc/lpfc_els.c                  |   6 ++
+ drivers/scsi/lpfc/lpfc_hw.h                   |   6 ++
+ drivers/scsi/lpfc/lpfc_sli.c                  |   3 +
+ drivers/scsi/lpfc/lpfc_vport.c                |   8 ++
+ drivers/scsi/ufs/ufs-qcom.c                   |   1 +
+ drivers/staging/rtl8188eu/include/rtw_debug.h |   2 +-
+ drivers/staging/rtl8712/rtl871x_ioctl_linux.c |   2 +-
+ drivers/usb/core/devio.c                      |  14 ++++
+ drivers/usb/core/quirks.c                     |   3 +
+ drivers/usb/serial/garmin_gps.c               |  22 +++++-
+ drivers/usb/serial/qcserial.c                 |   1 +
+ drivers/video/backlight/adp5520_bl.c          |  12 ++-
+ drivers/video/backlight/lcd.c                 |   4 +-
+ include/dt-bindings/pinctrl/omap.h            |   4 +-
+ include/uapi/linux/rds.h                      | 102 +++++++++++++-------------
+ net/sctp/socket.c                             |   4 +
+ sound/drivers/vx/vx_pcm.c                     |   8 +-
+ sound/pci/hda/patch_realtek.c                 |  10 +++
+ sound/pci/vx222/vx222_ops.c                   |  12 +--
+ sound/pcmcia/vx/vxp_ops.c                     |  12 +--
+ 57 files changed, 456 insertions(+), 242 deletions(-)
