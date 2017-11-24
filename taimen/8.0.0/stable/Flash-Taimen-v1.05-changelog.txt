@@ -1,0 +1,14 @@
+http://github.com/nathanchance/wahoo/commits/8.0.0
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.102
+
+Michal Hocko (1):
+      mm, hwpoison: fixup "mm: check the return value of lookup_page_ext for all call sites"
+
+Nathan Chancellor (1):
+      Merge 4.4.102 into 8.0.0
+
+ Makefile             | 2 +-
+ mm/debug-pagealloc.c | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
