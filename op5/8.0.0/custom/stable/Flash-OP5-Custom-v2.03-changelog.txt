@@ -1,0 +1,92 @@
+http://github.com/nathanchance/op5/commits/8.0.0-custom
+
+Cong Wang (1):
+      vlan: fix a use-after-free in vlan_device_event()
+
+Corey Minyard (1):
+      ipmi: fix unsigned long underflow
+
+Eric Dumazet (1):
+      tcp: do not mangle skb->cb[] in tcp_make_synack()
+
+Eric W. Biederman (1):
+      net/sctp: Always set scope_id in sctp_inet6_skb_msgname
+
+Greg Kroah-Hartman (2):
+      Linux 4.4.101
+      Linux 4.4.102
+
+Hangbin Liu (1):
+      bonding: discard lowest hash bit for 802.3ad layer3+4
+
+Huacai Chen (1):
+      fealnx: Fix building error on MIPS
+
+Jaewon Kim (1):
+      mm/page_ext.c: check if page_ext is not prepared
+
+Jan Harkes (1):
+      coda: fix 'kernel memory exposure attempt' in fsync
+
+Jann Horn (1):
+      mm/pagewalk.c: report holes in hugetlb ranges
+
+Jason A. Donenfeld (1):
+      af_netlink: ensure that NLMSG_DONE never fails in dumps
+
+Keith Busch (1):
+      nvme: Fix memory order on async queue deletion
+
+Lukas Wunner (1):
+      serial: omap: Fix EFR write on RTS deassertion
+
+Mark Rutland (1):
+      arm64: fix dump_instr when PAN and UAO are in use
+
+Michal Hocko (1):
+      mm, hwpoison: fixup "mm: check the return value of lookup_page_ext for all call sites"
+
+Nathan Chancellor (2):
+      Merge 4.4.101 into 8.0.0-custom
+      Merge 4.4.102 into 8.0.0-custom
+
+Pavel Tatashin (1):
+      mm/page_alloc.c: broken deferred calculation
+
+Roberto Sassu (1):
+      ima: do not update security.ima if appraisal status is not INTEGRITY_PASS
+
+Xin Long (1):
+      sctp: do not peel off an assoc from one netns to another one
+
+Yang Shi (1):
+      mm: check the return value of lookup_page_ext for all call sites
+
+Ye Yin (1):
+      netfilter/ipvs: clear ipvs_property flag when SKB net namespace changed
+
+alex chen (1):
+      ocfs2: should wait dio before inode lock in ocfs2_setattr()
+
+ Makefile                              |  2 +-
+ drivers/char/ipmi/ipmi_msghandler.c   | 10 ++++++----
+ drivers/net/bonding/bond_main.c       |  2 +-
+ drivers/net/ethernet/fealnx.c         |  6 +++---
+ drivers/nvme/host/pci.c               |  2 +-
+ drivers/tty/serial/omap-serial.c      |  2 +-
+ fs/coda/upcall.c                      |  3 +--
+ fs/ocfs2/file.c                       |  9 +++++++--
+ include/linux/mmzone.h                |  3 ++-
+ include/linux/skbuff.h                |  7 +++++++
+ mm/page_alloc.c                       | 27 ++++++++++++++++++---------
+ mm/page_ext.c                         |  4 ----
+ mm/pagewalk.c                         |  6 +++++-
+ net/8021q/vlan.c                      |  6 +++---
+ net/core/skbuff.c                     |  1 +
+ net/ipv4/tcp_output.c                 |  9 ++-------
+ net/netlink/af_netlink.c              | 17 +++++++++++------
+ net/netlink/af_netlink.h              |  1 +
+ net/sctp/ipv6.c                       |  2 ++
+ net/sctp/socket.c                     |  4 ++++
+ security/integrity/ima/ima_appraise.c |  3 +++
+ 21 files changed, 80 insertions(+), 46 deletions(-)
