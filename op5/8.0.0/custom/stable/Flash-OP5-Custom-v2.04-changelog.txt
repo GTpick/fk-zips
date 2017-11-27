@@ -1,0 +1,42 @@
+http://github.com/nathanchance/op5/commits/8.0.0-custom
+
+Adrian Salido (1):
+      msm: mdss: save state of vsync handler
+
+Banajit Goswami (2):
+      soc: q6dspv2: add api to vote for upgrading thread priority
+      ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade
+
+Eino-Ville Talvala (1):
+      msm_ispif: Increase timeout to 10 seconds from 1 second.
+
+Kumar Behera (1):
+      msm: cpp: Reduce cpp timeout on MC error
+
+Nathan Chancellor (1):
+      flash_defconfig: Enable NETFILTER_XT_TARGET_HL
+
+Praveen Chavan (1):
+      msm: vidc: Fix instance formats initialization issue
+
+Rob Herring (1):
+      UPSTREAM: tty: serial_core: add tty NULL check to uart_tx_stopped
+
+matt_huang (1):
+      pwm: qpnp: Fix qcom HW known issue
+
+ arch/arm64/configs/flash_defconfig                 |  1 +
+ .../media/platform/msm/camera_v2/ispif/msm_ispif.c |  2 +-
+ .../platform/msm/camera_v2/pproc/cpp/msm_cpp.c     |  2 +-
+ drivers/media/platform/msm/vidc/msm_vdec.c         | 28 +++++++++-
+ drivers/media/platform/msm/vidc/msm_venc.c         | 28 +++++++++-
+ drivers/pwm/pwm-qpnp.c                             |  4 ++
+ drivers/soc/qcom/qdsp6v2/apr.c                     | 64 ++++++++++++++++++++++
+ drivers/soc/qcom/qdsp6v2/apr_tal_glink.c           | 32 +++++++++++
+ drivers/video/fbdev/msm/mdss_mdp.h                 |  1 +
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c         | 12 +++-
+ include/linux/qdsp6v2/apr.h                        |  4 +-
+ include/linux/qdsp6v2/apr_tal.h                    |  6 ++
+ include/linux/serial_core.h                        |  2 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              | 22 ++++++++
+ 14 files changed, 199 insertions(+), 9 deletions(-)
