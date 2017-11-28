@@ -1,0 +1,137 @@
+http://github.com/nathanchance/wahoo/commits/8.0.0-queue-1.06
+
+Amit Pundir (1):
+      ANDROID: binder: fix format specifier for type binder_size_t
+
+Andrew Bresticker (1):
+      CHROMIUM: android: binder: Fix potential scheduling-while-atomic
+
+Arve Hjønnevåg (3):
+      android: binder: More offset validation
+      ANDROID: binder: Add strong ref checks
+      ANDROID: binder: Clear binder and cookie when setting handle in flat binder struct
+
+Badhri Jagan Sridharan (1):
+      FROMLIST: binder: change binder_stats to atomics
+
+Colin Cross (1):
+      Add BINDER_GET_NODE_DEBUG_INFO ioctl
+
+Ganesh Mahendran (2):
+      ANDROID: binder: init desired_prio.sched_policy before use it
+      ANDROID: binder: fix node sched policy calculation
+
+Mark Salyzyn (1):
+      Revert "CHROMIUM: android: binder: Fix potential scheduling-while-atomic"
+
+Martijn Coenen (30):
+      android: binder: split flat_binder_object.
+      android: binder: support multiple context managers.
+      android: binder: deal with contexts in debugfs.
+      android: binder: support multiple /dev instances.
+      android: binder: refactor binder_transact()
+      android: binder: add extra size to allocator.
+      android: binder: support for scatter-gather.
+      android: binder: support for file-descriptor arrays.
+      binder: use group leader instead of open thread
+      android: binder: move global binder state into context struct.
+      ANDROID: binder: add hwbinder,vndbinder to BINDER_DEVICES.
+      FROMLIST: binder: add more debug info when allocation fails.
+      FROMLIST: binder: protect transaction_stack with inner lock.
+      FROMLIST: binder: fix death race conditions
+      ANDROID: binder: remove proc waitqueue
+      ANDROID: binder: push new transactions to waiting threads.
+      ANDROID: binder: add support for RT prio inheritance.
+      ANDROID: binder: add min sched_policy to node.
+      ANDROID: binder: improve priority inheritance.
+      ANDROID: binder: add RT inheritance flag to node.
+      ANDROID: binder: don't check prio permissions on restore.
+      ANDROID: binder: Don't BUG_ON(!spin_is_locked()).
+      ANDROID: binder: call poll_wait() unconditionally.
+      ANDROID: binder: don't enqueue death notifications to thread todo.
+      ANDROID: binder: don't queue async transactions to thread.
+      ANDROID: binder: Add tracing for binder priority inheritance.
+      ANDROID: binder: fix transaction leak.
+      ANDROID: binder: Add thread->process_todo flag.
+      ANDROID: binder: show high watermark of alloc->pages.
+      ANDROID: binder: clarify deferred thread work.
+
+Michal Hocko (1):
+      BACKPORT: partial: mm, oom_reaper: do not mmput synchronously from the oom reaper context
+
+Nathan Chancellor (2):
+      binder: Reset back to a common point with kernel/common
+      msm: sde_rotator_r3: Fix kernel crash when compiling with Clang 5.0
+
+Riley Andrews (2):
+      android: drivers: workaround debugfs race in binder
+      FROMLIST: binder: Use wake up hint for synchronous transactions.
+
+Sherry Yang (11):
+      FROMLIST: android: binder: Refactor prev and next buffer into a helper function
+      FROMLIST: android: binder: Add allocator selftest
+      FROMLIST: android: binder: Move buffer out of area shared with user space
+      FROMLIST: android: binder: Add global lru shrinker to binder
+      FROMLIST: android: binder: Add shrinker tracepoints
+      FROMLIST: android: binder: Add page usage in binder stats
+      FROMLIST: android: binder: Drop lru lock in isolate callback
+      FROMLIST: android: binder: Remove unused vma argument
+      FROMLIST: android: binder: Don't get mm from task
+      FROMLIST: android: binder: Change binder_shrinker to static
+      FROMLIST: android: binder: Fix null ptr dereference in debug msg
+
+Todd Kjos (35):
+      Revert "Revert "CHROMIUM: android: binder: Fix potential scheduling-while-atomic""
+      Revert "Revert "Revert "CHROMIUM: android: binder: Fix potential scheduling-while-atomic"""
+      Revert "android: binder: move global binder state into context struct."
+      FROMLIST: binder: separate binder allocator structure from binder proc
+      FROMLIST: binder: remove unneeded cleanup code
+      FROMLIST: binder: separate out binder_alloc functions
+      FROMLIST: binder: move binder_alloc to separate file
+      FROMLIST: binder: remove binder_debug_no_lock mechanism
+      FROMLIST: binder: add protection for non-perf cases
+      FROMLIST: binder: make binder_last_id an atomic
+      FROMLIST: binder: add log information for binder transaction failures
+      FROMLIST: binder: refactor queue management in binder_thread_read
+      FROMLIST: binder: avoid race conditions when enqueuing txn
+      FROMLIST: binder: don't modify thread->looper from other threads
+      FROMLIST: binder: remove dead code in binder_get_ref_for_node
+      FROMLIST: binder: protect against two threads freeing buffer
+      FROMLIST: binder: use atomic for transaction_log index
+      FROMLIST: binder: refactor binder_pop_transaction
+      FROMLIST: binder: guarantee txn complete / errors delivered in-order
+      FROMLIST: binder: make sure target_node has strong ref
+      FROMLIST: binder: make sure accesses to proc/thread are safe
+      FROMLIST: binder: refactor binder ref inc/dec for thread safety
+      FROMLIST: binder: use node->tmp_refs to ensure node safety
+      FROMLIST: binder: introduce locking helper functions
+      FROMLIST: binder: use inner lock to sync work dq and node counts
+      FROMLIST: binder: add spinlocks to protect todo lists
+      FROMLIST: binder: add spinlock to protect binder_node
+      FROMLIST: binder: protect proc->nodes with inner lock
+      FROMLIST: binder: protect proc->threads with inner_lock
+      FROMLIST: binder: use inner lock to protect thread accounting
+      FROMLIST: binder: protect binder_ref with outer lock
+      FROMLIST: binder: protect against stale pointers in print_binder_transaction
+      FROMLIST: binder: remove global binder lock
+      FROMLIST: binder: fix use-after-free in binder_transaction()
+      FROMLIST: binder: fix proc->files use-after-free
+
+Xu YiPing (2):
+      FROMLIST: binder: fix memory corruption in binder_transaction binder
+      FROMLIST: binder: fix an ret value override
+
+ drivers/android/Kconfig                            |   10 +
+ drivers/android/Makefile                           |    1 +
+ drivers/android/binder.c                           | 4238 +++++++++++---------
+ drivers/android/binder_alloc.c                     |  619 ++-
+ drivers/android/binder_alloc.h                     |   95 +-
+ drivers/android/binder_alloc_selftest.c            |  310 ++
+ drivers/android/binder_trace.h                     |  109 +-
+ .../platform/msm/sde/rotator/sde_rotator_r3.c      |   23 +-
+ include/linux/mm_types.h                           |    2 +
+ include/linux/sched.h                              |    5 +
+ include/uapi/linux/android/binder.h                |   44 +-
+ kernel/fork.c                                      |   49 +-
+ 12 files changed, 3455 insertions(+), 2050 deletions(-)
+ create mode 100644 drivers/android/binder_alloc_selftest.c
