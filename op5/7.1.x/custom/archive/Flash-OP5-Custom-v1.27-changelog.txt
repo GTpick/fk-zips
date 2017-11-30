@@ -1,0 +1,371 @@
+http://github.com/nathanchance/op5/commits/7.1.x-custom
+
+Al Viro (1):
+      fix a page leak in vhost_scsi_iov_to_sgl() error recovery
+
+Andreas Rohner (1):
+      nilfs2: fix race condition that causes file system corruption
+
+Andrew Elble (1):
+      nfsd: deal with revoked delegations appropriately
+
+Arnd Bergmann (2):
+      isofs: fix timestamps beyond 2027
+      rtlwifi: fix uninitialized rtlhal->last_suspend_sec time
+
+Bart Van Assche (2):
+      IB/srpt: Do not accept invalid initiator port names
+      IB/srp: Avoid that a cable pull can trigger a kernel crash
+
+Bartosz Markowski (1):
+      ath10k: set CTS protection VDEV param only if VDEV is up
+
+Benjamin Poirier (3):
+      e1000e: Fix error path in link detection
+      e1000e: Fix return value test
+      e1000e: Separate signaling for link check/link up
+
+Bjorn Helgaas (1):
+      PCI: Apply _HPX settings only to relevant devices
+
+Brian King (7):
+      i40e: Use smp_rmb rather than read_barrier_depends
+      igb: Use smp_rmb rather than read_barrier_depends
+      igbvf: Use smp_rmb rather than read_barrier_depends
+      ixgbevf: Use smp_rmb rather than read_barrier_depends
+      i40evf: Use smp_rmb rather than read_barrier_depends
+      fm10k: Use smp_rmb rather than read_barrier_depends
+      ixgbe: Fix skb list corruption on Power systems
+
+Chris Wilson (1):
+      drm: Apply range restriction after color adjustment when allocation
+
+Christian Lamparter (1):
+      ath10k: fix potential memory leak in ath10k_wmi_tlv_op_pull_fw_stats()
+
+Chuck Lever (1):
+      nfs: Fix ugly referral attributes
+
+Claudio Imbrenda (1):
+      AF_VSOCK: Shrink the area influenced by prepare_to_wait
+
+Colin Ian King (1):
+      ASoC: rsnd: don't double free kctrl
+
+Coly Li (1):
+      bcache: check ca->alloc_thread initialized before wake up it
+
+Dan Carpenter (1):
+      eCryptfs: use after free in ecryptfs_release_messaging()
+
+Dan Williams (2):
+      libnvdimm, namespace: fix label initialization to use valid seq numbers
+      libnvdimm, namespace: make 'resource' attribute only readable by root
+
+Daniel Vetter (1):
+      drm/armada: Fix compile fail
+
+David Ahern (1):
+      net: Allow IP_MULTICAST_IF to set index to L3 slave
+
+Eric Biggers (3):
+      lib/mpi: call cond_resched() from mpi_powm() loop
+      dm bufio: fix integer overflow when limiting maximum cache size
+      fscrypt: lock mutex before checking for bounce page pool
+
+Florian Westphal (1):
+      netfilter: nf_tables: fix oob access
+
+Gabriele Mazzotta (1):
+      ALSA: hda - Apply ALC269_FIXUP_NO_SHUTUP on HDA_FIXUP_ACT_PROBE
+
+Geert Uytterhoeven (1):
+      spi: SPI_FSL_DSPI should depend on HAS_DMA
+
+Greg Kroah-Hartman (2):
+      Revert "sctp: do not peel off an assoc from one netns to another one"
+      Linux 4.4.103
+
+Heiko Carstens (4):
+      s390: fix transactional execution control register handling
+      s390/runtime instrumention: fix possible memory corruption
+      s390/disassembler: add missing end marker for e7 table
+      s390/kbuild: enable modversions for symbols exported from asm
+
+Henrik Eriksson (1):
+      ALSA: pcm: update tstamp only if audio_tstamp changed
+
+Hou Tao (1):
+      dm: fix race between dm_get_from_kobject() and __dm_destroy()
+
+Johan Hovold (3):
+      clk: ti: dra7-atl-clock: fix child-node lookups
+      NFC: fix device-allocation error return
+      cx231xx-cards: fix NULL-deref on missing association descriptor
+
+John David Anglin (1):
+      parisc: Fix validity check of pointer size argument in new CAS implementation
+
+Joshua Watt (1):
+      NFS: Fix typo in nomigration mount option
+
+Juergen Gross (1):
+      xen: xenbus driver must not accept invalid transaction ids
+
+Kailang Yang (1):
+      ALSA: hda/realtek - Fix ALC700 family no sound issue
+
+Ladi Prosek (1):
+      KVM: nVMX: set IDTR and GDTR limits when loading L1 host state
+
+Larry Finger (1):
+      rtlwifi: rtl8192ee: Fix memory leak when loading firmware
+
+Maciej W. Rozycki (1):
+      MIPS: Fix an n32 core file generation regset support regression
+
+Masami Hiramatsu (1):
+      x86/decoder: Add new TEST instruction pattern
+
+Masashi Honma (2):
+      mac80211: Remove invalid flag operations in mesh TSF synchronization
+      mac80211: Suppress NEW_PEER_CANDIDATE event if no room
+
+Mathias Kresin (2):
+      MIPS: ralink: Fix MT7628 pinmux
+      MIPS: ralink: Fix typo in mt7628 pinmux function
+
+Michele Baldessari (1):
+      media: Don't do DMA on stack for firmware upload in the AS102 driver
+
+Mirko Parthey (1):
+      MIPS: BCM47XX: Fix LED inversion for WRT54GSv1
+
+Nathan Chancellor (2):
+      Merge branch '7.1.x-base' into 7.1.x-oos
+      Merge branch '7.1.x-oos' into 7.1.x-custom
+
+Naveen N. Rao (1):
+      powerpc/signal: Properly handle return value from uprobe_deny_signal()
+
+NeilBrown (1):
+      autofs: don't fail mount for transient error
+
+Nicholas Bellinger (2):
+      iscsi-target: Fix non-immediate TMR reference leak
+      target: Fix QUEUE_FULL + SCSI task attribute handling
+
+Pablo Neira Ayuso (1):
+      netfilter: nft_queue: use raw_smp_processor_id()
+
+Pan Bian (3):
+      iio: light: fix improper return value
+      staging: iio: cdc: fix improper return value
+      btrfs: return the actual error value from from btrfs_uuid_tree_iterate
+
+Paolo Bonzini (1):
+      KVM: SVM: obey guest PAT
+
+Paul E. McKenney (1):
+      sched: Make resched_cpu() unconditional
+
+Peter Ujfalusi (1):
+      clk: ti: dra7-atl-clock: Fix of_node reference counting
+
+Philip Derrin (2):
+      ARM: 8722/1: mm: make STRICT_KERNEL_RWX effective for LPAE
+      ARM: 8721/1: mm: dump: check hardware RO bit for LPAE
+
+Rameshwar Prasad Sahu (1):
+      ata: fixes kernel crash while tracing ata_eh_link_autopsy event
+
+Ricardo Ribalda Delgado (1):
+      media: v4l2-ctrl: Fix flags field on Control events
+
+Richard Fitzgerald (1):
+      ASoC: wm_adsp: Don't overrun firmware file buffer when reading region data
+
+Ryan Hsu (2):
+      ath10k: fix incorrect txpower set by P2P_DEVICE interface
+      ath10k: ignore configuring the incorrect board_id
+
+Santosh Shilimkar (1):
+      RDS: RDMA: return appropriate error on rdma map failures
+
+Sean Young (1):
+      media: rc: check for integer overflow
+
+Shawn Guo (1):
+      dmaengine: zx: set DMA_CYCLIC cap_mask bit
+
+Steven Rostedt (Red Hat) (1):
+      sched/rt: Simplify the IPI based RT balancing logic
+
+Takashi Iwai (4):
+      ALSA: usb-audio: Add sanity checks to FE parser
+      ALSA: usb-audio: Fix potential out-of-bound access at parsing SU
+      ALSA: usb-audio: Add sanity checks in v2 clock parsers
+      ALSA: timer: Remove kernel warning at compat ioctl error paths
+
+Theodore Ts'o (1):
+      ext4: fix interaction between i_size, fallocate, and delalloc after a crash
+
+Thomas Preisner (2):
+      net: 3com: typhoon: typhoon_init_one: make return values more specific
+      net: 3com: typhoon: typhoon_init_one: fix incorrect return values
+
+Tobias Jordan (1):
+      PM / OPP: Add missing of_node_put(np)
+
+Trond Myklebust (1):
+      SUNRPC: Fix tracepoint storage issues with svc_recv and svc_rqst_status
+
+Tuomas Tynkkynen (2):
+      fs/9p: Compare qid.path in v9fs_test_inode
+      net/9p: Switch to wait_event_killable()
+
+Vasily Gorbik (1):
+      s390/disassembler: increase show_code buffer size
+
+Vijendar Mukunda (1):
+      ALSA: hda: Add Raven PCI ID
+
+WANG Cong (2):
+      ipv6: only call ip6_route_dev_notify() once for NETDEV_UNREGISTER
+      vsock: use new wait API for vsock_stream_sendmsg()
+
+XiNGRZ (1):
+      qpnp-haptic: make its strength adjustable in VibratorHW
+
+ Makefile                                           |   2 +-
+ arch/arm/mm/dump.c                                 |   4 +-
+ arch/arm/mm/init.c                                 |   4 +-
+ arch/mips/bcm47xx/leds.c                           |   2 +-
+ arch/mips/kernel/ptrace.c                          |  17 ++
+ arch/mips/ralink/mt7620.c                          |   4 +-
+ arch/parisc/kernel/syscall.S                       |   6 +-
+ arch/powerpc/kernel/signal.c                       |   2 +-
+ arch/s390/include/asm/asm-prototypes.h             |   8 +
+ arch/s390/include/asm/switch_to.h                  |   2 +-
+ arch/s390/kernel/dis.c                             |   5 +-
+ arch/s390/kernel/early.c                           |   4 +-
+ arch/s390/kernel/process.c                         |   1 +
+ arch/s390/kernel/runtime_instr.c                   |   4 +-
+ arch/x86/kvm/svm.c                                 |   7 +
+ arch/x86/kvm/vmx.c                                 |   2 +
+ arch/x86/lib/x86-opcode-map.txt                    |   2 +-
+ drivers/ata/libata-eh.c                            |   2 +-
+ drivers/base/power/opp/core.c                      |   1 +
+ drivers/clk/ti/clk-dra7-atl.c                      |   3 +-
+ drivers/dma/zx296702_dma.c                         |   1 +
+ drivers/gpu/drm/armada/Makefile                    |   2 +
+ drivers/gpu/drm/drm_mm.c                           |  16 +-
+ drivers/iio/light/cm3232.c                         |   2 +-
+ drivers/infiniband/ulp/srp/ib_srp.c                |  25 ++-
+ drivers/infiniband/ulp/srpt/ib_srpt.c              |   9 +-
+ drivers/md/bcache/alloc.c                          |   3 +-
+ drivers/md/dm-bufio.c                              |  15 +-
+ drivers/md/dm.c                                    |  12 +-
+ drivers/media/rc/ir-lirc-codec.c                   |   9 +-
+ drivers/media/usb/as102/as102_fw.c                 |  28 ++-
+ drivers/media/usb/cx231xx/cx231xx-cards.c          |   2 +-
+ drivers/media/v4l2-core/v4l2-ctrls.c               |  16 +-
+ drivers/net/ethernet/3com/typhoon.c                |  25 ++-
+ drivers/net/ethernet/intel/e1000e/mac.c            |  11 +-
+ drivers/net/ethernet/intel/e1000e/netdev.c         |   4 +-
+ drivers/net/ethernet/intel/e1000e/phy.c            |   7 +-
+ drivers/net/ethernet/intel/fm10k/fm10k_main.c      |   2 +-
+ drivers/net/ethernet/intel/i40e/i40e_main.c        |   2 +-
+ drivers/net/ethernet/intel/i40e/i40e_txrx.c        |   2 +-
+ drivers/net/ethernet/intel/i40evf/i40e_txrx.c      |   2 +-
+ drivers/net/ethernet/intel/igb/igb_main.c          |   2 +-
+ drivers/net/ethernet/intel/igbvf/netdev.c          |   2 +-
+ drivers/net/ethernet/intel/ixgbe/ixgbe_main.c      |   2 +-
+ drivers/net/ethernet/intel/ixgbevf/ixgbevf_main.c  |   2 +-
+ drivers/net/wireless/ath/ath10k/core.c             |   5 +-
+ drivers/net/wireless/ath/ath10k/mac.c              |  58 ++++-
+ drivers/net/wireless/ath/ath10k/wmi-tlv.c          |  12 +-
+ .../net/wireless/realtek/rtlwifi/rtl8192ee/fw.c    |   6 +-
+ .../net/wireless/realtek/rtlwifi/rtl8821ae/hw.c    |   1 +
+ drivers/nvdimm/label.c                             |   2 +-
+ drivers/nvdimm/namespace_devs.c                    |   2 +-
+ drivers/pci/probe.c                                |  15 +-
+ drivers/soc/qcom/qpnp-haptic.c                     |  29 +++
+ drivers/spi/Kconfig                                |   1 +
+ drivers/staging/iio/cdc/ad7150.c                   |   2 +-
+ drivers/target/iscsi/iscsi_target.c                |   8 +-
+ drivers/target/target_core_transport.c             |   4 +
+ drivers/vhost/scsi.c                               |   5 +-
+ drivers/xen/xenbus/xenbus_dev_frontend.c           |   2 +-
+ fs/9p/vfs_inode.c                                  |   3 +
+ fs/9p/vfs_inode_dotl.c                             |   3 +
+ fs/autofs4/waitq.c                                 |  15 +-
+ fs/btrfs/uuid-tree.c                               |   4 +-
+ fs/ecryptfs/messaging.c                            |   7 +-
+ fs/ext4/crypto_key.c                               |   8 +-
+ fs/ext4/extents.c                                  |   6 +-
+ fs/isofs/isofs.h                                   |   2 +-
+ fs/isofs/rock.h                                    |   2 +-
+ fs/isofs/util.c                                    |   2 +-
+ fs/nfs/nfs4proc.c                                  |  18 +-
+ fs/nfs/super.c                                     |   2 +-
+ fs/nfsd/nfs4state.c                                |  25 ++-
+ fs/nilfs2/segment.c                                |   6 +-
+ include/trace/events/sunrpc.h                      |  17 +-
+ kernel/sched/core.c                                |   9 +-
+ kernel/sched/rt.c                                  | 235 ++++++++++-----------
+ kernel/sched/sched.h                               |  24 ++-
+ lib/mpi/mpi-pow.c                                  |   2 +
+ net/9p/client.c                                    |   3 +-
+ net/9p/trans_virtio.c                              |  13 +-
+ net/ipv4/ip_sockglue.c                             |   7 +-
+ net/ipv6/ipv6_sockglue.c                           |  16 +-
+ net/ipv6/route.c                                   |   6 +-
+ net/mac80211/ieee80211_i.h                         |   1 -
+ net/mac80211/mesh.c                                |   3 -
+ net/mac80211/mesh_plink.c                          |  14 +-
+ net/mac80211/mesh_sync.c                           |  11 -
+ net/netfilter/nf_tables_api.c                      |   2 +-
+ net/netfilter/nft_queue.c                          |   2 +-
+ net/nfc/core.c                                     |   2 +-
+ net/rds/send.c                                     |  11 +-
+ net/sctp/socket.c                                  |   4 -
+ net/vmw_vsock/af_vsock.c                           | 167 ++++++++-------
+ sound/core/pcm_lib.c                               |   6 +-
+ sound/core/timer_compat.c                          |  12 +-
+ sound/pci/hda/hda_intel.c                          |   3 +
+ sound/pci/hda/patch_realtek.c                      |   4 +-
+ sound/soc/codecs/wm_adsp.c                         |  25 ++-
+ sound/soc/sh/rcar/core.c                           |   4 +-
+ sound/usb/clock.c                                  |   9 +-
+ sound/usb/mixer.c                                  |  15 +-
+ 102 files changed, 727 insertions(+), 440 deletions(-)
+ create mode 100644 arch/s390/include/asm/asm-prototypes.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-7.1.x
+
+Nathan Chancellor (2):
+      Merge branch 'master' into op5-flash-7.1.x
+      Merge branch 'master' into op5-flash-7.1.x
+
+osm0sis (10):
+      AK2+tools: add support for alternate ramdisk compression formats
+      README: update documentation for multiple compression support
+      AK2: allow forcing repack ramdisk compression format of choice
+      anykernel: add ramdisk_compression shell variable, see 0535fd7ca0c569826a23299ea3e38278392a1e9a
+      README: update documentation for ramdisk_compression variable
+      AK2: tidy up compression support a little more
+      anykernel: underp ownership, thanks @attack11
+      Example: remove AK2 attribute command confusing to new adopters
+      AK2: add dtbo and Pixel 2 slot prop support
+      README: update for dtbo support
+
+ README.md         |   7 +++++--
+ anykernel.sh      |   3 ++-
+ tools/ak2-core.sh |  54 +++++++++++++++++++++++++++++++++++++++++++++++++++---
+ tools/lz4         | Bin 0 -> 158552 bytes
+ tools/xz          | Bin 0 -> 265416 bytes
+ 5 files changed, 58 insertions(+), 6 deletions(-)
+ create mode 100644 tools/lz4
+ create mode 100644 tools/xz
