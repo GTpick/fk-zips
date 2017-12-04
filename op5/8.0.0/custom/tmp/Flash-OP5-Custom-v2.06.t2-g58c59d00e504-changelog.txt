@@ -952,3 +952,16 @@ Will Huang (2):
  create mode 100644 net/wireguard/timers.h
  create mode 100644 net/wireguard/uapi/wireguard.h
  create mode 100644 net/wireguard/version.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Nathan Chancellor (1):
+      Merge branch 'master' into op5-flash-8.0.0
+
+osm0sis (1):
+      AK2+Backend: misc fixes
+
+ META-INF/com/google/android/update-binary |  2 +-
+ tools/ak2-core.sh                         | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
