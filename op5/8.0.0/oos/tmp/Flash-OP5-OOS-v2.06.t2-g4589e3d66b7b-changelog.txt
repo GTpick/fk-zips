@@ -1,0 +1,965 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos-queue-2.06
+
+Abhinav Kumar (4):
+      drm/msm: fix zero device count HDCP repeater test cases
+      drm/msm: add SRM support for HDCP 1.4
+      drm/msm: disable HDCP before turning off timing engine
+      drm/msm: implement HDMI teardown sequence for DRM driver
+
+Ajay Agarwal (1):
+      dwc3: Do not perform core reinitialisation for host only mode
+
+Alexander Potapenko (1):
+      UPSTREAM: llist: clang: introduce member_address_is_nonnull()
+
+Anirudh Ghayal (1):
+      power: qpnp-fg-gen3: Get the raw MSOC directly from FG register
+
+Archana Sathyakumar (2):
+      soc: qcom: rpm_stats: Fix snprintf string format
+      cpuidle: lpm-levels: Fix snprintf string format
+
+Ard Biesheuvel (1):
+      UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+
+Arnd Bergmann (1):
+      UPSTREAM: locking/static_keys: Avoid nested functions
+
+Balvinder Singh (2):
+      [Bluetooth] - Fix for checking proper user-supplied buffers
+      Bluetooth: Fix for checking proper user-supplied buffers
+
+Behan Webster (5):
+      LLVMLINUX: kbuild, LLVMLinux: Add better clang cross build support
+      LLVMLINUX: kbuild, LLVMLinux: Add more compiler options for clang
+      LLVMLINUX: kbuild, LLVMLinux: Fix asm-offset generation to work with clang
+      LLVMLINUX: Mark inline functions as __maybe_unused
+      LLVMLINUX: LLVMLinux: use -Oz instead of -Os when using clang
+
+Bernhard Rosenkränzer (2):
+      LINARO: Add -meabi gnu to the clang parameters
+      Fix for compilation with clang
+
+Daniel Rosenberg (3):
+      ANDROID: mnt: Fix freeing of mount data
+      ANDROID: Sdcardfs: Move gid derivation under flag
+      ANDROID: sdcardfs: Add missing break
+
+David Rientjes (2):
+      BACKPORT: compiler, clang: always inline when CONFIG_OPTIMIZE_INLINING is disabled
+      BACKPORT: compiler, clang: suppress warning for unused static inline functions
+
+Dhoat Harpal (1):
+      soc: qcom: ipc_router_glink_xprt: Change wake source name
+
+Gaoxiang Chen (1):
+      msm: camera: isp: don't set stripe_rd reload bit during hw reset
+
+Gerrit - the friendly Code Review server (1):
+      Merge changes  into msm-4.4.c7
+
+Greg Hackmann (17):
+      ANDROID: drivers: acpi: fix link error with ACPI_PROCESSOR=y, ACPI_PROCESSOR_IDLE=n
+      ANDROID: Kbuild, LLVMLinux: fix GCC_TOOLCHAIN definition
+      ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple
+      ANDROID: Kbuild, LLVMLinux: disable clang -Wpointer-bool-conversion
+      ANDROID: kasan, LLVMLinux: add clang-specific CFLAGS_KASAN
+      ANDROID: HACK: firmware, LLVMLinux: fix EFI libstub with clang
+      ANDROID: HACK: arm64: crypto, LLVMLinux: explictly pass -mcpu option to gas
+      ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float
+      ANDROID: HACK: arm64, LLVMLinux: replace prfm instruction in spin_lock_prefetch()
+      ANDROID: HACK: futex, LLVMLinux: don't optimize futex_detect_cmpxchg() on ARM64
+      drivers: soc: qcom: fix register names on ARM64
+      drivers: media: msm: don't use nested functions
+      drivers: staging: qcacld-3.0: don't treat some clang warnings as errors
+      HACK: drivers: staging: qcacld-3.0: increase clang frame-larger-than threshold
+      HACK: drivers: soc: qcom: fix boot failures with clang-built kernel
+      drivers: staging: qcacld-3.0: treat more clang warnings as no-error
+      Revert "LLVMLINUX: kbuild, LLVMLinux: Fix asm-offset generation to work with clang"
+
+Haibin Liu (1):
+      msm: sensor: actuator: avoid accessing out of bound memory
+
+Hardik Arya (2):
+      diag: Add NULL pointer checks for mask info
+      diag: Flush mdlog table entries while reallocation of data buffer
+
+Ian Abbott (2):
+      BACKPORT: bug: split BUILD_BUG stuff out into <linux/build_bug.h>
+      BACKPORT: kernel.h: handle pointers to arrays better in container_of()
+
+Jaegeuk Kim (1):
+      ANDROID: sdcardfs: override credential for ioctl to lower fs
+
+Jeroen Hofstee (1):
+      UPSTREAM: kbuild: fix asm-offset generation to work with clang
+
+Jitendra Sharma (3):
+      drivers: media: rc: Add keymap files for new remotes
+      ARM: dts: msm: Enable IR GPIO and pinctrls on apq8098
+      soc: qcom: pil: Fix error handling during PIL driver probe
+
+Johannes Berg (1):
+      BACKPORT: cfg80211: remove enum ieee80211_band
+
+John Stultz (2):
+      BACKPORT: time: Fix CLOCK_MONOTONIC_RAW sub-nanosecond accounting
+      BACKPORT: time: Clean up CLOCK_MONOTONIC_RAW time handling
+
+Linus Torvalds (1):
+      BACKPORT: compiler, clang: properly override 'inline' for clang
+
+Linux Build Service Account (53):
+      Merge "drivers: media: rc: Disable auto repeat"
+      Merge "dwc3: Check USB LPM status before accessing any register"
+      Merge "msm: wlan: Update regulatory database"
+      Merge "clk: qcom: Add support for 430MHz for gpu clock on sdm660"
+      Merge "power: qcom: smb135x: change OTG regulator ops to static"
+      Merge "power_supply: add POWER_SUPPLY_PROP_{COLD,HOT}_TEMP properties"
+      Merge "ARM: dts: msm: fix size-cells for smb138x"
+      Merge "ARM: dts: msm: update the battery profile for ascent 3450mAh battery"
+      Merge "power: qpnp-fg-gen3: update SOC masking algorithm"
+      Merge "power: qpnp-fg-gen3: adjust ki coefficient for full soc dynamically"
+      Merge "power: qpnp-fg-gen3: Get the raw MSOC directly from FG register"
+      Merge "power: qpnp-fg-gen3: apply SOC linearization based on user input"
+      Merge "soc: qcom: scm: Remap scm busy error codes to -EBUSY"
+      Merge "security: pfe: Return proper error code"
+      Merge "msm: wlan: Update regulatory database"
+      Merge "ARM: dts: msm: Enable IR GPIO and pinctrls on apq8098"
+      Merge "diag: Flush mdlog table entries while reallocation of data buffer"
+      Merge "dwc3: Do not perform core reinitialisation for host only mode"
+      Merge "drm/msm: fix zero device count HDCP repeater test cases"
+      Merge "msm: vidc: Fix sequence change event properly"
+      Merge "serial: msm_serial_hs: Do not accept Rx Data till the Rx pipe connect"
+      Merge "msm: ipa: freeing null pointer causing device crash"
+      Merge "ASoC: msm: qdsp6v2: Remove excess logs in compress driver"
+      Merge "ASoC: sdm660_cdc:  Fix pop noise when device switch"
+      Merge "ARM: dts: msm: update route map for sdm660 internal codec"
+      Merge "power: qcom: msm-core: Add mutex lock for ioctl"
+      Merge "[Bluetooth] - Fix for checking proper user-supplied buffers"
+      Merge "msm: ipa: protect q6_proxy_clk_vote"
+      Merge "msm: ipa: Fix to use GFP_DMA flag"
+      Merge "msm: kgsl: Use the bind lock when dumping entries"
+      Merge "soc: qcom: ipc_router_glink_xprt: Change wake source name"
+      Merge "msm: ipa: Fix to race condition proxy clock voting"
+      Merge "diag: Free the memory in diagfwd_peripheral_exit()"
+      Merge "diag: Add NULL pointer checks for mask info"
+      Merge "cpuidle: lpm-levels: Fix snprintf string format"
+      Merge "soc: qcom: rpm_stats: Fix snprintf string format"
+      Merge "defconfig: Enable DFS support for ath10k"
+      Merge "msm: camera: isp: don't set stripe_rd reload bit during hw reset"
+      Merge "soc: qcom: pil: Fix error handling during PIL driver probe"
+      Merge "msm: ipa3: Fix IPA aggregation force close call"
+      Merge "ASoC: codecs: Fix pop noise in HPH plus LO4 concurrent usecase"
+      Merge "Prevent potential double frees in sg driver"
+      Merge "msm: mdss: hdmi: add SRM support for HDCP1.4"
+      Merge "msm: mdss: dp: fix programming of DisplayPort SDP registers"
+      Merge "msm: mdss: hdmi: fix HDCP1.4 authentication issues"
+      Merge "Bluetooth: Fix for checking proper user-supplied buffers"
+      Merge "msm: mdss: hdmi: add pll_enable property to support clock recovery"
+      Merge "drm/msm: implement HDMI teardown sequence for DRM driver"
+      Merge "msm: ipa: UAPI security code changes"
+      Merge "ANDROID: mnt: Fix freeing of mount data"
+      Merge "ANDROID: sdcardfs: Add missing break"
+      Merge "msm: vidc: Update extradata address mapping"
+      Merge 5dfb5a3844289d8e42062decbe662a33c1a9b9e6 on remote branch
+
+Lorenzo Colitti (1):
+      UPSTREAM: net: xfrm: allow clearing socket xfrm policies.
+
+Lynus Vaz (1):
+      msm: kgsl: Use the bind lock when dumping entries
+
+Mark Charlebois (5):
+      LLVMLINUX: Kbuild: LLVMLinux: Disable the use of the Integrated Assembler when compiling with Clang
+      LLVMLINUX: fs, LLVMLinux: Remove warning from COMPATIBLE_IOCTL
+      LLVMLINUX: kbuild, LLVMLinux: Add -Werror to cc-option to support clang
+      LLVMLINUX: DO-NOT-UPSTREAM crypto: LLVMLinux: Explicitly pass through assembler options
+      LLVMLINUX: DO-NOT-UPSTREAM arm64, LLVMLinux: prfm
+
+Mark Rutland (1):
+      UPSTREAM: arm64: vdso: fix clock_getres for 4GiB-aligned res
+
+Masahiro Yamada (1):
+      UPSTREAM: kbuild: consolidate redundant sed script ASM offset generation
+
+Matthias Kaehlcke (9):
+      UPSTREAM: kbuild: Consolidate header generation from ASM offset information
+      BACKPORT: kbuild: clang: Disable 'address-of-packed-member' warning
+      UPSTREAM: dmaengine: Fix array index out of bounds warning in __get_unmap_pool()
+      UPSTREAM: dm ioctl: remove double parentheses
+      FROMLIST: mm/zsmalloc: Change stat type parameter to int
+      BACKPORT: netfilter: ctnetlink: Make some parameters integer to avoid enum mismatch
+      UPSTREAM: nl80211: Fix enum type of variable in nl80211_put_sta_rate()
+      module: Remove const attribute from alias for MODULE_DEVICE_TABLE
+      CHROMIUM: kbuild: clang: Disable the 'duplicate-decl-specifier' warning
+
+Maulik Shah (1):
+      power: qcom: msm-core: Add mutex lock for ioctl
+
+Mayank Rana (1):
+      dwc3: Check USB LPM status before accessing any register
+
+Mohammed Javid (5):
+      msm: ipa: UAPI security code changes
+      msm: ipa: freeing null pointer causing device crash
+      msm: ipa: Fix to use GFP_DMA flag
+      msm: ipa: Fix to race condition proxy clock voting
+      msm: ipa3: Fix IPA aggregation force close call
+
+Mukesh Kumar Savaliya (1):
+      serial: msm_serial_hs: Do not accept Rx Data till the Rx pipe connect
+
+Narender Ankam (4):
+      msm: mdss: hdmi: add pll_enable property to support clock recovery
+      msm: mdss: hdmi: add SRM support for HDCP2.2
+      msm: mdss: hdmi: add SRM support for HDCP1.4
+      msm: mdss: hdmi: fix HDCP1.4 authentication issues
+
+Nathan Chancellor (15):
+      drivers: Revert some files back to the stock CAF version
+      Merge LA.UM.6.4.r1-05100-8x98.0 into 8.0.0-oos
+      drivers: staging: Update Wi-Fi stack (LA.UM.6.4.r1-05100-8x98.0)
+      Remove Flash optimizations
+      TEMP: flash_defconfig: Disable CC_WERROR
+      touchscreen: fw_update_v7: Fix constant logical operand warning
+      codecs: tfa9891: Hide self assign Clang warnings
+      soc: qcom: qpnp-haptic: Hide self assign Clang warnings
+      drivers: staging: qcacld-3.0: Fix enum conversion warnings from Clang
+      Revert "TEMP: flash_defconfig: Disable CC_WERROR"
+      HACK: kbuild: mkcompile_h: Add trailing space to LINUX_COMPILER
+      Makefile: Slim down CONFIG_CC_OPTIMIZE_FOR_SIZE block
+      Makefile: Use O3 for Clang
+      wireguard: Add initial files
+      Revert "qpnp-haptic: restore vmax sysfs node and add global vibration strength control"
+
+Neeraj Soni (1):
+      security: pfe: Return proper error code
+
+Neeraj Upadhyay (1):
+      soc: qcom: scm: Remap scm busy error codes to -EBUSY
+
+Nick Desaulniers (10):
+      Revert "LLVMLINUX: Mark inline functions as __maybe_unused"
+      BACKPORT: PCI: Make PCI_ROM_ADDRESS_MASK a 32-bit constant
+      Revert "Fix for compilation with clang"
+      UPSTREAM: mm/zsmalloc.c: fix -Wunneeded-internal-declaration warning
+      FROMLIST: netfilter: nf_nat_h323: fix logical-not-parentheses warning
+      ANDROID: HACK: Makefile: whitelist CFLAGS to reenable Werror
+      drivers: firmware: qcom: more specific -Wno-* subdirs
+      ion: system_secure_heap: fix constant logical comparison bug
+      ANDROID: HACK: Makefile: fix all build warnings for in tree code
+      Input: mousedev - fix implicit conversion warning
+
+Odelu Kukatla (1):
+      clk: qcom: Add support for 430MHz for gpu clock on sdm660
+
+Padmanabhan Komanduru (1):
+      msm: mdss: dp: fix programming of DisplayPort SDP registers
+
+Rahul Sharma (1):
+      msm: ais: sensor: actuator: avoid accessing out of bound memory
+
+Robb Glasser (1):
+      Prevent potential double frees in sg driver
+
+Sami Tolvanen (3):
+      Revert "HACK: drivers: soc: qcom: fix boot failures with clang-built kernel"
+      soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*
+      msm: sde: fix unaligned memory read
+
+Skylar Chang (1):
+      msm: ipa: protect q6_proxy_clk_vote
+
+Sreelakshmi Gownipalli (1):
+      diag: Free the memory in diagfwd_peripheral_exit()
+
+Srinivas Girigowda (1):
+      cfg80211: Support backport of removing ieee80211
+
+Stephen Rothwell (1):
+      include/linux/dcache.h: use unsigned chars in struct name_snapshot
+
+Subbaraman Narayanamurthy (7):
+      power: qcom: smb135x: change OTG regulator ops to static
+      power_supply: add POWER_SUPPLY_PROP_{COLD,HOT}_TEMP properties
+      ARM: dts: msm: fix size-cells for smb138x
+      ARM: dts: msm: update the battery profile for ascent 3450mAh battery
+      power: qpnp-fg-gen3: update SOC masking algorithm
+      power: qpnp-fg-gen3: apply SOC linearization based on user input
+      power: qpnp-fg-gen3: adjust ki coefficient for full soc dynamically
+
+Surabhi Vishnoi (1):
+      defconfig: Enable DFS support for ath10k
+
+Surajit Podder (2):
+      msm: vidc: Fix sequence change event properly
+      msm: vidc: Update extradata address mapping
+
+Surendar karka (1):
+      swr-wcd-ctrl: add check for end of soundwire port list
+
+Vatsal Bucha (4):
+      ASoC: msm: qdsp6v2: Remove excess logs in compress driver
+      ASoC: sdm660_cdc:  Fix pop noise when device switch
+      ARM: dts: msm: update route map for sdm660 internal codec
+      ASoC: codecs: Fix pop noise in HPH plus LO4 concurrent usecase
+
+Venkataraman Nerellapalli (1):
+      drivers: media: rc: Disable auto repeat
+
+Vijayavardhan Vennapusa (1):
+      USB: configfs: Don't send DISCONNECT uevent during unbind
+
+Will Huang (2):
+      msm: wlan: Update regulatory database
+      msm: wlan: Update regulatory database
+
+ Documentation/DocBook/80211.tmpl                   |    1 -
+ .../bindings/power/supply/qcom/qpnp-fg-gen3.txt    |   15 +
+ Kbuild                                             |   25 -
+ Makefile                                           |   57 +-
+ arch/arm/boot/dts/qcom/apq8098-v2.1-mediabox.dts   |    8 +
+ .../qcom/fg-gen3-batterydata-ascent-3450mah.dtsi   |  120 +-
+ arch/arm/boot/dts/qcom/msm-audio.dtsi              |    2 +
+ arch/arm/boot/dts/qcom/msm-smb138x.dtsi            |    2 +-
+ arch/arm/boot/dts/qcom/msm8998-pinctrl.dtsi        |   12 +
+ arch/arm64/Makefile                                |   22 +-
+ .../configs/msmcortex_mediabox-perf_defconfig      |    2 +
+ arch/arm64/configs/msmcortex_mediabox_defconfig    |    2 +
+ arch/arm64/crypto/Makefile                         |    8 +-
+ arch/arm64/crypto/sha1-ce-core.S                   |    6 +-
+ arch/arm64/crypto/sha1-ce-glue.c                   |   11 +-
+ arch/arm64/crypto/sha2-ce-core.S                   |    6 +-
+ arch/arm64/crypto/sha2-ce-glue.c                   |   13 +-
+ arch/arm64/include/asm/processor.h                 |    6 +-
+ arch/arm64/kernel/vdso.c                           |    4 +-
+ arch/arm64/kernel/vdso/gettimeofday.S              |    2 +-
+ arch/ia64/kernel/Makefile                          |   26 +-
+ drivers/acpi/processor_driver.c                    |    2 +-
+ drivers/acpi/processor_idle.c                      |    7 +-
+ drivers/bluetooth/ath3k.c                          |   18 +-
+ drivers/bluetooth/btqca.c                          |   58 +-
+ drivers/char/diag/diag_masks.c                     |  128 +-
+ drivers/char/diag/diag_memorydevice.c              |   13 +-
+ drivers/char/diag/diagfwd.c                        |    3 +
+ drivers/char/diag/diagfwd_peripheral.c             |  130 +-
+ drivers/char/diag/diagfwd_peripheral.h             |    2 +-
+ drivers/clk/msm/Makefile                           |    4 +
+ drivers/cpuidle/lpm-levels.c                       |    3 +-
+ drivers/crypto/msm/Makefile                        |    5 +
+ drivers/dma/dmaengine.c                            |    2 +
+ drivers/firmware/Makefile                          |    2 +-
+ drivers/firmware/efi/libstub/Makefile              |    6 +
+ drivers/firmware/qcom/Makefile                     |    4 +
+ drivers/gpio/gpio-msm-smp2p-test.c                 |    6 +-
+ drivers/gpu/drm/msm/hdmi-staging/sde_hdmi_bridge.c |   40 +-
+ .../gpu/drm/msm/hdmi-staging/sde_hdmi_hdcp2p2.c    |   10 +-
+ drivers/gpu/drm/msm/hdmi-staging/sde_hdmi_util.c   |   72 +
+ drivers/gpu/drm/msm/hdmi-staging/sde_hdmi_util.h   |    3 +
+ drivers/gpu/drm/msm/sde_hdcp.h                     |    2 +
+ drivers/gpu/drm/msm/sde_hdcp_1x.c                  |  174 +-
+ drivers/gpu/msm/kgsl_debugfs.c                     |    2 +
+ drivers/hwmon/Makefile                             |    5 +
+ drivers/i2c/busses/Makefile                        |    4 +
+ drivers/input/misc/vl53L0/Makefile                 |    4 +
+ drivers/input/mousedev.c                           |   62 +-
+ drivers/input/touchscreen/fw_update_v7.if          |    2 +-
+ drivers/md/dm-ioctl.c                              |    4 +-
+ drivers/media/platform/msm/Makefile                |    4 +
+ .../msm/ais/sensor/actuator/msm_actuator.c         |   11 +-
+ .../media/platform/msm/camera_v2/isp/msm_isp47.c   |    2 +-
+ .../msm/camera_v2/sensor/actuator/msm_actuator.c   |   11 +-
+ .../platform/msm/sde/rotator/sde_rotator_r3.c      |   29 +-
+ drivers/media/platform/msm/vidc/Makefile           |    4 +
+ drivers/media/platform/msm/vidc/msm_vidc.c         |  109 +-
+ drivers/media/platform/msm/vidc/msm_vidc_common.c  |   73 +-
+ .../media/platform/msm/vidc/msm_vidc_res_parse.c   |   29 +-
+ drivers/media/rc/keymaps/Makefile                  |    2 +
+ drivers/media/rc/keymaps/rc-rc6-p2fp.c             |   81 +
+ drivers/media/rc/keymaps/rc-tvx-hd-nec.c           |   63 +
+ drivers/media/rc/rc-main.c                         |    1 -
+ drivers/misc/Makefile                              |    5 +
+ drivers/misc/hdcp.c                                |  348 ++-
+ drivers/net/wireless/adm8211.c                     |    4 +-
+ drivers/net/wireless/airo.c                        |    6 +-
+ drivers/net/wireless/at76c50x-usb.c                |    6 +-
+ drivers/net/wireless/ath/ar5523/ar5523.c           |    4 +-
+ drivers/net/wireless/ath/ath.h                     |    2 +-
+ drivers/net/wireless/ath/ath10k/core.h             |    2 +-
+ drivers/net/wireless/ath/ath10k/mac.c              |   68 +-
+ drivers/net/wireless/ath/ath10k/wmi.c              |    8 +-
+ drivers/net/wireless/ath/ath5k/ani.c               |    2 +-
+ drivers/net/wireless/ath/ath5k/ath5k.h             |   10 +-
+ drivers/net/wireless/ath/ath5k/attach.c            |    8 +-
+ drivers/net/wireless/ath/ath5k/base.c              |   32 +-
+ drivers/net/wireless/ath/ath5k/debug.c             |    6 +-
+ drivers/net/wireless/ath/ath5k/pcu.c               |    6 +-
+ drivers/net/wireless/ath/ath5k/phy.c               |   30 +-
+ drivers/net/wireless/ath/ath5k/qcu.c               |    8 +-
+ drivers/net/wireless/ath/ath5k/reset.c             |    6 +-
+ drivers/net/wireless/ath/ath6kl/cfg80211.c         |   22 +-
+ drivers/net/wireless/ath/ath6kl/core.h             |    2 +-
+ drivers/net/wireless/ath/ath6kl/wmi.c              |   22 +-
+ drivers/net/wireless/ath/ath6kl/wmi.h              |    2 +-
+ drivers/net/wireless/ath/ath9k/calib.c             |    6 +-
+ drivers/net/wireless/ath/ath9k/channel.c           |    8 +-
+ drivers/net/wireless/ath/ath9k/common-init.c       |   28 +-
+ drivers/net/wireless/ath/ath9k/common.c            |    4 +-
+ drivers/net/wireless/ath/ath9k/debug_sta.c         |    6 +-
+ drivers/net/wireless/ath/ath9k/dynack.c            |    2 +-
+ drivers/net/wireless/ath/ath9k/htc_drv_init.c      |    8 +-
+ drivers/net/wireless/ath/ath9k/htc_drv_main.c      |   12 +-
+ drivers/net/wireless/ath/ath9k/htc_drv_txrx.c      |    2 +-
+ drivers/net/wireless/ath/ath9k/init.c              |   12 +-
+ drivers/net/wireless/ath/ath9k/main.c              |    4 +-
+ drivers/net/wireless/ath/ath9k/xmit.c              |    4 +-
+ drivers/net/wireless/ath/carl9170/mac.c            |   12 +-
+ drivers/net/wireless/ath/carl9170/main.c           |    6 +-
+ drivers/net/wireless/ath/carl9170/phy.c            |   18 +-
+ drivers/net/wireless/ath/carl9170/rx.c             |    2 +-
+ drivers/net/wireless/ath/carl9170/tx.c             |    8 +-
+ drivers/net/wireless/ath/regd.c                    |   16 +-
+ drivers/net/wireless/ath/regd.h                    |    2 +-
+ drivers/net/wireless/ath/wcn36xx/main.c            |   12 +-
+ drivers/net/wireless/ath/wcn36xx/smd.c             |    4 +-
+ drivers/net/wireless/ath/wcn36xx/txrx.c            |    2 +-
+ drivers/net/wireless/ath/wil6210/cfg80211.c        |    4 +-
+ drivers/net/wireless/ath/wil6210/netdev.c          |    2 +-
+ drivers/net/wireless/ath/wil6210/wmi.c             |    2 +-
+ drivers/net/wireless/atmel.c                       |    2 +-
+ drivers/net/wireless/b43/b43.h                     |    4 +-
+ drivers/net/wireless/b43/main.c                    |   34 +-
+ drivers/net/wireless/b43/phy_ac.c                  |    2 +-
+ drivers/net/wireless/b43/phy_common.c              |    2 +-
+ drivers/net/wireless/b43/phy_ht.c                  |   16 +-
+ drivers/net/wireless/b43/phy_lcn.c                 |   10 +-
+ drivers/net/wireless/b43/phy_lp.c                  |   30 +-
+ drivers/net/wireless/b43/phy_n.c                   |  176 +-
+ drivers/net/wireless/b43/tables_lpphy.c            |   14 +-
+ drivers/net/wireless/b43/tables_nphy.c             |   16 +-
+ drivers/net/wireless/b43/tables_phy_lcn.c          |    2 +-
+ drivers/net/wireless/b43/xmit.c                    |    8 +-
+ drivers/net/wireless/b43legacy/main.c              |   12 +-
+ drivers/net/wireless/b43legacy/xmit.c              |    2 +-
+ drivers/net/wireless/brcm80211/brcmfmac/cfg80211.c |   74 +-
+ drivers/net/wireless/brcm80211/brcmfmac/p2p.c      |    8 +-
+ drivers/net/wireless/brcm80211/brcmsmac/channel.c  |   10 +-
+ .../net/wireless/brcm80211/brcmsmac/mac80211_if.c  |   16 +-
+ drivers/net/wireless/brcm80211/brcmsmac/main.c     |    4 +-
+ drivers/net/wireless/cw1200/main.c                 |   10 +-
+ drivers/net/wireless/cw1200/scan.c                 |    2 +-
+ drivers/net/wireless/cw1200/sta.c                  |    6 +-
+ drivers/net/wireless/cw1200/txrx.c                 |    2 +-
+ drivers/net/wireless/cw1200/wsm.c                  |    4 +-
+ drivers/net/wireless/ipw2x00/ipw2100.c             |    6 +-
+ drivers/net/wireless/ipw2x00/ipw2200.c             |   12 +-
+ drivers/net/wireless/iwlegacy/3945-mac.c           |   30 +-
+ drivers/net/wireless/iwlegacy/3945-rs.c            |   22 +-
+ drivers/net/wireless/iwlegacy/3945.c               |   20 +-
+ drivers/net/wireless/iwlegacy/4965-mac.c           |   38 +-
+ drivers/net/wireless/iwlegacy/4965-rs.c            |   22 +-
+ drivers/net/wireless/iwlegacy/4965.c               |    6 +-
+ drivers/net/wireless/iwlegacy/4965.h               |    2 +-
+ drivers/net/wireless/iwlegacy/common.c             |   70 +-
+ drivers/net/wireless/iwlegacy/common.h             |   30 +-
+ drivers/net/wireless/iwlegacy/debug.c              |    4 +-
+ drivers/net/wireless/iwlwifi/dvm/agn.h             |    8 +-
+ drivers/net/wireless/iwlwifi/dvm/debugfs.c         |    4 +-
+ drivers/net/wireless/iwlwifi/dvm/dev.h             |    6 +-
+ drivers/net/wireless/iwlwifi/dvm/devices.c         |    4 +-
+ drivers/net/wireless/iwlwifi/dvm/lib.c             |    6 +-
+ drivers/net/wireless/iwlwifi/dvm/mac80211.c        |   12 +-
+ drivers/net/wireless/iwlwifi/dvm/main.c            |    4 +-
+ drivers/net/wireless/iwlwifi/dvm/rs.c              |   22 +-
+ drivers/net/wireless/iwlwifi/dvm/rs.h              |    2 +-
+ drivers/net/wireless/iwlwifi/dvm/rx.c              |    2 +-
+ drivers/net/wireless/iwlwifi/dvm/rxon.c            |   10 +-
+ drivers/net/wireless/iwlwifi/dvm/scan.c            |   38 +-
+ drivers/net/wireless/iwlwifi/dvm/sta.c             |    2 +-
+ drivers/net/wireless/iwlwifi/dvm/tx.c              |    4 +-
+ drivers/net/wireless/iwlwifi/iwl-1000.c            |    2 +-
+ drivers/net/wireless/iwlwifi/iwl-2000.c            |    2 +-
+ drivers/net/wireless/iwlwifi/iwl-5000.c            |    2 +-
+ drivers/net/wireless/iwlwifi/iwl-6000.c            |    2 +-
+ drivers/net/wireless/iwlwifi/iwl-7000.c            |    4 +-
+ drivers/net/wireless/iwlwifi/iwl-8000.c            |    2 +-
+ drivers/net/wireless/iwlwifi/iwl-eeprom-parse.c    |   38 +-
+ drivers/net/wireless/iwlwifi/iwl-eeprom-parse.h    |    6 +-
+ drivers/net/wireless/iwlwifi/iwl-nvm-parse.c       |   24 +-
+ drivers/net/wireless/iwlwifi/mvm/coex.c            |   10 +-
+ drivers/net/wireless/iwlwifi/mvm/coex_legacy.c     |   10 +-
+ drivers/net/wireless/iwlwifi/mvm/debugfs-vif.c     |    6 +-
+ drivers/net/wireless/iwlwifi/mvm/fw.c              |    2 +-
+ drivers/net/wireless/iwlwifi/mvm/mac-ctxt.c        |    6 +-
+ drivers/net/wireless/iwlwifi/mvm/mac80211.c        |   16 +-
+ drivers/net/wireless/iwlwifi/mvm/mvm.h             |    8 +-
+ drivers/net/wireless/iwlwifi/mvm/phy-ctxt.c        |    2 +-
+ drivers/net/wireless/iwlwifi/mvm/rs.c              |   28 +-
+ drivers/net/wireless/iwlwifi/mvm/rs.h              |    4 +-
+ drivers/net/wireless/iwlwifi/mvm/rx.c              |    2 +-
+ drivers/net/wireless/iwlwifi/mvm/scan.c            |   36 +-
+ drivers/net/wireless/iwlwifi/mvm/tdls.c            |    2 +-
+ drivers/net/wireless/iwlwifi/mvm/tx.c              |    6 +-
+ drivers/net/wireless/iwlwifi/mvm/utils.c           |    4 +-
+ drivers/net/wireless/libertas/cfg.c                |   10 +-
+ drivers/net/wireless/libertas/cmd.c                |    4 +-
+ drivers/net/wireless/libertas_tf/main.c            |    4 +-
+ drivers/net/wireless/mac80211_hwsim.c              |   14 +-
+ drivers/net/wireless/mediatek/mt7601u/init.c       |    4 +-
+ drivers/net/wireless/mwifiex/cfg80211.c            |   34 +-
+ drivers/net/wireless/mwifiex/cfp.c                 |   12 +-
+ drivers/net/wireless/mwifiex/scan.c                |    4 +-
+ drivers/net/wireless/mwifiex/uap_cmd.c             |    2 +-
+ drivers/net/wireless/mwl8k.c                       |   88 +-
+ drivers/net/wireless/orinoco/cfg.c                 |    6 +-
+ drivers/net/wireless/orinoco/hw.c                  |    2 +-
+ drivers/net/wireless/orinoco/scan.c                |    4 +-
+ drivers/net/wireless/p54/eeprom.c                  |   32 +-
+ drivers/net/wireless/p54/main.c                    |    4 +-
+ drivers/net/wireless/p54/p54.h                     |    2 +-
+ drivers/net/wireless/p54/txrx.c                    |    4 +-
+ drivers/net/wireless/realtek/rtl818x/rtl8180/dev.c |    8 +-
+ drivers/net/wireless/realtek/rtl818x/rtl8187/dev.c |    4 +-
+ drivers/net/wireless/realtek/rtl8xxxu/rtl8xxxu.c   |   30 +-
+ drivers/net/wireless/realtek/rtlwifi/base.c        |   44 +-
+ drivers/net/wireless/realtek/rtlwifi/regd.c        |   16 +-
+ drivers/net/wireless/realtek/rtlwifi/wifi.h        |    2 +-
+ drivers/net/wireless/rndis_wlan.c                  |    4 +-
+ drivers/net/wireless/rsi/rsi_91x_mac80211.c        |  100 +-
+ drivers/net/wireless/rsi/rsi_91x_mgmt.c            |    8 +-
+ drivers/net/wireless/rsi/rsi_91x_pkt.c             |    2 +-
+ drivers/net/wireless/rsi/rsi_main.h                |    2 +-
+ drivers/net/wireless/rt2x00/rt2800lib.c            |   30 +-
+ drivers/net/wireless/rt2x00/rt2x00.h               |    4 +-
+ drivers/net/wireless/rt2x00/rt2x00dev.c            |   40 +-
+ drivers/net/wireless/rt2x00/rt61pci.c              |   22 +-
+ drivers/net/wireless/rt2x00/rt73usb.c              |   22 +-
+ drivers/net/wireless/ti/wl1251/main.c              |    2 +-
+ drivers/net/wireless/ti/wl1251/rx.c                |    2 +-
+ drivers/net/wireless/ti/wl12xx/main.c              |    8 +-
+ drivers/net/wireless/ti/wl12xx/scan.c              |   20 +-
+ drivers/net/wireless/ti/wl18xx/cmd.c               |    6 +-
+ drivers/net/wireless/ti/wl18xx/event.c             |    6 +-
+ drivers/net/wireless/ti/wl18xx/main.c              |   22 +-
+ drivers/net/wireless/ti/wl18xx/scan.c              |    8 +-
+ drivers/net/wireless/ti/wl18xx/tx.c                |    2 +-
+ drivers/net/wireless/ti/wlcore/cmd.c               |   36 +-
+ drivers/net/wireless/ti/wlcore/cmd.h               |    6 +-
+ drivers/net/wireless/ti/wlcore/main.c              |   32 +-
+ drivers/net/wireless/ti/wlcore/ps.c                |    4 +-
+ drivers/net/wireless/ti/wlcore/rx.c                |    4 +-
+ drivers/net/wireless/ti/wlcore/rx.h                |    2 +-
+ drivers/net/wireless/ti/wlcore/scan.c              |   14 +-
+ drivers/net/wireless/ti/wlcore/tx.c                |    2 +-
+ drivers/net/wireless/ti/wlcore/tx.h                |    4 +-
+ drivers/net/wireless/ti/wlcore/wlcore.h            |    4 +-
+ drivers/net/wireless/ti/wlcore/wlcore_i.h          |    2 +-
+ drivers/net/wireless/wl3501_cs.c                   |    2 +-
+ drivers/net/wireless/zd1211rw/zd_mac.c             |    4 +-
+ drivers/pci/probe.c                                |    2 +-
+ drivers/platform/msm/Makefile                      |    4 +
+ drivers/platform/msm/ipa/ipa_v2/ipa.c              |    5 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_flt.c          |    8 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_nat.c          |   12 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_qmi_service.c  |   54 +
+ drivers/platform/msm/ipa/ipa_v2/ipa_utils.c        |    8 +-
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |    7 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa.c              |    6 +
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            |    2 +
+ drivers/platform/msm/ipa/ipa_v3/ipa_nat.c          |   12 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_qmi_service.c  |   91 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_utils.c        |   20 +-
+ drivers/platform/msm/ipa/ipa_v3/ipahal/Makefile    |    4 +
+ .../platform/msm/ipa/ipa_v3/ipahal/ipahal_fltrt.c  |    8 +-
+ .../platform/msm/ipa/ipa_v3/ipahal/ipahal_reg.c    |    2 +
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |    7 +-
+ drivers/platform/msm/ipa/test/ipa_ut_framework.c   |   10 +-
+ drivers/power/Makefile                             |    4 +
+ drivers/power/power_supply_sysfs.c                 |    2 +
+ drivers/power/qcom/msm-core.c                      |    5 +-
+ drivers/power/supply/qcom/Makefile                 |    4 +
+ drivers/power/supply/qcom/fg-core.h                |    3 +-
+ drivers/power/supply/qcom/qpnp-fg-gen3.c           |  146 +-
+ drivers/power/supply/qcom/smb1351-charger.c        |    2 +-
+ drivers/power/supply/qcom/smb135x-charger.c        |    2 +-
+ drivers/scsi/sg.c                                  |   27 +-
+ drivers/soc/qcom/Makefile                          |    6 +
+ drivers/soc/qcom/ipc_router_glink_xprt.c           |    9 +-
+ drivers/soc/qcom/msm_bus/Makefile                  |    6 +
+ drivers/soc/qcom/qdsp6v2/Makefile                  |    4 +
+ drivers/soc/qcom/qpnp-haptic.c                     |   50 +-
+ drivers/soc/qcom/rpm_stats.c                       |    2 +-
+ drivers/soc/qcom/scm.c                             |  113 +-
+ drivers/soc/qcom/smp2p.c                           |   40 +-
+ drivers/soc/qcom/smp2p_debug.c                     |   16 +-
+ drivers/soc/qcom/smp2p_private.h                   |   89 +-
+ drivers/soc/qcom/smp2p_test.c                      |  136 +-
+ drivers/soc/qcom/subsys-pil-tz.c                   |   35 +-
+ drivers/soundwire/swr-wcd-ctrl.c                   |    2 +-
+ drivers/staging/android/ion/Makefile               |    5 +
+ .../staging/android/ion/ion_system_secure_heap.c   |    8 +-
+ drivers/staging/fw-api/fw/wmi_services.h           |   19 +-
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |   13 +-
+ drivers/staging/fw-api/fw/wmi_unified.h            |  190 +-
+ drivers/staging/fw-api/fw/wmi_version.h            |    2 +-
+ .../qca-wifi-host-cmn/dp/inc/cdp_txrx_cmn.h        |    8 +
+ .../dp/inc/cdp_txrx_flow_ctrl_legacy.h             |   29 +-
+ .../staging/qca-wifi-host-cmn/hif/src/hif_napi.c   |   11 +-
+ .../qca-wifi-host-cmn/hif/src/snoc/if_snoc.c       |    3 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_api.h    |   12 +
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |  140 +
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_priv.h   |    3 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_api.c    |   13 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |  298 ++
+ drivers/staging/qcacld-3.0/Kbuild                  |   10 +
+ drivers/staging/qcacld-3.0/Makefile                |    4 +
+ drivers/staging/qcacld-3.0/core/cds/inc/cds_api.h  |   19 +
+ .../qcacld-3.0/core/cds/inc/cds_concurrency.h      |   27 +
+ .../staging/qcacld-3.0/core/cds/inc/cds_config.h   |    1 +
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |   35 +-
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |  131 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_h2t.c   |   26 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_send.c   |    5 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |   29 +-
+ .../qcacld-3.0/core/dp/txrx/ol_txrx_types.h        |    1 +
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h |  351 ++-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_main.h        |   48 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_regulatory.h  |   31 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_tx_rx.h       |   28 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_wext.h        |   20 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_assoc.c       |   22 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  791 ++++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  526 +++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.h    |    8 -
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   28 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ext_scan.c    |    2 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |  188 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.h     |    6 +
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ipa.c |    9 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_main.c        |  201 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ocb.c |    2 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_power.c       |   31 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_regulatory.c  |  101 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.c        |  113 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.h        |    2 +-
+ .../core/hdd/src/wlan_hdd_softap_tx_rx.c           |   11 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_stats.c       |    2 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_tx_rx.c       |   36 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_wext.c        |   47 +-
+ .../staging/qcacld-3.0/core/mac/inc/ani_global.h   |   40 +
+ drivers/staging/qcacld-3.0/core/mac/inc/sir_api.h  |    3 +
+ .../qcacld-3.0/core/mac/inc/sir_mac_prot_def.h     |    8 -
+ drivers/staging/qcacld-3.0/core/mac/inc/wni_api.h  |    2 -
+ .../core/mac/src/cfg/cfgUtil/dot11f.frms           |    3 +-
+ .../qcacld-3.0/core/mac/src/cfg/cfg_proc_msg.c     |  203 +-
+ .../qcacld-3.0/core/mac/src/include/dot11f.h       |    5 +-
+ .../core/mac/src/pe/include/lim_session.h          |    3 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_api.c       |   27 +-
+ .../core/mac/src/pe/lim/lim_assoc_utils.c          |   15 +-
+ .../mac/src/pe/lim/lim_process_assoc_req_frame.c   |    5 +
+ .../core/mac/src/pe/lim/lim_process_auth_frame.c   |   14 +-
+ .../mac/src/pe/lim/lim_process_mlm_rsp_messages.c  |    6 +
+ .../mac/src/pe/lim/lim_process_probe_req_frame.c   |    7 +
+ .../core/mac/src/pe/lim/lim_prop_exts_utils.c      |  320 +-
+ .../core/mac/src/pe/lim/lim_prop_exts_utils.h      |   24 +-
+ .../core/mac/src/pe/lim/lim_scan_result_utils.c    |   27 +-
+ .../mac/src/pe/lim/lim_send_frames_host_roam.c     |    2 +
+ .../mac/src/pe/lim/lim_send_management_frames.c    |   17 +-
+ .../mac/src/pe/lim/lim_send_sme_rsp_messages.c     |    5 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_session.c   |    3 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_types.h     |    3 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.c     |   96 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.h     |   27 +
+ .../qcacld-3.0/core/mac/src/pe/rrm/rrm_api.c       |    4 +-
+ .../core/mac/src/sys/common/src/wlan_qct_sys.c     |    2 -
+ .../core/mac/src/sys/legacy/src/utils/src/dot11f.c |   45 +-
+ .../mac/src/sys/legacy/src/utils/src/mac_trace.c   |    2 -
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |   17 +-
+ .../staging/qcacld-3.0/core/pld/src/pld_common.c   |   23 +-
+ drivers/staging/qcacld-3.0/core/pld/src/pld_snoc.c |   77 +-
+ drivers/staging/qcacld-3.0/core/pld/src/pld_snoc.h |  151 +-
+ drivers/staging/qcacld-3.0/core/sap/inc/sap_api.h  |    5 +
+ .../qcacld-3.0/core/sap/src/sap_api_link_cntl.c    |   25 +-
+ .../qcacld-3.0/core/sap/src/sap_ch_select.c        |    8 +-
+ drivers/staging/qcacld-3.0/core/sap/src/sap_fsm.c  |   73 +-
+ .../staging/qcacld-3.0/core/sap/src/sap_internal.h |    1 +
+ .../staging/qcacld-3.0/core/sap/src/sap_module.c   |   35 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |    4 +
+ drivers/staging/qcacld-3.0/core/sme/inc/sme_api.h  |   37 +
+ .../qcacld-3.0/core/sme/inc/sme_power_save_api.h   |    3 +-
+ .../qcacld-3.0/core/sme/src/common/sme_api.c       |  386 ++-
+ .../core/sme/src/common/sme_power_save.c           |   26 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_roam.c     |  220 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_scan.c     |   43 +-
+ .../staging/qcacld-3.0/core/sme/src/csr/csr_util.c |   11 +-
+ .../staging/qcacld-3.0/core/sme/src/rrm/sme_rrm.c  |   14 +-
+ .../utils/host_diag_log/inc/host_diag_core_event.h |    2 +
+ drivers/staging/qcacld-3.0/core/wma/inc/wma.h      |   13 +
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |   10 +
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |   15 +
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |   29 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |    4 +-
+ drivers/staging/qcacld-3.0/uapi/linux/qca_vendor.h |    9 +-
+ drivers/staging/rtl8723au/core/rtw_mlme_ext.c      |    4 +-
+ drivers/staging/rtl8723au/include/ieee80211.h      |    2 +-
+ drivers/staging/rtl8723au/os_dep/ioctl_cfg80211.c  |   54 +-
+ drivers/staging/vt6655/channel.c                   |    4 +-
+ drivers/staging/vt6655/device_main.c               |    4 +-
+ drivers/staging/vt6655/rxtx.c                      |    2 +-
+ drivers/staging/vt6656/channel.c                   |    4 +-
+ drivers/staging/vt6656/int.c                       |    2 +-
+ drivers/staging/vt6656/main_usb.c                  |    2 +-
+ drivers/staging/vt6656/rxtx.c                      |    2 +-
+ drivers/staging/wilc1000/wilc_wfi_cfgoperations.c  |   10 +-
+ drivers/staging/wlan-ng/cfg80211.c                 |    6 +-
+ drivers/thermal/Makefile                           |    5 +
+ drivers/tty/serial/msm_serial_hs.c                 |   49 +-
+ drivers/usb/dwc3/core.h                            |    2 +
+ drivers/usb/dwc3/debugfs.c                         |   43 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |    6 +-
+ drivers/usb/gadget/configfs.c                      |    6 +-
+ drivers/video/fbdev/msm/Makefile                   |    7 +
+ drivers/video/fbdev/msm/mdss_dp_util.c             |   16 +-
+ drivers/video/fbdev/msm/mdss_hdcp.h                |    5 +-
+ drivers/video/fbdev/msm/mdss_hdcp_1x.c             |  172 +-
+ drivers/video/fbdev/msm/mdss_hdmi_hdcp2p2.c        |   38 +-
+ drivers/video/fbdev/msm/mdss_hdmi_tx.c             |  118 +
+ drivers/video/fbdev/msm/mdss_hdmi_tx.h             |    3 +
+ fs/compat_ioctl.c                                  |    2 +-
+ fs/namespace.c                                     |    4 +-
+ include/acpi/processor.h                           |    7 +-
+ include/linux/bug.h                                |   67 +-
+ include/linux/build_bug.h                          |   84 +
+ include/linux/compiler-clang.h                     |    8 +
+ include/linux/compiler-gcc.h                       |   18 +-
+ include/linux/dcache.h                             |    4 +-
+ include/linux/hdcp_qseecom.h                       |   13 +
+ include/linux/kbuild.h                             |    6 +-
+ include/linux/kernel.h                             |   10 +-
+ include/linux/llist.h                              |   21 +-
+ include/linux/module.h                             |    2 +-
+ include/linux/power_supply.h                       |    2 +
+ include/linux/timekeeper_internal.h                |    8 +-
+ include/media/rc-map.h                             |    2 +
+ include/net/cfg80211.h                             |   49 +-
+ include/net/mac80211.h                             |   12 +-
+ include/uapi/linux/nl80211.h                       |    4 +
+ include/uapi/linux/pci_regs.h                      |    2 +-
+ kernel/futex.c                                     |    3 +
+ kernel/time/timekeeping.c                          |   57 +-
+ lib/test_static_keys.c                             |   62 +-
+ mm/zsmalloc.c                                      |    8 +-
+ net/Kconfig                                        |    1 +
+ net/Makefile                                       |    1 +
+ net/ipv4/netfilter/nf_nat_h323.c                   |    6 +-
+ net/mac80211/cfg.c                                 |   14 +-
+ net/mac80211/debugfs_netdev.c                      |   12 +-
+ net/mac80211/ibss.c                                |   10 +-
+ net/mac80211/ieee80211_i.h                         |   34 +-
+ net/mac80211/iface.c                               |    2 +-
+ net/mac80211/main.c                                |    6 +-
+ net/mac80211/mesh.c                                |   10 +-
+ net/mac80211/mesh_plink.c                          |   10 +-
+ net/mac80211/mlme.c                                |   12 +-
+ net/mac80211/rate.c                                |    2 +-
+ net/mac80211/rc80211_minstrel.c                    |    6 +-
+ net/mac80211/rc80211_minstrel_ht.c                 |    4 +-
+ net/mac80211/rx.c                                  |    6 +-
+ net/mac80211/scan.c                                |   12 +-
+ net/mac80211/spectmgmt.c                           |    4 +-
+ net/mac80211/tdls.c                                |   18 +-
+ net/mac80211/trace.h                               |    6 +-
+ net/mac80211/tx.c                                  |   12 +-
+ net/mac80211/util.c                                |   22 +-
+ net/mac80211/vht.c                                 |    4 +-
+ net/netfilter/nf_conntrack_netlink.c               |    7 +-
+ net/wireguard/Kconfig                              |   30 +
+ net/wireguard/Makefile                             |   19 +
+ net/wireguard/allowedips.c                         |  326 ++
+ net/wireguard/allowedips.h                         |   44 +
+ net/wireguard/compat/Makefile.include              |   66 +
+ .../compat/checksum/checksum_partial_compat.h      |  208 ++
+ net/wireguard/compat/compat-asm.h                  |   18 +
+ net/wireguard/compat/compat.h                      |  628 ++++
+ net/wireguard/compat/dst_cache/dst_cache.c         |  175 ++
+ .../compat/dst_cache/include/net/dst_cache.h       |   97 +
+ net/wireguard/compat/fpu/include/asm/fpu/api.h     |    1 +
+ net/wireguard/compat/memneq/include.h              |    5 +
+ net/wireguard/compat/memneq/memneq.c               |  170 +
+ .../compat/ptr_ring/include/linux/ptr_ring.h       |  640 ++++
+ net/wireguard/compat/simd/include/asm/simd.h       |    1 +
+ .../compat/siphash/include/linux/siphash.h         |  140 +
+ net/wireguard/compat/siphash/siphash.c             |  539 ++++
+ .../compat/udp_tunnel/include/net/udp_tunnel.h     |   94 +
+ net/wireguard/compat/udp_tunnel/udp_tunnel.c       |  385 +++
+ .../compat/udp_tunnel/udp_tunnel_partial_compat.h  |  226 ++
+ net/wireguard/cookie.c                             |  195 ++
+ net/wireguard/cookie.h                             |   52 +
+ net/wireguard/crypto/blake2s-x86_64.S              |  685 ++++
+ net/wireguard/crypto/blake2s.c                     |  294 ++
+ net/wireguard/crypto/blake2s.h                     |   94 +
+ net/wireguard/crypto/chacha20-arm.S                | 1471 +++++++++
+ net/wireguard/crypto/chacha20-arm64.S              | 1940 ++++++++++++
+ net/wireguard/crypto/chacha20-x86_64.S             | 2060 +++++++++++++
+ net/wireguard/crypto/chacha20poly1305.c            |  865 ++++++
+ net/wireguard/crypto/chacha20poly1305.h            |   92 +
+ net/wireguard/crypto/curve25519-arm.S              | 2110 +++++++++++++
+ net/wireguard/crypto/curve25519-x86_64.S           | 3261 ++++++++++++++++++++
+ net/wireguard/crypto/curve25519.c                  | 1689 ++++++++++
+ net/wireguard/crypto/curve25519.h                  |   25 +
+ net/wireguard/crypto/poly1305-arm.S                | 1115 +++++++
+ net/wireguard/crypto/poly1305-arm64.S              |  820 +++++
+ net/wireguard/crypto/poly1305-mips64.S             |  357 +++
+ net/wireguard/crypto/poly1305-x86_64.S             | 2803 +++++++++++++++++
+ net/wireguard/device.c                             |  415 +++
+ net/wireguard/device.h                             |   64 +
+ net/wireguard/hashtables.c                         |  168 +
+ net/wireguard/hashtables.h                         |   52 +
+ net/wireguard/main.c                               |   69 +
+ net/wireguard/messages.h                           |  129 +
+ net/wireguard/netlink.c                            |  512 +++
+ net/wireguard/netlink.h                            |   12 +
+ net/wireguard/noise.c                              |  635 ++++
+ net/wireguard/noise.h                              |  117 +
+ net/wireguard/peer.c                               |  136 +
+ net/wireguard/peer.h                               |   73 +
+ net/wireguard/queueing.c                           |   46 +
+ net/wireguard/queueing.h                           |  142 +
+ net/wireguard/ratelimiter.c                        |  199 ++
+ net/wireguard/ratelimiter.h                        |   19 +
+ net/wireguard/receive.c                            |  490 +++
+ net/wireguard/selftest/allowedips.h                |  514 +++
+ net/wireguard/selftest/blake2s.h                   |  559 ++++
+ net/wireguard/selftest/chacha20poly1305.h          |  333 ++
+ net/wireguard/selftest/counter.h                   |   92 +
+ net/wireguard/selftest/curve25519.h                |   77 +
+ net/wireguard/selftest/ratelimiter.h               |  157 +
+ net/wireguard/send.c                               |  348 +++
+ net/wireguard/socket.c                             |  389 +++
+ net/wireguard/socket.h                             |   35 +
+ net/wireguard/timers.c                             |  199 ++
+ net/wireguard/timers.h                             |   21 +
+ net/wireguard/uapi/wireguard.h                     |  182 ++
+ net/wireguard/version.h                            |    1 +
+ net/wireless/chan.c                                |    2 +-
+ net/wireless/core.c                                |    8 +-
+ net/wireless/db.txt                                |   34 +-
+ net/wireless/debugfs.c                             |    4 +-
+ net/wireless/ibss.c                                |    6 +-
+ net/wireless/mesh.c                                |    4 +-
+ net/wireless/mlme.c                                |    2 +-
+ net/wireless/nl80211.c                             |   44 +-
+ net/wireless/reg.c                                 |   30 +-
+ net/wireless/reg.h                                 |    2 +-
+ net/wireless/scan.c                                |   14 +-
+ net/wireless/sme.c                                 |    6 +-
+ net/wireless/trace.h                               |    8 +-
+ net/wireless/util.c                                |   40 +-
+ net/wireless/wext-compat.c                         |   14 +-
+ net/xfrm/xfrm_policy.c                             |    2 +-
+ net/xfrm/xfrm_state.c                              |    7 +
+ scripts/Kbuild.include                             |    6 +-
+ scripts/Makefile.kasan                             |    8 +
+ scripts/Makefile.lib                               |   31 +
+ scripts/mkcompile_h                                |    2 +-
+ scripts/mod/Makefile                               |   28 +-
+ security/pfe/Makefile                              |    4 +
+ security/pfe/pfk_ice.c                             |   31 +-
+ sound/soc/codecs/Makefile                          |    4 +
+ sound/soc/codecs/sdm660_cdc/msm-digital-cdc.c      |    6 +
+ sound/soc/codecs/tfa9891/tfa9897_init.c            |    2 +-
+ sound/soc/codecs/tfa9891/tfa_dsp.c                 |    2 +-
+ sound/soc/codecs/wcd9335.c                         |   29 +-
+ sound/soc/msm/qdsp6v2/Makefile                     |    5 +
+ sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c         |    4 +-
+ sound/soc/msm/sdm660-common.h                      |    3 +
+ sound/soc/msm/sdm660-internal.c                    |   52 +-
+ 560 files changed, 39067 insertions(+), 3491 deletions(-)
+ mode change 100755 => 100644 drivers/gpu/drm/msm/hdmi-staging/sde_hdmi_bridge.c
+ create mode 100644 drivers/media/rc/keymaps/rc-rc6-p2fp.c
+ create mode 100644 drivers/media/rc/keymaps/rc-tvx-hd-nec.c
+ mode change 100755 => 100644 drivers/misc/hdcp.c
+ create mode 100644 include/linux/build_bug.h
+ mode change 100755 => 100644 include/linux/hdcp_qseecom.h
+ create mode 100644 net/wireguard/Kconfig
+ create mode 100644 net/wireguard/Makefile
+ create mode 100644 net/wireguard/allowedips.c
+ create mode 100644 net/wireguard/allowedips.h
+ create mode 100644 net/wireguard/compat/Makefile.include
+ create mode 100644 net/wireguard/compat/checksum/checksum_partial_compat.h
+ create mode 100644 net/wireguard/compat/compat-asm.h
+ create mode 100644 net/wireguard/compat/compat.h
+ create mode 100644 net/wireguard/compat/dst_cache/dst_cache.c
+ create mode 100644 net/wireguard/compat/dst_cache/include/net/dst_cache.h
+ create mode 100644 net/wireguard/compat/fpu/include/asm/fpu/api.h
+ create mode 100644 net/wireguard/compat/memneq/include.h
+ create mode 100644 net/wireguard/compat/memneq/memneq.c
+ create mode 100644 net/wireguard/compat/ptr_ring/include/linux/ptr_ring.h
+ create mode 100644 net/wireguard/compat/simd/include/asm/simd.h
+ create mode 100644 net/wireguard/compat/siphash/include/linux/siphash.h
+ create mode 100644 net/wireguard/compat/siphash/siphash.c
+ create mode 100644 net/wireguard/compat/udp_tunnel/include/net/udp_tunnel.h
+ create mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel.c
+ create mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel_partial_compat.h
+ create mode 100644 net/wireguard/cookie.c
+ create mode 100644 net/wireguard/cookie.h
+ create mode 100644 net/wireguard/crypto/blake2s-x86_64.S
+ create mode 100644 net/wireguard/crypto/blake2s.c
+ create mode 100644 net/wireguard/crypto/blake2s.h
+ create mode 100644 net/wireguard/crypto/chacha20-arm.S
+ create mode 100644 net/wireguard/crypto/chacha20-arm64.S
+ create mode 100644 net/wireguard/crypto/chacha20-x86_64.S
+ create mode 100644 net/wireguard/crypto/chacha20poly1305.c
+ create mode 100644 net/wireguard/crypto/chacha20poly1305.h
+ create mode 100644 net/wireguard/crypto/curve25519-arm.S
+ create mode 100644 net/wireguard/crypto/curve25519-x86_64.S
+ create mode 100644 net/wireguard/crypto/curve25519.c
+ create mode 100644 net/wireguard/crypto/curve25519.h
+ create mode 100644 net/wireguard/crypto/poly1305-arm.S
+ create mode 100644 net/wireguard/crypto/poly1305-arm64.S
+ create mode 100644 net/wireguard/crypto/poly1305-mips64.S
+ create mode 100644 net/wireguard/crypto/poly1305-x86_64.S
+ create mode 100644 net/wireguard/device.c
+ create mode 100644 net/wireguard/device.h
+ create mode 100644 net/wireguard/hashtables.c
+ create mode 100644 net/wireguard/hashtables.h
+ create mode 100644 net/wireguard/main.c
+ create mode 100644 net/wireguard/messages.h
+ create mode 100644 net/wireguard/netlink.c
+ create mode 100644 net/wireguard/netlink.h
+ create mode 100644 net/wireguard/noise.c
+ create mode 100644 net/wireguard/noise.h
+ create mode 100644 net/wireguard/peer.c
+ create mode 100644 net/wireguard/peer.h
+ create mode 100644 net/wireguard/queueing.c
+ create mode 100644 net/wireguard/queueing.h
+ create mode 100644 net/wireguard/ratelimiter.c
+ create mode 100644 net/wireguard/ratelimiter.h
+ create mode 100644 net/wireguard/receive.c
+ create mode 100644 net/wireguard/selftest/allowedips.h
+ create mode 100644 net/wireguard/selftest/blake2s.h
+ create mode 100644 net/wireguard/selftest/chacha20poly1305.h
+ create mode 100644 net/wireguard/selftest/counter.h
+ create mode 100644 net/wireguard/selftest/curve25519.h
+ create mode 100644 net/wireguard/selftest/ratelimiter.h
+ create mode 100644 net/wireguard/send.c
+ create mode 100644 net/wireguard/socket.c
+ create mode 100644 net/wireguard/socket.h
+ create mode 100644 net/wireguard/timers.c
+ create mode 100644 net/wireguard/timers.h
+ create mode 100644 net/wireguard/uapi/wireguard.h
+ create mode 100644 net/wireguard/version.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Nathan Chancellor (1):
+      Merge branch 'master' into op5-flash-8.0.0
+
+osm0sis (1):
+      AK2+Backend: misc fixes
+
+ META-INF/com/google/android/update-binary |  2 +-
+ tools/ak2-core.sh                         | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
