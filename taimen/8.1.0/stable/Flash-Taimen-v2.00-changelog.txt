@@ -1,0 +1,1436 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Abhilash Kumar (4):
+      msm: kgsl: Update total time at right place for accurate GPU busy
+      msm: kgsl: Set the abnormal power perf counter value to zero
+      msm: kgsl: Fix integer overflow in _load_gpmu_firmware
+      msm: kgsl: Correctly update fence_name for larger timestamp
+
+Adam Ford (1):
+      ARM: dts: omap3: logicpd-torpedo-37xx-devkit: Fix MMC1 cd-gpio
+
+Adrian Hunter (1):
+      mmc: core: Do not leave the block driver in a suspended state
+
+Adrian Salido (2):
+      msm: mdss: disable low persist mode during alpm
+      arm64/dts: taimen: increase brightness from dim alpm
+
+Ajay Dudani (3):
+      power: qpnp-fg-gen3: adjust ki coefficient for full soc dynamically
+      power: qpnp-fg-gen3: Allow soc update even above recharge threshold
+      power: Enable qcom,linearize-soc
+
+Al Viro (1):
+      UPSTREAM: dentry name snapshots
+
+Alex Deucher (1):
+      Revert "drm/radeon: dont switch vt on suspend"
+
+Alexander Potapenko (2):
+      UPSTREAM: llist: clang: introduce member_address_is_nonnull()
+      block: Initialize cfqq->ioprio_class in cfq_get_queue()
+
+Alexey Dobriyan (1):
+      proc: much faster /proc/vmstat
+
+Amit Pundir (2):
+      ANDROID: arm64: fix undeclared 'init_thread_info' error
+      ANDROID: arm64: Fix a copy-paste error in prior init_thread_info build fix
+
+Andres Oportus (3):
+      ANDROID: cpufreq: stats: add per task/uid/freq/cluster stats
+      ANDROID: cpufreq: stats: Fix NULL policy scenarios
+      ARM: dts: msm: add HW CPU's busy-cost-data for additional freqs
+
+Andrew Lehmer (3):
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4-oc-dr1-security-next
+
+Andy Lutomirski (4):
+      UPSTREAM: printk: when dumping regs, show the stack, not thread_info
+      UPSTREAM: sched/core: Allow putting thread_info into task_struct
+      UPSTREAM: sched/core: Add try_get_task_stack() and put_task_stack()
+      UPSTREAM: kdb: use task_cpu() instead of task_thread_info()->cpu
+
+Animesh Kishore (1):
+      mdss: mdp: Validate null commit for secure display
+
+Archana Obannagari (2):
+      msm: kgsl: Fixing an uninitialized variable in _gpuobj_map_useraddr()
+      msm: kgsl: Fix size check issue in _read_fw2_block_header()
+
+Archana Sriram (1):
+      msm: kgsl: Fix calculation of size in _load_regfile
+
+Ard Biesheuvel (1):
+      UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+
+Arnd Geis (8):
+      misc: mnh: protect from invalid configuration codes
+      misc: mnh: add firmware version
+      misc: mnh: stage fw updates on active transition
+      misc: mnh: adjust easel fw version string length
+      misc: mnh: adjust outbound iATU address limit
+      misc: mnh: added infrastructure for firmware signing
+      certs: add public key for mnh firmware signing
+      wahoo_defconfig: enable authentication features and keychain
+
+Ashish Garg (4):
+      msm: mdss: validate page id before reading from edid buffer
+      msm: mdss: validate the buffer size before allocating memory
+      msm: mdss: information leak during buffer copy from userspace
+      msm: mdss: check the length of the external input buffer properly
+
+Asutosh Das (2):
+      scsi: ufs: Add states to debug abnormal clocks turn off
+      scsi: ufs-qcom: Add check for ufs bootdevice
+
+Badhri Jagan Sridharan (6):
+      FROMLIST: staging: typec: tcpm: Report right typec_pwr_opmode
+      FROMLIST: staging: typec: tcpm: explicit_contract is always established
+      FROMLIST: usb: gadget: f_midi: add super speed support
+      BACKPORT: usb: host: plat: Enable xHCI plat runtime PM
+      usb: dwc3-msm: Switch to freezable workqueue for sm_work
+      ANDROID: android-verity: mark dev as rw for linear target
+
+Bao D. Nguyen (1):
+      scsi: ufs: Avoid dead lock during error recovery
+
+Benjamin Chan (1):
+      msm: sde: Remove output fence object after user request completed
+
+Bhalchandra Gajare (2):
+      ASoc: wcd934x-dsp-cntl: notify online event after clocks are disabled
+      ASoC: wcd-dsp-mgr: fix race during subsystem restart
+
+Bowgo Tsai (1):
+      ANDROID: dm: android-verity: allow disable dm-verity for Treble VTS
+
+Brahmaji K (1):
+      qseecom: Fix accessing userspace memory in kernel space
+
+Brendan Jackman (13):
+      Revert "sched/fair: ensure utilization signals are synchronized before use"
+      sched/fair: Sync task util before EAS wakeup
+      Revert "sched/fair: ensure utilization signals are synchronized before use"
+      sched/fair: Sync task util before EAS wakeup
+      UPSTREAM: sched/fair: Force balancing on nohz balance if local group has capacity
+      BACKPORT: sched/fair: Move select_task_rq_fair slow-path into its own function
+      UPSTREAM: sched/fair: Remove unnecessary comparison with -1
+      BACKPORT: sched/fair: Fix find_idlest_group when local group is not allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when no groups are allowed
+      UPSTREAM: sched/fair: Fix usage of find_idlest_group() when the local group is idlest
+      UPSTREAM: sched/fair: Sync task util before slow-path wakeup
+      FROMLIST: sched/fair: Use wake_q length as a hint for wake_wide
+      sched/core: Warn if ENERGY_AWARE is enabled but data is missing
+
+Brent Taylor (1):
+      mtd: nand: Fix writing mtdoops to nand flash.
+
+Bulbul Dabi (1):
+      serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement
+
+Can Guo (3):
+      scsi: ufs: add command logging infrastructure
+      scsi: ufs: Initialize cmd_id and check lrbp->cmd NULL
+      scsi: ufs: update ufs command logging infrastructure
+
+Chenbo Feng (1):
+      ANDROID: Use sk_uid to replace uid get from socket file
+
+Cheng Gu (7):
+      misc: easelcomm: Only read header after seq verified
+      misc: easelcomm: Print error when msg is too big
+      misc: mnh: Allocate partial carveout for kernel use
+      misc: easelcomm: Print buf_size in DMA debug message
+      misc: mnh: Pair vfree with vmalloc for mnh_sg_entry array
+      misc: easelcomm: Set timeout on waiting for wrap done
+      misc: easelcomm: Fix WAITREPLY timeout
+
+Chris Redpath (11):
+      sched/fair: Update signals of nohz cpus if we are going idle
+      sched/fair: Try to estimate possible idle states.
+      sched/fair: Add a backup_cpu to find_best_target
+      schedstats/eas: guard properly to avoid breaking non-smp schedstats users
+      sched/fair: Update signals of nohz cpus if we are going idle
+      sched/fair: Try to estimate possible idle states.
+      sched/fair: Add a backup_cpu to find_best_target
+      cpufreq/sched: Use cpu max freq rather than policy max
+      ANDROID: sched/fair: Select correct capacity state for energy_diff
+      BACKPORT: sched/fair: Make it possible to account fair load avg consistently
+      sched/fair: consider task utilization in group_norm_util()
+
+Colin Cross (1):
+      Add BINDER_GET_NODE_DEBUG_INFO ioctl
+
+Corey Tabaka (1):
+      ANDROID: binder: Switch binder_deferred_lock to a spinlock.
+
+Daniel Colascione (1):
+      Add /proc/pid/smaps_rollup
+
+Daniel Mentz (1):
+      v4l2: Refactor, fix security bug in compat ioctl32
+
+Daniel Rosenberg (3):
+      ANDROID: mnt: Fix freeing of mount data
+      ANDROID: Sdcardfs: Move gid derivation under flag
+      ANDROID: ion: Fix uninitialized variable
+
+David Lin (9):
+      Revert "Revert "UPSTREAM: lib: lz4: cleanup unaligned access efficiency detection""
+      Revert "Revert "UPSTREAM: lz4: fix wrong compress buffer size for 64-bits""
+      Revert "Revert "UPSTREAM: lib/decompress_unlz4: change module to work with new LZ4 module version""
+      Revert "Revert "BACKPORT: crypto: change LZ4 modules to work with new LZ4 module version""
+      Revert "Revert "BACKPORT: fs/pstore: fs/squashfs: change usage of LZ4 to work with new LZ4 version""
+      Revert "Revert "UPSTREAM: lib: update LZ4 compressor module""
+      lz4: fix compress max output bound
+      mfd: wcd9xxx: disable slimbus register access for debugfs
+      asoc: tas2557: perform hw reset and reload upon error
+
+Deepak Kumar (2):
+      msm: kgsl: Directly return page size of the supported pool
+      msm: kgsl: Limit the frequency of logging on memory allocation failure
+
+Devin Kim (1):
+      arm64: dts: Taimen: Increase long press reboot timer length to 12s
+
+Dhoat Harpal (1):
+      soc: qcom: glink: Remove magic number logic
+
+Dietmar Eggemann (1):
+      sched/fair: remove erroneous RCU_LOCKDEP_WARN from start_cpu()
+
+Francisco Franco (8):
+      drivers: thermal: queue work on system_power_efficient_wq
+      drivers: mdss: queue input handler functions to a high prio wq
+      qcom: msm-core: queue work on system_power_efficient_wq
+      power: bcl: queue work on system_power_efficient_wq
+      drivers: power: bcl: queue work on system_power_efficient_wq
+      power: qpnp-fg-gen3: queue work on system_power_efficient_wq
+      msm: mdss: convert threads to interruptible
+      qcom: mpm: use interruptible wait to reduce load avg
+
+Gaurav Sonwani (1):
+      msm: kgsl: Disallow L2PC during wake up from SLUMBER
+
+Geert Uytterhoeven (1):
+      BACKPORT: arm64: Use __pa_symbol for empty_zero_page
+
+Greg Hackmann (1):
+      ANDROID: dm: android-verity: fix table_make_digest() error handling
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.104
+
+Hareesh Gundu (3):
+      msm: kgsl: Add a NULL check for limit pointer
+      msm: kgsl: Disable VPC all flat shading optimization for A5XX
+      msm: kgsl: Add disable-wake-on-touch devicetree property
+
+Harsh Sahu (1):
+      msm: mdss: handle vsync properly during dynamic resolution switch
+
+Heikki Krogerus (1):
+      UPSTREAM: usb: typec: update partner power delivery support with opmode
+
+Heiner Kallweit (1):
+      eeprom: at24: check at24_read/write arguments
+
+Herbert Xu (1):
+      ipsec: Fix aborted xfrm policy dump crash
+
+Hong-Mei Li (1):
+      cpuidle:lpm: Fix div by zero bug
+
+Hou Tao (1):
+      cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode
+
+Huacai Chen (1):
+      bcache: Fix building error on MIPS
+
+Jaegeuk Kim (6):
+      ANDROID: vfs/ext4: finish umount(2) in time and avoid errors=panic by filesystem
+      scsi: ufs: print some logs to show linereset issue
+      block: replace io_schedule with io_schedule_timeout
+      scsi: ufs: add auto_hibern8 message
+      scsi: ufs: disable auto hibern8
+      ANDROID: sdcardfs: override credential for ioctl to lower fs
+
+Jan Kara (8):
+      cfq-iosched: Don't group_idle if cfqq has big thinktime
+      cfq-iosched: Reorder checks in cfq_should_preempt()
+      cfq-iosched: Allow sync noidle workloads to preempt each other
+      cfq-iosched: Allow parent cgroup to preempt its child
+      cfq-iosched: Convert to use highres timers
+      cfq-iosched: Convert slice_resid from u64 to s64
+      cfq-iosched: Fix regression in bonnie++ rewrite performance
+      cfq-iosched: Charge at least 1 jiffie instead of 1 ns
+
+Jason A. Donenfeld (1):
+      wireguard: Import initial files (snapshot 0.0.20171127)
+
+Jayant Shekhar (2):
+      msm: mdss: Change IOMMU map sequence during splash cleanup
+      msm: mdss: Fix race condition during mdp dump
+
+Jeff Moyer (2):
+      cfq-iosched: Convert from jiffies to nanoseconds
+      cfq-iosched: Expose microsecond interfaces
+
+Jerry Zhang (1):
+      FROMLIST: usb: gadget: f_midi: Use snd_card_free_when_closed with refcount
+
+Jin Qian (1):
+      uid_sys_stats: fix overflow when io usage delta is negative
+
+Joe Maples (5):
+      Makefile: Compile with O3
+      arm64: strcmp: Align to cache and preload
+      micro-optimization: Use DSTRLEN to remove incorrect strlen uses
+      mdss: Make wait event interruptible
+      PM: Port fingprintd quick thaw from OnePlus
+
+Joel Fernandes (10):
+      sched/fair: Skip frequency updates if CPU about to idle
+      sched: honor sync only if CPU is about to goto idle
+      sched/fair: Fix issue where frequency update not skipped
+      ANDROID: sched: rt: schedtune: Add boost retention to RT
+      binder: always allocate/map first BINDER_MIN_ALLOC pages
+      UPSTREAM: cpufreq: schedutil: Make iowait boost more energy efficient
+      UPSTREAM: cpufreq: schedutil: Use unsigned int for iowait boost
+      sched/core: fix have_sched_energy_data build warning
+      Revert "sched/core: fix have_sched_energy_data build warning"
+      Revert "sched/core: Warn if ENERGY_AWARE is enabled but data is missing"
+
+John Dias (3):
+      arm64: dts: taimen: increase fg cutoff voltage
+      softirq, sched: reduce softirq conflicts with RT
+      sched: add prev task to long-runnable log
+
+Jonathan Basseri (1):
+      BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+
+Jonathan Liu (1):
+      drm/panel: simple: Add missing panel_simple_unprepare() calls
+
+Jonathan Wicks (1):
+      msm: kgsl: Add a trace event for the GPU clock
+
+Joonwoo Park (15):
+      sched: deadline: WALT: account cumulative runnable avg
+      sched: WALT: fix broken cumulative runnable average accounting
+      sched: EAS/WALT: use cr_avg instead of prev_runnable_sum
+      sched: EAS: schedfreq: fix CPU util over estimation
+      sched: WALT: fix potential overflow
+      cpufreq: sched: WALT: don't apply capacity margin twice
+      sched: EAS/WALT: take into account of waking task's load
+      sched: EAS: fix incorrect energy delta calculation due to rounding error
+      sched: EAS: kill incorrect nohz idle cpu kick
+      sched: WALT: fix window mis-alignment
+      sched/fair: prevent meaningless active migration
+      cpufreq: sched: update capacity request upon tick always
+      sched: EAS/WALT: finish accounting prior to task_tick
+      sched: WALT: account cumulative window demand
+      sched: EAS: upmigrate misfit current task
+
+Josef Bacik (1):
+      btrfs: clear space cache inode generation always
+
+Juri Lelli (1):
+      UPSTREAM: cpufreq: schedutil: use now as reference when aggregating shared policy requests
+
+Karthikeyan Mani (1):
+      ASoC: wcd9335: Initialize variables before use
+
+Ke Wang (3):
+      sched: EAS: Fix the condition to distinguish energy before/after
+      sched: EAS: update trg_cpu to backup_cpu if no energy saving for target_cpu
+      sched: EAS: Fix the calculation of group util in group_idle_state()
+
+Kees Cook (4):
+      FROMLIST: pstore: Make default pstorefs root dir perms 0750
+      FROMLIST: Revert "pstore: Honor dmesg_restrict sysctl on dmesg dumps"
+      FROMLIST: Revert "pstore: Honor dmesg_restrict sysctl on dmesg dumps"
+      FROMLIST: pstore: Make default pstorefs root dir perms 0750
+
+Kirill A. Shutemov (1):
+      mm, thp: Do not make page table dirty unconditionally in touch_p[mu]d()
+
+Krishna Chaitanya Devarakonda (1):
+      msm: mdss: Fix potential race condition in rotator
+
+Krishna Manikandan (5):
+      fbdev: msm: Allocate fd with O_CLOEXEC flag
+      fbdev: msm: fix issue preventing cursor_buf address to be stored
+      fbdev: msm: fix unaligned access problem
+      fbdev: msm: Add check for ioctl calls
+      msm: mdss: fix the use after free problem in rotator ioctl
+
+Laura Abbott (2):
+      UPSTREAM: mm: Introduce lm_alias
+      BACKPORT: arm64: Use __pa_symbol for kernel symbols
+
+Leo Yan (4):
+      sched/fair: kick nohz idle balance for misfit task
+      sched/fair: kick nohz idle balance for misfit task
+      cpufreq: schedutil: clamp util to CPU maximum capacity
+      sched/fair: remove useless variable in find_best_target
+
+Linus Torvalds (3):
+      UPSTREAM: Clarify naming of thread info/stack allocators
+      UPSTREAM: fix up initial thread stack pointer vs thread_info confusion
+      UPSTREAM: locking: avoid passing around 'thread_info' in mutex debugging code
+
+Liran Alon (2):
+      KVM: x86: pvclock: Handle first-time write to pvclock-page contains random junk
+      KVM: x86: Exit to user-mode on #UD intercept when emulator requires
+
+Lorenzo Colitti (1):
+      ANDROID: net: core: fix use-after-free in arp_log
+
+Lynus Vaz (2):
+      msm: kgsl: Bail out when two threads add sparse bindings
+      msm: kgsl: Use a lock when updating the sparse bindings
+
+Maggie White (1):
+      spmi: pmic-arb: Add wakeup reason logging
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Log hotplug events
+
+Manoj Prabhu B (1):
+      diag: Proper feature mask update to Glink supported peripherals
+
+Mark Rutland (14):
+      UPSTREAM: thread_info: factor out restart_block
+      UPSTREAM: thread_info: include <current.h> for THREAD_INFO_IN_TASK
+      UPSTREAM: arm64: thread_info remove stale items
+      BACKPORT: arm64: asm-offsets: remove unused definitions
+      UPSTREAM: arm64: factor out current_stack_pointer
+      UPSTREAM: arm64: traps: simplify die() and __die()
+      UPSTREAM: arm64: unexport walk_stackframe
+      UPSTREAM: arm64: prep stack walkers for THREAD_INFO_IN_TASK
+      UPSTREAM: arm64: move sp_el0 and tpidr_el1 into cpu_suspend_ctx
+      UPSTREAM: arm64: smp: prepare for smp_processor_id() rework
+      UPSTREAM: arm64: make cpu number a percpu variable
+      UPSTREAM: arm64: assembler: introduce ldr_this_cpu
+      BACKPORT: arm64: split thread_info from task stack
+      UPSTREAM: arm64: restore get_current() optimisation
+
+Mark Salyzyn (1):
+      FROMLIST: arm64: Avoid aligning normal memory pointers in __memcpy_{to,from}io
+
+Markus Elfring (2):
+      UPSTREAM: [media] v4l2-async: Use kmalloc_array() in v4l2_async_notifier_unregister()
+      cfq-iosched: Adjust one function call together with a variable assignment
+
+Martijn Coenen (3):
+      ANDROID: binder: fix race in thread cleanup.
+      ANDROID: binder: don't queue async transactions to thread.
+      ANDROID: binder: call poll_wait() unconditionally.
+
+Matt Fleming (4):
+      x86/mm/pat: Ensure cpa->pfn only contains page frame numbers
+      x86/efi: Hoist page table switching code into efi_call_virt()
+      x86/efi: Build our own page table structures
+      x86/efi-bgrt: Replace early_memremap() with memremap()
+
+Matthias Kaehlcke (1):
+      cfq-iosched: Delete unused function min_vdisktime()
+
+Maulik Shah (1):
+      lpm-levels: Select lpm for isolated cpu when sleep is disabled
+
+Meng Wang (1):
+      ASoC: wcd-mbhc: Disconnect ANC from RX chain during plug removal
+
+Michal Hocko (3):
+      BACKPORT: mm: introduce kv[mz]alloc helpers
+      UPSTREAM: mm, vmalloc: properly track vmalloc users
+      BACKPORT: mm, vmalloc: fix vmalloc users tracking properly
+
+Mohammed Khajapasha (1):
+      qcom: scm: update function return value and input parameter type
+
+Narender Ankam (2):
+      msm: mdss: dp: fix div by zero error
+      msm: mdss: dp: fix wrong parsing of sink count
+
+Naresh Malladi (2):
+      lpm-levels: Remove IPI check on hot plugged cores
+      cpuidle: lpm-levels: Check for negative sleep times
+
+Nathan Chancellor (11):
+      Revert two commits for easier 4.4.104 merge
+      Merge 4.4.104 into oreo-mr1
+      flash_defconfig: Initial version based upon wahoo_defconfig
+      flash_defconfig: De-modularize touchscreen drivers
+      flash_defconfig: De-modularize battery drivers
+      boeffla_wl_blocker: Don't block wakelocks by default
+      flash_defconfig: Enable TCP_CONG_ADVANCED
+      flash_defconfig: Enable/disable some congestion algorithms
+      flash_defconfig: Enable FB_MSM_MDSS_KCAL_CTRL
+      Revert "ANDROID: arm64: crypto, LLVMLinux: use %c constraint code in ASM_EXPORT"
+      arm64: Optimize for our feature set and chipset
+
+Nathan Goulding-Hotta (2):
+      misc: mnh: Patch SMMU_BASE address to match updated QCOM example
+      Revert "misc: mnh: Patch SMMU_BASE address to match updated QCOM example"
+
+NeilBrown (1):
+      NFS: revalidate "." etc correctly on "open".
+
+Nicholas Troast (1):
+      power: smb138x-charger: set buck freq to 700kHz in slave mode
+
+Nick Desaulniers (3):
+      Revert "Fix for compilation with clang"
+      clang: upgrade to clang 5 from clang 4
+      Revert "ANDROID: HACK: arm64: crypto, LLVMLinux: explicitly pass -mcpu option to gas"
+
+Olav Haugan (1):
+      sched: Update task->on_rq when tasks are moving between runqueues
+
+Oleg Drokin (1):
+      nfsd: Make init_open_stateid() a bit more whole
+
+Oleg Nesterov (1):
+      UPSTREAM: kthread: Pin the stack via try_get_task_stack()/put_task_stack() in to_live_kthread() function
+
+Paolo Bonzini (1):
+      KVM: x86: inject exceptions produced by x86_decode_insn
+
+Patrick Bellasi (9):
+      sched/fair: streamline find_best_target heuristics
+      events: add tracepoint for find_best_target
+      ANDORID: sched/rt: fix schedtune accouting on prio change
+      sched/fair: streamline find_best_target heuristics
+      events: add tracepoint for find_best_target
+      sched/fair: trace energy_diff for non boosted tasks
+      sched/fair: ignore backup CPU when not valid
+      sched/fair: enforce EAS mode
+      sched/fair: consider task utilization in group_max_util()
+
+Patrick Tjin (8):
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4
+      input: qpnp-power-on: Dump PMIC registers on unknown and stage3 reset
+      Remove build config for clang
+      arm64/dts: taimen: adjust panel brightness
+      arm64/dts: update ALPM brightness thresholds
+      Merge branch android-msm-wahoo-4.4-oc-dr1-emr-11.2017 into android-msm-wahoo-4.4-oc-dr1
+      Merge branch android-msm-wahoo-4.4-oc-dr1 into android-msm-wahoo-4.4-oc-mr1
+
+Peter Zijlstra (6):
+      UPSTREAM: sched/fair: Fix and optimize the fork() path
+      BACKPORT: sched/fair: Fix PELT integrity for new tasks
+      UPSTREAM: sched/core: Add missing update_rq_clock() in post_init_entity_util_avg()
+      UPSTREAM: sched/core: Add missing update_rq_clock() in detach_task_cfs_rq()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call for task_hot()
+      UPSTREAM: sched/core: Add missing update_rq_clock() call in set_user_nice()
+
+Petri Gynther (1):
+      qcacld-3.0: Treat ARP/ICMP/ICMPV6 packets as high priority
+
+Prakash Kamliya (1):
+      msm: kgsl: Fix leak when preemption init fails
+
+Pranav Vashi (1):
+      ASoC: wcdxxxx: queue work on power efficient wq
+
+Prasad Sodagudi (1):
+      sched: avoid pushing tasks to an offline CPU
+
+Rafael J. Wysocki (1):
+      BACKPORT: cpufreq: schedutil: Use policy-dependent transition delays
+
+Rajesh Kemisetti (2):
+      msm: kgsl: Add A5XX RBBM registers to pre-crash dumper list
+      msm: kgsl: Make sure regulators are ON before GPU clocks are forced on
+
+Rashi Bindra (2):
+      msm: mdss: Read status value from master controller
+      msm: mdss: Fix the DSI lane swap programming logic
+
+Ritesh Harjani (1):
+      cfq: Give a chance for arming slice idle timer in case of group_idle
+
+Roberto Pereira (1):
+      ANDROID: scsi: Add segment checking in sg_read
+
+Robin Murphy (1):
+      UPSTREAM: arm64: smp: Prevent raw_smp_processor_id() recursion
+
+Rohit Kumar (1):
+      ASoC: wcd9335: Reset power_active_ref to 0 when it is negative
+
+Roman Kapl (1):
+      drm/radeon: fix atombios on big endian
+
+Roopesh Rajashekharaiah Nataraja (6):
+      diag: Synchronize msg mask read and write on a peripheral
+      diag: Process glink buffers in workqueue context
+      power: smb138x-charger: increase OTG concurrent mode threshold
+      msm: thermal: check LMH DCVS devicetree to enable reboot/suspend mitigation
+      btfm: provide a way to query wcn3990 status
+      scsi: ufs: Change power mode on line reset
+
+Russ Weight (1):
+      sched/tune: access schedtune_initialized under CGROUP_SCHEDTUNE
+
+Sachin Bhayare (2):
+      fbdev: msm: Add check for fence count
+      msm: mdss: Fix possible integer overflow
+
+Sai Praneeth (1):
+      x86/efi-bgrt: Fix kernel panic when mapping BGRT data
+
+Sami Tolvanen (5):
+      soc: qcom: scm: preserve session ID across retries
+      Revert "HACK: drivers: soc: qcom: fix boot failures with clang-built kernel"
+      drivers: htc_radio: fix unaligned __iomem reads
+      soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*
+      msm: sde: fix unaligned memory read
+
+Sandeep Panda (1):
+      msm: mdss: do not resynchronize DSI FIFO if during device boot up
+
+Santhosh Behara (1):
+      msm: vidc: Use seq_file for debugfs interface
+
+Satyajit Desai (1):
+      coresight: tmc: Fix use after free issue with tmc read
+
+Sayali Lokhande (3):
+      scsi: ufs: Serialise ufs clock gating and ungating
+      scsi: ufs: Fix race condition in ufs qcom debugfs driver
+      scsi: ufs: Fix stack overflow read in ufs debugfs driver
+
+Sergey Senozhatsky (1):
+      lib/bsearch.c: micro-optimize pivot position calculation
+
+Shac Ron (2):
+      mnh dma: Fix returned length of sg list for MNH DMA ops
+      misc: mnh: Bypass endpoint DMA address translation
+
+Sherry Yang (3):
+      android: binder: Refactor prev and next buffer into a helper function
+      android: binder: Add allocator selftest
+      android: binder: Move buffer out of area shared with user space
+
+Siba Prasad (2):
+      scsi: ufs: ufs-qcom-ice: Initialize local variable in ice_cfg_start()
+      scsi: ufs: Fix initialization of pointer
+
+Siqi Lin (8):
+      fs/pstore/ramoops: Allocate decryption buffer with vmalloc
+      Revert "msm: sps: Change the default SPS IPC log level"
+      ANDROID: fs/pstore/ramoops: Use vmalloc() for old buffer
+      Revert "FROMLIST: Revert "pstore: Honor dmesg_restrict sysctl on dmesg dumps""
+      Revert "FROMLIST: pstore: Make default pstorefs root dir perms 0750"
+      ANDROID: pstore: Use vmalloc for large allocations due to ramoops size
+      power: htc_battery: Fix improper initialization during deferred probe
+      ANDROID: cpufreq: stats: Fix sleeping while atomic in cpufreq_task_stats_init
+
+Siyuan Zhou (6):
+      msm: sps: Whitelist %p and %pa addresses in ipc logs for debugging.
+      Revert "power: Enable qcom,linearize-soc"
+      Revert "power: qpnp-fg-gen3: Allow soc update even above recharge threshold"
+      Revert "power: qpnp-fg-gen3: update SOC masking algorithm"
+      Revert "power: qpnp-fg-gen3: apply SOC linearization based on user input"
+      Revert "power: qpnp-fg-gen3: Improve the accuracy of charge_counter"
+
+Sravan Kumar D.V.N (2):
+      msm: mdss: Avoid direct dereference user input in pp cache config
+      msm: mdss: Fix possible memory overwrite in pgc config
+
+Srinivas Girigowda (85):
+      qcacmn: Add APIs to set/get ce service max yield time
+      qcacmn: Add API to set ce service max rx indication flush
+      qcacld-3.0: Add ini support to change ce service max yield time
+      qcacld-3.0: Add ini support to change ce service max rx indication flush
+      qcacld-3.0: Add BH yield time stats
+      qcacmn: Add BH yield time stats
+      qcacld-3.0: Memzero htt_frag_desc before use
+      qcacld-3.0: WLAN upgrade to 5.1.2.21Z
+      qcacmn: Fill rssi_thresh_offset_5g in WMI
+      qcacmn: Populate tx params tlv for mgmt and offchan tx WMI commands
+      qcacld-3.0: Post non deferable LIM msg from WMA with high priority
+      qcacld-3.0: Add an attribute to represent PNO/EPNO Request ID
+      qcacld-3.0: Remove code related to mmap functionality for pktlog
+      qcacld-3.0: Try to recover from htc_connect_service failure
+      qcacld-3.0: Introduce lookup_threshold_5g_offset INI item
+      qcacld-3.0: Add support to send rate information for mgmt frames
+      qcacld-3.0: Do not consider congestion for scoring
+      qcacld-3.0: Release 5.1.3.01B
+      qcacmn: Add sanity check to avoid len overflow issue in WMI event data
+      qcacld-3.0: Pass correct phymode to FW for a TDLS peer as per its capability
+      qcacld-3.0: Implement new 11d algorithm
+      qcacld-3.0: Add sanity check to avoid len overflow issue in WMI event data
+      qcacld-3.0: Release 5.1.3.01C
+      qcacmn: Fix memory overflow in wmi roam scan filter cmd
+      qcacmn: Limit yield log to rx data CEs
+      qcacld-3.0: Add bound check for numap to avoid integer overflow
+      qcacld-3.0: Enable 802.11p channel configuration from ini
+      qcacld-3.0: Fix buffer overflow in wmi roam scan filter cmd
+      qcacld-3.0: Set length of challenge text sent by SAP to 128
+      qcacld-3.0: Check if pipes already enabled for IPA enable pipes
+      qcacld-3.0: Remove recovery in progress check
+      qcacld-3.0: Fix invalid buffer access in send mgmt tx
+      qcacld-3.0: Release 5.1.3.01D
+      qcacld-3.0: Reduce the max join attempts for connection
+      qcacld-3.0: Let probe fail gracefully after htc_wait_target returns NOMEM
+      qcacld-3.0: Make max msdus per pkt configurable
+      qcacld-3.0: Release 5.1.3.01D.1
+      qcacmn: Return proper error status from modules under hif_start
+      qcacld-3.0: Reset suspended flag during recovery
+      qcacld-3.0: Enable channel 12 and 13 in world mode
+      qcacld-3.0: Set DFS flag for DFS channels
+      Revert "qcacld-3.0: Enable channel 12 and 13 in world mode"
+      qcacld-3.0: Enable channel 12 and 13 in world mode
+      qcacmn: Do not allow CE register access when recovery is in progress
+      qcacld-3.0: Decrease tx drain wait time during del bss
+      qcacld-3.0: Avoid uninitialized timer check in ps timer flush
+      qcacld-3.0: Reject interface up request during removal of driver
+      qcacld-3.0: Block interface up when recovery is in progress
+      qcacld-3.0: Unregister the netdev notifier before the modules are closed
+      qcacld-3.0: Add fw ready uevent to update driver state
+      qcacld-3.0: Shutdown IPA WDI pipes on PDR event
+      qcacld-3.0: Synchronize interface change timer with driver shutdown
+      qcacld-3.0: Add logic to mark first wakeup packet without offload bit set
+      qcacmn: Fix excessive logging
+      qcacld-3.0: Release 5.1.3.01E
+      qcacmn: Add wmi send multiple mcast filter api
+      qcacld-3.0: Add support for set multicast filter command
+      qcacld-3.0: Update PCL table for non DBS to give preference to SCC
+      qcacld-3.0: Release 5.1.3.01E.1
+      Revert "qcacld-3.0: Do not consider congestion for scoring"
+      fw-api: Update fw-api common files
+      qcacmn: WMI changes to send BSS scoring params from INI to firmware
+      qcacld-3.0: Add support for ESP IE
+      qcacld-3.0: Add ESP and NSS param for candidate select algo
+      qcacld-3.0: Tune ESP and NSS param for candidate select algo
+      qcacld-3.0: Add INI support for best candidate select algo
+      qcacld-3.0: Add support to parse ESP IE in probe resp
+      qcacld-3.0: INI changes to support scoring for RSSI weight
+      qcacld-3.0: Send BSS scoring params from INI to firmware
+      qcacld-3.0: Calculate bss weightage as per new logic
+      qcacmn: Pass new Bad RSSI threshold offset for 2G and flags to FW
+      qcacmn: Enable LCA Disallow for Background Roam Scan
+      qcacld-3.0: Add new ini for bad RSSI 2G to 5G roam offset
+      qcacld-3.0: Release 5.1.3.01G
+      qcacld-3.0: Adjust the QBSS weightage for slot 0 & 2
+      qcacld-3.0: Fix the logic for rssi/HT/VHT score calculation
+      qcacld-3.0: Release 5.1.3.01H
+      qcacld-3.0: Fix ESP/QBSS load scoring logic
+      qcacld-3.0: Fine tune bss scoring ini params to avoid ping pong
+      qcacld-3.0: Release 5.1.3.01I
+      qcacld-3.0: Reduce the max join attempts for connection
+      qcacld-3.0: Set hdd context to null when its freed
+      qcacld-3.0: Release 5.1.3.01J
+      qcacmn: Support non atomic skb allocation
+      qcacld-3.0: Release 5.1.3.01K
+
+Srinivas Rao L (1):
+      lpm-levels: Enter shallowest state if predicted sleep length is less
+
+Srivatsa Vaddagiri (1):
+      sched: Extend active balance to accept 'push_task' argument
+
+Stephen Rothwell (1):
+      UPSTREAM: include/linux/dcache.h: use unsigned chars in struct name_snapshot
+
+Steve Pfetsch (3):
+      input: ftm4: sync after every event
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1-security-next' into android-msm-wahoo-4.4-oc-dr1
+      Merge branch 'android-msm-wahoo-4.4-oc-dr1' into android-msm-wahoo-4.4
+
+Subbaraman Narayanamurthy (3):
+      power: qpnp-fg-gen3: Improve the accuracy of charge_counter
+      power: qpnp-fg-gen3: apply SOC linearization based on user input
+      power: qpnp-fg-gen3: update SOC masking algorithm
+
+Subhash Jadavani (2):
+      scsi: ufs-qcom: remove broken hci version quirk
+      scsi: ufs: fix unclocked register access
+
+Sultanxda (2):
+      proc: Remove verifiedbootstate flag from /proc/cmdline
+      proc: Remove additional SafetyNet flags from /proc/cmdline
+
+Sunil Khatri (2):
+      msm: kgsl: Use vma_area_struct with proper locks
+      msm: kgsl: Protect the bind object against bad dereference
+
+Suren Baghdasaryan (9):
+      Move sync logic out of select_energy_cpu_brute
+      Revert "Move sync logic out of select_energy_cpu_brute"
+      Revert "sched/fair: Add a backup_cpu to find_best_target"
+      Revert "sched/fair: Try to estimate possible idle states."
+      Revert "sched/fair: Sync task util before EAS wakeup"
+      Revert "sched/fair: kick nohz idle balance for misfit task"
+      Revert "sched/fair: Update signals of nohz cpus if we are going idle"
+      Revert "events: add tracepoint for find_best_target"
+      Revert "sched/fair: streamline find_best_target heuristics"
+
+Syed Rameez Mustafa (1):
+      sched: turn off the TTWU_QUEUE feature
+
+Tahsin Erdogan (1):
+      block: do not merge requests without consulting with io scheduler
+
+Takashi Iwai (1):
+      UPSTREAM: ALSA: timer: Call notifier in the same spinlock
+
+Thierry Strudel (14):
+      Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
+      Merged linux-4.4.60 into android-msm-wahoo-4.4
+      Merged linux-4.4.70 into android-msm-wahoo-4.4
+      Merged linux-4.4.80 into android-msm-wahoo-4.4
+      Merged linux-4.4.88 into android-msm-wahoo-4.4
+      Merge msm-google/android-msm-wahoo-4.4 into android-msm-wahoo-4.4
+      Revert "arm: move ELF_ET_DYN_BASE to 4MB"
+      Revert "Revert "power: qpnp-fg-gen3: Improve the accuracy of charge_counter""
+      Revert "Revert "power: qpnp-fg-gen3: apply SOC linearization based on user input""
+      Revert "Revert "power: qpnp-fg-gen3: update SOC masking algorithm""
+      Revert "Revert "power: qpnp-fg-gen3: Allow soc update even above recharge threshold""
+      Revert "Revert "power: Enable qcom,linearize-soc""
+      sound: tas2557: set FAST mode for VBOB in requested case
+      dts: walleye audio: request PWM for VBOB for earpiece routing
+
+Tim Murray (1):
+      Revert "misc: mnh: Allocate partial carveout for kernel use"
+
+Tom Herbert (1):
+      netlink: add a start callback for starting a netlink dump
+
+Tomasz Figa (2):
+      CHROMIUM: mm: Take kvmalloc_array() from upstream
+      CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Trevor Bunker (13):
+      media: msm: camera_v2: add newline after a few prints
+      misc: mnh: fix emergency power down sequence
+      staging: bcm15602: avoid read-modify-writes
+      misc: mnh: turn off debug statements in mnh-mipi
+      staging: bcm15602: check for enabled registers during suspend
+      staging: bcm15602: dynamic control of asr dual-phase setting
+      staging: bcm15602: add some additional sysfs entries for debug
+      staging: bcm15602: disable zero-I detection
+      staging: bcm15602: create sysfs attributes after device powers on
+      misc: mnh: error handling for unexpected pcie linkdown failures
+      Revert "misc: mnh: error handling for unexpected pcie linkdown failures"
+      misc: mnh: error handling for unexpected pcie linkdown failures
+      misc: mnh: updates from vendor release
+
+Trond Myklebust (2):
+      nfsd: Fix stateid races between OPEN and CLOSE
+      nfsd: Fix another OPEN stateid race
+
+Vatsal Bucha (2):
+      ASoC: wcd9335: Add counter to maintain count of functions voting for max bw
+      ASoC: wcd-mbhc: Increase number of measurements for impedance calc to 900
+
+Venkateswara Rao Tadikonda (3):
+      msm: kgsl: Fix a dead loop issue while changing gpu frequency
+      msm: kgsl: Change pwrlevels array index type to unsigned int
+      msm: kgsl: Limit the kgsl log frequency in kgsl_get_unmapped_area()
+
+VijayaKumar T M (1):
+      msm: sensor: Add mutex lock during ois power down operations
+
+Vikram Mulukutla (2):
+      sched: walt: Leverage existing helper APIs to apply invariance
+      sched: walt: Correct WALT window size initialization
+
+Ville Syrjälä (2):
+      drm/i915: Don't try indexed reads to alternate slave addresses
+      drm/i915: Prevent zero length "index" write
+
+Vincent Guittot (2):
+      BACKPORT: sched/cgroup: Fix cpu_cgroup_fork() handling
+      UPSTREAM: sched/core: Fix find_idlest_group() for fork
+
+Wei Li (1):
+      angler: remove 'reboot edl' interface for security.
+
+Wei Wang (4):
+      arm64: dts: taimen: remove big core emergency-frequency-mitigate
+      msm: camera: Do not wait for complete during driver_probe
+      do not call trace_printk on non-debug build
+      arm64/config: wahoo: remove unused kernel config
+
+Xu Han (1):
+      input: misc: stmvl53l0: return error without calibration data
+
+Zubin Mithra (1):
+      ANDROID: perf: get cpu value using task_cpu(tsk)
+
+andip71 (5):
+      boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+      boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+      boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+      mdss mdp: adjust kcal for OP5
+      mdss mdp: fix washed out colours after start when screen is off during kcal initialization
+
+annamraj (2):
+      msm: camera: Avoid deadlock for vb2 operations using separate lock
+      msm: camera: Make use of mutex lock to avoid race condition
+
+chenjie (1):
+      mm/madvise.c: fix madvise() infinite loop under special circumstances
+
+eunsoo.na (1):
+      power: lge_battery: apply ATL 3 step charging for Tocad battery
+
+flar2 (1):
+      disable crc check
+
+franciscofranco (1):
+      qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
+
+hkyu.park (4):
+      power: qpnp-fg-gen3: Fix the issue that device does not hold SoC 100%
+      power: qpnp-fg-gen3: Changed ibat_term current code
+      arm64: dts: taimen: Changed ibat_term current for only Tocad battery
+      power: lge-battery: Additional logging of FG information
+
+hyunho.koh (1):
+      arm64: dts: taimen: Prevent NFC_SPI_MISO pin floating
+
+jiwon912.choi (2):
+      msm: mdss: To avoid EM multi phenomenon send display on cmd using post panel on cmd
+      arm64: dts: taimen: add delay after sleep out and post panel on cmd
+
+msdx321 (3):
+      power: {lge,htc}_battery: Use late_initcall instead of module_initcall
+      ASoC: wcd9335: queue work on power efficient wq
+      ASoC: wcd934x: queue work on power efficient wq
+
+seokjeong.hong (1):
+      arm64: dts: taimen: usb: modify usb2 host mode phy tuning value
+
+tbalden (1):
+      mdss mdp: kcal for mdss_mdp_v1_7
+
+vivek mehta (1):
+      drivers: mfd: wcd934x: Fix slimbus overflow
+
+xerox_lin (1):
+      UPSTREAM: USB: rndis: Free the rndis response queue during REMOTE_NDIS_RESET_MSG
+
+ Documentation/ABI/testing/procfs-smaps_rollup      |   34 +
+ .../bindings/power/supply/qcom/qpnp-fg-gen3.txt    |   15 +
+ Makefile                                           |    2 +-
+ arch/Kconfig                                       |    4 +-
+ arch/arm/boot/dts/logicpd-torpedo-37xx-devkit.dts  |    2 +-
+ arch/arm/boot/dts/qcom/msm8998.dtsi                |  204 +-
+ arch/arm/include/asm/elf.h                         |    8 +-
+ arch/arm64/Kconfig                                 |    1 +
+ arch/arm64/boot/dts/htc/batterydata-muskie.dtsi    |    1 +
+ arch/arm64/boot/dts/htc/batterydata-walleye.dtsi   |    1 +
+ arch/arm64/boot/dts/htc/msm8998-audio-muskie.dtsi  |    1 +
+ arch/arm64/boot/dts/htc/msm8998-htc-common.dtsi    |    2 +-
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev1.dtsi    |    7 +-
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev2.dtsi    |    7 +-
+ .../dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi     |   11 +-
+ .../boot/dts/lge/lge_blt35_tocad_3620mah.dtsi      |    2 +
+ .../arm64/boot/dts/lge/msm8998-taimen-pinctrl.dtsi |   34 +
+ arch/arm64/boot/dts/lge/msm8998-taimen-pm.dtsi     |    6 +-
+ arch/arm64/boot/dts/lge/msm8998-taimen-usb.dtsi    |    2 +-
+ arch/arm64/configs/flash_defconfig                 |   36 +-
+ arch/arm64/configs/wahoo_defconfig                 |   35 +-
+ arch/arm64/crypto/Makefile                         |    2 +-
+ arch/arm64/include/asm/assembler.h                 |   19 +-
+ arch/arm64/include/asm/current.h                   |   35 +
+ arch/arm64/include/asm/percpu.h                    |    2 +
+ arch/arm64/include/asm/perf_event.h                |    2 +
+ arch/arm64/include/asm/smp.h                       |   16 +-
+ arch/arm64/include/asm/stack_pointer.h             |    9 +
+ arch/arm64/include/asm/suspend.h                   |    2 +-
+ arch/arm64/include/asm/thread_info.h               |   26 +-
+ arch/arm64/kernel/asm-offsets.c                    |   14 +-
+ arch/arm64/kernel/entry.S                          |   60 +-
+ arch/arm64/kernel/head.S                           |   18 +-
+ arch/arm64/kernel/hw_breakpoint.c                  |    2 -
+ arch/arm64/kernel/perf_trace_counters.c            |    2 +-
+ arch/arm64/kernel/process.c                        |   42 +-
+ arch/arm64/kernel/return_address.c                 |    1 +
+ arch/arm64/kernel/sleep.S                          |    3 -
+ arch/arm64/kernel/smp.c                            |   18 +-
+ arch/arm64/kernel/stacktrace.c                     |    7 +-
+ arch/arm64/kernel/traps.c                          |   24 +-
+ arch/arm64/mm/mmu.c                                |    3 +-
+ arch/arm64/mm/proc.S                               |    6 +
+ arch/ia64/Kconfig                                  |    2 +-
+ arch/ia64/include/asm/thread_info.h                |    8 +-
+ arch/ia64/kernel/init_task.c                       |    1 +
+ arch/mn10300/include/asm/thread_info.h             |    2 +-
+ arch/mn10300/kernel/kgdb.c                         |    3 +-
+ arch/tile/include/asm/thread_info.h                |    2 +-
+ arch/tile/kernel/process.c                         |    3 +-
+ arch/x86/include/asm/efi.h                         |   26 +
+ arch/x86/kvm/svm.c                                 |    2 +
+ arch/x86/kvm/vmx.c                                 |    2 +
+ arch/x86/kvm/x86.c                                 |    5 +
+ arch/x86/mm/pageattr.c                             |   17 +-
+ arch/x86/platform/efi/efi-bgrt.c                   |   39 +-
+ arch/x86/platform/efi/efi.c                        |   39 +-
+ arch/x86/platform/efi/efi_32.c                     |    5 +
+ arch/x86/platform/efi/efi_64.c                     |  137 +-
+ arch/x86/platform/efi/efi_stub_64.S                |   43 -
+ block/blk-core.c                                   |    6 +-
+ build.config                                       |    2 +-
+ build.config.clang                                 |   21 -
+ certs/esl_key.pem                                  |   29 +
+ crypto/lz4.c                                       |   24 +-
+ crypto/lz4hc.c                                     |   24 +-
+ crypto/testmgr.h                                   |  154 +-
+ drivers/android/binder.c                           | 4201 +++++++++-----------
+ drivers/android/binder_alloc.c                     |  489 +--
+ drivers/android/binder_alloc.h                     |   90 +-
+ drivers/android/binder_alloc_selftest.c            |   79 +-
+ drivers/android/binder_trace.h                     |  109 +-
+ drivers/bluetooth/btfm_slim_codec.c                |   31 +
+ drivers/char/diag/diag_masks.c                     |   52 +-
+ drivers/char/diag/diagfwd_glink.c                  |   60 +-
+ drivers/char/diag/diagfwd_peripheral.c             |    9 +-
+ drivers/cpufreq/Kconfig                            |   13 +
+ drivers/cpufreq/cpufreq_stats.c                    |  665 +++-
+ drivers/firmware/efi/efi.c                         |   32 -
+ drivers/gpio/gpio-msm-smp2p-test.c                 |    6 +-
+ drivers/gpu/drm/amd/amdgpu/amdgpu_atombios.c       |   38 +-
+ drivers/gpu/drm/i915/intel_i2c.c                   |    4 +-
+ drivers/gpu/drm/panel/panel-simple.c               |    2 +
+ drivers/gpu/drm/radeon/atombios_dp.c               |   38 +-
+ drivers/gpu/drm/radeon/radeon_fb.c                 |    1 -
+ drivers/gpu/msm/kgsl_drawobj.c                     |    1 -
+ drivers/htc_radio/htc_radio_smem.c                 |   66 +-
+ drivers/htc_radio/htc_radio_smem.h                 |   13 +
+ drivers/hwtracing/coresight/coresight-tmc.c        |   36 +-
+ drivers/input/misc/qpnp-power-on.c                 |   29 +
+ drivers/input/misc/vl53L0/stmvl53l0_module.c       |    3 +
+ drivers/input/touchscreen/stm/ftm4_ts.c            |    3 +-
+ drivers/md/bcache/alloc.c                          |    2 +-
+ drivers/md/bcache/extents.c                        |    2 +-
+ drivers/md/bcache/journal.c                        |    2 +-
+ .../media/platform/msm/camera_v2/fd/msm_fd_dev.c   |   29 +-
+ .../media/platform/msm/camera_v2/fd/msm_fd_dev.h   |    4 +-
+ .../media/platform/msm/camera_v2/fd/msm_fd_hw.c    |   11 +-
+ drivers/media/platform/msm/camera_v2/msm.c         |    6 +-
+ .../platform/msm/camera_v2/pproc/cpp/msm_cpp.c     |    4 +
+ .../platform/msm/camera_v2/sensor/ois/msm_ois.c    |    2 +
+ .../platform/msm/sde/rotator/sde_rotator_dev.c     |    5 +-
+ .../platform/msm/sde/rotator/sde_rotator_r3.c      |   24 +-
+ drivers/media/platform/msm/vidc/msm_v4l2_vidc.c    |    2 +
+ drivers/media/platform/msm/vidc/msm_vidc.c         |    2 +-
+ drivers/media/platform/msm/vidc/msm_vidc_debug.c   |  289 +-
+ drivers/media/platform/msm/vidc/msm_vidc_debug.h   |    2 +-
+ drivers/media/v4l2-core/v4l2-compat-ioctl32.c      |  597 +--
+ drivers/mfd/wcd934x-regmap.c                       |    2 -
+ drivers/mfd/wcd9xxx-core.c                         |    6 +-
+ drivers/misc/eeprom/at24.c                         |    6 +
+ drivers/misc/google-easel-comm-dma.c               |   17 +-
+ drivers/misc/google-easel-comm-hw.c                |   16 +-
+ drivers/misc/google-easel-comm-private.h           |    4 +
+ drivers/misc/google-easel-comm.c                   |  139 +-
+ drivers/misc/mnh/Kconfig                           |   21 +
+ drivers/misc/mnh/Makefile                          |    1 +
+ drivers/misc/mnh/hw-mnh-regs.h                     |    6 +-
+ drivers/misc/mnh/mnh-crypto-sysfs.c                |  144 +
+ drivers/misc/mnh/mnh-crypto.c                      |  274 ++
+ drivers/misc/mnh/mnh-crypto.h                      |   64 +
+ drivers/misc/mnh/mnh-ddr-33-100-400-600.h          | 1920 +++++++++
+ drivers/misc/mnh/mnh-ddr-33-300-600-400.h          | 1865 ---------
+ drivers/misc/mnh/mnh-ddr.c                         |  343 +-
+ drivers/misc/mnh/mnh-ddr.h                         |   35 +-
+ drivers/misc/mnh/mnh-hwio.h                        |    4 +-
+ drivers/misc/mnh/mnh-mipi.c                        |  633 ++-
+ drivers/misc/mnh/mnh-mipi.h                        |    4 +-
+ drivers/misc/mnh/mnh-pcie.c                        |  136 +-
+ drivers/misc/mnh/mnh-pcie.h                        |   11 +
+ drivers/misc/mnh/mnh-pwr.c                         |   47 +-
+ drivers/misc/mnh/mnh-pwr.h                         |    1 -
+ drivers/misc/mnh/mnh-sm-ion.c                      |    5 +
+ drivers/misc/mnh/mnh-sm.c                          |  314 +-
+ drivers/misc/mnh/mnh-sm.h                          |    3 +
+ drivers/misc/qseecom.c                             |   24 +-
+ drivers/misc/uid_sys_stats.c                       |   35 +-
+ drivers/mmc/host/sdhci.c                           |    4 +-
+ drivers/mtd/nand/nand_base.c                       |    9 +-
+ drivers/net/wireless/ath/ath10k/core.c             |    6 +
+ drivers/net/wireless/ath/ath10k/pci.c              |    5 +-
+ drivers/net/wireless/iwlwifi/iwl-nvm-parse.c       |    1 -
+ drivers/pinctrl/qcom/pinctrl-msm.c                 |    4 -
+ drivers/platform/msm/sps/bam.c                     |    4 +-
+ drivers/platform/msm/sps/sps.c                     |    7 +-
+ drivers/platform/msm/sps/sps_bam.c                 |    2 +-
+ drivers/platform/msm/sps/spsi.h                    |    4 +-
+ drivers/power/htc_battery.c                        |   94 +-
+ drivers/power/lge_battery.c                        |  137 +-
+ drivers/power/reset/msm-poweroff.c                 |    4 +
+ drivers/power/supply/qcom/fg-core.h                |    2 +
+ drivers/power/supply/qcom/qpnp-fg-gen3.c           |  219 +-
+ drivers/power/supply/qcom/smb138x-charger.c        |    7 +
+ drivers/regulator/rpm-smd-regulator.c              |    3 +
+ drivers/scsi/sd.h                                  |    5 +
+ drivers/scsi/sg.c                                  |    4 +-
+ drivers/scsi/ufs/ufs-debugfs.c                     |    2 +
+ drivers/scsi/ufs/ufshcd.c                          |   78 +-
+ drivers/scsi/ufs/ufshcd.h                          |    4 +-
+ drivers/soc/qcom/glink.c                           |   89 +-
+ drivers/soc/qcom/scm.c                             |   67 +-
+ drivers/soc/qcom/smp2p.c                           |   40 +-
+ drivers/soc/qcom/smp2p_debug.c                     |   16 +-
+ drivers/soc/qcom/smp2p_private.h                   |   89 +-
+ drivers/soc/qcom/smp2p_test.c                      |  136 +-
+ drivers/spmi/spmi-pmic-arb.c                       |    2 +
+ drivers/staging/android/ion/ion.c                  |    2 +-
+ drivers/staging/easel/regulator/bcm15602-gpio.c    |    7 +-
+ .../easel/regulator/bcm15602-regulator-sysfs.c     |  250 +-
+ .../staging/easel/regulator/bcm15602-regulator.c   |   67 +-
+ .../staging/easel/regulator/bcm15602-regulator.h   |    2 +
+ drivers/staging/fw-api/fw/wlan_defs.h              |   22 +-
+ drivers/staging/fw-api/fw/wmi_services.h           |    6 +
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |   64 +-
+ drivers/staging/fw-api/fw/wmi_unified.h            |  685 +++-
+ drivers/staging/fw-api/fw/wmi_version.h            |    2 +-
+ drivers/staging/qca-wifi-host-cmn/hif/inc/hif.h    |   70 +-
+ .../staging/qca-wifi-host-cmn/hif/inc/hif_napi.h   |   14 +
+ .../qca-wifi-host-cmn/hif/src/ce/ce_internal.h     |    2 +
+ .../staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c |   73 +-
+ .../qca-wifi-host-cmn/hif/src/ce/ce_service.c      |   56 +-
+ .../qca-wifi-host-cmn/hif/src/ce/ce_tasklet.c      |    4 +
+ .../staging/qca-wifi-host-cmn/hif/src/hif_io32.h   |    4 +-
+ .../staging/qca-wifi-host-cmn/hif/src/hif_main.c   |   47 +
+ .../staging/qca-wifi-host-cmn/hif/src/hif_main.h   |   13 +
+ .../staging/qca-wifi-host-cmn/hif/src/hif_napi.c   |   57 +-
+ .../qca-wifi-host-cmn/hif/src/snoc/hif_io32_snoc.h |   13 +
+ .../qca-wifi-host-cmn/hif/src/snoc/if_snoc.c       |   15 +
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_nbuf.c     |    6 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_api.h    |   16 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |  244 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_priv.h   |    7 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_tlv.h    |    7 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified.c        |    5 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_api.c    |   23 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |  312 +-
+ drivers/staging/qcacld-3.0/core/cds/inc/cds_api.h  |   29 +-
+ .../staging/qcacld-3.0/core/cds/inc/cds_config.h   |    1 +
+ .../staging/qcacld-3.0/core/cds/inc/cds_sched.h    |    8 +-
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |   10 +-
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |   16 +-
+ .../staging/qcacld-3.0/core/cds/src/cds_sched.c    |    4 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt.c       |   10 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_h2t.c   |   26 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_rx.c    |   53 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_tx.c    |    1 +
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h |  792 +++-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_main.h        |    6 +
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  440 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |   56 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   61 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |    3 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ipa.c |   11 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_main.c        |   85 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_napi.c        |   51 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_p2p.c |   47 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_power.c       |    1 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_regulatory.c  |    3 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_wmm.c |   86 +-
+ .../staging/qcacld-3.0/core/mac/inc/ani_global.h   |    1 -
+ .../qcacld-3.0/core/mac/inc/qwlan_version.h        |    8 +-
+ drivers/staging/qcacld-3.0/core/mac/inc/sir_api.h  |  139 +-
+ .../qcacld-3.0/core/mac/inc/sir_mac_prot_def.h     |    1 +
+ .../core/mac/src/cfg/cfgUtil/dot11f.frms           |    9 +
+ .../qcacld-3.0/core/mac/src/include/dot11f.h       |   46 +-
+ .../qcacld-3.0/core/mac/src/include/parser_api.h   |   71 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_p2p.c       |    4 +-
+ .../core/mac/src/pe/lim/lim_process_auth_frame.c   |   12 +-
+ .../core/mac/src/pe/lim/lim_process_tdls.c         |    9 +-
+ .../core/mac/src/pe/lim/lim_prop_exts_utils.c      |   14 +-
+ .../core/mac/src/pe/lim/lim_scan_result_utils.c    |   61 +-
+ .../core/mac/src/pe/lim/lim_security_utils.h       |    6 +
+ .../mac/src/pe/lim/lim_send_frames_host_roam.c     |    5 +-
+ .../mac/src/pe/lim/lim_send_management_frames.c    |   67 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.c     |   61 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.h     |   12 +
+ .../core/mac/src/sys/legacy/src/utils/src/dot11f.c |  279 +-
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |  120 +-
+ .../staging/qcacld-3.0/core/pld/inc/pld_common.h   |    1 +
+ drivers/staging/qcacld-3.0/core/pld/src/pld_snoc.c |    4 +
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |    3 +
+ .../staging/qcacld-3.0/core/sme/inc/csr_internal.h |    2 +
+ .../qcacld-3.0/core/sme/inc/csr_neighbor_roam.h    |    1 +
+ .../core/sme/src/common/sme_power_save.c           |   18 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_roam.c     |  127 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_scan.c     |  859 ++--
+ .../qcacld-3.0/core/sme/src/csr/csr_inside_api.h   |   77 +-
+ .../core/sme/src/csr/csr_neighbor_roam.c           |    2 +
+ .../staging/qcacld-3.0/core/wma/inc/wma_internal.h |   43 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_types.h    |   28 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c |   66 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |  116 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |   65 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |   46 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |    7 +-
+ .../qcacld-3.0/core/wma/src/wma_nan_datapath.c     |    6 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_ocb.c  |   14 +
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  223 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |  122 +-
+ drivers/thermal/msm_thermal.c                      |    6 +-
+ drivers/tty/serial/msm_serial_hs.c                 |   16 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |    8 +-
+ drivers/usb/gadget/function/f_fs.c                 |    5 +-
+ drivers/usb/gadget/function/f_midi.c               |   94 +-
+ drivers/usb/host/xhci-plat.c                       |    9 +-
+ drivers/usb/typec/tcpm.c                           |   31 +-
+ drivers/usb/typec/typec.c                          |   19 +
+ drivers/video/fbdev/msm/mdss_dsi_panel.c           |   12 +
+ drivers/video/fbdev/msm/mdss_fb.c                  |    2 +-
+ drivers/video/fbdev/msm/mdss_mdp_intf_cmd.c        |    8 +-
+ drivers/video/fbdev/msm/mdss_mdp_pp_cache_config.c |   34 +-
+ fs/btrfs/extent-tree.c                             |   14 +-
+ fs/ext4/ioctl.c                                    |    3 +
+ fs/ext4/super.c                                    |   18 +
+ fs/file_table.c                                    |    6 +
+ fs/namespace.c                                     |   36 +-
+ fs/nfs/dir.c                                       |    3 +-
+ fs/nfsd/nfs4state.c                                |  114 +-
+ fs/proc/base.c                                     |    9 +
+ fs/proc/internal.h                                 |    3 +
+ fs/proc/task_mmu.c                                 |  182 +-
+ fs/pstore/inode.c                                  |   31 +-
+ fs/pstore/platform.c                               |    5 +-
+ fs/pstore/ram.c                                    |    2 +-
+ fs/pstore/ram_core.c                               |    6 +-
+ fs/sdcardfs/inode.c                                |    3 +-
+ fs/squashfs/lz4_wrapper.c                          |   20 +-
+ include/linux/cpufreq.h                            |   24 +
+ include/linux/file.h                               |    1 +
+ include/linux/fs.h                                 |    1 +
+ include/linux/init_task.h                          |    2 +-
+ include/linux/kdb.h                                |    2 +-
+ include/linux/llist.h                              |   21 +-
+ include/linux/lz4.h                                |  762 +++-
+ include/linux/mm_types.h                           |    2 -
+ include/linux/netlink.h                            |    2 +
+ include/linux/restart_block.h                      |   51 +
+ include/linux/sched.h                              |   30 +-
+ include/linux/sched/sysctl.h                       |    1 +
+ include/linux/sysctl.h                             |    2 -
+ include/linux/syslog.h                             |    9 -
+ include/linux/thread_info.h                        |   56 +-
+ include/net/genetlink.h                            |    2 +
+ include/uapi/linux/android/binder.h                |   30 +-
+ include/uapi/linux/bcache.h                        |    2 +-
+ include/uapi/linux/mnh-sm.h                        |    3 +
+ init/Kconfig                                       |    3 +
+ init/main.c                                        |    4 +-
+ kernel/exit.c                                      |    4 +
+ kernel/fork.c                                      |  105 +-
+ kernel/kthread.c                                   |    8 +-
+ kernel/locking/mutex-debug.c                       |   12 +-
+ kernel/locking/mutex-debug.h                       |    4 +-
+ kernel/locking/mutex.c                             |    6 +-
+ kernel/locking/mutex.h                             |    2 +-
+ kernel/printk/printk.c                             |    8 +-
+ kernel/sched/Makefile                              |    1 +
+ kernel/sched/core.c                                |  102 +-
+ kernel/sched/cpufreq_sched.c                       |  528 +++
+ kernel/sched/cpupri.c                              |    3 +-
+ kernel/sched/cputime.c                             |   11 +
+ kernel/sched/fair.c                                |  114 +-
+ kernel/sched/rt.c                                  |  268 +-
+ kernel/sched/sched.h                               |   90 +
+ kernel/softirq.c                                   |   35 +-
+ kernel/sysctl.c                                    |   69 +-
+ lib/decompress_unlz4.c                             |   13 +-
+ lib/lz4/Makefile                                   |    2 +
+ lib/lz4/lz4_compress.c                             | 1161 ++++--
+ lib/lz4/lz4_decompress.c                           |  705 ++--
+ lib/lz4/lz4defs.h                                  |  340 +-
+ lib/lz4/lz4hc_compress.c                           |  867 ++--
+ mm/huge_memory.c                                   |   14 +-
+ mm/madvise.c                                       |    4 +-
+ net/Kconfig                                        |    1 +
+ net/Makefile                                       |    1 +
+ net/ipv4/arp.c                                     |   71 +-
+ net/netfilter/xt_qtaguid.c                         |   55 +-
+ net/netfilter/xt_qtaguid_internal.h                |    4 +-
+ net/netlink/af_netlink.c                           |    4 +
+ net/netlink/genetlink.c                            |   16 +
+ net/wireguard/Kconfig                              |   30 +
+ net/wireguard/Makefile                             |   19 +
+ net/wireguard/allowedips.c                         |  326 ++
+ net/wireguard/allowedips.h                         |   44 +
+ net/wireguard/compat/Makefile.include              |   66 +
+ .../compat/checksum/checksum_partial_compat.h      |  208 +
+ net/wireguard/compat/compat-asm.h                  |   18 +
+ net/wireguard/compat/compat.h                      |  628 +++
+ net/wireguard/compat/dst_cache/dst_cache.c         |  175 +
+ .../compat/dst_cache/include/net/dst_cache.h       |   97 +
+ net/wireguard/compat/fpu/include/asm/fpu/api.h     |    1 +
+ net/wireguard/compat/memneq/include.h              |    5 +
+ net/wireguard/compat/memneq/memneq.c               |  170 +
+ .../compat/ptr_ring/include/linux/ptr_ring.h       |  640 +++
+ net/wireguard/compat/simd/include/asm/simd.h       |    1 +
+ .../compat/siphash/include/linux/siphash.h         |  140 +
+ net/wireguard/compat/siphash/siphash.c             |  539 +++
+ .../compat/udp_tunnel/include/net/udp_tunnel.h     |   94 +
+ net/wireguard/compat/udp_tunnel/udp_tunnel.c       |  385 ++
+ .../compat/udp_tunnel/udp_tunnel_partial_compat.h  |  226 ++
+ net/wireguard/cookie.c                             |  195 +
+ net/wireguard/cookie.h                             |   52 +
+ net/wireguard/crypto/blake2s-x86_64.S              |  685 ++++
+ net/wireguard/crypto/blake2s.c                     |  294 ++
+ net/wireguard/crypto/blake2s.h                     |   94 +
+ net/wireguard/crypto/chacha20-arm.S                | 1471 +++++++
+ net/wireguard/crypto/chacha20-arm64.S              | 1940 +++++++++
+ net/wireguard/crypto/chacha20-x86_64.S             | 2060 ++++++++++
+ net/wireguard/crypto/chacha20poly1305.c            |  822 ++++
+ net/wireguard/crypto/chacha20poly1305.h            |   92 +
+ net/wireguard/crypto/curve25519-arm.S              | 2110 ++++++++++
+ net/wireguard/crypto/curve25519-x86_64.S           | 3261 +++++++++++++++
+ net/wireguard/crypto/curve25519.c                  | 1689 ++++++++
+ net/wireguard/crypto/curve25519.h                  |   25 +
+ net/wireguard/crypto/poly1305-arm.S                | 1115 ++++++
+ net/wireguard/crypto/poly1305-arm64.S              |  820 ++++
+ net/wireguard/crypto/poly1305-mips64.S             |  357 ++
+ net/wireguard/crypto/poly1305-x86_64.S             | 2803 +++++++++++++
+ net/wireguard/device.c                             |  415 ++
+ net/wireguard/device.h                             |   64 +
+ net/wireguard/hashtables.c                         |  168 +
+ net/wireguard/hashtables.h                         |   52 +
+ net/wireguard/main.c                               |   69 +
+ net/wireguard/messages.h                           |  129 +
+ net/wireguard/netlink.c                            |  512 +++
+ net/wireguard/netlink.h                            |   12 +
+ net/wireguard/noise.c                              |  635 +++
+ net/wireguard/noise.h                              |  117 +
+ net/wireguard/peer.c                               |  136 +
+ net/wireguard/peer.h                               |   73 +
+ net/wireguard/queueing.c                           |   46 +
+ net/wireguard/queueing.h                           |  142 +
+ net/wireguard/ratelimiter.c                        |  199 +
+ net/wireguard/ratelimiter.h                        |   19 +
+ net/wireguard/receive.c                            |  490 +++
+ net/wireguard/selftest/allowedips.h                |  514 +++
+ net/wireguard/selftest/blake2s.h                   |  559 +++
+ net/wireguard/selftest/chacha20poly1305.h          |  333 ++
+ net/wireguard/selftest/counter.h                   |   92 +
+ net/wireguard/selftest/curve25519.h                |   77 +
+ net/wireguard/selftest/ratelimiter.h               |  157 +
+ net/wireguard/send.c                               |  348 ++
+ net/wireguard/socket.c                             |  389 ++
+ net/wireguard/socket.h                             |   35 +
+ net/wireguard/timers.c                             |  199 +
+ net/wireguard/timers.h                             |   21 +
+ net/wireguard/uapi/wireguard.h                     |  182 +
+ net/wireguard/version.h                            |    1 +
+ net/xfrm/xfrm_user.c                               |   25 +-
+ scripts/setlocalversion                            |    9 +
+ sound/core/timer.c                                 |  220 +-
+ sound/soc/codecs/tas2557/tas2557-core.c            |   62 +-
+ sound/soc/codecs/tas2557/tas2557-regmap.c          |    4 +
+ sound/soc/codecs/tas2557/tas2557.h                 |    4 +
+ sound/soc/codecs/wcd-dsp-mgr.c                     |   23 +-
+ sound/soc/codecs/wcd934x/wcd934x-dsp-cntl.c        |    9 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-noirq.c           |   12 +-
+ 418 files changed, 48874 insertions(+), 9864 deletions(-)
+ create mode 100644 Documentation/ABI/testing/procfs-smaps_rollup
+ create mode 100644 arch/arm64/include/asm/current.h
+ create mode 100644 arch/arm64/include/asm/stack_pointer.h
+ delete mode 100644 build.config.clang
+ create mode 100644 certs/esl_key.pem
+ create mode 100644 drivers/misc/mnh/mnh-crypto-sysfs.c
+ create mode 100644 drivers/misc/mnh/mnh-crypto.c
+ create mode 100644 drivers/misc/mnh/mnh-crypto.h
+ create mode 100644 drivers/misc/mnh/mnh-ddr-33-100-400-600.h
+ delete mode 100644 drivers/misc/mnh/mnh-ddr-33-300-600-400.h
+ create mode 100644 include/linux/restart_block.h
+ create mode 100644 kernel/sched/cpufreq_sched.c
+ create mode 100644 net/wireguard/Kconfig
+ create mode 100644 net/wireguard/Makefile
+ create mode 100644 net/wireguard/allowedips.c
+ create mode 100644 net/wireguard/allowedips.h
+ create mode 100644 net/wireguard/compat/Makefile.include
+ create mode 100644 net/wireguard/compat/checksum/checksum_partial_compat.h
+ create mode 100644 net/wireguard/compat/compat-asm.h
+ create mode 100644 net/wireguard/compat/compat.h
+ create mode 100644 net/wireguard/compat/dst_cache/dst_cache.c
+ create mode 100644 net/wireguard/compat/dst_cache/include/net/dst_cache.h
+ create mode 100644 net/wireguard/compat/fpu/include/asm/fpu/api.h
+ create mode 100644 net/wireguard/compat/memneq/include.h
+ create mode 100644 net/wireguard/compat/memneq/memneq.c
+ create mode 100644 net/wireguard/compat/ptr_ring/include/linux/ptr_ring.h
+ create mode 100644 net/wireguard/compat/simd/include/asm/simd.h
+ create mode 100644 net/wireguard/compat/siphash/include/linux/siphash.h
+ create mode 100644 net/wireguard/compat/siphash/siphash.c
+ create mode 100644 net/wireguard/compat/udp_tunnel/include/net/udp_tunnel.h
+ create mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel.c
+ create mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel_partial_compat.h
+ create mode 100644 net/wireguard/cookie.c
+ create mode 100644 net/wireguard/cookie.h
+ create mode 100644 net/wireguard/crypto/blake2s-x86_64.S
+ create mode 100644 net/wireguard/crypto/blake2s.c
+ create mode 100644 net/wireguard/crypto/blake2s.h
+ create mode 100644 net/wireguard/crypto/chacha20-arm.S
+ create mode 100644 net/wireguard/crypto/chacha20-arm64.S
+ create mode 100644 net/wireguard/crypto/chacha20-x86_64.S
+ create mode 100644 net/wireguard/crypto/chacha20poly1305.c
+ create mode 100644 net/wireguard/crypto/chacha20poly1305.h
+ create mode 100644 net/wireguard/crypto/curve25519-arm.S
+ create mode 100644 net/wireguard/crypto/curve25519-x86_64.S
+ create mode 100644 net/wireguard/crypto/curve25519.c
+ create mode 100644 net/wireguard/crypto/curve25519.h
+ create mode 100644 net/wireguard/crypto/poly1305-arm.S
+ create mode 100644 net/wireguard/crypto/poly1305-arm64.S
+ create mode 100644 net/wireguard/crypto/poly1305-mips64.S
+ create mode 100644 net/wireguard/crypto/poly1305-x86_64.S
+ create mode 100644 net/wireguard/device.c
+ create mode 100644 net/wireguard/device.h
+ create mode 100644 net/wireguard/hashtables.c
+ create mode 100644 net/wireguard/hashtables.h
+ create mode 100644 net/wireguard/main.c
+ create mode 100644 net/wireguard/messages.h
+ create mode 100644 net/wireguard/netlink.c
+ create mode 100644 net/wireguard/netlink.h
+ create mode 100644 net/wireguard/noise.c
+ create mode 100644 net/wireguard/noise.h
+ create mode 100644 net/wireguard/peer.c
+ create mode 100644 net/wireguard/peer.h
+ create mode 100644 net/wireguard/queueing.c
+ create mode 100644 net/wireguard/queueing.h
+ create mode 100644 net/wireguard/ratelimiter.c
+ create mode 100644 net/wireguard/ratelimiter.h
+ create mode 100644 net/wireguard/receive.c
+ create mode 100644 net/wireguard/selftest/allowedips.h
+ create mode 100644 net/wireguard/selftest/blake2s.h
+ create mode 100644 net/wireguard/selftest/chacha20poly1305.h
+ create mode 100644 net/wireguard/selftest/counter.h
+ create mode 100644 net/wireguard/selftest/curve25519.h
+ create mode 100644 net/wireguard/selftest/ratelimiter.h
+ create mode 100644 net/wireguard/send.c
+ create mode 100644 net/wireguard/socket.c
+ create mode 100644 net/wireguard/socket.h
+ create mode 100644 net/wireguard/timers.c
+ create mode 100644 net/wireguard/timers.h
+ create mode 100644 net/wireguard/uapi/wireguard.h
+ create mode 100644 net/wireguard/version.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (1):
+      Merge branch 'master' into wahoo-flash-8.0.0
+
+osm0sis (1):
+      AK2+Backend: misc fixes
+
+ META-INF/com/google/android/update-binary |  2 +-
+ tools/ak2-core.sh                         | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
