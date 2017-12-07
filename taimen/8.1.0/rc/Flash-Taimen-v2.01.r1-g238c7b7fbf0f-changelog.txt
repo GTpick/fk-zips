@@ -1,0 +1,438 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1-queue-2.01
+
+Aaron Sierra (1):
+      serial: 8250: Preserve DLD[7:4] for PORT_XR17V35X
+
+Alexey Khoroshilov (1):
+      usb: phy: tahvo: fix error handling in tahvo_usb_probe()
+
+Andrzej Hajda (1):
+      drm/exynos/decon5433: set STANDALONE_UPDATE_F on output enablement
+
+Andy Lutomirski (1):
+      selftests/x86/ldt_get: Add a few additional tests for limits
+
+Archana Sathyakumar (1):
+      cpuidle: lpm-levels: Fix snprintf string format
+
+Balvinder Singh (2):
+      [Bluetooth] - Fix for checking proper user-supplied buffers
+      Bluetooth: Fix for checking proper user-supplied buffers
+
+Ben Hutchings (1):
+      usbip: tools: Install all headers needed for libusbip development
+
+Benjamin Coddington (1):
+      nfs: Don't take a reference on fl->fl_file for LOCK operation
+
+Boshi Wang (1):
+      ima: fix hash algorithm initialization
+
+Christian Borntraeger (1):
+      s390/pci: do not require AIS facility
+
+Christoffer Dall (1):
+      KVM: arm/arm64: Fix occasional warning from the timer work function
+
+Colin Ian King (2):
+      net: sctp: fix array overrun read on sctp_timer_tbl
+      usb: host: fix incorrect updating of offset
+
+Coly Li (1):
+      bcache: only permit to recovery read error when cache device is clean
+
+Dan Carpenter (1):
+      USB: devio: Prevent integer overflow in proc_do_submiturb()
+
+Dave Hansen (1):
+      x86/entry: Use SYSCALL_DEFINE() macros for sys_modify_ldt()
+
+David Forster (1):
+      vti6: fix device register to report IFLA_INFO_KIND
+
+Florian Fainelli (2):
+      net: systemport: Utilize skb_put_padto()
+      net: systemport: Pad packet before inserting TSB
+
+Greg Kroah-Hartman (2):
+      Revert "ocfs2: should wait dio before inode lock in ocfs2_setattr()"
+      Linux 4.4.105-rc1
+
+Gustavo A. R. Silva (1):
+      EDAC, sb_edac: Fix missing break in switch
+
+Haibin Liu (1):
+      msm: sensor: actuator: avoid accessing out of bound memory
+
+Hans de Goede (1):
+      uas: Always apply US_FL_NO_ATA_1X quirk to Seagate devices
+
+Hardik Arya (1):
+      diag: Add NULL pointer checks for mask info
+
+Heiko Carstens (1):
+      s390/runtime instrumentation: simplify task exit handling
+
+Hiromitsu Yamasaki (1):
+      spi: sh-msiof: Fix DMA transfer size check
+
+Iago Abal (1):
+      dmaengine: pl330: fix double lock
+
+Jan Kara (1):
+      mm: avoid returning VM_FAULT_RETRY from ->page_mkwrite handlers
+
+Jason A. Donenfeld (1):
+      net: wireguard: Add tools to import source automatically
+
+Jason Baron (1):
+      tcp: correct memory barrier usage in tcp_check_space()
+
+Jibin Xu (1):
+      sysrq : fix Show Regs call trace on ARM
+
+Jisheng Zhang (2):
+      UPSTREAM: arm64: vdso: add __init section marker to alloc_vectors_page
+      UPSTREAM: arm64: vdso: constify vm_special_mapping used for aarch32 vectors page
+
+Jitendra Sharma (1):
+      soc: qcom: pil: Fix error handling during PIL driver probe
+
+John Stultz (4):
+      BACKPORT: time: Fix CLOCK_MONOTONIC_RAW sub-nanosecond accounting
+      BACKPORT: time: Clean up CLOCK_MONOTONIC_RAW time handling
+      usb: dwc2: Fix UDC state tracking
+      usb: dwc2: Error out of dwc2_hsotg_ep_disable() if we're in host mode
+
+John Youn (1):
+      usb: ch9: Add size macro for SSP dev cap descriptor
+
+Kai-Heng Feng (1):
+      usb: quirks: Add no-lpm quirk for KY-688 USB 3.1 Type-C Hub
+
+Kazuya Mizuguchi (1):
+      ravb: Remove Rx overflow log messages
+
+Kevin Brodsky (2):
+      UPSTREAM: arm64: Refactor vDSO time functions
+      UPSTREAM: arm64: Add support for CLOCK_MONOTONIC_RAW in clock_gettime() vDSO
+
+Lorenzo Colitti (1):
+      UPSTREAM: net: xfrm: allow clearing socket xfrm policies.
+
+Lukas Wunner (1):
+      serial: 8250_fintek: Fix rs485 disablement on invalid ioctl()
+
+Lynus Vaz (1):
+      msm: kgsl: Use the bind lock when dumping entries
+
+Mark Rutland (1):
+      UPSTREAM: arm64: vdso: fix clock_getres for 4GiB-aligned res
+
+Masakazu Mokuno (1):
+      USB: core: Add type-specific length check of BOS descriptors
+
+Masami Hiramatsu (1):
+      kprobes/x86: Disable preemption in ftrace-based jprobes
+
+Mateusz Berezecki (1):
+      USB: Increase usbfs transfer limit
+
+Mathias Nyman (1):
+      usb: Add USB 3.1 Precision time measurement capability descriptor support
+
+Matt Wilson (1):
+      serial: 8250_pci: Add Amazon PCI serial device ID
+
+Maulik Shah (1):
+      power: qcom: msm-core: Add mutex lock for ioctl
+
+Mayank Rana (1):
+      dwc3: Check USB LPM status before accessing any register
+
+Mike Looijmans (1):
+      usb: hub: Cycle HUB power when initialization fails
+
+Nathan Chancellor (3):
+      Revert "arm64: gettimeofday change for timer rollover condition"
+      Revert "wireguard: Import initial files (snapshot 0.0.20171127)"
+      Merge 4.4.105 into oreo-mr1-queue-2.01
+
+Neeraj Soni (1):
+      security: pfe: Return proper error code
+
+Neeraj Upadhyay (1):
+      soc: qcom: scm: Remap scm busy error codes to -EBUSY
+
+Oliver Neukum (1):
+      USB: usbfs: Filter flags passed in from user space
+
+Padmanabhan Komanduru (1):
+      msm: mdss: dp: fix programming of DisplayPort SDP registers
+
+Parthasarathy Bhuvaragan (1):
+      tipc: fix cleanup at module unload
+
+Peter Ujfalusi (1):
+      ARM: OMAP1: DMA: Correct the number of logical channels
+
+Ross Lagerwall (1):
+      xen-netfront: Improve error handling during initialization
+
+Rui Hua (1):
+      bcache: recover data from backing when data is clean
+
+Rui Sousa (1):
+      net: fec: fix multicast filtering hardware setup
+
+Sebastian Sjoholm (1):
+      USB: serial: option: add Quectel BG96 id
+
+Sreelakshmi Gownipalli (1):
+      diag: Free the memory in diagfwd_peripheral_exit()
+
+Subbaraman Narayanamurthy (1):
+      power: qcom: smb135x: change OTG regulator ops to static
+
+Surajit Podder (1):
+      msm: vidc: Fix sequence change event properly
+
+Surendar karka (1):
+      swr-wcd-ctrl: add check for end of soundwire port list
+
+Thomas Richter (1):
+      perf test attr: Fix ignored test case result
+
+Trond Myklebust (1):
+      NFSv4: Fix client recovery when server reboots multiple times
+
+Vatsal Bucha (1):
+      ASoC: msm: qdsp6v2: Remove excess logs in compress driver
+
+Vlad Tsyrklevich (1):
+      net/appletalk: Fix kernel memory disclosure
+
+Yu Chen (1):
+      usb: xhci: fix panic in xhci_free_virt_devices_depth_first
+
+ .gitignore                                         |    1 +
+ Makefile                                           |    4 +-
+ arch/arm/mach-omap1/dma.c                          |   16 +-
+ arch/arm64/include/asm/vdso_datapage.h             |    8 +-
+ arch/arm64/kernel/asm-offsets.c                    |    6 +-
+ arch/arm64/kernel/vdso.c                           |   12 +-
+ arch/arm64/kernel/vdso/gettimeofday.S              |  342 +-
+ arch/s390/include/asm/pci_insn.h                   |    2 +-
+ arch/s390/include/asm/runtime_instr.h              |    4 +-
+ arch/s390/kernel/process.c                         |    2 +-
+ arch/s390/kernel/runtime_instr.c                   |   30 +-
+ arch/s390/pci/pci.c                                |    5 +-
+ arch/s390/pci/pci_insn.c                           |    6 +-
+ arch/x86/include/asm/syscalls.h                    |    2 +-
+ arch/x86/kernel/kprobes/ftrace.c                   |   23 +-
+ arch/x86/kernel/ldt.c                              |   16 +-
+ arch/x86/um/ldt.c                                  |    7 +-
+ drivers/bluetooth/ath3k.c                          |   18 +-
+ drivers/bluetooth/btqca.c                          |   58 +-
+ drivers/char/diag/diag_masks.c                     |  128 +-
+ drivers/char/diag/diagfwd_peripheral.c             |    6 +-
+ drivers/cpuidle/lpm-levels.c                       |    3 +-
+ drivers/dma/pl330.c                                |   19 +-
+ drivers/edac/sb_edac.c                             |    1 +
+ drivers/gpu/drm/exynos/exynos5433_drm_decon.c      |    2 +
+ drivers/gpu/msm/kgsl_debugfs.c                     |    2 +
+ drivers/md/bcache/request.c                        |    9 +-
+ .../msm/camera_v2/sensor/actuator/msm_actuator.c   |   11 +-
+ drivers/media/platform/msm/vidc/msm_vidc_common.c  |   59 +-
+ drivers/net/appletalk/ipddp.c                      |    2 +-
+ drivers/net/ethernet/broadcom/bcmsysport.c         |   23 +-
+ drivers/net/ethernet/freescale/fec_main.c          |   23 +-
+ drivers/net/ethernet/renesas/ravb_main.c           |    8 +-
+ drivers/net/xen-netfront.c                         |   29 +-
+ drivers/power/qcom/msm-core.c                      |    5 +-
+ drivers/power/supply/qcom/smb1351-charger.c        |    2 +-
+ drivers/power/supply/qcom/smb135x-charger.c        |    2 +-
+ drivers/soc/qcom/scm.c                             |   11 +-
+ drivers/soc/qcom/subsys-pil-tz.c                   |   35 +-
+ drivers/soundwire/swr-wcd-ctrl.c                   |    2 +-
+ drivers/spi/spi-sh-msiof.c                         |    2 +-
+ drivers/staging/lustre/lustre/llite/llite_mmap.c   |    4 +-
+ drivers/tty/serial/8250/8250_fintek.c              |    2 +-
+ drivers/tty/serial/8250/8250_pci.c                 |    3 +
+ drivers/tty/serial/8250/8250_port.c                |    5 +-
+ drivers/tty/sysrq.c                                |    9 +-
+ drivers/usb/core/config.c                          |   31 +-
+ drivers/usb/core/devio.c                           |   56 +-
+ drivers/usb/core/hub.c                             |    9 +
+ drivers/usb/core/quirks.c                          |    3 +
+ drivers/usb/dwc2/gadget.c                          |    7 +
+ drivers/usb/dwc3/core.h                            |    2 +
+ drivers/usb/dwc3/debugfs.c                         |   43 +-
+ drivers/usb/host/ehci-dbg.c                        |    2 +-
+ drivers/usb/host/xhci-mem.c                        |    7 +
+ drivers/usb/phy/phy-tahvo.c                        |    3 +-
+ drivers/usb/serial/option.c                        |    3 +
+ drivers/usb/storage/uas-detect.h                   |    4 +
+ drivers/video/fbdev/msm/mdss_dp_util.c             |   16 +-
+ fs/nfs/nfs4proc.c                                  |    3 -
+ fs/nfs/nfs4state.c                                 |    1 -
+ fs/ocfs2/file.c                                    |    9 +-
+ include/linux/buffer_head.h                        |    4 +-
+ include/linux/timekeeper_internal.h                |    8 +-
+ include/linux/usb.h                                |    1 +
+ include/uapi/linux/usb/ch9.h                       |   19 +
+ kernel/time/timekeeping.c                          |   57 +-
+ net/Makefile                                       |    2 +-
+ net/ipv4/tcp_input.c                               |    2 +-
+ net/ipv6/ip6_vti.c                                 |    2 +-
+ net/sctp/debug.c                                   |    2 +-
+ net/tipc/server.c                                  |    4 +-
+ net/wireguard/Kconfig                              |   30 -
+ net/wireguard/Makefile                             |   19 -
+ net/wireguard/allowedips.c                         |  326 --
+ net/wireguard/allowedips.h                         |   44 -
+ net/wireguard/compat/Makefile.include              |   66 -
+ .../compat/checksum/checksum_partial_compat.h      |  208 --
+ net/wireguard/compat/compat-asm.h                  |   18 -
+ net/wireguard/compat/compat.h                      |  628 ----
+ net/wireguard/compat/dst_cache/dst_cache.c         |  175 --
+ .../compat/dst_cache/include/net/dst_cache.h       |   97 -
+ net/wireguard/compat/fpu/include/asm/fpu/api.h     |    1 -
+ net/wireguard/compat/memneq/include.h              |    5 -
+ net/wireguard/compat/memneq/memneq.c               |  170 -
+ .../compat/ptr_ring/include/linux/ptr_ring.h       |  640 ----
+ net/wireguard/compat/simd/include/asm/simd.h       |    1 -
+ .../compat/siphash/include/linux/siphash.h         |  140 -
+ net/wireguard/compat/siphash/siphash.c             |  539 ----
+ .../compat/udp_tunnel/include/net/udp_tunnel.h     |   94 -
+ net/wireguard/compat/udp_tunnel/udp_tunnel.c       |  385 ---
+ .../compat/udp_tunnel/udp_tunnel_partial_compat.h  |  226 --
+ net/wireguard/cookie.c                             |  195 --
+ net/wireguard/cookie.h                             |   52 -
+ net/wireguard/crypto/blake2s-x86_64.S              |  685 ----
+ net/wireguard/crypto/blake2s.c                     |  294 --
+ net/wireguard/crypto/blake2s.h                     |   94 -
+ net/wireguard/crypto/chacha20-arm.S                | 1471 ---------
+ net/wireguard/crypto/chacha20-arm64.S              | 1940 ------------
+ net/wireguard/crypto/chacha20-x86_64.S             | 2060 -------------
+ net/wireguard/crypto/chacha20poly1305.c            |  822 -----
+ net/wireguard/crypto/chacha20poly1305.h            |   92 -
+ net/wireguard/crypto/curve25519-arm.S              | 2110 -------------
+ net/wireguard/crypto/curve25519-x86_64.S           | 3261 --------------------
+ net/wireguard/crypto/curve25519.c                  | 1689 ----------
+ net/wireguard/crypto/curve25519.h                  |   25 -
+ net/wireguard/crypto/poly1305-arm.S                | 1115 -------
+ net/wireguard/crypto/poly1305-arm64.S              |  820 -----
+ net/wireguard/crypto/poly1305-mips64.S             |  357 ---
+ net/wireguard/crypto/poly1305-x86_64.S             | 2803 -----------------
+ net/wireguard/device.c                             |  415 ---
+ net/wireguard/device.h                             |   64 -
+ net/wireguard/hashtables.c                         |  168 -
+ net/wireguard/hashtables.h                         |   52 -
+ net/wireguard/main.c                               |   69 -
+ net/wireguard/messages.h                           |  129 -
+ net/wireguard/netlink.c                            |  512 ---
+ net/wireguard/netlink.h                            |   12 -
+ net/wireguard/noise.c                              |  635 ----
+ net/wireguard/noise.h                              |  117 -
+ net/wireguard/peer.c                               |  136 -
+ net/wireguard/peer.h                               |   73 -
+ net/wireguard/queueing.c                           |   46 -
+ net/wireguard/queueing.h                           |  142 -
+ net/wireguard/ratelimiter.c                        |  199 --
+ net/wireguard/ratelimiter.h                        |   19 -
+ net/wireguard/receive.c                            |  490 ---
+ net/wireguard/selftest/allowedips.h                |  514 ---
+ net/wireguard/selftest/blake2s.h                   |  559 ----
+ net/wireguard/selftest/chacha20poly1305.h          |  333 --
+ net/wireguard/selftest/counter.h                   |   92 -
+ net/wireguard/selftest/curve25519.h                |   77 -
+ net/wireguard/selftest/ratelimiter.h               |  157 -
+ net/wireguard/send.c                               |  348 ---
+ net/wireguard/socket.c                             |  389 ---
+ net/wireguard/socket.h                             |   35 -
+ net/wireguard/timers.c                             |  199 --
+ net/wireguard/timers.h                             |   21 -
+ net/wireguard/uapi/wireguard.h                     |  182 --
+ net/wireguard/version.h                            |    1 -
+ net/xfrm/xfrm_policy.c                             |    2 +-
+ net/xfrm/xfrm_state.c                              |    7 +
+ scripts/Kbuild.include                             |    1 +
+ scripts/fetch-latest-wireguard.sh                  |   18 +
+ security/integrity/ima/ima_main.c                  |    4 +
+ security/pfe/pfk_ice.c                             |   31 +-
+ sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c         |    4 +-
+ tools/perf/tests/attr.c                            |    2 +-
+ tools/testing/selftests/x86/ldt_gdt.c              |   17 +-
+ tools/usb/usbip/Makefile.am                        |    3 +-
+ virt/kvm/arm/arch_timer.c                          |    3 -
+ 151 files changed, 922 insertions(+), 30321 deletions(-)
+ delete mode 100644 net/wireguard/Kconfig
+ delete mode 100644 net/wireguard/Makefile
+ delete mode 100644 net/wireguard/allowedips.c
+ delete mode 100644 net/wireguard/allowedips.h
+ delete mode 100644 net/wireguard/compat/Makefile.include
+ delete mode 100644 net/wireguard/compat/checksum/checksum_partial_compat.h
+ delete mode 100644 net/wireguard/compat/compat-asm.h
+ delete mode 100644 net/wireguard/compat/compat.h
+ delete mode 100644 net/wireguard/compat/dst_cache/dst_cache.c
+ delete mode 100644 net/wireguard/compat/dst_cache/include/net/dst_cache.h
+ delete mode 100644 net/wireguard/compat/fpu/include/asm/fpu/api.h
+ delete mode 100644 net/wireguard/compat/memneq/include.h
+ delete mode 100644 net/wireguard/compat/memneq/memneq.c
+ delete mode 100644 net/wireguard/compat/ptr_ring/include/linux/ptr_ring.h
+ delete mode 100644 net/wireguard/compat/simd/include/asm/simd.h
+ delete mode 100644 net/wireguard/compat/siphash/include/linux/siphash.h
+ delete mode 100644 net/wireguard/compat/siphash/siphash.c
+ delete mode 100644 net/wireguard/compat/udp_tunnel/include/net/udp_tunnel.h
+ delete mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel.c
+ delete mode 100644 net/wireguard/compat/udp_tunnel/udp_tunnel_partial_compat.h
+ delete mode 100644 net/wireguard/cookie.c
+ delete mode 100644 net/wireguard/cookie.h
+ delete mode 100644 net/wireguard/crypto/blake2s-x86_64.S
+ delete mode 100644 net/wireguard/crypto/blake2s.c
+ delete mode 100644 net/wireguard/crypto/blake2s.h
+ delete mode 100644 net/wireguard/crypto/chacha20-arm.S
+ delete mode 100644 net/wireguard/crypto/chacha20-arm64.S
+ delete mode 100644 net/wireguard/crypto/chacha20-x86_64.S
+ delete mode 100644 net/wireguard/crypto/chacha20poly1305.c
+ delete mode 100644 net/wireguard/crypto/chacha20poly1305.h
+ delete mode 100644 net/wireguard/crypto/curve25519-arm.S
+ delete mode 100644 net/wireguard/crypto/curve25519-x86_64.S
+ delete mode 100644 net/wireguard/crypto/curve25519.c
+ delete mode 100644 net/wireguard/crypto/curve25519.h
+ delete mode 100644 net/wireguard/crypto/poly1305-arm.S
+ delete mode 100644 net/wireguard/crypto/poly1305-arm64.S
+ delete mode 100644 net/wireguard/crypto/poly1305-mips64.S
+ delete mode 100644 net/wireguard/crypto/poly1305-x86_64.S
+ delete mode 100644 net/wireguard/device.c
+ delete mode 100644 net/wireguard/device.h
+ delete mode 100644 net/wireguard/hashtables.c
+ delete mode 100644 net/wireguard/hashtables.h
+ delete mode 100644 net/wireguard/main.c
+ delete mode 100644 net/wireguard/messages.h
+ delete mode 100644 net/wireguard/netlink.c
+ delete mode 100644 net/wireguard/netlink.h
+ delete mode 100644 net/wireguard/noise.c
+ delete mode 100644 net/wireguard/noise.h
+ delete mode 100644 net/wireguard/peer.c
+ delete mode 100644 net/wireguard/peer.h
+ delete mode 100644 net/wireguard/queueing.c
+ delete mode 100644 net/wireguard/queueing.h
+ delete mode 100644 net/wireguard/ratelimiter.c
+ delete mode 100644 net/wireguard/ratelimiter.h
+ delete mode 100644 net/wireguard/receive.c
+ delete mode 100644 net/wireguard/selftest/allowedips.h
+ delete mode 100644 net/wireguard/selftest/blake2s.h
+ delete mode 100644 net/wireguard/selftest/chacha20poly1305.h
+ delete mode 100644 net/wireguard/selftest/counter.h
+ delete mode 100644 net/wireguard/selftest/curve25519.h
+ delete mode 100644 net/wireguard/selftest/ratelimiter.h
+ delete mode 100644 net/wireguard/send.c
+ delete mode 100644 net/wireguard/socket.c
+ delete mode 100644 net/wireguard/socket.h
+ delete mode 100644 net/wireguard/timers.c
+ delete mode 100644 net/wireguard/timers.h
+ delete mode 100644 net/wireguard/uapi/wireguard.h
+ delete mode 100644 net/wireguard/version.h
+ create mode 100755 scripts/fetch-latest-wireguard.sh
