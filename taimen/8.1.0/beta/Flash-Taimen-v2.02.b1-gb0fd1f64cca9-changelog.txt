@@ -1,0 +1,33 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1-queue-2.02
+
+Brendan Jackman (1):
+      ANDROID: cpufreq-dt: Set sane defaults for schedutil rate limits
+
+Hong-Mei Li (1):
+      arm64: lib: memory utilities optimization
+
+Ke Wang (2):
+      trace: sched: Fix util_avg_walt in sched_load_avg_cpu trace
+      sched: EAS/WALT: Don't take into account of running task's util
+
+Lennart Wieboldt (1):
+      Revert "arm64: strcmp: Align to cache and preload"
+
+Viresh Kumar (1):
+      BACKPORT: schedutil: Reset cached freq if it is not in sync with next_freq
+
+Yuanyuan Zhong (1):
+      arm64: strcmp: align to 64B cache line
+
+Zac Crosby (1):
+      msm: mdss: Remove partial update region delays
+
+ arch/arm64/lib/copy_template.S           |  2 ++
+ arch/arm64/lib/memmove.S                 |  2 ++
+ arch/arm64/lib/strcmp.S                  |  9 +--------
+ drivers/cpufreq/cpufreq-dt.c             |  7 +++++++
+ drivers/video/fbdev/msm/mdss_dsi_panel.c |  8 ++++----
+ include/trace/events/sched.h             |  6 +++---
+ kernel/sched/cpufreq_schedutil.c         | 11 +++++++++--
+ kernel/sched/fair.c                      |  3 ++-
+ 8 files changed, 30 insertions(+), 18 deletions(-)
