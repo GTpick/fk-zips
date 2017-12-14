@@ -1,0 +1,136 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Brendan Jackman (1):
+      ANDROID: cpufreq-dt: Set sane defaults for schedutil rate limits
+
+Cheng Jian (1):
+      sched/idle: Micro-optimize the idle loop
+
+Colin Ian King (1):
+      lib/lz4: make arrays static const, reduces object code size
+
+Hong-Mei Li (1):
+      arm64: lib: memory utilities optimization
+
+Huang Ying (1):
+      mm, swap: fix race between swap count continuation operations
+
+Ke Wang (2):
+      trace: sched: Fix util_avg_walt in sched_load_avg_cpu trace
+      sched: EAS/WALT: Don't take into account of running task's util
+
+Lennart Wieboldt (1):
+      Revert "arm64: strcmp: Align to cache and preload"
+
+Linus Torvalds (1):
+      sched/core: Remove pointless printout in sched_show_task()
+
+Nathan Chancellor (4):
+      Revert "ANDROID: sched: rt: schedtune: Add boost retention to RT"
+      flash_defconfig: Get rid of CPU_FREQ_GOV_SCHED
+      .gitignore: Move WireGuard exclusion to net folder
+      flash_defconfig: Enable WAKE_GESTURES
+
+Nick Bray (1):
+      ANDROID: initramfs: call free_initrd() when skipping init
+
+Oleg Nesterov (1):
+      sched/autogroup: Do not use autogroup->tg in zombie threads
+
+Peter Zijlstra (2):
+      sched/fair, cpumask: Export for_each_cpu_wrap()
+      sched/topology: Fix building of overlapping sched-groups
+
+Tetsuo Handa (1):
+      sched/core: Fix oops in sched_show_task()
+
+Todd Poynor (1):
+      ANDROID: sched/walt: make walt_ktime_suspended __read_mostly
+
+Vincent Guittot (1):
+      UPSTREAM: sched/fair: Fix FTQ noise bench regression
+
+Viresh Kumar (2):
+      BACKPORT: schedutil: Reset cached freq if it is not in sync with next_freq
+      cpufreq: Drop schedfreq governor
+
+Yi-wei Zhao (1):
+      arch/arm64: skip randomization within stack
+
+Yuanyuan Zhong (1):
+      arm64: strcmp: align to 64B cache line
+
+Zac Crosby (1):
+      msm: mdss: Remove partial update region delays
+
+andip71 (1):
+      mdss_fb: add lcd backlight min/max limits
+
+flar2 (5):
+      wake_gestures: Sweep2wake, doubletap2wake and sweep2sleep
+      wake_gestures: adapt for walleye
+      wake_gestures: adapt for taimen
+      wake_gestures: expose vibrator
+      wake_gestures: skip pm suspend for i2c bus
+
+ .gitignore                                         |   1 -
+ arch/arm64/configs/flash_defconfig                 |   2 +-
+ arch/arm64/kernel/process.c                        |   2 -
+ arch/arm64/lib/copy_template.S                     |   2 +
+ arch/arm64/lib/memmove.S                           |   2 +
+ arch/arm64/lib/strcmp.S                            |   9 +-
+ drivers/cpufreq/Kconfig                            |  13 -
+ drivers/cpufreq/cpufreq-dt.c                       |   7 +
+ drivers/i2c/busses/i2c-msm-v2.c                    |   8 +
+ drivers/input/misc/drv2624.c                       |   9 +
+ drivers/input/touchscreen/Kconfig                  |   3 +
+ drivers/input/touchscreen/Makefile                 |   1 +
+ drivers/input/touchscreen/stm/ftm4_ts.c            |  55 ++
+ .../synaptics_dsx_htc/synaptics_dsx_core_htc.c     |  55 ++
+ drivers/input/touchscreen/wake_gestures.c          | 850 +++++++++++++++++++++
+ drivers/video/fbdev/msm/mdss_dsi_panel.c           |   8 +-
+ drivers/video/fbdev/msm/mdss_fb.c                  |  14 +
+ include/linux/cpumask.h                            |  17 +
+ include/linux/sched.h                              |   6 +-
+ include/linux/sched/sysctl.h                       |   1 -
+ include/linux/swap.h                               |   4 +
+ include/linux/wake_gestures.h                      |  38 +
+ include/trace/events/sched.h                       |   6 +-
+ init/initramfs.c                                   |   5 +-
+ kernel/exit.c                                      |   1 +
+ kernel/sched/Makefile                              |   1 -
+ kernel/sched/auto_group.c                          |  19 +
+ kernel/sched/core.c                                | 101 +--
+ kernel/sched/cpufreq_sched.c                       | 528 -------------
+ kernel/sched/cpufreq_schedutil.c                   |  11 +-
+ kernel/sched/fair.c                                | 131 +---
+ kernel/sched/idle.c                                |   3 +-
+ kernel/sched/rt.c                                  | 204 +----
+ kernel/sched/sched.h                               |  76 --
+ kernel/sched/walt.c                                |   2 +-
+ kernel/sysctl.c                                    |   7 -
+ lib/cpumask.c                                      |  32 +
+ lib/lz4/lz4_decompress.c                           |   4 +-
+ mm/swapfile.c                                      |  23 +-
+ net/.gitignore                                     |   1 +
+ 40 files changed, 1210 insertions(+), 1052 deletions(-)
+ create mode 100644 drivers/input/touchscreen/wake_gestures.c
+ create mode 100644 include/linux/wake_gestures.h
+ delete mode 100644 kernel/sched/cpufreq_sched.c
+ create mode 100644 net/.gitignore
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (1):
+      Merge branch 'master' into wahoo-flash-8.1.0
+
+osm0sis (3):
+      tools: update to latest builds
+      AK2: add "OG AK" mode by making the unpack/repack procedure more granular
+      README: document "OG AK" mode
+
+ README.md         |   6 ++++
+ tools/ak2-core.sh |  94 ++++++++++++++++++++++++++++++++++--------------------
+ tools/mkbootimg   | Bin 72212 -> 72212 bytes
+ 3 files changed, 65 insertions(+), 35 deletions(-)
