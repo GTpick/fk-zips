@@ -1,0 +1,190 @@
+http://github.com/nathanchance/op5/commits/8.0.0-custom
+
+Ashay Jaiswal (2):
+      battery: fix ordering of ICL/FCC configuration
+      smb1351: Fix parallel ICL configuration
+
+Benjamin Chan (1):
+      msm: mdss: adjust mdss_mdp_get_plane_sizes parameters init order
+
+Daniel Rosenberg (3):
+      ANDROID: mnt: Fix freeing of mount data
+      ANDROID: Sdcardfs: Move gid derivation under flag
+      ANDROID: sdcardfs: Add missing break
+
+Gerrit - the friendly Code Review server (2):
+      Merge changes  into msm-4.4.c7
+      Merge changes  into msm-4.4.c7
+
+Jaegeuk Kim (1):
+      ANDROID: sdcardfs: override credential for ioctl to lower fs
+
+Jishnu Prakash (2):
+      msm: sps: Update debug message format specifier
+      msm: sps: Restore ipc log destroy commands
+
+Linux Build Service Account (26):
+      Merge 60ee38ccad74ad3f80e0acf72985d9c717ecdd77 on remote branch
+      Merge "msm: camera: Synchronize v4l2 subscribe and unsubscribe event in camera.c"
+      Merge "cfg80211: Make pre-CAC results valid only for ETSI domain"
+      Merge "msm: ipa: Race condition fix to avoid missing GSI interrupts"
+      Merge "msm: mdss: adjust mdss_mdp_get_plane_sizes parameters init order"
+      Merge "ath10k: add support for wowlan offload for wcn3990 WLAN module"
+      Merge "ath10k: check the pipe credit update enabled flag before set"
+      Merge "msm: wlan: Update regulatory database"
+      Merge "net: update rdev suspend method for the wowlan suspend/resume"
+      Merge "msm: sps: Update debug message format specifier"
+      Merge "mmc: cmdq_hci: Remove runtime PM vote if request issuing fails"
+      Merge "mmc: card: Requeue the request if it fails during issuing"
+      Merge "msm: msm_bus: Add mutex lock for floor vote data"
+      Merge "msm: camera: Add support to reconfig regupdate fail buffer"
+      Merge "msm: camera: isp: Enable epoch2 interrupt for pipeline 47"
+      Merge "msm: ipa: dynamic memory leak fix"
+      Merge "scsi: ufs: Fix off-by-one bug in ufs debugfs driver"
+      Merge "ath9k: fix tx99 use after free"
+      Merge "scsi: ufs: Add counter for hibernate and gear switch"
+      Merge "msm: sps: Restore ipc log destroy commands"
+      Merge "msm: ADSPRPC: use access_ok to validate pointers"
+      Merge "ath10k: Add phyerr event changes for HL1.0"
+      Merge "qseecom: fix an app unloading issue when the app is blocked"
+      Merge "msm: ADSPRPC: validate context pointer with magic number"
+      Merge "icnss: Remove MSA0 permission only when modem is crashed"
+      Merge f6f178e71ae8bea49c9e5b07604d3048fb76de91 on remote branch
+
+Lokesh Kumar Aakulu (3):
+      msm: camera: isp: Allocate kernel page and map to userspace
+      msm: camera: Add support to reconfig regupdate fail buffer
+      msm: camera: isp: Enable epoch2 interrupt for pipeline 47
+
+Miaoqing Pan (1):
+      ath9k: fix tx99 use after free
+
+Michael Adisumarta (2):
+      msm: ipa: Race condition fix to avoid missing GSI interrupts
+      msm: ipa: dynamic memory leak fix
+
+Nathan Chancellor (2):
+      Revert "HACK: scripts: wireguard: Force download from master"
+      Merge LA.UM.6.4.r1-05400-8x98.0 into 8.0.0-custom
+
+Odelu Kukatla (1):
+      msm: msm_bus: Add mutex lock for floor vote data
+
+Praveen Chavan (1):
+      msm: vidc: Fix instance formats initialization issue.
+
+Rajeev Kumar Sirasanagandla (1):
+      msm: wlan: Update regulatory database
+
+Rakesh Pillai (1):
+      ath10k: Add phyerr event changes for HL1.0
+
+Sarada Prasanna Garnayak (5):
+      ath10k: configure the vdev listen interval before wow suspend
+      ath10k: check the pipe credit update enabled flag before set
+      net: update rdev suspend method for the wowlan suspend/resume
+      ath10k: Enable WoWLAN for the wcn3990 snoc wlan module
+      ath10k: add support for wowlan offload for wcn3990 WLAN module
+
+Sayali Lokhande (2):
+      scsi: ufs: Add counter for hibernate and gear switch
+      scsi: ufs: Fix off-by-one bug in ufs debugfs driver
+
+Surendar karka (1):
+      swr-wcd-ctrl: add check for end of soundwire port list.
+
+Trishansh Bhardwaj (1):
+      msm: camera: Synchronize v4l2 subscribe and unsubscribe event in camera.c
+
+Vasanthakumar Thiagarajan (1):
+      cfg80211: Make pre-CAC results valid only for ETSI domain
+
+Veerabhadrarao Badiganti (3):
+      mmc: cmdq_hci: Remove runtime PM vote if request issuing fails
+      mmc: core: Return the error if command queue request fails
+      mmc: card: Requeue the request if it fails during issuing
+
+Vikash Garodia (1):
+      msm: vidc: Fix the type of frame size
+
+Yuanyuan Liu (1):
+      icnss: Remove MSA0 permission only when modem is crashed
+
+Zhen Kong (1):
+      qseecom: fix an app unloading issue when the app is blocked
+
+c_mtharu (2):
+      msm: ADSPRPC: use access_ok to validate pointers
+      msm: ADSPRPC: validate context pointer with magic number
+
+ drivers/char/adsprpc.c                             |  22 +++-
+ .../media/platform/msm/camera_v2/camera/camera.c   |   4 +
+ .../media/platform/msm/camera_v2/isp/msm_buf_mgr.h |   4 +-
+ drivers/media/platform/msm/camera_v2/isp/msm_isp.c |  70 ++++++++++-
+ drivers/media/platform/msm/camera_v2/isp/msm_isp.h |   6 +
+ .../media/platform/msm/camera_v2/isp/msm_isp40.c   |  20 ++-
+ .../media/platform/msm/camera_v2/isp/msm_isp47.c   |  22 +++-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  | 138 ++++++++++++++++-----
+ drivers/misc/qseecom.c                             |   2 +
+ drivers/mmc/card/block.c                           |  26 ++++
+ drivers/mmc/core/core.c                            |  27 ++--
+ drivers/mmc/host/cmdq_hci.c                        |  20 ++-
+ drivers/net/wireless/ath/ath10k/core.c             |   3 +
+ drivers/net/wireless/ath/ath10k/core.h             |   3 +
+ drivers/net/wireless/ath/ath10k/htc.c              |   3 +-
+ drivers/net/wireless/ath/ath10k/hw.c               |   1 +
+ drivers/net/wireless/ath/ath10k/hw.h               |   1 +
+ drivers/net/wireless/ath/ath10k/mac.c              |   5 +
+ drivers/net/wireless/ath/ath10k/snoc.c             |  52 +++++++-
+ drivers/net/wireless/ath/ath10k/wmi-ops.h          |  19 +++
+ drivers/net/wireless/ath/ath10k/wmi-tlv.c          |  84 +++++++++++++
+ drivers/net/wireless/ath/ath10k/wmi-tlv.h          |  11 ++
+ drivers/net/wireless/ath/ath10k/wmi.c              |  19 +--
+ drivers/net/wireless/ath/ath10k/wmi.h              |  55 ++++++++
+ drivers/net/wireless/ath/ath10k/wow.c              | 135 +++++++++++++++++++-
+ drivers/net/wireless/ath/ath10k/wow.h              |   1 +
+ drivers/platform/msm/gsi/gsi.c                     |   3 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_uc_wdi.c       |   8 +-
+ drivers/platform/msm/sps/bam.c                     | 110 ++++++++--------
+ drivers/platform/msm/sps/sps.c                     |   7 +-
+ drivers/platform/msm/sps/sps_bam.c                 |   8 +-
+ drivers/platform/msm/sps/sps_mem.c                 |   5 +-
+ drivers/platform/msm/sps/sps_rm.c                  |   7 +-
+ drivers/power/supply/qcom/battery.c                | 114 +++++++++++++----
+ drivers/power/supply/qcom/smb1351-charger.c        |  11 +-
+ drivers/scsi/ufs/ufs-debugfs.c                     |   6 +-
+ drivers/scsi/ufs/ufs-qcom-debugfs.c                |   3 +-
+ drivers/scsi/ufs/ufshcd.c                          |   4 +-
+ drivers/scsi/ufs/ufshcd.h                          |   1 +
+ drivers/soc/qcom/icnss.c                           |   3 +-
+ drivers/soc/qcom/msm_bus/msm_bus_dbg_voter.c       |  15 ++-
+ drivers/video/fbdev/msm/mdss_mdp_util.c            |   3 +-
+ include/uapi/linux/nl80211.h                       |   5 +
+ net/wireless/ap.c                                  |   5 +
+ net/wireless/chan.c                                |  99 +++++++++++++++
+ net/wireless/core.h                                |  10 ++
+ net/wireless/db.txt                                |   6 +-
+ net/wireless/ibss.c                                |   1 +
+ net/wireless/mesh.c                                |   1 +
+ net/wireless/mlme.c                                |  40 ++++--
+ net/wireless/reg.c                                 |  28 +++++
+ net/wireless/reg.h                                 |  14 +++
+ net/wireless/sysfs.c                               |   2 +-
+ scripts/fetch-latest-wireguard.sh                  |   2 +-
+ 54 files changed, 1084 insertions(+), 190 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Nathan Chancellor (1):
+      Merge branch 'master' into op5-flash-8.0.0
+
+osm0sis (3):
+      tools: update to latest builds
+      AK2: add "OG AK" mode by making the unpack/repack procedure more granular
+      README: document "OG AK" mode
+
+ README.md         |   6 ++++
+ tools/ak2-core.sh |  94 ++++++++++++++++++++++++++++++++++--------------------
+ tools/mkbootimg   | Bin 72212 -> 72212 bytes
+ 3 files changed, 65 insertions(+), 35 deletions(-)
