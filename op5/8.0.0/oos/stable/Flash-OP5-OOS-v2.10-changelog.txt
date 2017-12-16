@@ -1,0 +1,380 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos
+
+Al Viro (1):
+      more bio_map_user_iov() leak fixes
+
+Alexey Kardashevskiy (1):
+      powerpc/powernv/ioda2: Gracefully fail if too many TCE levels requested
+
+Andrew Honig (1):
+      KVM: VMX: remove I/O port 0x80 bypass on Intel hosts
+
+Arvind Yadav (1):
+      atm: horizon: Fix irq release error
+
+Ben Hutchings (1):
+      mac80211_hwsim: Fix memory leak in hwsim_new_radio_nl()
+
+Blomme, Maarten (1):
+      spi_ks8995: fix "BUG: key accdaa28 not in .data!"
+
+Chris Brandt (1):
+      i2c: riic: fix restart condition
+
+Christophe JAILLET (1):
+      USB: gadgetfs: Fix a potential memory leak in 'dev_config()'
+
+Chuck Lever (1):
+      sunrpc: Fix rpc_task_begin trace point
+
+Daniel Drake (1):
+      HID: chicony: Add support for another ASUS Zen AiO keyboard
+
+Daniel Thompson (1):
+      kdb: Fix handling of kallsyms_symbol_next() return value
+
+Dave Gordon (1):
+      drm: extra printk() wrapper macros
+
+Dave Martin (1):
+      arm64: fpsimd: Prevent registers leaking from dead tasks
+
+David Daney (1):
+      module: set __jump_table alignment to 8
+
+David Howells (1):
+      afs: Connect up the CB.ProbeUuid
+
+Eric Biggers (3):
+      ASN.1: fix out-of-bounds read when parsing indefinite length item
+      ASN.1: check for error from ASN1_OP_END__ACT actions
+      X.509: reject invalid BIT STRING for subjectPublicKey
+
+Eric Dumazet (1):
+      net/packet: fix a race in packet_bind() and packet_notifier()
+
+Florian Westphal (1):
+      netfilter: don't track fragmented packets
+
+Franck Demathieu (1):
+      irqchip/crossbar: Fix incorrect type of register size
+
+Greg Kroah-Hartman (5):
+      efi: Move some sysfs files to be read-only by root
+      Revert "x86/efi: Build our own page table structures"
+      Revert "x86/efi: Hoist page table switching code into efi_call_virt()"
+      Revert "x86/mm/pat: Ensure cpa->pfn only contains page frame numbers"
+      Linux 4.4.106
+
+Guenter Roeck (2):
+      ARM: OMAP2+: Fix device node reference counts
+      ARM: OMAP2+: Release device node after it is no longer needed.
+
+Hangbin Liu (1):
+      sit: update frag_off info
+
+Heiko Carstens (2):
+      s390: fix compat system call table
+      s390: always save and restore all registers on context switch
+
+Herbert Xu (1):
+      xfrm: Copy policy family in clone_policy
+
+Huacai Chen (1):
+      scsi: libsas: align sata_device's rps_resp on a cacheline
+
+Håkon Bugge (1):
+      rds: Fix NULL pointer dereference in __rds_rdma_map
+
+Jaejoong Kim (2):
+      ALSA: usb-audio: Fix out-of-bound error
+      ALSA: usb-audio: Add check return value for usb_string()
+
+James Smart (1):
+      scsi: lpfc: Fix crash during Hardware error recovery on SLI3 adapters
+
+Jan Kara (1):
+      axonram: Fix gendisk handling
+
+Jason Baron (1):
+      jump_label: Invoke jump_label_test() via early_initcall()
+
+Jim Mattson (1):
+      kvm: nVMX: VMCLEAR should not cause the vCPU to shut down
+
+Jim Qu (1):
+      drm/amd/amdgpu: fix console deadlock if late init failed
+
+Jimmy Assarsson (3):
+      can: kvaser_usb: free buf in error paths
+      can: kvaser_usb: Fix comparison bug in kvaser_usb_read_bulk_callback()
+      can: kvaser_usb: ratelimit errors if incomplete messages are received
+
+Johannes Thumshirn (1):
+      zram: set physical queue limits to avoid array out of bounds accesses
+
+John Keeping (1):
+      usb: gadget: configs: plug memory leak
+
+Jon Maloy (1):
+      tipc: fix memory leak in tipc_accept_from_sock()
+
+Jérémy Lefaure (2):
+      EDAC, i5000, i5400: Fix use of MTR_DRAM_WIDTH macro
+      EDAC, i5000, i5400: Fix definition of NRECMEMB register
+
+Keefe Liu (1):
+      ipvlan: fix ipv6 outbound device
+
+Kirill A. Shutemov (3):
+      thp: reduce indentation level in change_huge_pmd()
+      thp: fix MADV_DONTNEED vs. numa balancing race
+      mm: drop unused pmdp_huge_get_and_clear_notify()
+
+Kristina Martsenko (1):
+      arm64: KVM: fix VTTBR_BADDR_MASK BUG_ON off-by-one
+
+Krzysztof Kozlowski (1):
+      crypto: s5p-sss - Fix completing crypto request in IRQ handler
+
+Ladislav Michl (1):
+      ARM: OMAP2+: gpmc-onenand: propagate error on initialization failure
+
+Laurent Caumont (1):
+      media: dvb: i2c transfers over usb cannot be done from stack
+
+Majd Dibbiny (1):
+      IB/mlx5: Assign send CQ and recv CQ of UMR QP
+
+Marc Zyngier (1):
+      arm: KVM: Fix VTTBR_BADDR_MASK BUG_ON off-by-one
+
+Marek Szyprowski (1):
+      drm/exynos: gem: Drop NONCONTIG flag for buffers allocated without IOMMU
+
+Mark Bloch (1):
+      IB/mlx4: Increase maximal message size under UD QP
+
+Mark Rutland (2):
+      arm: KVM: Survive unknown traps from guests
+      arm64: KVM: Survive unknown traps from guests
+
+Martin Kelly (4):
+      can: kvaser_usb: cancel urb on -EPIPE and -EPROTO
+      can: ems_usb: cancel urb on -EPIPE and -EPROTO
+      can: esd_usb2: cancel urb on -EPIPE and -EPROTO
+      can: usb_8dev: cancel urb on -EPIPE and -EPROTO
+
+Masahiro Yamada (1):
+      kbuild: pkg: use --transform option to prefix paths in tar
+
+Masamitsu Yamazaki (1):
+      ipmi: Stop timers before cleaning up the module
+
+Michal Schmidt (3):
+      bnx2x: prevent crash when accessing PTP with interface down
+      bnx2x: fix possible overrun of VFPF multicast addresses array
+      bnx2x: do not rollback VF MAC/VLAN filters we did not configure
+
+Mike Maloney (1):
+      packet: fix crash in fanout_demux_rollover()
+
+Ming Lei (1):
+      block: wake up all tasks blocked in get_request()
+
+Nathan Chancellor (1):
+      Merge 4.4.106 into 8.0.0-oos
+
+Oliver Stäbler (1):
+      can: ti_hecc: Fix napi poll return value for repoll
+
+Paul Meyer (1):
+      hv: kvp: Avoid reading past allocated blocks from KVP file
+
+Paul Moore (1):
+      audit: ensure that 'audit=1' actually enables audit for PID 1
+
+Pavel Tatashin (1):
+      sparc64/mm: set fields in deferred pages
+
+Phil Reid (1):
+      gpio: altera: Use handle_level_irq when configured as a level_high
+
+Rafael J. Wysocki (1):
+      x86/PCI: Make broadcom_postcore_init() check acpi_disabled
+
+Randy Dunlap (1):
+      dynamic-debug-howto: fix optional/omitted ending line number to be LARGE instead of 0
+
+Robb Glasser (1):
+      ALSA: pcm: prevent UAF in snd_pcm_info
+
+Robin Murphy (1):
+      iommu/vt-d: Fix scatterlist offset handling
+
+Russell King (2):
+      ARM: BUG if jumping to usermode address in kernel mode
+      ARM: avoid faulting on qemu
+
+Sachin Sant (1):
+      selftest/powerpc: Fix false failures for skipped tests
+
+Sasha Levin (3):
+      Revert "drm/armada: Fix compile fail"
+      Revert "spi: SPI_FSL_DSPI should depend on HAS_DMA"
+      Revert "s390/kbuild: enable modversions for symbols exported from asm"
+
+Steffen Klassert (1):
+      vti6: Don't report path MTU below IPV6_MIN_MTU.
+
+Stephen Bates (1):
+      lib/genalloc.c: make the avail variable an atomic_long_t
+
+Stephen Hemminger (1):
+      scsi: storvsc: Workaround for virtual DVD SCSI version
+
+Takashi Iwai (1):
+      ALSA: seq: Remove spurious WARN_ON() at timer check
+
+Tejun Heo (2):
+      libata: drop WARN from protocol error in ata_sff_qc_issue()
+      workqueue: trigger WARN if queue_delayed_work() is called with NULL @wq
+
+Thomas Gleixner (1):
+      x86/hpet: Prevent might sleep splat on resume
+
+Trond Myklebust (1):
+      NFS: Fix a typo in nfs_rename()
+
+Vincent Pelletier (1):
+      usb: gadget: ffs: Forbid usb_ep_alloc_request from sleeping
+
+WANG Cong (1):
+      ipv6: reorder icmpv6_init() and ip6_mr_init()
+
+Wanpeng Li (1):
+      KVM: nVMX: reset nested_run_pending if the vCPU is going to be reset
+
+William Breathitt Gray (1):
+      isa: Prevent NULL dereference in isa_bus driver callbacks
+
+Xin Long (4):
+      route: also update fnhe_genid when updating a route cache
+      route: update fnhe_expires for redirect when the fnhe exists
+      sctp: do not free asoc when it is already dead in sctp_sendmsg
+      sctp: use the right sk after waking up from wait_buf sleep
+
+weiping zhang (1):
+      virtio: release virtio index when fail to device_register
+
+ Makefile                                          |   2 +-
+ arch/arm/include/asm/assembler.h                  |  18 +++
+ arch/arm/include/asm/kvm_arm.h                    |   4 +-
+ arch/arm/kernel/entry-header.S                    |   6 +
+ arch/arm/kvm/handle_exit.c                        |  19 +--
+ arch/arm/mach-omap2/gpmc-onenand.c                |  10 +-
+ arch/arm/mach-omap2/omap_hwmod_3xxx_data.c        |  25 ++--
+ arch/arm64/include/asm/kvm_arm.h                  |   3 +-
+ arch/arm64/kernel/process.c                       |   9 ++
+ arch/arm64/kvm/handle_exit.c                      |  19 +--
+ arch/powerpc/platforms/powernv/pci-ioda.c         |   3 +
+ arch/powerpc/sysdev/axonram.c                     |   5 +-
+ arch/s390/include/asm/asm-prototypes.h            |   8 --
+ arch/s390/include/asm/switch_to.h                 |  19 ++-
+ arch/s390/kernel/syscalls.S                       |   6 +-
+ arch/sparc/mm/init_64.c                           |   9 +-
+ arch/x86/include/asm/efi.h                        |  26 ----
+ arch/x86/kernel/hpet.c                            |   2 +-
+ arch/x86/kvm/vmx.c                                |  31 ++---
+ arch/x86/mm/pageattr.c                            |  17 ++-
+ arch/x86/pci/broadcom_bus.c                       |   2 +-
+ arch/x86/platform/efi/efi.c                       |  39 +++---
+ arch/x86/platform/efi/efi_32.c                    |   5 -
+ arch/x86/platform/efi/efi_64.c                    | 137 ++++++----------------
+ arch/x86/platform/efi/efi_stub_64.S               |  43 +++++++
+ block/bio.c                                       |  14 ++-
+ block/blk-core.c                                  |   4 +-
+ crypto/asymmetric_keys/x509_cert_parser.c         |   2 +
+ drivers/ata/libata-sff.c                          |   1 -
+ drivers/atm/horizon.c                             |   2 +-
+ drivers/base/isa.c                                |  10 +-
+ drivers/block/zram/zram_drv.c                     |   2 +
+ drivers/char/ipmi/ipmi_si_intf.c                  |  44 +++----
+ drivers/crypto/s5p-sss.c                          |   5 +-
+ drivers/edac/i5000_edac.c                         |   8 +-
+ drivers/edac/i5400_edac.c                         |   9 +-
+ drivers/firmware/efi/efi.c                        |   3 +-
+ drivers/firmware/efi/esrt.c                       |  15 +--
+ drivers/firmware/efi/runtime-map.c                |  10 +-
+ drivers/gpio/gpio-altera.c                        |  26 ++--
+ drivers/gpu/drm/amd/amdgpu/amdgpu_device.c        |   5 +-
+ drivers/gpu/drm/armada/Makefile                   |   2 -
+ drivers/gpu/drm/exynos/exynos_drm_gem.c           |   9 ++
+ drivers/hid/Kconfig                               |   4 +-
+ drivers/hid/hid-chicony.c                         |   1 +
+ drivers/hid/hid-core.c                            |   1 +
+ drivers/hid/hid-ids.h                             |   1 +
+ drivers/i2c/busses/i2c-riic.c                     |   6 +-
+ drivers/infiniband/hw/mlx4/qp.c                   |   2 +-
+ drivers/infiniband/hw/mlx5/main.c                 |   2 +
+ drivers/iommu/intel-iommu.c                       |   8 +-
+ drivers/irqchip/irq-crossbar.c                    |   8 +-
+ drivers/media/usb/dvb-usb/dibusb-common.c         |  16 ++-
+ drivers/memory/omap-gpmc.c                        |   4 +-
+ drivers/net/can/ti_hecc.c                         |   3 +
+ drivers/net/can/usb/ems_usb.c                     |   2 +
+ drivers/net/can/usb/esd_usb2.c                    |   2 +
+ drivers/net/can/usb/kvaser_usb.c                  |  13 +-
+ drivers/net/can/usb/usb_8dev.c                    |   2 +
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c  |  20 +++-
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_sriov.c |   8 +-
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_sriov.h |   1 +
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_vfpf.c  |  23 ++--
+ drivers/net/ipvlan/ipvlan_core.c                  |   2 +-
+ drivers/net/phy/spi_ks8995.c                      |   1 +
+ drivers/net/wireless/mac80211_hwsim.c             |   5 +-
+ drivers/scsi/lpfc/lpfc_els.c                      |  14 ++-
+ drivers/scsi/storvsc_drv.c                        |  27 +++--
+ drivers/spi/Kconfig                               |   1 -
+ drivers/usb/gadget/configfs.c                     |   1 +
+ drivers/usb/gadget/function/f_fs.c                |   2 +-
+ drivers/usb/gadget/legacy/inode.c                 |   4 +-
+ drivers/virtio/virtio.c                           |   2 +
+ fs/afs/cmservice.c                                |   3 +
+ fs/nfs/dir.c                                      |   2 +-
+ include/drm/drmP.h                                |  26 +++-
+ include/linux/genalloc.h                          |   3 +-
+ include/linux/mmu_notifier.h                      |  13 --
+ include/linux/omap-gpmc.h                         |   5 +-
+ include/linux/sysfs.h                             |   6 +
+ include/scsi/libsas.h                             |   2 +-
+ kernel/audit.c                                    |  10 +-
+ kernel/debug/kdb/kdb_io.c                         |   2 +-
+ kernel/jump_label.c                               |   2 +-
+ kernel/workqueue.c                                |   1 +
+ lib/asn1_decoder.c                                |  49 ++++----
+ lib/dynamic_debug.c                               |   4 +
+ lib/genalloc.c                                    |  10 +-
+ mm/huge_memory.c                                  |  82 +++++++++----
+ net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c    |   4 +
+ net/ipv4/netfilter/nf_nat_l3proto_ipv4.c          |   5 -
+ net/ipv4/route.c                                  |  14 ++-
+ net/ipv6/af_inet6.c                               |  10 +-
+ net/ipv6/ip6_vti.c                                |   8 +-
+ net/ipv6/sit.c                                    |   1 +
+ net/packet/af_packet.c                            |  37 +++---
+ net/packet/internal.h                             |   1 -
+ net/rds/rdma.c                                    |   2 +-
+ net/sctp/socket.c                                 |  38 ++++--
+ net/sunrpc/sched.c                                |   3 +-
+ net/tipc/server.c                                 |   1 +
+ net/xfrm/xfrm_policy.c                            |   1 +
+ scripts/module-common.lds                         |   2 +
+ scripts/package/Makefile                          |   5 +-
+ sound/core/pcm.c                                  |   2 +
+ sound/core/seq/seq_timer.c                        |   2 +-
+ sound/usb/mixer.c                                 |  13 +-
+ tools/hv/hv_kvp_daemon.c                          |  70 +++--------
+ tools/testing/selftests/powerpc/harness.c         |   6 +-
+ 109 files changed, 700 insertions(+), 569 deletions(-)
+ delete mode 100644 arch/s390/include/asm/asm-prototypes.h
