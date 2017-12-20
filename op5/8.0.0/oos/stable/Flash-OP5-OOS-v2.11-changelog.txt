@@ -1,0 +1,404 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos
+
+Adam Wallis (1):
+      dmaengine: dmatest: move callback wait queue to thread context
+
+Alan Stern (1):
+      USB: core: prevent malicious bNumInterfaces overflow
+
+Alex Deucher (2):
+      drm/radeon/si: add dpm quirk for Oland
+      drm/radeon: reinstate oland workaround for sclk
+
+Alex Vesker (1):
+      IB/ipoib: Grab rtnl lock on heavy flush when calling ndo_open/stop
+
+Alex Williamson (1):
+      PCI: Detach driver before procfs & sysfs teardown on device remove
+
+Alexander Duyck (1):
+      macvlan: Only deliver one copy of the frame to the macvlan interface
+
+Alexander Potapenko (1):
+      net: initialize msg.msg_flags in recvfrom
+
+Alexander Shishkin (1):
+      intel_th: pci: Add Gemini Lake support
+
+Andrea Arcangeli (2):
+      userfaultfd: shmem: __do_fault requires VM_FAULT_NOPAGE
+      userfaultfd: selftest: vm: allow to build in vm/ directory
+
+Bart Van Assche (2):
+      target/iscsi: Fix a race condition in iscsit_add_reject_from_cmd()
+      RDMA/cma: Avoid triggering undefined behavior
+
+Bin Liu (1):
+      usb: musb: da8xx: fix babble condition handling
+
+Bob Peterson (1):
+      GFS2: Take inode off order_write list when setting jdata flag
+
+Brian Foster (1):
+      xfs: fix log block underflow during recovery cycle verification
+
+Chandan Rajendra (1):
+      ext4: fix crash when a directory's i_size is too small
+
+Changbin Du (1):
+      tracing: Allocate mask_str buffer dynamically
+
+Chen Zhong (1):
+      clk: mediatek: add the option for determining PLL source clock
+
+Christoph Hellwig (1):
+      xfs: fix incorrect extent state in xfs_bmap_add_extent_unwritten_real
+
+Christophe JAILLET (2):
+      video: fbdev: au1200fb: Release some resources if a memory allocation fails
+      video: fbdev: au1200fb: Return an error code if a memory allocation fails
+
+Christophe Leroy (1):
+      powerpc/ipic: Fix status get and status clear
+
+Dan Carpenter (1):
+      scsi: bfa: integer overflow in debugfs
+
+Daniel Borkmann (1):
+      perf symbols: Fix symbols__fixup_end heuristic for corner cases
+
+Daniel Bristot de Oliveira (2):
+      sched/deadline: Make sure the replenishment timer fires in the next period
+      sched/deadline: Throttle a constrained deadline task activated after the deadline
+
+Daniel Drake (1):
+      efi/esrt: Cleanup bad memory map log messages
+
+Daniel Lezcano (1):
+      thermal/drivers/step_wise: Fix temperature regulation misbehavior
+
+David Howells (5):
+      afs: Fix missing put_page()
+      afs: Flush outstanding writes when an fd is closed
+      afs: Fix the maths in afs_fs_store_data()
+      afs: Fix page leak in afs_write_begin()
+      afs: Fix afs_kill_pages()
+
+David Kozub (1):
+      USB: uas and storage: Add US_FL_BROKEN_FUA for another JMicron JMS567 ID
+
+Dmitry Torokhov (1):
+      Input: i8042 - add TUXEDO BU1406 (N24_25BU) to the nomux list
+
+Don Brace (2):
+      scsi: hpsa: update check for logical volume status
+      scsi: hpsa: limit outstanding rescans
+
+Doug Berger (5):
+      net: bcmgenet: correct the RBUF_OVFL_CNT and RBUF_ERR_CNT MIB values
+      net: bcmgenet: correct MIB access of UniMAC RUNT counters
+      net: bcmgenet: reserved phy revisions must be checked first
+      net: bcmgenet: power down internal phy if open or resume fails
+      net: bcmgenet: Power up the internal PHY before probing the MII
+
+Eric Biggers (3):
+      crypto: hmac - require that the underlying hash algorithm is unkeyed
+      crypto: salsa20 - fix blkcipher_walk API usage
+      KEYS: add missing permission check for request_key() destination
+
+Eryu Guan (1):
+      ext4: fix fdatasync(2) after fallocate(2) operation
+
+Florian Westphal (1):
+      netfilter: bridge: honor frag_max_size when refragmenting
+
+Gao Feng (1):
+      ppp: Destroy the mutex when cleanup
+
+Geert Uytterhoeven (1):
+      fbdev: controlfb: Add missing modes to fix out of bounds access
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.107
+
+Guoqing Jiang (1):
+      md-cluster: free md_cluster_info if node leave cluster
+
+Ilan peer (1):
+      mac80211: Fix addition of mesh configuration element
+
+Jack Morgenstein (1):
+      net/mlx4_core: Avoid delays during VF driver device shutdown
+
+Jan Kara (2):
+      mm: Handle 0 flags in _calc_vm_trans() macro
+      udf: Avoid overflow when session starts at large offset
+
+Javier Martinez Canillas (1):
+      usb: phy: isp1301: Add OF device ID table
+
+Jia-Ju Bai (1):
+      vt6655: Fix a possible sleep-in-atomic bug in vt6655_suspend
+
+Jiang Yi (1):
+      target/file: Do not return error for UNMAP if length is zero
+
+Jiri Pirko (2):
+      mlxsw: reg: Fix SPVM max record count
+      mlxsw: reg: Fix SPVMLR max record count
+
+Jiri Slaby (1):
+      l2tp: cleanup l2tp_tunnel_delete calls
+
+Johan Hovold (1):
+      net: wimax/i2400m: fix NULL-deref at probe
+
+KUWAZAWA Takuya (1):
+      netfilter: ipvs: Fix inappropriate output of procfs
+
+Kurt Garloff (1):
+      scsi: scsi_devinfo: Add REPORTLUN2 to EMC SYMMETRIX blacklist entry
+
+Ladislav Michl (1):
+      video: udlfb: Fix read EDID timeout
+
+Liang Chen (1):
+      bcache: explicitly destroy mutex while exiting
+
+Linus Walleij (1):
+      pinctrl: adi2: Fix Kconfig build problem
+
+Marc Dionne (3):
+      afs: Populate group ID from vnode status
+      afs: Adjust mode bits processing
+      afs: Populate and use client modification time
+
+Martin Wilck (2):
+      scsi: hpsa: cleanup sas_phy structures in sysfs when unloading
+      scsi: hpsa: destroy sas transport properties before scsi_host
+
+Mathias Nyman (1):
+      xhci: Don't add a virt_dev to the devs array before it's fully allocated
+
+Matthias Kaehlcke (1):
+      dmaengine: Fix array index out of bounds warning in __get_unmap_pool()
+
+Miaoqing Pan (1):
+      ath9k: fix tx99 potential info leak
+
+Michael Ellerman (1):
+      powerpc/perf/hv-24x7: Fix incorrect comparison in memord
+
+Michał Mirosław (1):
+      clk: tegra: Fix cclk_lp divisor register
+
+Mike Christie (3):
+      target: Use system workqueue for ALUA transitions
+      target: fix ALUA transition timeout handling
+      target: fix race during implicit transition work flushes
+
+Nathan Chancellor (1):
+      Merge 4.4.107 into 8.0.0-oos
+
+NeilBrown (4):
+      autofs: fix careless error in recent commit
+      NFSD: fix nfsd_minorversion(.., NFSD_AVAIL)
+      NFSD: fix nfsd_reset_versions for NFSv4.
+      raid5: Set R5_Expanded on parity devices as well as data.
+
+Olga Kornievskaia (1):
+      NFSv4.1 respect server's max size in CREATE_SESSION
+
+Peter Ujfalusi (1):
+      dmaengine: ti-dma-crossbar: Correct am335x/am43xx mux value type
+
+Philipp Zabel (1):
+      rtc: pcf8563: fix output clock rate
+
+Qiang (1):
+      PCI/PME: Handle invalid data when reading Root Status
+
+Robert Baronescu (1):
+      crypto: tcrypt - fix buffer lengths in test_aead_speed()
+
+Robert Stonehouse (1):
+      sfc: don't warn on successful change of MAC
+
+Shriya (1):
+      powerpc/powernv/cpufreq: Fix the frequency read by /proc/cpuinfo
+
+Shuah Khan (1):
+      usbip: fix stub_send_ret_submit() vulnerability to null transfer_buffer
+
+Stafford Horne (1):
+      openrisc: fix issue handling 8 byte get_user calls
+
+Steven Rostedt (1):
+      sched/rt: Do not pull from current CPU if only one CPU to pull
+
+Steven Rostedt (VMware) (1):
+      sched/deadline: Use deadline instead of period when calculating overflow
+
+Sukumar Ghorai (1):
+      Bluetooth: btusb: driver to enable the usb-wakeup feature
+
+Suzuki K Poulose (1):
+      arm-ccn: perf: Prevent module unload while PMU is in use
+
+Sébastien Szymanski (1):
+      clk: imx6: refine hdmi_isfr's parent to make HDMI work on i.MX6 SoCs w/o VPU
+
+Tahsin Erdogan (1):
+      writeback: fix memory leak in wb_queue_work()
+
+Taku Izumi (1):
+      fjes: Fix wrong netdevice feature flags
+
+Tina Ruchandani (2):
+      afs: Migrate vlocation fields to 64-bit
+      afs: Prevent callback expiry timer overflow
+
+Tomi Valkeinen (1):
+      drm/omap: fix dmabuf mmap for dma_alloc'ed buffers
+
+Vlad Yasevich (1):
+      net: Resend IGMP memberships upon peer notification.
+
+William A. Kennington III (1):
+      powerpc/opal: Fix EBUSY bug in acquiring tokens
+
+Yan, Zheng (1):
+      ceph: drop negative child dentries before try pruning inode's alias
+
+Zygo Blaxell (1):
+      btrfs: add missing memset while reading compressed inline extents
+
+nixiaoming (1):
+      tty fix oops when rmmod 8250
+
+tang.junhui (1):
+      bcache: fix wrong cache_misses statistics
+
+tangwenji (2):
+      iscsi-target: fix memory leak in lio_target_tiqn_addtpg()
+      target:fix condition return in core_pr_dump_initiator_port()
+
+weiping zhang (2):
+      scsi: sd: change manage_start_stop to bool in sysfs interface
+      scsi: sd: change allow_restart to bool in sysfs interface
+
+yong mao (1):
+      mmc: mediatek: Fixed bug where clock frequency could be set wrong
+
+ Makefile                                       |  2 +-
+ arch/blackfin/Kconfig                          |  7 +-
+ arch/blackfin/Kconfig.debug                    |  1 +
+ arch/openrisc/include/asm/uaccess.h            |  2 +-
+ arch/powerpc/perf/hv-24x7.c                    |  2 +-
+ arch/powerpc/platforms/powernv/opal-async.c    |  6 +-
+ arch/powerpc/platforms/powernv/setup.c         |  2 +-
+ arch/powerpc/sysdev/ipic.c                     |  4 +-
+ arch/x86/crypto/salsa20_glue.c                 |  7 --
+ crypto/hmac.c                                  |  6 +-
+ crypto/salsa20_generic.c                       |  7 --
+ crypto/shash.c                                 |  5 +-
+ crypto/tcrypt.c                                |  6 +-
+ drivers/bluetooth/btusb.c                      |  5 ++
+ drivers/bus/arm-ccn.c                          |  1 +
+ drivers/clk/imx/clk-imx6q.c                    |  2 +-
+ drivers/clk/mediatek/clk-mtk.h                 |  1 +
+ drivers/clk/mediatek/clk-pll.c                 |  5 +-
+ drivers/clk/tegra/clk-tegra30.c                |  2 +-
+ drivers/dma/dmatest.c                          | 55 ++++++++-------
+ drivers/dma/ti-dma-crossbar.c                  |  8 +--
+ drivers/firmware/efi/efi.c                     |  1 -
+ drivers/firmware/efi/esrt.c                    |  2 +-
+ drivers/gpu/drm/omapdrm/omap_gem_dmabuf.c      |  3 -
+ drivers/gpu/drm/radeon/si_dpm.c                | 10 +++
+ drivers/hwtracing/intel_th/pci.c               |  5 ++
+ drivers/infiniband/core/cma.c                  | 11 +--
+ drivers/infiniband/ulp/ipoib/ipoib_ib.c        |  7 +-
+ drivers/input/serio/i8042-x86ia64io.h          |  7 ++
+ drivers/md/bcache/request.c                    |  6 +-
+ drivers/md/bcache/super.c                      |  6 +-
+ drivers/md/md-cluster.c                        |  1 +
+ drivers/md/raid5.c                             |  5 +-
+ drivers/mmc/host/mtk-sd.c                      |  4 +-
+ drivers/net/ethernet/broadcom/genet/bcmgenet.c | 95 +++++++++++++++++++++-----
+ drivers/net/ethernet/broadcom/genet/bcmgenet.h | 10 ++-
+ drivers/net/ethernet/mellanox/mlx4/cmd.c       | 11 +++
+ drivers/net/ethernet/mellanox/mlx4/main.c      | 11 +++
+ drivers/net/ethernet/mellanox/mlxsw/reg.h      |  4 +-
+ drivers/net/ethernet/sfc/ef10.c                |  2 +-
+ drivers/net/fjes/fjes_main.c                   |  2 +-
+ drivers/net/macvlan.c                          |  2 +-
+ drivers/net/ppp/ppp_generic.c                  |  1 +
+ drivers/net/wimax/i2400m/usb.c                 |  3 +
+ drivers/net/wireless/ath/ath9k/tx99.c          |  5 ++
+ drivers/pci/pcie/pme.c                         |  5 +-
+ drivers/pci/remove.c                           |  2 +-
+ drivers/pinctrl/Kconfig                        |  3 +-
+ drivers/rtc/rtc-pcf8563.c                      |  2 +-
+ drivers/scsi/bfa/bfad_debugfs.c                |  5 +-
+ drivers/scsi/hpsa.c                            | 57 +++++++++-------
+ drivers/scsi/hpsa.h                            |  1 +
+ drivers/scsi/hpsa_cmd.h                        |  2 +
+ drivers/scsi/scsi_devinfo.c                    |  2 +-
+ drivers/scsi/sd.c                              | 12 +++-
+ drivers/staging/vt6655/device_main.c           |  3 +-
+ drivers/target/iscsi/iscsi_target.c            |  3 +-
+ drivers/target/iscsi/iscsi_target_configfs.c   |  3 +-
+ drivers/target/target_core_alua.c              | 33 +++------
+ drivers/target/target_core_file.c              |  4 ++
+ drivers/target/target_core_pr.c                |  4 +-
+ drivers/thermal/step_wise.c                    | 11 +--
+ drivers/usb/core/config.c                      |  4 +-
+ drivers/usb/host/xhci-mem.c                    | 15 ++--
+ drivers/usb/musb/da8xx.c                       | 10 ++-
+ drivers/usb/phy/phy-isp1301.c                  |  7 ++
+ drivers/usb/storage/unusual_devs.h             |  7 ++
+ drivers/usb/storage/unusual_uas.h              |  7 ++
+ drivers/usb/usbip/stub_tx.c                    |  7 ++
+ drivers/video/fbdev/au1200fb.c                 |  7 +-
+ drivers/video/fbdev/controlfb.h                |  2 +
+ drivers/video/fbdev/udlfb.c                    | 10 +--
+ fs/afs/callback.c                              |  7 +-
+ fs/afs/file.c                                  |  1 +
+ fs/afs/fsclient.c                              | 22 +++---
+ fs/afs/inode.c                                 | 11 +--
+ fs/afs/internal.h                              | 12 ++--
+ fs/afs/security.c                              |  7 +-
+ fs/afs/server.c                                |  6 +-
+ fs/afs/vlocation.c                             | 16 +++--
+ fs/afs/write.c                                 | 32 +++++++--
+ fs/autofs4/waitq.c                             |  1 -
+ fs/btrfs/inode.c                               | 14 ++++
+ fs/ceph/mds_client.c                           | 42 ++++++++++--
+ fs/ext4/extents.c                              |  1 +
+ fs/ext4/namei.c                                |  4 ++
+ fs/gfs2/file.c                                 |  4 +-
+ fs/nfs/nfs4client.c                            |  4 +-
+ fs/nfsd/nfssvc.c                               | 30 ++++----
+ fs/proc/proc_tty.c                             |  3 +-
+ fs/udf/super.c                                 |  2 +-
+ fs/userfaultfd.c                               |  2 +-
+ fs/xfs/libxfs/xfs_bmap.c                       |  2 +-
+ fs/xfs/xfs_log_recover.c                       |  2 +-
+ include/crypto/internal/hash.h                 |  8 +++
+ include/linux/mlx4/device.h                    |  1 +
+ include/linux/mman.h                           |  3 +-
+ include/target/target_core_base.h              |  2 +-
+ kernel/sched/deadline.c                        | 62 +++++++++++++++--
+ kernel/sched/rt.c                              |  8 ++-
+ kernel/trace/trace.c                           | 29 +++-----
+ net/bridge/br_netfilter_hooks.c                | 12 ++--
+ net/core/dev.c                                 |  1 +
+ net/l2tp/l2tp_core.c                           |  2 +-
+ net/l2tp/l2tp_netlink.c                        |  2 +-
+ net/mac80211/mesh.c                            |  2 -
+ net/netfilter/ipvs/ip_vs_ctl.c                 |  4 ++
+ net/socket.c                                   |  1 +
+ security/keys/request_key.c                    | 48 ++++++++++---
+ tools/perf/util/symbol.c                       |  2 +-
+ tools/testing/selftests/vm/Makefile            |  4 ++
+ 111 files changed, 695 insertions(+), 299 deletions(-)
