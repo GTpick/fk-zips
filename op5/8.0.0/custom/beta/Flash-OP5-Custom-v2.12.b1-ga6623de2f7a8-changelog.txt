@@ -1,0 +1,55 @@
+http://github.com/nathanchance/op5/commits/8.0.0-custom-queue-2.12
+
+Bongkyu Kim (1):
+      UPSTREAM: lz4: fix wrong compress buffer size for 64-bits
+
+David Lin (1):
+      lz4: fix compress max output bound
+
+Joe Maples (5):
+      state_notifier: Enable by default
+      state_notifier: Queue work on any core
+      state_notifier: Reduce defer on suspend call to 1 second
+      mdss: Add state_notifier hooks
+      block: Add Maple I/O Scheduler
+
+Nathan Chancellor (3):
+      flash_defconfig: Enable STATE_NOTIFIER
+      block: maple: Improve coding style
+      crypto: lz4: Fix build error
+
+Pranav Vashi (2):
+      op5: Add state notifier driver
+      state_notifier: Make workqueues unbound
+
+Rui Salvaterra (1):
+      UPSTREAM: lib: lz4: cleanup unaligned access efficiency detection
+
+Sven Schmidt (3):
+      UPSTREAM: lib: update LZ4 compressor module
+      UPSTREAM: lib/decompress_unlz4: change module to work with new LZ4 module version
+      BACKPORT: crypto: change LZ4 modules to work with new LZ4 module version
+
+ arch/arm64/configs/flash_defconfig |    1 +
+ block/Kconfig.iosched              |    8 +
+ block/Makefile                     |    1 +
+ block/maple-iosched.c              |  425 +++++++++++++
+ crypto/lz4.c                       |   22 +-
+ crypto/lz4hc.c                     |   24 +-
+ crypto/testmgr.h                   |  154 +++--
+ drivers/soc/qcom/Kconfig           |    3 +
+ drivers/soc/qcom/Makefile          |    1 +
+ drivers/soc/qcom/state_notifier.c  |  133 +++++
+ drivers/video/fbdev/msm/mdss_dsi.c |   10 +
+ include/linux/lz4.h                |  762 +++++++++++++++++++++--
+ include/linux/state_notifier.h     |   20 +
+ lib/decompress_unlz4.c             |   13 +-
+ lib/lz4/Makefile                   |    2 +
+ lib/lz4/lz4_compress.c             | 1161 ++++++++++++++++++++++++++----------
+ lib/lz4/lz4_decompress.c           |  705 ++++++++++++++--------
+ lib/lz4/lz4defs.h                  |  340 ++++++-----
+ lib/lz4/lz4hc_compress.c           |  867 +++++++++++++++++----------
+ 19 files changed, 3490 insertions(+), 1162 deletions(-)
+ create mode 100644 block/maple-iosched.c
+ create mode 100644 drivers/soc/qcom/state_notifier.c
+ create mode 100644 include/linux/state_notifier.h
