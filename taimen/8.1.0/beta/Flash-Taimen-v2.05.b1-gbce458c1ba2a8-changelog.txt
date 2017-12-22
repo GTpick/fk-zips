@@ -1,0 +1,197 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1-queue-2.05
+
+Aditya Bavanari (1):
+      ASoC: msm: qdsp6v2: Fix dangling pointer access
+
+Alexander Popov (2):
+      UPSTREAM: kcov: make kcov work properly with KASLR enabled
+      UPSTREAM: arm64: setup: introduce kaslr_offset()
+
+Andrey Konovalov (1):
+      UPSTREAM: kcov: properly check if we are in an interrupt
+
+Andrey Ryabinin (2):
+      UPSTREAM: kcov: don't profile branches in kcov
+      UPSTREAM: kcov: remove pointless current != NULL check
+
+Chris Lew (1):
+      net: ipc_router: Validate return from skb_peek
+
+Dhoat Harpal (1):
+      soc: qcom: glink_smem_native_xprt: Fix memory leak during qos init
+
+Dmitry Vyukov (3):
+      UPSTREAM: kcov: simplify interrupt check
+      UPSTREAM: kcov: support compat processes
+      UPSTREAM: kcov: fix comparison callback signature
+
+James Morse (1):
+      UPSTREAM: kcov: don't trace the code coverage code
+
+Joe Maples (5):
+      state_notifier: Enable by default
+      state_notifier: Queue work on any core
+      state_notifier: Reduce defer on suspend call to 1 second
+      mdss: Add state_notifier hooks
+      block: Add Maple I/O Scheduler
+
+Kaushal Kumar (1):
+      soc: qcom: socinfo: Handle null pointer dereference
+
+Kefeng Wang (2):
+      UPSTREAM: kcov: add missing #include <linux/sched.h>
+      UPSTREAM: kcov: add more missing includes
+
+Kyle Yan (1):
+      firmware: avoid invalid fallback aborts by using killable wait
+
+Laxminath Kasam (1):
+      ALSA: info: Protect list access of new entry
+
+Maheshwar Ajja (1):
+      msm: vidc: Fix memory leak issue
+
+Mohammed Javid (8):
+      msm:ipa: Fix to IPA static analysis constant null deferenced
+      msm:ipa: Fix to kasan use-after-free issue
+      msm:ipa: Fix to incorrect structure access
+      msm: ipa: Fix to use after free issue
+      msm:ipa: Fix to salb out of bounds access
+      msm: ipa: prevent string buffer overflows
+      msm: ipa: freeing null pointer causing device crash
+      msm: ipa: Fix to use GFP_DMA flag
+
+Nathan Chancellor (3):
+      flash_defconfig: Disable governors not supported by the power HAL
+      flash_defconfig: Enable STATE_NOTIFIER
+      block: maple: Improve coding style
+
+Neeraj Soni (1):
+      crypto: ice: Sanitize the ice device return address.
+
+Paul E. McKenney (2):
+      rcu: Simplify rcu_sched_qs() control flow
+      rcu: Stop disabling interrupts in scheduler fastpaths
+
+Prakash Gupta (2):
+      iommu: free io pgtable during domain detach.
+      iommu: fix smmu_secure_pool access list after free issue
+
+Pranav Vashi (2):
+      wahoo: Add state notifier driver
+      state_notifier: Make workqueues unbound
+
+Prateek Sood (1):
+      cgroup/cpuset: remove circular dependency deadlock
+
+Ramesh V (2):
+      msm: camera: Fix framedrop pattern and period
+      msm: camera: isp: Fix frame skip pattern
+
+Shihuan Liu (1):
+      msm: ipa: add null terminator
+
+Skylar Chang (3):
+      msm: ipa: fix security issues in ipa wan driver
+      msm: ipa: fix hdr table full condition
+      msm: ipa3: add lock for num_q6_rule
+
+Trishansh Bhardwaj (1):
+      msm: camera: Avoid NULL pointer dereference in camera_v4l2_fh_release
+
+Utkarsh Saxena (4):
+      msm: ipa: Fix to use GFP_DMA and add check for dma_map_single
+      msm: ipa3: Fix to add check for dma_map_single return values
+      msm: ipa: Fix to use GFP_DMA flag
+      msm:ipa: using rate limit api for ioctl calls
+
+Victor Chibotaru (1):
+      UPSTREAM: kcov: support comparison operands collection
+
+Vidyakumar Athota (1):
+      soc: qcom: fix out of bounds read issue
+
+Zhen Kong (1):
+      crypto: msm: fix authdata copy issue in qcedev_sha_req_cb
+
+mohamed sunfeer (1):
+      crypto: Change format specifier %p to %pK
+
+msdx321 (2):
+      power: smb-lib: Force enable USB fast charge
+      power: supply: Make USB fastcharge tunable
+
+ arch/arm64/configs/flash_defconfig                 |   5 +-
+ arch/arm64/include/asm/memory.h                    |   5 +
+ arch/arm64/kernel/setup.c                          |   8 +-
+ block/Kconfig.iosched                              |   8 +
+ block/Makefile                                     |   1 +
+ block/maple-iosched.c                              | 425 +++++++++++++++++++++
+ drivers/base/firmware_class.c                      |   2 +-
+ drivers/crypto/msm/ice.c                           |  39 +-
+ drivers/crypto/msm/ota_crypto.c                    |   4 +-
+ drivers/crypto/msm/qce50.c                         |  14 +-
+ drivers/crypto/msm/qcedev.c                        |   6 +-
+ drivers/crypto/msm/qcrypto.c                       |  22 +-
+ drivers/iommu/arm-smmu.c                           |  15 +-
+ .../media/platform/msm/camera_v2/camera/camera.c   |   4 +-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |   9 +-
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |   2 +-
+ drivers/media/platform/msm/vidc/msm_v4l2_vidc.c    |  14 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa.c              |  64 ++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_debugfs.c      |  14 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_dp.c           |  69 ++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_flt.c          |  70 ++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_hdr.c          | 177 +++++----
+ drivers/platform/msm/ipa/ipa_v2/ipa_i.h            |  30 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_intf.c         |  12 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_nat.c          |  99 ++---
+ drivers/platform/msm/ipa/ipa_v2/ipa_rt.c           | 116 +++---
+ drivers/platform/msm/ipa/ipa_v2/ipa_uc_wdi.c       |   4 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_utils.c        |  97 ++---
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |  44 ++-
+ drivers/platform/msm/ipa/ipa_v3/ipa.c              |  36 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_debugfs.c      |   7 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_dp.c           |  68 ++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_flt.c          |  92 +++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_hdr.c          | 139 ++++---
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            |  28 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_intf.c         |  18 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_nat.c          |  86 +++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_rt.c           | 152 +++++---
+ drivers/platform/msm/ipa/ipa_v3/ipa_uc_wdi.c       |   4 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_utils.c        |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |  50 ++-
+ drivers/power/supply/qcom/Kconfig                  |   7 +
+ drivers/power/supply/qcom/Makefile                 |   1 +
+ drivers/power/supply/qcom/fastcharge.c             |  62 +++
+ drivers/power/supply/qcom/smb-lib.c                |   9 +
+ drivers/soc/qcom/Kconfig                           |   3 +
+ drivers/soc/qcom/Makefile                          |   1 +
+ drivers/soc/qcom/glink_smem_native_xprt.c          |   1 +
+ drivers/soc/qcom/socinfo.c                         |   6 +-
+ drivers/soc/qcom/state_notifier.c                  | 133 +++++++
+ drivers/soc/qcom/wcd-dsp-glink.c                   |  19 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |  10 +
+ include/linux/cpu.h                                |   2 +
+ include/linux/fastcharge.h                         |   7 +
+ include/linux/kcov.h                               |  12 +-
+ include/linux/rcutree.h                            |   2 +-
+ include/linux/state_notifier.h                     |  20 +
+ include/uapi/linux/kcov.h                          |  24 ++
+ kernel/cpu.c                                       |   5 +
+ kernel/cpuset.c                                    |  33 +-
+ kernel/kcov.c                                      | 224 +++++++++--
+ kernel/rcu/tree.c                                  |  44 +--
+ kernel/rcu/tree_plugin.h                           |  14 +-
+ kernel/sched/core.c                                |   6 +-
+ net/ipc_router/ipc_router_core.c                   |  12 +-
+ net/ipc_router/ipc_router_socket.c                 |   6 +-
+ sound/core/info.c                                  |   5 +-
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  22 +-
+ 68 files changed, 1991 insertions(+), 770 deletions(-)
+ create mode 100644 block/maple-iosched.c
+ create mode 100644 drivers/power/supply/qcom/fastcharge.c
+ create mode 100644 drivers/soc/qcom/state_notifier.c
+ create mode 100644 include/linux/fastcharge.h
+ create mode 100644 include/linux/state_notifier.h
