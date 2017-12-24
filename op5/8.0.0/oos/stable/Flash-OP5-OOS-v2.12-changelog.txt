@@ -1,0 +1,77 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos
+
+Bongkyu Kim (1):
+      UPSTREAM: lz4: fix wrong compress buffer size for 64-bits
+
+David Lin (1):
+      lz4: fix compress max output bound
+
+Joe Maples (5):
+      state_notifier: Enable by default
+      state_notifier: Queue work on any core
+      state_notifier: Reduce defer on suspend call to 1 second
+      mdss: Add state_notifier hooks
+      block: Add Maple I/O Scheduler
+
+Nathan Chancellor (5):
+      flash_defconfig: Enable STATE_NOTIFIER
+      block: maple: Improve coding style
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into 8.0.0-oos
+      cheeseburger: Disable verity on /system
+      flash_defconfig: Apply 6eb838cf994a021ed3977323fd701d4ff70b5551
+
+Pranav Vashi (2):
+      op5: Add state notifier driver
+      state_notifier: Make workqueues unbound
+
+Rui Salvaterra (1):
+      UPSTREAM: lib: lz4: cleanup unaligned access efficiency detection
+
+Sven Schmidt (3):
+      UPSTREAM: lib: update LZ4 compressor module
+      UPSTREAM: lib/decompress_unlz4: change module to work with new LZ4 module version
+      BACKPORT: crypto: change LZ4 modules to work with new LZ4 module version
+
+davidliu (1):
+      Synchronize codes for OxygenOS 5.0
+
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi    |    3 +-
+ arch/arm/boot/dts/qcom/dumpling.dtsi        |    3 +-
+ arch/arm64/configs/flash_defconfig          |    3 +
+ arch/arm64/configs/msmcortex-perf_defconfig |    2 +
+ arch/arm64/configs/msmcortex_defconfig      |    2 +
+ block/Kconfig.iosched                       |    8 +
+ block/Makefile                              |    1 +
+ block/maple-iosched.c                       |  425 ++++++++++
+ crypto/lz4.c                                |   24 +-
+ crypto/lz4hc.c                              |   24 +-
+ crypto/testmgr.h                            |  154 ++--
+ drivers/param_read_write/param_read_write.c |   15 +-
+ drivers/soc/qcom/Kconfig                    |    3 +
+ drivers/soc/qcom/Makefile                   |    1 +
+ drivers/soc/qcom/state_notifier.c           |  133 +++
+ drivers/tty/serial/msm_serial_hs.c          |   13 +-
+ drivers/usb/gadget/function/f_fs.c          |   59 +-
+ drivers/video/fbdev/msm/mdss_dsi.c          |   10 +
+ include/linux/lz4.h                         |  762 ++++++++++++++++--
+ include/linux/state_notifier.h              |   20 +
+ lib/decompress_unlz4.c                      |   13 +-
+ lib/lz4/Makefile                            |    2 +
+ lib/lz4/lz4_compress.c                      | 1161 +++++++++++++++++++--------
+ lib/lz4/lz4_decompress.c                    |  705 ++++++++++------
+ lib/lz4/lz4defs.h                           |  340 ++++----
+ lib/lz4/lz4hc_compress.c                    |  867 +++++++++++++-------
+ sound/soc/codecs/wcd-mbhc-v2.c              |    0
+ sound/soc/codecs/wcd9335.c                  |    0
+ 28 files changed, 3559 insertions(+), 1194 deletions(-)
+ mode change 100755 => 100644 arch/arm/boot/dts/qcom/cheeseburger.dtsi
+ mode change 100755 => 100644 arch/arm/boot/dts/qcom/dumpling.dtsi
+ mode change 100755 => 100644 arch/arm64/configs/msmcortex-perf_defconfig
+ mode change 100755 => 100644 arch/arm64/configs/msmcortex_defconfig
+ create mode 100644 block/maple-iosched.c
+ mode change 100755 => 100644 drivers/param_read_write/param_read_write.c
+ create mode 100644 drivers/soc/qcom/state_notifier.c
+ mode change 100755 => 100644 drivers/usb/gadget/function/f_fs.c
+ create mode 100644 include/linux/state_notifier.h
+ mode change 100755 => 100644 sound/soc/codecs/wcd-mbhc-v2.c
+ mode change 100755 => 100644 sound/soc/codecs/wcd9335.c
