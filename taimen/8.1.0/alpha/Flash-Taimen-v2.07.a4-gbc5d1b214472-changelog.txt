@@ -1,0 +1,427 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1-queue-2.07
+
+Aditya Bavanari (3):
+      ASoC: msm: qdsp6v2: Fix dangling pointer access
+      ASoC: msm: qdsp6v2: Add support for new AFE LSM cal types
+      ASoC: apr: Add validity check to APR port
+
+Alfredo Alvarez Fernandez (2):
+      locking/lockdep: Prevent chain_key collisions
+      locking/lockdep: Print chain_key collision information
+
+Andrew Morton (1):
+      locking/lockdep: Convert hash tables to hlists
+
+Andrey Ryabinin (1):
+      locking/lockdep: Eliminate lockdep_init()
+
+Banajit Goswami (1):
+      ALSA: pcm: remove unused variable from snd_pcm_info()
+
+Boqun Feng (1):
+      locking/lockdep: Fix ->irq_context calculation
+
+Borislav Petkov (1):
+      locking/lockdep: Fix print_collision() unused warning
+
+Chris Lew (1):
+      net: ipc_router: Validate return from skb_peek
+
+Daniel Micay (13):
+      BACKPORT: include/linux/string.h: add the option of fortified string.h functions
+      UPSTREAM: replace incorrect strscpy use in FORTIFY_SOURCE
+      flash_defconfig: Disable SECURITY_SELINUX_DEVELOP
+      arm64: zero the leading stack canary byte
+      arm64: properly account for stack rnd in mmap base
+      mark protection_map as __ro_after_init
+      mark most percpu globals as __ro_after_init
+      randomize lower bits of the argument block
+      enable protected_{symlinks,hardlinks} by default
+      arm64: determine stack entropy based on mmap entropy
+      add page sanitization / verification
+      add kmalloc alloc_size attributes
+      add vmalloc alloc_size attributes
+
+Davidlohr Bueso (7):
+      locking/mutex: Allow next waiter lockless wakeup
+      locking/locktorture: Fix deboosting NULL pointer dereference
+      locking/locktorture: Fix NULL pointer dereference for cleanup paths
+      locking/pvqspinlock: Fix division by zero in qstat_read()
+      rbtree: cache leftmost node internally
+      block/cfq: replace cfq_rb_root leftmost caching
+      block/cfq: cache rightmost rb_node
+
+Denys Vlasenko (1):
+      locking/lockdep: Deinline register_lock_class(), save 2328 bytes
+
+Dhoat Harpal (1):
+      soc: qcom: glink_smem_native_xprt: Fix memory leak during qos init
+
+Dmitry Vyukov (1):
+      locking/lockdep: Fix stack trace caching logic
+
+Harsh Shandilya (5):
+      block: maple-iosched: Use octal permissions
+      kernel: printk: Use octal permissions
+      kernel: Minor cleanup in configs.c
+      tcp_westwood : Bump minimum RTT and lower initial RTT duration
+      kernel: Restrict allowed_cpus cpumask to CPU0 and CPU1
+
+Helge Deller (1):
+      parisc: Hide Diva-built-in serial aux and graphics card
+
+Ingo Molnar (1):
+      locking/lockdep: Detect chain_key collisions
+
+Jason A. Donenfeld (1):
+      arm64: support __int128 on gcc 5+
+
+Jing Xia (1):
+      tracing: Fix crash when it fails to alloc ring buffer
+
+Jisheng Zhang (1):
+      BACKPORT: arm64: apply __ro_after_init to some objects
+
+Joe Maples (2):
+      scripts: Support a custom compiler name
+      flash_defconfig: Switch to 1000HZ
+
+Johan Hovold (2):
+      mfd: twl4030-audio: Fix sibling-node lookup
+      mfd: twl6040: Fix child-node lookup
+
+Jon Hunter (1):
+      mfd: cros ec: spi: Don't send first message too soon
+
+Karthikeyan Mani (1):
+      ALSA: pcm: remove SNDRV_PCM_IOCTL1_INFO internal command
+
+Kaushal Kumar (1):
+      soc: qcom: socinfo: Handle null pointer dereference
+
+Kees Cook (1):
+      UPSTREAM: arm64, vdso: Define vdso_{start,end} as array
+
+Kyle Yan (1):
+      firmware: avoid invalid fallback aborts by using killable wait
+
+Laxminath Kasam (1):
+      ALSA: info: Protect list access of new entry
+
+Maheshwar Ajja (1):
+      msm: vidc: Fix memory leak issue
+
+Manish Dewangan (2):
+      qdspv2: Add latency calculation support in pcm offload path
+      ASoc: msm: qdspv2: Fix latency calculation in pcm offload path
+
+Michal Hocko (2):
+      locking/rwsem: Get rid of __down_write_nested()
+      locking/rwsem: Introduce basis for down_write_killable()
+
+Mohammed Javid (9):
+      msm:ipa: Fix to IPA static analysis constant null deferenced
+      msm:ipa: Fix to kasan use-after-free issue
+      msm:ipa: Fix to incorrect structure access
+      msm: ipa: Fix to use after free issue
+      msm:ipa: Fix to salb out of bounds access
+      msm: ipa: prevent string buffer overflows
+      msm: ipa: freeing null pointer causing device crash
+      msm: ipa: Fix to use GFP_DMA flag
+      msm: ipa: Change error value for set quota
+
+Nathan Chancellor (9):
+      arm64: Enable support for __int128 on Clang
+      Merge tag 'locking-for-2.06' into oreo-mr1
+      Merge tag 'qdsp6v2-for-2.06' into oreo-mr1
+      Merge tag 'cfq-for-2.06' into oreo-mr1
+      Merge tag 'misc-for-2.06' into oreo-mr1
+      wake_gestures: Update timings for 1000HZ
+      mm, page_alloc: Fix declaration after statement warning
+      Merge tag 'power-for-2.07' into queue
+      Merge branch 'queue-4.4.109' into queue
+
+Neeraj Soni (1):
+      crypto: ice: Sanitize the ice device return address.
+
+Paolo Bonzini (1):
+      kvm: x86: fix RSM when PCID is non-zero
+
+Paul E. McKenney (2):
+      rcu: Simplify rcu_sched_qs() control flow
+      rcu: Stop disabling interrupts in scheduler fastpaths
+
+Peter Zijlstra (2):
+      locking, sched: Introduce smp_cond_acquire() and use it
+      tags: Fix DEFINE_PER_CPU expansions
+
+Prakash Gupta (2):
+      iommu: free io pgtable during domain detach.
+      iommu: fix smmu_secure_pool access list after free issue
+
+Prateek Sood (1):
+      cgroup/cpuset: remove circular dependency deadlock
+
+Rafael J. Wysocki (1):
+      PCI / PM: Force devices to D0 in pci_pm_thaw_noirq()
+
+Ramesh V (2):
+      msm: camera: Fix framedrop pattern and period
+      msm: camera: isp: Fix frame skip pattern
+
+Ravi Bangoria (1):
+      powerpc/perf: Dereference BHRB entries safely
+
+Ricardo Ribalda Delgado (1):
+      spi: xilinx: Detect stall with Unknown commands
+
+Ritesh Harjani (1):
+      ANDROID: sdcardfs: Make WARN_RATELIMIT to pr_debug
+
+Sachin Bhayare (1):
+      msm: mdss: serialize wait for pingpong with kickoff
+
+Sebastian Andrzej Siewior (1):
+      crypto: mcryptd - protect the per-CPU queue with a lock
+
+Shihuan Liu (1):
+      msm: ipa: add null terminator
+
+Skylar Chang (3):
+      msm: ipa: fix security issues in ipa wan driver
+      msm: ipa: fix hdr table full condition
+      msm: ipa3: add lock for num_q6_rule
+
+Steve Kondik (2):
+      asoc/msm: Reduce min capture size
+      msm: qdsp6v2: Allow 320K AAC encoding
+
+Steven Rostedt (VMware) (2):
+      tracing: Remove extra zeroing out of the ring buffer page
+      tracing: Fix possible double free on failure of allocating trace buffer
+
+Sultanxda (4):
+      workqueue: Schedule workers on CPU0 or CPU0/CPU1 by default
+      kthread: Force all non-percpu kthreads onto the power cluster
+      cpu: Don't allow CPUs in the power cluster to be unplugged
+      kthread: Allow kthread_bind() to actually control kthread affinity
+
+Takashi Iwai (3):
+      ACPI: APEI / ERST: Fix missing error handling in erst_reader()
+      ALSA: rawmidi: Avoid racy info ioctl via ctl device
+      ALSA: usb-audio: Fix the missing ctl name suffix at parsing SU
+
+Thomas Gleixner (1):
+      rtmutex: Make wait_lock irq safe
+
+Trishansh Bhardwaj (1):
+      msm: camera: Avoid NULL pointer dereference in camera_v4l2_fh_release
+
+Umang Agrawal (1):
+      power: smb1351-charger: Fix the float voltage unit passed to its set method
+
+Utkarsh Saxena (4):
+      msm: ipa: Fix to use GFP_DMA and add check for dma_map_single
+      msm: ipa3: Fix to add check for dma_map_single return values
+      msm: ipa: Fix to use GFP_DMA flag
+      msm:ipa: using rate limit api for ioctl calls
+
+Vidyakumar Athota (1):
+      soc: qcom: fix out of bounds read issue
+
+Waiman Long (9):
+      locking/qspinlock: Use _acquire/_release() versions of cmpxchg() & xchg()
+      locking/qspinlock: Avoid redundant read of next pointer
+      locking/pvqspinlock, x86: Optimize the PV unlock code path
+      locking/pvqspinlock: Collect slowpath lock statistics
+      locking/pvqspinlock: Allow limited lock stealing
+      locking/pvqspinlock: Queue node adaptive spinning
+      locking/pvqspinlock: Move lock stealing count tracking code into pv_queued_spin_steal_lock()
+      locking/qspinlock: Use smp_cond_acquire() in pending code
+      locking/pvqspinlock: Enable slowpath locking count tracking
+
+Wanpeng Li (1):
+      KVM: X86: Fix load RFLAGS w/o the fixed bit
+
+Yelena Krivosheev (1):
+      net: mvneta: clear interface link status on port disable
+
+Zhen Kong (2):
+      crypto: msm: fix authdata copy issue in qcedev_sha_req_cb
+      qseecom: fix a common lib loading issue
+
+mohamed sunfeer (1):
+      crypto: Change format specifier %p to %pK
+
+weiping zhang (1):
+      block, scheduler: convert xxx_var_store to void
+
+ Documentation/rbtree.txt                           |  33 +++
+ arch/Kconfig                                       |   6 +
+ arch/arm64/Kconfig                                 |   1 +
+ arch/arm64/Makefile                                |   2 +
+ arch/arm64/configs/flash_defconfig                 |   3 +-
+ arch/arm64/include/asm/elf.h                       |   6 +-
+ arch/arm64/include/asm/stackprotector.h            |   3 +
+ arch/arm64/include/asm/string.h                    |   5 +
+ arch/arm64/kernel/cpu_ops.c                        |   3 +-
+ arch/arm64/kernel/kaslr.c                          |   3 +-
+ arch/arm64/kernel/vdso.c                           |  40 +--
+ arch/arm64/lib/Makefile                            |   2 +-
+ arch/arm64/lib/tishift.S                           |  80 ++++++
+ arch/arm64/mm/init.c                               |   5 +-
+ arch/arm64/mm/mmap.c                               |   5 +-
+ arch/arm64/mm/mmu.c                                |   3 +-
+ arch/c6x/kernel/setup.c                            |   2 -
+ arch/microblaze/kernel/setup.c                     |   2 -
+ arch/powerpc/Kconfig                               |   1 +
+ arch/powerpc/kernel/setup_32.c                     |   2 -
+ arch/powerpc/kernel/setup_64.c                     |   3 -
+ arch/powerpc/perf/core-book3s.c                    |   8 +-
+ arch/s390/include/asm/rwsem.h                      |   7 +-
+ arch/s390/kernel/early.c                           |   1 -
+ arch/sh/include/asm/rwsem.h                        |   5 -
+ arch/sparc/include/asm/rwsem.h                     |   7 +-
+ arch/sparc/kernel/head_64.S                        |   8 -
+ arch/x86/Kconfig                                   |   9 +
+ arch/x86/boot/compressed/misc.c                    |   5 +
+ arch/x86/include/asm/qspinlock_paravirt.h          |  59 +++++
+ arch/x86/include/asm/rwsem.h                       |   7 +-
+ arch/x86/include/asm/string_32.h                   |   9 +
+ arch/x86/include/asm/string_64.h                   |   7 +
+ arch/x86/kvm/emulate.c                             |  32 ++-
+ arch/x86/kvm/x86.c                                 |   2 +-
+ arch/x86/lguest/boot.c                             |   6 -
+ arch/x86/lib/memcpy_32.c                           |   2 +-
+ block/cfq-iosched.c                                |  94 +++----
+ block/deadline-iosched.c                           |   9 +-
+ block/maple-iosched.c                              |   2 +-
+ crypto/mcryptd.c                                   |  23 +-
+ drivers/acpi/apei/erst.c                           |   2 +-
+ drivers/acpi/processor_idle.c                      |   4 +-
+ drivers/base/firmware_class.c                      |   2 +-
+ drivers/crypto/msm/ice.c                           |  39 +--
+ drivers/crypto/msm/ota_crypto.c                    |   4 +-
+ drivers/crypto/msm/qce50.c                         |  14 +-
+ drivers/crypto/msm/qcedev.c                        |   6 +-
+ drivers/crypto/msm/qcrypto.c                       |  22 +-
+ drivers/input/touchscreen/wake_gestures.c          |  10 +-
+ drivers/iommu/arm-smmu.c                           |  15 +-
+ .../media/platform/msm/camera_v2/camera/camera.c   |   4 +-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |   9 +-
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |   2 +-
+ drivers/media/platform/msm/vidc/msm_v4l2_vidc.c    |  14 +-
+ drivers/mfd/cros_ec_spi.c                          |   1 +
+ drivers/mfd/twl4030-audio.c                        |   9 +-
+ drivers/mfd/twl6040.c                              |  12 +-
+ drivers/misc/qcom/qdsp6v2/aac_in.c                 |   4 +-
+ drivers/misc/qseecom.c                             |   8 +-
+ drivers/net/ethernet/marvell/mvneta.c              |   4 +
+ drivers/parisc/lba_pci.c                           |  33 +++
+ drivers/pci/pci-driver.c                           |   7 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa.c              |  64 +++--
+ drivers/platform/msm/ipa/ipa_v2/ipa_debugfs.c      |  14 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_dp.c           |  69 ++---
+ drivers/platform/msm/ipa/ipa_v2/ipa_flt.c          |  70 ++---
+ drivers/platform/msm/ipa/ipa_v2/ipa_hdr.c          | 177 +++++++------
+ drivers/platform/msm/ipa/ipa_v2/ipa_i.h            |  30 ++-
+ drivers/platform/msm/ipa/ipa_v2/ipa_intf.c         |  12 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_nat.c          |  99 +++----
+ drivers/platform/msm/ipa/ipa_v2/ipa_rt.c           | 116 ++++----
+ drivers/platform/msm/ipa/ipa_v2/ipa_uc_wdi.c       |   4 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_utils.c        |  97 +++----
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |  46 +++-
+ .../platform/msm/ipa/ipa_v2/rmnet_ipa_fd_ioctl.c   |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa.c              |  36 +--
+ drivers/platform/msm/ipa/ipa_v3/ipa_debugfs.c      |   7 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_dp.c           |  68 +++--
+ drivers/platform/msm/ipa/ipa_v3/ipa_flt.c          |  92 ++++---
+ drivers/platform/msm/ipa/ipa_v3/ipa_hdr.c          | 139 ++++++----
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            |  28 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_intf.c         |  18 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_nat.c          |  86 +++---
+ drivers/platform/msm/ipa/ipa_v3/ipa_rt.c           | 152 ++++++-----
+ drivers/platform/msm/ipa/ipa_v3/ipa_uc_wdi.c       |   4 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_utils.c        |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |  52 +++-
+ .../platform/msm/ipa/ipa_v3/rmnet_ipa_fd_ioctl.c   |  12 +-
+ drivers/power/supply/qcom/smb1351-charger.c        |   2 +-
+ drivers/soc/qcom/glink_smem_native_xprt.c          |   1 +
+ drivers/soc/qcom/qdsp6v2/apr.c                     |   7 +-
+ drivers/soc/qcom/socinfo.c                         |   6 +-
+ drivers/soc/qcom/wcd-dsp-glink.c                   |  19 +-
+ drivers/spi/spi-xilinx.c                           |  11 +
+ drivers/video/fbdev/msm/mdss_mdp_intf_cmd.c        |   8 +-
+ drivers/xen/events/events_2l.c                     |   5 +-
+ fs/exec.c                                          |   3 +
+ fs/namei.c                                         |   4 +-
+ fs/sdcardfs/inode.c                                |   2 +-
+ include/asm-generic/qspinlock.h                    |   9 +-
+ include/asm-generic/rwsem.h                        |  13 +-
+ include/crypto/mcryptd.h                           |   1 +
+ include/linux/compiler.h                           |  17 ++
+ include/linux/cpu.h                                |   2 +
+ include/linux/highmem.h                            |  22 ++
+ include/linux/lockdep.h                            |   6 +-
+ include/linux/rbtree.h                             |  21 ++
+ include/linux/rbtree_augmented.h                   |  33 ++-
+ include/linux/rcutree.h                            |   2 +-
+ include/linux/rwsem-spinlock.h                     |   2 +-
+ include/linux/rwsem.h                              |   2 +
+ include/linux/sched.h                              |   2 +
+ include/linux/slab.h                               |   6 +-
+ include/linux/string.h                             | 201 ++++++++++++++
+ include/linux/vmalloc.h                            |  20 +-
+ include/sound/pcm.h                                |   2 +-
+ include/uapi/linux/msm_audio_calibration.h         |   4 +
+ init/main.c                                        |   5 -
+ kernel/configs.c                                   |   4 +-
+ kernel/cpu.c                                       |  10 +
+ kernel/cpuset.c                                    |  33 ++-
+ kernel/futex.c                                     |  18 +-
+ kernel/kthread.c                                   |   2 +
+ kernel/locking/lockdep.c                           | 281 ++++++++++++--------
+ kernel/locking/locktorture.c                       |  22 +-
+ kernel/locking/mutex.c                             |   5 +-
+ kernel/locking/qspinlock.c                         |  75 ++++--
+ kernel/locking/qspinlock_paravirt.h                | 259 +++++++++++++++---
+ kernel/locking/qspinlock_stat.h                    | 292 +++++++++++++++++++++
+ kernel/locking/rtmutex.c                           | 135 +++++-----
+ kernel/locking/rwsem-spinlock.c                    |  19 +-
+ kernel/locking/rwsem-xadd.c                        |  31 ++-
+ kernel/printk/printk.c                             |  12 +-
+ kernel/rcu/rcutorture.c                            |   6 +-
+ kernel/rcu/tree.c                                  |  44 ++--
+ kernel/rcu/tree_plugin.h                           |  14 +-
+ kernel/sched/core.c                                |  29 +-
+ kernel/sched/sched.h                               |   2 +-
+ kernel/trace/trace.c                               |  13 +-
+ kernel/workqueue.c                                 |  19 +-
+ lib/rbtree.c                                       |  34 ++-
+ lib/string.c                                       |   7 +
+ mm/mmap.c                                          |   2 +-
+ mm/page_alloc.c                                    |  14 +-
+ mm/percpu.c                                        |  36 +--
+ net/ipc_router/ipc_router_core.c                   |  12 +-
+ net/ipc_router/ipc_router_socket.c                 |   6 +-
+ net/ipv4/syncookies.c                              |   3 +-
+ net/ipv4/tcp_westwood.c                            |   4 +-
+ net/ipv6/syncookies.c                              |   3 +-
+ net/rds/page.c                                     |   4 +-
+ scripts/mkcompile_h                                |   6 +-
+ security/Kconfig                                   |   7 +
+ sound/core/info.c                                  |   5 +-
+ sound/core/pcm_lib.c                               |   2 -
+ sound/core/pcm_native.c                            |   8 +-
+ sound/core/rawmidi.c                               |  15 +-
+ sound/soc/msm/qdsp6v2/audio_cal_utils.c            |   4 +
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.h              |   2 +-
+ sound/soc/msm/qdsp6v2/q6afe.c                      |  55 +++-
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  52 ++--
+ sound/usb/mixer.c                                  |  27 +-
+ tools/lib/lockdep/common.c                         |   5 -
+ tools/lib/lockdep/include/liblockdep/common.h      |   1 -
+ tools/lib/lockdep/preload.c                        |   2 -
+ 166 files changed, 2988 insertions(+), 1344 deletions(-)
+ create mode 100644 arch/arm64/lib/tishift.S
+ create mode 100644 kernel/locking/qspinlock_stat.h
