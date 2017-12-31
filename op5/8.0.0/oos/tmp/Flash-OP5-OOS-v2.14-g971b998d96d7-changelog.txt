@@ -1,4 +1,4 @@
-http://github.com/nathanchance/op5/commits/8.0.0-oos-queue-2.14
+http://github.com/nathanchance/op5/commits/8.0.0-oos
 
 Aditya Bavanari (3):
       ASoC: msm: qdsp6v2: Add support for new AFE LSM cal types
