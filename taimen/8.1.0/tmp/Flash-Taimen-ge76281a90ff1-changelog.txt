@@ -1,0 +1,109 @@
+http://github.com/nathanchance/wahoo/commits/bisect
+
+Aditya Bavanari (2):
+      ASoC: msm: qdsp6v2: Add support for new AFE LSM cal types
+      ASoC: apr: Add validity check to APR port
+
+Banajit Goswami (1):
+      ALSA: pcm: remove unused variable from snd_pcm_info()
+
+Daniel Micay (13):
+      BACKPORT: include/linux/string.h: add the option of fortified string.h functions
+      UPSTREAM: replace incorrect strscpy use in FORTIFY_SOURCE
+      flash_defconfig: Disable SECURITY_SELINUX_DEVELOP
+      arm64: zero the leading stack canary byte
+      arm64: properly account for stack rnd in mmap base
+      mark protection_map as __ro_after_init
+      mark most percpu globals as __ro_after_init
+      randomize lower bits of the argument block
+      enable protected_{symlinks,hardlinks} by default
+      arm64: determine stack entropy based on mmap entropy
+      add page sanitization / verification
+      add kmalloc alloc_size attributes
+      add vmalloc alloc_size attributes
+
+Jisheng Zhang (1):
+      BACKPORT: arm64: apply __ro_after_init to some objects
+
+Joe Maples (1):
+      flash_defconfig: Switch to 1000HZ
+
+Karthikeyan Mani (1):
+      ALSA: pcm: remove SNDRV_PCM_IOCTL1_INFO internal command
+
+Kees Cook (1):
+      UPSTREAM: arm64, vdso: Define vdso_{start,end} as array
+
+Manish Dewangan (2):
+      qdspv2: Add latency calculation support in pcm offload path
+      ASoc: msm: qdspv2: Fix latency calculation in pcm offload path
+
+Mohammed Javid (1):
+      msm: ipa: Change error value for set quota
+
+Nathan Chancellor (3):
+      wake_gestures: Update timings for 1000HZ
+      mm, page_alloc: Fix declaration after statement warning
+      Fix invalid permissions
+
+Ritesh Harjani (1):
+      ANDROID: sdcardfs: Make WARN_RATELIMIT to pr_debug
+
+Sachin Bhayare (1):
+      msm: mdss: serialize wait for pingpong with kickoff
+
+Umang Agrawal (1):
+      power: smb1351-charger: Fix the float voltage unit passed to its set method
+
+Zhen Kong (1):
+      qseecom: fix a common lib loading issue
+
+ arch/Kconfig                                       |   6 +
+ arch/arm64/Kconfig                                 |   1 +
+ arch/arm64/configs/flash_defconfig                 |   3 +-
+ arch/arm64/include/asm/elf.h                       |   6 +-
+ arch/arm64/include/asm/stackprotector.h            |   3 +
+ arch/arm64/include/asm/string.h                    |   5 +
+ arch/arm64/kernel/cpu_ops.c                        |   3 +-
+ arch/arm64/kernel/kaslr.c                          |   3 +-
+ arch/arm64/kernel/vdso.c                           |  40 ++--
+ arch/arm64/mm/init.c                               |   5 +-
+ arch/arm64/mm/mmap.c                               |   5 +-
+ arch/arm64/mm/mmu.c                                |   3 +-
+ arch/powerpc/Kconfig                               |   1 +
+ arch/x86/Kconfig                                   |   1 +
+ arch/x86/boot/compressed/misc.c                    |   5 +
+ arch/x86/include/asm/string_32.h                   |   9 +
+ arch/x86/include/asm/string_64.h                   |   7 +
+ arch/x86/lib/memcpy_32.c                           |   2 +-
+ drivers/input/touchscreen/wake_gestures.c          |  10 +-
+ drivers/misc/qseecom.c                             |   8 +-
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |   2 +-
+ .../platform/msm/ipa/ipa_v2/rmnet_ipa_fd_ioctl.c   |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |   2 +-
+ .../platform/msm/ipa/ipa_v3/rmnet_ipa_fd_ioctl.c   |  12 +-
+ drivers/power/supply/qcom/smb1351-charger.c        |   2 +-
+ drivers/soc/qcom/qdsp6v2/apr.c                     |   7 +-
+ drivers/video/fbdev/msm/mdss_fb.c                  |   4 +-
+ drivers/video/fbdev/msm/mdss_mdp_intf_cmd.c        |   8 +-
+ fs/exec.c                                          |   3 +
+ fs/namei.c                                         |   4 +-
+ fs/sdcardfs/inode.c                                |   2 +-
+ fs/sync.c                                          |   2 +-
+ include/linux/highmem.h                            |  22 +++
+ include/linux/slab.h                               |   6 +-
+ include/linux/string.h                             | 201 +++++++++++++++++++++
+ include/linux/vmalloc.h                            |  20 +-
+ include/sound/pcm.h                                |   2 +-
+ include/uapi/linux/msm_audio_calibration.h         |   4 +
+ lib/string.c                                       |   7 +
+ mm/mmap.c                                          |   2 +-
+ mm/page_alloc.c                                    |  14 +-
+ mm/percpu.c                                        |  36 ++--
+ security/Kconfig                                   |   7 +
+ sound/core/pcm_lib.c                               |   2 -
+ sound/core/pcm_native.c                            |   8 +-
+ sound/soc/msm/qdsp6v2/audio_cal_utils.c            |   4 +
+ sound/soc/msm/qdsp6v2/q6afe.c                      |  55 +++++-
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  30 ++-
+ 48 files changed, 482 insertions(+), 124 deletions(-)
