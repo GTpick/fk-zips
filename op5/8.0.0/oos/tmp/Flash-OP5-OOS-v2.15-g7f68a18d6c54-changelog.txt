@@ -1,0 +1,11 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos
+
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Nathan Chancellor (1):
+      anykernel.sh: Add support for the OnePlus 5T
+
+ anykernel.sh | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
