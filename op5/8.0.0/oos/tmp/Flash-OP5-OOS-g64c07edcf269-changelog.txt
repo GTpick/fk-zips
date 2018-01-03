@@ -1,9 +1,0 @@
-http://github.com/nathanchance/op5/commits/8.0.0-oos
-
-Nathan Chancellor (2):
-      kgsl: Shut up abot not being able to create debugfs
-      flash_defconfig: Inline all drivers but QCA_CLD and OPCHAIN
-
- arch/arm64/configs/flash_defconfig | 14 ++++++++------
- drivers/gpu/msm/kgsl_debugfs.c     |  2 --
- 2 files changed, 8 insertions(+), 8 deletions(-)
