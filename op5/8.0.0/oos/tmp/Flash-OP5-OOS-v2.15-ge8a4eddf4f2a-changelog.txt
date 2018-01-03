@@ -1,7 +1,0 @@
-http://github.com/nathanchance/op5/commits/8.0.0-oos
-
-Nathan Chancellor (1):
-      kgsl: Shut up abot not being able to create debugfs
-
- drivers/gpu/msm/kgsl_debugfs.c | 2 --
- 1 file changed, 2 deletions(-)
