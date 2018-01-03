@@ -1,0 +1,253 @@
+http://github.com/nathanchance/op5/commits/8.0.0-oos
+
+Andy Lutomirski (10):
+      x86/vm86/32: Switch to flush_tlb_mm_range() in mark_screen_rdonly()
+      x86/mm: Remove flush_tlb() and flush_tlb_current_task()
+      x86/mm: Make flush_tlb_mm_range() more predictable
+      x86/mm: Reimplement flush_tlb_page() using flush_tlb_mm_range()
+      x86/mm: Remove the UP asm/tlbflush.h code, always use the (formerly) SMP code
+      x86/mm: Disable PCID on 32-bit kernels
+      x86/mm: Add the 'nopcid' boot option to turn off PCID
+      x86/mm: Enable CR4.PCIDE on supported systems
+      x86/mm/64: Fix reboot interaction with CR4.PCIDE
+      mm/vmstat: Make NR_TLB_REMOTE_FLUSH_RECEIVED available even on UP
+
+Brian King (1):
+      tg3: Fix rx hang on MTU change with 5717/5719
+
+Christoph Paasch (1):
+      tcp md5sig: Use skb's saddr when replying to an incoming segment
+
+Daniel Thompson (1):
+      usb: xhci: Add XHCI_TRUST_TX_LENGTH for Renesas uPD720201
+
+Daniele Palmas (1):
+      USB: serial: option: add support for Telit ME910 PID 0x1101
+
+Dmitry Fleytman Dmitry Fleytman (1):
+      usb: Add device quirk for Logitech HD Pro Webcam C925e
+
+Eric Dumazet (2):
+      ipv4: igmp: guard against silly MTU values
+      ipv6: mcast: better catch silly mtu values
+
+Eric W. Biederman (1):
+      net: Fix double free and memory corruption in get_net_ns_by_id()
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.109
+
+Grygorii Strashko (1):
+      net: phy: micrel: ksz9031: reconfigure autoneg after phy autoneg workaround
+
+Helge Deller (1):
+      parisc: Hide Diva-built-in serial aux and graphics card
+
+Hui Wang (1):
+      ALSA: hda - fix headset mic detection issue on a Dell machine
+
+Ido Schimmel (1):
+      ipv4: Fix use-after-free when flushing FIB tables
+
+Jing Xia (1):
+      tracing: Fix crash when it fails to alloc ring buffer
+
+Johan Hovold (3):
+      mfd: twl4030-audio: Fix sibling-node lookup
+      mfd: twl6040: Fix child-node lookup
+      ASoC: twl4030: fix child-node lookup
+
+Jon Hunter (1):
+      mfd: cros ec: spi: Don't send first message too soon
+
+Juan Zea (1):
+      usbip: fix usbip bind writing random string after command in match_busid
+
+Kevin Cernekee (2):
+      net: igmp: Use correct source address on IGMPv3 reports
+      netlink: Add netns check on taps
+
+Linus Torvalds (2):
+      kbuild: add '-fno-stack-check' to kernel build options
+      n_tty: fix EXTPROC vs ICANON interaction with TIOCINQ (aka FIONREAD)
+
+Maciej S. Szmigiero (1):
+      ASoC: fsl_ssi: AC'97 ops need regmap, clock and cleaning up on failure
+
+Mathias Nyman (1):
+      USB: Fix off by one in type-specific length check of BOS SSP capability
+
+Max Schulze (1):
+      USB: serial: ftdi_sio: add id for Airbus DS P8GR
+
+Mohamed Ghannam (1):
+      net: ipv4: fix for a race condition in raw_sendmsg
+
+Nathan Chancellor (1):
+      Merge 4.4.109 into 8.0.0-oos
+
+Nikolay Aleksandrov (1):
+      net: bridge: fix early call to br_stp_change_bridge_id and plug newlink leaks
+
+Oliver Neukum (1):
+      usb: add RESET_RESUME for ELSA MicroLink 56K
+
+Paolo Bonzini (1):
+      kvm: x86: fix RSM when PCID is non-zero
+
+Rafael J. Wysocki (1):
+      PCI / PM: Force devices to D0 in pci_pm_thaw_noirq()
+
+Ravi Bangoria (1):
+      powerpc/perf: Dereference BHRB entries safely
+
+Reinhard Speyerer (1):
+      USB: serial: qcserial: add Sierra Wireless EM7565
+
+Ricardo Ribalda Delgado (1):
+      spi: xilinx: Detect stall with Unknown commands
+
+SZ Lin (林上智) (1):
+      USB: serial: option: adding support for YUGA CLM920-NC5
+
+Sebastian Andrzej Siewior (1):
+      crypto: mcryptd - protect the per-CPU queue with a lock
+
+Sebastian Sjoholm (1):
+      net: qmi_wwan: add Sierra EM7565 1199:9091
+
+Shaohua Li (1):
+      net: reevalulate autoflowlabel setting after sysctl setting
+
+Shuah Khan (2):
+      usbip: stub: stop printing kernel pointer addresses in messages
+      usbip: vhci: stop printing kernel pointer addresses in messages
+
+Steve Wise (1):
+      iw_cxgb4: Only validate the MSN for successful completions
+
+Steven Rostedt (VMware) (3):
+      tracing: Remove extra zeroing out of the ring buffer page
+      tracing: Fix possible double free on failure of allocating trace buffer
+      ring-buffer: Mask out the info bits when returning buffer page length
+
+Takashi Iwai (4):
+      ACPI: APEI / ERST: Fix missing error handling in erst_reader()
+      ALSA: rawmidi: Avoid racy info ioctl via ctl device
+      ALSA: usb-audio: Fix the missing ctl name suffix at parsing SU
+      ALSA: hda: Drop useless WARN_ON()
+
+Thomas Gleixner (2):
+      nohz: Prevent a timer interrupt storm in tick_nohz_stop_sched_tick()
+      x86/smpboot: Remove stale TLB flush invocations
+
+Tobias Jordan (1):
+      net: mvmdio: disable/unprepare clocks in EPROBE_DEFER case
+
+Tonghao Zhang (1):
+      sctp: Replace use of sockets_allocated with specified macro.
+
+Wanpeng Li (1):
+      KVM: X86: Fix load RFLAGS w/o the fixed bit
+
+Willem de Bruijn (1):
+      sock: free skb in skb_complete_tx_timestamp on error
+
+Yelena Krivosheev (1):
+      net: mvneta: clear interface link status on port disable
+
+ Documentation/kernel-parameters.txt      |  2 +
+ Makefile                                 |  5 +-
+ arch/powerpc/perf/core-book3s.c          |  8 ++-
+ arch/x86/Kconfig                         |  2 +-
+ arch/x86/include/asm/disabled-features.h |  4 +-
+ arch/x86/include/asm/hardirq.h           |  2 +-
+ arch/x86/include/asm/mmu.h               |  6 --
+ arch/x86/include/asm/mmu_context.h       |  2 -
+ arch/x86/include/asm/tlbflush.h          | 99 +++++---------------------------
+ arch/x86/kernel/cpu/bugs.c               |  8 +++
+ arch/x86/kernel/cpu/common.c             | 40 +++++++++++++
+ arch/x86/kernel/reboot.c                 |  4 ++
+ arch/x86/kernel/smpboot.c                |  9 ---
+ arch/x86/kernel/vm86_32.c                |  2 +-
+ arch/x86/kvm/emulate.c                   | 32 ++++++++---
+ arch/x86/kvm/x86.c                       |  2 +-
+ arch/x86/mm/init.c                       |  2 -
+ arch/x86/mm/tlb.c                        | 73 +++--------------------
+ arch/x86/xen/enlighten.c                 |  6 ++
+ crypto/mcryptd.c                         | 23 ++++----
+ drivers/acpi/apei/erst.c                 |  2 +-
+ drivers/infiniband/hw/cxgb4/cq.c         |  6 +-
+ drivers/mfd/cros_ec_spi.c                |  1 +
+ drivers/mfd/twl4030-audio.c              |  9 ++-
+ drivers/mfd/twl6040.c                    | 12 ++--
+ drivers/net/ethernet/broadcom/tg3.c      |  4 +-
+ drivers/net/ethernet/marvell/mvmdio.c    |  3 +-
+ drivers/net/ethernet/marvell/mvneta.c    |  4 ++
+ drivers/net/phy/micrel.c                 |  1 +
+ drivers/net/usb/qmi_wwan.c               |  1 +
+ drivers/parisc/lba_pci.c                 | 33 +++++++++++
+ drivers/pci/pci-driver.c                 |  7 ++-
+ drivers/spi/spi-xilinx.c                 | 11 ++++
+ drivers/tty/n_tty.c                      |  4 +-
+ drivers/usb/core/config.c                |  2 +-
+ drivers/usb/core/quirks.c                |  6 +-
+ drivers/usb/host/xhci-pci.c              |  3 +
+ drivers/usb/serial/ftdi_sio.c            |  1 +
+ drivers/usb/serial/ftdi_sio_ids.h        |  6 ++
+ drivers/usb/serial/option.c              | 17 ++++++
+ drivers/usb/serial/qcserial.c            |  3 +
+ drivers/usb/usbip/stub_main.c            |  5 +-
+ drivers/usb/usbip/stub_rx.c              |  7 +--
+ drivers/usb/usbip/stub_tx.c              |  4 +-
+ drivers/usb/usbip/vhci_hcd.c             | 10 ----
+ drivers/usb/usbip/vhci_rx.c              | 23 ++++----
+ drivers/usb/usbip/vhci_tx.c              |  3 +-
+ include/crypto/mcryptd.h                 |  1 +
+ include/linux/ipv6.h                     |  3 +-
+ include/linux/vm_event_item.h            |  2 -
+ include/net/ip.h                         |  2 +
+ kernel/time/tick-sched.c                 | 19 +++++-
+ kernel/trace/ring_buffer.c               |  6 +-
+ kernel/trace/trace.c                     | 13 ++---
+ net/bridge/br_netlink.c                  | 11 ++--
+ net/core/net_namespace.c                 |  2 +-
+ net/core/skbuff.c                        |  6 +-
+ net/ipv4/devinet.c                       |  2 +-
+ net/ipv4/fib_frontend.c                  |  9 ++-
+ net/ipv4/igmp.c                          | 44 ++++++++++----
+ net/ipv4/ip_tunnel.c                     |  4 +-
+ net/ipv4/raw.c                           | 15 +++--
+ net/ipv4/tcp_ipv4.c                      |  2 +-
+ net/ipv6/af_inet6.c                      |  1 -
+ net/ipv6/ip6_output.c                    | 12 +++-
+ net/ipv6/ipv6_sockglue.c                 |  1 +
+ net/ipv6/mcast.c                         | 25 ++++----
+ net/ipv6/tcp_ipv6.c                      |  2 +-
+ net/netlink/af_netlink.c                 |  3 +
+ net/sctp/socket.c                        |  4 +-
+ sound/core/rawmidi.c                     | 15 ++++-
+ sound/hda/hdac_i915.c                    |  2 +-
+ sound/pci/hda/patch_realtek.c            |  5 ++
+ sound/soc/codecs/twl4030.c               |  4 +-
+ sound/soc/fsl/fsl_ssi.c                  | 18 ++++--
+ sound/usb/mixer.c                        | 27 +++++----
+ tools/usb/usbip/src/utils.c              |  9 ++-
+ 77 files changed, 458 insertions(+), 330 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Chris Renshaw (1):
+      Merge pull request #13 from nathanchance/moar-modules
+
+Nathan Chancellor (5):
+      update-binary: Change how we handle modules
+      README: Update documentation for modules
+      example: Update modules folder for new location handling
+      Merge branch 'master' into op5-flash-8.0.0
+      OP5: Remove modules placeholder
+
+ META-INF/com/google/android/update-binary | 26 +++++++++++++++-----------
+ README.md                                 |  4 ++--
+ 2 files changed, 17 insertions(+), 13 deletions(-)
