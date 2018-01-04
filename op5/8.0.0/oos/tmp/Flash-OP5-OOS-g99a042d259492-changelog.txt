@@ -613,3 +613,12 @@ weiping zhang (1):
  delete mode 100644 include/linux/state_notifier.h
  mode change 100755 => 100644 include/trace/events/f2fs.h
  delete mode 100755 scripts/fetch-latest-wireguard.sh
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Nathan Chancellor (1):
+      anykernel.sh: Add support for the OnePlus 5T
+
+ anykernel.sh | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
