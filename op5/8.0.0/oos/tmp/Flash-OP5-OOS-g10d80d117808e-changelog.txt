@@ -620,12 +620,8 @@ weiping zhang (1):
 
 http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
 
-Nathan Chancellor (5):
-      Add initial Flash Kernel modifications for Pixel 2 (XL)
-      Merge branch 'master' into wahoo-flash-8.0.0
-      Merge branch 'master' into wahoo-flash-8.1.0
-      Merge branch 'master' into wahoo-flash-8.1.0
-      Pixel 2 (XL): Remove modules placeholder
+Nathan Chancellor (1):
+      anykernel.sh: Add support for the OnePlus 5T
 
- anykernel.sh | 28 ++++++----------------------
- 1 file changed, 6 insertions(+), 22 deletions(-)
+ anykernel.sh | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
