@@ -1,0 +1,166 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.08
+
+Alex Naidis (5):
+      thermal-core: Fix invalid sensor data being accepted
+      msm-core: Fix error handling of sensor data retrieval
+      msm-core: Rework resampling processing
+      msm-core: Improve sampling conditioning
+      msm-core: Add back periodic polling and fix various race conditions
+
+Borislav Petkov (4):
+      x86/kaiser: Rename and simplify X86_FEATURE_KAISER handling
+      x86/kaiser: Check boottime cmdline params
+      x86/kaiser: Reenable PARAVIRT
+      x86/kaiser: Move feature detection up
+
+Daniel Rosenberg (2):
+      ANDROID: sdcardfs: notify lower file of opens
+      ANDROID: sdcardfs: Add default_normal option
+
+Dave Hansen (2):
+      kaiser: merged update
+      kaiser: enhanced by kernel and user PCIDs
+
+Eric Dumazet (2):
+      tcp: introduce tcp_jiffies32
+      tcp_westwood: use tcp_jiffies32 instead of tcp_time_stamp
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.110-rc1
+
+Harsh Shandilya (1):
+      qcom: msm-core: Revert a couple of patches.
+
+Hugh Dickins (25):
+      kaiser: do not set _PAGE_NX on pgd_none
+      kaiser: stack map PAGE_SIZE at THREAD_SIZE-PAGE_SIZE
+      kaiser: fix build and FIXME in alloc_ldt_struct()
+      kaiser: KAISER depends on SMP
+      kaiser: fix regs to do_nmi() ifndef CONFIG_KAISER
+      kaiser: fix perf crashes
+      kaiser: ENOMEM if kaiser_pagetable_walk() NULL
+      kaiser: tidied up asm/kaiser.h somewhat
+      kaiser: tidied up kaiser_add/remove_mapping slightly
+      kaiser: kaiser_remove_mapping() move along the pgd
+      kaiser: cleanups while trying for gold link
+      kaiser: name that 0x1000 KAISER_SHADOW_PGD_OFFSET
+      kaiser: delete KAISER_REAL_SWITCH option
+      kaiser: vmstat show NR_KAISERTABLE as nr_overhead
+      kaiser: load_new_mm_cr3() let SWITCH_USER_CR3 flush user
+      kaiser: PCID 0 for kernel and 128 for user
+      kaiser: x86_cr3_pcid_noflush and x86_cr3_pcid_user
+      kaiser: paranoid_entry pass cr3 need to paranoid_exit
+      kaiser: _pgd_alloc() without __GFP_REPEAT to avoid stalls
+      kaiser: fix unlikely error in alloc_ldt_struct()
+      kaiser: add "nokaiser" boot option, using ALTERNATIVE
+      kaiser: use ALTERNATIVE instead of x86_cr3_pcid_noflush
+      kaiser: drop is_atomic arg to kaiser_pagetable_walk()
+      kaiser: asm/tlbflush.h handle noPGE at lower level
+      kaiser: kaiser_flush_tlb_on_return_to_user() check PCID
+
+Jens Axboe (1):
+      cfq-iosched: temporarily boost queue priority for idle classes
+
+Jiri Kosina (1):
+      kaiser: disabled on Xen PV
+
+Kees Cook (2):
+      KPTI: Rename to PAGE_TABLE_ISOLATION
+      KPTI: Report when enabled
+
+Lawrence Brakmo (1):
+      tcp: replace cnt & rtt with struct in pkts_acked()
+
+Matthias Kaehlcke (1):
+      FROMGIT: sched/sysctl: Fix attributes of some extern declarations
+
+Nathan Chancellor (5):
+      Merge tag 'cfq-for-2.08' into oreo-mr1
+      Merge tag 'westwood-for-2.08' into oreo-mr1
+      Merge tag 'msm-core-for-2.08' into queue
+      Merge 4.4.110-rc1 into queue
+      Revert "ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float"
+
+Richard Fellner (1):
+      KAISER: Kernel Address Isolation
+
+Thomas Gleixner (1):
+      x86/paravirt: Dont patch flush_tlb_single
+
+Tom Lendacky (1):
+      x86/boot: Add early cmdline parsing for options with arguments
+
+chun Long (1):
+      tcp_westwood: fix tcp_westwood_info() style mistakes
+
+ Documentation/kernel-parameters.txt         |   8 +
+ Makefile                                    |   4 +-
+ arch/arm64/Makefile                         |   5 +-
+ arch/x86/boot/compressed/misc.h             |   1 +
+ arch/x86/entry/entry_64.S                   | 164 ++++++++--
+ arch/x86/entry/entry_64_compat.S            |   7 +
+ arch/x86/include/asm/cmdline.h              |   2 +
+ arch/x86/include/asm/cpufeature.h           |   4 +
+ arch/x86/include/asm/desc.h                 |   2 +-
+ arch/x86/include/asm/hw_irq.h               |   2 +-
+ arch/x86/include/asm/kaiser.h               | 141 +++++++++
+ arch/x86/include/asm/pgtable.h              |  28 +-
+ arch/x86/include/asm/pgtable_64.h           |  25 +-
+ arch/x86/include/asm/pgtable_types.h        |  29 +-
+ arch/x86/include/asm/processor.h            |   2 +-
+ arch/x86/include/asm/tlbflush.h             |  74 ++++-
+ arch/x86/include/uapi/asm/processor-flags.h |   3 +-
+ arch/x86/kernel/cpu/common.c                |  28 +-
+ arch/x86/kernel/cpu/perf_event_intel_ds.c   |  57 +++-
+ arch/x86/kernel/espfix_64.c                 |  10 +
+ arch/x86/kernel/head_64.S                   |  35 ++-
+ arch/x86/kernel/irqinit.c                   |   2 +-
+ arch/x86/kernel/ldt.c                       |  25 +-
+ arch/x86/kernel/paravirt_patch_64.c         |   2 -
+ arch/x86/kernel/process.c                   |   2 +-
+ arch/x86/kernel/setup.c                     |   7 +
+ arch/x86/kernel/tracepoint.c                |   2 +
+ arch/x86/kvm/x86.c                          |   3 +-
+ arch/x86/lib/cmdline.c                      | 105 +++++++
+ arch/x86/mm/Makefile                        |   1 +
+ arch/x86/mm/init.c                          |   2 +-
+ arch/x86/mm/init_64.c                       |  10 +
+ arch/x86/mm/kaiser.c                        | 455 ++++++++++++++++++++++++++++
+ arch/x86/mm/pageattr.c                      |  63 +++-
+ arch/x86/mm/pgtable.c                       |  16 +-
+ arch/x86/mm/tlb.c                           |  39 ++-
+ block/blk-core.c                            |   5 +
+ block/cfq-iosched.c                         |  22 +-
+ drivers/power/qcom/msm-core.c               | 124 ++++----
+ drivers/thermal/thermal_core.c              |   5 +
+ fs/sdcardfs/file.c                          |   2 +
+ fs/sdcardfs/main.c                          |   6 +
+ fs/sdcardfs/sdcardfs.h                      |   3 +-
+ fs/sdcardfs/super.c                         |   2 +
+ include/asm-generic/vmlinux.lds.h           |   7 +
+ include/linux/kaiser.h                      |  52 ++++
+ include/linux/mmzone.h                      |   3 +-
+ include/linux/percpu-defs.h                 |  32 +-
+ include/linux/sched/sysctl.h                |   6 +-
+ include/linux/thermal.h                     |   3 +
+ include/net/tcp.h                           |  20 +-
+ init/main.c                                 |   2 +
+ kernel/fork.c                               |   6 +
+ mm/vmstat.c                                 |   1 +
+ net/ipv4/tcp_bic.c                          |   6 +-
+ net/ipv4/tcp_cdg.c                          |  14 +-
+ net/ipv4/tcp_cubic.c                        |   6 +-
+ net/ipv4/tcp_htcp.c                         |  10 +-
+ net/ipv4/tcp_illinois.c                     |  21 +-
+ net/ipv4/tcp_input.c                        |   8 +-
+ net/ipv4/tcp_lp.c                           |   6 +-
+ net/ipv4/tcp_vegas.c                        |   6 +-
+ net/ipv4/tcp_vegas.h                        |   2 +-
+ net/ipv4/tcp_veno.c                         |   7 +-
+ net/ipv4/tcp_westwood.c                     |  17 +-
+ net/ipv4/tcp_yeah.c                         |   7 +-
+ security/Kconfig                            |  10 +
+ 67 files changed, 1569 insertions(+), 217 deletions(-)
+ create mode 100644 arch/x86/include/asm/kaiser.h
+ create mode 100644 arch/x86/mm/kaiser.c
+ create mode 100644 include/linux/kaiser.h
