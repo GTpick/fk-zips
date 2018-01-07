@@ -815,6 +815,6 @@ Nathan Chancellor (4):
       AK2: Cache module contexts whenever possible
       Merge branch 'module-contexts' into op5-flash-8.0.0
 
- META-INF/com/google/android/update-binary | 16 +++++++++++-----
+ META-INF/com/google/android/update-binary | 14 +++++++++-----
  anykernel.sh                              |  9 +++------
- 2 files changed, 14 insertions(+), 11 deletions(-)
+ 2 files changed, 12 insertions(+), 11 deletions(-)
