@@ -1,0 +1,969 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Aaron Ma (1):
+      Input: elantech - add new icbody type 15
+
+Adin Kwok (1):
+      Correctly unregister usb_psy
+
+Adrian Salido (1):
+      msm: mdss: save state of vsync handler
+
+Alexander Martinz (1):
+      drivers: nfc: import pn544 driver from OnePlus
+
+Alexander Potapenko (2):
+      UPSTREAM: llist: clang: introduce member_address_is_nonnull()
+      block: Initialize cfqq->ioprio_class in cfq_get_queue()
+
+Alexey Dobriyan (1):
+      proc: much faster /proc/vmstat
+
+Andrey Ryabinin (2):
+      x86/kasan: Clear kasan_zero_page after TLB flush
+      x86/kasan: Write protect kasan zero shadow
+
+Andy Lutomirski (2):
+      x86, vdso, pvclock: Simplify and speed up the vdso pvclock reader
+      x86/vdso: Get pvclock data from the vvar VMA instead of the fixmap
+
+Ard Biesheuvel (1):
+      UPSTREAM: crypto: arm64/sha - avoid non-standard inline asm tricks
+
+Arnd Bergmann (2):
+      UPSTREAM: locking/static_keys: Avoid nested functions
+      UPSTREAM: android: binder: fix type mismatch warning
+
+Badhri Jagan Sridharan (1):
+      ANDROID: usb: gadget: assign no-op request complete callbacks
+
+Banajit Goswami (1):
+      soc: q6dspv2: add api to vote for upgrading thread priority
+
+Behan Webster (5):
+      LLVMLINUX: kbuild, LLVMLinux: Add better clang cross build support
+      LLVMLINUX: kbuild, LLVMLinux: Add more compiler options for clang
+      LLVMLINUX: kbuild, LLVMLinux: Fix asm-offset generation to work with clang
+      LLVMLINUX: Mark inline functions as __maybe_unused
+      LLVMLINUX: LLVMLinux: use -Oz instead of -Os when using clang
+
+Bernhard Rosenkränzer (2):
+      LINARO: Add -meabi gnu to the clang parameters
+      Fix for compilation with clang
+
+Bongkyu Kim (1):
+      UPSTREAM: lz4: fix wrong compress buffer size for 64-bits
+
+Borislav Petkov (5):
+      x86/kaiser: Rename and simplify X86_FEATURE_KAISER handling
+      x86/kaiser: Check boottime cmdline params
+      x86/kaiser: Reenable PARAVIRT
+      x86/kaiser: Move feature detection up
+      Map the vsyscall page with _PAGE_USER
+
+Brian Foster (1):
+      fs/fs-writeback.c: inode writeback list tracking tracepoints
+
+Chenbo Feng (1):
+      ANDROID: Use sk_uid to replace uid get from socket file
+
+Chris Fries (1):
+      kernel: Add CC_WERROR config to turn warnings into errors
+
+Daniel Mentz (1):
+      Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
+
+Daniel Rosenberg (3):
+      ANDROID: sdcardfs: notify lower file of opens
+      ANDROID: sdcardfs: Add default_normal option
+      ANDROID: sdcardfs: Fix missing break on default_normal
+
+Danilo Krummrich (1):
+      ANDROID: usb: gadget: configfs: fix null ptr in android_disconnect
+
+Dave Chinner (1):
+      fs/fs-writeback.c: add a new writeback list for sync
+
+Dave Hansen (2):
+      kaiser: merged update
+      kaiser: enhanced by kernel and user PCIDs
+
+David Howells (1):
+      fscache: Fix the default for fscache_maybe_release_page()
+
+David Lin (8):
+      msm: qdsp6v2: fix inconsistent spin_lock
+      msm: mdss: fix inconsistent mutex_lock
+      wcd9335: fix inconsistent mutex_lock
+      qdsp6v2: fix inconsistent mutex_lock
+      slimbus: fix inconsistent mutex_lock
+      msm: mdss: fix inconsistent mutex_lock
+      msm_cci: fix inconsistent mutex_lock
+      lz4: fix compress max output bound
+
+David Rientjes (2):
+      BACKPORT: compiler, clang: always inline when CONFIG_OPTIMIZE_INLINING is disabled
+      BACKPORT: compiler, clang: suppress warning for unused static inline functions
+
+Davidlohr Bueso (3):
+      rbtree: cache leftmost node internally
+      block/cfq: replace cfq_rb_root leftmost caching
+      block/cfq: cache rightmost rb_node
+
+Eino-Ville Talvala (1):
+      msm_ispif: Increase timeout to 10 seconds from 1 second.
+
+Eric Biggers (3):
+      crypto: chacha20poly1305 - validate the digest size
+      crypto: pcrypt - fix freeing pcrypt instances
+      fscrypt: remove broken support for detecting keyring key revocation
+
+Francisco Franco (13):
+      drivers: thermal: queue work on system_power_efficient_wq
+      drivers: mdss: queue input handler functions to a high prio wq
+      qcom: msm-core: queue work on system_power_efficient_wq
+      power: bcl: queue work on system_power_efficient_wq
+      drivers: power: bcl: queue work on system_power_efficient_wq
+      power: bq27541: queue work on system_power_efficient_wq
+      power: qpnp-fg-gen3: queue work on system_power_efficient_wq
+      msm: mdss: convert threads to interruptible
+      qcom: mpm: use interruptible wait to reduce load avg
+      cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value
+      cpufreq: cpu-boost: don't boost over user set max freq
+      cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0
+      cpufreq: cpu-boost: don't boost the gold cluster unecessarily
+
+Ganesh Mahendran (2):
+      ANDROID: binder: init desired_prio.sched_policy before use it
+      ANDROID: binder: fix node sched policy calculation
+
+Greg Hackmann (22):
+      ANDROID: drivers: acpi: fix link error with ACPI_PROCESSOR=y, ACPI_PROCESSOR_IDLE=n
+      ANDROID: Kbuild, LLVMLinux: fix GCC_TOOLCHAIN definition
+      ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple
+      ANDROID: Kbuild, LLVMLinux: disable clang -Wpointer-bool-conversion
+      ANDROID: kasan, LLVMLinux: add clang-specific CFLAGS_KASAN
+      ANDROID: HACK: firmware, LLVMLinux: fix EFI libstub with clang
+      ANDROID: HACK: arm64: crypto, LLVMLinux: explictly pass -mcpu option to gas
+      ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float
+      ANDROID: HACK: arm64, LLVMLinux: replace prfm instruction in spin_lock_prefetch()
+      ANDROID: HACK: futex, LLVMLinux: don't optimize futex_detect_cmpxchg() on ARM64
+      drivers: soc: qcom: fix register names on ARM64
+      drivers: media: msm: don't use nested functions
+      drivers: staging: qcacld-3.0: don't treat some clang warnings as errors
+      HACK: drivers: staging: qcacld-3.0: increase clang frame-larger-than threshold
+      HACK: drivers: soc: qcom: fix boot failures with clang-built kernel
+      drivers: staging: qcacld-3.0: treat more clang warnings as no-error
+      Revert "LLVMLINUX: kbuild, LLVMLinux: Fix asm-offset generation to work with clang"
+      Revert "drivers: clocksource: arch_timer: enable user access to virt timers"
+      Revert "clocksource: arch_timer: Enable user access to the physical counter"
+      arm64: issue isb when trapping CNTVCT_EL0 access
+      clocksource: arch_timer: make virtual counter access configurable
+      HACK: arm64: add CNTPCT_EL0 trap handler
+
+Greg Kroah-Hartman (3):
+      Linux 4.4.110
+      Fix build error in vma.c
+      Linux 4.4.111
+
+Guenter Roeck (1):
+      kaiser: Set _PAGE_NX only if supported
+
+Helge Deller (1):
+      parisc: Fix alignment of pa_tlb_lock in assembly on 32-bit SMP kernel
+
+Hou Tao (1):
+      cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode
+
+Hugh Dickins (25):
+      kaiser: do not set _PAGE_NX on pgd_none
+      kaiser: stack map PAGE_SIZE at THREAD_SIZE-PAGE_SIZE
+      kaiser: fix build and FIXME in alloc_ldt_struct()
+      kaiser: KAISER depends on SMP
+      kaiser: fix regs to do_nmi() ifndef CONFIG_KAISER
+      kaiser: fix perf crashes
+      kaiser: ENOMEM if kaiser_pagetable_walk() NULL
+      kaiser: tidied up asm/kaiser.h somewhat
+      kaiser: tidied up kaiser_add/remove_mapping slightly
+      kaiser: kaiser_remove_mapping() move along the pgd
+      kaiser: cleanups while trying for gold link
+      kaiser: name that 0x1000 KAISER_SHADOW_PGD_OFFSET
+      kaiser: delete KAISER_REAL_SWITCH option
+      kaiser: vmstat show NR_KAISERTABLE as nr_overhead
+      kaiser: load_new_mm_cr3() let SWITCH_USER_CR3 flush user
+      kaiser: PCID 0 for kernel and 128 for user
+      kaiser: x86_cr3_pcid_noflush and x86_cr3_pcid_user
+      kaiser: paranoid_entry pass cr3 need to paranoid_exit
+      kaiser: _pgd_alloc() without __GFP_REPEAT to avoid stalls
+      kaiser: fix unlikely error in alloc_ldt_struct()
+      kaiser: add "nokaiser" boot option, using ALTERNATIVE
+      kaiser: use ALTERNATIVE instead of x86_cr3_pcid_noflush
+      kaiser: drop is_atomic arg to kaiser_pagetable_walk()
+      kaiser: asm/tlbflush.h handle noPGE at lower level
+      kaiser: kaiser_flush_tlb_on_return_to_user() check PCID
+
+Ian Abbott (2):
+      BACKPORT: bug: split BUILD_BUG stuff out into <linux/build_bug.h>
+      BACKPORT: kernel.h: handle pointers to arrays better in container_of()
+
+Ido Schimmel (1):
+      UPSTREAM: ipv6: fib: Unlink replaced routes from their nodes
+
+Jan Engelhardt (1):
+      crypto: n2 - cure use after free
+
+Jan Kara (9):
+      writeback: Write dirty times for WB_SYNC_ALL writeback
+      cfq-iosched: Don't group_idle if cfqq has big thinktime
+      cfq-iosched: Reorder checks in cfq_should_preempt()
+      cfq-iosched: Allow sync noidle workloads to preempt each other
+      cfq-iosched: Allow parent cgroup to preempt its child
+      cfq-iosched: Convert to use highres timers
+      cfq-iosched: Convert slice_resid from u64 to s64
+      cfq-iosched: Fix regression in bonnie++ rewrite performance
+      cfq-iosched: Charge at least 1 jiffie instead of 1 ns
+
+Jason A. Donenfeld (2):
+      arm64: support __int128 on gcc 5+
+      arm64: support __int128 with clang
+
+Jeff Moyer (2):
+      cfq-iosched: Convert from jiffies to nanoseconds
+      cfq-iosched: Expose microsecond interfaces
+
+Jeroen Hofstee (1):
+      UPSTREAM: kbuild: fix asm-offset generation to work with clang
+
+Jiri Kosina (1):
+      kaiser: disabled on Xen PV
+
+Joe Maples (6):
+      scripts: Support a custom compiler name
+      state_notifier: Enable by default
+      state_notifier: Queue work on any core
+      state_notifier: Reduce defer on suspend call to 1 second
+      mdss: Add state_notifier hooks
+      block: Add Maple I/O Scheduler
+
+Joey Rizzoli (1):
+      ARM: dts: update panel sRGB and DCI-P3 cmds
+
+Johannes Berg (1):
+      BACKPORT: cfg80211: remove enum ieee80211_band
+
+John Stultz (3):
+      BACKPORT: time: Fix CLOCK_MONOTONIC_RAW sub-nanosecond accounting
+      BACKPORT: time: Clean up CLOCK_MONOTONIC_RAW time handling
+      UPSTREAM: time: Fix ktime_get_raw() incorrect base accumulation
+
+Jonathan Basseri (1):
+      BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+
+Kaixu Xia (1):
+      UPSTREAM: writeback: fix the wrong congested state variable definition
+
+Kees Cook (2):
+      KPTI: Rename to PAGE_TABLE_ISOLATION
+      KPTI: Report when enabled
+
+Konstantin Khlebnikov (1):
+      mm, writeback: flush plugged IO in wakeup_flusher_threads()
+
+Kumar Behera (1):
+      msm: cpp: Reduce cpp timeout on MC error
+
+Libor Pechacek (1):
+      module: Issue warnings when tainting kernel
+
+Linus Torvalds (1):
+      BACKPORT: compiler, clang: properly override 'inline' for clang
+
+Lorenzo Colitti (1):
+      UPSTREAM: net: xfrm: allow clearing socket xfrm policies.
+
+Marc Zyngier (2):
+      BACKPORT: arm64: Add CNTVCT_EL0 trap handler
+      BACKPORT: arm64: Add CNTFRQ_EL0 trap handler
+
+Mark Charlebois (5):
+      LLVMLINUX: Kbuild: LLVMLinux: Disable the use of the Integrated Assembler when compiling with Clang
+      LLVMLINUX: fs, LLVMLinux: Remove warning from COMPATIBLE_IOCTL
+      LLVMLINUX: kbuild, LLVMLinux: Add -Werror to cc-option to support clang
+      LLVMLINUX: DO-NOT-UPSTREAM crypto: LLVMLinux: Explicitly pass through assembler options
+      LLVMLINUX: DO-NOT-UPSTREAM arm64, LLVMLinux: prfm
+
+Mark Rutland (3):
+      UPSTREAM: arm64: vdso: fix clock_getres for 4GiB-aligned res
+      UPSTREAM: arm64: tlbflush.h: add __tlbi() macro
+      UPSTREAM: arm64: factor out entry stack manipulation
+
+Markus Elfring (2):
+      cfq-iosched: Adjust one function call together with a variable assignment
+      UPSTREAM: [media] v4l2-async: Use kmalloc_array() in v4l2_async_notifier_unregister()
+
+Martijn Coenen (9):
+      ANDROID: binder: Don't BUG_ON(!spin_is_locked()).
+      ANDROID: binder: call poll_wait() unconditionally.
+      ANDROID: binder: don't enqueue death notifications to thread todo.
+      ANDROID: binder: don't queue async transactions to thread.
+      ANDROID: binder: Add tracing for binder priority inheritance.
+      ANDROID: binder: Add thread->process_todo flag.
+      ANDROID: binder: show high watermark of alloc->pages.
+      ANDROID: binder: clarify deferred thread work.
+      ANDROID: binder: Remove obsolete proc waitqueue.
+
+Martinusbe (1):
+      op5: tri_state_key: allow for additional settings
+
+Masahiro Yamada (1):
+      UPSTREAM: kbuild: consolidate redundant sed script ASM offset generation
+
+Matthias Kaehlcke (12):
+      UPSTREAM: kbuild: Consolidate header generation from ASM offset information
+      BACKPORT: kbuild: clang: Disable 'address-of-packed-member' warning
+      UPSTREAM: dm ioctl: remove double parentheses
+      FROMLIST: mm/zsmalloc: Change stat type parameter to int
+      BACKPORT: netfilter: ctnetlink: Make some parameters integer to avoid enum mismatch
+      UPSTREAM: nl80211: Fix enum type of variable in nl80211_put_sta_rate()
+      module: Remove const attribute from alias for MODULE_DEVICE_TABLE
+      CHROMIUM: kbuild: clang: Disable the 'duplicate-decl-specifier' warning
+      BACKPORT: selinux: Remove redundant check for unknown labeling behavior
+      UPSTREAM: jiffies.h: declare jiffies and jiffies_64 with ____cacheline_aligned_in_smp
+      FROMGIT: sched/sysctl: Fix attributes of some extern declarations
+      cfq-iosched: Delete unused function min_vdisktime()
+
+Michal Hocko (4):
+      BACKPORT: partial: mm, oom_reaper: do not mmput synchronously from the oom reaper context
+      BACKPORT: mm: introduce kv[mz]alloc helpers
+      UPSTREAM: mm, vmalloc: properly track vmalloc users
+      BACKPORT: mm, vmalloc: fix vmalloc users tracking properly
+
+Michal Marek (1):
+      genksyms: Handle string literals with spaces in reference files
+
+Miroslav Benes (1):
+      module: keep percpu symbols in module's symtab
+
+Nathan Chancellor (54):
+      printk: Fix mismatch error
+      kgsl: Shut up about not being able to create debugfs
+      gpiolib: Shut up about invalid GPIOs
+      cheeseburger/dumpling: Disable verity on /system
+      drivers: Revert some files back to the stock CAF version
+      Merge LA.UM.6.4.r1-05700-8x98.0 into 8.x-unified
+      drivers: staging: Import Wi-Fi stack from CAF (LA.UM.6.4.r1-05700-8x98.0)
+      flash-oos_defconfig: Generate from msmcortex-perf_defconfig
+      flash-oos_defconfig: Initial Flash tuning
+      flash-oos_defconfig: Bring in a lot of Pixel 2 tweaks
+      fs: Remove crypto code and reset f2fs back to clean v4.4 state
+      flash-oos_defconfig: Disable F2FS
+      Revert some problematic commits for a cleaner stable merge
+      Merge 4.4.111 into 8.x-unified
+      Remove all -Werror handling temporarily
+      Fix all relevant GCC warnings (LA.UM.6.4.r1-05700-8x98.0)
+      Fix all relevant GCC warnings (OOS 5.0/Open Beta 3)
+      staging: qcacld-3.0: Fix all relevant GCC warnings
+      flash-oos_defconfig: Enable CC_WERROR
+      Revert "ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float"
+      Revert "flash-oos_defconfig: Enable CC_WERROR"
+      touchscreen: fw_update_v7: Fix constant logical operand warning
+      codecs: tfa9891: Hide self assign Clang warnings
+      soc: qcom: qpnp-haptic: Fix self assign Clang warnings
+      drivers: staging: qcacld-3.0: Fix enum conversion warnings from Clang
+      staging: qcacld-3.0: Remove disabled warning
+      OP5: Fix a few more -Wsection errors
+      Revert "Revert "flash-oos_defconfig: Enable CC_WERROR""
+      Makefile: Slim down CONFIG_CC_OPTIMIZE_FOR_SIZE block
+      Makefile: Use O3 for Clang
+      flash-custom_defconfig: Generate from flash-oos_defconfig
+      Kconfig: Add global CUSTOM_ROM config option
+      flash-custom_defconfig: Enable CUSTOM_ROM
+      Add touchscreen driver snapshot from LineageOS
+      Add alert slider driver snapshot from LineageOS
+      Add fingerprint sensor driver snapshot from LineageOS
+      msm: mdss: Add LIVE_DISPLAY Kconfig option
+      flash-custom_defconfig: Enable LIVE_DISPLAY
+      OP5/T: Don't enable OP color modes if LIVE_DISPLAY is enabled
+      arm: dts: Split OP5 and OP5T files for certain features
+      flash-custom_defconfig: Enable NFC and NFC_PN544_OEM
+      OP5/T: Fix NFC on custom ROMs
+      tri_state_key_custom: Format to Linux kernel coding style
+      flash-{oos,custom}_defconfig: Enable WQ_POWER_EFFICIENT_DEFAULT
+      flash-{oos,custom}_defconfig: Enable some congestion algorithms
+      net/wireguard: add wireguard importer
+      flash-{oos,custom}_defconfig: Enable FB_MSM_MDSS_KCAL_CTRL
+      flash-{oos,custom}_defconfig: Enable SOUND_CONTROL
+      synaptics_s3320: Move the disable button logic from mdss_dsi
+      boeffla_wl_blocker: Don't block wakelocks for now
+      flash-{oos,custom}_defconfig: Enable BOEFFLA_WL_BLOCKER
+      flash-{oos,custom}_defconfig: Enable NETFILTER_XT_TARGET_HL
+      flash-{oos,custom}_defconfig: Enable STATE_NOTIFIER
+      block: maple: Improve coding style
+
+Nick Desaulniers (12):
+      Revert "LLVMLINUX: Mark inline functions as __maybe_unused"
+      BACKPORT: PCI: Make PCI_ROM_ADDRESS_MASK a 32-bit constant
+      Revert "Fix for compilation with clang"
+      UPSTREAM: mm/zsmalloc.c: fix -Wunneeded-internal-declaration warning
+      FROMLIST: netfilter: nf_nat_h323: fix logical-not-parentheses warning
+      ANDROID: HACK: Makefile: whitelist CFLAGS to reenable Werror
+      ANDROID: HACK: Makefile: wrap -Wno-frame-larger-than= flags in cc-option
+      drivers: firmware: qcom: more specific -Wno-* subdirs
+      ion: system_secure_heap: fix constant logical comparison bug
+      ANDROID: HACK: Makefile: fix all build warnings for in tree code
+      Input: mousedev - fix implicit conversion warning
+      FROMLIST: arm64: avoid overflow in VA_START and PAGE_OFFSET
+
+Oleg Nesterov (4):
+      kernel/acct.c: fix the acct->needcheck check in check_free_space()
+      kernel/signal.c: protect the traced SIGNAL_UNKILLABLE tasks from SIGKILL
+      kernel/signal.c: protect the SIGNAL_UNKILLABLE tasks from !sig_kernel_only() signals
+      kernel/signal.c: remove the no longer needed SIGNAL_UNKILLABLE check in complete_signal()
+
+Park Ju Hyung (6):
+      drivers, kernel: revert OnePlus changes
+      cpufreq: fix op fuckage
+      qcom-cpufreq: clean-up OnePlus changes
+      s3320: fix gestures not working
+      qcacld: fix an inconsistency between userspace and kernel options
+      interactive: avoid calling usecs_to_jiffies() repeatedly
+
+Philip Cuadra (4):
+      tty: move tty_port workqueue to be a kthread
+      tty:  check before stopping kthread
+      tty: add tty_port_set_policy function
+      msm_serial_hs: make the Bluetooth tty thread RT
+
+Pranav Vashi (3):
+      ASoC: wcdxxxx: queue work on power efficient wq
+      op5: Add state notifier driver
+      state_notifier: Make workqueues unbound
+
+Richard Fellner (1):
+      KAISER: Kernel Address Isolation
+
+Ritesh Harjani (1):
+      cfq: Give a chance for arming slice idle timer in case of group_idle
+
+Rob Herring (1):
+      UPSTREAM: tty: serial_core: add tty NULL check to uart_tx_stopped
+
+Roopesh Rajashekharaiah Nataraja (1):
+      diag: Fix reference count mismatch
+
+Rui Salvaterra (1):
+      UPSTREAM: lib: lz4: cleanup unaligned access efficiency detection
+
+Sam Mortimer (1):
+      msm8998: Add proximity_state sysfs support to goodix driver
+
+Sami Tolvanen (3):
+      Revert "HACK: drivers: soc: qcom: fix boot failures with clang-built kernel"
+      soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*
+      msm: sde: fix unaligned memory read
+
+Scott Mertz (2):
+      pwm: qpnp-pwm: add api for synchronous enable of pwms
+      leds: leds-qpnp: add synchronized rgb control
+
+Sherry Yang (11):
+      FROMLIST: android: binder: Refactor prev and next buffer into a helper function
+      FROMLIST: android: binder: Add allocator selftest
+      FROMLIST: android: binder: Move buffer out of area shared with user space
+      FROMLIST: android: binder: Add global lru shrinker to binder
+      FROMLIST: android: binder: Add shrinker tracepoints
+      FROMLIST: android: binder: Add page usage in binder stats
+      FROMLIST: android: binder: Drop lru lock in isolate callback
+      FROMLIST: android: binder: Remove unused vma argument
+      FROMLIST: android: binder: Don't get mm from task
+      FROMLIST: android: binder: Change binder_shrinker to static
+      FROMLIST: android: binder: Fix null ptr dereference in debug msg
+
+Srinivas Girigowda (1):
+      cfg80211: Support backport of removing ieee80211
+
+Stefan Brüns (1):
+      sunxi-rsb: Include OF based modalias in device uevent
+
+Stephen Rothwell (1):
+      include/linux/dcache.h: use unsigned chars in struct name_snapshot
+
+Steve Kondik (3):
+      video: mdss: LiveDisplay driver
+      mdss: livedisplay: Add commands to enable SRGB mode
+      op3: Fix and optimize SRGB commands
+
+Sultanxda (3):
+      mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()
+      proc: Remove verifiedbootstate flag from /proc/cmdline
+      proc: Remove additional SafetyNet flags from /proc/cmdline
+
+Sven Schmidt (3):
+      UPSTREAM: lib: update LZ4 compressor module
+      UPSTREAM: lib/decompress_unlz4: change module to work with new LZ4 module version
+      BACKPORT: crypto: change LZ4 modules to work with new LZ4 module version
+
+Tahsin Erdogan (3):
+      writeback: inode cgroup wb switch should not call ihold()
+      fs/fs-writeback.c: remove redundant if check
+      block: do not merge requests without consulting with io scheduler
+
+Tetsuo Handa (1):
+      mm,writeback: don't use memory reserves for wb_start_writeback
+
+Theodore Ts'o (3):
+      BACKPORT: ext4: rename s_resize_flags to s_ext4_flags
+      BACKPORT: ext4: add shutdown bit and check for it
+      BACKPORT: ext4: add EXT4_IOC_GOINGDOWN ioctl
+
+Thiago Rafael Becker (1):
+      kernel: make groups_sort calling a responsibility group_info allocators
+
+Thomas Gleixner (2):
+      x86/paravirt: Dont patch flush_tlb_single
+      x86/tlb: Drop the _GPL from the cpu_tlbstate export
+
+Tim Murray (3):
+      cpuidle: don't disable cpuidle when entering suspend
+      BACKPORT: mm: fix pageblock heuristic
+      firmware_class: make firmware caching configurable
+
+Todd Kjos (1):
+      FROMLIST: binder: fix proc->files use-after-free
+
+Tom Lendacky (2):
+      x86/boot: Add early cmdline parsing for options with arguments
+      x86/microcode/AMD: Add support for fam17h microcode loading
+
+Tom Marshall (2):
+      kernel: Only expose su when daemon is running
+      kernel: Fix potential refcount leak in su check
+
+Tomasz Figa (2):
+      CHROMIUM: mm: Take kvmalloc_array() from upstream
+      CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Vineet Gupta (1):
+      ARC: uaccess: dont use "l" gcc inline asm constraint modifier
+
+Will Deacon (20):
+      UPSTREAM: arm64/vdso: Fix nsec handling for CLOCK_MONOTONIC_RAW
+      FROMLIST: arm64: mm: Use non-global mappings for kernel space
+      FROMLIST: arm64: mm: Temporarily disable ARM64_SW_TTBR0_PAN
+      FROMLIST: arm64: mm: Move ASID from TTBR0 to TTBR1
+      FROMLIST: arm64: mm: Fix and re-enable ARM64_SW_TTBR0_PAN
+      FROMLIST: arm64: mm: Allocate ASIDs in pairs
+      FROMLIST: arm64: mm: Add arm64_kernel_unmapped_at_el0 helper
+      FROMLIST: arm64: mm: Invalidate both kernel and user ASIDs when performing TLBI
+      FROMLIST: arm64: entry: Add exception trampoline page for exceptions from EL0
+      FROMLIST: arm64: mm: Map entry trampoline into trampoline and kernel page tables
+      FROMLIST: arm64: entry: Explicitly pass exception level to kernel_ventry macro
+      FROMLIST: arm64: entry: Hook up entry trampoline to exception vectors
+      FROMLIST: arm64: erratum: Work around Falkor erratum #E1003 in trampoline code
+      FROMLIST: arm64: tls: Avoid unconditional zeroing of tpidrro_el0 for native tasks
+      FROMLIST: arm64: entry: Add fake CPU feature for unmapping the kernel at EL0
+      FROMLIST: arm64: Kconfig: Add CONFIG_UNMAP_KERNEL_AT_EL0
+      FROMLIST: arm64: mm: Introduce TTBR_ASID_MASK for getting at the ASID in the TTBR
+      FROMLIST: arm64: kaslr: Put kernel vectors address in separate data page
+      arm64: use RET instruction for exiting the trampoline
+      arm64: Kconfig: Reword UNMAP_KERNEL_AT_EL0 kconfig entry
+
+XiNGRZ (1):
+      qpnp-haptic: make its strength adjustable in VibratorHW
+
+ZaneZam (1):
+      Makefile: Fix device not booting with GCC 7.x and above
+
+Zhijun He (1):
+      msm: camera: properly initialize vfe
+
+andip71 (6):
+      input: synaptics: s3320: Stop keypad when touchscreen is in use (configurable)
+      misc: fpc1020: Ignore home key presses when touchscreen is in use
+      boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+      boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+      boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+      mdss_fb: add lcd backlight min limit
+
+codeworkx (3):
+      smb_lib: auto toggle otg switch based on dash status
+      cheeseburger/dumpling: leds: enable rgb sync
+      s6e3fc1: use default (255) max backlight brightness
+
+dianlujitao (2):
+      ARM: dts: OP5: Move 0x29 to dsi on command
+      mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
+
+flar2 (8):
+      disable crc check
+      msm: mdss: KCAL: disable igc update
+      mdss_fb: add backlight dimmer option
+      ASoC: wcd9335: Sound control
+      ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
+      msm_performance: don't limit min and max cpu freq
+      qpnp-haptic: expose vibrate function
+      sweep2sleep: turn off screen by sweeping over navbar
+
+franciscofranco (2):
+      qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
+      cpufreq: cpu-boost: export input_boost_enable to userspace
+
+gaurav jindal (1):
+      drivers: cpufreq_interactive: handle error for module load fail
+
+jonghyun26.kim (1):
+      power_supply: Fix unbalanced the power supplies
+
+jumoog (1):
+      DASH: spoof normal usb fastcharge
+
+ljkgpxs (1):
+      mdss: livedisplay: Add support for DCI-P3 mode
+
+matt_huang (1):
+      pwm: qpnp: Fix qcom HW known issue
+
+siankatabg (1):
+      leds-qpnp: Don't use the changes made by OnePlus on custom ROMs
+
+tbalden (1):
+      mdss mdp: kcal for mdss_mdp_v1_7
+
+weiping zhang (1):
+      block, scheduler: convert xxx_var_store to void
+
+ .gitignore                                         |    1 -
+ Documentation/input/event-codes.txt                |    5 +
+ Documentation/kernel-parameters.txt                |    8 +
+ Kconfig                                            |    6 +
+ Makefile                                           |    2 +-
+ arch/arc/include/asm/uaccess.h                     |    5 +-
+ arch/arm/boot/dts/qcom/Makefile                    |    9 +-
+ arch/arm/boot/dts/qcom/cheeseburger-custom.dtsi    |  976 ++++
+ .../dts/qcom/cheeseburger-v2.1-dvt1-custom.dts     |   26 +
+ .../boot/dts/qcom/cheeseburger-v2.1-pvt-custom.dts |   26 +
+ .../dts/qcom/cheeseburger-v2.1-pvt1-custom.dts     |   26 +
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi           |    6 +-
+ .../qcom/dsi-panel-samsung_s6e3fa3_1080p_cmd.dtsi  |   47 +-
+ .../qcom/dsi-panel-samsung_s6e3fa5_1080p_cmd.dtsi  |   69 +-
+ .../qcom/dsi-panel-samsung_s6e3fc1_cmd-custom.dtsi |  235 +
+ arch/arm/boot/dts/qcom/dumpling-custom.dtsi        | 1017 ++++
+ arch/arm/boot/dts/qcom/dumpling-dvt-custom.dtsi    | 1114 +++++
+ arch/arm/boot/dts/qcom/dumpling-pvt-custom.dtsi    | 1114 +++++
+ .../arm/boot/dts/qcom/dumpling-v2.1-dvt-custom.dts |   26 +
+ .../arm/boot/dts/qcom/dumpling-v2.1-pvt-custom.dts |   26 +
+ arch/arm/boot/dts/qcom/msm8998-mtp-custom.dtsi     |  613 +++
+ arch/arm64/Kconfig                                 |   12 +
+ arch/arm64/Makefile                                |   15 +-
+ .../{flash_defconfig => flash-custom_defconfig}    |   55 +-
+ arch/arm64/configs/flash-oos_defconfig             |  686 +++
+ arch/arm64/include/asm/cpufeature.h                |    4 +-
+ arch/arm64/include/asm/esr.h                       |   40 +
+ arch/arm64/include/asm/fixmap.h                    |    5 +
+ arch/arm64/include/asm/kernel-pgtable.h            |   12 +-
+ arch/arm64/include/asm/mmu.h                       |   12 +
+ arch/arm64/include/asm/mmu_context.h               |    7 +
+ arch/arm64/include/asm/pgtable-hwdef.h             |    2 +
+ arch/arm64/include/asm/pgtable.h                   |   18 +-
+ arch/arm64/include/asm/proc-fns.h                  |    6 -
+ arch/arm64/include/asm/tlbflush.h                  |   50 +-
+ arch/arm64/include/asm/uaccess.h                   |   47 +-
+ arch/arm64/kernel/asm-offsets.c                    |    5 +
+ arch/arm64/kernel/cpufeature.c                     |   39 +
+ arch/arm64/kernel/entry.S                          |  229 +-
+ arch/arm64/kernel/process.c                        |   14 +-
+ arch/arm64/kernel/traps.c                          |   49 +
+ arch/arm64/kernel/vdso.c                           |    1 -
+ arch/arm64/kernel/vdso/gettimeofday.S              |    1 -
+ arch/arm64/kernel/vmlinux.lds.S                    |   21 +
+ arch/arm64/lib/clear_user.S                        |    2 +-
+ arch/arm64/lib/copy_from_user.S                    |    2 +-
+ arch/arm64/lib/copy_in_user.S                      |    2 +-
+ arch/arm64/lib/copy_to_user.S                      |    2 +-
+ arch/arm64/mm/cache.S                              |    2 +-
+ arch/arm64/mm/context.c                            |   25 +-
+ arch/arm64/mm/mmu.c                                |   31 +
+ arch/arm64/mm/proc.S                               |    9 +-
+ arch/arm64/xen/hypercall.S                         |    2 +-
+ arch/parisc/include/asm/ldcw.h                     |    2 +
+ arch/parisc/kernel/entry.S                         |   13 +-
+ arch/parisc/kernel/pacache.S                       |    9 +-
+ arch/s390/kernel/compat_linux.c                    |    1 +
+ arch/x86/boot/compressed/misc.h                    |    1 +
+ arch/x86/entry/entry_64.S                          |  164 +-
+ arch/x86/entry/entry_64_compat.S                   |    7 +
+ arch/x86/entry/vdso/vclock_gettime.c               |   99 +-
+ arch/x86/entry/vdso/vdso-layout.lds.S              |    3 +-
+ arch/x86/entry/vdso/vdso2c.c                       |    3 +
+ arch/x86/entry/vdso/vma.c                          |   14 +
+ arch/x86/entry/vsyscall/vsyscall_64.c              |    5 +
+ arch/x86/include/asm/cmdline.h                     |    2 +
+ arch/x86/include/asm/cpufeature.h                  |    4 +
+ arch/x86/include/asm/desc.h                        |    2 +-
+ arch/x86/include/asm/hw_irq.h                      |    2 +-
+ arch/x86/include/asm/kaiser.h                      |  141 +
+ arch/x86/include/asm/pgtable.h                     |   28 +-
+ arch/x86/include/asm/pgtable_64.h                  |   25 +-
+ arch/x86/include/asm/pgtable_types.h               |   29 +-
+ arch/x86/include/asm/processor.h                   |    2 +-
+ arch/x86/include/asm/pvclock.h                     |    9 +
+ arch/x86/include/asm/tlbflush.h                    |   74 +-
+ arch/x86/include/asm/vdso.h                        |    1 +
+ arch/x86/include/asm/vsyscall.h                    |    2 +
+ arch/x86/include/uapi/asm/processor-flags.h        |    3 +-
+ arch/x86/kernel/cpu/common.c                       |   28 +-
+ arch/x86/kernel/cpu/microcode/amd.c                |    4 +
+ arch/x86/kernel/cpu/perf_event_intel_ds.c          |   57 +-
+ arch/x86/kernel/espfix_64.c                        |   10 +
+ arch/x86/kernel/head_64.S                          |   35 +-
+ arch/x86/kernel/irqinit.c                          |    2 +-
+ arch/x86/kernel/kvmclock.c                         |    5 +
+ arch/x86/kernel/ldt.c                              |   25 +-
+ arch/x86/kernel/paravirt_patch_64.c                |    2 -
+ arch/x86/kernel/process.c                          |    2 +-
+ arch/x86/kernel/setup.c                            |    7 +
+ arch/x86/kernel/tracepoint.c                       |    2 +
+ arch/x86/kvm/x86.c                                 |    3 +-
+ arch/x86/lib/cmdline.c                             |  105 +
+ arch/x86/mm/Makefile                               |    1 +
+ arch/x86/mm/init.c                                 |    4 +-
+ arch/x86/mm/init_64.c                              |   10 +
+ arch/x86/mm/kaiser.c                               |  482 ++
+ arch/x86/mm/kasan_init_64.c                        |   17 +-
+ arch/x86/mm/pageattr.c                             |   63 +-
+ arch/x86/mm/pgtable.c                              |   16 +-
+ arch/x86/mm/tlb.c                                  |   39 +-
+ block/maple-iosched.c                              |    2 +-
+ crypto/chacha20poly1305.c                          |    6 +-
+ crypto/pcrypt.c                                    |   19 +-
+ drivers/Kconfig                                    |    3 +-
+ drivers/Makefile                                   |    4 -
+ drivers/android/binder.c                           |  114 +-
+ drivers/base/Kconfig                               |    5 +
+ drivers/base/firmware_class.c                      |    8 +-
+ drivers/bus/sunxi-rsb.c                            |    1 +
+ drivers/clk/qcom/gpucc-sdm660.c                    |    1 +
+ drivers/clocksource/Kconfig                        |    8 +
+ drivers/clocksource/arm_arch_timer.c               |   14 +-
+ drivers/cpufreq/cpufreq_interactive.c              |   62 +-
+ drivers/cpufreq/qcom-cpufreq.c                     |  192 +-
+ drivers/crypto/n2_core.c                           |    3 +
+ drivers/gpio/gpiolib.c                             |   13 +-
+ drivers/input/fingerprint/fpc/Makefile             |    4 +
+ drivers/input/fingerprint/fpc/fpc1020_tee_custom.c |  787 +++
+ drivers/input/fingerprint/goodix/gf_spi.c          |   67 +-
+ drivers/input/fingerprint/goodix/gf_spi.h          |    3 +
+ drivers/input/input.c                              |    4 +
+ drivers/input/misc/Makefile                        |    4 +
+ drivers/input/misc/tri_state_key_custom.c          |  491 ++
+ drivers/input/mouse/elantech.c                     |    2 +-
+ drivers/input/touchscreen/Makefile                 |    4 +
+ drivers/input/touchscreen/synaptics_driver_s3320.c |    5 +-
+ .../touchscreen/synaptics_driver_s3320_custom.c    | 5176 ++++++++++++++++++++
+ .../touchscreen/synaptics_dsx/synaptics_dsx_core.c |   20 +
+ .../touchscreen/synaptics_dsx/synaptics_dsx_core.h |    3 +
+ drivers/leds/leds-qpnp.c                           |  212 +-
+ drivers/nfc/Makefile                               |    1 +
+ drivers/nfc/pn544/Kconfig                          |    6 +
+ drivers/nfc/pn544/Makefile                         |    1 +
+ drivers/nfc/pn544/pn544_oem.c                      | 1216 +++++
+ drivers/nfc/pn544/pn544_oem.h                      |   93 +
+ drivers/power/supply/qcom/smb-lib.c                |   33 +
+ drivers/pwm/pwm-qpnp.c                             |  125 +
+ drivers/soc/qcom/qpnp-haptic.c                     |   47 +-
+ drivers/staging/qcacld-3.0/Android.mk              |   88 -
+ drivers/staging/qcacld-3.0/Kconfig                 |    9 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_memdump.h     |  118 -
+ drivers/usb/gadget/configfs.c                      |   12 +
+ drivers/usb/gadget/function/f_accessory.c          |   14 +-
+ drivers/video/fbdev/msm/Kconfig                    |    5 +
+ drivers/video/fbdev/msm/Makefile                   |    3 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |   11 +-
+ drivers/video/fbdev/msm/mdss_dsi_panel.c           |   28 +-
+ drivers/video/fbdev/msm/mdss_fb.c                  |   30 +-
+ drivers/video/fbdev/msm/mdss_livedisplay.c         |  738 +++
+ drivers/video/fbdev/msm/mdss_livedisplay.h         |  131 +
+ drivers/video/fbdev/msm/mdss_panel.h               |   11 +
+ drivers/video/fbdev/msm/mdss_rotator.c             |   34 +-
+ drivers/video/fbdev/msm/mdss_rotator_internal.h    |    6 +-
+ fs/crypto/Kconfig                                  |   18 -
+ fs/crypto/Makefile                                 |    3 -
+ fs/crypto/crypto.c                                 |  568 ---
+ fs/crypto/fname.c                                  |  414 --
+ fs/crypto/keyinfo.c                                |  330 --
+ fs/crypto/policy.c                                 |  248 -
+ fs/exec.c                                          |    5 +
+ fs/ext4/crypto_key.c                               |    1 +
+ fs/ext4/ext4.h                                     |   26 +-
+ fs/ext4/ext4_jbd2.c                                |    4 +
+ fs/ext4/file.c                                     |    9 +
+ fs/ext4/fsync.c                                    |    3 +
+ fs/ext4/ialloc.c                                   |    3 +
+ fs/ext4/inode.c                                    |   33 +-
+ fs/ext4/ioctl.c                                    |   51 +
+ fs/ext4/namei.c                                    |   12 +
+ fs/ext4/resize.c                                   |    5 +-
+ fs/ext4/super.c                                    |    5 +-
+ fs/ext4/xattr.c                                    |    3 +
+ fs/f2fs/Kconfig                                    |   21 +-
+ fs/f2fs/Makefile                                   |    2 +
+ fs/f2fs/acl.c                                      |   21 +-
+ fs/f2fs/acl.h                                      |    3 +-
+ fs/f2fs/checkpoint.c                               |  547 +--
+ fs/f2fs/crypto_key.c                               |   28 +-
+ fs/f2fs/data.c                                     | 1368 +++---
+ fs/f2fs/debug.c                                    |   90 +-
+ fs/f2fs/dir.c                                      |  495 +-
+ fs/f2fs/extent_cache.c                             |  315 +-
+ fs/f2fs/f2fs.h                                     | 1110 ++---
+ fs/f2fs/f2fs_crypto.h                              |    1 -
+ fs/f2fs/file.c                                     | 1339 ++---
+ fs/f2fs/gc.c                                       |  386 +-
+ fs/f2fs/gc.h                                       |    8 +
+ fs/f2fs/hash.c                                     |    7 +-
+ fs/f2fs/inline.c                                   |  298 +-
+ fs/f2fs/inode.c                                    |  200 +-
+ fs/f2fs/namei.c                                    |  412 +-
+ fs/f2fs/node.c                                     |  935 ++--
+ fs/f2fs/node.h                                     |  140 +-
+ fs/f2fs/recovery.c                                 |  256 +-
+ fs/f2fs/segment.c                                  |  910 ++--
+ fs/f2fs/segment.h                                  |   65 +-
+ fs/f2fs/shrinker.c                                 |   14 +-
+ fs/f2fs/super.c                                    |  978 +---
+ fs/f2fs/trace.c                                    |    6 +-
+ fs/f2fs/xattr.c                                    |   71 +-
+ fs/f2fs/xattr.h                                    |    3 +-
+ fs/namei.c                                         |   11 +
+ fs/nfsd/auth.c                                     |    3 +
+ fs/readdir.c                                       |   15 +
+ fs/sdcardfs/file.c                                 |    2 +
+ fs/sdcardfs/main.c                                 |    7 +
+ fs/sdcardfs/sdcardfs.h                             |    3 +-
+ fs/sdcardfs/super.c                                |    2 +
+ include/asm-generic/vmlinux.lds.h                  |    7 +
+ include/linux/cred.h                               |    1 +
+ include/linux/dcache.h                             |    6 +
+ include/linux/f2fs_fs.h                            |   60 +-
+ include/linux/fs.h                                 |    8 +-
+ include/linux/fscache.h                            |    2 +-
+ include/linux/fscrypto.h                           |  404 --
+ include/linux/kaiser.h                             |   52 +
+ include/linux/mmzone.h                             |    3 +-
+ include/linux/percpu-defs.h                        |   32 +-
+ include/linux/project_info.h                       |    2 +-
+ include/linux/qpnp/pwm.h                           |    5 +
+ include/linux/sched.h                              |    8 +
+ include/linux/sched/sysctl.h                       |    8 +-
+ include/trace/events/f2fs.h                        |   87 +-
+ include/uapi/linux/input-event-codes.h             |    4 +
+ init/main.c                                        |    2 +
+ kernel/acct.c                                      |    2 +-
+ kernel/exit.c                                      |    4 +
+ kernel/fork.c                                      |    8 +
+ kernel/groups.c                                    |    5 +-
+ kernel/module.c                                    |   26 +-
+ kernel/sched/core.c                                |   32 +
+ kernel/sched/fair.c                                |  109 +-
+ kernel/sched/hmp.c                                 |   17 +-
+ kernel/sched/rt.c                                  |   11 +-
+ kernel/sched/tune.c                                |    1 +
+ kernel/signal.c                                    |   66 +-
+ kernel/time/timekeeping.c                          |    4 +-
+ kernel/uid16.c                                     |    1 +
+ mm/vmstat.c                                        |    5 +-
+ net/.gitignore                                     |    1 +
+ net/ipv4/tcp_westwood.c                            |    4 +-
+ net/ipv6/ip6_fib.c                                 |    2 +
+ net/netfilter/xt_qtaguid.c                         |   55 +-
+ net/netfilter/xt_qtaguid_internal.h                |    4 +-
+ net/sunrpc/auth_gss/gss_rpc_xdr.c                  |    1 +
+ net/sunrpc/auth_gss/svcauth_gss.c                  |    1 +
+ net/sunrpc/svcauth_unix.c                          |    2 +
+ net/xfrm/xfrm_state.c                              |    1 +
+ scripts/genksyms/genksyms.c                        |    6 +-
+ scripts/mkcompile_h                                |    6 +-
+ scripts/mod/modpost.c                              |    4 +
+ security/Kconfig                                   |   10 +
+ sound/soc/msm/msm8998.c                            |    3 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              |   22 -
+ 255 files changed, 21435 insertions(+), 9807 deletions(-)
+ create mode 100644 arch/arm/boot/dts/qcom/cheeseburger-custom.dtsi
+ create mode 100755 arch/arm/boot/dts/qcom/cheeseburger-v2.1-dvt1-custom.dts
+ create mode 100755 arch/arm/boot/dts/qcom/cheeseburger-v2.1-pvt-custom.dts
+ create mode 100755 arch/arm/boot/dts/qcom/cheeseburger-v2.1-pvt1-custom.dts
+ create mode 100644 arch/arm/boot/dts/qcom/dsi-panel-samsung_s6e3fc1_cmd-custom.dtsi
+ create mode 100644 arch/arm/boot/dts/qcom/dumpling-custom.dtsi
+ create mode 100755 arch/arm/boot/dts/qcom/dumpling-dvt-custom.dtsi
+ create mode 100755 arch/arm/boot/dts/qcom/dumpling-pvt-custom.dtsi
+ create mode 100755 arch/arm/boot/dts/qcom/dumpling-v2.1-dvt-custom.dts
+ create mode 100755 arch/arm/boot/dts/qcom/dumpling-v2.1-pvt-custom.dts
+ create mode 100755 arch/arm/boot/dts/qcom/msm8998-mtp-custom.dtsi
+ rename arch/arm64/configs/{flash_defconfig => flash-custom_defconfig} (94%)
+ mode change 100755 => 100644
+ create mode 100644 arch/arm64/configs/flash-oos_defconfig
+ create mode 100644 arch/x86/include/asm/kaiser.h
+ create mode 100644 arch/x86/mm/kaiser.c
+ create mode 100644 drivers/input/fingerprint/fpc/fpc1020_tee_custom.c
+ create mode 100644 drivers/input/misc/tri_state_key_custom.c
+ create mode 100644 drivers/input/touchscreen/synaptics_driver_s3320_custom.c
+ create mode 100644 drivers/nfc/pn544/pn544_oem.c
+ create mode 100644 drivers/nfc/pn544/pn544_oem.h
+ delete mode 100644 drivers/staging/qcacld-3.0/Android.mk
+ delete mode 100644 drivers/staging/qcacld-3.0/core/hdd/inc/wlan_hdd_memdump.h
+ create mode 100644 drivers/video/fbdev/msm/mdss_livedisplay.c
+ create mode 100644 drivers/video/fbdev/msm/mdss_livedisplay.h
+ delete mode 100755 fs/crypto/Kconfig
+ delete mode 100755 fs/crypto/Makefile
+ delete mode 100755 fs/crypto/crypto.c
+ delete mode 100755 fs/crypto/fname.c
+ delete mode 100755 fs/crypto/keyinfo.c
+ delete mode 100755 fs/crypto/policy.c
+ mode change 100755 => 100644 fs/f2fs/Kconfig
+ mode change 100755 => 100644 fs/f2fs/Makefile
+ mode change 100755 => 100644 fs/f2fs/acl.c
+ mode change 100755 => 100644 fs/f2fs/acl.h
+ mode change 100755 => 100644 fs/f2fs/checkpoint.c
+ mode change 100755 => 100644 fs/f2fs/data.c
+ mode change 100755 => 100644 fs/f2fs/debug.c
+ mode change 100755 => 100644 fs/f2fs/dir.c
+ mode change 100755 => 100644 fs/f2fs/extent_cache.c
+ mode change 100755 => 100644 fs/f2fs/f2fs.h
+ mode change 100755 => 100644 fs/f2fs/file.c
+ mode change 100755 => 100644 fs/f2fs/gc.c
+ mode change 100755 => 100644 fs/f2fs/gc.h
+ mode change 100755 => 100644 fs/f2fs/hash.c
+ mode change 100755 => 100644 fs/f2fs/inline.c
+ mode change 100755 => 100644 fs/f2fs/inode.c
+ mode change 100755 => 100644 fs/f2fs/namei.c
+ mode change 100755 => 100644 fs/f2fs/node.c
+ mode change 100755 => 100644 fs/f2fs/node.h
+ mode change 100755 => 100644 fs/f2fs/recovery.c
+ mode change 100755 => 100644 fs/f2fs/segment.c
+ mode change 100755 => 100644 fs/f2fs/segment.h
+ mode change 100755 => 100644 fs/f2fs/shrinker.c
+ mode change 100755 => 100644 fs/f2fs/super.c
+ mode change 100755 => 100644 fs/f2fs/trace.c
+ mode change 100755 => 100644 fs/f2fs/xattr.c
+ mode change 100755 => 100644 fs/f2fs/xattr.h
+ mode change 100755 => 100644 include/linux/f2fs_fs.h
+ delete mode 100755 include/linux/fscrypto.h
+ create mode 100644 include/linux/kaiser.h
+ mode change 100755 => 100644 include/trace/events/f2fs.h
+ create mode 100644 net/.gitignore
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.0.0
+
+Chris Renshaw (1):
+      Merge pull request #14 from nathanchance/module-contexts
+
+Nathan Chancellor (4):
+      OP5: anykernel.sh: Add support for the OnePlus 5T
+      OP5/T: anykernel.sh: /system mount is not present anymore
+      Backend: Only apply contexts to new modules
+      Merge branch 'master' into op5-flash-8.0.0
+
+ META-INF/com/google/android/update-binary | 14 +++++++++-----
+ anykernel.sh                              |  9 +++------
+ 2 files changed, 12 insertions(+), 11 deletions(-)
