@@ -1,0 +1,9 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Nathan Chancellor (2):
+      Revert "msm: jpegdma: Fix for ASAN issues in jpegdma module"
+      Revert "msm: camera: Prevent buffer overread in write_logsync."
+
+ .../media/platform/msm/camera_v2/jpeg_dma/msm_jpeg_dma_dev.c  | 11 ++++-------
+ drivers/media/platform/msm/camera_v2/msm.c                    |  2 +-
+ 2 files changed, 5 insertions(+), 8 deletions(-)
