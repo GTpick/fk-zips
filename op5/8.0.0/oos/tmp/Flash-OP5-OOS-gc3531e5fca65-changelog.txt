@@ -1,0 +1,15 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Nathan Chancellor (4):
+      Revert "msm: jpegdma: Fix for ASAN issues in jpegdma module"
+      Revert "msm: camera: Prevent buffer overread in write_logsync."
+      Revert "msm: Array bounds check for buffer index"
+      Revert "msm: adsprpc: Use unsigned integer for length values"
+
+ drivers/char/adsprpc.c                             | 249 ++++++++++-----------
+ drivers/char/adsprpc_compat.c                      |  12 +-
+ drivers/char/adsprpc_shared.h                      |  29 ++-
+ .../msm/camera_v2/jpeg_dma/msm_jpeg_dma_dev.c      |  11 +-
+ drivers/media/platform/msm/camera_v2/msm.c         |   2 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              |   5 -
+ 6 files changed, 144 insertions(+), 164 deletions(-)
