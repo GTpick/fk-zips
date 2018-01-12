@@ -1,0 +1,61 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.10
+
+Christopher N. Hesse (1):
+      include: sound: Fix timespec header issue
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: Fix missing break on default_normal
+
+Karthikeyan Mani (2):
+      ALSA: pcm: add locks for accessing runtime resource
+      ALSA: pcm: use lock to protect substream runtime resource
+
+Liam Mark (1):
+      ion: ensure CMO target is valid
+
+Michael Adisumarta (1):
+      msm: ipa: Remove unwanted gsi debug register reads
+
+Nathan Chancellor (1):
+      ion: Actually check start exists
+
+Tharun Kumar Merugu (2):
+      msm: ADSPRPC: Use SMD on targets that doesn't support GLINK
+      msm: adsprpc: Use unsigned integer for length values
+
+Trishansh Bhardwaj (1):
+      msm: camera: Prevent buffer overread in write_logsync.
+
+Vignesh Kulothungan (1):
+      msm: Array bounds check for buffer index
+
+Will Deacon (2):
+      arm64: SW PAN: Point saved ttbr0 at the zero page when switching to init_mm
+      arm64: SW PAN: Update saved ttbr0 value on enter_lazy_tlb
+
+Zhen Kong (1):
+      qseecom: check return value of __qseecom_process_reentrancy
+
+annamraj (1):
+      msm: jpegdma: Fix for ASAN issues in jpegdma module
+
+ arch/arm64/include/asm/efi.h                       |   4 +-
+ arch/arm64/include/asm/mmu_context.h               |  46 +--
+ drivers/char/Kconfig                               |   2 +-
+ drivers/char/adsprpc.c                             | 348 +++++++++++++--------
+ drivers/char/adsprpc_compat.c                      |  12 +-
+ drivers/char/adsprpc_shared.h                      |  29 +-
+ .../msm/camera_v2/jpeg_dma/msm_jpeg_dma_dev.c      |  11 +-
+ drivers/media/platform/msm/camera_v2/msm.c         |   2 +-
+ drivers/misc/qseecom.c                             |  40 ++-
+ drivers/platform/msm/gsi/gsi_dbg.c                 | 140 ---------
+ drivers/staging/android/ion/ion.c                  |   5 +
+ drivers/staging/android/ion/msm/msm_ion.c          |  10 +-
+ fs/sdcardfs/main.c                                 |   1 +
+ include/sound/asound.h                             |   1 -
+ include/sound/pcm.h                                |   1 +
+ include/uapi/sound/asound.h                        |   1 +
+ sound/core/pcm.c                                   |   4 +
+ sound/core/pcm_timer.c                             |  11 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              |   5 +
+ 19 files changed, 322 insertions(+), 351 deletions(-)
