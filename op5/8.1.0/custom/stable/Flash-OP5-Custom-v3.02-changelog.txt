@@ -1,0 +1,25 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Jorge Ramirez-Ortiz (1):
+      LINARO: arm64: topology: fix cpu power calculation
+
+ arch/arm64/kernel/topology.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Chris Renshaw (1):
+      Merge pull request #15 from nathanchance/insert-line-offset
+
+Nathan Chancellor (6):
+      OP5: anykernel.sh: Support 8.1.0 as well
+      AK2: Fix insert_line line validation
+      Merge branch 'master' into op5-flash-8.x
+      OP5: anykernel.sh: Disable sched_boost
+      OP5: anykernel.sh: Add a ui_print
+      OP5: anykernel.sh: Remove all modules that aren't Wi-Fi related
+
+ anykernel.sh      | 22 +++++++++++++++++-----
+ tools/ak2-core.sh |  2 +-
+ 2 files changed, 18 insertions(+), 6 deletions(-)
