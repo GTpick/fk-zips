@@ -1,0 +1,155 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.12
+
+Alexander Popov (1):
+      UPSTREAM: mm/slub.c: add a naive detection of double free or corruption
+
+Andy Shevchenko (1):
+      BACKPORT: lib/uuid.c: move generate_random_uuid() to uuid.c
+
+Daniel Micay (21):
+      BACKPORT: init/main.c: extract early boot entropy from the passed cmdline
+      gather extra early boot entropy
+      flash_defconfig: Enable SLAB_FREELIST_RANDOM
+      flash_defconfig: Enable SLAB_FREELIST_HARDENED
+      flash_defconfig: Disable SLAB_MERGE_DEFAULT
+      add a SLAB_HARDENED configuration option
+      add missing cache_from_obj !PageSlab check
+      real slab_equal_or_root check for !MEMCG_KMEM
+      bug on kmem_cache_free with the wrong cache
+      always perform cache_from_obj consistency checks
+      bug on !PageSlab && !PageCompound in ksize
+      add kmalloc/krealloc alloc_size attributes
+      add percpu alloc_size attributes
+      add alloc_pages_exact alloc_size attributes
+      add simpler page sanitization
+      add support for verifying page sanitization
+      slub: add basic full slab sanitization
+      slub: add support for verifying slab sanitization
+      slub: add multi-purpose random canaries
+      Revert "Revert "arm: move ELF_ET_DYN_BASE to 4MB""
+      Revert "mm: revert x86_64 and arm64 ELF_ET_DYN_BASE base changes"
+
+Fabio Estevam (1):
+      UPSTREAM: random: move random_min_urandom_seed into CONFIG_SYSCTL ifdef block
+
+Helge Deller (1):
+      UPSTREAM: random: fix warning message on ia64 and parisc
+
+Jason A. Donenfeld (6):
+      UPSTREAM: random: use chacha20 for get_random_int/long
+      UPSTREAM: random: convert get_random_int/long into get_random_u32/u64
+      UPSTREAM: random: invalidate batched entropy after crng init
+      UPSTREAM: random: silence compiler warnings and fix race
+      UPSTREAM: random: add wait_for_random_bytes() API
+      UPSTREAM: random: warn when kernel uses unseeded randomness
+
+Jason Cooper (4):
+      UPSTREAM: random: simplify API for random address requests
+      UPSTREAM: ARM: use simpler API for random address requests
+      UPSTREAM: arm64: use simpler API for random address requests
+      UPSTREAM: random: remove unused randomize_range()
+
+John Sperbeck (1):
+      UPSTREAM: mm/slab.c: fix SLAB freelist randomization duplicate entries
+
+Joonsoo Kim (1):
+      UPSTREAM: mm/slub: query dynamic DEBUG_PAGEALLOC setting
+
+Kees Cook (4):
+      UPSTREAM: mm: add SLUB free list pointer obfuscation
+      BACKPORT: mm: allow slab_nomerge to be set at build time
+      UPSTREAM: arm64: kernel: Fix incorrect brk randomization
+      BACKPORT: random: do not ignore early device randomness
+
+Michael Ellerman (1):
+      UPSTREAM: random: Fix crashes with sparse node ids
+
+Michael Schmitz (1):
+      UPSTREAM: fix race in drivers/char/random.c:get_reg()
+
+Nathan Chancellor (5):
+      Revert "mm, page_alloc: Fix declaration after statement warning"
+      Revert "add page sanitization / verification"
+      Revert "arm64: properly account for stack rnd in mmap base"
+      HACK: random: Changes to make compatible with WireGuard
+      random: Don't compile random_read
+
+Park Ju Hyung (1):
+      random: always use /dev/urandom
+
+Rik van Riel (3):
+      BACKPORT: random,stackprotect: introduce get_random_canary function
+      UPSTREAM: arm64: ascii armor the arm64 boot init stack canary
+      UPSTREAM: arm64/mmap: properly account for stack randomization in mmap_base
+
+Sean Rees (1):
+      UPSTREAM: mm/slub.c: fix random_seq offset destruction
+
+Sebastian Andrzej Siewior (1):
+      UPSTREAM: random: reorder READ_ONCE() in get_random_uXX
+
+Stephan Mueller (1):
+      UPSTREAM: random: remove stale maybe_reseed_primary_crng
+
+Stephan Müller (3):
+      UPSTREAM: random: remove stale urandom_init_wait
+      UPSTREAM: random: remove variable limit
+      UPSTREAM: random: fix comment for unused random_min_urandom_seed
+
+Theodore Ts'o (6):
+      BACKPORT: random: replace non-blocking pool with a Chacha20-based CRNG
+      UPSTREAM: random: make /dev/urandom scalable for silly userspace programs
+      UPSTREAM: random: add backtracking protection to the CRNG
+      UPSTREAM: random: use for_each_online_node() to iterate over NUMA nodes
+      UPSTREAM: random: use lockless method of accessing and updating f->reg_idx
+      UPSTREAM: random: suppress spammy warnings about unseeded randomness
+
+ Documentation/kernel-parameters.txt     |  10 +-
+ arch/arm/include/asm/elf.h              |   8 +-
+ arch/arm/kernel/process.c               |   3 +-
+ arch/arm64/configs/flash_defconfig      |   3 +
+ arch/arm64/include/asm/elf.h            |   4 +-
+ arch/arm64/include/asm/stackprotector.h |   1 +
+ arch/arm64/kernel/process.c             |  11 +-
+ arch/arm64/mm/mmap.c                    |   4 +-
+ arch/x86/include/asm/elf.h              |   4 +-
+ crypto/chacha20_generic.c               |  61 ---
+ drivers/char/random.c                   | 770 +++++++++++++++++++++++---------
+ fs/btrfs/volumes.c                      |   2 +-
+ fs/ext4/ioctl.c                         |   2 +-
+ fs/f2fs/file.c                          |   2 +-
+ fs/reiserfs/objectid.c                  |   2 +-
+ fs/ubifs/sb.c                           |   2 +-
+ include/crypto/chacha20.h               |   1 +
+ include/linux/gfp.h                     |   4 +-
+ include/linux/highmem.h                 |  19 +-
+ include/linux/percpu.h                  |   6 +-
+ include/linux/random.h                  |  44 +-
+ include/linux/slab.h                    |   6 +-
+ include/linux/slub_def.h                |   9 +
+ include/linux/uuid.h                    |   2 +
+ init/Kconfig                            |  66 +++
+ init/main.c                             |   2 +-
+ lib/Kconfig.debug                       |  28 ++
+ lib/Makefile                            |   2 +-
+ lib/chacha20.c                          |  79 ++++
+ lib/uuid.c                              |  20 +
+ mm/page_alloc.c                         |  33 +-
+ mm/slab.c                               |   8 +-
+ mm/slab.h                               |  16 +-
+ mm/slab_common.c                        |   5 +-
+ mm/slub.c                               | 177 +++++++-
+ security/Kconfig                        |  16 +
+ 36 files changed, 1065 insertions(+), 367 deletions(-)
+ create mode 100644 lib/chacha20.c
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (1):
+      Pixel 2 (XL): Patch dtbo.img dynamically
+
+ anykernel.sh     |  24 ++++++++++++++++++++++++
+ tools/magiskboot | Bin 0 -> 287344 bytes
+ 2 files changed, 24 insertions(+)
+ create mode 100755 tools/magiskboot
