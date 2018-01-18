@@ -1,0 +1,13 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (1):
+      Pixel 2 (XL): Patch dtbo.img dynamically
+
+ anykernel.sh     |  24 ++++++++++++++++++++++++
+ tools/magiskboot | Bin 0 -> 287344 bytes
+ 2 files changed, 24 insertions(+)
+ create mode 100755 tools/magiskboot
