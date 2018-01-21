@@ -1,0 +1,85 @@
+http://github.com/nathanchance/op5/commits/queue-3.03
+
+Alexander Martinz (1):
+      block, bfq: update to latest bfq-v8-v4.4 state
+
+Catalin Marinas (1):
+      FROMLIST: arm64: kpti: Fix the interaction between ASID switching and software PAN
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: Move default_normal to superblock
+
+Marc Zyngier (1):
+      FROMLIST: arm64: Move post_ttbr_update_workaround to C code
+
+Mauro Andreolini (1):
+      block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0
+
+Nathan Chancellor (4):
+      kbuild: Rename COMPILE_NAME to KBUILD_COMPILER_STRING
+      staging: qcacld-3.0: Remove Clang flags
+      block: bfq: Fix build
+      flash-custom_defconfig: Enable BFQ
+
+Paolo Valente (2):
+      block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
+      block: introduce the BFQ-v7r11 I/O sched for 4.4.0
+
+Will Deacon (1):
+      FROMLIST: arm64: mm: Rename post_ttbr0_update_workaround
+
+ Documentation/block/00-INDEX              |    2 +
+ Documentation/block/bfq-iosched.txt       |  545 +++
+ arch/arm64/configs/flash-custom_defconfig |    3 +
+ arch/arm64/include/asm/assembler.h        |   13 -
+ arch/arm64/include/asm/efi.h              |   12 +-
+ arch/arm64/include/asm/mmu_context.h      |    4 +-
+ arch/arm64/include/asm/uaccess.h          |   21 +-
+ arch/arm64/kernel/entry.S                 |    4 +-
+ arch/arm64/lib/clear_user.S               |    2 +-
+ arch/arm64/lib/copy_from_user.S           |    2 +-
+ arch/arm64/lib/copy_in_user.S             |    2 +-
+ arch/arm64/lib/copy_to_user.S             |    2 +-
+ arch/arm64/mm/cache.S                     |    2 +-
+ arch/arm64/mm/context.c                   |    9 +
+ arch/arm64/mm/proc.S                      |    6 +-
+ arch/arm64/xen/hypercall.S                |    2 +-
+ block/Kconfig.iosched                     |   30 +
+ block/Makefile                            |    1 +
+ block/bfq-cgroup.c                        | 1185 +++++++
+ block/bfq-ioc.c                           |   36 +
+ block/bfq-iosched.c                       | 5391 +++++++++++++++++++++++++++++
+ block/bfq-sched.c                         | 2025 +++++++++++
+ block/bfq.h                               |  944 +++++
+ drivers/staging/qcacld-3.0/Kbuild         |   10 -
+ fs/sdcardfs/inode.c                       |    7 +-
+ fs/sdcardfs/main.c                        |    4 +-
+ fs/sdcardfs/sdcardfs.h                    |   10 +-
+ fs/sdcardfs/super.c                       |    2 +-
+ include/linux/blkdev.h                    |    2 +-
+ scripts/mkcompile_h                       |    4 +-
+ 30 files changed, 10222 insertions(+), 60 deletions(-)
+ create mode 100644 Documentation/block/bfq-iosched.txt
+ create mode 100644 block/bfq-cgroup.c
+ create mode 100644 block/bfq-ioc.c
+ create mode 100644 block/bfq-iosched.c
+ create mode 100644 block/bfq-sched.c
+ create mode 100644 block/bfq.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (2):
+      OP5: anykernel.sh: I'm an idiot
+      Merge branch 'master' into op5-flash-8.x
+
+osm0sis (3):
+      Backend: only replace getprop if needed (and do so more robustly)
+      AK2: clarify new patch_cmdline usage
+      README: document new patch_cmdline usage
+
+ META-INF/com/google/android/update-binary | 8 +++++++-
+ README.md                                 | 5 +++--
+ anykernel.sh                              | 4 ++--
+ tools/ak2-core.sh                         | 2 +-
+ 4 files changed, 13 insertions(+), 6 deletions(-)
