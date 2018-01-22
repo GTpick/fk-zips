@@ -1,0 +1,270 @@
+http://github.com/nathanchance/op5/commits/queue-3.03
+
+Adam Borowski (1):
+      x86/kbuild: enable modversions for symbols exported from asm
+
+Al Viro (1):
+      EXPORT_SYMBOL() for asm
+
+Alexander Martinz (1):
+      block, bfq: update to latest bfq-v8-v4.4 state
+
+Andi Kleen (3):
+      x86/retpoline/irq32: Convert assembler indirect jumps
+      module: Add retpoline tag to VERMAGIC
+      x86/retpoline: Optimize inline assembler for vmexit_fill_RSB
+
+Andrey Ryabinin (1):
+      x86/asm: Use register variable to get stack pointer value
+
+Andy Lutomirski (2):
+      x86/mm/32: Move setup_clear_cpu_cap(X86_FEATURE_PCID) earlier
+      x86/asm: Make asm/alternative.h safe from assembly
+
+Arnd Bergmann (2):
+      gcov: disable for COMPILE_TEST
+      phy: work around 'phys' references to usb-nop-xceiv devices
+
+Catalin Marinas (1):
+      FROMLIST: arm64: kpti: Fix the interaction between ASID switching and software PAN
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: Move default_normal to superblock
+
+David Woodhouse (9):
+      x86/retpoline: Add initial retpoline support
+      x86/spectre: Add boot time option to select Spectre v2 mitigation
+      x86/retpoline/crypto: Convert crypto assembler indirect jumps
+      x86/retpoline/entry: Convert entry assembler indirect jumps
+      x86/retpoline/ftrace: Convert ftrace assembler indirect jumps
+      x86/retpoline/hyperv: Convert assembler indirect jumps
+      x86/retpoline/xen: Convert Xen hypercall indirect jumps
+      x86/retpoline/checksum32: Convert assembler indirect jumps
+      x86/retpoline: Fill return stack buffer on vmexit
+
+Dennis Yang (1):
+      dm thin metadata: THIN_MAX_CONCURRENT_LOCKS should be 6
+
+Eric Biggers (2):
+      af_key: fix buffer overread in verify_address_len()
+      af_key: fix buffer overread in parse_exthdrs()
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.113-rc1
+
+H. Nikolaus Schaller (1):
+      Input: twl6040-vibra - fix DT node memory management
+
+Hannes Reinecke (1):
+      scsi: sg: disable SET_FORCE_LOW_DMA
+
+Joe Lawrence (1):
+      pipe: avoid round_pipe_size() nr_pages overflow on 32-bit
+
+Joe Thornber (1):
+      dm btree: fix serious bug in btree_split_beneath()
+
+Johan Hovold (3):
+      Input: 88pm860x-ts - fix child-node lookup
+      Input: twl6040-vibra - fix child-node lookup
+      Input: twl4030-vibra - fix sibling-node lookup
+
+Jonas Gorski (1):
+      MIPS: AR7: ensure the port type's FCR value is used
+
+Li Jinyue (1):
+      futex: Prevent overflow by strengthen input validation
+
+Marc Zyngier (2):
+      FROMLIST: arm64: Move post_ttbr_update_workaround to C code
+      arm64: KVM: Fix SMCCC handling of unimplemented SMC/HVC calls
+
+Masahiro Yamada (1):
+      kconfig.h: use __is_defined() to check if MODULE is defined
+
+Masami Hiramatsu (3):
+      retpoline: Introduce start/end markers of indirect thunk
+      kprobes/x86: Blacklist indirect thunk functions for kprobes
+      kprobes/x86: Disable optimizing on the function jumps to indirect thunk
+
+Mauro Andreolini (1):
+      block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0
+
+Nathan Chancellor (5):
+      kbuild: Rename COMPILE_NAME to KBUILD_COMPILER_STRING
+      staging: qcacld-3.0: Remove Clang flags
+      block: bfq: Fix build
+      flash-custom_defconfig: Enable BFQ
+      Merge tag 'v4.4.113-rc1' into 8.x-unified
+
+Nicholas Piggin (1):
+      kbuild: modversions for EXPORT_SYMBOL() for asm
+
+Paolo Valente (2):
+      block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
+      block: introduce the BFQ-v7r11 I/O sched for 4.4.0
+
+Stephane Grosjean (1):
+      can: peak: fix potential bug in packet fragmentation
+
+Steven Rostedt (VMware) (1):
+      tracing: Fix converting enum's from the map in trace_event_eval_update()
+
+Takashi Iwai (3):
+      ALSA: pcm: Remove yet superfluous WARN_ON()
+      ALSA: hda - Apply headphone noise quirk for another Dell XPS 13 variant
+      ALSA: hda - Apply the existing quirk to iMac 14,1
+
+Thomas Gleixner (3):
+      x86/retpoline: Remove compile time warning
+      x86/apic/vector: Fix off by one in error path
+      x86/mce: Make machine check speculation protected
+
+Thomas Petazzoni (1):
+      ARM: dts: kirkwood: fix pin-muxing of MPP7 on OpenBlocks A7
+
+Tom Lendacky (4):
+      x86/cpu/AMD: Make LFENCE a serializing instruction
+      x86/cpu/AMD: Use LFENCE_RDTSC in preference to MFENCE_RDTSC
+      x86/retpoline: Add LFENCE to the retpoline/RSB filling RSB macros
+      x86/cpu, x86/pti: Do not enable PTI on AMD processors
+
+Tomas Henzl (1):
+      scsi: hpsa: fix volume offline state
+
+Will Deacon (1):
+      FROMLIST: arm64: mm: Rename post_ttbr0_update_workaround
+
+Xinyu Lin (1):
+      libata: apply MAX_SEC_1024 to all LITEON EP1 series devices
+
+Xunlei Pang (1):
+      sched/deadline: Zero out positive runtime after throttling constrained tasks
+
+zhenwei.pi (1):
+      x86/pti: Document fix wrong index
+
+ Documentation/block/00-INDEX                 |    2 +
+ Documentation/block/bfq-iosched.txt          |  545 +++
+ Documentation/kernel-parameters.txt          |   28 +
+ Documentation/x86/pti.txt                    |    2 +-
+ Makefile                                     |    4 +-
+ arch/arm/boot/dts/kirkwood-openblocks_a7.dts |   10 +-
+ arch/arm64/configs/flash-custom_defconfig    |    3 +
+ arch/arm64/include/asm/assembler.h           |   13 -
+ arch/arm64/include/asm/efi.h                 |   12 +-
+ arch/arm64/include/asm/mmu_context.h         |    4 +-
+ arch/arm64/include/asm/uaccess.h             |   21 +-
+ arch/arm64/kernel/entry.S                    |    4 +-
+ arch/arm64/kvm/handle_exit.c                 |    4 +-
+ arch/arm64/lib/clear_user.S                  |    2 +-
+ arch/arm64/lib/copy_from_user.S              |    2 +-
+ arch/arm64/lib/copy_in_user.S                |    2 +-
+ arch/arm64/lib/copy_to_user.S                |    2 +-
+ arch/arm64/mm/cache.S                        |    2 +-
+ arch/arm64/mm/context.c                      |    9 +
+ arch/arm64/mm/proc.S                         |    6 +-
+ arch/arm64/xen/hypercall.S                   |    2 +-
+ arch/mips/ar7/platform.c                     |    2 +-
+ arch/x86/Kconfig                             |   13 +
+ arch/x86/Makefile                            |    8 +
+ arch/x86/crypto/aesni-intel_asm.S            |    5 +-
+ arch/x86/crypto/camellia-aesni-avx-asm_64.S  |    3 +-
+ arch/x86/crypto/camellia-aesni-avx2-asm_64.S |    3 +-
+ arch/x86/crypto/crc32c-pcl-intel-asm_64.S    |    3 +-
+ arch/x86/entry/entry_32.S                    |   11 +-
+ arch/x86/entry/entry_64.S                    |   16 +-
+ arch/x86/include/asm/alternative.h           |    4 +
+ arch/x86/include/asm/asm-prototypes.h        |   41 +
+ arch/x86/include/asm/asm.h                   |   11 +
+ arch/x86/include/asm/cpufeature.h            |    2 +
+ arch/x86/include/asm/msr-index.h             |    3 +
+ arch/x86/include/asm/nospec-branch.h         |  198 +
+ arch/x86/include/asm/thread_info.h           |   11 -
+ arch/x86/include/asm/traps.h                 |    1 +
+ arch/x86/include/asm/xen/hypercall.h         |    5 +-
+ arch/x86/kernel/apic/vector.c                |    7 +-
+ arch/x86/kernel/cpu/amd.c                    |   28 +-
+ arch/x86/kernel/cpu/bugs.c                   |  166 +-
+ arch/x86/kernel/cpu/common.c                 |   12 +-
+ arch/x86/kernel/cpu/mcheck/mce.c             |    5 +
+ arch/x86/kernel/irq_32.c                     |   15 +-
+ arch/x86/kernel/kprobes/opt.c                |   23 +-
+ arch/x86/kernel/mcount_64.S                  |    7 +-
+ arch/x86/kernel/traps.c                      |    2 +-
+ arch/x86/kernel/vmlinux.lds.S                |    7 +
+ arch/x86/kvm/svm.c                           |    4 +
+ arch/x86/kvm/vmx.c                           |    4 +
+ arch/x86/lib/Makefile                        |    1 +
+ arch/x86/lib/checksum_32.S                   |    7 +-
+ arch/x86/lib/retpoline.S                     |   49 +
+ block/Kconfig.iosched                        |   30 +
+ block/Makefile                               |    1 +
+ block/bfq-cgroup.c                           | 1185 ++++++
+ block/bfq-ioc.c                              |   36 +
+ block/bfq-iosched.c                          | 5391 ++++++++++++++++++++++++++
+ block/bfq-sched.c                            | 2025 ++++++++++
+ block/bfq.h                                  |  944 +++++
+ drivers/ata/libata-core.c                    |    1 +
+ drivers/hv/hv.c                              |   11 +-
+ drivers/input/misc/twl4030-vibra.c           |    6 +-
+ drivers/input/misc/twl6040-vibra.c           |    2 +-
+ drivers/input/touchscreen/88pm860x-ts.c      |   16 +-
+ drivers/md/dm-thin-metadata.c                |    6 +-
+ drivers/md/persistent-data/dm-btree.c        |   19 +-
+ drivers/net/can/usb/peak_usb/pcan_usb_fd.c   |   21 +-
+ drivers/phy/phy-core.c                       |    4 +
+ drivers/scsi/hpsa.c                          |    1 +
+ drivers/scsi/sg.c                            |   32 +-
+ drivers/staging/qcacld-3.0/Kbuild            |   10 -
+ fs/pipe.c                                    |   18 +-
+ fs/sdcardfs/inode.c                          |    7 +-
+ fs/sdcardfs/main.c                           |    4 +-
+ fs/sdcardfs/sdcardfs.h                       |   10 +-
+ fs/sdcardfs/super.c                          |    2 +-
+ include/asm-generic/asm-prototypes.h         |    7 +
+ include/asm-generic/export.h                 |   94 +
+ include/linux/blkdev.h                       |    2 +-
+ include/linux/kconfig.h                      |   11 +-
+ include/linux/vermagic.h                     |    8 +-
+ include/uapi/scsi/sg.h                       |    1 -
+ kernel/futex.c                               |    3 +
+ kernel/gcov/Kconfig                          |    1 +
+ kernel/sched/deadline.c                      |    2 +
+ kernel/trace/trace_events.c                  |   16 +-
+ net/key/af_key.c                             |    8 +
+ scripts/Makefile.build                       |   87 +-
+ scripts/mkcompile_h                          |    4 +-
+ sound/core/pcm_lib.c                         |    1 -
+ sound/pci/hda/patch_cirrus.c                 |    1 +
+ sound/pci/hda/patch_realtek.c                |    1 +
+ 94 files changed, 11183 insertions(+), 202 deletions(-)
+ create mode 100644 Documentation/block/bfq-iosched.txt
+ create mode 100644 arch/x86/include/asm/asm-prototypes.h
+ create mode 100644 arch/x86/include/asm/nospec-branch.h
+ create mode 100644 arch/x86/lib/retpoline.S
+ create mode 100644 block/bfq-cgroup.c
+ create mode 100644 block/bfq-ioc.c
+ create mode 100644 block/bfq-iosched.c
+ create mode 100644 block/bfq-sched.c
+ create mode 100644 block/bfq.h
+ create mode 100644 include/asm-generic/asm-prototypes.h
+ create mode 100644 include/asm-generic/export.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (2):
+      OP5: anykernel.sh: I'm an idiot
+      Merge branch 'master' into op5-flash-8.x
+
+osm0sis (3):
+      Backend: only replace getprop if needed (and do so more robustly)
+      AK2: clarify new patch_cmdline usage
+      README: document new patch_cmdline usage
+
+ META-INF/com/google/android/update-binary | 8 +++++++-
+ README.md                                 | 5 +++--
+ anykernel.sh                              | 4 ++--
+ tools/ak2-core.sh                         | 2 +-
+ 4 files changed, 13 insertions(+), 6 deletions(-)
