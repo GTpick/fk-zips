@@ -1,0 +1,464 @@
+http://github.com/nathanchance/op5/commits/queue-3.04
+
+Adam Borowski (1):
+      x86/kbuild: enable modversions for symbols exported from asm
+
+Al Viro (1):
+      EXPORT_SYMBOL() for asm
+
+Alexander Martinz (1):
+      block, bfq: update to latest bfq-v8-v4.4 state
+
+Alexander Popov (1):
+      UPSTREAM: mm/slub.c: add a naive detection of double free or corruption
+
+Alexander Potapenko (11):
+      mm, kasan: SLAB support
+      UPSTREAM: mm, kasan: stackdepot implementation. Enable stackdepot for SLAB
+      mm, kasan: fix compilation for CONFIG_SLAB
+      mm, kasan: add GFP flags to KASAN API
+      mm: kasan: initial memory quarantine implementation
+      mm, kasan: don't call kasan_krealloc() from ksize().
+      mm, kasan: account for object redzone in SLUB's nearest_obj()
+      mm, kasan: switch SLUB to stackdepot, enable memory quarantine for SLUB
+      kasan: avoid overflowing quarantine size on low memory systems
+      kasan: remove the unnecessary WARN_ONCE from quarantine.c
+      ANDROID: mm, kasan: coalesce split strings
+
+Andi Kleen (3):
+      x86/retpoline/irq32: Convert assembler indirect jumps
+      module: Add retpoline tag to VERMAGIC
+      x86/retpoline: Optimize inline assembler for vmexit_fill_RSB
+
+Andrey Ryabinin (12):
+      x86/asm: Use register variable to get stack pointer value
+      mm/kasan: print name of mem[set,cpy,move]() caller in report
+      MAINTAINERS: fill entries for KASAN
+      mm/kasan: add API to check memory regions
+      mm: kasan: remove unused 'reserved' field from struct kasan_alloc_meta
+      mm: mempool: kasan: don't poot mempool objects in quarantine
+      mm/kasan: fix corruptions and false positive reports
+      mm/kasan: don't reduce quarantine in atomic contexts
+      mm/kasan: get rid of ->alloc_size in struct kasan_alloc_meta
+      mm/kasan, slub: don't disable interrupts when object leaves quarantine
+      mm/kasan: get rid of ->state in struct kasan_alloc_meta
+      kasan: improve double-free reports
+
+Andy Lutomirski (2):
+      x86/mm/32: Move setup_clear_cpu_cap(X86_FEATURE_PCID) earlier
+      x86/asm: Make asm/alternative.h safe from assembly
+
+Arnd Bergmann (2):
+      gcov: disable for COMPILE_TEST
+      phy: work around 'phys' references to usb-nop-xceiv devices
+
+Catalin Marinas (1):
+      FROMLIST: arm64: kpti: Fix the interaction between ASID switching and software PAN
+
+Daniel Micay (28):
+      disable ptrace_scope by default
+      enable protected_{symlinks,hardlinks} by default
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_RANDOM
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_HARDENED
+      flash-{oos,custom}_defconfig: Disable SLAB_MERGE_DEFAULT
+      add a SLAB_HARDENED configuration option
+      add missing cache_from_obj !PageSlab check
+      real slab_equal_or_root check for !MEMCG_KMEM
+      bug on kmem_cache_free with the wrong cache
+      always perform cache_from_obj consistency checks
+      bug on !PageSlab && !PageCompound in ksize
+      UPSTREAM: mm/mmap.c: mark protection_map as __ro_after_init
+      UPSTREAM: mark most percpu globals as __ro_after_init
+      randomize lower bits of the argument block
+      add kmalloc/krealloc alloc_size attributes
+      add vmalloc alloc_size attributes
+      add percpu alloc_size attributes
+      add alloc_pages_exact alloc_size attributes
+      BACKPORT: include/linux/string.h: add the option of fortified string.h functions
+      replace incorrect strscpy use in FORTIFY_SOURCE
+      flash-{oos,custom}_defconfig: Enable FORTIFY_SOURCE
+      add simpler page sanitization
+      add support for verifying page sanitization
+      slub: add basic full slab sanitization
+      slub: add support for verifying slab sanitization
+      slub: add multi-purpose random canaries
+      arm64: determine stack entropy based on mmap entropy
+      Revert "mm: revert x86_64 and arm64 ELF_ET_DYN_BASE base changes"
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: Move default_normal to superblock
+
+David Rientjes (1):
+      mm, mempolicy: task->mempolicy must be NULL before dropping final reference
+
+David Woodhouse (9):
+      x86/retpoline: Add initial retpoline support
+      x86/spectre: Add boot time option to select Spectre v2 mitigation
+      x86/retpoline/crypto: Convert crypto assembler indirect jumps
+      x86/retpoline/entry: Convert entry assembler indirect jumps
+      x86/retpoline/ftrace: Convert ftrace assembler indirect jumps
+      x86/retpoline/hyperv: Convert assembler indirect jumps
+      x86/retpoline/xen: Convert Xen hypercall indirect jumps
+      x86/retpoline/checksum32: Convert assembler indirect jumps
+      x86/retpoline: Fill return stack buffer on vmexit
+
+Dennis Yang (1):
+      dm thin metadata: THIN_MAX_CONCURRENT_LOCKS should be 6
+
+Dmitry Safonov (1):
+      mm: slab: free kmem_cache_node after destroy sysfs file
+
+Eric Biggers (2):
+      af_key: fix buffer overread in verify_address_len()
+      af_key: fix buffer overread in parse_exthdrs()
+
+Geert Uytterhoeven (1):
+      slub: drop bogus inline for fixup_red_left()
+
+Geliang Tang (2):
+      mm/slab.c use list_first_entry_or_null()
+      mm/slab.c: add a helper function get_first_slab
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.113-rc1
+
+H. Nikolaus Schaller (1):
+      Input: twl6040-vibra - fix DT node memory management
+
+Hannes Reinecke (1):
+      scsi: sg: disable SET_FORCE_LOW_DMA
+
+Jesper Dangaard Brouer (1):
+      mm/slab: move SLUB alloc hooks to common mm/slab.h
+
+Jisheng Zhang (1):
+      BACKPORT: arm64: apply __ro_after_init to some objects
+
+Joe Lawrence (1):
+      pipe: avoid round_pipe_size() nr_pages overflow on 32-bit
+
+Joe Thornber (1):
+      dm btree: fix serious bug in btree_split_beneath()
+
+Johan Hovold (3):
+      Input: 88pm860x-ts - fix child-node lookup
+      Input: twl6040-vibra - fix child-node lookup
+      Input: twl4030-vibra - fix sibling-node lookup
+
+John Sperbeck (1):
+      UPSTREAM: mm/slab.c: fix SLAB freelist randomization duplicate entries
+
+Jonas Gorski (1):
+      MIPS: AR7: ensure the port type's FCR value is used
+
+Joonsoo Kim (18):
+      mm/slab: remove the checks for slab implementation bug
+      mm/slab: fix stale code comment
+      mm/slab: remove useless structure define
+      mm/slab: activate debug_pagealloc in SLAB when it is actually enabled
+      mm/slab: use more appropriate condition check for debug_pagealloc
+      mm/slab: clean up DEBUG_PAGEALLOC processing code
+      mm/slab: alternative implementation for DEBUG_SLAB_LEAK
+      mm/slab: remove object status buffer for DEBUG_SLAB_LEAK
+      mm/slab: align cache size first before determination of OFF_SLAB candidate
+      mm/slab: factor out debugging initialization in cache_init_objs()
+      mm/slab: do not change cache size if debug pagealloc isn't possible
+      mm/slab: put the freelist at the end of slab page
+      mm/slab: clean up cache type determination
+      mm/slab: make criteria for off slab determination robust and simple
+      kasan/quarantine: fix bugs on qlist_move_cache()
+      mm/slab: factor out slab list fixup code
+      mm/slab: introduce new slab management type, OBJFREELIST_SLAB
+      UPSTREAM: mm/slub: query dynamic DEBUG_PAGEALLOC setting
+
+Kees Cook (4):
+      UPSTREAM: mm: SLAB hardened usercopy support
+      UPSTREAM: mm: add SLUB free list pointer obfuscation
+      BACKPORT: mm: allow slab_nomerge to be set at build time
+      BACKPORT: arm64, vdso: Define vdso_{start,end} as array
+
+Li Jinyue (1):
+      futex: Prevent overflow by strengthen input validation
+
+Marc Zyngier (2):
+      FROMLIST: arm64: Move post_ttbr_update_workaround to C code
+      arm64: KVM: Fix SMCCC handling of unimplemented SMC/HVC calls
+
+Masahiro Yamada (1):
+      kconfig.h: use __is_defined() to check if MODULE is defined
+
+Masami Hiramatsu (3):
+      retpoline: Introduce start/end markers of indirect thunk
+      kprobes/x86: Blacklist indirect thunk functions for kprobes
+      kprobes/x86: Disable optimizing on the function jumps to indirect thunk
+
+Mauro Andreolini (1):
+      block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0
+
+Nathan Chancellor (8):
+      kbuild: Rename COMPILE_NAME to KBUILD_COMPILER_STRING
+      staging: qcacld-3.0: Remove Clang flags
+      block: bfq: Fix build
+      flash-custom_defconfig: Enable BFQ
+      scsi: sg: Remove some locking for cleaner 4.4.113 merge
+      Merge branch 'linux-4.4.y' of https://git.kernel.org/.../stable/linux-stable-rc into 8.x-unified
+      Revert "mm: SLAB hardened usercopy support"
+      lib/stackdepot.c: Revert for a clean fast forward from Google
+
+Nicholas Piggin (1):
+      kbuild: modversions for EXPORT_SYMBOL() for asm
+
+Paolo Valente (2):
+      block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
+      block: introduce the BFQ-v7r11 I/O sched for 4.4.0
+
+Rik van Riel (3):
+      BACKPORT: random,stackprotect: introduce get_random_canary function
+      UPSTREAM: arm64: ascii armor the arm64 boot init stack canary
+      UPSTREAM: arm64/mmap: properly account for stack randomization in mmap_base
+
+Sean Rees (1):
+      UPSTREAM: mm/slub.c: fix random_seq offset destruction
+
+Shuah Khan (1):
+      kasan: change memory hot-add error messages to info messages
+
+Stephane Grosjean (1):
+      can: peak: fix potential bug in packet fragmentation
+
+Steven Rostedt (VMware) (1):
+      tracing: Fix converting enum's from the map in trace_event_eval_update()
+
+Takashi Iwai (3):
+      ALSA: pcm: Remove yet superfluous WARN_ON()
+      ALSA: hda - Apply headphone noise quirk for another Dell XPS 13 variant
+      ALSA: hda - Apply the existing quirk to iMac 14,1
+
+Thomas Garnier (3):
+      mm: SLAB freelist randomization
+      mm: SLUB freelist randomization
+      mm: reorganize SLAB freelist randomization
+
+Thomas Gleixner (3):
+      x86/retpoline: Remove compile time warning
+      x86/apic/vector: Fix off by one in error path
+      x86/mce: Make machine check speculation protected
+
+Thomas Petazzoni (1):
+      ARM: dts: kirkwood: fix pin-muxing of MPP7 on OpenBlocks A7
+
+Tom Lendacky (4):
+      x86/cpu/AMD: Make LFENCE a serializing instruction
+      x86/cpu/AMD: Use LFENCE_RDTSC in preference to MFENCE_RDTSC
+      x86/retpoline: Add LFENCE to the retpoline/RSB filling RSB macros
+      x86/cpu, x86/pti: Do not enable PTI on AMD processors
+
+Tomas Henzl (1):
+      scsi: hpsa: fix volume offline state
+
+Wei Li (1):
+      angler: remove 'reboot edl' interface for security.
+
+Will Deacon (1):
+      FROMLIST: arm64: mm: Rename post_ttbr0_update_workaround
+
+Xinyu Lin (1):
+      libata: apply MAX_SEC_1024 to all LITEON EP1 series devices
+
+Xunlei Pang (1):
+      sched/deadline: Zero out positive runtime after throttling constrained tasks
+
+zhenwei.pi (1):
+      x86/pti: Document fix wrong index
+
+zhong jiang (1):
+      mm: disable CONFIG_MEMORY_HOTPLUG when KASAN is enabled
+
+ Documentation/block/00-INDEX                 |    2 +
+ Documentation/block/bfq-iosched.txt          |  545 +++
+ Documentation/kasan.txt                      |    5 +-
+ Documentation/kernel-parameters.txt          |   38 +-
+ Documentation/x86/pti.txt                    |    2 +-
+ MAINTAINERS                                  |   14 +
+ Makefile                                     |    4 +-
+ arch/Kconfig                                 |    6 +
+ arch/arm/boot/dts/kirkwood-openblocks_a7.dts |   10 +-
+ arch/arm64/Kconfig                           |    1 +
+ arch/arm64/configs/flash-custom_defconfig    |    7 +
+ arch/arm64/configs/flash-oos_defconfig       |    4 +
+ arch/arm64/include/asm/assembler.h           |   13 -
+ arch/arm64/include/asm/efi.h                 |   12 +-
+ arch/arm64/include/asm/elf.h                 |   10 +-
+ arch/arm64/include/asm/mmu_context.h         |    4 +-
+ arch/arm64/include/asm/stackprotector.h      |    1 +
+ arch/arm64/include/asm/string.h              |    5 +
+ arch/arm64/include/asm/uaccess.h             |   21 +-
+ arch/arm64/kernel/cpu_ops.c                  |    3 +-
+ arch/arm64/kernel/entry.S                    |    4 +-
+ arch/arm64/kernel/kaslr.c                    |    3 +-
+ arch/arm64/kernel/vdso.c                     |   40 +-
+ arch/arm64/kvm/handle_exit.c                 |    4 +-
+ arch/arm64/lib/clear_user.S                  |    2 +-
+ arch/arm64/lib/copy_from_user.S              |    2 +-
+ arch/arm64/lib/copy_in_user.S                |    2 +-
+ arch/arm64/lib/copy_to_user.S                |    2 +-
+ arch/arm64/mm/cache.S                        |    2 +-
+ arch/arm64/mm/context.c                      |    9 +
+ arch/arm64/mm/init.c                         |    5 +-
+ arch/arm64/mm/mmap.c                         |    7 +-
+ arch/arm64/mm/mmu.c                          |    3 +-
+ arch/arm64/mm/proc.S                         |    6 +-
+ arch/arm64/xen/hypercall.S                   |    2 +-
+ arch/mips/ar7/platform.c                     |    2 +-
+ arch/powerpc/Kconfig                         |    1 +
+ arch/x86/Kconfig                             |   14 +
+ arch/x86/Makefile                            |    8 +
+ arch/x86/boot/compressed/misc.c              |    5 +
+ arch/x86/crypto/aesni-intel_asm.S            |    5 +-
+ arch/x86/crypto/camellia-aesni-avx-asm_64.S  |    3 +-
+ arch/x86/crypto/camellia-aesni-avx2-asm_64.S |    3 +-
+ arch/x86/crypto/crc32c-pcl-intel-asm_64.S    |    3 +-
+ arch/x86/entry/entry_32.S                    |   11 +-
+ arch/x86/entry/entry_64.S                    |   16 +-
+ arch/x86/include/asm/alternative.h           |    4 +
+ arch/x86/include/asm/asm-prototypes.h        |   41 +
+ arch/x86/include/asm/asm.h                   |   11 +
+ arch/x86/include/asm/cpufeature.h            |    2 +
+ arch/x86/include/asm/elf.h                   |    4 +-
+ arch/x86/include/asm/msr-index.h             |    3 +
+ arch/x86/include/asm/nospec-branch.h         |  198 +
+ arch/x86/include/asm/string_32.h             |    9 +
+ arch/x86/include/asm/string_64.h             |    7 +
+ arch/x86/include/asm/thread_info.h           |   11 -
+ arch/x86/include/asm/traps.h                 |    1 +
+ arch/x86/include/asm/xen/hypercall.h         |    5 +-
+ arch/x86/kernel/Makefile                     |    7 +-
+ arch/x86/kernel/apic/vector.c                |    7 +-
+ arch/x86/kernel/cpu/amd.c                    |   28 +-
+ arch/x86/kernel/cpu/bugs.c                   |  166 +-
+ arch/x86/kernel/cpu/common.c                 |   12 +-
+ arch/x86/kernel/cpu/mcheck/mce.c             |    5 +
+ arch/x86/kernel/irq_32.c                     |   15 +-
+ arch/x86/kernel/kprobes/opt.c                |   23 +-
+ arch/x86/kernel/mcount_64.S                  |    7 +-
+ arch/x86/kernel/traps.c                      |    2 +-
+ arch/x86/kernel/vmlinux.lds.S                |    7 +
+ arch/x86/kvm/svm.c                           |    4 +
+ arch/x86/kvm/vmx.c                           |    4 +
+ arch/x86/lib/Makefile                        |    1 +
+ arch/x86/lib/checksum_32.S                   |    7 +-
+ arch/x86/lib/memcpy_32.c                     |    2 +-
+ arch/x86/lib/retpoline.S                     |   49 +
+ block/Kconfig.iosched                        |   30 +
+ block/Makefile                               |    1 +
+ block/bfq-cgroup.c                           | 1185 ++++++
+ block/bfq-ioc.c                              |   36 +
+ block/bfq-iosched.c                          | 5391 ++++++++++++++++++++++++++
+ block/bfq-sched.c                            | 2025 ++++++++++
+ block/bfq.h                                  |  944 +++++
+ drivers/ata/libata-core.c                    |    1 +
+ drivers/hv/hv.c                              |   11 +-
+ drivers/input/misc/twl4030-vibra.c           |    6 +-
+ drivers/input/misc/twl6040-vibra.c           |    2 +-
+ drivers/input/touchscreen/88pm860x-ts.c      |   16 +-
+ drivers/md/dm-thin-metadata.c                |    6 +-
+ drivers/md/persistent-data/dm-btree.c        |   19 +-
+ drivers/net/can/usb/peak_usb/pcan_usb_fd.c   |   21 +-
+ drivers/phy/phy-core.c                       |    4 +
+ drivers/power/reset/msm-poweroff.c           |    4 +
+ drivers/scsi/hpsa.c                          |    1 +
+ drivers/scsi/sg.c                            |   32 +-
+ drivers/staging/qcacld-3.0/Kbuild            |   10 -
+ fs/exec.c                                    |    3 +
+ fs/namei.c                                   |    4 +-
+ fs/pipe.c                                    |   18 +-
+ fs/sdcardfs/inode.c                          |    7 +-
+ fs/sdcardfs/main.c                           |    4 +-
+ fs/sdcardfs/sdcardfs.h                       |   10 +-
+ fs/sdcardfs/super.c                          |    2 +-
+ include/asm-generic/asm-prototypes.h         |    7 +
+ include/asm-generic/export.h                 |   94 +
+ include/linux/blkdev.h                       |    2 +-
+ include/linux/gfp.h                          |    4 +-
+ include/linux/highmem.h                      |    7 +
+ include/linux/kasan-checks.h                 |   12 +
+ include/linux/kasan.h                        |   56 +-
+ include/linux/kconfig.h                      |   11 +-
+ include/linux/mempolicy.h                    |    4 +
+ include/linux/mm.h                           |   12 +-
+ include/linux/percpu.h                       |    6 +-
+ include/linux/random.h                       |   23 +
+ include/linux/slab.h                         |   22 +-
+ include/linux/slab_def.h                     |   22 +
+ include/linux/slub_def.h                     |   31 +
+ include/linux/string.h                       |  201 +
+ include/linux/vermagic.h                     |    8 +-
+ include/linux/vmalloc.h                      |   20 +-
+ include/uapi/scsi/sg.h                       |    1 -
+ init/Kconfig                                 |   75 +
+ kernel/exit.c                                |    7 +-
+ kernel/futex.c                               |    3 +
+ kernel/gcov/Kconfig                          |    1 +
+ kernel/sched/deadline.c                      |    2 +
+ kernel/trace/trace_events.c                  |   16 +-
+ lib/Kconfig.kasan                            |    5 +-
+ lib/Makefile                                 |    1 +
+ lib/stackdepot.c                             |   13 +-
+ lib/string.c                                 |    7 +
+ mm/Kconfig                                   |    1 +
+ mm/Makefile                                  |    1 +
+ mm/kasan/Makefile                            |    2 +-
+ mm/kasan/kasan.c                             |  283 +-
+ mm/kasan/kasan.h                             |   45 +
+ mm/kasan/quarantine.c                        |  288 ++
+ mm/kasan/report.c                            |   96 +-
+ mm/mempolicy.c                               |   17 +
+ mm/mempool.c                                 |   24 +-
+ mm/mmap.c                                    |    2 +-
+ mm/page_alloc.c                              |   15 +-
+ mm/percpu.c                                  |   36 +-
+ mm/slab.c                                    |  839 ++--
+ mm/slab.h                                    |   95 +-
+ mm/slab_common.c                             |   61 +-
+ mm/slob.c                                    |    4 +
+ mm/slub.c                                    |  474 ++-
+ net/key/af_key.c                             |    8 +
+ scripts/Makefile.build                       |   87 +-
+ scripts/mkcompile_h                          |    4 +-
+ security/Kconfig                             |   23 +
+ security/yama/yama_lsm.c                     |    2 +-
+ sound/core/pcm_lib.c                         |    1 -
+ sound/pci/hda/patch_cirrus.c                 |    1 +
+ sound/pci/hda/patch_realtek.c                |    1 +
+ 156 files changed, 13565 insertions(+), 824 deletions(-)
+ create mode 100644 Documentation/block/bfq-iosched.txt
+ create mode 100644 arch/x86/include/asm/asm-prototypes.h
+ create mode 100644 arch/x86/include/asm/nospec-branch.h
+ create mode 100644 arch/x86/lib/retpoline.S
+ create mode 100644 block/bfq-cgroup.c
+ create mode 100644 block/bfq-ioc.c
+ create mode 100644 block/bfq-iosched.c
+ create mode 100644 block/bfq-sched.c
+ create mode 100644 block/bfq.h
+ create mode 100644 include/asm-generic/asm-prototypes.h
+ create mode 100644 include/asm-generic/export.h
+ create mode 100644 include/linux/kasan-checks.h
+ create mode 100644 mm/kasan/quarantine.c
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (2):
+      OP5: anykernel.sh: I'm an idiot
+      Merge branch 'master' into op5-flash-8.x
+
+osm0sis (3):
+      Backend: only replace getprop if needed (and do so more robustly)
+      AK2: clarify new patch_cmdline usage
+      README: document new patch_cmdline usage
+
+ META-INF/com/google/android/update-binary | 8 +++++++-
+ README.md                                 | 5 +++--
+ anykernel.sh                              | 4 ++--
+ tools/ak2-core.sh                         | 2 +-
+ 4 files changed, 13 insertions(+), 6 deletions(-)
