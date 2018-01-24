@@ -1,0 +1,151 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.14
+
+Andy Shevchenko (1):
+      BACKPORT: lib/uuid.c: move generate_random_uuid() to uuid.c
+
+Fabio Estevam (1):
+      UPSTREAM: random: move random_min_urandom_seed into CONFIG_SYSCTL ifdef block
+
+Haibin Liu (1):
+      msm: sensor: actuator: add null pointer check for i2c array
+
+Helge Deller (1):
+      UPSTREAM: random: fix warning message on ia64 and parisc
+
+Jan Kara (5):
+      block: Unhash block device inodes on gendisk destruction
+      block: Use pointer to backing_dev_info from request_queue
+      block: Dynamically allocate and refcount backing_dev_info
+      block: Make blk_get_backing_dev_info() safe without open bdev
+      block: Initialize bd_bdi on inode initialization
+
+Jason A. Donenfeld (6):
+      UPSTREAM: random: use chacha20 for get_random_int/long
+      UPSTREAM: random: convert get_random_int/long into get_random_u32/u64
+      UPSTREAM: random: invalidate batched entropy after crng init
+      UPSTREAM: random: silence compiler warnings and fix race
+      UPSTREAM: random: add wait_for_random_bytes() API
+      UPSTREAM: random: warn when kernel uses unseeded randomness
+
+Jason Cooper (4):
+      UPSTREAM: random: simplify API for random address requests
+      UPSTREAM: ARM: use simpler API for random address requests
+      UPSTREAM: arm64: use simpler API for random address requests
+      UPSTREAM: random: remove unused randomize_range()
+
+Kees Cook (2):
+      UPSTREAM: arm64: kernel: Fix incorrect brk randomization
+      BACKPORT: random: do not ignore early device randomness
+
+Lingutla Chandrasekhar (1):
+      sched: core: Exclude isolated cpus in sched_getaffinity cpumask
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+
+Michael Ellerman (1):
+      UPSTREAM: random: Fix crashes with sparse node ids
+
+Michael Schmitz (1):
+      UPSTREAM: fix race in drivers/char/random.c:get_reg()
+
+Mukesh Kumar Savaliya (2):
+      serial: msm_serial_hs: Keep Rx and Tx path clean while going inactive
+      serial: msm_serial_hs: Allow system suspend when no client is active
+
+Nathan Chancellor (2):
+      HACK: random: Changes to make compatible with WireGuard
+      random: Don't compile random_read
+
+Park Ju Hyung (1):
+      random: always use /dev/urandom
+
+Sachin Bhayare (1):
+      msm: mdss: release retire fence during commit failure
+
+Sebastian Andrzej Siewior (1):
+      UPSTREAM: random: reorder READ_ONCE() in get_random_uXX
+
+Stephan Mueller (1):
+      UPSTREAM: random: remove stale maybe_reseed_primary_crng
+
+Stephan Müller (3):
+      UPSTREAM: random: remove stale urandom_init_wait
+      UPSTREAM: random: remove variable limit
+      UPSTREAM: random: fix comment for unused random_min_urandom_seed
+
+Tharun Kumar Merugu (1):
+      msm: adsprpc: Fix race conditions on same buffer
+
+Theodore Ts'o (6):
+      BACKPORT: random: replace non-blocking pool with a Chacha20-based CRNG
+      UPSTREAM: random: make /dev/urandom scalable for silly userspace programs
+      UPSTREAM: random: add backtracking protection to the CRNG
+      UPSTREAM: random: use for_each_online_node() to iterate over NUMA nodes
+      UPSTREAM: random: use lockless method of accessing and updating f->reg_idx
+      UPSTREAM: random: suppress spammy warnings about unseeded randomness
+
+ arch/arm/kernel/process.c                          |   3 +-
+ arch/arm64/kernel/process.c                        |  11 +-
+ block/blk-cgroup.c                                 |   6 +-
+ block/blk-core.c                                   |  37 +-
+ block/blk-integrity.c                              |   4 +-
+ block/blk-sysfs.c                                  |   6 +-
+ block/genhd.c                                      |   6 +-
+ crypto/chacha20_generic.c                          |  61 --
+ drivers/block/aoe/aoeblk.c                         |   4 +-
+ drivers/block/drbd/drbd_main.c                     |   6 +-
+ drivers/block/drbd/drbd_nl.c                       |   8 +-
+ drivers/block/drbd/drbd_proc.c                     |   2 +-
+ drivers/block/drbd/drbd_req.c                      |   2 +-
+ drivers/block/pktcdvd.c                            |   4 +-
+ drivers/block/rbd.c                                |   2 +-
+ drivers/char/adsprpc.c                             |  15 +-
+ drivers/char/random.c                              | 770 +++++++++++++++------
+ drivers/cpuidle/lpm-levels-of.c                    |  12 +-
+ drivers/md/bcache/request.c                        |  10 +-
+ drivers/md/bcache/super.c                          |   8 +-
+ drivers/md/dm-cache-target.c                       |   2 +-
+ drivers/md/dm-era-target.c                         |   2 +-
+ drivers/md/dm-table.c                              |   2 +-
+ drivers/md/dm-thin.c                               |   2 +-
+ drivers/md/dm.c                                    |   6 +-
+ drivers/md/linear.c                                |   2 +-
+ drivers/md/md.c                                    |   6 +-
+ drivers/md/multipath.c                             |   2 +-
+ drivers/md/raid0.c                                 |   6 +-
+ drivers/md/raid1.c                                 |   4 +-
+ drivers/md/raid10.c                                |  10 +-
+ drivers/md/raid5.c                                 |  12 +-
+ .../msm/camera_v2/sensor/actuator/msm_actuator.c   |  22 +-
+ drivers/tty/serial/msm_serial_hs.c                 | 161 ++++-
+ drivers/video/fbdev/msm/mdp3_ctrl.c                |   1 +
+ drivers/video/fbdev/msm/mdss_fb.c                  |   5 +-
+ drivers/video/fbdev/msm/mdss_fb.h                  |   2 +
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c         |  11 +
+ fs/block_dev.c                                     |  25 +
+ fs/btrfs/volumes.c                                 |   2 +-
+ fs/ext4/ioctl.c                                    |   2 +-
+ fs/f2fs/file.c                                     |   2 +-
+ fs/gfs2/ops_fstype.c                               |   2 +-
+ fs/nilfs2/super.c                                  |   2 +-
+ fs/reiserfs/objectid.c                             |   2 +-
+ fs/super.c                                         |   2 +-
+ fs/ubifs/sb.c                                      |   2 +-
+ include/crypto/chacha20.h                          |   1 +
+ include/linux/backing-dev-defs.h                   |   2 +
+ include/linux/backing-dev.h                        |  10 +-
+ include/linux/blkdev.h                             |   2 +-
+ include/linux/fs.h                                 |   2 +
+ include/linux/random.h                             |  21 +-
+ include/linux/uuid.h                               |   2 +
+ init/main.c                                        |   1 -
+ kernel/sched/core.c                                |   9 +
+ lib/Kconfig.debug                                  |  28 +
+ lib/Makefile                                       |   2 +-
+ lib/chacha20.c                                     |  79 +++
+ lib/uuid.c                                         |  20 +
+ mm/backing-dev.c                                   |  34 +-
+ mm/page-writeback.c                                |   4 +-
+ 62 files changed, 1060 insertions(+), 433 deletions(-)
+ create mode 100644 lib/chacha20.c
