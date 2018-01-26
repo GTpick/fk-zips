@@ -1,0 +1,100 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.14
+
+Daniel Rosenberg (1):
+      ANDROID: xattr: Pass EOPNOTSUPP to permission2
+
+Guenter Roeck (1):
+      FIXUP: CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Haibin Liu (1):
+      msm: sensor: actuator: add null pointer check for i2c array
+
+Jan Kara (5):
+      block: Unhash block device inodes on gendisk destruction
+      block: Use pointer to backing_dev_info from request_queue
+      block: Dynamically allocate and refcount backing_dev_info
+      block: Make blk_get_backing_dev_info() safe without open bdev
+      block: Initialize bd_bdi on inode initialization
+
+Lingutla Chandrasekhar (1):
+      sched: core: Exclude isolated cpus in sched_getaffinity cpumask
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+
+Mukesh Kumar Savaliya (2):
+      serial: msm_serial_hs: Keep Rx and Tx path clean while going inactive
+      serial: msm_serial_hs: Allow system suspend when no client is active
+
+Sachin Bhayare (1):
+      msm: mdss: release retire fence during commit failure
+
+Tharun Kumar Merugu (1):
+      msm: adsprpc: Fix race conditions on same buffer
+
+ block/blk-cgroup.c                                 |   6 +-
+ block/blk-core.c                                   |  37 +++--
+ block/blk-integrity.c                              |   4 +-
+ block/blk-sysfs.c                                  |   6 +-
+ block/genhd.c                                      |   6 +-
+ drivers/block/aoe/aoeblk.c                         |   4 +-
+ drivers/block/drbd/drbd_main.c                     |   6 +-
+ drivers/block/drbd/drbd_nl.c                       |   8 +-
+ drivers/block/drbd/drbd_proc.c                     |   2 +-
+ drivers/block/drbd/drbd_req.c                      |   2 +-
+ drivers/block/pktcdvd.c                            |   4 +-
+ drivers/block/rbd.c                                |   2 +-
+ drivers/char/adsprpc.c                             |  15 +-
+ drivers/cpuidle/lpm-levels-of.c                    |  12 +-
+ drivers/md/bcache/request.c                        |  10 +-
+ drivers/md/bcache/super.c                          |   8 +-
+ drivers/md/dm-cache-target.c                       |   2 +-
+ drivers/md/dm-era-target.c                         |   2 +-
+ drivers/md/dm-table.c                              |   2 +-
+ drivers/md/dm-thin.c                               |   2 +-
+ drivers/md/dm.c                                    |   6 +-
+ drivers/md/linear.c                                |   2 +-
+ drivers/md/md.c                                    |   6 +-
+ drivers/md/multipath.c                             |   2 +-
+ drivers/md/raid0.c                                 |   6 +-
+ drivers/md/raid1.c                                 |   4 +-
+ drivers/md/raid10.c                                |  10 +-
+ drivers/md/raid5.c                                 |  12 +-
+ .../msm/camera_v2/sensor/actuator/msm_actuator.c   |  22 ++-
+ drivers/media/v4l2-core/v4l2-ctrls.c               |   1 +
+ drivers/tty/serial/msm_serial_hs.c                 | 161 +++++++++++++++++----
+ drivers/video/fbdev/msm/mdp3_ctrl.c                |   1 +
+ drivers/video/fbdev/msm/mdss_fb.c                  |   5 +-
+ drivers/video/fbdev/msm/mdss_fb.h                  |   2 +
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c         |  11 ++
+ fs/block_dev.c                                     |  25 ++++
+ fs/gfs2/ops_fstype.c                               |   2 +-
+ fs/nilfs2/super.c                                  |   2 +-
+ fs/sdcardfs/inode.c                                |   2 +
+ fs/super.c                                         |   2 +-
+ fs/xattr.c                                         |   2 +-
+ include/linux/backing-dev-defs.h                   |   2 +
+ include/linux/backing-dev.h                        |  10 +-
+ include/linux/blkdev.h                             |   2 +-
+ include/linux/fs.h                                 |   2 +
+ kernel/sched/core.c                                |   9 ++
+ mm/backing-dev.c                                   |  34 ++++-
+ mm/page-writeback.c                                |   4 +-
+ 48 files changed, 353 insertions(+), 136 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Chris Renshaw (1):
+      Merge pull request #16 from Tomoms/master
+
+Nathan Chancellor (2):
+      Merge remote-tracking branch 'upstream/master' into wahoo-flash-8.1.0
+      anykernel.sh: Print kernel version if present
+
+Tommaso Fonda (1):
+      ak2-core.sh: fix repacking of Sony ELF kernels
+
+ anykernel.sh      | 5 +++++
+ tools/ak2-core.sh | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
