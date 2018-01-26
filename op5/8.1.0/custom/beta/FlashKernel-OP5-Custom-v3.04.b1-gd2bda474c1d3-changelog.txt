@@ -1,0 +1,231 @@
+http://github.com/nathanchance/op5/commits/queue-3.04
+
+Alexander Popov (1):
+      UPSTREAM: mm/slub.c: add a naive detection of double free or corruption
+
+Alexander Potapenko (11):
+      mm, kasan: SLAB support
+      UPSTREAM: mm, kasan: stackdepot implementation. Enable stackdepot for SLAB
+      mm, kasan: fix compilation for CONFIG_SLAB
+      mm, kasan: add GFP flags to KASAN API
+      mm: kasan: initial memory quarantine implementation
+      mm, kasan: don't call kasan_krealloc() from ksize().
+      mm, kasan: account for object redzone in SLUB's nearest_obj()
+      mm, kasan: switch SLUB to stackdepot, enable memory quarantine for SLUB
+      kasan: avoid overflowing quarantine size on low memory systems
+      kasan: remove the unnecessary WARN_ONCE from quarantine.c
+      ANDROID: mm, kasan: coalesce split strings
+
+Andrey Ryabinin (11):
+      mm/kasan: print name of mem[set,cpy,move]() caller in report
+      MAINTAINERS: fill entries for KASAN
+      mm/kasan: add API to check memory regions
+      mm: kasan: remove unused 'reserved' field from struct kasan_alloc_meta
+      mm: mempool: kasan: don't poot mempool objects in quarantine
+      mm/kasan: fix corruptions and false positive reports
+      mm/kasan: don't reduce quarantine in atomic contexts
+      mm/kasan: get rid of ->alloc_size in struct kasan_alloc_meta
+      mm/kasan, slub: don't disable interrupts when object leaves quarantine
+      mm/kasan: get rid of ->state in struct kasan_alloc_meta
+      kasan: improve double-free reports
+
+Daniel Micay (28):
+      disable ptrace_scope by default
+      enable protected_{symlinks,hardlinks} by default
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_RANDOM
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_HARDENED
+      flash-{oos,custom}_defconfig: Disable SLAB_MERGE_DEFAULT
+      add a SLAB_HARDENED configuration option
+      add missing cache_from_obj !PageSlab check
+      real slab_equal_or_root check for !MEMCG_KMEM
+      bug on kmem_cache_free with the wrong cache
+      always perform cache_from_obj consistency checks
+      bug on !PageSlab && !PageCompound in ksize
+      UPSTREAM: mm/mmap.c: mark protection_map as __ro_after_init
+      UPSTREAM: mark most percpu globals as __ro_after_init
+      randomize lower bits of the argument block
+      add kmalloc/krealloc alloc_size attributes
+      add vmalloc alloc_size attributes
+      add percpu alloc_size attributes
+      add alloc_pages_exact alloc_size attributes
+      BACKPORT: include/linux/string.h: add the option of fortified string.h functions
+      replace incorrect strscpy use in FORTIFY_SOURCE
+      flash-{oos,custom}_defconfig: Enable FORTIFY_SOURCE
+      add simpler page sanitization
+      add support for verifying page sanitization
+      slub: add basic full slab sanitization
+      slub: add support for verifying slab sanitization
+      slub: add multi-purpose random canaries
+      arm64: determine stack entropy based on mmap entropy
+      Revert "mm: revert x86_64 and arm64 ELF_ET_DYN_BASE base changes"
+
+Daniel Rosenberg (1):
+      ANDROID: xattr: Pass EOPNOTSUPP to permission2
+
+David Rientjes (1):
+      mm, mempolicy: task->mempolicy must be NULL before dropping final reference
+
+Dmitry Safonov (1):
+      mm: slab: free kmem_cache_node after destroy sysfs file
+
+Geert Uytterhoeven (1):
+      slub: drop bogus inline for fixup_red_left()
+
+Geliang Tang (2):
+      mm/slab.c use list_first_entry_or_null()
+      mm/slab.c: add a helper function get_first_slab
+
+Guenter Roeck (1):
+      FIXUP: CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Jesper Dangaard Brouer (1):
+      mm/slab: move SLUB alloc hooks to common mm/slab.h
+
+Jisheng Zhang (1):
+      BACKPORT: arm64: apply __ro_after_init to some objects
+
+John Sperbeck (1):
+      UPSTREAM: mm/slab.c: fix SLAB freelist randomization duplicate entries
+
+Joonsoo Kim (18):
+      mm/slab: remove the checks for slab implementation bug
+      mm/slab: fix stale code comment
+      mm/slab: remove useless structure define
+      mm/slab: activate debug_pagealloc in SLAB when it is actually enabled
+      mm/slab: use more appropriate condition check for debug_pagealloc
+      mm/slab: clean up DEBUG_PAGEALLOC processing code
+      mm/slab: alternative implementation for DEBUG_SLAB_LEAK
+      mm/slab: remove object status buffer for DEBUG_SLAB_LEAK
+      mm/slab: align cache size first before determination of OFF_SLAB candidate
+      mm/slab: factor out debugging initialization in cache_init_objs()
+      mm/slab: do not change cache size if debug pagealloc isn't possible
+      mm/slab: put the freelist at the end of slab page
+      mm/slab: clean up cache type determination
+      mm/slab: make criteria for off slab determination robust and simple
+      kasan/quarantine: fix bugs on qlist_move_cache()
+      mm/slab: factor out slab list fixup code
+      mm/slab: introduce new slab management type, OBJFREELIST_SLAB
+      UPSTREAM: mm/slub: query dynamic DEBUG_PAGEALLOC setting
+
+Kees Cook (4):
+      UPSTREAM: mm: SLAB hardened usercopy support
+      UPSTREAM: mm: add SLUB free list pointer obfuscation
+      BACKPORT: mm: allow slab_nomerge to be set at build time
+      BACKPORT: arm64, vdso: Define vdso_{start,end} as array
+
+Nathan Chancellor (4):
+      Revert "mm: SLAB hardened usercopy support"
+      lib/stackdepot.c: Revert for a clean fast forward from Google
+      staging: qcacld-3.0: Fix yet another config option...
+      flash-{oos,custom}_defconfig: Make qcacld-3.0 values match the out of tree's
+
+Park Ju Hyung (1):
+      qcacld: fix another inconsistency between userspace and kernel options
+
+Rik van Riel (3):
+      BACKPORT: random,stackprotect: introduce get_random_canary function
+      UPSTREAM: arm64: ascii armor the arm64 boot init stack canary
+      UPSTREAM: arm64/mmap: properly account for stack randomization in mmap_base
+
+Sean Rees (1):
+      UPSTREAM: mm/slub.c: fix random_seq offset destruction
+
+Shuah Khan (1):
+      kasan: change memory hot-add error messages to info messages
+
+Thomas Garnier (3):
+      mm: SLAB freelist randomization
+      mm: SLUB freelist randomization
+      mm: reorganize SLAB freelist randomization
+
+zhong jiang (1):
+      mm: disable CONFIG_MEMORY_HOTPLUG when KASAN is enabled
+
+ Documentation/kasan.txt                   |   5 +-
+ Documentation/kernel-parameters.txt       |  10 +-
+ MAINTAINERS                               |  14 +
+ arch/Kconfig                              |   6 +
+ arch/arm64/Kconfig                        |   1 +
+ arch/arm64/configs/flash-custom_defconfig |   9 +-
+ arch/arm64/configs/flash-oos_defconfig    |   9 +-
+ arch/arm64/include/asm/elf.h              |  10 +-
+ arch/arm64/include/asm/stackprotector.h   |   1 +
+ arch/arm64/include/asm/string.h           |   5 +
+ arch/arm64/kernel/cpu_ops.c               |   3 +-
+ arch/arm64/kernel/kaslr.c                 |   3 +-
+ arch/arm64/kernel/vdso.c                  |  40 +-
+ arch/arm64/mm/init.c                      |   5 +-
+ arch/arm64/mm/mmap.c                      |   7 +-
+ arch/arm64/mm/mmu.c                       |   3 +-
+ arch/powerpc/Kconfig                      |   1 +
+ arch/x86/Kconfig                          |   1 +
+ arch/x86/boot/compressed/misc.c           |   5 +
+ arch/x86/include/asm/elf.h                |   4 +-
+ arch/x86/include/asm/string_32.h          |   9 +
+ arch/x86/include/asm/string_64.h          |   7 +
+ arch/x86/kernel/Makefile                  |   7 +-
+ arch/x86/lib/memcpy_32.c                  |   2 +-
+ drivers/media/v4l2-core/v4l2-ctrls.c      |   1 +
+ drivers/staging/qcacld-3.0/Kconfig        |   6 +-
+ fs/exec.c                                 |   3 +
+ fs/namei.c                                |   4 +-
+ fs/sdcardfs/inode.c                       |   2 +
+ fs/xattr.c                                |   2 +-
+ include/linux/gfp.h                       |   4 +-
+ include/linux/highmem.h                   |   7 +
+ include/linux/kasan-checks.h              |  12 +
+ include/linux/kasan.h                     |  56 +-
+ include/linux/mempolicy.h                 |   4 +
+ include/linux/mm.h                        |  12 +-
+ include/linux/percpu.h                    |   6 +-
+ include/linux/random.h                    |  23 +
+ include/linux/slab.h                      |  22 +-
+ include/linux/slab_def.h                  |  22 +
+ include/linux/slub_def.h                  |  31 ++
+ include/linux/string.h                    | 201 +++++++
+ include/linux/vmalloc.h                   |  20 +-
+ init/Kconfig                              |  75 +++
+ kernel/exit.c                             |   7 +-
+ lib/Kconfig.kasan                         |   5 +-
+ lib/Makefile                              |   1 +
+ lib/stackdepot.c                          |  13 +-
+ lib/string.c                              |   7 +
+ mm/Kconfig                                |   1 +
+ mm/Makefile                               |   1 +
+ mm/kasan/Makefile                         |   2 +-
+ mm/kasan/kasan.c                          | 283 ++++++++--
+ mm/kasan/kasan.h                          |  45 ++
+ mm/kasan/quarantine.c                     | 288 ++++++++++
+ mm/kasan/report.c                         |  96 +++-
+ mm/mempolicy.c                            |  17 +
+ mm/mempool.c                              |  24 +-
+ mm/mmap.c                                 |   2 +-
+ mm/page_alloc.c                           |  15 +-
+ mm/percpu.c                               |  36 +-
+ mm/slab.c                                 | 839 +++++++++++++++++++-----------
+ mm/slab.h                                 |  95 +++-
+ mm/slab_common.c                          |  61 ++-
+ mm/slob.c                                 |   4 +
+ mm/slub.c                                 | 474 +++++++++++++----
+ security/Kconfig                          |  23 +
+ security/yama/yama_lsm.c                  |   2 +-
+ 68 files changed, 2391 insertions(+), 630 deletions(-)
+ create mode 100644 include/linux/kasan-checks.h
+ create mode 100644 mm/kasan/quarantine.c
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Chris Renshaw (1):
+      Merge pull request #16 from Tomoms/master
+
+Nathan Chancellor (2):
+      anykernel.sh: Print kernel version if present
+      Merge branch 'master' into op5-flash-8.x
+
+Tommaso Fonda (1):
+      ak2-core.sh: fix repacking of Sony ELF kernels
+
+ anykernel.sh      | 5 +++++
+ tools/ak2-core.sh | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
