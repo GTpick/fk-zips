@@ -1,0 +1,537 @@
+http://github.com/nathanchance/op5/commits/queue-3.04
+
+Aaron Ma (1):
+      Input: trackpoint - force 3 buttons if 0 button is reported
+
+Alexander Popov (1):
+      UPSTREAM: mm/slub.c: add a naive detection of double free or corruption
+
+Alexander Potapenko (11):
+      mm, kasan: SLAB support
+      UPSTREAM: mm, kasan: stackdepot implementation. Enable stackdepot for SLAB
+      mm, kasan: fix compilation for CONFIG_SLAB
+      mm, kasan: add GFP flags to KASAN API
+      mm: kasan: initial memory quarantine implementation
+      mm, kasan: don't call kasan_krealloc() from ksize().
+      mm, kasan: account for object redzone in SLUB's nearest_obj()
+      mm, kasan: switch SLUB to stackdepot, enable memory quarantine for SLUB
+      kasan: avoid overflowing quarantine size on low memory systems
+      kasan: remove the unnecessary WARN_ONCE from quarantine.c
+      ANDROID: mm, kasan: coalesce split strings
+
+Alexey Kodanev (1):
+      dccp: don't restart ccid2_hc_tx_rto_expire() if sk in closed state
+
+Andrew Goodbody (1):
+      usb: usbip: Fix possible deadlocks reported by lockdep
+
+Andrew Pinski (1):
+      BACKPORT: arm64: ensure the kernel is compiled for LP64
+
+Andrey Ryabinin (11):
+      mm/kasan: print name of mem[set,cpy,move]() caller in report
+      MAINTAINERS: fill entries for KASAN
+      mm/kasan: add API to check memory regions
+      mm: kasan: remove unused 'reserved' field from struct kasan_alloc_meta
+      mm: mempool: kasan: don't poot mempool objects in quarantine
+      mm/kasan: fix corruptions and false positive reports
+      mm/kasan: don't reduce quarantine in atomic contexts
+      mm/kasan: get rid of ->alloc_size in struct kasan_alloc_meta
+      mm/kasan, slub: don't disable interrupts when object leaves quarantine
+      mm/kasan: get rid of ->state in struct kasan_alloc_meta
+      kasan: improve double-free reports
+
+Andy Lutomirski (1):
+      x86/asm/32: Make sync_core() handle missing CPUID on all 32-bit kernels
+
+Ard Biesheuvel (1):
+      UPSTREAM: arm64: kernel: force ET_DYN ELF type for CONFIG_RELOCATABLE=y
+
+Ben Hutchings (4):
+      x86/microcode/intel: Fix BDW late-loading revision check
+      vsyscall: Fix permissions for emulate mode with KAISER/PTI
+      ipv6: Fix getsockopt() for sockets with default IPV6_AUTOFLOWLABEL
+      nfsd: auth: Fix gid sorting when rootsquash enabled
+
+Craig Gallek (1):
+      tcp: __tcp_hdrlen() helper
+
+Dan Streetman (1):
+      net: tcp: close sock if net namespace is exiting
+
+Daniel Bristot de Oliveira (1):
+      sched/deadline: Use the revised wakeup rule for suspending constrained dl tasks
+
+Daniel Micay (28):
+      disable ptrace_scope by default
+      enable protected_{symlinks,hardlinks} by default
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_RANDOM
+      flash-{oos,custom}_defconfig: Enable SLAB_FREELIST_HARDENED
+      flash-{oos,custom}_defconfig: Disable SLAB_MERGE_DEFAULT
+      add a SLAB_HARDENED configuration option
+      add missing cache_from_obj !PageSlab check
+      real slab_equal_or_root check for !MEMCG_KMEM
+      bug on kmem_cache_free with the wrong cache
+      always perform cache_from_obj consistency checks
+      bug on !PageSlab && !PageCompound in ksize
+      UPSTREAM: mm/mmap.c: mark protection_map as __ro_after_init
+      UPSTREAM: mark most percpu globals as __ro_after_init
+      randomize lower bits of the argument block
+      add kmalloc/krealloc alloc_size attributes
+      add vmalloc alloc_size attributes
+      add percpu alloc_size attributes
+      add alloc_pages_exact alloc_size attributes
+      BACKPORT: include/linux/string.h: add the option of fortified string.h functions
+      replace incorrect strscpy use in FORTIFY_SOURCE
+      flash-{oos,custom}_defconfig: Enable FORTIFY_SOURCE
+      add simpler page sanitization
+      add support for verifying page sanitization
+      slub: add basic full slab sanitization
+      slub: add support for verifying slab sanitization
+      slub: add multi-purpose random canaries
+      arm64: determine stack entropy based on mmap entropy
+      Revert "mm: revert x86_64 and arm64 ELF_ET_DYN_BASE base changes"
+
+Daniel Rosenberg (1):
+      ANDROID: xattr: Pass EOPNOTSUPP to permission2
+
+Dave Hansen (1):
+      x86/cpu/intel: Introduce macros for Intel family numbers
+
+David Rientjes (1):
+      mm, mempolicy: task->mempolicy must be NULL before dropping final reference
+
+David Woodhouse (1):
+      x86/retpoline: Fill RSB on context switch for affected CPUs
+
+Dmitry Safonov (1):
+      mm: slab: free kmem_cache_node after destroy sysfs file
+
+Doug Berger (1):
+      cma: fix calculation of aligned offset
+
+Eric Biggers (1):
+      PM / sleep: declare __tracedata symbols as char[] rather than char
+
+Eric Dumazet (3):
+      ipv6: ip6_make_skb() needs to clear cork.base.dst
+      net: qdisc_pkt_len_init() should be more robust
+      flow_dissector: properly cap thoff field
+
+Felix Fietkau (1):
+      net: igmp: fix source address check for IGMPv3 reports
+
+Florian Westphal (2):
+      netfilter: x_tables: speed up jump target validation
+      netfilter: restart search if moved to other chain
+
+Francois Romieu (1):
+      r8169: fix memory corruption on retrieval of hardware statistics.
+
+Geert Uytterhoeven (1):
+      slub: drop bogus inline for fixup_red_left()
+
+Geliang Tang (2):
+      mm/slab.c use list_first_entry_or_null()
+      mm/slab.c: add a helper function get_first_slab
+
+Greg KH (1):
+      eventpoll.h: add missing epoll event masks
+
+Greg Kroah-Hartman (2):
+      Revert "module: Add retpoline tag to VERMAGIC"
+      Linux 4.4.114-rc1
+
+Guenter Roeck (1):
+      FIXUP: CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Guillaume Nault (1):
+      pppoe: take ->needed_headroom of lower device into account on xmit
+
+Hongxu Jia (1):
+      netfilter: arp_tables: fix invoking 32bit "iptable -P INPUT ACCEPT" failed in 64bit kernel
+
+Jan Kara (2):
+      ext2: Don't clear SGID when inheriting ACLs
+      reiserfs: Don't clear SGID when inheriting ACLs
+
+Janakarajan Natarajan (1):
+      Prevent timer value 0 for MWAITX
+
+Jeff Mahoney (2):
+      reiserfs: fix race in prealloc discard
+      reiserfs: don't preallocate blocks for extended attributes
+
+Jesper Dangaard Brouer (1):
+      mm/slab: move SLUB alloc hooks to common mm/slab.h
+
+Jia Zhang (1):
+      x86/microcode/intel: Extend BDW late-loading further with LLC size check
+
+Jim Westfall (2):
+      net: Allow neigh contructor functions ability to modify the primary_key
+      ipv4: Make neigh lookup keys for loopback/point-to-point devices be INADDR_ANY
+
+Jiri Slaby (2):
+      ipc: msg, make msgrcv work with LONG_MIN
+      fs/fcntl: f_setown, avoid undefined behaviour
+
+Jisheng Zhang (1):
+      BACKPORT: arm64: apply __ro_after_init to some objects
+
+Johannes Thumshirn (1):
+      scsi: libiscsi: fix shifting of DID_REQUEUE host byte
+
+John Sperbeck (1):
+      UPSTREAM: mm/slab.c: fix SLAB freelist randomization duplicate entries
+
+Jonathan Dieter (2):
+      usbip: Fix implicit fallthrough warning
+      usbip: Fix potential format overflow in userspace tools
+
+Joonsoo Kim (18):
+      mm/slab: remove the checks for slab implementation bug
+      mm/slab: fix stale code comment
+      mm/slab: remove useless structure define
+      mm/slab: activate debug_pagealloc in SLAB when it is actually enabled
+      mm/slab: use more appropriate condition check for debug_pagealloc
+      mm/slab: clean up DEBUG_PAGEALLOC processing code
+      mm/slab: alternative implementation for DEBUG_SLAB_LEAK
+      mm/slab: remove object status buffer for DEBUG_SLAB_LEAK
+      mm/slab: align cache size first before determination of OFF_SLAB candidate
+      mm/slab: factor out debugging initialization in cache_init_objs()
+      mm/slab: do not change cache size if debug pagealloc isn't possible
+      mm/slab: put the freelist at the end of slab page
+      mm/slab: clean up cache type determination
+      mm/slab: make criteria for off slab determination robust and simple
+      kasan/quarantine: fix bugs on qlist_move_cache()
+      mm/slab: factor out slab list fixup code
+      mm/slab: introduce new slab management type, OBJFREELIST_SLAB
+      UPSTREAM: mm/slub: query dynamic DEBUG_PAGEALLOC setting
+
+Kees Cook (4):
+      UPSTREAM: mm: SLAB hardened usercopy support
+      UPSTREAM: mm: add SLUB free list pointer obfuscation
+      BACKPORT: mm: allow slab_nomerge to be set at build time
+      BACKPORT: arm64, vdso: Define vdso_{start,end} as array
+
+Kevin Cernekee (2):
+      netfilter: nfnetlink_cthelper: Add missing permission checks
+      netfilter: xt_osf: Add missing permission checks
+
+Liping Zhang (2):
+      netfilter: nf_ct_expect: remove the redundant slash when policy name is empty
+      netfilter: nfnetlink_queue: reject verdict request from different portid
+
+Marc Kleine-Budde (2):
+      can: af_can: can_rcv(): replace WARN_ONCE by pr_warn_once
+      can: af_can: canfd_rcv(): replace WARN_ONCE by pr_warn_once
+
+Michal Hocko (2):
+      mm/mmap.c: do not blow on PROT_NONE MAP_FIXED holes in the stack
+      hwpoison, memcg: forcibly uncharge LRU pages
+
+Mike Maloney (1):
+      ipv6: fix udpv6 sendmsg crash caused by too small MTU
+
+Minghuan Lian (1):
+      PCI: layerscape: Fix MSG TLP drop setting
+
+Nathan Chancellor (10):
+      Revert "mm: SLAB hardened usercopy support"
+      lib/stackdepot.c: Revert for a clean fast forward from Google
+      staging: qcacld-3.0: Fix yet another config option...
+      flash-{oos,custom}_defconfig: Make qcacld-3.0 values match the out of tree's
+      Makefile: Enable -fsanitize=local-init if available
+      Makefile: Add SCRIPT_OPT_FLAGS to allow passing of flags from a script
+      Merge branch 'oneplus/QC8998_O_8.0' into 8.x-unified
+      arm64: dts: Apply ea9f0d7989f6 for custom ROMs
+      msm: mdss: Fix potential buffer overflow
+      Merge 4.4.114-rc1 into 8.x-unified
+
+Neil Horman (1):
+      vmxnet3: repair memory leak
+
+Nick Desaulniers (1):
+      UPSTREAM: arm64: prevent regressions in compressed kernel image size when upgrading to binutils 2.27
+
+Pablo Neira Ayuso (1):
+      netfilter: fix IS_ERR_VALUE usage
+
+Paolo Abeni (1):
+      netfilter: nf_dup_ipv6: set again FLOWI_FLAG_KNOWN_NH at flowi6_flags
+
+Park Ju Hyung (2):
+      qcacld: fix another inconsistency between userspace and kernel options
+      flash-{oos,custom}_defconfig: Align qcacld-3.0 options with Pixel 2
+
+Pau Espin Pedrol (1):
+      netfilter: use fwmark_reflect in nf_send_reset
+
+Rafael J. Wysocki (2):
+      ACPI / processor: Avoid reserving IO regions too early
+      ACPI / scan: Prefer devices without _HID/_CID for _ADR matching
+
+Rik van Riel (3):
+      BACKPORT: random,stackprotect: introduce get_random_canary function
+      UPSTREAM: arm64: ascii armor the arm64 boot init stack canary
+      UPSTREAM: arm64/mmap: properly account for stack randomization in mmap_base
+
+Rui Wang (1):
+      x86/ioapic: Fix incorrect pointers in ioapic_setup_resources()
+
+Sean Rees (1):
+      UPSTREAM: mm/slub.c: fix random_seq offset destruction
+
+Seunghun Han (1):
+      ACPICA: Namespace: fix operand cache leak
+
+Shuah Khan (5):
+      kasan: change memory hot-add error messages to info messages
+      usbip: prevent vhci_hcd driver from leaking a socket pointer address
+      usbip: fix stub_rx: get_pipe() to validate endpoint number
+      usbip: fix stub_rx: harden CMD_SUBMIT path to handle malicious input
+      usbip: prevent leaking socket pointer address in messages
+
+Sudeep Holla (2):
+      drivers: base: cacheinfo: fix x86 with CONFIG_OF enabled
+      drivers: base: cacheinfo: fix boot error message when acpi is enabled
+
+Thomas Garnier (3):
+      mm: SLAB freelist randomization
+      mm: SLUB freelist randomization
+      mm: reorganize SLAB freelist randomization
+
+Thomas Gleixner (2):
+      timers: Plug locking race vs. timer migration
+      hrtimer: Reset hrtimer cpu base proper on CPU hotplug
+
+Thomas Meyer (1):
+      um: link vmlinux with -no-pie
+
+Ulrich Weber (1):
+      netfilter: nf_conntrack_sip: extend request line validation
+
+Vegard Nossum (1):
+      time: Avoid undefined behaviour in ktime_add_safe()
+
+Vlastimil Babka (2):
+      fs/select: add vmalloc fallback for select(2)
+      mm, page_alloc: fix potential false positive in __zone_watermark_ok
+
+Xin Long (2):
+      sctp: do not allow the v4 socket to bind a v4mapped v6 address
+      sctp: return error if the asoc has been peeled off in sctp_wait_for_sndbuf
+
+Yang Shi (1):
+      PCI: layerscape: Add "fsl,ls2085a-pcie" compatible ID
+
+Yuiko Oshino (1):
+      lan78xx: Fix failure in USB Full Speed
+
+davidliu (1):
+      Synchronize codes for OnePlus5 OPEN BETA 5 and OnePlus5T OPEN BETA 3
+
+siankatabg (1):
+      Makefile: Disable unused-variable warnings for GCC
+
+yangbo lu (1):
+      mmc: sdhci-of-esdhc: add/remove some quirks according to vendor version
+
+zhong jiang (1):
+      mm: disable CONFIG_MEMORY_HOTPLUG when KASAN is enabled
+
+ Documentation/kasan.txt                            |    5 +-
+ Documentation/kernel-parameters.txt                |   10 +-
+ MAINTAINERS                                        |   14 +
+ Makefile                                           |    7 +-
+ arch/Kconfig                                       |    6 +
+ arch/arm/boot/dts/qcom/Makefile                    |    2 +
+ .../dts/qcom/dumpling-Second_Resource-custom.dtsi  | 1114 ++++++++++++++++++++
+ .../boot/dts/qcom/dumpling-Second_Resource.dtsi    | 1114 ++++++++++++++++++++
+ .../qcom/dumpling-v2.1-Second_Resource-custom.dts  |   26 +
+ .../dts/qcom/dumpling-v2.1-Second_Resource.dts     |   26 +
+ arch/arm64/Kconfig                                 |    1 +
+ arch/arm64/Makefile                                |   13 +-
+ arch/arm64/configs/flash-custom_defconfig          |   11 +-
+ arch/arm64/configs/flash-oos_defconfig             |   11 +-
+ arch/arm64/include/asm/elf.h                       |   10 +-
+ arch/arm64/include/asm/stackprotector.h            |    1 +
+ arch/arm64/include/asm/string.h                    |    5 +
+ arch/arm64/kernel/cpu_ops.c                        |    3 +-
+ arch/arm64/kernel/kaslr.c                          |    3 +-
+ arch/arm64/kernel/vdso.c                           |   40 +-
+ arch/arm64/mm/init.c                               |    5 +-
+ arch/arm64/mm/mmap.c                               |    7 +-
+ arch/arm64/mm/mmu.c                                |    3 +-
+ arch/powerpc/Kconfig                               |    1 +
+ arch/um/Makefile                                   |    2 +-
+ arch/x86/Kconfig                                   |    1 +
+ arch/x86/boot/compressed/misc.c                    |    5 +
+ arch/x86/entry/vsyscall/vsyscall_64.c              |    7 +-
+ arch/x86/include/asm/cpufeature.h                  |    1 +
+ arch/x86/include/asm/elf.h                         |    4 +-
+ arch/x86/include/asm/intel-family.h                |   68 ++
+ arch/x86/include/asm/processor.h                   |    2 +-
+ arch/x86/include/asm/string_32.h                   |    9 +
+ arch/x86/include/asm/string_64.h                   |    7 +
+ arch/x86/include/asm/switch_to.h                   |   38 +
+ arch/x86/include/asm/vsyscall.h                    |    1 +
+ arch/x86/kernel/Makefile                           |    7 +-
+ arch/x86/kernel/apic/io_apic.c                     |    2 +-
+ arch/x86/kernel/cpu/bugs.c                         |   36 +
+ arch/x86/kernel/cpu/intel_cacheinfo.c              |    2 +
+ arch/x86/kernel/cpu/microcode/intel.c              |   21 +-
+ arch/x86/lib/delay.c                               |    7 +
+ arch/x86/lib/memcpy_32.c                           |    2 +-
+ arch/x86/mm/kaiser.c                               |    2 +-
+ drivers/acpi/acpi_processor.c                      |    9 -
+ drivers/acpi/acpica/nsutils.c                      |   23 +-
+ drivers/acpi/glue.c                                |   12 +-
+ drivers/acpi/processor_throttling.c                |    9 +
+ drivers/base/cacheinfo.c                           |   15 +-
+ drivers/base/power/trace.c                         |    4 +-
+ drivers/input/mouse/trackpoint.c                   |    3 +
+ drivers/media/v4l2-core/v4l2-ctrls.c               |    1 +
+ drivers/mmc/host/sdhci-of-esdhc.c                  |   10 +
+ drivers/net/ethernet/realtek/r8169.c               |    9 +-
+ drivers/net/ppp/pppoe.c                            |   11 +-
+ drivers/net/usb/lan78xx.c                          |    1 +
+ drivers/net/vmxnet3/vmxnet3_drv.c                  |    2 +-
+ drivers/pci/host/pci-layerscape.c                  |   22 +-
+ drivers/power/supply/qcom/qpnp-smb2.c              |    4 -
+ drivers/scsi/libiscsi.c                            |    2 +-
+ drivers/soc/qcom/project_info.c                    |    4 +
+ drivers/staging/qcacld-3.0/Kconfig                 |    6 +-
+ drivers/usb/usbip/stub_dev.c                       |    3 +-
+ drivers/usb/usbip/stub_rx.c                        |   46 +-
+ drivers/usb/usbip/usbip_common.c                   |   15 +-
+ drivers/usb/usbip/usbip_common.h                   |    1 +
+ drivers/usb/usbip/usbip_event.c                    |    5 +-
+ drivers/usb/usbip/vhci_hcd.c                       |   90 +-
+ drivers/usb/usbip/vhci_rx.c                        |   30 +-
+ drivers/usb/usbip/vhci_sysfs.c                     |   44 +-
+ drivers/usb/usbip/vhci_tx.c                        |   14 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |    2 +-
+ fs/exec.c                                          |    3 +
+ fs/ext2/acl.c                                      |   36 +-
+ fs/fcntl.c                                         |    4 +
+ fs/namei.c                                         |    4 +-
+ fs/nfsd/auth.c                                     |    5 +-
+ fs/reiserfs/bitmap.c                               |   14 +-
+ fs/reiserfs/xattr_acl.c                            |   12 +-
+ fs/sdcardfs/inode.c                                |    2 +
+ fs/select.c                                        |   14 +-
+ fs/xattr.c                                         |    2 +-
+ include/linux/cacheinfo.h                          |    1 +
+ include/linux/gfp.h                                |    4 +-
+ include/linux/highmem.h                            |    7 +
+ include/linux/kasan-checks.h                       |   12 +
+ include/linux/kasan.h                              |   56 +-
+ include/linux/ktime.h                              |    7 +
+ include/linux/mempolicy.h                          |    4 +
+ include/linux/mm.h                                 |   12 +-
+ include/linux/netfilter/x_tables.h                 |   10 +-
+ include/linux/percpu.h                             |    6 +-
+ include/linux/random.h                             |   23 +
+ include/linux/sched.h                              |    1 +
+ include/linux/slab.h                               |   22 +-
+ include/linux/slab_def.h                           |   22 +
+ include/linux/slub_def.h                           |   31 +
+ include/linux/string.h                             |  201 ++++
+ include/linux/tcp.h                                |    7 +-
+ include/linux/vermagic.h                           |    8 +-
+ include/linux/vmalloc.h                            |   20 +-
+ include/net/arp.h                                  |    3 +
+ include/net/ipv6.h                                 |    1 +
+ include/net/net_namespace.h                        |   10 +
+ include/uapi/linux/eventpoll.h                     |   13 +
+ init/Kconfig                                       |   75 ++
+ ipc/msg.c                                          |    5 +-
+ kernel/exit.c                                      |    7 +-
+ kernel/sched/core.c                                |    2 +
+ kernel/sched/deadline.c                            |   98 +-
+ kernel/time/hrtimer.c                              |    5 +-
+ lib/Kconfig.kasan                                  |    5 +-
+ lib/Makefile                                       |    1 +
+ lib/stackdepot.c                                   |   13 +-
+ lib/string.c                                       |    7 +
+ mm/Kconfig                                         |    1 +
+ mm/Makefile                                        |    1 +
+ mm/cma.c                                           |   15 +-
+ mm/kasan/Makefile                                  |    2 +-
+ mm/kasan/kasan.c                                   |  283 ++++-
+ mm/kasan/kasan.h                                   |   45 +
+ mm/kasan/quarantine.c                              |  288 +++++
+ mm/kasan/report.c                                  |   96 +-
+ mm/memcontrol.c                                    |    2 +-
+ mm/memory-failure.c                                |    7 +
+ mm/mempolicy.c                                     |   17 +
+ mm/mempool.c                                       |   24 +-
+ mm/mmap.c                                          |    8 +-
+ mm/page_alloc.c                                    |   21 +-
+ mm/percpu.c                                        |   36 +-
+ mm/slab.c                                          |  839 +++++++++------
+ mm/slab.h                                          |   95 +-
+ mm/slab_common.c                                   |   61 +-
+ mm/slob.c                                          |    4 +
+ mm/slub.c                                          |  474 +++++++--
+ net/can/af_can.c                                   |   22 +-
+ net/core/dev.c                                     |   19 +-
+ net/core/flow_dissector.c                          |    3 +-
+ net/core/neighbour.c                               |    4 +-
+ net/dccp/ccids/ccid2.c                             |    3 +
+ net/ipv4/arp.c                                     |    7 +-
+ net/ipv4/igmp.c                                    |    2 +-
+ net/ipv4/netfilter/arp_tables.c                    |   57 +-
+ net/ipv4/netfilter/ip_tables.c                     |   51 +-
+ net/ipv4/netfilter/nf_reject_ipv4.c                |    2 +
+ net/ipv4/tcp.c                                     |    3 +
+ net/ipv4/tcp_timer.c                               |   15 +
+ net/ipv6/ip6_output.c                              |    9 +-
+ net/ipv6/ipv6_sockglue.c                           |    2 +-
+ net/ipv6/netfilter/ip6_tables.c                    |   51 +-
+ net/ipv6/netfilter/nf_dup_ipv6.c                   |    1 +
+ net/ipv6/netfilter/nf_reject_ipv6.c                |    3 +
+ net/netfilter/nf_conntrack_core.c                  |    7 +
+ net/netfilter/nf_conntrack_expect.c                |    2 +-
+ net/netfilter/nf_conntrack_sip.c                   |    5 +-
+ net/netfilter/nfnetlink_cthelper.c                 |   10 +
+ net/netfilter/nfnetlink_queue.c                    |    6 +-
+ net/netfilter/x_tables.c                           |   50 +
+ net/netfilter/xt_osf.c                             |    7 +
+ net/sctp/socket.c                                  |   30 +-
+ security/Kconfig                                   |   23 +
+ security/yama/yama_lsm.c                           |    2 +-
+ tools/usb/usbip/libsrc/usbip_common.c              |    9 +-
+ tools/usb/usbip/libsrc/usbip_host_driver.c         |   27 +-
+ tools/usb/usbip/libsrc/vhci_driver.c               |    8 +-
+ tools/usb/usbip/src/usbip.c                        |    2 +
+ 166 files changed, 5606 insertions(+), 1009 deletions(-)
+ mode change 100755 => 100644 arch/arm/boot/dts/qcom/Makefile
+ create mode 100644 arch/arm/boot/dts/qcom/dumpling-Second_Resource-custom.dtsi
+ create mode 100644 arch/arm/boot/dts/qcom/dumpling-Second_Resource.dtsi
+ create mode 100644 arch/arm/boot/dts/qcom/dumpling-v2.1-Second_Resource-custom.dts
+ create mode 100644 arch/arm/boot/dts/qcom/dumpling-v2.1-Second_Resource.dts
+ create mode 100644 arch/x86/include/asm/intel-family.h
+ mode change 100755 => 100644 drivers/power/supply/qcom/qpnp-smb2.c
+ mode change 100755 => 100644 drivers/soc/qcom/project_info.c
+ create mode 100644 include/linux/kasan-checks.h
+ create mode 100644 mm/kasan/quarantine.c
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Chris Renshaw (1):
+      Merge pull request #16 from Tomoms/master
+
+Nathan Chancellor (2):
+      anykernel.sh: Print kernel version if present
+      Merge branch 'master' into op5-flash-8.x
+
+Tommaso Fonda (1):
+      ak2-core.sh: fix repacking of Sony ELF kernels
+
+ anykernel.sh      | 5 +++++
+ tools/ak2-core.sh | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
