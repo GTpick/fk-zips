@@ -1,0 +1,389 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.14
+
+Aaron Ma (1):
+      Input: trackpoint - force 3 buttons if 0 button is reported
+
+Alexey Kodanev (1):
+      dccp: don't restart ccid2_hc_tx_rto_expire() if sk in closed state
+
+Andrew Goodbody (1):
+      usb: usbip: Fix possible deadlocks reported by lockdep
+
+Andrew Pinski (1):
+      BACKPORT: arm64: ensure the kernel is compiled for LP64
+
+Andy Lutomirski (1):
+      x86/asm/32: Make sync_core() handle missing CPUID on all 32-bit kernels
+
+Ard Biesheuvel (1):
+      UPSTREAM: arm64: kernel: force ET_DYN ELF type for CONFIG_RELOCATABLE=y
+
+Ben Hutchings (4):
+      x86/microcode/intel: Fix BDW late-loading revision check
+      vsyscall: Fix permissions for emulate mode with KAISER/PTI
+      ipv6: Fix getsockopt() for sockets with default IPV6_AUTOFLOWLABEL
+      nfsd: auth: Fix gid sorting when rootsquash enabled
+
+Craig Gallek (1):
+      tcp: __tcp_hdrlen() helper
+
+Dan Streetman (1):
+      net: tcp: close sock if net namespace is exiting
+
+Daniel Bristot de Oliveira (1):
+      sched/deadline: Use the revised wakeup rule for suspending constrained dl tasks
+
+Daniel Rosenberg (1):
+      ANDROID: xattr: Pass EOPNOTSUPP to permission2
+
+Dave Hansen (1):
+      x86/cpu/intel: Introduce macros for Intel family numbers
+
+David Woodhouse (1):
+      x86/retpoline: Fill RSB on context switch for affected CPUs
+
+Doug Berger (1):
+      cma: fix calculation of aligned offset
+
+Eric Biggers (1):
+      PM / sleep: declare __tracedata symbols as char[] rather than char
+
+Eric Dumazet (3):
+      ipv6: ip6_make_skb() needs to clear cork.base.dst
+      net: qdisc_pkt_len_init() should be more robust
+      flow_dissector: properly cap thoff field
+
+Felix Fietkau (1):
+      net: igmp: fix source address check for IGMPv3 reports
+
+Florian Westphal (2):
+      netfilter: x_tables: speed up jump target validation
+      netfilter: restart search if moved to other chain
+
+Francois Romieu (1):
+      r8169: fix memory corruption on retrieval of hardware statistics.
+
+Greg KH (1):
+      eventpoll.h: add missing epoll event masks
+
+Greg Kroah-Hartman (2):
+      Revert "module: Add retpoline tag to VERMAGIC"
+      Linux 4.4.114-rc1
+
+Guenter Roeck (1):
+      FIXUP: CHROMIUM: [media] v4l2-core: Use kvmalloc() for potentially big allocations
+
+Guillaume Nault (1):
+      pppoe: take ->needed_headroom of lower device into account on xmit
+
+Haibin Liu (1):
+      msm: sensor: actuator: add null pointer check for i2c array
+
+Hongxu Jia (1):
+      netfilter: arp_tables: fix invoking 32bit "iptable -P INPUT ACCEPT" failed in 64bit kernel
+
+Jan Kara (7):
+      block: Unhash block device inodes on gendisk destruction
+      block: Use pointer to backing_dev_info from request_queue
+      block: Dynamically allocate and refcount backing_dev_info
+      block: Make blk_get_backing_dev_info() safe without open bdev
+      block: Initialize bd_bdi on inode initialization
+      ext2: Don't clear SGID when inheriting ACLs
+      reiserfs: Don't clear SGID when inheriting ACLs
+
+Janakarajan Natarajan (1):
+      Prevent timer value 0 for MWAITX
+
+Jeff Mahoney (2):
+      reiserfs: fix race in prealloc discard
+      reiserfs: don't preallocate blocks for extended attributes
+
+Jia Zhang (1):
+      x86/microcode/intel: Extend BDW late-loading further with LLC size check
+
+Jim Westfall (2):
+      net: Allow neigh contructor functions ability to modify the primary_key
+      ipv4: Make neigh lookup keys for loopback/point-to-point devices be INADDR_ANY
+
+Jiri Slaby (2):
+      ipc: msg, make msgrcv work with LONG_MIN
+      fs/fcntl: f_setown, avoid undefined behaviour
+
+Johannes Thumshirn (1):
+      scsi: libiscsi: fix shifting of DID_REQUEUE host byte
+
+Jonathan Dieter (2):
+      usbip: Fix implicit fallthrough warning
+      usbip: Fix potential format overflow in userspace tools
+
+Ke Wang (1):
+      ANDROID: sched: EAS: check energy_aware() before calling select_energy_cpu_brute() in up-migrate path
+
+Kevin Cernekee (2):
+      netfilter: nfnetlink_cthelper: Add missing permission checks
+      netfilter: xt_osf: Add missing permission checks
+
+Lingutla Chandrasekhar (1):
+      sched: core: Exclude isolated cpus in sched_getaffinity cpumask
+
+Liping Zhang (2):
+      netfilter: nf_ct_expect: remove the redundant slash when policy name is empty
+      netfilter: nfnetlink_queue: reject verdict request from different portid
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+
+Marc Kleine-Budde (2):
+      can: af_can: can_rcv(): replace WARN_ONCE by pr_warn_once
+      can: af_can: canfd_rcv(): replace WARN_ONCE by pr_warn_once
+
+Michal Hocko (2):
+      mm/mmap.c: do not blow on PROT_NONE MAP_FIXED holes in the stack
+      hwpoison, memcg: forcibly uncharge LRU pages
+
+Mike Maloney (1):
+      ipv6: fix udpv6 sendmsg crash caused by too small MTU
+
+Minghuan Lian (1):
+      PCI: layerscape: Fix MSG TLP drop setting
+
+Mukesh Kumar Savaliya (2):
+      serial: msm_serial_hs: Keep Rx and Tx path clean while going inactive
+      serial: msm_serial_hs: Allow system suspend when no client is active
+
+Nathan Chancellor (4):
+      Makefile: Enable -fsanitize=local-init if available
+      Makefile: Add SCRIPT_OPT_FLAGS to allow passing of flags from a script
+      arm64: Optimize for CPU
+      Merge 4.4.114-rc1 into queue
+
+Neil Horman (1):
+      vmxnet3: repair memory leak
+
+Nick Desaulniers (1):
+      UPSTREAM: arm64: prevent regressions in compressed kernel image size when upgrading to binutils 2.27
+
+Pablo Neira Ayuso (1):
+      netfilter: fix IS_ERR_VALUE usage
+
+Paolo Abeni (1):
+      netfilter: nf_dup_ipv6: set again FLOWI_FLAG_KNOWN_NH at flowi6_flags
+
+Pau Espin Pedrol (1):
+      netfilter: use fwmark_reflect in nf_send_reset
+
+Rafael J. Wysocki (2):
+      ACPI / processor: Avoid reserving IO regions too early
+      ACPI / scan: Prefer devices without _HID/_CID for _ADR matching
+
+Rui Wang (1):
+      x86/ioapic: Fix incorrect pointers in ioapic_setup_resources()
+
+Sachin Bhayare (1):
+      msm: mdss: release retire fence during commit failure
+
+Seunghun Han (1):
+      ACPICA: Namespace: fix operand cache leak
+
+Shuah Khan (4):
+      usbip: prevent vhci_hcd driver from leaking a socket pointer address
+      usbip: fix stub_rx: get_pipe() to validate endpoint number
+      usbip: fix stub_rx: harden CMD_SUBMIT path to handle malicious input
+      usbip: prevent leaking socket pointer address in messages
+
+Sudeep Holla (2):
+      drivers: base: cacheinfo: fix x86 with CONFIG_OF enabled
+      drivers: base: cacheinfo: fix boot error message when acpi is enabled
+
+Tharun Kumar Merugu (1):
+      msm: adsprpc: Fix race conditions on same buffer
+
+Thomas Gleixner (2):
+      timers: Plug locking race vs. timer migration
+      hrtimer: Reset hrtimer cpu base proper on CPU hotplug
+
+Thomas Meyer (1):
+      um: link vmlinux with -no-pie
+
+Ulrich Weber (1):
+      netfilter: nf_conntrack_sip: extend request line validation
+
+Vegard Nossum (1):
+      time: Avoid undefined behaviour in ktime_add_safe()
+
+Vlastimil Babka (2):
+      fs/select: add vmalloc fallback for select(2)
+      mm, page_alloc: fix potential false positive in __zone_watermark_ok
+
+Xin Long (2):
+      sctp: do not allow the v4 socket to bind a v4mapped v6 address
+      sctp: return error if the asoc has been peeled off in sctp_wait_for_sndbuf
+
+Yang Shi (1):
+      PCI: layerscape: Add "fsl,ls2085a-pcie" compatible ID
+
+Yuiko Oshino (1):
+      lan78xx: Fix failure in USB Full Speed
+
+yangbo lu (1):
+      mmc: sdhci-of-esdhc: add/remove some quirks according to vendor version
+
+ Makefile                                           |   6 +-
+ arch/arm64/Makefile                                |  15 +-
+ arch/um/Makefile                                   |   2 +-
+ arch/x86/entry/vsyscall/vsyscall_64.c              |   7 +-
+ arch/x86/include/asm/cpufeature.h                  |   1 +
+ arch/x86/include/asm/intel-family.h                |  68 +++++++++
+ arch/x86/include/asm/processor.h                   |   2 +-
+ arch/x86/include/asm/switch_to.h                   |  38 +++++
+ arch/x86/include/asm/vsyscall.h                    |   1 +
+ arch/x86/kernel/apic/io_apic.c                     |   2 +-
+ arch/x86/kernel/cpu/bugs.c                         |  36 +++++
+ arch/x86/kernel/cpu/intel_cacheinfo.c              |   2 +
+ arch/x86/kernel/cpu/microcode/intel.c              |  21 ++-
+ arch/x86/lib/delay.c                               |   7 +
+ arch/x86/mm/kaiser.c                               |   2 +-
+ block/blk-cgroup.c                                 |   6 +-
+ block/blk-core.c                                   |  37 +++--
+ block/blk-integrity.c                              |   4 +-
+ block/blk-sysfs.c                                  |   6 +-
+ block/genhd.c                                      |   6 +-
+ drivers/acpi/acpi_processor.c                      |   9 --
+ drivers/acpi/acpica/nsutils.c                      |  23 ++-
+ drivers/acpi/glue.c                                |  12 +-
+ drivers/acpi/processor_throttling.c                |   9 ++
+ drivers/base/cacheinfo.c                           |  15 +-
+ drivers/base/power/trace.c                         |   4 +-
+ drivers/block/aoe/aoeblk.c                         |   4 +-
+ drivers/block/drbd/drbd_main.c                     |   6 +-
+ drivers/block/drbd/drbd_nl.c                       |   8 +-
+ drivers/block/drbd/drbd_proc.c                     |   2 +-
+ drivers/block/drbd/drbd_req.c                      |   2 +-
+ drivers/block/pktcdvd.c                            |   4 +-
+ drivers/block/rbd.c                                |   2 +-
+ drivers/char/adsprpc.c                             |  15 +-
+ drivers/cpuidle/lpm-levels-of.c                    |  12 +-
+ drivers/input/mouse/trackpoint.c                   |   3 +
+ drivers/md/bcache/request.c                        |  10 +-
+ drivers/md/bcache/super.c                          |   8 +-
+ drivers/md/dm-cache-target.c                       |   2 +-
+ drivers/md/dm-era-target.c                         |   2 +-
+ drivers/md/dm-table.c                              |   2 +-
+ drivers/md/dm-thin.c                               |   2 +-
+ drivers/md/dm.c                                    |   6 +-
+ drivers/md/linear.c                                |   2 +-
+ drivers/md/md.c                                    |   6 +-
+ drivers/md/multipath.c                             |   2 +-
+ drivers/md/raid0.c                                 |   6 +-
+ drivers/md/raid1.c                                 |   4 +-
+ drivers/md/raid10.c                                |  10 +-
+ drivers/md/raid5.c                                 |  12 +-
+ .../msm/camera_v2/sensor/actuator/msm_actuator.c   |  22 ++-
+ drivers/media/v4l2-core/v4l2-ctrls.c               |   1 +
+ drivers/mmc/host/sdhci-of-esdhc.c                  |  10 ++
+ drivers/net/ethernet/realtek/r8169.c               |   9 +-
+ drivers/net/ppp/pppoe.c                            |  11 +-
+ drivers/net/usb/lan78xx.c                          |   1 +
+ drivers/net/vmxnet3/vmxnet3_drv.c                  |   2 +-
+ drivers/pci/host/pci-layerscape.c                  |  22 ++-
+ drivers/scsi/libiscsi.c                            |   2 +-
+ drivers/tty/serial/msm_serial_hs.c                 | 161 +++++++++++++++++----
+ drivers/usb/usbip/stub_dev.c                       |   3 +-
+ drivers/usb/usbip/stub_rx.c                        |  46 ++++--
+ drivers/usb/usbip/usbip_common.c                   |  15 +-
+ drivers/usb/usbip/usbip_common.h                   |   1 +
+ drivers/usb/usbip/usbip_event.c                    |   5 +-
+ drivers/usb/usbip/vhci_hcd.c                       |  90 +++++++-----
+ drivers/usb/usbip/vhci_rx.c                        |  30 ++--
+ drivers/usb/usbip/vhci_sysfs.c                     |  44 +++---
+ drivers/usb/usbip/vhci_tx.c                        |  14 +-
+ drivers/video/fbdev/msm/mdp3_ctrl.c                |   1 +
+ drivers/video/fbdev/msm/mdss_fb.c                  |   5 +-
+ drivers/video/fbdev/msm/mdss_fb.h                  |   2 +
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c         |  11 ++
+ fs/block_dev.c                                     |  25 ++++
+ fs/ext2/acl.c                                      |  36 +++--
+ fs/fcntl.c                                         |   4 +
+ fs/gfs2/ops_fstype.c                               |   2 +-
+ fs/nfsd/auth.c                                     |   5 +-
+ fs/nilfs2/super.c                                  |   2 +-
+ fs/reiserfs/bitmap.c                               |  14 +-
+ fs/reiserfs/xattr_acl.c                            |  12 +-
+ fs/sdcardfs/inode.c                                |   2 +
+ fs/select.c                                        |  14 +-
+ fs/super.c                                         |   2 +-
+ fs/xattr.c                                         |   2 +-
+ include/linux/backing-dev-defs.h                   |   2 +
+ include/linux/backing-dev.h                        |  10 +-
+ include/linux/blkdev.h                             |   2 +-
+ include/linux/cacheinfo.h                          |   1 +
+ include/linux/fs.h                                 |   2 +
+ include/linux/ktime.h                              |   7 +
+ include/linux/netfilter/x_tables.h                 |  10 +-
+ include/linux/sched.h                              |   1 +
+ include/linux/tcp.h                                |   7 +-
+ include/linux/vermagic.h                           |   8 +-
+ include/net/arp.h                                  |   3 +
+ include/net/ipv6.h                                 |   1 +
+ include/net/net_namespace.h                        |  10 ++
+ include/uapi/linux/eventpoll.h                     |  13 ++
+ ipc/msg.c                                          |   5 +-
+ kernel/sched/core.c                                |  11 ++
+ kernel/sched/deadline.c                            |  98 +++++++++++--
+ kernel/sched/fair.c                                |   2 +-
+ kernel/time/hrtimer.c                              |   5 +-
+ mm/backing-dev.c                                   |  34 ++++-
+ mm/cma.c                                           |  15 +-
+ mm/memcontrol.c                                    |   2 +-
+ mm/memory-failure.c                                |   7 +
+ mm/mmap.c                                          |   6 +-
+ mm/page-writeback.c                                |   4 +-
+ mm/page_alloc.c                                    |   6 +-
+ net/can/af_can.c                                   |  22 ++-
+ net/core/dev.c                                     |  19 ++-
+ net/core/flow_dissector.c                          |   3 +-
+ net/core/neighbour.c                               |   4 +-
+ net/dccp/ccids/ccid2.c                             |   3 +
+ net/ipv4/arp.c                                     |   7 +-
+ net/ipv4/igmp.c                                    |   2 +-
+ net/ipv4/netfilter/arp_tables.c                    |  57 ++++----
+ net/ipv4/netfilter/ip_tables.c                     |  51 ++++---
+ net/ipv4/netfilter/nf_reject_ipv4.c                |   2 +
+ net/ipv4/tcp.c                                     |   3 +
+ net/ipv4/tcp_timer.c                               |  15 ++
+ net/ipv6/ip6_output.c                              |   9 +-
+ net/ipv6/ipv6_sockglue.c                           |   2 +-
+ net/ipv6/netfilter/ip6_tables.c                    |  51 ++++---
+ net/ipv6/netfilter/nf_dup_ipv6.c                   |   1 +
+ net/ipv6/netfilter/nf_reject_ipv6.c                |   3 +
+ net/netfilter/nf_conntrack_core.c                  |   7 +
+ net/netfilter/nf_conntrack_expect.c                |   2 +-
+ net/netfilter/nf_conntrack_sip.c                   |   5 +-
+ net/netfilter/nfnetlink_cthelper.c                 |  10 ++
+ net/netfilter/nfnetlink_queue.c                    |   6 +-
+ net/netfilter/x_tables.c                           |  50 +++++++
+ net/netfilter/xt_osf.c                             |   7 +
+ net/sctp/socket.c                                  |  30 ++--
+ tools/usb/usbip/libsrc/usbip_common.c              |   9 +-
+ tools/usb/usbip/libsrc/usbip_host_driver.c         |  27 +++-
+ tools/usb/usbip/libsrc/vhci_driver.c               |   8 +-
+ tools/usb/usbip/src/usbip.c                        |   2 +
+ 140 files changed, 1284 insertions(+), 506 deletions(-)
+ create mode 100644 arch/x86/include/asm/intel-family.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Chris Renshaw (1):
+      Merge pull request #16 from Tomoms/master
+
+Nathan Chancellor (2):
+      Merge remote-tracking branch 'upstream/master' into wahoo-flash-8.1.0
+      anykernel.sh: Print kernel version if present
+
+Tommaso Fonda (1):
+      ak2-core.sh: fix repacking of Sony ELF kernels
+
+ anykernel.sh      | 5 +++++
+ tools/ak2-core.sh | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
