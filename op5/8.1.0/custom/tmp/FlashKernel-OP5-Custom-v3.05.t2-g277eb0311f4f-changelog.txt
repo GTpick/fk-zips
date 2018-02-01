@@ -1,0 +1,9 @@
+http://github.com/nathanchance/op5/commits/queue-3.05
+
+Nathan Chancellor (2):
+      flash-{oos,custom}_defconfig: Revert some problematic Wi-Fi config changes
+      flash-{oos,custom}_defconfig: Disable unneeded/unused options
+
+ arch/arm64/configs/flash-custom_defconfig | 13 ++++---------
+ arch/arm64/configs/flash-oos_defconfig    | 13 ++++---------
+ 2 files changed, 8 insertions(+), 18 deletions(-)
