@@ -1,0 +1,7 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Nathan Chancellor (1):
+      flash-custom_defconfig: Build wlan driver into the kernel
+
+ arch/arm64/configs/flash-custom_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
