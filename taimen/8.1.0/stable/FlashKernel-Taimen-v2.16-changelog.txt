@@ -1,0 +1,174 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Aditya Bavanari (1):
+      ASoC: msm: qdsp6v2: Fix dangling pointer access
+
+Adrian Salido (1):
+      Revert "arm64: dts: taimen: add delay after sleep out and post panel on cmd"
+
+Andrew Lehmer (1):
+      Merge branch 'android-msm-wahoo-4.4' into android-msm-wahoo-4.4-security-next
+
+Archana Obannagari (1):
+      msm: kgsl: Fixing an uninitialized variable in _gpuobj_map_useraddr()
+
+Arif Hussain (1):
+      qcacld-3.0: Fix possible buffer overflow in spectral_create_samp_msg
+
+Badhri Jagan Sridharan (1):
+      USB: phy-msm-qusb-v2: Enable autoresume only when device is connected
+
+Benjamin Chan (1):
+      msm: mdss: Add plane_count range check in mdss WFD
+
+Chenbo Feng (1):
+      ANDROID: qtaguid: Fix the UAF probelm with tag_ref_tree
+
+Cheng Gu (1):
+      easelcomm: Avoid retries when sending wrap marker
+
+Daniel Rosenberg (1):
+      ANDROID: sound: rawmidi: Hold lock around realloc
+
+Dennis Cagle (1):
+      msm: camera: Return -NOTTY on invalid ioctl command.
+
+Douglas Anderson (1):
+      CHROMIUM: kbuild: add forward declaration of default target to Makefile.headersinst
+
+Eric Dumazet (1):
+      UPSTREAM: sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
+
+Evgenii Stepanov (1):
+      ANDROID: Revert "arm64: move ELF_ET_DYN_BASE to 4GB / 4MB"
+
+Joe Maples (3):
+      linux: range: MAX_RESOURCE is always bigger than a u64
+      linux: kdev: Another tautological comparison
+      kernel/fs/mm/block/drivers/scripts/net: More tautological comparison fixes
+
+Krishna Chaitanya Devarakonda (1):
+      msm: mdss: Fix potential race condition in rotator
+
+Lynus Vaz (1):
+      msm: kgsl: Use a lock when updating the sparse bindings
+
+Mohammed Javid (1):
+      msm:ipa: Fix to kasan use-after-free issue
+
+Nathan Chancellor (2):
+      Merge tag 'android-8.1.0_r0.25' into oreo-mr1
+      Revert "ANDROID: Revert "arm64: move ELF_ET_DYN_BASE to 4GB / 4MB""
+
+Oleg Matcovschi (1):
+      crypto: msm: Fix several race condition issues in crypto drivers
+
+Patrick Tjin (3):
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1' into android-msm-wahoo-4.4-oc-mr1-security-next
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1' into android-msm-wahoo-4.4-oc-mr1-security-next
+      Merge android-msm-wahoo-4.4-oc-mr1 into android-msm-wahoo-4.4-oc-mr1-security-next
+
+Paul Zhang (1):
+      qcacld-3.0: Prevent buffer overflow
+
+Sandeep Puligilla (1):
+      qcacld-3.0: Add sanity check to avoid overflow in WMI event data
+
+Senthil Kumar Rajagopal (1):
+      msm: camera: isp: Add bound check for an array
+
+Shac Ron (1):
+      misc: easelcomm: Fix signed and unsigned comparison
+
+Srinivas Girigowda (3):
+      qcacmn: Fix to propagate key-receiver-sequence-counter to WMI
+      qcacld-3.0: Propagate key sequence counter to SME
+      qcacld-3.0: Fix to propagate key-receiver-sequence-counter to WMA
+
+Steve Pfetsch (1):
+      input: ftm4: reflash firmware when config or cx is corrupt
+
+Sunil Khatri (1):
+      msm: kgsl: Protect the bind object against bad dereference
+
+Takashi Iwai (1):
+      ALSA: seq: Fix use-after-free at creating a port
+
+Trevor Bunker (4):
+      staging: bcm15602: modify voltage levels
+      misc: mnh: pcie: fix compile error for multiple msi config
+      pci: msm: add support for multiple msi interrupts
+      arm64: configs: wahoo: enable MNH_PCIE_MULTIPLE_MSI
+
+Varun Reddy Yeturu (3):
+      qcacld-3.0: Avoid integer overflow in wma_peer_info_event_handler
+      qcacld-3.0: Avoid int overflow in wma_unified_link_radio_stats_event_handler
+      qcacld-3.0: Add sanity check to avoid len overflow issue in WMI event data
+
+Vignesh Viswanathan (5):
+      qcacld-3.0: Avoid integer overflow in wma_rx_aggr_failure_event_handler
+      qcacld-3.0: Remove assert in wma_rx_aggr_failure_event_handler
+      qcacld-3.0: Fix potential buffer overwrite in wma_roam_synch_event_handler
+      qcacld-3.0: Avoid integer overflow in wma_get_ll_stats_ext_buf
+      qcacld-3.0: Remove assert in wma_get_ll_stats_ext_buf
+
+Wei Wang (1):
+      Merge remote-tracking branch 'partner/android-msm-wahoo-4.4-oc-mr1-security-next' into android-msm-wahoo-4.4-oc-mr1
+
+kaiwang (1):
+      msm: camera: sensor:validating the flash initialization parameters
+
+kunleiz (1):
+      rtac: add size check when reading cal data kvaddr buffer
+
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev1.dtsi    |   7 +-
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev2.dtsi    |   7 +-
+ .../dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi     |   7 +-
+ arch/arm64/configs/wahoo_defconfig                 |   2 +
+ block/compat_ioctl.c                               |   2 -
+ block/ioctl.c                                      |   2 -
+ drivers/acpi/osl.c                                 |   5 -
+ drivers/cpuidle/governors/menu.c                   |  14 +-
+ drivers/crypto/msm/qcrypto.c                       |   2 +-
+ drivers/input/touchscreen/stm/ftm4_ts.c            |   6 +-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |   6 +
+ drivers/media/platform/msm/camera_v2/msm.c         |  10 ++
+ drivers/misc/google-easel-comm-dma.c               |   6 +-
+ drivers/misc/google-easel-comm-private.h           |   8 +-
+ drivers/misc/google-easel-comm.c                   |  27 ++--
+ drivers/misc/mnh/mnh-pcie.c                        |  24 ++--
+ drivers/pci/host/pci-msm.c                         |  45 +++---
+ .../staging/easel/regulator/bcm15602-regulator.c   |  36 ++---
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |   7 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |   2 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  10 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ftm.c |   3 +
+ .../qcacld-3.0/core/mac/inc/sir_mac_prot_def.h     |   1 +
+ drivers/staging/qcacld-3.0/core/wma/inc/wma.h      |   1 +
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |  90 +++++++++---
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |   9 +-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  51 +++++--
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    | 154 +++++++++++++++++++--
+ drivers/usb/phy/phy-msm-qusb-v2.c                  |  15 +-
+ drivers/video/fbdev/msm/mdss_mdp_layer.c           |   6 +
+ drivers/video/fbdev/msm/mdss_mdp_wfd.c             |   8 +-
+ fs/compat.c                                        |   7 +-
+ fs/compat_ioctl.c                                  |   2 -
+ fs/ext4/super.c                                    |   3 -
+ fs/pstore/ram.c                                    |   5 -
+ include/linux/kdev_t.h                             |   2 +-
+ include/linux/range.h                              |   3 -
+ include/sound/rawmidi.h                            |   1 +
+ kernel/sched/core.c                                |   3 +-
+ kernel/trace/ipc_logging.c                         |   1 -
+ mm/memblock.c                                      |   2 +-
+ mm/percpu.c                                        |   2 -
+ mm/shmem.c                                         |   3 -
+ net/ipc_router/ipc_router_socket.c                 |   2 +-
+ net/netfilter/xt_qtaguid.c                         |  20 +--
+ scripts/Makefile.headersinst                       |   9 +-
+ scripts/dtc/libfdt/fdt_strerror.c                  |   6 -
+ sound/core/rawmidi.c                               |  44 +++++-
+ sound/soc/msm/qdsp6v2/q6asm.c                      |   3 +-
+ sound/soc/msm/qdsp6v2/rtac.c                       |  32 +++++
+ 50 files changed, 512 insertions(+), 211 deletions(-)
