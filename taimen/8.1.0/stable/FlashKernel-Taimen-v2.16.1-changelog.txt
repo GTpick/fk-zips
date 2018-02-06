@@ -1,0 +1,7 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Nathan Chancellor (1):
+      flash_defconfig: Apply b51a3e99de05246d87d65a31d38f090cd4251222
+
+ arch/arm64/configs/flash_defconfig | 2 ++
+ 1 file changed, 2 insertions(+)
