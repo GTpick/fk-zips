@@ -1,0 +1,22 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Nathan Chancellor (1):
+      HACK: qcacld-3.0: Disable use of g_enable_packet_filter_bitmap
+
+ drivers/staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h | 10 ++++++----
+ drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  7 +++++++
+ 2 files changed, 13 insertions(+), 4 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (1):
+      OP5: anykernel.sh: Remove WCNSS_qcom_cfg.ini for custom ROMs
+
+joshuous (2):
+      OP5: ramdisk: wcnss: Do not set any packet filtering
+      OP5: anykernel.sh: Disable suspicious OnePlus services and logging
+
+ anykernel.sh               | 16 ++++++++++++++++
+ ramdisk/WCNSS_qcom_cfg.ini |  3 ++-
+ 2 files changed, 18 insertions(+), 1 deletion(-)
