@@ -1,0 +1,13 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Nathan Chancellor (2):
+      Revert "qcacld-3.0: Execute sme_stop and mac_stop in mc thread context"
+      arm: dts: Remove partial display updates
+
+ .../qcom/dsi-panel-samsung_s6e3fa5_1080p_cmd.dtsi  |  2 -
+ .../qcom/dsi-panel-samsung_s6e3fc1_cmd-custom.dtsi |  2 -
+ .../dts/qcom/dsi-panel-samsung_s6e3fc1_cmd.dtsi    |  2 -
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  | 11 +++-
+ .../core/mac/src/sys/common/inc/wlan_qct_sys.h     | 77 +++++++++++++++++-----
+ .../core/mac/src/sys/common/src/wlan_qct_sys.c     | 59 +++++++++--------
+ 6 files changed, 102 insertions(+), 51 deletions(-)
