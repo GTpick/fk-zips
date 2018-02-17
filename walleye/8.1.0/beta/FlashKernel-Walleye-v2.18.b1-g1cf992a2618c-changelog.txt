@@ -1,0 +1,59 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.18
+
+Daniel Micay (3):
+      flash_defconfig: Enable SECURITY_YAMA
+      flash_defconfig: Replace SECURITY_SMACK with SECURITY_NETWORK
+      mark qcedev data const
+
+David Dai (1):
+      dev_freq: devfreq_spdm: add null terminator to prevent OOB access
+
+Harsh Shandilya (1):
+      flash_defconfig: Remove CONFIG_TIMER_STATS
+
+Kees Cook (1):
+      BACKPORT: time: Remove CONFIG_TIMER_STATS
+
+Mohammed Javid (2):
+      msm: ipa: Fix to unsigned integer underflow
+      msm: ipa: Return error -ENODEV for set data quota failure
+
+Sai Krishna Juturi (1):
+      usb : dwc3: Initialize kernel stack variables properly
+
+Scott Bauer (1):
+      crypto: qce50: Init sg don't just add pages to it
+
+Skylar Chang (1):
+      msm: ipa: return the wifi stats when reset is set
+
+Subash Abhinov Kasiviswanathan (1):
+      net: rmnet_data: Support recycling frames to real device
+
+Vijayavardhan Vennapusa (1):
+      dwc3: debugfs: Add check for length before copy data from userspace
+
+ Documentation/timers/timer_stats.txt               |  73 ----
+ arch/arm64/configs/flash_defconfig                 |   4 +-
+ drivers/crypto/msm/qce50.c                         |   3 +-
+ drivers/crypto/msm/qcedev.c                        |   4 +-
+ drivers/devfreq/devfreq_spdm_debugfs.c             |  62 ++-
+ drivers/platform/msm/ipa/ipa_v2/ipa_debugfs.c      |  12 +-
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |  11 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_debugfs.c      |  12 +-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |  11 +-
+ .../platform/msm/ipa/ipa_v3/rmnet_ipa_fd_ioctl.c   |   4 +-
+ drivers/usb/dwc3/debugfs.c                         |  12 +-
+ include/linux/hrtimer.h                            |  11 -
+ include/linux/timer.h                              |  45 ---
+ kernel/time/Makefile                               |   1 -
+ kernel/time/hrtimer.c                              |  37 --
+ kernel/time/timer.c                                |  48 +--
+ kernel/time/timer_list.c                           |  10 -
+ kernel/time/timer_stats.c                          | 425 ---------------------
+ kernel/workqueue.c                                 |   2 -
+ lib/Kconfig.debug                                  |  14 -
+ net/rmnet_data/rmnet_data_stats.c                  |   5 +
+ 21 files changed, 98 insertions(+), 708 deletions(-)
+ delete mode 100644 Documentation/timers/timer_stats.txt
+ delete mode 100644 kernel/time/timer_stats.c
