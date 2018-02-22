@@ -1,0 +1,161 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Arnd Bergmann (5):
+      mm: hide a #warning for COMPILE_TEST
+      x86: fix build warnign with 32-bit PAE
+      ARM: pxa/tosa-bt: add MODULE_LICENSE tag
+      ARM: dts: s5pv210: add interrupt-parent for ohci
+      media: r820t: fix r820t_write_reg for KASAN
+
+Bjorn Andersson (1):
+      PM / devfreq: Propagate error from devfreq_add_device()
+
+David Woodhouse (1):
+      KVM/x86: Reduce retpoline performance impact in slot_handle_level_range(), by always inlining iterator helper methods
+
+Ernesto A. Fernández (1):
+      ext4: correct documentation for grpid mount option
+
+Eugene Syromiatnikov (1):
+      s390: fix handling of -1 in set{,fs}[gu]id16 syscalls
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.117
+
+Gustavo A. R. Silva (1):
+      x86/cpu: Change type of x86_cache_size variable to unsigned int
+
+Hui Wang (1):
+      ALSA: hda - Fix headset mic detection problem for two Dell machines
+
+Jack Morgenstein (1):
+      IB/mlx4: Fix incorrectly releasing steerable UD QPs when have only ETH ports
+
+Jan-Marek Glogowski (1):
+      ALSA: hda/realtek: PCI quirk for Fujitsu U7x7
+
+Johan Hovold (1):
+      video: fbdev: atmel_lcdfb: fix display-timings lookup
+
+Julia Lawall (1):
+      drm/radeon: adjust tested variable
+
+Kirill Marinushkin (1):
+      ALSA: usb-audio: Fix UAC2 get_ctl request with a RANGE attribute
+
+Larry Finger (1):
+      rtlwifi: rtl8821ae: Fix connection lost problem correctly
+
+Lassi Ylikojola (1):
+      ALSA: usb-audio: add implicit fb quirk for Behringer UFX1204
+
+Linus Torvalds (1):
+      vfs: don't do RCU lookup of empty pathnames
+
+Liu Bo (3):
+      Btrfs: fix deadlock in run_delalloc_nocow
+      Btrfs: fix crash due to not cleaning up tree log block's dirty bits
+      Btrfs: fix unexpected -EEXIST when creating new inode
+
+Mikulas Patocka (1):
+      mvpp2: fix multicast address filter
+
+Nathan Chancellor (7):
+      Revert "Revert "ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float""
+      arm64: Add NEEDS_CLANG_HACKS to gate Google's 5.0 hacks
+      arm64: Update Clang flags
+      Makefile: Error out if CONFIG_FORTIFY_SOURCE and GCC 4.9 are being used together
+      Turn off FORTIFY_SOURCE for GCC 4.9.4
+      Revert "Makefile: Error out if CONFIG_FORTIFY_SOURCE and GCC 4.9 are being used together"
+      Merge 4.4.117 into 8.x-unified
+
+NeilBrown (1):
+      dm: correctly handle chained bios in dec_pending()
+
+Nicolas Pitre (1):
+      console/dummy: leave .con_font_get set to NULL
+
+Patrice Chotard (1):
+      ARM: dts: STi: Add gpio polarity for "hdmi,hpd-gpio" property
+
+Sami Tolvanen (2):
+      FROMLIST: kbuild: add clang-version.sh
+      FROMLIST: BACKPORT: kbuild: add __cc-ifversion and compiler-specific variants
+
+Stewart Smith (1):
+      rtc-opal: Fix handling of firmware error codes, prevent busy loops
+
+Takashi Iwai (2):
+      ALSA: seq: Fix regression by incorrect ioctl_mutex usages
+      ALSA: seq: Fix racy pool initializations
+
+Viresh Kumar (3):
+      arm: spear600: Add missing interrupt-parent of rtc
+      arm: spear13xx: Fix dmas cells
+      arm: spear13xx: Fix spics gpio controller's warning
+
+Zhouyi Zhou (1):
+      ext4: save error to disk in __ext4_grp_locked_error()
+
+ Documentation/devicetree/bindings/dma/snps-dma.txt |  2 +-
+ Documentation/filesystems/ext4.txt                 |  2 +-
+ Makefile                                           |  2 +-
+ arch/arm/boot/dts/s5pv210.dtsi                     |  1 +
+ arch/arm/boot/dts/spear1310-evb.dts                |  2 +-
+ arch/arm/boot/dts/spear1340.dtsi                   |  4 +--
+ arch/arm/boot/dts/spear13xx.dtsi                   |  6 ++--
+ arch/arm/boot/dts/spear600.dtsi                    |  1 +
+ arch/arm/boot/dts/stih407.dtsi                     |  3 +-
+ arch/arm/boot/dts/stih410.dtsi                     |  3 +-
+ arch/arm/mach-pxa/tosa-bt.c                        |  4 +++
+ arch/arm64/Makefile                                |  7 +++-
+ arch/s390/kernel/compat_linux.c                    |  8 ++---
+ arch/x86/include/asm/processor.h                   |  2 +-
+ arch/x86/kernel/cpu/common.c                       |  2 +-
+ arch/x86/kernel/cpu/microcode/intel.c              |  2 +-
+ arch/x86/kernel/cpu/proc.c                         |  4 +--
+ arch/x86/kvm/mmu.c                                 | 10 +++---
+ drivers/devfreq/devfreq.c                          |  2 +-
+ drivers/gpu/drm/radeon/radeon_uvd.c                |  2 +-
+ drivers/infiniband/hw/mlx4/main.c                  | 13 +++-----
+ drivers/md/dm.c                                    |  3 +-
+ drivers/media/tuners/r820t.c                       | 13 +++++---
+ drivers/net/ethernet/marvell/mvpp2.c               | 11 +++++--
+ drivers/net/ethernet/mellanox/mlx4/qp.c            |  3 ++
+ .../net/wireless/realtek/rtlwifi/rtl8821ae/hw.c    |  5 +--
+ drivers/net/wireless/realtek/rtlwifi/wifi.h        |  1 +
+ drivers/rtc/rtc-opal.c                             | 12 +++++--
+ drivers/video/console/dummycon.c                   |  1 -
+ drivers/video/fbdev/atmel_lcdfb.c                  |  8 ++++-
+ fs/btrfs/inode.c                                   |  5 ++-
+ fs/btrfs/tree-log.c                                | 27 ++++++++++++++++
+ fs/ext4/super.c                                    |  1 +
+ fs/namei.c                                         |  3 ++
+ include/linux/compiler-clang.h                     |  7 ++++
+ include/linux/compiler-gcc.h                       |  7 ++++
+ include/linux/kaiser.h                             |  2 +-
+ mm/memory.c                                        |  2 +-
+ scripts/Kbuild.include                             | 37 ++++++++++++++++++++--
+ scripts/clang-version.sh                           | 33 +++++++++++++++++++
+ sound/core/seq/seq_clientmgr.c                     | 23 ++++++++------
+ sound/pci/hda/patch_realtek.c                      | 28 ++++++++++++++++
+ sound/usb/mixer.c                                  | 18 +++++++----
+ sound/usb/pcm.c                                    |  9 ++++++
+ 44 files changed, 267 insertions(+), 74 deletions(-)
+ create mode 100755 scripts/clang-version.sh
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Kristof Petho (1):
+      OP5: anykernel.sh: Don't remove smartadjust service
+
+Nathan Chancellor (2):
+      OP5: ramdisk: Sync WCNSS_qcom_cfg.ini with Pixel 2
+      OP5: ramdisk/patch: Bind WCNSS_qcom_cfg.ini on custom ROMs too
+
+ anykernel.sh               |  34 +-
+ patch/modules              |   2 -
+ ramdisk/WCNSS_qcom_cfg.ini | 784 ++++++++++++++++++++++++++-------------------
+ ramdisk/init.flash.rc      |   4 +
+ 4 files changed, 476 insertions(+), 348 deletions(-)
