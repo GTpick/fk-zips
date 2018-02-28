@@ -1,0 +1,128 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+AMAN DEEP (1):
+      usb: ohci: Proper handling of ed_rm_list to handle race condition between usb_kill_urb() and finish_unlinks()
+
+Alex Deucher (1):
+      drm/amdgpu: Avoid leaking PM domain on driver unbind (v2)
+
+Arnd Bergmann (2):
+      cfg80211: fix cfg80211_beacon_dup
+      x86/oprofile: Fix bogus GCC-8 warning in nmi_setup()
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: Hold i_mutex for i_size_write
+
+Eric Biggers (1):
+      binder: add missing binder_unlock()
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.119
+
+Jack Pham (1):
+      usb: gadget: f_fs: Process all descriptors during bind
+
+Jack Stocker (1):
+      Add delay-init quirk for Corsair K70 RGB keyboards
+
+Johan Hovold (1):
+      PCI: keystone: Fix interrupt-controller-node lookup
+
+Kai-Heng Feng (1):
+      drm/edid: Add 6 bpc quirk for CPT panel in Asus UX303LA
+
+Karsten Koop (1):
+      usb: ldusb: add PIDs for new CASSY devices supported by this driver
+
+Lars-Peter Clausen (1):
+      iio: adis_lib: Initialize trigger before requesting interrupt
+
+Michael Ellerman (1):
+      powerpc/64s: Fix RFI flush dependency on HARDLOCKUP_DETECTOR
+
+Michael Weiser (1):
+      arm64: Disable unhandled signal log messages by default
+
+Nathan Chancellor (3):
+      Revert "USB: f_fs: Use HS and SS descriptors without checking gadget speed"
+      Merge 4.4.119 into oreo-mr1
+      Revert "binder: add missing binder_unlock()"
+
+Paolo Abeni (3):
+      netfilter: drop outermost socket lock in getsockopt()
+      ip_tunnel: replace dst_cache with generic implementation
+      ip_tunnel: fix preempt warning in ip tunnel creation/updating
+
+Ritesh Harjani (1):
+      ANDROID: sdcardfs: Set num in extension_details during make_item
+
+Shanker Donthineni (1):
+      irqchip/gic-v3: Use wmb() instead of smb_wmb() in gic_raise_softirq()
+
+Stefan Windfeldt-Prytz (1):
+      iio: buffer: check if a buffer has been set up when poll is called
+
+Thinh Nguyen (1):
+      usb: dwc3: gadget: Set maxpacket size for ep0 IN
+
+Tyrel Datwyler (1):
+      scsi: ibmvfc: fix misdefined reserved field in ibmvfc_fcp_rsp_info
+
+Yoshihiro Shimoda (1):
+      usb: renesas_usbhs: missed the "running" flag in usb_dmac with rx path
+
+ Makefile                                   |  2 +-
+ arch/arm64/kernel/traps.c                  |  2 +-
+ arch/powerpc/kernel/setup_64.c             |  2 +-
+ arch/x86/oprofile/nmi_int.c                |  2 +-
+ drivers/gpu/drm/amd/amdgpu/amdgpu_device.c |  2 --
+ drivers/gpu/drm/drm_edid.c                 |  3 +++
+ drivers/hid/hid-core.c                     |  3 +++
+ drivers/hid/hid-ids.h                      |  3 +++
+ drivers/iio/imu/adis_trigger.c             |  7 ++++---
+ drivers/iio/industrialio-buffer.c          |  2 +-
+ drivers/irqchip/irq-gic-v3.c               |  2 +-
+ drivers/pci/host/pci-keystone.c            |  9 +++++++--
+ drivers/scsi/ibmvscsi/ibmvfc.h             |  2 +-
+ drivers/usb/core/quirks.c                  |  3 +++
+ drivers/usb/dwc3/gadget.c                  |  2 ++
+ drivers/usb/gadget/function/f_fs.c         |  4 ++--
+ drivers/usb/host/ohci-q.c                  | 17 ++++++++++-------
+ drivers/usb/misc/ldusb.c                   |  6 ++++++
+ drivers/usb/renesas_usbhs/fifo.c           |  5 +++++
+ fs/sdcardfs/file.c                         | 22 ++++++++++++++--------
+ fs/sdcardfs/packagelist.c                  |  1 +
+ net/ipv4/ip_sockglue.c                     |  7 +------
+ net/ipv6/ipv6_sockglue.c                   | 10 ++--------
+ net/mac80211/cfg.c                         |  2 +-
+ 24 files changed, 74 insertions(+), 46 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Chris Renshaw (1):
+      AK2: fix cpio extraction with busybox 1.28+
+
+Nathan Chancellor (5):
+      Pixel 2: update-binary: Remove Flash Kernel banner
+      Pixel 2: anykernel.sh: Remove version display
+      Merge branch 'master' into wahoo-flash-8.1.0
+      Pixel 2: Add Flash Kernel banner
+      Pixel 2: tools: Update magiskboot from Magisk 16.0
+
+osm0sis (6):
+      AK2: fix insert_line wc/ash bad number error when missing file
+      Backend: fix vendor unmounting
+      tools: update to latest busybox (1.28.1)
+      Backend: add custom kernel banner support
+      Backend: add custom kernel version display support
+      Backend: touch up install whitespace now that we have banner/version display
+
+ META-INF/com/google/android/update-binary |  30 ++++++++++++++++++------------
+ anykernel.sh                              |   5 -----
+ banner                                    |  10 ++++++++++
+ tools/ak2-core.sh                         |   4 ++--
+ tools/busybox                             | Bin 1259620 -> 1259620 bytes
+ tools/magiskboot                          | Bin 287344 -> 291440 bytes
+ 6 files changed, 30 insertions(+), 19 deletions(-)
+ create mode 100644 banner
