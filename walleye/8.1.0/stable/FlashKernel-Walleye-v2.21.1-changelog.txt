@@ -1,0 +1,12 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (2):
+      Pixel 2: anykernel.sh: Fix regression with dtbo patching
+      Pixel 2: anykernel.sh: Whitespace
+
+ anykernel.sh | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
