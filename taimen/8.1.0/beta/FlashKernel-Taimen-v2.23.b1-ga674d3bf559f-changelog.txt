@@ -1,9 +1,0 @@
-http://github.com/nathanchance/wahoo/commits/queue-2.23
-
-Nathan Chancellor (2):
-      lge_battery: Use EPROBE_DEFER instead of ENODEV during probe
-      Revert "power: {lge,htc}_battery: Use late_initcall instead of module_initcall"
-
- drivers/power/htc_battery.c |  2 +-
- drivers/power/lge_battery.c | 10 +++++-----
- 2 files changed, 6 insertions(+), 6 deletions(-)
