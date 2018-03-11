@@ -1,0 +1,165 @@
+http://github.com/nathanchance/op5/commits/8.x-unified
+
+Adam Ford (1):
+      ARM: dts: LogicPD Torpedo: Fix I2C1 pinmux
+
+Alexey Kodanev (3):
+      udplite: fix partial checksum initialization
+      sctp: fix dst refcnt leak in sctp_v6_get_dst()
+      sctp: verify size of a new chunk in _sctp_make_chunk()
+
+Arnd Bergmann (1):
+      ipv6 sit: work around bogus gcc-8 -Wrestrict warning
+
+Ben Hutchings (1):
+      Revert "led: core: Fix brightness setting when setting delay_off=0"
+
+Dan Carpenter (1):
+      x86/spectre: Fix an error message
+
+Dan Williams (1):
+      mpls, nospec: Sanitize array index in mpls_label_ok()
+
+Daniel Borkmann (1):
+      bpf, x64: implement retpoline for tail call
+
+David Ahern (1):
+      net: mpls: Pull common label check into helper
+
+Denis Du (1):
+      hdlc_ppp: carrier detect ok, don't turn off negotiation
+
+Erik Veijola (1):
+      ALSA: usb-audio: Add a quirck for B&W PX headphones
+
+Ernesto A. Fernández (1):
+      btrfs: preserve i_mode if __btrfs_set_acl() fails
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.121
+
+Guillaume Nault (1):
+      ppp: prevent unregistered channels from connecting to PPP units
+
+Hans de Goede (1):
+      ALSA: hda: Add a power_save blacklist
+
+Jakub Kicinski (1):
+      net: fix race on decreasing number of TX queues
+
+Jan Kara (1):
+      btrfs: Don't clear SGID when inheriting ACLs
+
+Jeremy Boone (3):
+      tpm: st33zp24: fix potential buffer overruns caused by bit glitches on the bus
+      tpm_i2c_infineon: fix potential buffer overruns caused by bit glitches on the bus
+      tpm_i2c_nuvoton: fix potential buffer overruns caused by bit glitches on the bus
+
+Jiri Slaby (1):
+      x86/syscall: Sanitize syscall table de-references under speculation fix
+
+Julian Wiedmann (2):
+      s390/qeth: fix SETIP command handling
+      s390/qeth: fix IPA command submission race
+
+Mauro Carvalho Chehab (1):
+      media: m88ds3103: don't call a non-initalized function
+
+Mike Snitzer (1):
+      dm io: fix duplicate bio completion due to missing ref count
+
+Nathan Chancellor (2):
+      Makefile: Temporarily remove local-init sanitizer
+      Merge 4.4.121 into 8.x-unified
+
+Nathan Sullivan (1):
+      leds: do not overflow sysfs buffer in led_trigger_show
+
+Nicolas Dichtel (1):
+      netlink: ensure to loop over all netns in genlmsg_multicast_allns()
+
+Rasmus Villemoes (1):
+      nospec: Allow index argument to have const-qualified type
+
+Sabrina Dubroca (1):
+      net: ipv4: don't allow setting net.ipv4.route.min_pmtu below 68
+
+Stefano Brivio (1):
+      fib_semantics: Don't match route with mismatching tclassid
+
+Thomas Gleixner (1):
+      x86/apic/vector: Handle legacy irq data correctly
+
+Tommi Rantala (1):
+      sctp: fix dst refcnt leak in sctp_v4_get_dst
+
+Ulf Magnusson (1):
+      ARM: mvebu: Fix broken PL310_ERRATA_753970 selects
+
+Viresh Kumar (1):
+      cpufreq: s3c24xx: Fix broken s3c_cpufreq_init()
+
+Wanpeng Li (1):
+      KVM: mmu: Fix overlap between public and private memslots
+
+Xin Long (1):
+      bridge: check brport attr show in brport_show
+
+ Makefile                                   |  4 +--
+ arch/arm/boot/dts/logicpd-torpedo-som.dtsi |  8 +++++
+ arch/arm/mach-mvebu/Kconfig                |  4 +--
+ arch/x86/entry/entry_64.S                  | 16 ++++++----
+ arch/x86/include/asm/nospec-branch.h       | 37 +++++++++++++++++++++++
+ arch/x86/kernel/apic/vector.c              | 14 ++++-----
+ arch/x86/kernel/cpu/bugs.c                 |  3 +-
+ arch/x86/net/bpf_jit_comp.c                |  9 +++---
+ drivers/char/tpm/st33zp24/st33zp24.c       |  4 +--
+ drivers/char/tpm/tpm_i2c_infineon.c        |  5 ++--
+ drivers/char/tpm/tpm_i2c_nuvoton.c         |  8 +++--
+ drivers/cpufreq/s3c24xx-cpufreq.c          |  8 ++++-
+ drivers/leds/led-core.c                    |  2 +-
+ drivers/leds/led-triggers.c                | 12 ++++----
+ drivers/md/dm-io.c                         |  1 +
+ drivers/media/dvb-frontends/m88ds3103.c    |  7 +++--
+ drivers/net/ppp/ppp_generic.c              |  9 ++++++
+ drivers/net/wan/hdlc_ppp.c                 |  5 +++-
+ drivers/s390/net/qeth_core.h               |  5 ++++
+ drivers/s390/net/qeth_core_main.c          | 33 +++++++++++----------
+ fs/btrfs/acl.c                             | 19 +++++++-----
+ include/linux/nospec.h                     |  3 +-
+ include/net/udplite.h                      |  1 +
+ net/bridge/br_sysfs_if.c                   |  3 ++
+ net/core/dev.c                             | 11 +++++--
+ net/ipv4/fib_semantics.c                   |  5 ++++
+ net/ipv4/route.c                           |  8 +++--
+ net/ipv4/udp.c                             |  5 ++++
+ net/ipv6/ip6_checksum.c                    |  5 ++++
+ net/ipv6/sit.c                             |  2 +-
+ net/mpls/af_mpls.c                         | 36 +++++++++++++----------
+ net/netlink/genetlink.c                    | 12 ++++++--
+ net/sctp/ipv6.c                            | 10 +++++--
+ net/sctp/protocol.c                        | 10 +++----
+ net/sctp/sm_make_chunk.c                   |  8 +++--
+ sound/pci/hda/hda_intel.c                  | 38 ++++++++++++++++++++++--
+ sound/usb/quirks-table.h                   | 47 ++++++++++++++++++++++++++++++
+ virt/kvm/kvm_main.c                        |  3 +-
+ 38 files changed, 320 insertions(+), 100 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (2):
+      Merge branch 'master' into op5-flash-8.x
+      OP5: anykernel.sh: Convert system_getprop to file_getprop
+
+osm0sis (5):
+      AK2: add Nook HD+ and Nook Tablet signing loader support
+      AK2: improve section functions, improve size check
+      AK2: fix section functions with "" for next-blank-line end search
+      AK2: add file_getprop
+      README: update for file_getprop
+
+ README.md         |  2 +-
+ anykernel.sh      |  9 ++++----
+ tools/ak2-core.sh | 64 +++++++++++++++++++++++++++++++++----------------------
+ 3 files changed, 45 insertions(+), 30 deletions(-)
