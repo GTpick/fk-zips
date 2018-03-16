@@ -1,0 +1,255 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.24
+
+Alex Deucher (2):
+      drm/radeon: fix KV harvesting
+      drm/amdgpu: fix KV harvesting
+
+Arnd Bergmann (3):
+      UPSTREAM: android: binder: fix type mismatch warning
+      watchdog: hpwdt: fix unused variable warning
+      ARM: omap2: hide omap3_save_secure_ram on non-OMAP3 builds
+
+Clay McClure (1):
+      ubi: Fix race condition between ubi volume creation and udev
+
+Colin Ian King (2):
+      MIPS: ath25: Check for kzalloc allocation failure
+      MIPS: OCTEON: irq: Check for null return on kzalloc allocation
+
+Dan Williams (1):
+      nospec: Include <asm/barrier.h> dependency
+
+Daniel Rosenberg (1):
+      ANDROID: sdcardfs: fix lock issue on 32 bit/SMP architectures
+
+Danilo Krummrich (1):
+      usb: quirks: add control message delay for 1b1c:1b20
+
+Dennis Wassenberg (2):
+      ALSA: hda: add dock and led support for HP EliteBook 820 G3
+      ALSA: hda: add dock and led support for HP ProBook 640 G2
+
+Dmitry Torokhov (1):
+      Input: tca8418_keypad - remove double read of key event register
+
+Eric Dumazet (1):
+      netfilter: IDLETIMER: be syzkaller friendly
+
+Florian Westphal (9):
+      netfilter: nfnetlink_queue: fix timestamp attribute
+      netfilter: add back stackpointer size checks
+      netfilter: ebtables: CONFIG_COMPAT: don't trust userland offsets
+      netfilter: bridge: ebt_among: add missing match size checks
+      netfilter: ipv6: fix use-after-free Write in nf_nat_ipv6_manip_pkt
+      netfilter: use skb_to_full_sk in ip_route_me_harder
+      netfilter: x_tables: pass xt_counters struct instead of packet counter
+      netfilter: x_tables: pass xt_counters struct to counter allocator
+      netfilter: x_tables: pack percpu counter allocations
+
+Frank Mori Hess (1):
+      staging: comedi: fix comedi_nsamples_left.
+
+Greg Kroah-Hartman (3):
+      Revert "ARM: dts: LogicPD Torpedo: Fix I2C1 pinmux"
+      fixup: sctp: verify size of a new chunk in _sctp_make_chunk()
+      Linux 4.4.122-rc1
+
+H.J. Lu (1):
+      x86: Treat R_X86_64_PLT32 as R_X86_64_PC32
+
+James Hogan (1):
+      kbuild: Handle builtin dtb file names containing hyphens
+
+Jerry Hoemann (2):
+      watchdog: hpwdt: SMBIOS check
+      watchdog: hpwdt: Check source of NMI
+
+Joel Fernandes (1):
+      staging: android: ashmem: Fix lockdep issue during llseek
+
+Jonas Danielsson (1):
+      tty/serial: atmel: add new version check for usart
+
+Josh Poimboeuf (1):
+      x86/module: Detect and skip invalid relocations
+
+Julia Lawall (1):
+      USB: usbmon: remove assignment from IS_ERR argument
+
+Justin Chen (1):
+      MIPS: BMIPS: Do not mask IPIs during suspend
+
+Leon Romanovsky (3):
+      RDMA/ucma: Limit possible option size
+      RDMA/ucma: Check that user doesn't overflow QP state
+      RDMA/mlx5: Fix integer overflow while resizing CQ
+
+Lukas Wunner (5):
+      workqueue: Allow retrieval of current task's work struct
+      drm: Allow determining if current task is output poll worker
+      drm/nouveau: Fix deadlock on runtime suspend
+      drm/radeon: Fix deadlock on runtime suspend
+      drm/amdgpu: Fix deadlock on runtime suspend
+
+Martijn Coenen (4):
+      ANDROID: binder: clarify deferred thread work.
+      ANDROID: binder: Remove obsolete proc waitqueue.
+      UPSTREAM: ANDROID: binder: remove waitqueue when thread exits.
+      UPSTREAM: ANDROID: binder: synchronize_rcu() when using POLLFREE.
+
+Michael Lyle (1):
+      bcache: don't attach backing with duplicate UUID
+
+Nathan Chancellor (1):
+      Merge 4.4.122-rc1 into oreo-mr1
+
+Nikola Ciprich (1):
+      serial: 8250_pci: Add Brainboxes UC-260 4 port serial device
+
+Oliver Neukum (1):
+      uas: fix comparison for error code
+
+Paolo Abeni (2):
+      netfilter: x_tables: fix missing timer initialization in xt_LED
+      netfilter: nat: cope with negative port range
+
+Pete Zaitcev (1):
+      usb: usbmon: Read text within supplied buffer size
+
+Philipp Zabel (1):
+      tc358743: fix register i2c_rd/wr function fix
+
+Quinn Tran (1):
+      scsi: qla2xxx: Replace fcport alloc with qla2x00_alloc_fcport
+
+Rex Zhu (1):
+      drm/amdgpu: Notify sbios device ready before send request
+
+Robin Murphy (3):
+      arm64: Implement array_index_mask_nospec()
+      arm64: Make USER_DS an inclusive limit
+      arm64: Use pointer masking to limit uaccess speculation
+
+Ross Zwisler (1):
+      loop: Fix lost writes caused by missing flag
+
+Seunghun Han (1):
+      x86/MCE: Serialize sysfs changes
+
+Tahsin Erdogan (1):
+      ext4: inplace xattr block update fails to deduplicate blocks
+
+Takashi Iwai (3):
+      ALSA: hda/realtek - Fix dock line-out volume on Dell Precision 7520
+      ALSA: seq: Don't allow resizing pool in use
+      ALSA: seq: More protection for concurrent write and ioctl races
+
+Teijo Kinnunen (1):
+      USB: storage: Add JMicron bridge 152d:2567 to unusual_devs.h
+
+Todd Kjos (2):
+      FROMLIST: binder: fix proc->files use-after-free
+      UPSTREAM: ANDROID: binder: remove WARN() for redundant txn error
+
+Trond Myklebust (1):
+      NFS: Fix an incorrect type in struct nfs_direct_req
+
+Ulrich Hecht (1):
+      serial: sh-sci: prevent lockup on full TTY buffers
+
+Will Deacon (5):
+      arm64: barrier: Add CSDB macros to control data-value prediction
+      arm64: entry: Ensure branch through syscall table is bounded under speculation
+      arm64: uaccess: Prevent speculative use of the current addr_limit
+      arm64: uaccess: Don't bother eliding access_ok checks in __{get, put}_user
+      arm64: futex: Mask __user pointers prior to dereference
+
+Xinyong (1):
+      usb: gadget: f_fs: Fix use-after-free in ffs_fs_kill_sb()
+
+Yury Norov (1):
+      arm64: move TASK_* definitions to <asm/processor.h>
+
+Zhang Bo (1):
+      Input: matrix_keypad - fix race when disabling interrupts
+
+himanshu.madhani@cavium.com (1):
+      scsi: qla2xxx: Fix NULL pointer crash due to active timer for ABTS
+
+ Makefile                                       |   4 +-
+ arch/arm/boot/dts/logicpd-torpedo-som.dtsi     |   8 --
+ arch/arm/mach-omap2/omap-secure.c              |   2 +
+ arch/arm64/include/asm/assembler.h             |  18 ++++
+ arch/arm64/include/asm/barrier.h               |  22 +++++
+ arch/arm64/include/asm/futex.h                 |   9 +-
+ arch/arm64/include/asm/memory.h                |  15 ---
+ arch/arm64/include/asm/processor.h             |  26 ++++-
+ arch/arm64/include/asm/uaccess.h               | 128 +++++++++++++++++--------
+ arch/arm64/kernel/entry.S                      |   5 +-
+ arch/mips/ath25/board.c                        |   2 +
+ arch/mips/cavium-octeon/octeon-irq.c           |   2 +
+ arch/mips/kernel/smp-bmips.c                   |   8 +-
+ arch/x86/kernel/cpu/mcheck/mce.c               |  22 ++++-
+ arch/x86/kernel/machine_kexec_64.c             |   1 +
+ arch/x86/kernel/module.c                       |  14 +++
+ arch/x86/tools/relocs.c                        |   3 +
+ drivers/android/binder.c                       | 118 ++++++++++++++---------
+ drivers/block/loop.c                           |   2 +-
+ drivers/gpu/drm/amd/amdgpu/amdgpu_acpi.c       |   3 +
+ drivers/gpu/drm/amd/amdgpu/amdgpu_connectors.c |  58 +++++++----
+ drivers/gpu/drm/amd/amdgpu/gfx_v7_0.c          |  30 +-----
+ drivers/gpu/drm/drm_probe_helper.c             |  20 ++++
+ drivers/gpu/drm/nouveau/nouveau_connector.c    |  18 +++-
+ drivers/gpu/drm/radeon/cik.c                   |  31 +-----
+ drivers/gpu/drm/radeon/radeon_connectors.c     |  74 +++++++++-----
+ drivers/infiniband/core/ucma.c                 |   6 ++
+ drivers/infiniband/hw/mlx5/cq.c                |   7 +-
+ drivers/input/keyboard/matrix_keypad.c         |   4 +-
+ drivers/input/keyboard/tca8418_keypad.c        |   2 -
+ drivers/md/bcache/super.c                      |  11 +++
+ drivers/media/i2c/tc358743.c                   |   2 +-
+ drivers/mtd/ubi/vmt.c                          |  15 ++-
+ drivers/scsi/qla2xxx/qla_init.c                |   1 +
+ drivers/scsi/qla2xxx/qla_target.c              |   2 +-
+ drivers/staging/android/ashmem.c               |  15 ++-
+ drivers/staging/comedi/drivers.c               |   3 +-
+ drivers/tty/serial/8250/8250_pci.c             |  11 +++
+ drivers/tty/serial/atmel_serial.c              |   1 +
+ drivers/tty/serial/sh-sci.c                    |   2 +
+ drivers/usb/core/message.c                     |   4 +
+ drivers/usb/core/quirks.c                      |   3 +-
+ drivers/usb/gadget/function/f_fs.c             |   1 -
+ drivers/usb/mon/mon_text.c                     | 124 +++++++++++++++---------
+ drivers/usb/storage/uas.c                      |   2 +-
+ drivers/usb/storage/unusual_devs.h             |   7 ++
+ drivers/watchdog/hpwdt.c                       |  12 ++-
+ fs/ext4/xattr.c                                |   3 +-
+ fs/nfs/direct.c                                |   2 +-
+ fs/sdcardfs/file.c                             |   2 +-
+ include/drm/drm_crtc_helper.h                  |   1 +
+ include/linux/netfilter/x_tables.h             |  38 ++------
+ include/linux/nospec.h                         |   1 +
+ include/linux/usb/quirks.h                     |   3 +
+ include/linux/workqueue.h                      |   1 +
+ kernel/workqueue.c                             |  16 ++++
+ net/bridge/netfilter/ebt_among.c               |  21 +++-
+ net/bridge/netfilter/ebtables.c                |  13 ++-
+ net/ipv4/netfilter.c                           |   7 +-
+ net/ipv4/netfilter/arp_tables.c                |  20 ++--
+ net/ipv4/netfilter/ip_tables.c                 |  20 ++--
+ net/ipv6/netfilter/ip6_tables.c                |  21 ++--
+ net/ipv6/netfilter/nf_nat_l3proto_ipv6.c       |   4 +
+ net/netfilter/nf_nat_proto_common.c            |   7 +-
+ net/netfilter/nfnetlink_queue.c                |   2 +-
+ net/netfilter/x_tables.c                       |  55 +++++++++++
+ net/netfilter/xt_IDLETIMER.c                   |   9 +-
+ net/netfilter/xt_LED.c                         |  12 +--
+ net/sctp/sm_make_chunk.c                       |   2 +-
+ scripts/Makefile.lib                           |   8 +-
+ sound/core/seq/seq_clientmgr.c                 |  21 ++--
+ sound/core/seq/seq_fifo.c                      |   2 +-
+ sound/core/seq/seq_memory.c                    |  14 ++-
+ sound/core/seq/seq_memory.h                    |   3 +-
+ sound/pci/hda/patch_conexant.c                 |   2 +
+ sound/pci/hda/patch_realtek.c                  |  16 ++++
+ 76 files changed, 805 insertions(+), 399 deletions(-)
