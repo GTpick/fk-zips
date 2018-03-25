@@ -1,0 +1,486 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Abel Vesa (1):
+      ARM: 8668/1: ftrace: Fix dynamic ftrace with DEBUG_RODATA and !FRAME_POINTER
+
+Abhinav Kumar (1):
+      drm/msm/sde: clear blend stages of all mixers
+
+Alexey Kardashevskiy (1):
+      KVM: PPC: Book3S PR: Exit KVM on failed mapping
+
+Alexey Khoroshilov (1):
+      sm501fb: don't return zero on failure path in sm501fb_start()
+
+Alexey Kodanev (1):
+      ip6_vti: adjust vti mtu according to mtu of lower device
+
+Anton Vasilyev (1):
+      RDMA/ocrdma: Fix permissions for OCRDMA_RESET_STATS
+
+Arnd Bergmann (1):
+      cros_ec: fix nul-termination for firmware build info
+
+Artemy Kovalyov (1):
+      IB/umem: Fix use of npages/nmap fields
+
+Benjamin Coddington (2):
+      NFS: Fix missing pg_cleanup after nfs_pageio_cond_complete()
+      nfsd4: permit layoutget of executable-only files
+
+Bernd Faust (1):
+      e1000e: fix timing for 82579 Gigabit Ethernet controller
+
+Bharat Kumar Reddy Gooty (1):
+      clk: ns2: Correct SDIO bits
+
+Bjorn Helgaas (1):
+      vgacon: Set VGA struct resource types
+
+Carter Cooper (1):
+      msm: kgsl: Properly remove ref count on gpuobj_sync failure
+
+Christophe JAILLET (1):
+      media: bt8xx: Fix err 'bt878_probe()'
+
+Clint Taylor (1):
+      drm/edid: CEA mode 64 1080p100 vsync pulse width incorrect
+
+Dan Carpenter (4):
+      HSI: ssi_protocol: double free in ssip_pn_xmit()
+      ASoC: Intel: Skylake: Uninitialized variable in probe_codec()
+      mmc: host: omap_hsmmc: checking for NULL instead of IS_ERR()
+      cifs: small underflow in cnvrtDosUnixTm()
+
+Daniel Borkmann (1):
+      UPSTREAM: kbuild: disable clang's default use of -fmerge-all-constants
+
+Daniel Drake (1):
+      mmc: avoid removing non-removable hosts during suspend
+
+David Ahern (1):
+      net: ipv6: send unsolicited NA on admin up
+
+David Gibson (1):
+      scsi: virtio_scsi: Always try to read VPD pages
+
+Deepa Dinamani (1):
+      time: Change posix clocks ops interfaces to use timespec64
+
+Deepak Kumar (1):
+      msm: kgsl: Correct memory type update in IOCTL_KGSL_GPUOBJ_SET_INFO
+
+Dmitry Monakhov (1):
+      tcm_fileio: Prevent information leak for short reads
+
+Dmitry Torokhov (1):
+      Input: ar1021_i2c - fix too long name in driver's device table
+
+Dong Aisheng (1):
+      regulator: anatop: set default voltage selector for pcie
+
+Edgar Cherkasov (1):
+      i2c: i2c-scmi: add a MS HID
+
+Emmanuel Grumbach (1):
+      mac80211: don't parse encrypted management frames in ieee80211_frame_acked
+
+Erez Shitrit (1):
+      IB/ipoib: Avoid memory leak if the SA returns a different DGID
+
+Eric Dumazet (1):
+      tcp: remove poll() flakes with FastOpen
+
+Feras Daoud (2):
+      IB/ipoib: Fix deadlock between ipoib_stop and mcast join flow
+      IB/ipoib: Update broadcast object if PKey value was changed in index 0
+
+Filipe Manana (1):
+      Btrfs: send, fix file hole not being preserved due to inline extent
+
+Finn Thain (1):
+      scsi: mac_esp: Replace bogus memory barrier with spinlock
+
+Florian Fainelli (1):
+      pinctrl: Really force states during suspend/resume
+
+Gao Feng (1):
+      netfilter: xt_CT: fix refcnt leak on error path
+
+Geert Uytterhoeven (1):
+      RDMA/iwpm: Fix uninitialized error code in iwpm_send_mapinfo()
+
+Ghanim Fodi (1):
+      msm: ipa: Prevent deletion of the default route rule
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.124
+
+Guoqing Jiang (1):
+      md/raid10: wait up frozen array in handle_write_completed
+
+Gustavo A. R. Silva (1):
+      media: c8sectpfe: fix potential NULL pointer dereference in c8sectpfe_timer_interrupt
+
+Hans de Goede (4):
+      x86: i8259: export legacy_pic symbol
+      rtc: cmos: Do not assume irq 8 for rtc when there are no legacy irqs
+      genirq: Use irqd_get_trigger_type to compare the trigger type for shared IRQs
+      ACPI / PMIC: xpower: Fix power_table addresses
+
+James Smart (1):
+      Fix driver usage of 128B WQEs when WQ_CREATE is V1.
+
+Jarno Rajahalme (1):
+      openvswitch: Delete conntrack entry clashing with an expectation.
+
+Jasmin J (1):
+      media/dvb-core: Race condition when writing to CAM
+
+Jeremy Boone (2):
+      tpm: fix potential buffer overruns caused by bit glitches on the bus
+      tpm_tis: fix potential buffer overruns caused by bit glitches on the bus
+
+Jerry Snitselaar (1):
+      iommu/vt-d: clean up pr_irq if request_threaded_irq fails
+
+Keerthy (1):
+      mfd: palmas: Reset the POWERHOLD mux during power off
+
+Kim Phillips (1):
+      perf tests kmod-path: Don't fail if compressed modules aren't supported
+
+Kishon Vijay Abraham I (1):
+      ARM: DRA7: clockdomain: Change the CLKTRCTRL of CM_PCIE_CLKSTCTRL to SW_WKUP
+
+Krishna Manikandan (1):
+      fbdev: msm: Set the commit_in_progress flag after sync_fence_wait
+
+Kyle Yan (2):
+      soc: qcom: service-locator: Fix error message prints for receiving messages
+      soc: qcom: service-locator: Update incorrect usage of qmi_send_req_wait
+
+Leon Romanovsky (1):
+      RDMA/ucma: Fix access to non-initialized CM_ID object
+
+Loic Poulain (1):
+      Bluetooth: hci_qca: Avoid setup failure on missing rampatch
+
+Maksim Salau (1):
+      video: fbdev: udlfb: Fix buffer on stack
+
+Maor Gottlieb (2):
+      IB/mlx4: Take write semaphore when changing the vma struct
+      IB/mlx4: Change vma from shared to private
+
+Marek Vasut (1):
+      spi: dw: Disable clock after unregistering the host
+
+Mario Kleiner (1):
+      drm/nouveau/kms: Increase max retries in scanout position queries.
+
+Michael Trimarchi (1):
+      power: supply: pda_power: move from timer to delayed_work
+
+Mikhail Paulyshka (1):
+      ALSA: hda - Fix headset microphone detection for ASUS N551 and N751
+
+Ming Lei (1):
+      mtip32xx: use runtime tag to initialize command header
+
+Mohammed Javid (2):
+      msm:ipa: Return mux id only for valid interface
+      msm: ipa: Fix to handle NULL pointer dereference
+
+Mohammed Shafi Shajakhan (1):
+      ath: Fix updating radar flags for coutry code India
+
+Moritz Fischer (2):
+      rtc: ds1374: wdt: Fix issue with timeout scaling from secs to wdt ticks
+      rtc: ds1374: wdt: Fix stop/start ioctl always returning -EINVAL
+
+Nathan Chancellor (1):
+      Merge 4.4.124 into oreo-mr1
+
+Neeraj Soni (1):
+      media: camera: Fix Major and Minor number
+
+NeilBrown (1):
+      NFS: don't try to cross a mountpount when there isn't one there.
+
+Pan Bian (5):
+      wan: pc300too: abort path on failure
+      qlcnic: fix unchecked return value
+      mt7601u: check return value of alloc_skb
+      rndis_wlan: add return value validation
+      staging: wilc1000: fix unchecked return value
+
+Paras Nagda (1):
+      msm: vidc: enable port reconfig for thumbnail session
+
+Parav Pandit (1):
+      RDMA/cma: Use correct size when writing netlink stats
+
+Pavel Shilovsky (1):
+      CIFS: Enable encryption during session setup phase
+
+Peter Ujfalusi (1):
+      drm/omap: DMM: Check for DMM readiness after successful transaction commit
+
+Prakash Kamliya (1):
+      drm/msm: fix leak in failed get_pages
+
+Robert Lippert (1):
+      ipmi/watchdog: fix wdog hang on panic waiting for ipmi response
+
+Robert Walker (1):
+      coresight: Fix disabling of CoreSight TPIU
+
+Ron Economos (1):
+      media: [RESEND] media: dvb-frontends: Add delay to Si2168 restart
+
+Sahara (1):
+      pty: cancel pty slave port buf's work in tty_release
+
+Sameer Wadgaonkar (1):
+      staging: unisys: visorhba: fix s-Par to boot with option CONFIG_VMAP_STACK set to y
+
+Santeri Toivonen (1):
+      platform/x86: asus-nb-wmi: Add wapf4 quirk for the X302UA
+
+Scott Wood (1):
+      bnx2x: Align RX buffers
+
+Sebastian Reichel (1):
+      Input: twl4030-pwrbutton - use correct device for irq request
+
+Sergei Trofimovich (1):
+      ia64: fix module loading for gcc-5.4
+
+Sergej Sawazki (1):
+      clk: si5351: Rename internal plls to avoid name collisions
+
+Shaohua Li (1):
+      md/raid10: skip spare disk as 'first' disk
+
+Shashank Sharma (3):
+      drm: add picture aspect ratio flags
+      drm: Add aspect ratio parsing in DRM layer
+      drm: Add and handle new aspect ratios in DRM layer
+
+Shawn Nematbakhsh (1):
+      platform/chrome: Use proper protocol transfer function
+
+Shrirang Bagul (1):
+      iio: st_pressure: st_accel: Initialise sensor platform data properly
+
+Sreelakshmi Gownipalli (1):
+      diag: Add conditional check for len in dci_process_ctrl_status()
+
+Steve French (1):
+      SMB3: Validate negotiate request must always be signed
+
+Suman Anna (1):
+      iommu/omap: Register driver before setting IOMMU ops
+
+Thomas Gleixner (3):
+      ACPI/processor: Fix error handling in __acpi_processor_start()
+      ACPI/processor: Replace racy task affinity logic
+      cpufreq/sh: Replace racy task affinity logic
+
+Timmy Li (1):
+      net: hns: fix ethtool_get_strings overflow in hns driver
+
+Tsang-Shian Lin (1):
+      rtlwifi: rtl_pci: Fix the bug when inactiveps is enabled.
+
+Vaishnavi Kommaraju (1):
+      ASoc: wcd_cpe_core: Add mutex lock for CPE session
+
+Vignesh R (1):
+      dmaengine: ti-dma-crossbar: Fix event mapping for TPCC_EVT_MUX_60_63
+
+Vijay Viswanath (4):
+      mmc: sdhci-msm: Avoid leaking kernel address from mmc platform driver
+      mmc: cmdq-hci: Change unnecessary pr_err logs to pr_debug
+      mmc: sdhci-msm: Remove printing tlmm physical address
+      mmc: sdhci: Avoid leaking kernel addresses
+
+Vijay kumar Tumati (1):
+      msm: camera: Add RAW12 support for meta data
+
+Vijayavardhan Vennapusa (1):
+      f_audio_source: Implement get_alt() support
+
+Vlad Tsyrklevich (1):
+      infiniband/uverbs: Fix integer overflows
+
+Wei Wang (1):
+      ipv6: release rt6->rt6i_idev properly during ifdown
+
+Yisheng Xie (1):
+      staging: android: ashmem: Fix possible deadlock in ashmem_ioctl
+
+smanag (1):
+      drivers: soc: Synchronize apr callback and voice svc release
+
+yangbo lu (1):
+      mmc: sdhci-of-esdhc: limit SD clock for ls1012a/ls1046a
+
+ Makefile                                           | 11 +++-
+ arch/alpha/kernel/console.c                        |  1 +
+ arch/arm/kernel/ftrace.c                           | 11 ++--
+ arch/arm/mach-omap2/clockdomains7xx_data.c         |  2 +-
+ arch/ia64/kernel/module.c                          |  4 +-
+ arch/powerpc/kvm/book3s_64_mmu_host.c              |  5 +-
+ arch/powerpc/kvm/book3s_pr.c                       |  6 +-
+ arch/x86/kernel/i8259.c                            |  1 +
+ drivers/acpi/pmic/intel_pmic_xpower.c              | 50 +++++++-------
+ drivers/acpi/processor_driver.c                    | 10 ++-
+ drivers/acpi/processor_throttling.c                | 62 +++++++++--------
+ drivers/block/mtip32xx/mtip32xx.c                  | 36 ++++++----
+ drivers/bluetooth/hci_qca.c                        |  3 +
+ drivers/char/diag/diag_dci.c                       |  4 +-
+ drivers/char/ipmi/ipmi_watchdog.c                  |  8 +--
+ drivers/char/tpm/tpm-interface.c                   |  5 ++
+ drivers/char/tpm/tpm2-cmd.c                        |  6 ++
+ drivers/char/tpm/tpm_tis.c                         |  5 +-
+ drivers/clk/bcm/clk-ns2.c                          |  2 +-
+ drivers/clk/clk-si5351.c                           |  2 +-
+ drivers/cpufreq/sh-cpufreq.c                       | 45 ++++++++-----
+ drivers/dma/ti-dma-crossbar.c                      | 10 ++-
+ drivers/gpu/drm/drm_edid.c                         |  2 +-
+ drivers/gpu/drm/drm_modes.c                        | 43 ++++++++++++
+ drivers/gpu/drm/msm/msm_gem.c                      | 13 ++--
+ drivers/gpu/drm/msm/sde/sde_hw_ctl.c               | 11 +++-
+ drivers/gpu/drm/nouveau/nouveau_display.c          |  2 +-
+ drivers/gpu/drm/omapdrm/omap_dmm_tiler.c           |  5 ++
+ drivers/gpu/msm/kgsl.c                             | 45 ++++++-------
+ drivers/hsi/clients/ssi_protocol.c                 |  5 +-
+ drivers/hwtracing/coresight/coresight-tpiu.c       | 13 +++-
+ drivers/i2c/busses/i2c-scmi.c                      |  4 ++
+ drivers/iio/accel/st_accel_core.c                  |  7 +-
+ drivers/iio/pressure/st_pressure_core.c            |  8 +--
+ drivers/infiniband/core/cma.c                      |  5 +-
+ drivers/infiniband/core/iwpm_util.c                |  1 +
+ drivers/infiniband/core/umem.c                     |  2 +-
+ drivers/infiniband/core/uverbs_cmd.c               | 13 +++-
+ drivers/infiniband/hw/mlx4/main.c                  |  6 +-
+ drivers/infiniband/hw/ocrdma/ocrdma_stats.c        |  2 +-
+ drivers/infiniband/ulp/ipoib/ipoib_ib.c            | 13 ++++
+ drivers/infiniband/ulp/ipoib/ipoib_main.c          | 16 +++++
+ drivers/infiniband/ulp/ipoib/ipoib_multicast.c     | 11 ++--
+ drivers/input/misc/twl4030-pwrbutton.c             |  2 +-
+ drivers/input/touchscreen/ar1021_i2c.c             |  2 +-
+ drivers/iommu/intel-svm.c                          |  9 ++-
+ drivers/iommu/omap-iommu.c                         | 21 +++++-
+ drivers/md/raid10.c                                |  6 ++
+ drivers/media/dvb-core/dvb_ca_en50221.c            | 23 +++++++
+ drivers/media/dvb-frontends/si2168.c               |  3 +
+ drivers/media/pci/bt8xx/bt878.c                    |  3 +-
+ .../msm/camera_v2/common/msm_camera_tz_util.c      |  6 +-
+ .../msm/camera_v2/common/msm_camera_tz_util.h      |  4 +-
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |  3 +-
+ drivers/media/platform/msm/vidc/msm_vidc_common.c  |  5 +-
+ .../media/platform/sti/c8sectpfe/c8sectpfe-core.c  |  4 +-
+ drivers/mfd/palmas.c                               | 14 ++++
+ drivers/mmc/core/core.c                            |  8 +++
+ drivers/mmc/host/cmdq_hci.c                        |  2 +-
+ drivers/mmc/host/omap_hsmmc.c                      |  4 +-
+ drivers/mmc/host/sdhci-msm.c                       |  9 +--
+ drivers/mmc/host/sdhci-of-esdhc.c                  | 14 ++++
+ drivers/mmc/host/sdhci.c                           |  4 +-
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_cmn.c    |  1 +
+ drivers/net/ethernet/hisilicon/hns/hns_dsaf_gmac.c |  2 +-
+ drivers/net/ethernet/hisilicon/hns/hns_dsaf_ppe.c  |  2 +-
+ drivers/net/ethernet/hisilicon/hns/hns_dsaf_rcb.c  |  2 +-
+ .../net/ethernet/hisilicon/hns/hns_dsaf_xgmac.c    |  2 +-
+ drivers/net/ethernet/intel/e1000e/netdev.c         |  6 ++
+ .../ethernet/qlogic/qlcnic/qlcnic_sriov_common.c   |  2 +
+ drivers/net/wan/pc300too.c                         |  1 +
+ drivers/net/wireless/ath/regd.c                    | 19 ++++--
+ drivers/net/wireless/mediatek/mt7601u/mcu.c        | 10 ++-
+ drivers/net/wireless/realtek/rtlwifi/pci.c         |  7 ++
+ drivers/net/wireless/rndis_wlan.c                  |  4 ++
+ drivers/pinctrl/core.c                             | 24 +++++--
+ drivers/platform/chrome/cros_ec_proto.c            |  8 ++-
+ drivers/platform/chrome/cros_ec_sysfs.c            |  2 +-
+ drivers/platform/msm/ipa/ipa_v2/ipa_rt.c           | 77 +++++++++++++++++++++-
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |  2 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_rt.c           | 76 ++++++++++++++++++++-
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |  2 +-
+ drivers/platform/x86/asus-nb-wmi.c                 |  9 +++
+ drivers/power/pda_power.c                          | 49 +++++++-------
+ drivers/ptp/ptp_clock.c                            | 18 ++---
+ drivers/regulator/anatop-regulator.c               |  5 ++
+ drivers/rtc/rtc-cmos.c                             | 17 +++--
+ drivers/rtc/rtc-ds1374.c                           | 10 ++-
+ drivers/scsi/lpfc/lpfc_sli.c                       |  3 +
+ drivers/scsi/mac_esp.c                             | 33 +++++++---
+ drivers/scsi/virtio_scsi.c                         | 24 +++++++
+ drivers/soc/qcom/qdsp6v2/voice_svc.c               | 42 +++++++++++-
+ drivers/soc/qcom/service-locator.c                 | 11 ++--
+ drivers/spi/spi-dw-mmio.c                          |  2 +-
+ drivers/staging/unisys/visorhba/visorhba_main.c    |  8 ++-
+ drivers/staging/wilc1000/linux_mon.c               |  2 +
+ drivers/target/target_core_file.c                  | 23 +++++--
+ drivers/tty/tty_io.c                               |  2 +
+ drivers/usb/gadget/function/f_audio_source.c       | 29 +++++++-
+ drivers/video/console/vgacon.c                     | 34 +++++++---
+ drivers/video/fbdev/msm/mdss_mdp_ctl.c             |  7 +-
+ drivers/video/fbdev/sm501fb.c                      |  1 +
+ drivers/video/fbdev/udlfb.c                        | 14 +++-
+ fs/btrfs/send.c                                    | 23 ++++++-
+ fs/cifs/netmisc.c                                  |  6 +-
+ fs/cifs/sess.c                                     | 22 +++----
+ fs/cifs/smb2pdu.c                                  | 11 ++--
+ fs/nfs/pagelist.c                                  |  6 +-
+ fs/nfsd/nfs4proc.c                                 |  6 +-
+ fs/nfsd/vfs.c                                      | 24 +++++--
+ include/linux/posix-clock.h                        | 10 +--
+ include/uapi/drm/drm_mode.h                        | 25 +++++--
+ include/uapi/media/msm_cam_sensor.h                |  2 +
+ kernel/irq/manage.c                                |  4 +-
+ kernel/time/posix-clock.c                          | 34 +++++++---
+ net/ipv4/tcp_input.c                               | 16 +++--
+ net/ipv6/ip6_vti.c                                 | 20 ++++++
+ net/ipv6/ndisc.c                                   |  2 +
+ net/ipv6/route.c                                   | 13 ++--
+ net/mac80211/status.c                              |  1 +
+ net/netfilter/xt_CT.c                              | 11 +++-
+ net/openvswitch/conntrack.c                        | 30 ++++++++-
+ sound/pci/hda/patch_realtek.c                      | 12 +++-
+ sound/soc/codecs/wcd_cpe_core.c                    | 11 ++++
+ sound/soc/codecs/wcd_cpe_core.h                    |  5 +-
+ sound/soc/codecs/wcd_cpe_services.c                |  4 +-
+ sound/soc/intel/skylake/skl.c                      |  2 +-
+ tools/perf/tests/kmod-path.c                       |  2 +
+ 128 files changed, 1180 insertions(+), 376 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (4):
+      Merge branch 'master' into wahoo-flash-8.1.0
+      Merge branch 'master' into wahoo-flash-8.1.0
+      Merge branch 'master' into wahoo-flash-8.1.0
+      Merge branch 'master' into wahoo-flash-8.1.0
+
+osm0sis (11):
+      AK2: add restore_file for use with ramdisk-only in a restore zip (#19)
+      README: document restore_file, add mkbootfs warning, fixes
+      AK2: only AVB sign if dumped original dumped image is signed (#20)
+      AK2: improve/expand multi-partition use cases
+      AK2: more multi-partition support improvements
+      Backend: fix modules support regression on /system/system devices
+      AK2: allow is_slot_device=auto (#21)
+      README: document multi-partition setup and auto slot detection
+      Backend: fix modules support regression for /vendor
+      tools: update to latest lz4 (1.8.1.2)
+      AK2: fix elftool repack of ELF without cmdline
+
+ META-INF/com/google/android/update-binary |  16 +++++++-----
+ README.md                                 |  11 +++++---
+ tools/ak2-core.sh                         |  41 +++++++++++++++++++++++-------
+ tools/lz4                                 | Bin 158552 -> 162648 bytes
+ 4 files changed, 50 insertions(+), 18 deletions(-)
