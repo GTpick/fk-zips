@@ -1,0 +1,125 @@
+http://github.com/nathanchance/wahoo/commits/oreo-mr1
+
+Aditya Bavanari (1):
+      ASoC: apr: Add validity check to APR port
+
+Ahmed ElArabawy (1):
+      msm: ipa: add null terminator
+
+Ajay Dudani (3):
+      power: Adjust learned capacity max decrement to 0.5%
+      Revert "arm64: dts: walleye: set fg-empty-voltage to 3.2V"
+      Revert "arm64: dts: taimen: set fg-empty-voltage to 3.2V"
+
+Arif Hussain (1):
+      qcacld-3.0: Add sanity check in wma_process_rmf_frame
+
+Ashish Kumar Dhanotiya (1):
+      qcacld-3.0: Use after free in hdd_debugfs_stats_update api
+
+Eric Biggers (1):
+      UPSTREAM: KEYS: encrypted: fix buffer overread in valid_master_desc()
+
+Erik Staats (1):
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1' into android-msm-wahoo-4.4-oc-mr1-security-next
+
+Ghanim Fodi (1):
+      msm: ipa: Fix the handling of default IPA header
+
+Hanumanth Reddy Pothula (1):
+      qcacld-3.0: Validate packet length, before processing PTT commands
+
+Himanshu Agarwal (3):
+      qcacld-3.0: Add sanity check for num_hw_modes and num_phy
+      qcacld-3.0: Calculate buf_len properly for extscan hotlist event buffer
+      qcacld-3.0: Add sanity check for vdev id to prevent OOB access
+
+Jaegeuk Kim (1):
+      scsi/ufs: use 16 queue depth for Samsung UFS part
+
+Jonathan Solnit (1):
+      UPSTREAM: net: ipv4: fix for a race condition in raw_sendmsg
+
+Kevin Cernekee (1):
+      netlink: Add netns check on taps
+
+Maggie White (2):
+      arm64: dts: htc: usb-xa: Lower USB-C temp and hysteresis thresholds
+      arm64: dts: lge: Lower USB-C temp and hysteresis thresholds
+
+Miguel de Dios (1):
+      diag: dci: Add validity check for dci client's process descriptor
+
+Nathan Chancellor (5):
+      cpufreq_stats: Don't enable uid_cpupower
+      Merge tag 'android-8.1.0_r0.46' into oreo-mr1
+      ANDROID: xt_qtaguid: Remove unnecessary null checks to device's name
+      ANDROID: xt_qtaguid: Remove unnecessary null checks to ifa_label
+      Revert "kernel: Restrict unbound kthreads to little CPU cluster"
+
+Nicolai Stange (1):
+      PCI: Fix race condition with driver_override
+
+Oleg Matcovschi (1):
+      Merge android-msm-wahoo-4.4-oc-mr1-security-next into android-msm-wahoo-4.4-oc-mr1
+
+Peng Xu (1):
+      nl80211: Define policy for packet pattern attributes
+
+Poddar, Siddarth (1):
+      qcacld-3.0: Fix potential buffer overflow in process_tx_info
+
+Roopesh Rajashekharaiah Nataraja (2):
+      soc: qcom: glink: Add downvote of transport during SSR
+      diag: Flush control workqueue immediately on channel close
+
+Sean Callanan (1):
+      FROMGIT: soc: qcom: initialize glink link state
+
+Skylar Chang (2):
+      msm: ipa: fix security issues in ipa wan driver
+      msm: ipa3: add lock for num_q6_rule
+
+Srinivas Girigowda (1):
+      qcacld-3.0: Add sanity check for vdev_id in wma_wow_wakeup_host_event
+
+Thierry Strudel (3):
+      arm64: dts: walleye: set fg-empty-voltage to 3.2V
+      arm64: dts: taimen: set fg-empty-voltage to 3.2V
+      BACKPORT: USB: core: harden cdc_parse_cdc_header
+
+Tiger Yu (2):
+      qcacld-3.0: Fix potential buffer overflow in ol_rx_flush_handler
+      qcacld-3.0: Fix potential buffer overflow in htt_t2h_lp_msg_handler
+
+Trevor Bunker (1):
+      misc: mnh: mipi: change variable type to check for error
+
+Varun Reddy Yeturu (2):
+      qcacld-3.0: Remove unused function proc_set_req_internal
+      qcacld-3.0: Check for valid vdev ID in SWBA event handler
+
+Vignesh Viswanathan (3):
+      qcacld-3.0: Fix buffer overflow in wma radio_tx_power_level_stats handler
+      qcacld-3.0: Fix buffer overread in wma_extscan_hotlist_match_event_handler
+      qcacld-3.0: Fix potential buffer overwrite in wma_unified_link_iface_stats_event_handler
+
+ drivers/char/diag/diag_dci.c              | 40 +++++++++++++++++++++----------
+ drivers/cpufreq/cpufreq_stats.c           |  2 +-
+ drivers/misc/mnh/mnh-mipi.c               | 10 ++++----
+ drivers/platform/msm/ipa/ipa_v2/ipa_hdr.c | 28 ++++++++++++++++------
+ drivers/platform/msm/ipa/ipa_v3/ipa_hdr.c | 28 ++++++++++++++++------
+ drivers/soc/qcom/wcd-dsp-glink.c          | 38 +++++++++++++++--------------
+ kernel/cpu.c                              |  4 ----
+ kernel/sched/core.c                       | 20 ----------------
+ net/netfilter/xt_qtaguid.c                |  9 ++-----
+ 9 files changed, 98 insertions(+), 81 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (1):
+      Pixel 2: April security update for 8.1 is now supported
+
+ anykernel.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
