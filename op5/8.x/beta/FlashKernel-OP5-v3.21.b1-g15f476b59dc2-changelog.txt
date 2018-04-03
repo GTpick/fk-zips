@@ -1,0 +1,62 @@
+http://github.com/nathanchance/op5/commits/queue-3.21
+
+Greg Kroah-Hartman (1):
+      f2fs: fix build error with multiply defined inode_nohighmem()
+
+Nathan Chancellor (39):
+      Revert some commits for cleaner 4.4.105 merge
+      Merge 4.4.105 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Merge 4.4.106 into oneplus/QC8998_O_8.0
+      Merge 4.4.107 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Merge 4.4.108 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Merge 4.4.109 into oneplus/QC8998_O_8.0
+      Merge 4.4.110 into oneplus/QC8998_O_8.0
+      Merge 4.4.111 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Merge 4.4.112 into oneplus/QC8998_O_8.0
+      scsi: sg: Remove some locking for cleaner 4.4.113 merge
+      Merge 4.4.113 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Merge 4.4.114 into oneplus/QC8998_O_8.0
+      x86: Kconfig: Add back HAVE_BPF_JIT
+      Merge 4.4.115 into oneplus/QC8998_O_8.0
+      Revert "media: v4l2-compat-ioctl32: memset stack union in compat ioctl"
+      Revert "[media] v4l: Update v4l2 32bit structures"
+      Merge 4.4.116 into oneplus/QC8998_O_8.0
+      media: v4l2-compat-ioctl32: Reapply be489cec86ea28e968993718b6f2a5e04733e79d
+      Merge 4.4.117 into oneplus/QC8998_O_8.0
+      selinux: Remove OnePlus's janky logging
+      Merge 4.4.118 into oneplus/QC8998_O_8.0
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.0' into oneplus/QC8998_O_8.0
+      Revert "USB: f_fs: Use HS and SS descriptors without checking gadget speed"
+      Merge 4.4.119 into oneplus/QC8998_O_8.0
+      Revert "binder: add missing binder_unlock()"
+      Merge 4.4.120 into oneplus/QC8998_O_8.0
+      Merge 4.4.121 into oneplus/QC8998_O_8.0
+      Merge 4.4.122 into oneplus/QC8998_O_8.0
+      Merge 4.4.123 into oneplus/QC8998_O_8.0
+      Merge 4.4.124 into oneplus/QC8998_O_8.0
+      Merge 4.4.125 into oneplus/QC8998_O_8.0
+      Merge 4.4.126 into oneplus/QC8998_O_8.0
+      Merge branch 'oneplus/QC8998_O_8.0' of https://github.com/android-linux-stable/op5 into 8.x-unified
+      Start investigating screen issues
+
+davidliu (1):
+      Synchronize codes for OxygenOS 5.0
+
+ arch/arm64/configs/flash-custom_defconfig       |  3 +-
+ arch/arm64/configs/flash-oos_defconfig          |  3 +-
+ drivers/clk/msm/clock-osm.c                     |  2 -
+ drivers/cpufreq/qcom-cpufreq.c                  |  3 +-
+ drivers/i2c/busses/i2c-msm-v2.c                 | 52 ++----------------
+ drivers/power/qcom/msm-core.c                   | 44 ++--------------
+ drivers/soc/qcom/msm_bus/msm_bus_fabric_adhoc.c | 15 ++----
+ drivers/usb/dwc3/dwc3-msm.c                     |  4 --
+ include/linux/i2c/i2c-msm-v2.h                  |  1 -
+ sound/soc/codecs/wcd-mbhc-v2.c                  | 70 -------------------------
+ sound/soc/codecs/wcd-mbhc-v2.h                  |  4 --
+ sound/soc/soc-core.c                            |  6 +--
+ 12 files changed, 17 insertions(+), 190 deletions(-)
