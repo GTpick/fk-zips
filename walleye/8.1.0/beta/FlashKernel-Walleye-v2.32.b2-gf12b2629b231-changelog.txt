@@ -1,0 +1,51 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.32
+
+Ard Biesheuvel (4):
+      BACKPORT: crypto: arm64/aes - add scalar implementation
+      UPSTREAM: crypto: arm64/aes-ce-cipher - match round key endianness with generic code
+      UPSTREAM: crypto: arm64/aes-ce-cipher: add non-SIMD generic fallback
+      BACKPORT: crypto: arm64/aes-ce-cipher - move assembler code to .S file
+
+Nathan Chancellor (9):
+      Merge branch 'crypto-clang-update' into oreo-m2
+      input: touchscreen: Fix unused variable warning
+      scripts/dtc: Fix unused variable warning
+      Revert "Makefile: Disable -Wunused-variable for GCC too"
+      kernel/sched: Disable local-init sanitizer
+      Revert "sched: turn off the TTWU_QUEUE feature"
+      Revert "sched: core: Exclude isolated cpus in sched_getaffinity cpumask"
+      Revert "wahoo: Downgrade from EAS 1.5 to EAS 1.4"
+      Merge branch 'eas-1.5' into oreo-m2
+
+Sodagudi Prasad (1):
+      UPSTREAM: kbuild: clang: disable unused variable warnings only when constant
+
+ Makefile                                           |   4 +-
+ arch/arm/include/asm/topology.h                    |   2 +
+ arch/arm/kernel/topology.c                         |   6 -
+ arch/arm64/crypto/Kconfig                          |   5 +
+ arch/arm64/crypto/Makefile                         |   5 +-
+ arch/arm64/crypto/aes-ce-ccm-core.S                |  30 +-
+ arch/arm64/crypto/aes-ce-core.S                    |  87 +++
+ .../crypto/{aes-ce-cipher.c => aes-ce-glue.c}      | 142 +----
+ arch/arm64/crypto/aes-ce.S                         |  12 +-
+ arch/arm64/crypto/aes-cipher-core.S                | 127 ++++
+ arch/arm64/crypto/aes-cipher-glue.c                |  69 +++
+ arch/arm64/include/asm/topology.h                  |   5 +-
+ arch/arm64/kernel/topology.c                       |   6 -
+ drivers/cpufreq/cpufreq.c                          |  83 ++-
+ .../input/touchscreen/lge/lgsic/touch_sw49408.c    |   2 +
+ include/linux/cpufreq.h                            |   3 +-
+ include/trace/events/sched.h                       |  57 --
+ kernel/sched/Makefile                              |   2 +
+ kernel/sched/core.c                                |   9 -
+ kernel/sched/fair.c                                | 638 ++++++++++++---------
+ kernel/sched/features.h                            |  17 +-
+ kernel/sched/sched.h                               |  20 +
+ kernel/sched/tune.c                                |   2 +-
+ scripts/dtc/libfdt/fdt_strerror.c                  |   6 +
+ 24 files changed, 821 insertions(+), 518 deletions(-)
+ create mode 100644 arch/arm64/crypto/aes-ce-core.S
+ rename arch/arm64/crypto/{aes-ce-cipher.c => aes-ce-glue.c} (56%)
+ create mode 100644 arch/arm64/crypto/aes-cipher-core.S
+ create mode 100644 arch/arm64/crypto/aes-cipher-glue.c
