@@ -1,0 +1,613 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.36
+
+Abhijeet Dharmapurikar (1):
+      smb-lib: support separate current settings from usb and pd
+
+Aditya Bavanari (1):
+      ASoC: apr: Add validity check to APR port
+
+Adrian Salido (1):
+      msm: mdss: set err detect irq to disable on init
+
+Ahmed ElArabawy (2):
+      msm: ipa: add null terminator
+      arm64: wahoo_defconfig: set CONFIG_QCA_CLD_WLAN=m
+
+Ajay Dudani (6):
+      Revert "arm64: dts: taimen: set vbat-too-low-threshold to 2.8V"
+      Revert "arm64: dts: taimen: lower FG empty and cutoff voltages"
+      Revert "arm64: dts: walleye: set fg-empty-voltage to 3.2V"
+      Revert "arm64: dts: taimen: set fg-empty-voltage to 3.2V"
+      Revert "arm64: dts: walleye: set fg-empty-voltage to 3.2V"
+      Revert "arm64: dts: taimen: set fg-empty-voltage to 3.2V"
+
+Amar Singhal (1):
+      qcacld-3.0: Check for SRD channels in sap_get_channel_list
+
+Andrew Chant (3):
+      BACKPORT: ALSA: usb-audio: fix uac control query argument
+      BACKPORT: ALSA: usb-audio: UAC2 jack detection
+      ALSA: usb-audio: fix error in backport
+
+Archana Sriram (1):
+      msm: kgsl: Enhance reading lm_sequence in _execute_reg_sequence()
+
+Arif Hussain (1):
+      qcacld-3.0: Add sanity check in wma_process_rmf_frame
+
+Ashish Kumar Dhanotiya (1):
+      qcacld-3.0: Use after free in hdd_debugfs_stats_update api
+
+Axel Lin (1):
+      UPSTREAM: PM / devfreq: Add proper locking around list_del()
+
+Badhri Jagan Sridharan (4):
+      typec: PD: Add callback to support no usb suspend
+      pd_engine:Notify smblib when no suspend is allowed
+      arm64: dts: Add tcpc configs for taimen
+      Revert "xhci: plat: Register shutdown for xhci_plat"
+
+Bao D. Nguyen (1):
+      scsi: ufs: Avoid dead lock during error recovery
+
+Billy Lau (1):
+      Disable kASLR for KASAN builds.
+
+Cheng Gu (1):
+      misc: mnh-ddr: Allocate memory for driver once
+
+Chinmay Sawarkar (1):
+      msm: vidc: Fix use after free issue in set_output_buffers
+
+Colin Ian King (1):
+      FROMLIST: ALSA: usb-audio: fix memory leak on cval
+
+Dave Jones (1):
+      Make DST_CACHE a silent config option
+
+Ecco Park (3):
+      Revert "qcacld-3.0: Check ie_len against 255 in function get_container_ies_len"
+      Revert "qcacld-3.0: Check the length of IE's before appending"
+      Revert "qcacld-3.0: Fix potential OOB read in dot11f.c"
+
+Eric Biggers (1):
+      UPSTREAM: KEYS: encrypted: fix buffer overread in valid_master_desc()
+
+Ghanim Fodi (1):
+      msm: ipa: Fix the handling of default IPA header
+
+Hanumanth Reddy Pothula (1):
+      qcacld-3.0: Validate packet length, before processing PTT commands
+
+Hardik Kantilal Patel (1):
+      icnss: Avoid wlan driver remove during modem graceful shutdown
+
+Harsh Sahu (1):
+      msm: sde: check buffer size before writing to user buffer
+
+Himanshu Agarwal (4):
+      qcacld-3.0: Add sanity check for num_hw_modes and num_phy
+      qcacld-3.0: Calculate buf_len properly for extscan hotlist event buffer
+      qcacld-3.0: Add sanity check for vdev id to prevent OOB access
+      qcacld-3.0: Avoid 2.4Ghz channel in 40Mhz for SAP start
+
+Hyojun Kim (5):
+      scsi: ufs: Add UFS slow I/O monitoring.
+      scsi: ufs: fix req_stats debugfs entry
+      blkdev: Refactoring block io latency histogram codes
+      scsi: ufs: Adding io_stats to UFS debugfs
+      scsi: ufs: Add discard command support to ufs debugfs req. stats
+
+Jack Wu (2):
+      htc_battery: add parameters to control stop/start charge level
+      usb: to recognize vbus_present from attribute "present"
+
+Jaegeuk Kim (4):
+      scsi: ufs: nullify lrbp->cmd inside of valid tag period
+      scsi: ufs: fix wrong pointer for enabled latency_hist
+      scsi: ufs: fix wrong order for slow io
+      ext4: handle errors on ext4_commit_super
+
+Jan Kara (2):
+      block: Fix bdi assignment to bdev inode when racing with disk delete
+      block: Fix oops in locked_inode_to_wb_and_lock_list()
+
+Jerome Marchand (2):
+      BACKPORT: mm, shmem: add internal shmem resident memory accounting
+      BACKPORT: mm, procfs: breakdown RSS for anon, shmem and file in /proc/pid/status
+
+Jerry Zhang (4):
+      ANDROID: usb: gadget: f_accessory: Also zero out rx_req on unbind
+      Revert "f_fs: set maxburst to one before enabling endpoints"
+      ANDROID: usb: gadget: accessory: Lower protocol version
+      Revert "f_fs: set maxburst to one before enabling endpoints"
+
+Jonathan Solnit (1):
+      UPSTREAM: net: ipv4: fix for a race condition in raw_sendmsg
+
+Kevin Cernekee (1):
+      netlink: Add netns check on taps
+
+Kiran Kumar Lokere (1):
+      qcacld-3.0: Validate opmode update req before sending to FW
+
+Kumar Anand (8):
+      Revert "qcacld-3.0: Treat ARP/ICMP/ICMPV6 packets as high priority"
+      Revert "qcacld-3.0: WLAN upgrade to 5.1.1.47F.2"
+      Revert "qcacld-3.0: Avoid 2.4Ghz channel in 40Mhz for SAP start"
+      Revert "qcacld-3.0: Trim ACS channel list based on the concurrent connections"
+      Revert "qcacld-3.0: Update bss count based on channel offset only for same band"
+      Revert "qcacld-3.0: Check for SRD channels in sap_get_channel_list"
+      Revert "qcacld-3.0: WLAN upgrade to 5.1.1.47F.1"
+      Revert "Revert "qcacld-3.0: WLAN upgrade to 5.1.1.47F.1""
+
+Kyle Tso (3):
+      dt-bindings: usb: Add typec bindings
+      arm64: dts: Add tcpc configs for walleye
+      usb: typec: Import tcpc configs from device tree
+
+Matthias Kaehlcke (3):
+      UPSTREAM: netpoll: Fix device name check in netpoll_setup()
+      BACKPORT: clocksource: Use GENMASK_ULL in definition of CLOCKSOURCE_MASK
+      UPSTREAM: tracing: Use cpumask_available() to check if cpumask variable may be used
+
+Meera Gande (1):
+      mm-camera2:isp2: Release buffer lock after use
+
+Miguel de Dios (1):
+      diag: dci: Add validity check for dci client's process descriptor
+
+Nathan Chancellor (3):
+      Merge branches 'caf-updates', 'clang-warnings', 'cpuidle-improvements' and 'devfreq-updates' into oreo-m2
+      Merge tag 'android-p-preview-2_r0.2' into oreo-m2
+      flash-{taimen,walleye}_defconfig: Update for P Preview 2
+
+Naveen Rawat (1):
+      qcacld-3.0: Check ie_len against 255 in function get_container_ies_len
+
+Nick Bray (1):
+      ANDROID: initramfs: call free_initrd() when skipping init
+
+Nick Desaulniers (1):
+      UPSTREAM: sysfs: remove signedness from sysfs_get_dirent
+
+Nicolai Stange (1):
+      PCI: Fix race condition with driver_override
+
+Paolo Abeni (2):
+      net: add dst_cache support
+      net: replace dst_cache ip6_tunnel implementation with the generic one
+
+Paolo Bonzini (1):
+      UPSTREAM: block: silently forbid sending any ioctl to a partition
+
+Peng Xu (1):
+      nl80211: Define policy for packet pattern attributes
+
+Petri Gynther (1):
+      qcacld-3.0: Treat ARP/ICMP/ICMPV6 packets as high priority
+
+Philip Cuadra (2):
+      msm: ipc_logging: Disable ipc_log_string
+      Revert "msm: ipc_logging: Disable ipc_log_string"
+
+Poddar, Siddarth (1):
+      qcacld-3.0: Fix potential buffer overflow in process_tx_info
+
+Rajeev Kumar Sirasanagandla (3):
+      msm: wlan: Update regulatory database
+      msm: wlan: Update regulatory database
+      msm: wlan: Update regulatory database
+
+Rashi Bindra (1):
+      msm: mdss: Fix for wrong length in copy_to_user
+
+Ravi Joshi (2):
+      qcacld-3.0: WLAN upgrade to 5.1.1.47F.2
+      qcacld-3.0: Fix issue while handling ndp response without iface name
+
+Roopesh Rajashekharaiah Nataraja (7):
+      soc: qcom: service-locator: Fix error message prints for receiving messages
+      soc: qcom: service-locator: Update incorrect usage of qmi_send_req_wait
+      soc: qcom: glink: Move ctx initialization of xprt ptr
+      soc: qcom: glink: Move tx_info allocation in beginning
+      soc: qcom: glink: Move get reference to valid location
+      soc: qcom: initialize glink link state
+      soc: qcom: avoid calling sleeping functions in interrupt context
+
+Sean Callanan (1):
+      FROMGIT: soc: qcom: initialize glink link state
+
+Siarhei Vishniakou (1):
+      arm64: dts: lge: taimen: max touch coordinates
+
+Siba Prasad (2):
+      scsi: ufs: Serialise ufs clock gating and ungating
+      scsi: ufs: ufs-qcom-ice: Initialize local variable in ice_cfg_start()
+
+Siqi Lin (5):
+      Revert "soc: qcom: avoid calling sleeping functions in interrupt context"
+      Revert "soc: qcom: initialize glink link state"
+      Revert "soc: qcom: glink: Move get reference to valid location"
+      Revert "soc: qcom: glink: Move tx_info allocation in beginning"
+      Revert "soc: qcom: glink: Move ctx initialization of xprt ptr"
+
+Siyuan Zhou (3):
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1-security-next' into android-msm-wahoo-4.4-oc-mr1
+      Merge android-msm-wahoo-4.4-oc-mr1 into android-msm-wahoo-4.4
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1' into android-msm-wahoo-4.4
+
+Skylar Chang (2):
+      msm: ipa: fix security issues in ipa wan driver
+      msm: ipa3: add lock for num_q6_rule
+
+Srinivas Girigowda (7):
+      qcacld-3.0: Add sanity check for vdev_id in wma_wow_wakeup_host_event
+      qcacld-3.0: WLAN upgrade to 5.1.1.47F.1
+      qcacld-3.0: WLAN upgrade to 5.1.1.47F.2
+      qcacld-3.0: WLAN upgrade to 5.2.1.1A
+      726b68f Release 5.2.1.1C
+      qcacld-3.0: WLAN upgrade to 5.2.1.1C.1
+      qcacld-3.0: WLAN upgrade to 5.2.1.1D
+
+Suren Baghdasaryan (1):
+      ANDROID: NFC: Fix possible memory corruption when handling SHDLC I-Frame commands
+
+Taniya Das (2):
+      clk: qcom: osm: Update maximum number of bytes to read from buffer
+      clk: msm: osm: Update maximum number of bytes to read from buffer
+
+Ted Lin (1):
+      qpnp-fg-gen3: add cycle_counts_bins device driver attribute
+
+Thierry Strudel (10):
+      BACKPORT: USB: core: harden cdc_parse_cdc_header
+      Merge 4.4.116 into android-msm-wahoo-4.4
+      power/supply qpnp-smb2: remove POWER_SUPPLY_PROP_PORT_TEMP
+      arm64: dts: msm8998-htc-common: set imem-restart_info
+      qpnp: fg+smb-lib: implement Linux cycle count
+      arm64:configs:wahoo: disable CONFIG_QPNP_FG_GEN3_LEGACY_CYCLE_COUNT
+      Revert "ANDROID: usb: gadget: accessory: Lower protocol version"
+      Revert "Revert "f_fs: set maxburst to one before enabling endpoints""
+      lge_battery: add parameters to control stop/start charge level
+      power: qcom/bcl_peripheral: fix READ_OPTIONAL_PROP
+
+Tiger Yu (2):
+      qcacld-3.0: Fix potential buffer overflow in ol_rx_flush_handler
+      qcacld-3.0: Fix potential buffer overflow in htt_t2h_lp_msg_handler
+
+Tim Murray (2):
+      Revert "Revert "select: use freezable blocking call""
+      cpuidle: don't disable cpuidle when entering suspend
+
+Tobias Jakobi (1):
+      UPSTREAM: PM / devfreq: Skip status update on uninitialized previous_freq
+
+Trevor Bunker (1):
+      misc: mnh: mipi: change variable type to check for error
+
+Tushnim Bhattacharyya (1):
+      qcacld-3.0: Trim ACS channel list based on the concurrent connections
+
+Varun Reddy Yeturu (3):
+      qcacld-3.0: Remove unused function proc_set_req_internal
+      qcacld-3.0: Check for valid vdev ID in SWBA event handler
+      qcacld-3.0: Check the length of IE's before appending
+
+Vignesh Viswanathan (4):
+      qcacld-3.0: Fix buffer overflow in wma radio_tx_power_level_stats handler
+      qcacld-3.0: Fix buffer overread in wma_extscan_hotlist_match_event_handler
+      qcacld-3.0: Fix potential buffer overwrite in wma_unified_link_iface_stats_event_handler
+      qcacld-3.0: Fix potential OOB read in dot11f.c
+
+Vijayavardhan Vennapusa (1):
+      USB: f_accessory: Check dev pointer before decoding ctrl request
+
+Wei Wang (8):
+      arch/arm64/wahoo_defconfig: enable DEADLINE I/O scheduler
+      ANDROID: mm: add config for default readahead size
+      arch/arm64/wahoo_defconfig: set default readahead to 2048KB
+      thermal: qcom: tracing: add clock_set_rate tracing for lmh
+      misc: mnh: use async probe
+      input: misc: stmvl53L0: use async probe
+      init/main.c: add sync point between each level
+      staging: bcm15602: use async probe
+
+Wesley Cheng (1):
+      dwc3: resize txfifo of IN/INT endpoint before enabling it
+
+Yeshwanth Sriram Guntuka (1):
+      qcacld-3.0: Update bss count based on channel offset only for same band
+
+andy_lee (1):
+      reset/msm-poweroff: setting reboot message
+
+c_mtharu (1):
+      msm: ADSPRPC: Change SSC VMID from 5 to 38
+
+ch.han (1):
+      arm64: dts: taimen: To avoid AOD blinking issues, changed some related commands
+
+hkyu.park (1):
+      power: lge_battery: Enable bm_check_therm_charging when not charging
+
+julius.moon (1):
+      gower: smb138x-charger: changed buck freq from 700 to 900 kHz
+
+spuligil (1):
+      qcacld-3.0: WLAN upgrade to 5.2.1.1B
+
+yihsiang_peng (1):
+      power: smb-lib: Skip enable DRP when chg->typec_pr_disabled is true
+
+ Documentation/ABI/testing/sysfs-devices-ufs        |   15 +
+ Documentation/filesystems/proc.txt                 |   13 +-
+ arch/arm64/boot/dts/htc/batterydata-walleye.dtsi   |    1 -
+ arch/arm64/boot/dts/htc/msm8998-htc-common.dtsi    |    8 +
+ arch/arm64/boot/dts/htc/msm8998-htc-usb-xa.dtsi    |   15 +
+ .../dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi     |   32 +-
+ arch/arm64/boot/dts/lge/msm8998-taimen-pm.dtsi     |    7 +-
+ .../dts/lge/msm8998-taimen-touch-stm-ftm4.dtsi     |    2 +-
+ arch/arm64/boot/dts/lge/msm8998-taimen-usb.dtsi    |   14 +
+ arch/arm64/configs/flash-taimen_defconfig          |    3 +-
+ arch/arm64/configs/flash-walleye_defconfig         |    3 +-
+ arch/arm64/configs/wahoo_defconfig                 |    5 +-
+ arch/s390/mm/pgtable.c                             |    5 +-
+ arch/x86/include/asm/thread_info.h                 |   44 -
+ block/blk-core.c                                   |   93 +-
+ block/scsi_ioctl.c                                 |   29 -
+ build.config.kasan                                 |    3 +-
+ drivers/base/power/main.c                          |    3 -
+ drivers/char/adsprpc.c                             |    2 +-
+ drivers/clk/msm/clock-osm.c                        |    4 +-
+ drivers/clk/qcom/clk-cpu-osm.c                     |    4 +-
+ drivers/devfreq/devfreq.c                          |    8 +-
+ drivers/gpu/msm/adreno_a5xx.c                      |    6 +-
+ drivers/input/misc/vl53L0/stmvl53l0_module-cci.c   |    1 +
+ drivers/input/misc/vl53L0/stmvl53l0_module-i2c.c   |    1 +
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |   12 +-
+ .../msm/camera_v2/isp/msm_isp_stats_util.c         |    4 +
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |    4 -
+ .../platform/msm/sde/rotator/sde_rotator_debug.c   |    7 +-
+ drivers/media/platform/msm/vidc/msm_vidc_common.c  |    6 +-
+ drivers/misc/mnh/mnh-ddr.c                         |  131 +-
+ drivers/misc/mnh/mnh-ddr.h                         |   16 +-
+ drivers/misc/mnh/mnh-sm.c                          |   31 +-
+ drivers/mmc/core/bus.c                             |   12 +-
+ drivers/mmc/core/core.c                            |   22 +-
+ drivers/power/htc_battery.c                        |  101 +-
+ drivers/power/lge_battery.c                        |  116 +-
+ drivers/power/power_supply_sysfs.c                 |    1 -
+ drivers/power/reset/msm-poweroff.c                 |  130 ++
+ drivers/power/supply/qcom/Kconfig                  |   11 +
+ drivers/power/supply/qcom/bcl_peripheral.c         |    7 +-
+ drivers/power/supply/qcom/qpnp-fg-gen3.c           |  109 +-
+ drivers/power/supply/qcom/qpnp-smb2.c              |   16 +-
+ drivers/power/supply/qcom/smb-lib.c                |   41 +-
+ drivers/power/supply/qcom/smb-lib.h                |    4 +
+ drivers/power/supply/qcom/smb138x-charger.c        |    6 +-
+ drivers/scsi/ufs/ufs-debugfs.c                     |   93 +-
+ drivers/scsi/ufs/ufs-qcom-ice.c                    |    1 +
+ drivers/scsi/ufs/ufshcd.c                          |  210 ++-
+ drivers/scsi/ufs/ufshcd.h                          |   39 +-
+ drivers/soc/qcom/icnss.c                           |   30 +-
+ .../staging/easel/regulator/bcm15602-regulator.c   |    1 +
+ drivers/staging/fw-api/fw/htc.h                    |   32 +-
+ drivers/staging/fw-api/fw/htt.h                    |   12 +-
+ drivers/staging/fw-api/fw/htt_ppdu_stats.h         | 1595 ++++++++++++++++++++
+ drivers/staging/fw-api/fw/htt_stats.h              |  670 +++++++-
+ drivers/staging/fw-api/fw/wmi_services.h           |   13 +-
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |  160 +-
+ drivers/staging/fw-api/fw/wmi_unified.h            |  775 +++++++++-
+ drivers/staging/fw-api/fw/wmi_version.h            |    2 +-
+ drivers/staging/qca-wifi-host-cmn/hif/inc/hif.h    |    3 +-
+ .../qca-wifi-host-cmn/hif/src/ce/ce_service.c      |   22 +-
+ .../staging/qca-wifi-host-cmn/hif/src/hif_debug.h  |    6 +-
+ .../qca-wifi-host-cmn/hif/src/pcie/if_pci.c        |   16 +-
+ .../qca-wifi-host-cmn/hif/src/snoc/hif_io32_snoc.h |   11 +-
+ drivers/staging/qca-wifi-host-cmn/htc/htc.c        |   10 +-
+ drivers/staging/qca-wifi-host-cmn/htc/htc_recv.c   |    4 +-
+ drivers/staging/qca-wifi-host-cmn/htc/htc_send.c   |   19 +-
+ .../staging/qca-wifi-host-cmn/htc/htc_services.c   |    6 +-
+ .../qca-wifi-host-cmn/qdf/inc/qdf_debugfs.h        |  271 +++-
+ .../qca-wifi-host-cmn/qdf/inc/qdf_mc_timer.h       |    3 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_trace.h  |  163 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_types.h  |   34 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_util.h   |   14 +-
+ .../qdf/linux/src/i_qdf_debugfs.h                  |   24 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_types.h  |    5 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_util.h   |   24 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_debugfs.c  |  416 ++++-
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_mc_timer.c |   25 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_nbuf.c     |   24 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_trace.c    |  794 ++++++++--
+ .../wmi/inc/wmi_unified_apf_tlv.h                  |  100 ++
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_api.h    |  111 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |  192 +++
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_priv.h   |   29 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_tlv.h    |   25 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_tlv_helper.c     |   37 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified.c        |   33 +-
+ .../wmi/src/wmi_unified_apf_tlv.c                  |  229 +++
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_api.c    |  107 +-
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |  260 +++-
+ drivers/staging/qcacld-3.0/Kbuild                  |   23 +-
+ drivers/staging/qcacld-3.0/Makefile                |   20 +-
+ drivers/staging/qcacld-3.0/core/cds/inc/cds_api.h  |   11 +-
+ .../qcacld-3.0/core/cds/inc/cds_concurrency.h      |   23 +-
+ .../staging/qcacld-3.0/core/cds/inc/cds_config.h   |   34 +-
+ .../staging/qcacld-3.0/core/cds/inc/cds_sched.h    |   12 +
+ .../staging/qcacld-3.0/core/cds/inc/cds_utils.h    |    4 +-
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |   76 +-
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |  224 ++-
+ .../staging/qcacld-3.0/core/cds/src/cds_mc_timer.c |    4 +-
+ .../staging/qcacld-3.0/core/cds/src/cds_sched.c    |   46 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt.c       |    8 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_t2h.c   |   59 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_tx.c    |    3 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_rx.c    |    7 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_rx_defrag.c |    7 +-
+ .../qcacld-3.0/core/dp/txrx/ol_rx_reorder.c        |   19 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_tx.c    |   71 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_desc.c   |   27 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_queue.c  |   10 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_send.c   |   14 +
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |  251 ++-
+ .../qcacld-3.0/core/dp/txrx/ol_txrx_types.h        |   12 +
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_apf.h |  129 ++
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_assoc.h       |   11 +-
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h |  440 +++++-
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_ipa.h |   26 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_main.h        |   56 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_power.h       |    6 +-
+ .../core/hdd/inc/wlan_hdd_softap_tx_rx.h           |    4 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_tx_rx.h       |    2 +-
+ .../qcacld-3.0/core/hdd/inc/wlan_hdd_wext.h        |    4 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_apf.c |  729 +++++++++
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_assoc.c       |  328 ++--
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  249 ++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  945 +++++-------
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.h    |   33 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   45 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ext_scan.c    |   51 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |  191 ++-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_ipa.c |  171 ++-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_lro.c |   11 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_main.c        |  603 +++++---
+ .../core/hdd/src/wlan_hdd_nan_datapath.c           |  105 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_napi.c        |    2 +-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_p2p.c |  141 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_power.c       |   47 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_regulatory.c  |    2 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.c        |   18 +-
+ .../core/hdd/src/wlan_hdd_softap_tx_rx.c           |   63 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_stats.c       |   11 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_tdls.c        |   20 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_tx_rx.c       |  124 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_wext.c        |  168 ++-
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_wmm.c |   78 +-
+ .../staging/qcacld-3.0/core/mac/inc/ani_global.h   |    5 +-
+ .../qcacld-3.0/core/mac/inc/qwlan_version.h        |    8 +-
+ drivers/staging/qcacld-3.0/core/mac/inc/sir_api.h  |   93 +-
+ .../core/mac/src/cfg/cfgUtil/dot11f.frms           |   10 +-
+ .../qcacld-3.0/core/mac/src/include/dot11f.h       |  299 ++--
+ .../qcacld-3.0/core/mac/src/include/sir_params.h   |    9 +-
+ .../qcacld-3.0/core/mac/src/pe/include/lim_api.h   |    6 +-
+ .../core/mac/src/pe/include/lim_session.h          |    5 +
+ .../qcacld-3.0/core/mac/src/pe/include/lim_trace.h |    4 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_api.c       |   88 +-
+ .../core/mac/src/pe/lim/lim_ft_preauth.c           |    9 +-
+ .../core/mac/src/pe/lim/lim_process_action_frame.c |    1 +
+ .../mac/src/pe/lim/lim_process_assoc_req_frame.c   |   24 +-
+ .../core/mac/src/pe/lim/lim_process_deauth_frame.c |  250 +--
+ .../mac/src/pe/lim/lim_process_disassoc_frame.c    |  109 +-
+ .../core/mac/src/pe/lim/lim_process_fils.c         |   15 +-
+ .../mac/src/pe/lim/lim_process_message_queue.c     |   11 +-
+ .../mac/src/pe/lim/lim_process_mlm_req_messages.c  |   16 +
+ .../mac/src/pe/lim/lim_process_probe_rsp_frame.c   |   12 +-
+ .../mac/src/pe/lim/lim_process_sme_req_messages.c  |   14 +-
+ .../core/mac/src/pe/lim/lim_process_tdls.c         |   15 +-
+ .../core/mac/src/pe/lim/lim_scan_result_utils.c    |   13 +-
+ .../mac/src/pe/lim/lim_send_management_frames.c    |   17 +-
+ .../mac/src/pe/lim/lim_send_sme_rsp_messages.c     |   12 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_session.c   |    4 +-
+ .../core/mac/src/pe/lim/lim_session_utils.c        |    4 +-
+ .../core/mac/src/pe/lim/lim_sme_req_utils.c        |   55 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_trace.c     |    7 +-
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_types.h     |   43 +
+ .../qcacld-3.0/core/mac/src/pe/lim/lim_utils.c     |   23 +-
+ .../qcacld-3.0/core/mac/src/pe/rrm/rrm_api.c       |    4 +-
+ .../src/sys/legacy/src/system/src/sys_entry_func.c |   17 +-
+ .../core/mac/src/sys/legacy/src/utils/src/dot11f.c |  233 ++-
+ .../mac/src/sys/legacy/src/utils/src/mac_trace.c   |    4 +-
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |   32 +-
+ drivers/staging/qcacld-3.0/core/sap/inc/sap_api.h  |   23 +-
+ .../qcacld-3.0/core/sap/src/sap_api_link_cntl.c    |   25 +-
+ .../qcacld-3.0/core/sap/src/sap_ch_select.c        |  135 +-
+ drivers/staging/qcacld-3.0/core/sap/src/sap_fsm.c  |   58 +-
+ .../staging/qcacld-3.0/core/sap/src/sap_internal.h |   24 +-
+ .../staging/qcacld-3.0/core/sap/src/sap_module.c   |   56 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |   30 +
+ .../staging/qcacld-3.0/core/sme/inc/csr_internal.h |   14 +
+ .../qcacld-3.0/core/sme/inc/csr_neighbor_roam.h    |   15 +
+ drivers/staging/qcacld-3.0/core/sme/inc/sme_api.h  |  186 ++-
+ .../staging/qcacld-3.0/core/sme/inc/sme_internal.h |    8 +-
+ .../qcacld-3.0/core/sme/inc/sme_rrm_internal.h     |    3 +-
+ .../qcacld-3.0/core/sme/src/common/sme_api.c       |  277 +++-
+ .../qcacld-3.0/core/sme/src/common/sme_trace.c     |    7 +-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_roam.c     |  337 ++++-
+ .../qcacld-3.0/core/sme/src/csr/csr_api_scan.c     |   12 +-
+ .../core/sme/src/csr/csr_neighbor_roam.c           |    9 +-
+ .../staging/qcacld-3.0/core/sme/src/csr/csr_util.c |   54 +-
+ .../staging/qcacld-3.0/core/sme/src/qos/sme_qos.c  |   10 +-
+ .../staging/qcacld-3.0/core/sme/src/rrm/sme_rrm.c  |   11 +-
+ .../qcacld-3.0/core/utils/epping/src/epping_main.c |    5 +-
+ .../qcacld-3.0/core/utils/epping/src/epping_txrx.c |    8 +-
+ .../qcacld-3.0/core/utils/fwlog/dbglog_host.c      |   14 +-
+ .../core/utils/pktlog/include/pktlog_ac.h          |    6 +-
+ .../qcacld-3.0/core/utils/pktlog/pktlog_ac.c       |   25 +-
+ .../qcacld-3.0/core/utils/pktlog/pktlog_internal.c |  157 +-
+ drivers/staging/qcacld-3.0/core/wma/inc/wma.h      |  113 +-
+ drivers/staging/qcacld-3.0/core/wma/inc/wma_api.h  |   18 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_internal.h |    4 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_tgt_cfg.h  |    5 +-
+ .../staging/qcacld-3.0/core/wma/inc/wma_types.h    |   11 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c |    6 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |  377 +++--
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |  276 +++-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |  111 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |   50 +-
+ .../qcacld-3.0/core/wma/src/wma_nan_datapath.c     |   15 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_power.c    |   22 +-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  286 ++--
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |   80 +-
+ drivers/staging/qcacld-3.0/uapi/linux/qca_vendor.h |   35 +-
+ drivers/thermal/msm_lmh_dcvs.c                     |    5 +
+ drivers/usb/dwc3/core.h                            |    8 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |    7 +-
+ drivers/usb/dwc3/ep0.c                             |   28 +-
+ drivers/usb/dwc3/gadget.c                          |  141 +-
+ drivers/usb/gadget/function/f_accessory.c          |   10 +-
+ drivers/usb/gadget/function/f_fs.c                 |    6 -
+ drivers/usb/pd/pd_engine.c                         |  189 ++-
+ drivers/usb/typec/tcpm.c                           |    8 +
+ drivers/usb/typec/tcpm.h                           |   10 +-
+ drivers/video/fbdev/msm/mdss_dsi.c                 |    5 +-
+ fs/block_dev.c                                     |   15 +-
+ fs/ext4/super.c                                    |   20 +-
+ fs/proc/task_mmu.c                                 |   17 +-
+ fs/select.c                                        |    3 +-
+ include/dt-bindings/usb/typec.h                    |   23 +
+ include/linux/blkdev.h                             |   39 +-
+ include/linux/clocksource.h                        |    2 +-
+ include/linux/mm.h                                 |   20 +-
+ include/linux/mm_types.h                           |    7 +-
+ include/linux/mmc/host.h                           |    3 +-
+ include/linux/power_supply.h                       |    1 -
+ include/linux/sysfs.h                              |    2 +-
+ include/linux/usb/audio-v2.h                       |    4 +-
+ include/linux/writeback.h                          |    1 +
+ init/main.c                                        |    5 +-
+ kernel/events/uprobes.c                            |    2 +-
+ kernel/trace/trace.c                               |    5 +-
+ mm/Kconfig                                         |    8 +
+ mm/memory.c                                        |   30 +-
+ mm/oom_kill.c                                      |    5 +-
+ mm/rmap.c                                          |   12 +-
+ net/Kconfig                                        |    4 +
+ net/core/Makefile                                  |    1 +
+ net/core/netpoll.c                                 |    2 +-
+ net/ipv4/raw.c                                     |    2 +-
+ net/nfc/hci/core.c                                 |   10 +
+ net/wireless/db.txt                                |   12 +-
+ sound/usb/card.c                                   |    2 +-
+ sound/usb/clock.c                                  |    5 +-
+ sound/usb/mixer.c                                  |  175 ++-
+ 263 files changed, 14950 insertions(+), 3829 deletions(-)
+ create mode 100644 Documentation/ABI/testing/sysfs-devices-ufs
+ create mode 100644 drivers/staging/fw-api/fw/htt_ppdu_stats.h
+ create mode 100644 drivers/staging/qca-wifi-host-cmn/wmi/inc/wmi_unified_apf_tlv.h
+ create mode 100644 drivers/staging/qca-wifi-host-cmn/wmi/src/wmi_unified_apf_tlv.c
+ create mode 100644 drivers/staging/qcacld-3.0/core/hdd/inc/wlan_hdd_apf.h
+ create mode 100644 drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_apf.c
+ create mode 100644 include/dt-bindings/usb/typec.h
