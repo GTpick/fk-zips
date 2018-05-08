@@ -1,0 +1,71 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.36
+
+Archana Sriram (1):
+      msm: kgsl: Enhance reading lm_sequence in _execute_reg_sequence()
+
+Axel Lin (1):
+      UPSTREAM: PM / devfreq: Add proper locking around list_del()
+
+Chinmay Sawarkar (1):
+      msm: vidc: Fix use after free issue in set_output_buffers
+
+Harsh Sahu (1):
+      msm: sde: check buffer size before writing to user buffer
+
+Jan Kara (2):
+      block: Fix bdi assignment to bdev inode when racing with disk delete
+      block: Fix oops in locked_inode_to_wb_and_lock_list()
+
+Matthias Kaehlcke (3):
+      UPSTREAM: netpoll: Fix device name check in netpoll_setup()
+      BACKPORT: clocksource: Use GENMASK_ULL in definition of CLOCKSOURCE_MASK
+      UPSTREAM: tracing: Use cpumask_available() to check if cpumask variable may be used
+
+Meera Gande (1):
+      mm-camera2:isp2: Release buffer lock after use
+
+Nathan Chancellor (1):
+      Merge branches 'caf-updates', 'clang-warnings', 'cpuidle-improvements' and 'devfreq-updates' into oreo-m2
+
+Nick Desaulniers (1):
+      UPSTREAM: sysfs: remove signedness from sysfs_get_dirent
+
+Rashi Bindra (1):
+      msm: mdss: Fix for wrong length in copy_to_user
+
+Suren Baghdasaryan (1):
+      ANDROID: NFC: Fix possible memory corruption when handling SHDLC I-Frame commands
+
+Taniya Das (2):
+      clk: qcom: osm: Update maximum number of bytes to read from buffer
+      clk: msm: osm: Update maximum number of bytes to read from buffer
+
+Tim Murray (1):
+      cpuidle: don't disable cpuidle when entering suspend
+
+Tobias Jakobi (1):
+      UPSTREAM: PM / devfreq: Skip status update on uninitialized previous_freq
+
+Vijayavardhan Vennapusa (1):
+      USB: f_accessory: Check dev pointer before decoding ctrl request
+
+ drivers/base/power/main.c                                 |  3 ---
+ drivers/clk/msm/clock-osm.c                               |  4 ++--
+ drivers/clk/qcom/clk-cpu-osm.c                            |  4 ++--
+ drivers/devfreq/devfreq.c                                 |  8 +++++++-
+ drivers/gpu/msm/adreno_a5xx.c                             |  6 +++---
+ .../media/platform/msm/camera_v2/isp/msm_isp_axi_util.c   | 12 +++++++++++-
+ .../media/platform/msm/camera_v2/isp/msm_isp_stats_util.c |  4 ++++
+ drivers/media/platform/msm/camera_v2/isp/msm_isp_util.c   |  4 ----
+ .../media/platform/msm/sde/rotator/sde_rotator_debug.c    |  7 ++++++-
+ drivers/media/platform/msm/vidc/msm_vidc_common.c         |  6 +++---
+ drivers/usb/gadget/function/f_accessory.c                 |  6 ++++++
+ drivers/video/fbdev/msm/mdss_dsi.c                        |  4 ++--
+ fs/block_dev.c                                            | 15 +++++----------
+ include/linux/clocksource.h                               |  2 +-
+ include/linux/sysfs.h                                     |  2 +-
+ include/linux/writeback.h                                 |  1 +
+ kernel/trace/trace.c                                      |  5 +++--
+ net/core/netpoll.c                                        |  2 +-
+ net/nfc/hci/core.c                                        | 10 ++++++++++
+ 19 files changed, 68 insertions(+), 37 deletions(-)
