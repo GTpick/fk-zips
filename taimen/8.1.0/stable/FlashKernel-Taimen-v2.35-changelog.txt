@@ -1,0 +1,178 @@
+http://github.com/nathanchance/wahoo/commits/oreo-m2
+
+Ashish Kumar Dhanotiya (1):
+      qcacld-3.0: Add mutex lock for proc handlers
+
+Benjamin Chan (1):
+      msm: mdss: adjust mdss_mdp_get_plane_sizes parameters init order
+
+David Howells (1):
+      UPSTREAM: vfs: Add sb_rdonly(sb) to query the MS_RDONLY flag on s_flags
+
+Dmitry Torokhov (1):
+      Input: gtco - fix potential out-of-bound access
+
+Eric Biggers (8):
+      UPSTREAM: ext4: correct endianness conversion in __xattr_check_inode()
+      UPSTREAM: ext4: don't read out of bounds when checking for in-inode xattrs
+      BACKPORT: ext4: constify static data that is never modified
+      UPSTREAM: ext4: merge ext4_xattr_list() into ext4_listxattr()
+      UPSTREAM: ext4: rename ext4_xattr_check_names() to ext4_xattr_check_entries()
+      UPSTREAM: ext4: remove ext4_xattr_check_entry()
+      BACKPORT: ext4: fix use-after-iput when fscrypt contexts are inconsistent
+      BACKPORT: arm64: support keyctl() system call in 32-bit mode
+
+Eric Dumazet (5):
+      UPSTREAM: tcp-tso: do not split TSO packets at retransmit time
+      UPSTREAM: tcp: implement TSQ for retransmits
+      UPSTREAM: net: allow per netns sysctl_rmem and sysctl_wmem for protos
+      UPSTREAM: tcp: allow drivers to tweak TSQ logic
+      UPSTREAM: net: sk_pacing_shift_update() helper
+
+Eric W. Biederman (1):
+      net: Fix double free and memory corruption in get_net_ns_by_id()
+
+Goffredo Baroncelli (1):
+      BACKPORT: iversion: Rename make inode_cmp_iversion{+raw} to inode_eq_iversion{+raw}
+
+Haibin Liu (2):
+      msm: sensor: actuator: avoid accessing out of bound memory
+      msm: sensor: actuator: fix out of bound read for region params
+
+Jan Kara (9):
+      UPSTREAM: ext4: get rid of EXT4_GET_BLOCKS_NO_LOCK flag
+      UPSTREAM: ext4: implement allocation of pre-zeroed blocks
+      BACKPORT: ext4: use pre-zeroed blocks for DAX page faults
+      UPSTREAM: ext4: fix crashes in dioread_nolock mode
+      UPSTREAM: ext4: fixup free space calculations when expanding inodes
+      UPSTREAM: ext4: Check that external xattr value block is zero
+      UPSTREAM: ext4: remove checks for e_value_block
+      UPSTREAM: ext4: fix data corruption with EXT4_GET_BLOCKS_ZERO
+      UPSTREAM: ext4: unmap metadata when zeroing blocks
+
+Jeff Layton (6):
+      BACKPORT: fs: new API for handling inode->i_version
+      UPSTREAM: fs: don't take the i_lock in inode_inc_iversion
+      BACKPORT: fat: convert to new i_version API
+      BACKPORT: ext4: convert to new i_version API
+      UPSTREAM: fs: handle inode->i_version more efficiently
+      UPSTREAM: iversion: make inode_cmp_iversion{+raw} return bool instead of s64
+
+Jonathan Solnit (1):
+      msm: ipa: Fix to unsigned integer underflow
+
+Lior David (1):
+      wil6210: missing length check in wmi_set_ie
+
+Lukas Czerner (1):
+      FROMLIST: ext4: update mtime in ext4_punch_hole even if no blocks are released
+
+Lynus Vaz (1):
+      msm: kgsl: Use the bind lock when dumping entries
+
+Miklos Szeredi (1):
+      UPSTREAM: vfat: don't use ->d_time
+
+Nathan Chancellor (4):
+      ANDROID: sdcardfs: convert to new i_version API
+      Merge branches 'ext4-for-wahoo' and 'tcp-improvements' into oreo-m2
+      Merge tag 'android-8.1.0_r0.51' into android-msm-wahoo-4.4-oreo-m2
+      Merge remote-tracking branch 'als/android-msm-wahoo-4.4-oreo-m2' into oreo-m2
+
+Odelu Kukatla (1):
+      msm: msm_bus: Add mutex lock for floor vote data
+
+Oleg Matcovschi (2):
+      Merge android-msm-wahoo-4.4-oc-mr1 into android-msm-wahoo-4.4-oc-mr1-security-next
+      Merge android-msm-wahoo-4.4-oc-mr1-security-next into android-msm-wahoo-4.4-oc-mr1
+
+Padma, Santhosh Kumar (1):
+      qcacld-3.0: Avoid buffer overflow
+
+Rajeev Kumar (1):
+      qcacld-3.0: Avoid heap overflow during cfg80211 vendor scan request
+
+Ross Zwisler (1):
+      UPSTREAM: ext2, ext4: only set S_DAX for regular inodes
+
+Tanya Dixit (1):
+      drivers: qdsp6v2: Add mutex unlock to properly release lock
+
+Theodore Ts'o (6):
+      UPSTREAM: ext4: fix deadlock between inline_data and ext4_expand_extra_isize_ea()
+      BACKPORT: ext4: lock the xattr block before checksuming it
+      BACKPORT: ext4: move call to ext4_error() into ext4_xattr_check_block()
+      UPSTREAM: ext4: add bounds checking to ext4_xattr_find_entry()
+      UPSTREAM: ext4: force revalidation of directory pointer after seekdir(2)
+      UPSTREAM: ext4 crypto: move context consistency check to ext4_file_open()
+
+Tiger Yu (1):
+      qcacld-3.0: Fix potential buffer overflow for TX_COMPL_IND
+
+Vignesh Kulothungan (1):
+      msm: Array bounds check for buffer index
+
+Vignesh Viswanathan (2):
+      qcacld-3.0: Fix buffer overwrite due to ssid_len in WMA handlers
+      qcacld-3.0: Fix buffer overread in wma_extscan_cached_results_event_handler
+
+Zhen Kong (1):
+      qseecom: fix an app unloading issue when the app is blocked
+
+tfyu (1):
+      qcacld-3.0: Fix memory leak for txrx_fw_stats cmd
+
+ arch/arm64/Kconfig                                 |   4 +
+ drivers/misc/qcom/qdsp6v2/audio_hwacc_effects.c    |   5 +-
+ drivers/net/wireless/ath/wil6210/wmi.c             |   8 +-
+ .../qcacld-3.0/core/utils/pktlog/linux_ac.c        |  12 +-
+ fs/btrfs/file.c                                    |   1 +
+ fs/btrfs/inode.c                                   |   1 +
+ fs/btrfs/ioctl.c                                   |   1 +
+ fs/btrfs/xattr.c                                   |   1 +
+ fs/ext2/inode.c                                    |   2 +-
+ fs/ext4/dir.c                                      |  17 +-
+ fs/ext4/ext4.h                                     |  16 +-
+ fs/ext4/extents.c                                  |  88 +++---
+ fs/ext4/file.c                                     |  29 +-
+ fs/ext4/inline.c                                   |   7 +-
+ fs/ext4/inode.c                                    | 217 +++++++++----
+ fs/ext4/ioctl.c                                    |   3 +-
+ fs/ext4/mballoc.c                                  |   2 +-
+ fs/ext4/namei.c                                    |  21 +-
+ fs/ext4/super.c                                    |   6 +-
+ fs/ext4/sysfs.c                                    |   8 +-
+ fs/ext4/xattr.c                                    | 276 ++++++++---------
+ fs/fat/dir.c                                       |   3 +-
+ fs/fat/inode.c                                     |   9 +-
+ fs/fat/namei_msdos.c                               |   7 +-
+ fs/fat/namei_vfat.c                                |  32 +-
+ fs/inode.c                                         |   1 +
+ fs/sdcardfs/lookup.c                               |   3 +-
+ fs/sdcardfs/super.c                                |   3 +-
+ include/linux/fs.h                                 |  20 +-
+ include/linux/iversion.h                           | 337 +++++++++++++++++++++
+ include/net/sock.h                                 |  35 +++
+ include/net/tcp.h                                  |   4 +-
+ include/trace/events/ext4.h                        |   2 +-
+ include/trace/events/sock.h                        |   2 +-
+ net/core/sock.c                                    |  11 +-
+ net/ipv4/tcp_input.c                               |   2 +-
+ net/ipv4/tcp_output.c                              | 138 +++++----
+ net/ipv4/tcp_timer.c                               |   4 +-
+ 38 files changed, 908 insertions(+), 430 deletions(-)
+ create mode 100644 include/linux/iversion.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (2):
+      Merge branch 'master' into wahoo-flash-8.1.0
+      Pixel 2: Update supported configuration to May security patch level
+
+Zackptg5 (1):
+      Support more locations for dtbo img (#24)
+
+ anykernel.sh      | 2 +-
+ tools/ak2-core.sh | 3 ++-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
