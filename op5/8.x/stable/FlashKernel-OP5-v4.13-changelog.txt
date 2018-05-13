@@ -1,0 +1,16 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Martijn Coenen (1):
+      UPSTREAM: ANDROID: binder: prevent transactions into own process.
+
+Shiyong Li (1):
+      flash_defconfig: Enable SUSPEND_SKIP_SYNC
+
+Yuanyuan Zhong (1):
+      arm64: strcmp: align to 64B cache line
+
+ arch/arm64/configs/flash-custom_defconfig | 1 +
+ arch/arm64/configs/flash-oos_defconfig    | 1 +
+ arch/arm64/lib/strcmp.S                   | 1 +
+ drivers/android/binder.c                  | 8 ++++++++
+ 4 files changed, 11 insertions(+)
