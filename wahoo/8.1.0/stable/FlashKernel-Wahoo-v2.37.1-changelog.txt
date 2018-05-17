@@ -1,0 +1,16 @@
+http://github.com/nathanchance/wahoo/commits/oreo-m2
+
+Nathan Chancellor (5):
+      {htc,lge}_battery: Revert all checks for a particular device's battery
+      arm64: Add functions to get the current device being used
+      lge_battery: Check device through command line
+      htc_battery: Check device through command line
+      wake_gestures: Remove cmdline boilerplate
+
+ arch/arm64/kernel/cpuinfo.c               | 19 ++++++++++++++
+ drivers/input/touchscreen/wake_gestures.c | 35 +++++++++++---------------
+ drivers/power/htc_battery.c               | 41 +++++++++++++++++--------------
+ drivers/power/lge_battery.c               | 33 ++++++-------------------
+ include/linux/wahoo_info.h                |  4 +++
+ 5 files changed, 68 insertions(+), 64 deletions(-)
+ create mode 100644 include/linux/wahoo_info.h
