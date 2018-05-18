@@ -1,0 +1,207 @@
+http://github.com/nathanchance/op5/commits/queue-4.15
+
+Abhinav Kumar (2):
+      qcacmn: Add new ini to set delay Hand-off period
+      qcacld-3.0: Fix to pass appropriate buffer length to unpack RSN IE
+
+Aditya Bavanari (1):
+      voice_svc: Avoid double free in voice_svc driver
+
+Ajay Agarwal (1):
+      usb: dwc3-msm: Resume PHY before notify_connect on start_host
+
+Alok Kumar (1):
+      qcacld-3.0: Fix race vdev down and tx_desc->vdev access
+
+Arun Kumar Neelakantam (2):
+      net: ipc_router: Fix buffer overflow during memcpy
+      net: ipc_router: Remove wakeup-source for Sensor ports
+
+Ashish Kumar Dhanotiya (1):
+      qcacld-3.0: Remove CSR dot11f IE RSN max len
+
+CNSS_WLAN Service (9):
+      Merge "qcacld-3.0: Avoid info leak in hdd_driver_rxfilter_comand_handler" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix Use after free in wma_vdev_start_resp_handler" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix to pass appropriate buffer length to unpack RSN IE" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Remove CSR dot11f IE RSN max len" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix race vdev down and tx_desc->vdev access" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Do not update beacon for ESE" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix use after free in sme_qos_del_ts_req" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Restrict PLD event as per the driver state" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix OOB write in wma_unified_debug_print_event_handler" into wlan-cld3.driver.lnx.1.1.c9
+
+Deepak Kumar (1):
+      ARM: dts: msm: Update GPU IB votes for 647MHz freq. plan on SDM660
+
+Dundi Raviteja (1):
+      qcacld-3.0: Fix buf overflow in __wlan_hdd_cfg80211_update_connect_params
+
+Dustin Brown (1):
+      qcacld-3.0: Avoid info leak in hdd_driver_rxfilter_comand_handler
+
+Hanumanth Reddy Pothula (1):
+      qcacld-3.0: Validate length argument's lower boundary
+
+Jeff Johnson (1):
+      qcacld-3.0: Avoid double free in drv_cmd_get_ibss_peer_info_all()
+
+Kabilan Kannan (1):
+      qcacld-3.0: Restrict PLD event as per the driver state
+
+Kiran Gunda (1):
+      leds: qpnp-flash-v2: Add support for multi-strobe
+
+Linux Build Service Account (25):
+      Merge "qcacld-3.0: Avoid UMAC messaging in HDD"
+      Merge "ASoC: sdm660: Make vneg_out voltage as high and add check for impedance det"
+      Merge "msm: camera: sensor: Program SDR mask delay based on data rate"
+      Merge "qcacld-3.0: Validate length argument's lower boundary"
+      Merge "qcacld-3.0: Fix OOB write in wma_extscan_change_results_event_handler"
+      Merge "refcount_t: Introduce a special purpose refcount type"
+      Merge "ath10k: update wowlan config and rekey data store method"
+      Merge "net: convert packet_fanout.sk_ref from atomic_t to refcount_t"
+      Merge "ANDROID: binder: fix transaction leak."
+      Merge "nf: xt_socket: Fix out-of-bounds in xt_socket_lookup_slow_v{4,6}"
+      Merge "msm: camera: Change data type of data rate"
+      Merge "sched/walt: Fix use after free in trace_sched_update_task_ravg()"
+      Merge "usb: dwc3-msm: Resume PHY before notify_connect on start_host"
+      Merge "ANDROID: binder: don't enqueue death notifications to thread todo."
+      Merge "ion: fix the return value of shrinkers"
+      Merge "ARM: dts: msm: update icnss device node for sdm660 and sdm630"
+      Merge "net: ipc_router: Fix buffer overflow during memcpy"
+      Merge 7e17d6f888250c8a0c7a8e8b643db1bad6c94ef8 on remote branch
+      Merge 52f65a2762e02022019fc432087d5a464f704d26 on remote branch
+      Merge b64ad68c9ffc19e8902e219bfd4dcf805adfa39c on remote branch
+      Merge 2c369760a0229a66331fe5dbfa2bec4fee4dc5a7 on remote branch
+      Merge "msm: mdss: Disable ECG feature for all chipsets" into kernel.lnx.4.4.r27-rel
+      Merge "clk: qcom: Retrieve pre_div from freq_tbl for shared RCG" into kernel.lnx.4.4.r27-rel
+      Merge "ARM: dts: msm: Update GPU IB votes for 647MHz freq. plan on SDM660" into kernel.lnx.4.4.r27-rel
+      Merge "voice_svc: Avoid double free in voice_svc driver" into kernel.lnx.4.4.r27-rel
+
+Manjunathappa Prakash (1):
+      qcacld-3.0: Fix race vdev down and tx_desc->vdev access
+
+Martijn Coenen (2):
+      ANDROID: binder: fix transaction leak.
+      ANDROID: binder: don't enqueue death notifications to thread todo.
+
+Nathan Chancellor (4):
+      Merge tag 'LA.UM.6.2.r1-08500-sdm660.0' into 8.1.0-unified
+      fw-api: Merge tag 'LA.UM.6.2.r1-08500-sdm660.0' into 8.1.0-unified
+      qcacld-3.0: Merge tag 'LA.UM.6.2.r1-08500-sdm660.0' into 8.1.0-unified
+      qca-wifi-host-cmn: Merge tag 'LA.UM.6.2.r1-08500-sdm660.0' into 8.1.0-unified
+
+Naveen Rawat (2):
+      qcacld-3.0: Check for return codes of dot11f_unpack functions
+      qcacld-3.0: Revert accidental removal of sanity check
+
+Padma, Santhosh Kumar (3):
+      qcacld-3.0: Avoid UMAC messaging in HDD
+      qcacld-3.0: Do not update beacon for ESE
+      qcacld-3.0: Fix use after free in sme_qos_del_ts_req
+
+Pavankumar Kondeti (1):
+      sched/walt: Fix use after free in trace_sched_update_task_ravg()
+
+Peter Zijlstra (1):
+      refcount_t: Introduce a special purpose refcount type
+
+Pragaspathi Thilagaraj (3):
+      qcacld-3.0: Fix OOB write in wma_extscan_change_results_event_handler
+      qcacld-3.0: Fix Use after free in wma_vdev_start_resp_handler
+      qcacld-3.0: Fix OOB write in wma_unified_debug_print_event_handler
+
+Reshetova, Elena (1):
+      net: convert packet_fanout.sk_ref from atomic_t to refcount_t
+
+Samyukta Mogily (1):
+      msm: camera: Change data type of data rate
+
+Sarada Prasanna Garnayak (2):
+      ath10k: update wowlan config and rekey data store method
+      ARM: dts: msm: update icnss device node for sdm660 and sdm630
+
+Taniya Das (1):
+      clk: qcom: Retrieve pre_div from freq_tbl for shared RCG
+
+Tejaswi Tanikella (1):
+      nf: xt_socket: Fix out-of-bounds in xt_socket_lookup_slow_v{4,6}
+
+Vatsal Bucha (1):
+      ASoC: sdm660: Make vneg_out voltage as high and add check for impedance det
+
+Vignesh Viswanathan (1):
+      qcacld-3.0: Add sanity check for kek_len and pmk_len in WMA roam synch
+
+Vijay kumar Tumati (2):
+      msm: camera: sensor: Receive sensor output data rate information
+      msm: camera: sensor: Program SDR mask delay based on data rate
+
+Vinayak Menon (1):
+      ion: fix the return value of shrinkers
+
+raghavendra ambadas (1):
+      msm: mdss: Disable ECG feature for all chipsets
+
+spuligil (6):
+      fw-api: CL 4471968 - update fw common interface files
+      fw-api: CL 4476797 - update fw common interface files
+      fw-api: CL 4487087 - update fw common interface files
+      fw-api: CL 4503586 - update fw common interface files
+      fw-api: CL 4509300 - update fw common interface files
+      fw-api: CL 4519030 - update fw common interface files
+
+ arch/arm/boot/dts/qcom/sdm630.dtsi                 |   4 +-
+ arch/arm/boot/dts/qcom/sdm660-gpu.dtsi             |  16 +-
+ arch/arm/boot/dts/qcom/sdm660.dtsi                 |   4 +-
+ drivers/android/binder.c                           |  40 ++-
+ drivers/clk/qcom/clk-rcg2.c                        |  20 +-
+ drivers/leds/leds-qpnp-flash-v2.c                  |  42 +--
+ .../msm/camera_v2/sensor/csiphy/msm_csiphy.c       |  26 +-
+ drivers/net/wireless/ath/ath10k/mac.c              |  18 +-
+ drivers/net/wireless/ath/ath10k/wow.c              |  32 +--
+ drivers/net/wireless/ath/ath10k/wow.h              |   3 -
+ drivers/soc/qcom/qdsp6v2/voice_svc.c               |   5 +-
+ drivers/staging/android/ion/ion_cma_secure_heap.c  |  11 +-
+ drivers/staging/android/ion/ion_page_pool.c        |   2 +-
+ drivers/staging/fw-api/fw/wmi_services.h           |   1 +
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |  45 +++-
+ drivers/staging/fw-api/fw/wmi_unified.h            | 228 +++++++++++++++-
+ drivers/staging/fw-api/fw/wmi_version.h            |   2 +-
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |   1 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |   2 +
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |   2 +-
+ .../staging/qcacld-3.0/core/dp/txrx/ol_tx_send.c   |  77 +++++-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |  29 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_assoc.c       |  22 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  34 ++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |  40 ++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |  36 ++-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_ioctl.c       |  58 +---
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.c        |   7 +-
+ .../core/mac/src/pe/lim/lim_process_fils.c         |  15 +-
+ .../mac/src/pe/lim/lim_send_management_frames.c    |  12 +-
+ .../core/mac/src/pe/lim/lim_sme_req_utils.c        |  47 +++-
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |  20 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |   3 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/sme_api.h  |  15 ++
+ .../qcacld-3.0/core/sme/src/common/sme_api.c       |  67 +++++
+ .../staging/qcacld-3.0/core/sme/src/qos/sme_qos.c  |  31 ++-
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |   3 +-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  26 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |  12 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |   2 +-
+ drivers/video/fbdev/msm/mdss_mdp.c                 |   4 +-
+ include/linux/refcount.h                           | 294 +++++++++++++++++++++
+ include/uapi/media/msm_camera.h                    |   4 +-
+ include/uapi/media/msm_camsensor_sdk.h             |   1 +
+ kernel/sched/hmp.c                                 |   8 +-
+ lib/Kconfig.debug                                  |  13 +
+ net/ipc_router/ipc_router_core.c                   |  71 +++--
+ net/netfilter/xt_socket.c                          |  13 +-
+ net/packet/af_packet.c                             |  10 +-
+ net/packet/internal.h                              |   4 +-
+ sound/soc/codecs/sdm660_cdc/msm-analog-cdc.c       |  10 +-
+ 51 files changed, 1217 insertions(+), 275 deletions(-)
+ create mode 100644 include/linux/refcount.h
