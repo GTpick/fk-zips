@@ -1,0 +1,41 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Joe Maples (1):
+      block: Add Maple I/O Scheduler
+
+Nathan Chancellor (3):
+      flash_defconfig: Enable CPU_WAKE_BOOST
+      block: maple: Improve coding style
+      flash_defconfig: Enable IOSCHED_MAPLE
+
+Sultan Alsawaf (1):
+      cpufreq: Introduce CPU wake boost driver
+
+flar2 (1):
+      block: maple-iosched: Convert to use fb_notifier
+
+ arch/arm64/configs/flash_defconfig |   2 +
+ block/Kconfig.iosched              |   8 +
+ block/Makefile                     |   1 +
+ block/maple-iosched.c              | 461 +++++++++++++++++++++++++++++++++++++
+ drivers/cpufreq/Kconfig            |   9 +
+ drivers/cpufreq/Makefile           |   3 +
+ drivers/cpufreq/cpu_wake_boost.c   | 139 +++++++++++
+ 7 files changed, 623 insertions(+)
+ create mode 100644 block/maple-iosched.c
+ create mode 100644 drivers/cpufreq/cpu_wake_boost.c
+
+
+http://github.com/nathanchance/AnyKernel2/commits/marlin-flash-8.1.0
+
+Chris Renshaw (1):
+      Merge pull request #27 from googlebleh/googlebleh
+
+Colin Wee (1):
+      README: fix command to match filename in repo
+
+Nathan Chancellor (1):
+      Merge branch 'master' into marlin-flash-8.1.0
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
