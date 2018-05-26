@@ -1,0 +1,173 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.40
+
+Aditya Bavanari (1):
+      voice_svc: Avoid double free in voice_svc driver
+
+Arun Kumar Neelakantam (2):
+      net: ipc_router: Fix buffer overflow during memcpy
+      net: ipc_router: Remove wakeup-source for Sensor ports
+
+John Muir (1):
+      flash_defconfig: Remove some additional debugging
+
+Nathan Chancellor (15):
+      random: Rename CANARY_MASK to RANDOM_CANARY_MASK
+      qseecom: Fix ignored attribute warnings
+      hwmon: qpnp-adc: Improve logical not parentheses fix
+      Merge branch 'wireguard-fix' into clang-warnings
+      thermal: tsens: Fix enum conversion warnings
+      ASoC: wcd_cpe_services: Fix enum conversion warnings
+      ASoC: msm: qdsp6v2: Improve literal null conversion fix
+      msm: ipa: Fix enum conversion warning
+      usb_bam: Fix enum conversion warnings
+      staging: ion: Fix enum conversion warnings
+      hwmon: qpnp-adc: Fix enum conversion warning
+      sched/core: Avoid a constant logical operand warning
+      scsi: ufs: Avoid unused variable warning
+      Merge branch 'sultan-optimization' into sultan-debugfs-optimization
+      Merge branches 'caf-updates', 'clang-warnings', 'sultan-debugfs-optimization' and 'sultan-performance' into oreo-m2
+
+Peter Zijlstra (1):
+      refcount_t: Introduce a special purpose refcount type
+
+Reshetova, Elena (1):
+      net: convert packet_fanout.sk_ref from atomic_t to refcount_t
+
+Sultan Alsawaf (26):
+      msm: qpnp-haptic: Process haptics asynchronously
+      qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE
+      msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk
+      msm: msm_bus: Don't enable QoS clocks when none are present
+      arm64: dts: htc/lge: Enable qcom,panel-allow-phy-poweroff
+      usb: gadget: qdss: Eliminate redundant init call
+      crypto: Make CRYPTO_DEV_QCE depend on CRYPTO_DEV_QCRYPTO being disabled
+      input: touch: ftm: Offload probe onto a worker
+      cpuidle: lpm-levels: Remove sleep_disabled switch
+      flash_defconfig: Remove unused and unneeded drivers
+      pinctrl: qcom: Clear output enable bit for GPIO direct connect
+      qcom-cpufreq: Boost all online CPUs when exiting suspend
+      kernel: Restrict unbound kthreads to little CPU cluster
+      kernel: Force perf-critical IRQs and kthreads onto big CPU cluster
+      kernel: Don't allow userspace to alter IRQ affinities
+      kernel: Don't dump tons of kthreads onto little CPU cluster
+      kernel: Ensure perf-critical CPU bindings are retained after suspend
+      qpnp-fg-gen3: Don't bail out when debugfs creation fails
+      crypto: msm: Don't bail out when debugfs creation fails
+      firmware: qcom: Remove debugfs dependency from tz-log driver
+      Fix compile errors when debugfs and other debugging is disabled
+      power: qcom: Don't compile debug_core.c when debugfs is disabled
+      wakeup: Create fake debugfs folder solely for wakeup_sources
+      arm64: kernel: Don't build perf_debug.o when debugfs is disabled
+      init: Kconfig: Don't force DEBUG_KERNEL when EXPERT is enabled
+      flash_defconfig: Clean up and optimize
+
+Taniya Das (1):
+      clk: qcom: Retrieve pre_div from freq_tbl for shared RCG
+
+Tejaswi Tanikella (1):
+      nf: xt_socket: Fix out-of-bounds in xt_socket_lookup_slow_v{4,6}
+
+Vinayak Menon (1):
+      ion: fix the return value of shrinkers
+
+YaroST12 (1):
+      clk: msm: Fix literal-conversion warnings
+
+raghavendra ambadas (1):
+      msm: mdss: Disable ECG feature for all chipsets
+
+yarost12 (1):
+      ASoC: msm: qdsp6v2: Fix non-literal-null-conversion warning
+
+ .../boot/dts/htc/dsi-panel-walleye-s6e3fa5.dtsi    |   1 +
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev1.dtsi    |   1 +
+ .../lge/dsi-panel-sw43402-dsc-qhd-cmd-rev2.dtsi    |   1 +
+ .../dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi     |   1 +
+ .../dts/lge/dsi-panel-sw49408-dsc-qhd-cmd.dtsi     |   1 +
+ arch/arm64/configs/flash_defconfig                 |  43 +--
+ arch/arm64/include/asm/stackprotector.h            |   2 +-
+ arch/arm64/kernel/Makefile                         |   5 +-
+ drivers/base/power/wakeup.c                        |  22 ++
+ drivers/clk/msm/Makefile                           |   6 +-
+ drivers/clk/msm/clock-gcc-8998.c                   |   2 +-
+ drivers/clk/msm/clock-mmss-8998.c                  |   2 +-
+ drivers/clk/msm/clock-osm.c                        |   4 +-
+ drivers/clk/qcom/clk-rcg2.c                        |  20 +-
+ drivers/cpufreq/qcom-cpufreq.c                     |  68 ++++-
+ drivers/cpuidle/lpm-levels.c                       |   6 +-
+ drivers/crypto/Kconfig                             |   2 +-
+ drivers/crypto/msm/Makefile                        |   3 +-
+ drivers/crypto/msm/ota_crypto.c                    |  13 +-
+ drivers/crypto/msm/qcedev.c                        |  13 +-
+ drivers/crypto/msm/qcrypto.c                       |  16 +-
+ drivers/firmware/qcom/Kconfig                      |   1 -
+ drivers/firmware/qcom/Makefile                     |   4 -
+ drivers/firmware/qcom/tz_log.c                     |   6 +
+ drivers/hwmon/Makefile                             |   4 -
+ drivers/hwmon/qpnp-adc-common.c                    |   4 +-
+ drivers/hwmon/qpnp-adc-voltage.c                   |   4 +-
+ drivers/input/touchscreen/stm/ftm4_ts.c            |  12 +-
+ .../platform/msm/sde/rotator/sde_rotator_debug.h   |  14 +-
+ drivers/misc/Makefile                              |   4 -
+ drivers/misc/qcom/qdsp6v2/audio_alac.c             |   7 +
+ drivers/misc/qcom/qdsp6v2/audio_ape.c              |   7 +
+ drivers/misc/qcom/qdsp6v2/audio_g711alaw.c         |   6 +
+ drivers/misc/qcom/qdsp6v2/audio_g711mlaw.c         |   6 +
+ drivers/misc/qseecom_legacy.h                      |   8 +-
+ drivers/pinctrl/qcom/pinctrl-msm.c                 |   6 +-
+ drivers/platform/msm/Makefile                      |   4 -
+ .../platform/msm/ipa/ipa_clients/ipa_mhi_client.c  |  47 ++--
+ drivers/platform/msm/ipa/ipa_v2/rmnet_ipa.c        |   2 +-
+ drivers/platform/msm/ipa/ipa_v3/ipa_i.h            |   6 +
+ drivers/platform/msm/ipa/ipa_v3/rmnet_ipa.c        |   2 +-
+ drivers/platform/msm/sps/spsi.h                    |  14 +-
+ drivers/platform/msm/usb_bam.c                     |   8 +-
+ drivers/power/qcom/Makefile                        |   6 +-
+ drivers/power/supply/qcom/qpnp-fg-gen3.c           |   2 +
+ drivers/scsi/ufs/ufshcd.c                          |   2 +
+ drivers/scsi/ufs/ufshcd.h                          |   2 +-
+ drivers/soc/qcom/Makefile                          |   1 -
+ drivers/soc/qcom/msm_bus/msm_bus_fabric_adhoc.c    |  15 +-
+ drivers/soc/qcom/qdsp6v2/voice_svc.c               |   5 +-
+ drivers/soc/qcom/qpnp-haptic.c                     |  31 ++-
+ drivers/soc/qcom/smp2p_private.h                   |  10 +-
+ drivers/staging/android/ion/Makefile               |   5 -
+ drivers/staging/android/ion/ion.c                  |   2 +-
+ drivers/staging/android/ion/ion_cma_secure_heap.c  |  11 +-
+ drivers/staging/android/ion/ion_page_pool.c        |   2 +-
+ drivers/staging/android/ion/ion_priv.h             |   4 +-
+ drivers/thermal/Makefile                           |   4 -
+ drivers/thermal/msm-tsens.c                        |  36 +--
+ drivers/usb/gadget/function/f_qdss.c               |   2 +-
+ drivers/video/fbdev/msm/Makefile                   |   3 +-
+ drivers/video/fbdev/msm/mdss_debug.h               |  10 +-
+ drivers/video/fbdev/msm/mdss_dsi.h                 |   7 +
+ drivers/video/fbdev/msm/mdss_mdp.c                 |   4 +-
+ drivers/video/fbdev/msm/mdss_mdp_debug.h           |   5 +-
+ include/linux/cpufreq.h                            |   1 +
+ include/linux/interrupt.h                          |   1 +
+ include/linux/ipc_logging.h                        |   1 +
+ include/linux/msm_thermal.h                        |  14 +-
+ include/linux/random.h                             |   8 +-
+ include/linux/refcount.h                           | 294 +++++++++++++++++++++
+ include/soc/qcom/qseecomi.h                        |  62 ++---
+ init/Kconfig                                       |   2 -
+ kernel/cpu.c                                       |   5 +
+ kernel/irq/manage.c                                |  66 ++++-
+ kernel/irq/proc.c                                  |   2 +-
+ kernel/power/suspend.c                             |   2 +
+ kernel/sched/core.c                                |  43 ++-
+ lib/Kconfig.debug                                  |  13 +
+ mm/slub.c                                          |   2 +-
+ net/ipc_router/ipc_router_core.c                   |  71 +++--
+ net/netfilter/xt_socket.c                          |  13 +-
+ net/packet/af_packet.c                             |  10 +-
+ net/packet/internal.h                              |   4 +-
+ security/pfe/Makefile                              |   4 -
+ sound/soc/codecs/Makefile                          |   4 -
+ sound/soc/codecs/wcd_cpe_services.c                |   4 +-
+ sound/soc/msm/qdsp6v2/Makefile                     |   4 -
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  37 +--
+ sound/soc/msm/qdsp6v2/q6lsm.c                      |   5 +-
+ 90 files changed, 932 insertions(+), 317 deletions(-)
+ create mode 100644 include/linux/refcount.h
