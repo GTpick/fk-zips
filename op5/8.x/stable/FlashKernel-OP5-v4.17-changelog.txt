@@ -1,0 +1,44 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Dmitry Torokhov (1):
+      Input: gtco - fix potential out-of-bound access
+
+Linus Torvalds (1):
+      loop: fix concurrent lo_open/lo_release
+
+Nathan Chancellor (3):
+      Merge remote-tracking branch 'upstream/oneplus/QC8998_O_8.1' into oneplus/QC8998_O_8.1
+      Merge remote-tracking branch 'als/oneplus/QC8998_O_8.1' into 8.1.0-unified
+      arm64: dts: qcom: Apply e4e44606443a1d7dfa45799f9170ee493ff03dab to custom ROMs
+
+Wang Deyou (1):
+      Improve stability.
+
+andersonchen (1):
+      Add performance improvement.
+
+davidliu (1):
+      net: Fix double free and memory corruption in get_net_ns_by_id()
+
+guoling (1):
+      Add power consumption improvement
+
+hecaiqiang (1):
+      Fix USB tethering for Mac/Ubuntu.
+
+liuhaituo (1):
+      Improve headset compatibility.
+
+wulaibin (1):
+      Improve debug mechanism.
+
+ arch/arm/boot/dts/qcom/cheeseburger-custom.dtsi    | 12 ++++
+ arch/arm/boot/dts/qcom/cheeseburger.dtsi           | 12 ++++
+ arch/arm/boot/dts/qcom/dumpling-custom.dtsi        |  5 +-
+ arch/arm/boot/dts/qcom/dumpling.dtsi               |  5 +-
+ drivers/input/touchscreen/synaptics_driver_s3320.c |  4 +-
+ drivers/nfc/pn5xx.c                                |  2 +-
+ fs/sdcardfs/dentry.c                               |  1 -
+ kernel/cgroup_freezer.c                            |  2 +-
+ sound/soc/codecs/wcd-mbhc-v2.c                     | 64 +++++++++++++++++-----
+ 9 files changed, 86 insertions(+), 21 deletions(-)
