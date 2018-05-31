@@ -1,0 +1,15 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Greg Kroah-Hartman (2):
+      Revert "vti4: Don't override MTU passed on link creation via IFLA_MTU"
+      Linux 4.4.135
+
+Nathan Chancellor (3):
+      Merge 4.4.135 into oneplus/QC8998_O_8.1
+      Merge remote-tracking branch 'als/oneplus/QC8998_O_8.1' into 8.1.0-unified
+      scripts: wireguard: Switch back to snapshots
+
+ Makefile                          | 2 +-
+ net/ipv4/ip_vti.c                 | 1 +
+ scripts/fetch-latest-wireguard.sh | 2 +-
+ 3 files changed, 3 insertions(+), 2 deletions(-)
