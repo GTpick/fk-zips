@@ -1,0 +1,13 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Greg Kroah-Hartman (2):
+      Revert "vti4: Don't override MTU passed on link creation via IFLA_MTU"
+      Linux 3.18.112
+
+Nathan Chancellor (2):
+      Merge 3.18.112 into android-msm-marlin-3.18
+      Merge remote-tracking branch 'als/android-msm-marlin-3.18' into oreo-m4
+
+ Makefile          | 2 +-
+ net/ipv4/ip_vti.c | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
