@@ -1,0 +1,113 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Alan Stern (1):
+      USB: core: prevent malicious bNumInterfaces overflow
+
+Andrew Chant (1):
+      diag: dci: check signed values for negativity
+
+Carter Cooper (1):
+      msm: kgsl: Properly remove ref count on gpuobj_sync failure
+
+Chenglu Lin (1):
+      drivers: htc_debug: Avoid possible buffer overflow in reboot_block driver
+
+Eric Biggers (4):
+      ASN.1: fix out-of-bounds read when parsing indefinite length item
+      KEYS: fix out-of-bounds read during ASN.1 parsing
+      crypto: hmac - require that the underlying hash algorithm is unkeyed
+      KEYS: add missing permission check for request_key() destination
+
+Hanumanth Reddy Pothula (1):
+      qcacld-2.0: Remove FW memory dump feature
+
+Hardik Arya (1):
+      diag: Validate copying length against source buffer length
+
+Harrison Lingren (1):
+      Merge branch 'android-msm-marlin-3.18-oc-mr1' into android-msm-marlin-3.18-oc-mr1-security-next
+
+Himanshu Agarwal (1):
+      qcacld-2.0: Move NBUF_UPDATE_TX_PKT_COUNT before freeing netbuf
+
+Liam Mark (1):
+      ion: ensure CMO target is valid
+
+Mark Salyzyn (1):
+      ANDROID: Bluetooth: hidp: buffer overflow in hidp_process_report
+
+Mike Maloney (1):
+      ipv6: fix udpv6 sendmsg crash caused by too small MTU
+
+Nathan Chancellor (3):
+      Makefile: Enable local-init sanitizer
+      Merge tag 'android-8.1.0_r0.64' into android-msm-marlin-3.18
+      Merge remote-tracking branch 'als/android-msm-marlin-3.18' into oreo-m4
+
+Sean Callanan (2):
+      msm: ADSPRPC: use access_ok to validate pointers
+      mm-camera2:isp2: Handle use after free buffer
+
+Sreelakshmi Gownipalli (1):
+      diag: Add conditional check for len in dci_process_ctrl_status()
+
+Stuart Scott (2):
+      Merge branch 'android-msm-marlin-3.18-oc-mr1-security-next' into android-msm-marlin-3.18-oc-mr1
+      Revert "ion: ensure CMO target is valid"
+
+Tharun Kumar Merugu (2):
+      msm: ADSPRPC: Use ID in response to get context pointer
+      msm: adsprpc: Fix race conditions on same buffer
+
+Tiger Yu (1):
+      qcacld-2.0: Fix potential buffer overwrite in the htt_t2h_lp_msg_handler
+
+Vaishnavi Kommaraju (1):
+      ASoC: wcd_cpe_core: Add mutex lock for CPE session
+
+Zhang Qian (1):
+      qcacld-2.0: Fix potential buffer overflow
+
+c_mtharu (1):
+      msm: ADSPRPC: validate context pointer with magic number
+
+tinlin (1):
+      qcacld-2.0: Add data_len check to avoid OOB access
+
+ Makefile                                           |   2 +
+ arch/arm64/configs/marlin_defconfig                |   1 -
+ drivers/char/adsprpc.c                             | 119 +++-
+ drivers/char/diag/diag_dci.c                       |  99 +++-
+ drivers/gpu/msm/kgsl.c                             |  34 +-
+ drivers/htc_debug/stability/htc_reboot_block.c     |   2 +-
+ .../media/platform/msm/camera_v2/isp/msm_isp40.c   |   3 +
+ .../media/platform/msm/camera_v2/isp/msm_isp44.c   |   3 +
+ .../media/platform/msm/camera_v2/isp/msm_isp46.c   |   4 +-
+ .../media/platform/msm/camera_v2/isp/msm_isp47.c   |   4 +-
+ .../platform/msm/camera_v2/isp/msm_isp_axi_util.c  |   2 +
+ .../platform/msm/camera_v2/isp/msm_isp_util.c      |   6 +
+ .../qcacld-2.0/CORE/CLD_TXRX/TXRX/ol_tx_send.c     |   5 +-
+ .../qcacld-2.0/CORE/EPPING/src/epping_main.c       |   3 -
+ .../qcacld-2.0/CORE/HDD/inc/wlan_hdd_cfg80211.h    |  10 +-
+ .../qcacld-2.0/CORE/HDD/inc/wlan_hdd_main.h        |   9 -
+ .../qcacld-2.0/CORE/HDD/inc/wlan_hdd_memdump.h     |  60 +-
+ .../qcacld-2.0/CORE/HDD/src/wlan_hdd_cfg80211.c    |  20 -
+ .../qcacld-2.0/CORE/HDD/src/wlan_hdd_main.c        |  22 +-
+ .../qcacld-2.0/CORE/HDD/src/wlan_hdd_memdump.c     | 634 +--------------------
+ drivers/staging/qcacld-2.0/CORE/MAC/inc/sirApi.h   |  55 --
+ drivers/staging/qcacld-2.0/CORE/MAC/inc/wniApi.h   |   1 -
+ .../qcacld-2.0/CORE/MAC/src/include/sirParams.h    |   2 +-
+ .../qcacld-2.0/CORE/SERVICES/HIF/USB/hif_usb.c     |  25 +-
+ drivers/staging/qcacld-2.0/CORE/SERVICES/WMA/wma.c | 205 +------
+ .../staging/qcacld-2.0/CORE/SME/inc/smeInternal.h  |   3 -
+ drivers/staging/qcacld-2.0/CORE/SME/inc/sme_Api.h  |   5 -
+ .../qcacld-2.0/CORE/SME/src/sme_common/sme_Api.c   | 173 ------
+ .../CORE/SYS/legacy/src/utils/src/macTrace.c       |   2 -
+ .../staging/qcacld-2.0/CORE/WDA/inc/wlan_qct_wda.h |   1 -
+ drivers/staging/qcacld-2.0/Kbuild                  |  12 +-
+ drivers/staging/qcacld-2.0/Kconfig                 |   3 -
+ net/bluetooth/hidp/core.c                          |   4 +-
+ sound/soc/codecs/wcd_cpe_core.c                    |  13 +-
+ sound/soc/codecs/wcd_cpe_core.h                    |   5 +-
+ sound/soc/codecs/wcd_cpe_services.c                |   4 +-
+ 36 files changed, 290 insertions(+), 1265 deletions(-)
