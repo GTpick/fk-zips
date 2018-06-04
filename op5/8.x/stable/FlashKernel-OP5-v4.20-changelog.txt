@@ -1,0 +1,90 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Abhinav Kumar (5):
+      qcacld-3.0: Add new ini to set delay Hand-off period
+      qcacmn: Add new ini to set delay Hand-off period
+      qcacld-3.0: Add new ini to set min delay btw scan and reason bit-mask
+      qcacmn: Add new ini to set min delay btw scan and reason bit-mask.
+      qcacld-3.0: Make channel list dynamic
+
+Jeff Johnson (4):
+      qcacld-3.0: Introduce HDD Request Manager infrastructure
+      qcacld-3.0: Enable HDD Request Manager
+      qcacld-3.0: Invoke HDD Request Manager init/deinit
+      qcacld-3.0: Use request manager for Class A stats
+
+Linux Build Service Account (7):
+      Merge "qcacmn: Create a list for events and force complete them during SSR" into wlan-cmn.driver.lnx.1.0.r28-rel
+      Merge "qcacmn: Add new ini to set delay Hand-off period" into wlan-cmn.driver.lnx.1.0.r28-rel
+      Merge changes I4e598e51,If4d59127 into wlan-cld3.driver.lnx.1.1.r28-rel
+      Merge changes I2af9d5dc,Ided9a81e into wlan-cld3.driver.lnx.1.1.r28-rel
+      Merge "qcacld-3.0: Fix potential buffer overflow in radio stats event handler" into wlan-cld3.driver.lnx.1.1.r28-rel
+      Merge "qcacld-3.0: Use request manager for Class A stats" into wlan-cld3.driver.lnx.1.1.r28-rel
+      Merge "qcacld-3.0: Invoke HDD Request Manager init/deinit" into wlan-cld3.driver.lnx.1.1.r28-rel
+
+Nachiket Kukade (2):
+      qcacmn: Create a list for events and force complete them during SSR
+      qcacld-3.0: Utilise new APIs for waiting on events
+
+Nathan Chancellor (5):
+      Merge tag 'LA.UM.6.2.r1-08700-sdm660.0' into 8.1.0-unified
+      staging: fw-api: Merge tag 'LA.UM.6.2.r1-08700-sdm660.0' into 8.1.0-unified
+      staging: qcacld-3.0: Merge tag 'LA.UM.6.2.r1-08700-sdm660.0' into 8.1.0-unified
+      staging: qca-wifi-host-cmn: Merge tag 'LA.UM.6.2.r1-08700-sdm660.0' into 8.1.0-unified
+      Makefile: Remove SCRIPT_OPT_FLAGS
+
+Vignesh Viswanathan (1):
+      qcacld-3.0: Fix potential buffer overflow in radio stats event handler
+
+Willem de Bruijn (1):
+      packet: fix tp_reserve race in packet_set_ring
+
+spuligil (8):
+      fw-api: CL 4590785 - update fw common interface files
+      fw-api: CL 4625060 - update fw common interface files
+      fw-api: CL 4625841 - update fw common interface files
+      fw-api: CL 4647496 - update fw common interface files
+      fw-api: CL 4662126 - update fw common interface files
+      fw-api: CL 4669157 - update fw common interface files
+      fw-api: CL 4677643 - update fw common interface files
+      fw-api: CL 4687827 - update fw common interface files
+
+ Makefile                                           |   2 +-
+ drivers/staging/fw-api/fw/htt.h                    |  51 ++++-
+ drivers/staging/fw-api/fw/htt_ppdu_stats.h         |   4 +-
+ drivers/staging/fw-api/fw/wmi_tlv_defs.h           |  17 +-
+ drivers/staging/fw-api/fw/wmi_unified.h            |  93 +++++++--
+ drivers/staging/fw-api/fw/wmi_version.h            |   2 +-
+ .../staging/qca-wifi-host-cmn/qdf/inc/qdf_event.h  |  52 ++++-
+ .../qca-wifi-host-cmn/qdf/linux/src/i_qdf_event.h  |   4 +-
+ .../qca-wifi-host-cmn/qdf/linux/src/qdf_event.c    | 180 +++++++++++++++++
+ .../qca-wifi-host-cmn/wmi/inc/wmi_unified_param.h  |   4 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |   4 +
+ drivers/staging/qcacld-3.0/Kbuild                  |   1 +
+ drivers/staging/qcacld-3.0/core/cds/src/cds_api.c  |  14 +-
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |   6 +-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |   2 +-
+ .../staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h | 101 ++++++++++
+ .../staging/qcacld-3.0/core/hdd/src/wlan_hdd_cfg.c |  54 +++++
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |  12 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   1 +
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_hostapd.c     |   6 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_main.c        |  14 +-
+ .../core/hdd/src/wlan_hdd_request_manager.c        | 195 ++++++++++++++++++
+ .../core/hdd/src/wlan_hdd_request_manager.h        | 220 +++++++++++++++++++++
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_wext.c        | 143 ++++++--------
+ drivers/staging/qcacld-3.0/core/mac/inc/sir_api.h  |   4 +
+ .../core/mac/src/sys/common/src/wlan_qct_sys.c     |   3 +-
+ drivers/staging/qcacld-3.0/core/sap/src/sap_fsm.c  |   5 +-
+ drivers/staging/qcacld-3.0/core/sme/inc/csr_api.h  |   4 +
+ .../staging/qcacld-3.0/core/sme/inc/csr_internal.h |   4 +
+ .../qcacld-3.0/core/sme/src/csr/csr_api_roam.c     |  36 +++-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c |   2 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |   2 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |  14 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |   5 +-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |  20 +-
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |  11 +-
+ 36 files changed, 1134 insertions(+), 158 deletions(-)
+ create mode 100644 drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_request_manager.c
+ create mode 100644 drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_request_manager.h
