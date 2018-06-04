@@ -1,0 +1,213 @@
+http://github.com/nathanchance/wahoo/commits/oreo-m2
+
+Aditya Bavanari (1):
+      asoc: msm: add check for integer overflow
+
+Alan Stern (1):
+      USB: core: prevent malicious bNumInterfaces overflow
+
+Alok Kumar (1):
+      qcacld-3.0: Fix buffer overflow in htt_t2h_rx_in_order_indication_handler
+
+Andrew Chant (1):
+      diag: dci: check signed values for negativity
+
+Arnd Bergmann (1):
+      BACKPORT: exec: avoid gcc-8 warning for get_task_comm
+
+Ashish Kumar Dhanotiya (1):
+      qcacld-3.0: Possible buffer overwrite in vendor scan request
+
+Carter Cooper (1):
+      msm: kgsl: Properly remove ref count on gpuobj_sync failure
+
+Eric Biggers (4):
+      ASN.1: fix out-of-bounds read when parsing indefinite length item
+      KEYS: fix out-of-bounds read during ASN.1 parsing
+      KEYS: add missing permission check for request_key() destination
+      crypto: hmac - require that the underlying hash algorithm is unkeyed
+
+Eric Dumazet (2):
+      ipv6: ip6_make_skb() needs to clear cork.base.dst
+      ipv6: fix possible mem leaks in ipv6_make_skb()
+
+Geert Uytterhoeven (1):
+      FROMLIST: ARM: amba: Don't read past the end of sysfs "driver_override" buffer
+
+Hanumanth Reddy Pothula (1):
+      qcacld-3.0: Remove FW memory dump feature
+
+Hardik Arya (1):
+      diag: Validate copying length against source buffer length
+
+Himanshu Agarwal (1):
+      qcacld-3.0: Add data_len check to avoid OOB access
+
+Hou Tao (1):
+      blkcg: fix double free of new_blkg in blkcg_init_queue
+
+Jan Kara (1):
+      FROMLIST: ext4: Forbid overflowing inode count when resizing
+
+Joel Fernandes (1):
+      UPSTREAM: sched/fair: Consider RT/IRQ pressure in capacity_spare_wake
+
+Jonathan Solnit (1):
+      UPSTREAM: crypto: pcrypt - fix freeing pcrypt instances
+
+Kumar Anand (2):
+      Revert "qcacld-3.0: Treat ARP/ICMP/ICMPV6 packets as high priority"
+      Revert "Revert "qcacld-3.0: Treat ARP/ICMP/ICMPV6 packets as high priority""
+
+Liam Mark (1):
+      ion: ensure CMO target is valid
+
+Mark Salyzyn (1):
+      ANDROID: Bluetooth: hidp: buffer overflow in hidp_process_report
+
+Martin Wilck (1):
+      BACKPORT: scsi: scsi_devinfo: cleanly zero-pad devinfo strings
+
+Mike Maloney (1):
+      ipv6: fix udpv6 sendmsg crash caused by too small MTU
+
+Nathan Chancellor (18):
+      flash_defconfig: Temporarily disable CC_WERROR
+      ext4: Remove unused variables in mballoc.c
+      Revert "flash_defconfig: Temporarily disable CC_WERROR"
+      kernel/sched: Add back local-init sanitizer
+      cpufreq: Make underclock opt-in instead of opt-out
+      cpufreq: Combine three separate if statements into one
+      cpufreq: Make disabling boost on the big cluster opt in
+      ext4: Re-apply b9b98c26705b8d5fba8f15faeb923b1c6f48d223
+      Revert "kernel/fs/mm/block/drivers/scripts/net: More tautological comparison fixes"
+      Makefile: Remove SCRIPT_OPT_FLAGS
+      flash_defconfig: Disable -Werror for GCC 8.1.1 clean up
+      Kbuild: Adjust disabled warnings for GCC 8.1.1
+      flash_defconfig: Re-enable -Werror
+      Merge tag 'android-8.1.0_r0.65' into android-msm-wahoo-4.4
+      Merge branches 'ext4-crash-fix', 'ext4-fixes', 'gcc-8', 'gpu-enable-nap', 'rt-irq-pressure' and 'sanitizer-revert' into oreo-m2
+      Merge branches 'sultan-memleak', 'sultan-interaction-boost' and 'sultan-underclock' into oreo-m2
+      char: Remove SDK_VERSION hack
+      Merge remote-tracking branch 'als/android-msm-wahoo-4.4' into oreo-m2
+
+Sean Callanan (2):
+      msm: ADSPRPC: use access_ok to validate pointers
+      mm-camera2:isp2: Handle use after free buffer
+
+Sreelakshmi Gownipalli (1):
+      diag: Add conditional check for len in dci_process_ctrl_status()
+
+Steve Pfetsch (1):
+      input: touchscreen: stm: fix OOB writes in ftm4 driver
+
+Stuart Scott (2):
+      Merge branch 'android-msm-wahoo-4.4-oc-mr1-security-next' into android-msm-wahoo-4.4-oc-mr1
+      Revert "ion: ensure CMO target is valid"
+
+Sultan Alsawaf (6):
+      cpufreq: Underclock performance cluster to 1958400 kHz
+      cpufreq: Don't let userspace change performance cluster min freq
+      kernel: Fix massive cpufreq stats memory leaks
+      usb: pd_engine: Fix memory leak in probe and destroy
+      input: touch: sw49408: Fix potential buffer overflow
+      treewide: Fix code errors detected using GCC 8.1.0
+
+Tharun Kumar Merugu (2):
+      msm: adsprpc: Fix race conditions on same buffer
+      msm: ADSPRPC: Use ID in response to get context pointer
+
+Tiger Yu (1):
+      qcacld-3.0: Fix potential buffer overwrite in the htt_t2h_lp_msg_handler
+
+Vaishnavi Kommaraju (1):
+      ASoc: wcd_cpe_core: Add mutex lock for CPE session
+
+Vignesh Viswanathan (1):
+      qcacld-3.0: Fix potential OOB read in lim_parse_kde_elements
+
+Wang Shilong (4):
+      FROMTGIT: ext4: cleanup goto next group
+      FROMGIT: ext4: add new ext4_mark_group_bitmap_corrupted() helper
+      FROMGIT: ext4: mark inode bitmap corrupted when found
+      FROMGIT: ext4: mark block bitmap corrupted when found
+
+Xiongfeng Wang (1):
+      UPSTREAM: Kbuild: suppress packed-not-aligned warning for default setting only
+
+Zhang Qian (1):
+      qcacmn: Fix potential buffer overflow
+
+Zhaoyang Liu (1):
+      qcacld-3.0: avoid double free chip power stats buffer
+
+c_mtharu (1):
+      msm: ADSPRPC: Change SSC VMID from 5 to 38
+
+ch.han (1):
+      arm64: dts: taimen: To avoid AOD blinking issues, changed some related commands
+
+freak07 (1):
+      msm8998-gpu: enable nap state for the A540 GPU
+
+gaurank kathpalia (1):
+      qcacld-3.0: Avoid possible buffer over-read in wma_wow_wakeup_host_event
+
+ Makefile                                           |  4 +-
+ arch/arm/boot/dts/qcom/msm8998-gpu.dtsi            |  1 -
+ .../dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi     | 10 +++-
+ block/compat_ioctl.c                               |  2 +
+ block/ioctl.c                                      |  2 +
+ drivers/acpi/osl.c                                 |  5 ++
+ drivers/char/Makefile                              |  4 --
+ drivers/char/adsprpc.c                             |  4 --
+ drivers/char/diag/diag_dci.c                       |  8 ++--
+ drivers/cpufreq/cpufreq.c                          | 21 +++++++++
+ drivers/cpuidle/governors/menu.c                   | 14 +++---
+ drivers/crypto/msm/qcrypto.c                       |  2 +-
+ .../touchscreen/lge/lgsic/touch_sw49408_prd.h      |  2 +-
+ drivers/input/touchscreen/stm/ftm4_pdc.c           | 12 +++--
+ drivers/scsi/scsi_devinfo.c                        | 22 +++------
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |  8 ++--
+ drivers/usb/pd/pd_engine.c                         |  5 +-
+ fs/compat.c                                        |  7 ++-
+ fs/compat_ioctl.c                                  |  2 +
+ fs/configfs/symlink.c                              |  2 +-
+ fs/exec.c                                          |  7 ++-
+ fs/ext4/balloc.c                                   | 33 +++++---------
+ fs/ext4/ext4.h                                     |  7 +++
+ fs/ext4/ialloc.c                                   | 53 ++++++++--------------
+ fs/ext4/inode.c                                    | 40 ++++++++--------
+ fs/ext4/mballoc.c                                  | 22 ++++-----
+ fs/ext4/resize.c                                   |  2 +-
+ fs/ext4/super.c                                    | 33 ++++++++++++++
+ fs/kernfs/symlink.c                                |  2 +-
+ fs/pstore/ram.c                                    |  5 ++
+ include/linux/sched.h                              |  6 ++-
+ kernel/exit.c                                      |  1 -
+ kernel/sched/Makefile                              |  2 -
+ kernel/sched/core.c                                | 11 +++--
+ kernel/sched/fair.c                                |  2 +-
+ kernel/trace/ipc_logging.c                         |  1 +
+ lib/kobject.c                                      |  2 +-
+ mm/percpu.c                                        |  2 +
+ mm/shmem.c                                         |  3 ++
+ net/bluetooth/hidp/core.c                          |  4 +-
+ net/ipc_router/ipc_router_socket.c                 |  2 +-
+ net/ipv4/ip_tunnel.c                               |  2 +-
+ net/socket.c                                       |  2 +-
+ scripts/Makefile.extrawarn                         |  5 ++
+ sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c         | 12 ++++-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              | 16 ++++++-
+ sound/soc/msm/qdsp6v2/q6asm.c                      | 14 +++++-
+ 47 files changed, 266 insertions(+), 162 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (2):
+      Pixel 2: Update supported configuration to June security patch level
+      Pixel 2: anykernel.sh: Two images are no longer necessary
+
+ anykernel.sh | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
