@@ -1,0 +1,7 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Nathan Chancellor (1):
+      Revert "Makefile: Enable local-init sanitizer"
+
+ Makefile | 2 --
+ 1 file changed, 2 deletions(-)
