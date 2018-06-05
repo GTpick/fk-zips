@@ -1,0 +1,7 @@
+http://github.com/nathanchance/wahoo/commits/oreo-m2
+
+Nathan Chancellor (1):
+      Revert "cpufreq: Make disabling boost on the big cluster opt in"
+
+ drivers/cpufreq/cpufreq.c | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
