@@ -1,0 +1,10 @@
+http://github.com/nathanchance/wahoo/commits/queue-2.44
+
+Sultan Alsawaf (1):
+      msm: mdss: Power on display asynchronously as early as possible
+
+ drivers/video/fbdev/msm/mdss_dsi.c         | 106 +++++++++++++++++++++++++----
+ drivers/video/fbdev/msm/mdss_dsi.h         |   7 ++
+ drivers/video/fbdev/msm/mdss_mdp_ctl.c     |  15 +++-
+ drivers/video/fbdev/msm/mdss_mdp_overlay.c |   4 --
+ 4 files changed, 112 insertions(+), 20 deletions(-)
