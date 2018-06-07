@@ -1,0 +1,132 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Al Viro (1):
+      fix io_destroy()/aio_complete() race
+
+Alexander Shishkin (1):
+      stm class: Use vmalloc for the master map
+
+Arnd Bergmann (2):
+      irda: fix overly long udelay()
+      Kbuild: change CC_OPTIMIZE_FOR_SIZE definition
+
+Bart Van Assche (1):
+      scsi: scsi_transport_srp: Fix shost to rport translation
+
+Benjamin Tissoires (1):
+      Input: elan_i2c_smbus - fix corrupted stack
+
+Brian Foster (1):
+      xfs: detect agfl count corruption and reset agfl
+
+Colin Ian King (1):
+      ASoC: Intel: sst: remove redundant variable dma_dev_name
+
+David S. Miller (1):
+      sparc64: Fix build warnings with gcc 7.
+
+Eric Biggers (1):
+      cfg80211: further limit wiphy names to 64 bytes
+
+Eric Dumazet (1):
+      tcp: avoid integer overflows in tcp_rcv_space_adjust()
+
+Geert Uytterhoeven (1):
+      USB: serial: cp210x: use tcflag_t to fix incompatible pointer type
+
+Greg Kroah-Hartman (2):
+      hwtracing: stm: fix build error on some arches
+      Linux 4.4.136
+
+Hugh Dickins (1):
+      mm: fix the NULL mapping case in __isolate_lru_page()
+
+Maciej W. Rozycki (2):
+      MIPS: ptrace: Fix PTRACE_PEEKUSR requests for 64-bit FGRs
+      MIPS: prctl: Disallow FRE without FR with PR_SET_FP_MODE requests
+
+Martin Kelly (1):
+      iio:kfifo_buf: check for uint overflow
+
+Matthias Kaehlcke (1):
+      rtlwifi: rtl8192cu: Remove variable self-assignment in rf.c
+
+Michael Neuling (1):
+      powerpc/64s: Clear PCR on boot
+
+Mimi Zohar (1):
+      Revert "ima: limit file hash setting by user to fix and log modes"
+
+Nathan Chancellor (3):
+      staging: qcacld-3.0: Remove incorrect warning fix
+      Merge 4.4.136 into oneplus/QC8998_O_8.1
+      Merge remote-tracking branch 'als/oneplus/QC8998_O_8.1' into 8.1.0-unified
+
+Ondrej Zary (1):
+      drm/i915: Disable LVDS on Radiant P845
+
+Sachin Grover (1):
+      selinux: KASAN: slab-out-of-bounds in xattr_getsecurity
+
+Steven Rostedt (VMware) (1):
+      tracing: Fix crash when freeing instances with event triggers
+
+Will Deacon (1):
+      arm64: lse: Add early clobbers to some input/output asm operands
+
+Wolfram Sang (9):
+      i2c: rcar: make sure clocks are on when doing clock calculation
+      i2c: rcar: rework hw init
+      i2c: rcar: remove unused IOERROR state
+      i2c: rcar: remove spinlock
+      i2c: rcar: refactor setup of a msg
+      i2c: rcar: init new messages in irq
+      i2c: rcar: don't issue stop when HW does it automatically
+      i2c: rcar: check master irqs before slave irqs
+      i2c: rcar: revoke START request early
+
+Yoshihiro Shimoda (1):
+      dmaengine: usb-dmac: fix endless loop in usb_dmac_chan_terminate_all()
+
+Yoshinori Sato (1):
+      sh: New gcc support
+
+jiad (1):
+      staging: qcacld-3.0: Fix misleading indentation build error
+
+ Makefile                                           |   2 +-
+ arch/arm64/include/asm/atomic_lse.h                |  14 +-
+ arch/mips/kernel/process.c                         |   4 +
+ arch/mips/kernel/ptrace.c                          |   2 +-
+ arch/mips/kernel/ptrace32.c                        |   2 +-
+ arch/powerpc/kernel/cpu_setup_power.S              |   4 +
+ arch/sh/kernel/sh_ksyms_32.c                       |   3 +
+ arch/sh/lib/ashlsi3.S                              |  35 +++-
+ arch/sh/lib/ashrsi3.S                              |  33 +++-
+ arch/sh/lib/lshrsi3.S                              |  34 +++-
+ arch/sparc/kernel/ds.c                             |   2 +-
+ drivers/dma/sh/usb-dmac.c                          |   4 +-
+ drivers/gpu/drm/i915/intel_lvds.c                  |   8 +
+ drivers/hwtracing/stm/core.c                       |   7 +-
+ drivers/i2c/busses/i2c-rcar.c                      | 202 +++++++++------------
+ drivers/iio/buffer/kfifo_buf.c                     |   7 +
+ drivers/input/mouse/elan_i2c_smbus.c               |  22 +--
+ drivers/net/irda/w83977af_ir.c                     |   4 +-
+ .../net/wireless/realtek/rtlwifi/rtl8192cu/rf.c    |   3 -
+ drivers/scsi/scsi_transport_srp.c                  |  22 ++-
+ .../core/sme/src/csr/csr_neighbor_roam.c           |   5 +-
+ drivers/usb/serial/cp210x.c                        |   9 +-
+ fs/aio.c                                           |   3 +-
+ fs/xfs/libxfs/xfs_alloc.c                          |  94 ++++++++++
+ fs/xfs/xfs_mount.h                                 |   1 +
+ fs/xfs/xfs_trace.h                                 |   9 +-
+ include/linux/tcp.h                                |   2 +-
+ include/uapi/linux/nl80211.h                       |   2 +-
+ init/Kconfig                                       |  13 ++
+ kernel/trace/trace_events_trigger.c                |   5 +-
+ mm/vmscan.c                                        |   2 +-
+ net/ipv4/tcp_input.c                               |  10 +-
+ security/integrity/ima/ima_appraise.c              |   8 +-
+ security/selinux/ss/services.c                     |   2 +-
+ sound/soc/intel/common/sst-firmware.c              |   2 -
+ 35 files changed, 375 insertions(+), 206 deletions(-)
