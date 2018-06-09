@@ -1,7 +1,0 @@
-http://github.com/nathanchance/wahoo/commits/queue-2.44
-
-Nathan Chancellor (1):
-      arm64: dts: lge: Re-apply 8392cb2cdee764afb42b0ac198ae215db5e0f9b2
-
- arch/arm64/boot/dts/lge/dsi-panel-sw43402-dsc-qhd-cmd.dtsi | 10 +---------
- 1 file changed, 1 insertion(+), 9 deletions(-)
