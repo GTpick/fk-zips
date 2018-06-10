@@ -1,0 +1,21 @@
+http://github.com/nathanchance/op6/commits/8.1.0
+
+Nathan Chancellor (3):
+      flash_defconfig: Enable BOEFFLA_WL_BLOCKER
+      flash_defconfig: Enable DYNAMIC_STUNE_BOOST
+      flash_defconfig: Enable WESTWOOD by default
+
+Wang Han (1):
+      fs: sync: Avoid calling fdget without fdput
+
+joshuous (2):
+      sched/tune: Add initial support for Dynamic SchedTune Boost
+      cpu-boost: Implement Dynamic SchedTune Boost v3
+
+ arch/arm64/configs/flash_defconfig |  9 ++++
+ drivers/cpufreq/cpu-boost.c        | 20 +++++++++
+ fs/sync.c                          | 15 ++-----
+ include/linux/sched.h              |  5 +++
+ init/Kconfig                       |  9 ++++
+ kernel/sched/tune.c                | 91 ++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 138 insertions(+), 11 deletions(-)
