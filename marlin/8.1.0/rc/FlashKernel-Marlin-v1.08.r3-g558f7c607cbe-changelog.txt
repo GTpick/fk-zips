@@ -1,0 +1,178 @@
+http://github.com/nathanchance/marlin/commits/queue-1.08
+
+Al Viro (1):
+      fix io_destroy()/aio_complete() race
+
+Alexey Kodanev (1):
+      dccp: don't free ccid2_hc_tx_sock struct in dccp_disconnect()
+
+Badhri Jagan Sridharan (2):
+      Revert "xhci: plat: Register shutdown for xhci_plat"
+      usb: typec: tcpm: Wait for CC debounce before PD excg
+
+Chenglu Lin (2):
+      drivers: htc_debug: Avoid possible buffer overflow in reboot_block driver
+      build.config: Add debug kernel build configs
+
+Connor O'Brien (3):
+      proc: add null check in proc_uid_init
+      cpufreq: stats: update uid data in acct_update_power
+      cpufreq: stats: use seq iterator for large uid-related files
+
+Dan Carpenter (1):
+      team: use netdev_features_t instead of u32
+
+Daniel Mentz (1):
+      Merge branch 'android-msm-marlin-3.18-oc-mr1' into android-msm-marlin-3.18
+
+Daniele Palmas (1):
+      net: usb: cdc_mbim: add flag FLAG_SEND_ZLP
+
+Dave Airlie (1):
+      drm: set FMODE_UNSIGNED_OFFSET for drm files
+
+Eric Biggers (1):
+      cfg80211: further limit wiphy names to 64 bytes
+
+Eric Dumazet (3):
+      tcp: avoid integer overflows in tcp_rcv_space_adjust()
+      net/packet: refine check for priv area size
+      rtnetlink: validate attributes in do_setlink()
+
+Govindarajulu Varadarajan (1):
+      enic: set DMA mask to 47 bit
+
+Greg Kroah-Hartman (1):
+      Linux 3.18.113-rc1
+
+Haynes Mathew George (1):
+      ASoC: msm: qdsp6v2: Add volume control for capture streams
+
+Hugh Dickins (1):
+      mm: fix the NULL mapping case in __isolate_lru_page()
+
+Jack Morgenstein (1):
+      net/mlx4: Fix irq-unsafe spinlock usage
+
+Jack Wu (2):
+      htc_battery: Control stop/start charge level by charging_disabled
+      power: qpnp-fg: make CHARGE_FULL property writable by user
+
+Jaegeuk Kim (1):
+      block: replace io_schedule with io_schedule_timeout
+
+Jeff Vander Stoep (1):
+      Enable CONFIG_DEBUG_SET_MODULE_RONX
+
+Julia Lawall (1):
+      bnx2x: use the right constant
+
+Kyle Tso (2):
+      usb: tcpm: Correct the calculation of PD current
+      usb: typec: maintain PD charging when USB composition switches
+
+Laurent Pinchart (1):
+      [media] uvcvideo: Disable hardware timestamps by default
+
+Linus Torvalds (2):
+      mmap: introduce sane default mmap limits
+      mmap: relax file size limit for regular files
+
+Maciej W. Rozycki (1):
+      MIPS: ptrace: Fix PTRACE_PEEKUSR requests for 64-bit FGRs
+
+Nathan Chancellor (4):
+      UPSTREAM: kconfig: Avoid format overflow warning from GCC 8.1
+      Merge tag 'android-p-preview-3_r0.1' into oreo-m4
+      flash_defconfig: Apply changes from android-p-preview-3_r0.1
+      Merge 3.18.113-rc1 into oreo-m4
+
+Ondrej Zary (1):
+      drm/i915: Disable LVDS on Radiant P845
+
+Sabrina Dubroca (1):
+      ip6mr: only set ip6mr_table from setsockopt when ip6mr_new_table succeeds
+
+Sachin Grover (1):
+      selinux: KASAN: slab-out-of-bounds in xattr_getsecurity
+
+Steven Rostedt (VMware) (1):
+      tracing: Fix crash when freeing instances with event triggers
+
+Wei Wang (1):
+      build.config: enforce trace_printk check
+
+Wenwen Wang (1):
+      isdn: eicon: fix a missing-check bug
+
+fredchiou (1):
+      Revert "Revert "cpufreq: Fix race between policy initialization and cpufreq_cpu_get()""
+
+wasb_liu (1):
+      power: battery: disable AICL for Type-C Charger
+
+ Makefile                                         |   4 +-
+ arch/arm64/configs/flash_defconfig               |   2 +-
+ arch/arm64/configs/marlin_defconfig              |   1 +
+ arch/mips/kernel/ptrace.c                        |   2 +-
+ arch/mips/kernel/ptrace32.c                      |   2 +-
+ block/blk-core.c                                 |   6 +-
+ build.config                                     |  20 +-
+ build.config.common                              |  36 ++
+ build.config.debug_api                           |  19 +
+ build.config.debug_hang                          |  21 +
+ build.config.debug_locking                       |  17 +
+ build.config.debug_memory                        |  24 +
+ build.config.kasan                               |  29 +-
+ drivers/cpufreq/cpufreq.c                        |  40 +-
+ drivers/cpufreq/cpufreq_stats.c                  | 604 +++++++++--------------
+ drivers/gpu/drm/drm_fops.c                       |   1 +
+ drivers/gpu/drm/i915/intel_lvds.c                |   8 +
+ drivers/isdn/hardware/eicon/diva.c               |  22 +-
+ drivers/isdn/hardware/eicon/diva.h               |   5 +-
+ drivers/isdn/hardware/eicon/divasmain.c          |  18 +-
+ drivers/media/usb/uvc/uvc_driver.c               |   4 +
+ drivers/media/usb/uvc/uvc_video.c                |   3 +
+ drivers/media/usb/uvc/uvcvideo.h                 |   1 +
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c |   2 +-
+ drivers/net/ethernet/cisco/enic/enic_main.c      |   8 +-
+ drivers/net/ethernet/mellanox/mlx4/qp.c          |   4 +-
+ drivers/net/team/team.c                          |   3 +-
+ drivers/net/usb/cdc_mbim.c                       |   2 +-
+ drivers/power/htc_battery.c                      |   9 +-
+ drivers/power/qpnp-fg.c                          |  13 +
+ drivers/power/qpnp-smbcharger.c                  |  62 ++-
+ drivers/usb/dwc3/dwc3-msm.c                      |   2 +-
+ drivers/usb/typec/fusb302/fusb302.c              |  73 +--
+ drivers/usb/typec/pd.h                           |   2 +
+ drivers/usb/typec/tcpm.c                         |  27 +-
+ fs/aio.c                                         |   3 +-
+ fs/proc/uid.c                                    |   2 +
+ include/linux/tcp.h                              |   2 +-
+ include/uapi/linux/nl80211.h                     |   2 +-
+ kernel/trace/trace_events_trigger.c              |   5 +-
+ mm/mmap.c                                        |  32 ++
+ mm/vmscan.c                                      |   2 +-
+ net/core/rtnetlink.c                             |   8 +-
+ net/dccp/proto.c                                 |   2 -
+ net/ipv4/tcp_input.c                             |  10 +-
+ net/ipv6/ip6mr.c                                 |   3 +-
+ net/packet/af_packet.c                           |   2 +-
+ scripts/kconfig/confdata.c                       |   2 +-
+ security/selinux/ss/services.c                   |   2 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-noirq.c         |  24 +-
+ 50 files changed, 622 insertions(+), 575 deletions(-)
+ create mode 100644 build.config.common
+ create mode 100644 build.config.debug_api
+ create mode 100644 build.config.debug_hang
+ create mode 100644 build.config.debug_locking
+ create mode 100644 build.config.debug_memory
+
+
+http://github.com/nathanchance/AnyKernel2/commits/marlin-flash-8.1.0
+
+Nathan Chancellor (1):
+      marlin: anykernel.sh: Update supported configuration for O June/P DP3
+
+ anykernel.sh | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
