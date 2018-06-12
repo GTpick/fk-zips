@@ -1,0 +1,93 @@
+http://github.com/nathanchance/marlin/commits/queue-1.08
+
+Al Viro (1):
+      fix io_destroy()/aio_complete() race
+
+Alexey Kodanev (1):
+      dccp: don't free ccid2_hc_tx_sock struct in dccp_disconnect()
+
+Dan Carpenter (1):
+      team: use netdev_features_t instead of u32
+
+Daniele Palmas (1):
+      net: usb: cdc_mbim: add flag FLAG_SEND_ZLP
+
+Dave Airlie (1):
+      drm: set FMODE_UNSIGNED_OFFSET for drm files
+
+Eric Biggers (1):
+      cfg80211: further limit wiphy names to 64 bytes
+
+Eric Dumazet (3):
+      tcp: avoid integer overflows in tcp_rcv_space_adjust()
+      net/packet: refine check for priv area size
+      rtnetlink: validate attributes in do_setlink()
+
+Govindarajulu Varadarajan (1):
+      enic: set DMA mask to 47 bit
+
+Greg Kroah-Hartman (1):
+      Linux 3.18.113-rc1
+
+Hugh Dickins (1):
+      mm: fix the NULL mapping case in __isolate_lru_page()
+
+Jack Morgenstein (1):
+      net/mlx4: Fix irq-unsafe spinlock usage
+
+Julia Lawall (1):
+      bnx2x: use the right constant
+
+Linus Torvalds (2):
+      mmap: introduce sane default mmap limits
+      mmap: relax file size limit for regular files
+
+Maciej W. Rozycki (1):
+      MIPS: ptrace: Fix PTRACE_PEEKUSR requests for 64-bit FGRs
+
+Nathan Chancellor (2):
+      UPSTREAM: kconfig: Avoid format overflow warning from GCC 8.1
+      Merge 3.18.113-rc1 into oreo-m4
+
+Ondrej Zary (1):
+      drm/i915: Disable LVDS on Radiant P845
+
+Sabrina Dubroca (1):
+      ip6mr: only set ip6mr_table from setsockopt when ip6mr_new_table succeeds
+
+Sachin Grover (1):
+      selinux: KASAN: slab-out-of-bounds in xattr_getsecurity
+
+Steven Rostedt (VMware) (1):
+      tracing: Fix crash when freeing instances with event triggers
+
+Wenwen Wang (1):
+      isdn: eicon: fix a missing-check bug
+
+ Makefile                                         |  4 +--
+ arch/mips/kernel/ptrace.c                        |  2 +-
+ arch/mips/kernel/ptrace32.c                      |  2 +-
+ drivers/gpu/drm/drm_fops.c                       |  1 +
+ drivers/gpu/drm/i915/intel_lvds.c                |  8 ++++++
+ drivers/isdn/hardware/eicon/diva.c               | 22 ++++++++++------
+ drivers/isdn/hardware/eicon/diva.h               |  5 ++--
+ drivers/isdn/hardware/eicon/divasmain.c          | 18 +++++++------
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c |  2 +-
+ drivers/net/ethernet/cisco/enic/enic_main.c      |  8 +++---
+ drivers/net/ethernet/mellanox/mlx4/qp.c          |  4 +--
+ drivers/net/team/team.c                          |  3 ++-
+ drivers/net/usb/cdc_mbim.c                       |  2 +-
+ fs/aio.c                                         |  3 +--
+ include/linux/tcp.h                              |  2 +-
+ include/uapi/linux/nl80211.h                     |  2 +-
+ kernel/trace/trace_events_trigger.c              |  5 ++--
+ mm/mmap.c                                        | 32 ++++++++++++++++++++++++
+ mm/vmscan.c                                      |  2 +-
+ net/core/rtnetlink.c                             |  8 +++---
+ net/dccp/proto.c                                 |  2 --
+ net/ipv4/tcp_input.c                             | 10 +++++---
+ net/ipv6/ip6mr.c                                 |  3 ++-
+ net/packet/af_packet.c                           |  2 +-
+ scripts/kconfig/confdata.c                       |  2 +-
+ security/selinux/ss/services.c                   |  2 +-
+ 26 files changed, 106 insertions(+), 50 deletions(-)
