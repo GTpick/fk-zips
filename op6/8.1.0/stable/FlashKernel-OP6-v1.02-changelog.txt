@@ -1,0 +1,129 @@
+http://github.com/nathanchance/op6/commits/8.1.0
+
+Alexey Kodanev (1):
+      dccp: don't free ccid2_hc_tx_sock struct in dccp_disconnect()
+
+Anand Jain (1):
+      btrfs: define SUPER_FLAG_METADUMP_V2
+
+Arnd Bergmann (1):
+      dm bufio: avoid false-positive Wmaybe-uninitialized warning
+
+Ben Hutchings (1):
+      KVM: VMX: Expose SSBD properly to guests, 4.9 supplement
+
+Chris Chiu (1):
+      tpm: self test failure should not cause suspend to fail
+
+Cong Wang (1):
+      netdev-FAQ: clarify DaveM's position for stable backports
+
+Dan Carpenter (1):
+      team: use netdev_features_t instead of u32
+
+Daniele Palmas (1):
+      net: usb: cdc_mbim: add flag FLAG_SEND_ZLP
+
+Dave Airlie (1):
+      drm: set FMODE_UNSIGNED_OFFSET for drm files
+
+Enric Balletbo i Serra (1):
+      tpm: do not suspend/resume if power stays on
+
+Eric Dumazet (3):
+      net/packet: refine check for priv area size
+      rtnetlink: validate attributes in do_setlink()
+      net: metrics: add proper netlink validation
+
+Florian Fainelli (1):
+      net: phy: broadcom: Fix bcm_write_exp()
+
+Govindarajulu Varadarajan (1):
+      enic: set DMA mask to 47 bit
+
+Greg Kroah-Hartman (1):
+      Linux 4.9.108
+
+Jack Morgenstein (1):
+      net/mlx4: Fix irq-unsafe spinlock usage
+
+Jason Wang (1):
+      vhost: synchronize IOTLB message with dev cleanup
+
+Josh Poimboeuf (1):
+      objtool: Fix gcov check for older versions of GCC
+
+Julia Lawall (1):
+      bnx2x: use the right constant
+
+Kirill Tkhai (1):
+      kcm: Fix use-after-free caused by clonned sockets
+
+Linus Torvalds (2):
+      mmap: introduce sane default mmap limits
+      mmap: relax file size limit for regular files
+
+Nathan Chancellor (3):
+      kconfig: Avoid format overflow warning from GCC 8.1
+      Merge 4.9.108 into oneplus/SDM845_O_8.1
+      Merge remote-tracking branch 'als/oneplus/SDM845_O_8.1' into 8.1.0
+
+Philip Müller (1):
+      complete e390f9a port for v4.9.106
+
+Sabrina Dubroca (1):
+      ip6mr: only set ip6mr_table from setsockopt when ip6mr_new_table succeeds
+
+Shahed Shaikh (1):
+      qed: Fix mask for physical address in ILT entry
+
+Stephen Suryaputra (1):
+      vrf: check the original netdevice for generating redirect
+
+Wenwen Wang (1):
+      isdn: eicon: fix a missing-check bug
+
+Willem de Bruijn (2):
+      ipv4: remove warning in ip_recv_error
+      packet: fix reserve calculation
+
+Xin Long (1):
+      sctp: not allow transport timeout value less than HZ/5 for hb_timer
+
+ Documentation/networking/netdev-FAQ.txt          |  9 +++++++
+ Makefile                                         |  2 +-
+ arch/x86/kernel/vmlinux.lds.S                    |  2 --
+ arch/x86/kvm/cpuid.h                             |  2 +-
+ drivers/char/tpm/tpm-chip.c                      | 13 ++++++++++
+ drivers/char/tpm/tpm-interface.c                 |  7 ++++++
+ drivers/char/tpm/tpm.h                           |  1 +
+ drivers/gpu/drm/drm_fops.c                       |  1 +
+ drivers/isdn/hardware/eicon/diva.c               | 22 ++++++++++------
+ drivers/isdn/hardware/eicon/diva.h               |  5 ++--
+ drivers/isdn/hardware/eicon/divasmain.c          | 18 +++++++------
+ drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c |  2 +-
+ drivers/net/ethernet/cisco/enic/enic_main.c      |  8 +++---
+ drivers/net/ethernet/mellanox/mlx4/qp.c          |  4 +--
+ drivers/net/ethernet/qlogic/qed/qed_cxt.c        |  2 +-
+ drivers/net/phy/bcm-cygnus.c                     |  6 ++---
+ drivers/net/phy/bcm-phy-lib.h                    |  7 ++++++
+ drivers/net/phy/bcm7xxx.c                        |  4 +--
+ drivers/net/team/team.c                          |  3 ++-
+ drivers/net/usb/cdc_mbim.c                       |  2 +-
+ drivers/vhost/vhost.c                            |  3 +++
+ fs/btrfs/disk-io.c                               |  3 ++-
+ include/linux/compiler-gcc.h                     |  2 +-
+ include/uapi/linux/btrfs_tree.h                  |  1 +
+ mm/mmap.c                                        | 32 ++++++++++++++++++++++++
+ net/core/rtnetlink.c                             |  8 +++---
+ net/dccp/proto.c                                 |  2 --
+ net/ipv4/fib_semantics.c                         |  2 ++
+ net/ipv4/ip_sockglue.c                           |  2 --
+ net/ipv6/ip6_output.c                            |  3 ++-
+ net/ipv6/ip6mr.c                                 |  3 ++-
+ net/ipv6/ndisc.c                                 |  6 +++++
+ net/kcm/kcmsock.c                                |  2 +-
+ net/packet/af_packet.c                           |  4 +--
+ net/sctp/transport.c                             |  2 +-
+ scripts/Makefile.build                           |  3 +++
+ 36 files changed, 147 insertions(+), 51 deletions(-)
