@@ -1,0 +1,401 @@
+http://github.com/nathanchance/op5/commits/queue-4.23
+
+Abhinav Kumar (7):
+      qcacmn: Add new ini to set min delay btw scan and reason bit-mask
+      qcacld-3.0: Fix to pass appropriate buffer length to unpack WPA IE
+      qcacld-3.0: Add new ini to set delay Hand-off period
+      qcacld-3.0: Add new ini to set min delay btw scan and reason bit-mask
+      qcacld-3.0: Avoid possible NULL pointer dereference
+      drm/msm: reset HDCP 2.2 sink support during disconnect
+      qcacld-3.0: Make channel list dynamic
+
+Aditya Bavanari (1):
+      voice_svc: Avoid double free in voice_svc driver
+
+Andrea Arcangeli (1):
+      fs/exec: fix use after free in execve
+
+Andy Lutomirski (6):
+      x86/fpu: Default eagerfpu=on on all CPUs
+      x86/fpu: Fix 'no387' regression
+      x86/fpu: Hard-disable lazy FPU mode
+      x86/fpu: Fix FNSAVE usage in eagerfpu mode
+      x86/fpu: Fix math emulation in eager fpu mode
+      x86/crypto, x86/fpu: Remove X86_FEATURE_EAGER_FPU #ifdef from the crc32c code
+
+Anurag Chouhan (1):
+      icnss: Avoid qmi exchange when fw is down
+
+Borislav Petkov (2):
+      x86/cpufeature: Remove unused and seldomly used cpu_has_xx macros
+      x86/fpu: Fix eager-FPU handling on legacy FPU machines
+
+CNSS_WLAN Service (19):
+      Merge "qcacld-3.0: Possble OOB access in hdd_set_limit_off_chan_for_tos()" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Possible buffer overflow in wma_stats_ext_event_handler" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix integer truncation in convert_wsc_opaque" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Add sanity check variable_data len in update_fils_data" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix Use-After-Free in ol_txrx_pdev_detach" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Use request manager for Class A stats" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Introduce HDD Request Manager infrastructure" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Add range check for mode param in cds_get_pcl" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Prevent overread of SSID in hdd_fill_pmksa_info()" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix NDP Discovery MAC address policy" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix OOB write in vdev_mac_map" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix NDP Response Code policy" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix memory double free condition in wma_roam_update_vdev" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Allow country change to occur during driver load" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Reject scan command, when firmware is down" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Fix possible NULL pointer dereference in lim_process_messages" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacld-3.0: Enable HDD Request Manager" into wlan-cld3.driver.lnx.1.1.c9
+      Merge "qcacmn: Fix memory leak in WMI" into wlan-cmn.driver.lnx.1.0.c9
+      Merge "qcacld-3.0: Fix buffer overflow in htt_t2h_msg_handler_fast" into wlan-cld3.driver.lnx.1.1.c9
+
+Camus Wong (1):
+      DRM: SDE: Fix potential buffer overflow in SDE encoder
+
+Dmitry Torokhov (1):
+      Input: gtco - fix potential out-of-bound access
+
+Dundi Raviteja (1):
+      qcacld-3.0: Possble OOB access in hdd_set_limit_off_chan_for_tos()
+
+Eric W. Biederman (1):
+      net: Fix double free and memory corruption in get_net_ns_by_id()
+
+Ethan Lee (1):
+      Input: goodix - add new ACPI id for GPD Win 2 touch screen
+
+Gerrit - the friendly Code Review server (2):
+      Merge changes  into msm-4.4.c7
+      Merge changes  into msm-4.4.c7
+
+Gil Kupfer (1):
+      vmw_balloon: fixing double free when batching mode is off
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.138-rc1
+
+Hemant Kumar (1):
+      usb: phy-msm-susb-qmp: power down phy upon disconnect notification
+
+Himanshu Agarwal (1):
+      qcacld-3.0: Don't fill any WMA request if target is  not ready
+
+Jeff Johnson (6):
+      qcacld-3.0: Prevent overread of SSID in hdd_fill_pmksa_info()
+      qcacld-3.0: Fix NDP Discovery MAC address policy
+      qcacld-3.0: Fix NDP Response Code policy
+      qcacld-3.0: Introduce HDD Request Manager infrastructure
+      qcacld-3.0: Enable HDD Request Manager
+      qcacld-3.0: Use request manager for Class A stats
+
+Johannes Wienke (1):
+      Input: elan_i2c - add ELAN0612 (Lenovo v330 14IKB) ACPI ID
+
+Juergen Gross (1):
+      x86: Remove unused function cpu_has_ht_siblings()
+
+Kabilan Kannan (1):
+      qcacld-3.0: Reject scan command, when firmware is down
+
+Kevin Easton (1):
+      af_key: Always verify length of provided sadb_key
+
+Kiran Gunda (1):
+      leds: qpnp-flash-v2: Fix HW_STROBE configuration
+
+Linus Torvalds (2):
+      loop: fix concurrent lo_open/lo_release
+      Clarify (and fix) MAX_LFS_FILESIZE macros
+
+Linus Walleij (1):
+      gpio: No NULL owner
+
+Linux Build Service Account (36):
+      Merge "qcacmn: Add new ini to set min delay btw scan and reason bit-mask"
+      Merge "DRM: SDE: Fix potential buffer overflow in SDE encoder"
+      Merge "leds: qpnp-flash-v2: Fix HW_STROBE configuration"
+      Merge "msm: Allocate fd with O_CLOEXEC flag"
+      Merge "packet: hold bind lock when rebinding to fanout hook"
+      Merge "net: Fix double free and memory corruption in get_net_ns_by_id()"
+      Merge "smb-lib: add support of DP/DM pulsing for fix 5V, 9V and 12V"
+      Merge "power: smb-lib: Add support for SW based OV detection"
+      Merge "voice_svc: Avoid double free in voice_svc driver"
+      Merge "mmc: core: power cycle card when sd card switch voltage operation fails"
+      Merge "msm: mdss: Disable ECG feature for all chipsets"
+      Merge "msm: ais: jpegdma: Fix for ASAN issues in jpegdma module"
+      Merge "lpm-levels: Remove kfree for memory allocated with devm_kzalloc"
+      Merge "drm/msm: reset HDCP 2.2 sink support during disconnect"
+      Merge "Ath10k: enable WLAN channel switch announcement offload"
+      Merge "xfrm: Fix stack-out-of-bounds with misconfigured transport mode policies."
+      Merge "xfrm: Don't use sk_family for socket policy lookups"
+      Merge "xfrm: Fix stack-out-of-bounds read on socket policy lookup."
+      Merge "icnss: Avoid qmi exchange when fw is down"
+      Merge "packet: fix tp_reserve race in packet_set_ring"
+      Merge "ARM: dts: msm: Enable DP function for SDM660 + PM660A QRD"
+      Merge "dwc3-msm: Introduce sysfs param to indicate usb compliance mode"
+      Merge "usb: phy-msm-susb-qmp: power down phy upon disconnect notification"
+      Merge "msm:ais: Remove recursive locks"
+      Merge "ion: Consider ion pool pages as indirectly reclaimable"
+      Merge "msm: ais: isp: Handling buffer use after getting it freed"
+      Merge "qmp-phy: Power down PHY durng disconnect to avoid leakage"
+      Merge "clk: qcom: Add support for 585MHz GPU frequency"
+      Merge bbe75fba2fc8ed64e7a4a453528be0a10bcf6de1 on remote branch
+      Merge 3dfe93028c0c6564db7aa4607a85413195925aa4 on remote branch
+      Merge a65f5e9b864cabd560008e3b494f1d87b599d594 on remote branch
+      Merge d08809713a1cb357fb06b91a047a88492f05bf7b on remote branch
+      Merge "qcacld-3.0: Fix OOB access in htt_rx_ring_fill_n" into wlan-cld3.driver.lnx.1.1.r28-rel
+      Merge "ASoC: msm: check payload size before memory allocation" into kernel.lnx.4.4.r27-rel
+      Merge "ARM: dts: msm: Add support for new speed bin for SDM660" into kernel.lnx.4.4.r27-rel
+      Merge "msm: kgsl: Don't dump GPMU registers on non GPMU devices" into kernel.lnx.4.4.r27-rel
+
+Marek Szyprowski (1):
+      serial: samsung: fix maxburst parameter for DMA transactions
+
+Maulik Shah (1):
+      lpm-levels: Remove kfree for memory allocated with devm_kzalloc
+
+Michael Ellerman (1):
+      crypto: vmx - Remove overly verbose printk from AES init routines
+
+Nachiket Kukade (1):
+      qcacmn: Create a list for events and force complete them during SSR
+
+Narender Ankam (1):
+      ARM: dts: msm: Enable DP function for SDM660 + PM660A QRD
+
+Nathan Chancellor (5):
+      Merge tag 'LA.UM.6.2.r1-08900-sdm660.0' into 8.1.0-unified
+      staging: fw-api: Merge tag 'LA.UM.6.2.r1-08900-sdm660.0' into 8.1.0-unified
+      staging: qcacld-3.0: Merge tag 'LA.UM.6.2.r1-08900-sdm660.0' into 8.1.0-unified
+      staging: qca-wifi-host-cmn: Merge tag 'LA.UM.6.2.r1-08900-sdm660.0' into 8.1.0-unified
+      Merge 4.4.138-rc1 into 8.1.0-unified
+
+Paolo Bonzini (3):
+      KVM: x86: introduce linear_{read,write}_system
+      KVM: x86: pass kvm_vcpu to kvm_read_guest_virt and kvm_write_guest_virt_system
+      kvm: x86: use correct privilege level for sgdt/sidt/fxsave/fxrstor access
+
+Pragaspathi Thilagaraj (2):
+      qcacld-3.0: Fix integer truncation in convert_wsc_opaque
+      qcacld-3.0: Fix possible NULL pointer dereference in lim_process_messages
+
+Rajeev Kumar (1):
+      qcacld-3.0: Add vdev id sanity check in wma stats event handlers
+
+Rakesh Pillai (1):
+      qcacld-3.0: Fix Use-After-Free in ol_txrx_pdev_detach
+
+Rakshith Suresh Patkar (1):
+      qcacld-3.0: Fix OOB access in htt_rx_ring_fill_n
+
+Ram Prakash Gupta (1):
+      mmc: core: power cycle card when sd card switch voltage operation fails
+
+Roman Gushchin (1):
+      mm: introduce NR_INDIRECTLY_RECLAIMABLE_BYTES
+
+Sachin Bhayare (2):
+      msm: Allocate fd with O_CLOEXEC flag
+      msm: mdss: Increase fbmem buf ref count before use in mdp3
+
+Sarada Prasanna Garnayak (1):
+      Ath10k: enable WLAN channel switch announcement offload
+
+Sourav Mohapatra (1):
+      qcacld-3.0: Allow country change to occur during driver load
+
+Srinivasa Rao Kuppala (1):
+      sound: rawmidi: Move spinlock under realloc_mutex
+
+Steffen Klassert (3):
+      xfrm: Fix stack-out-of-bounds with misconfigured transport mode policies.
+      xfrm: Don't use sk_family for socket policy lookups
+      xfrm: Fix stack-out-of-bounds read on socket policy lookup.
+
+Suprith Malligere Shankaregowda (3):
+      msm: ais: jpegdma: Fix for ASAN issues in jpegdma module
+      msm: ais: isp: Handling buffer use after getting it freed
+      msm:ais: Remove recursive locks
+
+Surabhi Vishnoi (1):
+      qcacmn: Fix memory leak in WMI
+
+Taniya Das (2):
+      clk: qcom: Add support for 585MHz GPU frequency
+      ARM: dts: msm: Add support for new speed bin for SDM660
+
+Tirupathi Reddy (1):
+      ARM: dts: msm: Add speed-bin 4 support for sdm660
+
+Tushnim Bhattacharyya (1):
+      qcacld-3.0: Add range check for mode param in cds_get_pcl
+
+Umang Agrawal (2):
+      smb-lib: add support of DP/DM pulsing for fix 5V, 9V and 12V
+      power: smb-lib: Add support for SW based OV detection
+
+Vamsi Krishna Samavedam (1):
+      dwc3-msm: Introduce sysfs param to indicate usb compliance mode
+
+Venkateswara Rao Tadikonda (1):
+      msm: kgsl: Don't dump GPMU registers on non GPMU devices
+
+Vignesh Viswanathan (1):
+      qcacld-3.0: Add sanity check variable_data len in update_fils_data
+
+Vijayanand Jitta (3):
+      mm: treat indirectly reclaimable memory as available in MemAvailable
+      mm: treat indirectly reclaimable memory as free in overcommit logic
+      ion: Consider ion pool pages as indirectly reclaimable
+
+Vijayavardhan Vennapusa (1):
+      qmp-phy: Power down PHY durng disconnect to avoid leakage
+
+Willem de Bruijn (2):
+      packet: hold bind lock when rebinding to fanout hook
+      packet: fix tp_reserve race in packet_set_ring
+
+Xiaojun Sang (1):
+      ASoC: msm: check payload size before memory allocation
+
+Yeshwanth Sriram Guntuka (2):
+      qcacld-3.0: Possible buffer overflow in wma_stats_ext_event_handler
+      qcacld-3.0: Possible buffer overflow in wma_nan_rsp_event_handler
+
+Yu-cheng Yu (1):
+      x86/fpu: Revert ("x86/fpu: Disable AVX when eagerfpu is off")
+
+gaurank kathpalia (3):
+      qcacld-3.0: Fix memory double free condition in wma_roam_update_vdev
+      qcacld-3.0: Fix OOB write in vdev_mac_map
+      qcacld-3.0: Allocate extra 100 bytes to add missing IE info
+
+jitiphil (1):
+      qcacld-3.0: Fix buffer overflow in htt_t2h_msg_handler_fast
+
+raghavendra ambadas (1):
+      msm: mdss: Disable ECG feature for all chipsets
+
+spuligil (8):
+      fw-api: CL 4590785 - update fw common interface files
+      fw-api: CL 4625060 - update fw common interface files
+      fw-api: CL 4625841 - update fw common interface files
+      fw-api: CL 4647496 - update fw common interface files
+      fw-api: CL 4662126 - update fw common interface files
+      fw-api: CL 4669157 - update fw common interface files
+      fw-api: CL 4677643 - update fw common interface files
+      fw-api: CL 4687827 - update fw common interface files
+
+yu-cheng yu (3):
+      x86/fpu: Fix early FPU command-line parsing
+      x86/fpu: Disable MPX when eagerfpu is off
+      x86/fpu: Disable AVX when eagerfpu is off
+
+ Makefile                                           |   4 +-
+ arch/arm/boot/dts/qcom/sdm660-pm660a-qrd.dts       |  11 +-
+ arch/arm/boot/dts/qcom/sdm660-regulator.dtsi       |  39 ++++-
+ arch/arm/boot/dts/qcom/sdm660.dtsi                 |  17 +++
+ arch/x86/crypto/chacha20_glue.c                    |   2 +-
+ arch/x86/crypto/crc32c-intel_glue.c                |   7 +-
+ arch/x86/include/asm/cmpxchg_32.h                  |   2 +-
+ arch/x86/include/asm/cmpxchg_64.h                  |   2 +-
+ arch/x86/include/asm/cpufeature.h                  |  39 +----
+ arch/x86/include/asm/fpu/internal.h                |   6 +-
+ arch/x86/include/asm/fpu/xstate.h                  |   2 +-
+ arch/x86/include/asm/kvm_emulate.h                 |   6 +-
+ arch/x86/include/asm/smp.h                         |   9 --
+ arch/x86/include/asm/xor_32.h                      |   2 +-
+ arch/x86/kernel/cpu/amd.c                          |   4 +-
+ arch/x86/kernel/cpu/common.c                       |   4 +-
+ arch/x86/kernel/cpu/intel.c                        |   3 +-
+ arch/x86/kernel/cpu/intel_cacheinfo.c              |   6 +-
+ arch/x86/kernel/cpu/mtrr/generic.c                 |   2 +-
+ arch/x86/kernel/cpu/mtrr/main.c                    |   2 +-
+ arch/x86/kernel/cpu/perf_event_amd.c               |   4 +-
+ arch/x86/kernel/cpu/perf_event_amd_uncore.c        |  11 +-
+ arch/x86/kernel/fpu/core.c                         |  24 ++-
+ arch/x86/kernel/fpu/init.c                         | 169 +++++----------------
+ arch/x86/kernel/fpu/xstate.c                       |   3 +-
+ arch/x86/kernel/hw_breakpoint.c                    |   6 +-
+ arch/x86/kernel/smpboot.c                          |   2 +-
+ arch/x86/kernel/traps.c                            |   1 -
+ arch/x86/kernel/vm86_32.c                          |   4 +-
+ arch/x86/kvm/emulate.c                             |  72 ++++-----
+ arch/x86/kvm/vmx.c                                 |  23 ++-
+ arch/x86/kvm/x86.c                                 |  51 +++++--
+ arch/x86/kvm/x86.h                                 |   4 +-
+ arch/x86/mm/setup_nx.c                             |   4 +-
+ drivers/char/hw_random/via-rng.c                   |   5 +-
+ drivers/clk/qcom/gpucc-sdm660.c                    |   3 +-
+ drivers/cpuidle/lpm-levels-of.c                    |  33 +---
+ drivers/crypto/padlock-aes.c                       |   2 +-
+ drivers/crypto/padlock-sha.c                       |   2 +-
+ drivers/crypto/vmx/aes.c                           |   2 -
+ drivers/crypto/vmx/aes_cbc.c                       |   2 -
+ drivers/crypto/vmx/aes_ctr.c                       |   2 -
+ drivers/crypto/vmx/ghash.c                         |   2 -
+ drivers/gpio/gpiolib.c                             |   9 +-
+ drivers/gpu/drm/msm/hdmi-staging/sde_hdmi_bridge.c |   1 +
+ drivers/gpu/drm/msm/sde/sde_encoder.c              |  12 +-
+ drivers/gpu/msm/adreno_a5xx_snapshot.c             | 119 +++++++++------
+ drivers/input/mouse/elan_i2c_core.c                |   1 +
+ drivers/input/touchscreen/goodix.c                 |   1 +
+ drivers/iommu/intel_irq_remapping.c                |   2 +-
+ drivers/leds/leds-qpnp-flash-v2.c                  |  22 ++-
+ .../media/platform/msm/ais/isp/msm_isp_axi_util.c  |   5 +
+ .../platform/msm/ais/isp/msm_isp_stats_util.c      |  12 +-
+ drivers/media/platform/msm/ais/isp/msm_isp_util.c  |   4 -
+ .../platform/msm/ais/jpeg_dma/msm_jpeg_dma_dev.c   |  13 +-
+ drivers/misc/vmw_balloon.c                         |  23 +--
+ drivers/mmc/core/core.c                            |  12 +-
+ drivers/net/wireless/ath/ath10k/mac.c              |  12 ++
+ drivers/net/wireless/ath/ath10k/wmi-ops.h          |  19 +++
+ drivers/net/wireless/ath/ath10k/wmi-tlv.c          |  32 ++++
+ drivers/power/supply/qcom/qpnp-smb2.c              |   2 +-
+ drivers/power/supply/qcom/smb-lib.c                |  57 +++++++
+ drivers/power/supply/qcom/smb-lib.h                |   2 +
+ drivers/soc/qcom/icnss.c                           |  12 ++
+ drivers/staging/android/ion/ion_page_pool.c        |   5 +
+ .../qca-wifi-host-cmn/wmi/src/wmi_unified_tlv.c    |   1 +
+ .../qcacld-3.0/core/cds/src/cds_concurrency.c      |   5 +
+ .../qcacld-3.0/core/cds/src/cds_reg_service.c      |  14 +-
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_rx.c    |   9 ++
+ drivers/staging/qcacld-3.0/core/dp/htt/htt_t2h.c   |  31 +++-
+ drivers/staging/qcacld-3.0/core/dp/txrx/ol_txrx.c  |   4 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_cfg80211.c    |   8 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c  |   1 +
+ .../core/hdd/src/wlan_hdd_nan_datapath.c           |   4 +-
+ .../qcacld-3.0/core/hdd/src/wlan_hdd_scan.c        |   9 +-
+ .../mac/src/pe/lim/lim_process_message_queue.c     |  12 +-
+ .../core/mac/src/pe/lim/lim_sme_req_utils.c        |   2 +-
+ .../mac/src/sys/legacy/src/utils/src/parser_api.c  |  20 +++
+ .../src/sys/legacy/src/utils/src/utils_parser.c    |   8 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c |   1 +
+ .../staging/qcacld-3.0/core/wma/src/wma_dev_if.c   |  10 ++
+ .../staging/qcacld-3.0/core/wma/src/wma_features.c |   7 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_main.c |   8 +-
+ drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.c |  26 +++-
+ .../qcacld-3.0/core/wma/src/wma_scan_roam.c        |   1 -
+ .../staging/qcacld-3.0/core/wma/src/wma_utils.c    |  22 ++-
+ drivers/tty/serial/samsung.c                       |   7 +-
+ drivers/usb/dwc3/dwc3-msm.c                        |  33 ++++
+ drivers/usb/phy/phy-msm-ssusb-qmp.c                |  12 +-
+ drivers/video/fbdev/msm/mdp3_ctrl.c                |  14 +-
+ fs/btrfs/disk-io.c                                 |   2 +-
+ fs/exec.c                                          |   6 +-
+ fs/proc/meminfo.c                                  |   7 +
+ include/linux/fs.h                                 |   4 +-
+ include/linux/mmzone.h                             |   1 +
+ include/linux/power_supply.h                       |   3 +
+ mm/mmap.c                                          |   7 +
+ mm/nommu.c                                         |   7 +
+ mm/vmstat.c                                        |   1 +
+ net/key/af_key.c                                   |  45 ++++--
+ sound/core/rawmidi.c                               |   2 +-
+ sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c         |   5 +-
+ sound/soc/msm/qdsp6v2/msm-pcm-q6-v2.c              |   4 +-
+ sound/soc/msm/qdsp6v2/msm-qti-pp-config.c          |   7 +-
+ .../soc/msm/qdsp6v2/msm-transcode-loopback-q6-v2.c |   5 +-
+ 105 files changed, 863 insertions(+), 489 deletions(-)
