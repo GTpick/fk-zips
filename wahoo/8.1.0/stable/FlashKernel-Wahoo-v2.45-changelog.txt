@@ -1,0 +1,128 @@
+http://github.com/nathanchance/wahoo/commits/oreo-m2
+
+Andy Lutomirski (6):
+      x86/fpu: Default eagerfpu=on on all CPUs
+      x86/fpu: Fix 'no387' regression
+      x86/fpu: Hard-disable lazy FPU mode
+      x86/fpu: Fix FNSAVE usage in eagerfpu mode
+      x86/fpu: Fix math emulation in eager fpu mode
+      x86/crypto, x86/fpu: Remove X86_FEATURE_EAGER_FPU #ifdef from the crc32c code
+
+Borislav Petkov (2):
+      x86/cpufeature: Remove unused and seldomly used cpu_has_xx macros
+      x86/fpu: Fix eager-FPU handling on legacy FPU machines
+
+Eric Dumazet (1):
+      BACKPORT: tcp: do not overshoot window_clamp in tcp_rcv_space_adjust()
+
+Ethan Lee (1):
+      Input: goodix - add new ACPI id for GPD Win 2 touch screen
+
+Gil Kupfer (1):
+      vmw_balloon: fixing double free when batching mode is off
+
+Greg Kroah-Hartman (1):
+      Linux 4.4.138
+
+Johannes Wienke (1):
+      Input: elan_i2c - add ELAN0612 (Lenovo v330 14IKB) ACPI ID
+
+Juergen Gross (1):
+      x86: Remove unused function cpu_has_ht_siblings()
+
+Kevin Easton (1):
+      af_key: Always verify length of provided sadb_key
+
+Linus Torvalds (1):
+      Clarify (and fix) MAX_LFS_FILESIZE macros
+
+Linus Walleij (1):
+      gpio: No NULL owner
+
+Marek Szyprowski (1):
+      serial: samsung: fix maxburst parameter for DMA transactions
+
+Michael Ellerman (1):
+      crypto: vmx - Remove overly verbose printk from AES init routines
+
+Nathan Chancellor (2):
+      Merge 4.4.138 into android-msm-wahoo-4.4
+      Merge remote-tracking branch 'als/android-msm-wahoo-4.4' into oreo-m2
+
+Paolo Bonzini (3):
+      KVM: x86: introduce linear_{read,write}_system
+      KVM: x86: pass kvm_vcpu to kvm_read_guest_virt and kvm_write_guest_virt_system
+      kvm: x86: use correct privilege level for sgdt/sidt/fxsave/fxrstor access
+
+Yu-cheng Yu (1):
+      x86/fpu: Revert ("x86/fpu: Disable AVX when eagerfpu is off")
+
+flar2 (1):
+      initramfs: add skip_override parameter
+
+yu-cheng yu (3):
+      x86/fpu: Fix early FPU command-line parsing
+      x86/fpu: Disable MPX when eagerfpu is off
+      x86/fpu: Disable AVX when eagerfpu is off
+
+ Makefile                                    |   2 +-
+ arch/x86/crypto/chacha20_glue.c             |   2 +-
+ arch/x86/crypto/crc32c-intel_glue.c         |   7 +-
+ arch/x86/include/asm/cmpxchg_32.h           |   2 +-
+ arch/x86/include/asm/cmpxchg_64.h           |   2 +-
+ arch/x86/include/asm/cpufeature.h           |  39 +------
+ arch/x86/include/asm/fpu/internal.h         |   6 +-
+ arch/x86/include/asm/fpu/xstate.h           |   2 +-
+ arch/x86/include/asm/kvm_emulate.h          |   6 +-
+ arch/x86/include/asm/smp.h                  |   9 --
+ arch/x86/include/asm/xor_32.h               |   2 +-
+ arch/x86/kernel/cpu/amd.c                   |   4 +-
+ arch/x86/kernel/cpu/common.c                |   4 +-
+ arch/x86/kernel/cpu/intel.c                 |   3 +-
+ arch/x86/kernel/cpu/intel_cacheinfo.c       |   6 +-
+ arch/x86/kernel/cpu/mtrr/generic.c          |   2 +-
+ arch/x86/kernel/cpu/mtrr/main.c             |   2 +-
+ arch/x86/kernel/cpu/perf_event_amd.c        |   4 +-
+ arch/x86/kernel/cpu/perf_event_amd_uncore.c |  11 +-
+ arch/x86/kernel/fpu/core.c                  |  24 +++-
+ arch/x86/kernel/fpu/init.c                  | 169 +++++++---------------------
+ arch/x86/kernel/fpu/xstate.c                |   3 +-
+ arch/x86/kernel/hw_breakpoint.c             |   6 +-
+ arch/x86/kernel/smpboot.c                   |   2 +-
+ arch/x86/kernel/traps.c                     |   1 -
+ arch/x86/kernel/vm86_32.c                   |   4 +-
+ arch/x86/kvm/emulate.c                      |  72 ++++++------
+ arch/x86/kvm/vmx.c                          |  23 ++--
+ arch/x86/kvm/x86.c                          |  51 ++++++---
+ arch/x86/kvm/x86.h                          |   4 +-
+ arch/x86/mm/setup_nx.c                      |   4 +-
+ drivers/char/hw_random/via-rng.c            |   5 +-
+ drivers/crypto/padlock-aes.c                |   2 +-
+ drivers/crypto/padlock-sha.c                |   2 +-
+ drivers/crypto/vmx/aes.c                    |   2 -
+ drivers/crypto/vmx/aes_cbc.c                |   2 -
+ drivers/crypto/vmx/aes_ctr.c                |   2 -
+ drivers/crypto/vmx/ghash.c                  |   2 -
+ drivers/gpio/gpiolib.c                      |   9 +-
+ drivers/input/mouse/elan_i2c_core.c         |   1 +
+ drivers/input/touchscreen/goodix.c          |   1 +
+ drivers/iommu/intel_irq_remapping.c         |   2 +-
+ drivers/misc/vmw_balloon.c                  |  23 ++--
+ drivers/tty/serial/samsung.c                |   7 +-
+ fs/btrfs/disk-io.c                          |   2 +-
+ include/linux/fs.h                          |   4 +-
+ init/initramfs.c                            |  12 +-
+ net/ipv4/tcp_input.c                        |   2 +-
+ net/key/af_key.c                            |  45 ++++++--
+ 49 files changed, 270 insertions(+), 333 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/wahoo-flash-8.1.0
+
+Nathan Chancellor (3):
+      wahoo: anykernel.sh: Stylistic nits
+      wahoo: anykernel.sh: Detect if user is in recovery or not
+      wahoo: anykernel.sh: Support skip_override cmdline parameter
+
+ anykernel.sh | 101 ++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 62 insertions(+), 39 deletions(-)
