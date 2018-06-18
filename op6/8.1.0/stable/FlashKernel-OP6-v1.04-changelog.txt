@@ -1,0 +1,11 @@
+http://github.com/nathanchance/op6/commits/8.1.0
+
+Liu Qinghua (1):
+      Synchronize codes for OxygenOS 5.1.8
+
+Nathan Chancellor (2):
+      Merge remote-tracking branch 'upstream/oneplus/SDM845_O_8.1' into oneplus/SDM845_O_8.1
+      Merge remote-tracking branch 'als/oneplus/SDM845_O_8.1' into 8.1.0
+
+ drivers/power/reset/msm-poweroff.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
