@@ -1,0 +1,29 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Eric Dumazet (1):
+      BACKPORT: tcp: do not overshoot window_clamp in tcp_rcv_space_adjust()
+
+Lianjun Huang (1):
+      ANDROID: sdcardfs: fix potential crash when reserved_mb is not zero
+
+Nathan Chancellor (1):
+      Makefile: Use O3 for Clang
+
+flar2 (1):
+      initramfs: add skip_override parameter
+
+ Makefile             |  4 ++++
+ fs/sdcardfs/inode.c  |  6 +++++-
+ init/initramfs.c     | 12 +++++++++++-
+ net/ipv4/tcp_input.c |  2 +-
+ 4 files changed, 21 insertions(+), 3 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/marlin-flash-8.1.0
+
+Nathan Chancellor (2):
+      marlin: anykernel.sh: Detect if user is in recovery or not
+      marlin: anykernel.sh: Support skip_override cmdline parameter
+
+ anykernel.sh | 69 ++++++++++++++++++++++++++++++++++++++----------------------
+ 1 file changed, 44 insertions(+), 25 deletions(-)
