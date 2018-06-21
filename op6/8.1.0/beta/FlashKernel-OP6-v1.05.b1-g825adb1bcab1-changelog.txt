@@ -1,0 +1,75 @@
+http://github.com/nathanchance/op6/commits/queue-1.05
+
+Francisco Franco (7):
+      msm: performance: prevent the driver from handling userspace boosts
+      drm: msm: Mark IRQ and important kthreads as performance critical
+      fingerprint: fpc1020: Mark IRQ as performance critical
+      drm: msm: sde: Boost CPU when a new frame is ready to be committed
+      cpu_input_boost: add an option to choose a custom boost finish return freq for the LP cluster
+      flash_defconfig: Enable CPU_INPUT_BOOST
+      msm: kgsl: run kgsl-workqueue as a high prio wq
+
+Joel Fernandes (2):
+      cpufreq: schedutil: Make iowait boost more energy efficient
+      cpufreq: schedutil: Use unsigned int for iowait boost
+
+Lianjun Huang (1):
+      ANDROID: sdcardfs: fix potential crash when reserved_mb is not zero
+
+Nathan Chancellor (2):
+      cpu_input_boost: Add ability to choose minimum frequency for big cluster
+      Revert "initramfs: add skip_override parameter"
+
+Patrick Bellasi (1):
+      cpufreq: schedutil: Fix iowait boost reset
+
+Rafael J. Wysocki (1):
+      cpufreq: schedutil: Avoid using invalid next_freq
+
+Sultan Alsawaf (5):
+      kernel: Add API to mark IRQs and kthreads as performance critical
+      kernel: Force trivial, unbound kthreads onto low-power CPUs
+      msm: kgsl: Mark IRQ and worker thread as performance critical
+      cpu_input_boost: Introduce driver for event-based CPU boosting
+      cpufreq: Kill userspace CPU boosting entirely
+
+Viresh Kumar (2):
+      cpufreq: Return 0 from ->fast_switch() on errors
+      cpufreq: schedutil: Reset cached_raw_freq when not in sync with next_freq
+
+ arch/arm64/configs/flash_defconfig          |   6 +-
+ drivers/cpufreq/Kconfig                     |  58 +++++
+ drivers/cpufreq/Makefile                    |   3 +
+ drivers/cpufreq/cpu_input_boost.c           | 376 ++++++++++++++++++++++++++++
+ drivers/cpufreq/cpufreq.c                   |  10 +-
+ drivers/gpu/drm/msm/msm_drv.c               |   4 +-
+ drivers/gpu/drm/msm/sde/sde_crtc.c          |   3 +
+ drivers/gpu/msm/kgsl.c                      |   7 +-
+ drivers/input/fingerprint/fpc/fpc1020_tee.c |   2 +-
+ drivers/soc/qcom/msm_performance.c          |   4 +
+ fs/sdcardfs/inode.c                         |   6 +-
+ include/linux/cpu_input_boost.h             |  24 ++
+ include/linux/cpumask.h                     |   4 +
+ include/linux/interrupt.h                   |   5 +
+ include/linux/kthread.h                     |  17 ++
+ include/linux/sched.h                       |   1 +
+ init/initramfs.c                            |  12 +-
+ kernel/cpu.c                                |  26 ++
+ kernel/irq/manage.c                         |  87 ++++++-
+ kernel/sched/core.c                         |  19 ++
+ kernel/sched/cpufreq_schedutil.c            |  59 ++++-
+ 21 files changed, 697 insertions(+), 36 deletions(-)
+ create mode 100644 drivers/cpufreq/cpu_input_boost.c
+ create mode 100644 include/linux/cpu_input_boost.h
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op6-flash-8.1.0
+
+Nathan Chancellor (1):
+      op6: anykernel.sh: Hexpatch the kernel instead of using skip_override
+
+ .gitignore       |   2 ++
+ anykernel.sh     |  62 ++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ tools/magiskboot | Bin 0 -> 172536 bytes
+ 3 files changed, 59 insertions(+), 5 deletions(-)
+ create mode 100755 tools/magiskboot
