@@ -1,0 +1,4 @@
+1.09 - June 19th, 2018
+* Automatically detect if Magisk is installed so reflashing after the kernel is not necessary
+* Small bug fixes from kernel/common and mainline Linux
+* Some optimization for Clang
