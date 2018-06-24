@@ -1,0 +1,22 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Lianjun Huang (1):
+      ANDROID: sdcardfs: fix potential crash when reserved_mb is not zero
+
+Nathan Chancellor (1):
+      Revert "qcacld-3.0: Don't fill any WMA request if target is  not ready"
+
+ drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_driver_ops.c |  1 -
+ drivers/staging/qcacld-3.0/core/wma/src/wma_data.c            |  1 -
+ drivers/staging/qcacld-3.0/core/wma/src/wma_dev_if.c          | 10 ----------
+ fs/sdcardfs/inode.c                                           |  6 +++++-
+ 4 files changed, 5 insertions(+), 13 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op5-flash-8.x
+
+Nathan Chancellor (1):
+      op5: anykernel.sh: Only modify sepolicy on OxygenOS
+
+ anykernel.sh | 29 +++++++++++++++--------------
+ 1 file changed, 15 insertions(+), 14 deletions(-)

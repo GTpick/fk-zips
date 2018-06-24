@@ -1,3 +1,6 @@
-4.23 - June 16th, 2018
-* Linux 4.4.138
-* Merge Qualcomm updates (LA.UM.6.2.r1-08900-sdm660.0)
+4.24 - June 24th, 2018
+
+* Hopefully fix all Wi-Fi issues on OxygenOS
+* WireGuard snapshot 0.0.20180620
+* Small sdcardfs from kernel/common
+* Optimize installer for custom ROMs
