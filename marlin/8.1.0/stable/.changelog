@@ -1,4 +1,4 @@
-1.09 - June 19th, 2018
-* Automatically detect if Magisk is installed so reflashing after the kernel is not necessary
-* Small bug fixes from kernel/common and mainline Linux
-* Some optimization for Clang
+1.10 - June 24th, 2018
+
+* WireGuard snapshot 0.0.20180620
+* Optimize how the installer handles Magisk

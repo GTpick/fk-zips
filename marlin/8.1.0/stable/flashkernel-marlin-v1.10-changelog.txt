@@ -1,0 +1,20 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Nathan Chancellor (1):
+      Revert "initramfs: add skip_override parameter"
+
+ init/initramfs.c | 12 +-----------
+ 1 file changed, 1 insertion(+), 11 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/marlin-flash-8.1.0
+
+Nathan Chancellor (3):
+      marlin: anykernel.sh: Hexpatch kernel instead of skip_override
+      marlin: anykernel.sh: Spacing OCD
+      tools: Update magiskboot to 1656
+
+ .gitignore       |   2 ++
+ anykernel.sh     |  58 +++++++++++++++++++++++++++++++++----------------------
+ tools/magiskboot | Bin 168440 -> 172536 bytes
+ 3 files changed, 37 insertions(+), 23 deletions(-)
