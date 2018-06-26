@@ -1,5 +1,2 @@
-2.46 - June 24th, 2018
-* Switch to Sultan's boost driver (should be as smooth as stock with some power savings)
-* Patches from Qualcomm
-* WireGuard snapshot 0.0.20180620
-* Optimize how the installer handles Magisk
+2.47 - June 25th, 2018
+* WireGuard snapshot 0.0.20180625
