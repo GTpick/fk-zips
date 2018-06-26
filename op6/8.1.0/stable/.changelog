@@ -1,5 +1,4 @@
 1.05 -  June 25th, 2018
-
 * Linux 4.9.110
 * KCAL color control
 * Move most kthreads onto the little cluster to save a bit of battery
