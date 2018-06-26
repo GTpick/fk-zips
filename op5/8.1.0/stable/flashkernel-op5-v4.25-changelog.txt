@@ -1,0 +1,8 @@
+http://github.com/nathanchance/op5/commits/8.1.0-unified
+
+Jason A. Donenfeld (2):
+      scripts/wireguard: Only allow one execution at a time, with others failing open
+      scripts/wireguard: More reliable version selection
+
+ scripts/fetch-latest-wireguard.sh | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
