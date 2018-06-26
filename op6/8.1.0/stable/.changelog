@@ -1,2 +1,9 @@
-1.04 - June 17th, 2018
-* Merge OxygenOS 5.1.8 changes
+1.05 -  June 25th, 2018
+
+* Linux 4.9.110
+* KCAL color control
+* Move most kthreads onto the little cluster to save a bit of battery
+* Remove userspace boosting in favor of Sultan's boost driver, thanks to Franco for optimizing the frequencies
+* Small schedutil improvements from mainline
+* WireGuard snapshot 0.0.20180625
+* Optimize how the installer handles Magisk
