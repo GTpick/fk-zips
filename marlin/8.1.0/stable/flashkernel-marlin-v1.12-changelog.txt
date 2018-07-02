@@ -1,0 +1,103 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Badhri Jagan Sridharan (2):
+      msm: adsprpc: Use unsigned integer for length values
+      tcpm: Ignore CC and vbus changes in PORT_RESET change
+
+Daniel Mentz (2):
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+      Merge branch 'android-msm-marlin-3.18-security-next' into android-msm-marlin-3.18
+
+Erik Staats (1):
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+
+Guisen Yang (1):
+      qcacld-2.0: Fix integer underflow and buffer over-read in fwlog
+
+Jaegeuk Kim (1):
+      scsi: ufs: fix LINERESET on hibern8 without power hole
+
+Johannes Thumshirn (1):
+      UPSTREAM: scsi: sg: don't return bogus Sg_requests
+
+Karthikeyan Mani (1):
+      ASoC: msm: qdsp6v2: check for buffer size before read
+
+Krzysztof Opasiak (1):
+      usb: gadget: f_hid: fix: Prevent accessing released memory
+
+Li Jinyue (1):
+      futex: Prevent overflow by strengthen input validation
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+
+Nathan Chancellor (2):
+      Merge tag 'android-p-preview-4_r0.1' into oreo-m4
+      flash_defconfig: Apply android-p-preview-4_r0.1 changes
+
+Patrick Tjin (3):
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+
+Paul Lawrence (1):
+      iovec: make sure the caller actually wants anything in memcpy_fromiovecend
+
+Siyuan Zhou (2):
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+      Merge branch 'android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+
+Srinivas Girigowda (2):
+      qcacld-2.0: Remove redundant API sme_staInMiddleOfRoaming
+      qcacld-2.0: wlan host driver upgrade to 4.4.25.049
+
+Tanvi Aggarwal (1):
+      msm: sensor: ois: add conditional check for ioctl
+
+TeYuan Wang (1):
+      arm64/configs: Remove LIMITS_LITE_HW config
+
+Todd Kjos (1):
+      binder: Dump out refs_by_desc rbtree on failure
+
+Wei Wang (1):
+      Merge remote-tracking branch 'partner/android-msm-marlin-3.18' into android-msm-marlin-3.18-security-next
+
+Yu Wang (1):
+      qcacld-2.0: add validation check for APFIND event
+
+Zhang Qian (1):
+      qcacld-2.0: Add sanity check for wmi TLV length
+
+ arch/arm64/configs/flash_defconfig                 |   1 -
+ arch/arm64/configs/marlin_defconfig                |   1 -
+ drivers/char/adsprpc.c                             | 171 +++++++++++----------
+ drivers/char/adsprpc_compat.c                      |  14 +-
+ drivers/char/adsprpc_shared.h                      |  22 +--
+ drivers/cpuidle/lpm-levels-of.c                    |  10 +-
+ .../platform/msm/camera_v2/sensor/ois/msm_ois.c    |   4 +
+ drivers/scsi/ufs/ufshcd.c                          |  22 ++-
+ drivers/scsi/ufs/ufshcd.h                          |   1 +
+ drivers/staging/android/binder.c                   |  40 ++++-
+ .../qcacld-2.0/CORE/HDD/src/wlan_hdd_cfg80211.c    |   4 +-
+ .../qcacld-2.0/CORE/MAC/inc/qwlan_version.h        |   4 +-
+ drivers/staging/qcacld-2.0/CORE/SERVICES/WMA/wma.c |  41 ++++-
+ .../qcacld-2.0/CORE/SERVICES/WMI/wmi_tlv_helper.c  |  65 +++++---
+ drivers/staging/qcacld-2.0/CORE/SME/inc/sme_Api.h  |   9 --
+ .../qcacld-2.0/CORE/SME/src/sme_common/sme_Api.c   |  20 ---
+ .../qcacld-2.0/CORE/UTILS/FWLOG/dbglog_host.c      |  14 +-
+ drivers/usb/typec/tcpm.c                           |  26 ++++
+ sound/soc/msm/qdsp6v2/q6asm.c                      |  10 ++
+ 19 files changed, 304 insertions(+), 175 deletions(-)
+
+
+http://github.com/nathanchance/AnyKernel2/commits/marlin-flash-8.1.0
+
+Nathan Chancellor (3):
+      marlin: anykernel.sh: Make sure we clean up if we ever decide to bail out
+      marlin: anykernel.sh: Remove unused props and ramdisk commands
+      marlin: anykernel.sh: Update supported configuration for July security update
+
+ anykernel.sh | 41 +++++++++++++++++++++++------------------
+ 1 file changed, 23 insertions(+), 18 deletions(-)
