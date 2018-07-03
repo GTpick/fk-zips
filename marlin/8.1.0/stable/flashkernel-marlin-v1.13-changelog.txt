@@ -1,0 +1,345 @@
+http://github.com/nathanchance/marlin/commits/oreo-m4
+
+Alexander Sverdlin (2):
+      ASoC: cirrus: i2s: Fix LRCLK configuration
+      ASoC: cirrus: i2s: Fix {TX|RX}LinCtrlData setup
+
+Amir Goldstein (1):
+      fsnotify: fix ignore mask logic in send_to_group()
+
+Aneesh Kumar K.V (1):
+      powerpc/mm/hash: Add missing isync prior to kernel stack SLB switch
+
+Arnd Bergmann (2):
+      hexagon: add memset_io() helper
+      hexagon: export csum_partial_copy_nocheck
+
+Badhri Jagan Sridharan (1):
+      msm: adsprpc: Use unsigned integer for length values
+
+Baolin Wang (1):
+      parisc: time: Convert read_persistent_clock() to read_persistent_clock64()
+
+Ben Hutchings (1):
+      drm/msm: Fix possible null dereference on failure of get_pages()
+
+Bo Chen (1):
+      ALSA: hda - Handle kzalloc() failure in snd_hda_attach_pcm_stream()
+
+Boris Ostrovsky (1):
+      xen: Remove unnecessary BUG_ON from __unbind_from_irq()
+
+Chengguang Xu (1):
+      isofs: fix potential memory leak in mount option parsing
+
+Chris Leech (1):
+      scsi: iscsi: respond to netlink with unicast when appropriate
+
+Colin Ian King (2):
+      scsi: isci: Fix infinite loop in while loop
+      libata: zpodd: make arrays cdb static, reduces object code size
+
+Corey Minyard (1):
+      ipmi:bt: Set the timeout before doing a capabilities check
+
+Dag Moxnes (1):
+      rds: ib: Fix missing call to rds_ib_dev_put in rds_ib_setup_qp
+
+Dan Carpenter (1):
+      libata: zpodd: small read overflow in eject_tray()
+
+Daniel Glöckner (1):
+      usb: musb: fix remote wakeup racing with suspend
+
+Daniel Mentz (2):
+      Merge branch 'android-msm-marlin-3.18-oc-mr1' into android-msm-marlin-3.18-oc-mr1-security-next
+      Merge branch 'android-msm-marlin-3.18-oc-mr1-security-next' into android-msm-marlin-3.18-oc-mr1
+
+David Rivshin (1):
+      ARM: 8764/1: kgdb: fix NUMREGBYTES so that gdb_regs[] is the correct size
+
+Eric Dumazet (1):
+      tcp: do not overshoot window_clamp in tcp_rcv_space_adjust()
+
+Eric W. Biederman (1):
+      signal/xtensa: Consistenly use SIGBUS in do_unaligned_user
+
+Geert Uytterhoeven (1):
+      time: Make sure jiffies_to_msecs() preserves non-zero time periods
+
+Greg Kroah-Hartman (1):
+      Linux 3.18.114
+
+Guisen Yang (1):
+      qcacld-2.0: Fix integer underflow and buffer over-read in fwlog
+
+Hans de Goede (1):
+      libata: Drop SanDisk SD7UB3Q*G1001 NOLPM quirk
+
+Himanshu Madhani (1):
+      scsi: qla2xxx: Fix setting lower transfer speed if GPSC fails
+
+Huacai Chen (1):
+      MIPS: io: Add barrier after register read in inX()
+
+Ilan Peer (1):
+      mac80211: Adjust SAE authentication timeout
+
+Jakob Unterwurzacher (1):
+      can: dev: increase bus-off message severity
+
+Jan Kara (2):
+      ext4: fix fencepost error in check for inode count overflow during resize
+      udf: Detect incorrect directory size
+
+Jim Gill (1):
+      scsi: vmw-pvscsi: return DID_BUS_BUSY for adapter-initated aborts
+
+Jingju Hou (1):
+      net: phy: marvell: clear wol event before setting it
+
+Jiri Olsa (2):
+      tools build: No need to make libapi for perf explicitly
+      tools build: Fix Makefile(s) to properly invoke tools build
+
+Joakim Tjernlund (4):
+      mtd: cfi_cmdset_0002: Use right chip in do_ppb_xxlock()
+      mtd: cfi_cmdset_0002: fix SEGV unlocking multiple chips
+      mtd: cfi_cmdset_0002: Fix unlocking requests crossing a chip boudary
+      mtd: cfi_cmdset_0002: Avoid walking all chips when unlocking.
+
+Johan Hovold (3):
+      backlight: as3711_bl: Fix Device Tree node lookup
+      backlight: max8925_bl: Fix Device Tree node lookup
+      backlight: tps65217_bl: Fix Device Tree node lookup
+
+Johannes Thumshirn (1):
+      UPSTREAM: scsi: sg: don't return bogus Sg_requests
+
+John Fastabend (1):
+      bpf: fix uninitialized variable in bpf tools
+
+Kai-Heng Feng (1):
+      media: cx231xx: Add support for AverMedia DVD EZMaker 7
+
+Karthikeyan Mani (1):
+      ASoC: msm: qdsp6v2: check for buffer size before read
+
+Kees Cook (1):
+      video: uvesafb: Fix integer overflow in allocation
+
+Keith Busch (1):
+      block: Fix transfer when chunk sectors exceeds max
+
+Kevin Easton (1):
+      af_key: Always verify length of provided sadb_key
+
+Krzysztof Opasiak (1):
+      usb: gadget: f_hid: fix: Prevent accessing released memory
+
+Li Jinyue (1):
+      futex: Prevent overflow by strengthen input validation
+
+Lukas Czerner (1):
+      ext4: update mtime in ext4_punch_hole even if no blocks are released
+
+Mahesh Salgaonkar (1):
+      powerpc/fadump: Unregister fadump on kexec down path.
+
+Mahesh Sivasubramanian (1):
+      drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+
+Mark Rutland (1):
+      arm64: ptrace: remove addr_limit manipulation
+
+Martin Schwidefsky (1):
+      s390/smsgiucv: disable SMSG on module unload
+
+Masami Hiramatsu (1):
+      selftests: ftrace: Add a testcase for multiple actions on trigger
+
+Mathieu Malaterre (2):
+      driver core: add __printf verification to __ata_ehi_pushv_desc
+      agp: uninorth: make two functions static
+
+Matthias Schiffer (1):
+      mips: ftrace: fix static function graph tracing
+
+Mauro Carvalho Chehab (2):
+      media: v4l2-compat-ioctl32: prevent go past max size
+      media: dvb_frontend: fix locking issues at dvb_frontend_get_event()
+
+Maxim Moseychuk (1):
+      usb: do not reset if a low-speed or full-speed device timed out
+
+Mel Gorman (1):
+      futex: Remove requirement for lock_page() in get_futex_key()
+
+Michael Neuling (2):
+      powerpc/ptrace: Fix setting 512B aligned breakpoints with PTRACE_SET_DEBUGREG
+      powerpc/ptrace: Fix enforcement of DAWR constraints
+
+Michael Schmitz (1):
+      m68k/mm: Adjust VM area to be unmapped by gap size for __iounmap()
+
+Mika Westerberg (1):
+      PCI: pciehp: Clear Presence Detect and Data Link Layer Status Changed on resume
+
+Mike Snitzer (1):
+      dm thin: handle running out of data space vs concurrent discard
+
+Miklos Szeredi (1):
+      fuse: atomic_o_trunc should truncate pagecache
+
+Mikulas Patocka (1):
+      branch-check: fix long->int truncation when profiling branches
+
+Nathan Chancellor (4):
+      Merge tag 'android-8.1.0_r0.75' into android-msm-marlin-3.18
+      Merge remote-tracking branch 'als/android-msm-marlin-3.18' into oreo-m4
+      Merge 3.18.114 into android-msm-marlin-3.18
+      Merge remote-tracking branch 'als/android-msm-marlin-3.18' into oreo-m4
+
+Peter Rosin (3):
+      i2c: pmcmsp: return message count on master_xfer success
+      i2c: pmcmsp: fix error return from master_xfer
+      i2c: viperboard: return message count on master_xfer success
+
+Peter Zijlstra (1):
+      kthread, sched/wait: Fix kthread_parkme() wait-loop
+
+Qu Wenruo (1):
+      btrfs: scrub: Don't use inode pages for device replace
+
+Russell King (1):
+      ARM: keystone: fix platform_domain_notifier array overrun
+
+Scott Mayhew (1):
+      nfsd: restrict rd_maxcount to svc_max_payload in nfsd_encode_readdir
+
+Sekhar Nori (2):
+      ARM: davinci: board-dm355-evm: fix broken networking
+      ARM: davinci: board-dm646x-evm: set VPIF capture card name
+
+Silvio Cesare (1):
+      UBIFS: Fix potential integer overflow in allocation
+
+Sinan Kaya (1):
+      MIPS: io: Add barrier after register read in readX()
+
+Srinivas Kandagatla (1):
+      ASoC: dapm: delete dapm_kcontrol_data paths list before freeing it
+
+Stefan Potyra (1):
+      w1: mxc_w1: Enable clock before calling clk_get_rate() on it
+
+Tanvi Aggarwal (1):
+      msm: sensor: ois: add conditional check for ioctl
+
+Tetsuo Handa (1):
+      fuse: don't keep dead fuse_conn at fuse_fill_super().
+
+Thadeu Lima de Souza Cascardo (1):
+      fs/binfmt_misc.c: do not allow offset overflow
+
+Tokunori Ikegami (2):
+      mtd: cfi_cmdset_0002: Change write buffer to check correct value
+      MIPS: BCM47XX: Enable 74K Core ExternalSync for PCIe erratum
+
+Tomi Valkeinen (1):
+      drm/omap: fix possible NULL ref issue in tiler_reserve_2d
+
+Yu Wang (1):
+      qcacld-2.0: add validation check for APFIND event
+
+Zhang Qian (1):
+      qcacld-2.0: Add sanity check for wmi TLV length
+
+jacek.tomaka@poczta.fm (1):
+      x86/cpu/intel: Add missing TLB cpuid values
+
+Łukasz Stelmach (1):
+      ARM: 8753/1: decompressor: add a missing parameter to the addruart macro
+
+ Makefile                                           |  7 ++--
+ arch/arm/boot/compressed/head.S                    | 16 ++++----
+ arch/arm/include/asm/kgdb.h                        |  2 +-
+ arch/arm/mach-davinci/board-dm355-evm.c            |  6 +++
+ arch/arm/mach-davinci/board-dm646x-evm.c           |  3 +-
+ arch/arm/mach-keystone/pm_domain.c                 |  1 +
+ arch/arm64/kernel/ptrace.c                         |  6 ---
+ arch/hexagon/include/asm/io.h                      |  6 +++
+ arch/hexagon/lib/checksum.c                        |  1 +
+ arch/m68k/mm/kmap.c                                |  3 +-
+ arch/mips/bcm47xx/setup.c                          |  6 +++
+ arch/mips/include/asm/io.h                         |  4 ++
+ arch/mips/include/asm/mipsregs.h                   |  3 ++
+ arch/mips/kernel/mcount.S                          | 27 ++++++-------
+ arch/parisc/kernel/time.c                          |  2 +-
+ arch/powerpc/kernel/entry_64.S                     |  1 +
+ arch/powerpc/kernel/fadump.c                       |  3 ++
+ arch/powerpc/kernel/hw_breakpoint.c                |  4 +-
+ arch/powerpc/kernel/ptrace.c                       |  1 +
+ arch/x86/kernel/cpu/intel.c                        |  3 ++
+ arch/xtensa/kernel/traps.c                         |  2 +-
+ drivers/ata/libata-core.c                          |  3 --
+ drivers/ata/libata-eh.c                            |  4 +-
+ drivers/ata/libata-zpodd.c                         |  4 +-
+ drivers/char/agp/uninorth-agp.c                    |  4 +-
+ drivers/char/ipmi/ipmi_bt_sm.c                     |  3 +-
+ drivers/gpu/drm/msm/msm_gem.c                      | 20 +++++-----
+ drivers/gpu/drm/omapdrm/omap_dmm_tiler.c           |  6 ++-
+ drivers/i2c/busses/i2c-pmcmsp.c                    |  4 +-
+ drivers/i2c/busses/i2c-viperboard.c                |  2 +-
+ drivers/md/dm-thin.c                               | 11 +++++-
+ drivers/media/dvb-core/dvb_frontend.c              | 23 +++++++----
+ drivers/media/usb/cx231xx/cx231xx-cards.c          |  3 ++
+ drivers/media/v4l2-core/v4l2-compat-ioctl32.c      |  2 +-
+ drivers/mtd/chips/cfi_cmdset_0002.c                | 21 +++++-----
+ drivers/net/can/dev.c                              |  2 +-
+ drivers/net/phy/marvell.c                          |  9 +++++
+ drivers/pci/hotplug/pciehp.h                       |  2 +-
+ drivers/pci/hotplug/pciehp_core.c                  |  2 +-
+ drivers/pci/hotplug/pciehp_hpc.c                   | 13 ++++++-
+ drivers/s390/net/smsgiucv.c                        |  2 +-
+ drivers/scsi/isci/port_config.c                    |  3 +-
+ drivers/scsi/qla2xxx/qla_init.c                    |  3 +-
+ drivers/scsi/scsi_transport_iscsi.c                | 29 ++++++++------
+ drivers/scsi/vmw_pvscsi.c                          |  2 +-
+ drivers/usb/musb/musb_host.c                       |  5 ++-
+ drivers/usb/musb/musb_host.h                       |  7 +++-
+ drivers/usb/musb/musb_virthub.c                    | 25 +++++++-----
+ drivers/video/backlight/as3711_bl.c                | 33 +++++++++++-----
+ drivers/video/backlight/max8925_bl.c               |  4 +-
+ drivers/video/backlight/tps65217_bl.c              |  4 +-
+ drivers/video/fbdev/uvesafb.c                      |  3 +-
+ drivers/w1/masters/mxc_w1.c                        | 20 ++++++----
+ drivers/xen/events/events_base.c                   |  2 -
+ fs/binfmt_misc.c                                   | 12 ++++--
+ fs/btrfs/scrub.c                                   |  2 +-
+ fs/ext4/inode.c                                    | 36 ++++++++---------
+ fs/ext4/resize.c                                   |  2 +-
+ fs/fuse/dir.c                                      | 13 ++++++-
+ fs/fuse/inode.c                                    |  1 +
+ fs/isofs/inode.c                                   |  3 ++
+ fs/nfsd/nfs4xdr.c                                  |  5 ++-
+ fs/notify/fsnotify.c                               | 25 ++++++------
+ fs/ubifs/journal.c                                 |  2 +-
+ fs/udf/directory.c                                 |  3 ++
+ include/linux/blkdev.h                             |  4 +-
+ include/linux/compiler.h                           |  2 +-
+ kernel/kthread.c                                   |  7 ++--
+ kernel/time/time.c                                 |  6 ++-
+ net/key/af_key.c                                   | 45 +++++++++++++++++-----
+ net/mac80211/mlme.c                                | 25 ++++++++----
+ net/rds/ib_cm.c                                    |  3 +-
+ sound/pci/hda/hda_controller.c                     |  4 +-
+ sound/soc/cirrus/edb93xx.c                         |  2 +-
+ sound/soc/cirrus/ep93xx-i2s.c                      | 26 +++++++------
+ sound/soc/cirrus/snappercl15.c                     |  2 +-
+ sound/soc/soc-dapm.c                               |  2 +
+ tools/Makefile                                     | 20 +++++++---
+ tools/net/bpf_dbg.c                                |  7 +++-
+ .../inter-event/trigger-multi-actions-accept.tc    | 44 +++++++++++++++++++++
+ 80 files changed, 462 insertions(+), 228 deletions(-)
+ create mode 100644 tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-multi-actions-accept.tc
