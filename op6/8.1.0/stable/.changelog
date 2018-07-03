@@ -1,8 +1,6 @@
-1.05 -  June 25th, 2018
-* Linux 4.9.110
-* KCAL color control
-* Move most kthreads onto the little cluster to save a bit of battery
-* Remove userspace boosting in favor of Sultan's boost driver, thanks to Franco for optimizing the frequencies
-* Small schedutil improvements from mainline
-* WireGuard snapshot 0.0.20180625
-* Optimize how the installer handles Magisk
+1.06 - July 3rd, 2018
+* Linux 4.9.111
+* Expose Sultan's CPU boost values for kernel apps
+* Add Sultan's app boost
+* Enable ZRAM to help with some memory issues
+* Add back dynamic schedtune boosting

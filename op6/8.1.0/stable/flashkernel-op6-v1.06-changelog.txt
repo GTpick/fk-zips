@@ -1,0 +1,462 @@
+http://github.com/nathanchance/op6/commits/8.1.0
+
+??? (1):
+      Input: elantech - fix V4 report decoding for module with middle key
+
+Aaron Ma (1):
+      Input: elantech - enable middle button of touchpads on ThinkPad P52
+
+Adrian Hunter (6):
+      perf tools: Fix symbol and object code resolution for vdso32 and vdsox32
+      perf intel-pt: Fix sync_switch INTEL_PT_SS_NOT_TRACING
+      perf intel-pt: Fix decoding to accept CBR between FUP and corresponding TIP
+      perf intel-pt: Fix MTC timing after overflow
+      perf intel-pt: Fix "Unexpected indirect branch" error
+      perf intel-pt: Fix packet decoding of CYC packets
+
+Alex Estrin (2):
+      IB/{hfi1, qib}: Add handling of kernel restart
+      IB/isert: Fix for lib/dma_debug check_sync warning
+
+Alex Williamson (1):
+      PCI: Add ACS quirk for Intel 7th & 8th Gen mobile
+
+Alexander Sverdlin (2):
+      ASoC: cirrus: i2s: Fix LRCLK configuration
+      ASoC: cirrus: i2s: Fix {TX|RX}LinCtrlData setup
+
+Alexandr Savca (1):
+      Input: elan_i2c - add ELAN0618 (Lenovo v330 15IKB) ACPI ID
+
+Alexey Kardashevskiy (1):
+      powerpc/powernv/ioda2: Remove redundant free of TCE pages
+
+Amit Pundir (1):
+      Bluetooth: hci_qca: Avoid missing rampatch failure with userspace fw loader
+
+Andy Shevchenko (1):
+      mfd: intel-lpss: Program REMAP register in PIO mode
+
+Aneesh Kumar K.V (1):
+      powerpc/mm/hash: Add missing isync prior to kernel stack SLB switch
+
+Ben Hutchings (1):
+      Input: elan_i2c_smbus - fix more potential stack buffer overflows
+
+Bjørn Mork (1):
+      cdc_ncm: avoid padding beyond end of skb
+
+Boris Ostrovsky (1):
+      xen: Remove unnecessary BUG_ON from __unbind_from_irq()
+
+Borislav Petkov (1):
+      x86/mce: Do not overwrite MCi_STATUS in mce_no_way_out()
+
+Corey Minyard (1):
+      ipmi:bt: Set the timeout before doing a capabilities check
+
+Dan Williams (2):
+      x86/spectre_v1: Disable compiler optimizations over array_index_mask_nospec()
+      mm: fix devmem_is_allowed() for sub-page System RAM intersections
+
+Daniel Wagner (1):
+      serial: sh-sci: Use spin_{try}lock_irqsave instead of open coding version
+
+Dave Wysochanski (1):
+      NFSv4: Fix possible 1-byte stack overflow in nfs_idmap_read_and_verify_message
+
+David Rivshin (1):
+      ARM: 8764/1: kgdb: fix NUMREGBYTES so that gdb_regs[] is the correct size
+
+Dongsheng Yang (1):
+      rbd: flush rbd_dev->watch_dwork after watch is unregistered
+
+Erez Shitrit (1):
+      IB/mlx5: Fetch soft WQE's on fatal error state
+
+Eric W. Biederman (1):
+      signal/xtensa: Consistenly use SIGBUS in do_unaligned_user
+
+Filipe Manana (1):
+      Btrfs: fix return value on rename exchange failure
+
+Francisco Franco (5):
+      cpu_input_boost: expose input freqs and duration to userspace
+      flash_defconfig: Enable ZRAM
+      drm: msm: dsi-display: remove OP's QoS shit
+      cpu_input_boost: make the userspace module param vars static
+      drm: msm: kcal: make the userspace module param vars static and use short instead of integers
+
+Gautham R. Shenoy (1):
+      cpuidle: powernv: Fix promotion from snooze if next state disabled
+
+Geert Uytterhoeven (3):
+      clk: renesas: cpg-mssr: Stop using printk format %pCr
+      lib/vsprintf: Remove atomic-unsafe support for %pCr
+      time: Make sure jiffies_to_msecs() preserves non-zero time periods
+
+Greg Kroah-Hartman (1):
+      Linux 4.9.111
+
+Hans de Goede (1):
+      pwm: lpss: platform: Save/restore the ctrl register over a suspend/resume
+
+Himanshu Madhani (1):
+      scsi: qla2xxx: Fix setting lower transfer speed if GPSC fails
+
+Huacai Chen (1):
+      MIPS: io: Add barrier after register read in inX()
+
+Ingo Flaschberger (1):
+      1wire: family module autoload fails because of upper/lower case mismatch.
+
+Jan Kara (1):
+      udf: Detect incorrect directory size
+
+Jason A. Donenfeld (2):
+      scripts/wireguard: Only allow one execution at a time, with others failing open
+      scripts/wireguard: More reliable version selection
+
+Joakim Tjernlund (4):
+      mtd: cfi_cmdset_0002: Use right chip in do_ppb_xxlock()
+      mtd: cfi_cmdset_0002: fix SEGV unlocking multiple chips
+      mtd: cfi_cmdset_0002: Fix unlocking requests crossing a chip boudary
+      mtd: cfi_cmdset_0002: Avoid walking all chips when unlocking.
+
+Joel Fernandes (2):
+      sched/fair: Skip frequency updates if CPU about to idle
+      sched/fair: Fix issue where frequency update not skipped
+
+Johan Hovold (3):
+      backlight: as3711_bl: Fix Device Tree node lookup
+      backlight: max8925_bl: Fix Device Tree node lookup
+      backlight: tps65217_bl: Fix Device Tree node lookup
+
+Juri Lelli (1):
+      UPSTREAM: cpufreq: schedutil: use now as reference when aggregating shared policy requests
+
+Kai-Heng Feng (1):
+      media: cx231xx: Add support for AverMedia DVD EZMaker 7
+
+Kees Cook (1):
+      video: uvesafb: Fix integer overflow in allocation
+
+Keith Busch (1):
+      block: Fix transfer when chunk sectors exceeds max
+
+Leon Romanovsky (1):
+      RDMA/mlx4: Discard unknown SQP work requests
+
+Liu Bo (1):
+      Btrfs: fix unexpected cow in run_delalloc_nocow
+
+Lucille Sylvester (1):
+      PM / devfreq: Allow the governors to set the target flag
+
+Maciej S. Szmigiero (1):
+      X.509: unpack RSA signatureValue field from BIT STRING
+
+Mahesh Salgaonkar (1):
+      powerpc/fadump: Unregister fadump on kexec down path.
+
+Marcin Ziemianowicz (1):
+      clk: at91: PLL recalc_rate() now using cached MUL and DIV values
+
+Martin Kelly (1):
+      iio:buffer: make length types match kfifo types
+
+Matthias Kaehlcke (1):
+      zram: rework copy of compressor name in comp_algorithm_store()
+
+Matthias Schiffer (1):
+      mips: ftrace: fix static function graph tracing
+
+Mauro Carvalho Chehab (2):
+      media: v4l2-compat-ioctl32: prevent go past max size
+      media: dvb_frontend: fix locking issues at dvb_frontend_get_event()
+
+Max Gurtovoy (1):
+      IB/isert: fix T10-pi check mask setting
+
+Maxim Moseychuk (1):
+      usb: do not reset if a low-speed or full-speed device timed out
+
+Michael Neuling (2):
+      powerpc/ptrace: Fix setting 512B aligned breakpoints with PTRACE_SET_DEBUGREG
+      powerpc/ptrace: Fix enforcement of DAWR constraints
+
+Michael Schmitz (1):
+      m68k/mm: Adjust VM area to be unmapped by gap size for __iounmap()
+
+Mika Westerberg (2):
+      PCI: Add ACS quirk for Intel 300 series
+      PCI: pciehp: Clear Presence Detect and Data Link Layer Status Changed on resume
+
+Mike Marciniszyn (1):
+      IB/qib: Fix DMA api warning with debug kernel
+
+Mike Snitzer (1):
+      dm thin: handle running out of data space vs concurrent discard
+
+Miklos Szeredi (2):
+      fuse: atomic_o_trunc should truncate pagecache
+      fuse: fix control dir setup and teardown
+
+Mikulas Patocka (1):
+      branch-check: fix long->int truncation when profiling branches
+
+Minchan Kim (8):
+      zram: remove waitqueue for IO done
+      zram: fix operator precedence to get offset
+      zram: handle multiple pages attached bio's bvec
+      zram: partial IO refactoring
+      zram: use zram_slot_lock instead of raw bit_spin_lock op
+      zram: remove zram_meta structure
+      zram: introduce zram data accessor
+      zram: use zram_free_page instead of open-coded
+
+Nathan Chancellor (5):
+      flash_defconfig: Enable CC_WERROR
+      PM / sleep: Kill off OnePlus's QoS framework
+      zram: Use lz4 compression by default if present
+      Merge 4.9.111 into oneplus/SDM845_O_8.1
+      Merge remote-tracking branch 'als/oneplus/SDM845_O_8.1' into 8.1.0
+
+NeilBrown (1):
+      md: fix two problems with setting the "re-add" device state.
+
+Richard Weinberger (2):
+      ubi: fastmap: Cancel work upon detach
+      ubi: fastmap: Correctly handle interrupted erasures in EBA
+
+Robert Elliott (1):
+      linvdimm, pmem: Preserve read-only setting for pmem devices
+
+Sangwoo Park (1):
+      zram: reduce load operation in page_same_filled
+
+Scott Mayhew (1):
+      nfsd: restrict rd_maxcount to svc_max_payload in nfsd_encode_readdir
+
+Sergey Senozhatsky (1):
+      zram: remove obsolete sysfs attrs
+
+Siarhei Liakh (1):
+      x86: Call fixup_exception() before notify_die() in math_error()
+
+Silvio Cesare (1):
+      UBIFS: Fix potential integer overflow in allocation
+
+Srinivas Kandagatla (2):
+      ASoC: dapm: delete dapm_kcontrol_data paths list before freeing it
+      rpmsg: smd: do not use mananged resources for endpoints and channels
+
+Stefan M Schaeckeler (1):
+      of: unittest: for strings, account for trailing \0 in property length field
+
+Steffen Maier (7):
+      scsi: zfcp: fix missing SCSI trace for result of eh_host_reset_handler
+      scsi: zfcp: fix missing SCSI trace for retry of abort / scsi_eh TMF
+      scsi: zfcp: fix misleading REC trigger trace where erp_action setup failed
+      scsi: zfcp: fix missing REC trigger trace on terminate_rport_io early return
+      scsi: zfcp: fix missing REC trigger trace on terminate_rport_io for ERP_FAILED
+      scsi: zfcp: fix missing REC trigger trace for all objects in ERP_FAILED
+      scsi: zfcp: fix missing REC trigger trace on enqueue without ERP thread
+
+Sultan Alsawaf (3):
+      cpu_input_boost: Add API for boosting all CPUs to max frequency
+      kernel: Boost all CPUs to the max when userspace launches an app
+      cpu_input_boost: Fix and refactor max boost logic
+
+Takashi Iwai (2):
+      ALSA: hda/realtek - Fix pop noise on Lenovo P50 & co
+      ALSA: hda/realtek - Add a quirk for FSC ESPRIMO U9210
+
+Tetsuo Handa (2):
+      fuse: don't keep dead fuse_conn at fuse_fill_super().
+      printk: fix possible reuse of va_list variable
+
+Tokunori Ikegami (2):
+      mtd: cfi_cmdset_0002: Change write buffer to check correct value
+      MIPS: BCM47XX: Enable 74K Core ExternalSync for PCIe erratum
+
+Tony Luck (3):
+      x86/mce: Improve error message when kernel cannot recover
+      x86/mce: Check for alternate indication of machine check recovery on Skylake
+      x86/mce: Fix incorrect "Machine check from unknown source" message
+
+Trond Myklebust (1):
+      NFSv4: Revert commit 5f83d86cf531d ("NFSv4.x: Fix wraparound issues..")
+
+Vladimir Razgulin (2):
+      PM / devfreq: predef governors update freq when device is resumed
+      PM / devfreq: Add a new target flag for the performance governor
+
+Will Deacon (2):
+      arm64: kpti: Use early_param for kpti= command-line option
+      arm64: mm: Ensure writes to swapper are ordered wrt subsequent cache maintenance
+
+joshuous (9):
+      cpu_input_boost: Implement Dynamic SchedTune Boost v3
+      sched/tune: Rename dynamic_boost_write() to dynamic_boost()
+      sched/tune: Create dynamic_boost SchedTune parameter
+      sched/tune: Refactor do_stune_boost()
+      sched/tune: Introduce stune_boost() function
+      sched/boost: Perform SchedTune boosting when sched_boost is triggered
+      cpu-boost: Reset Dynamic SchedTune Boost only if it is currently active
+      cpu_input_boost: Reset Dynamic SchedTune Boost only if it is currently active
+      sched/tune: Reset Dynamic Schedtune Boost only if no more boosts running
+
+zhouxianrong (1):
+      zram: extend zero pages to same element pages
+
+ Documentation/ABI/obsolete/sysfs-block-zram        | 119 ----
+ Documentation/ABI/testing/sysfs-block-zram         | 101 +--
+ Documentation/blockdev/zram.txt                    |  74 +-
+ Documentation/printk-formats.txt                   |   3 +-
+ Makefile                                           |   2 +-
+ arch/arm/include/asm/kgdb.h                        |   2 +-
+ arch/arm64/configs/flash_defconfig                 |   3 +
+ arch/arm64/kernel/cpufeature.c                     |   2 +-
+ arch/arm64/mm/proc.S                               |   5 +-
+ arch/m68k/mm/kmap.c                                |   3 +-
+ arch/mips/bcm47xx/setup.c                          |   6 +
+ arch/mips/include/asm/io.h                         |   2 +
+ arch/mips/include/asm/mipsregs.h                   |   3 +
+ arch/mips/kernel/mcount.S                          |  27 +-
+ arch/powerpc/kernel/entry_64.S                     |   1 +
+ arch/powerpc/kernel/fadump.c                       |   3 +
+ arch/powerpc/kernel/hw_breakpoint.c                |   4 +-
+ arch/powerpc/kernel/ptrace.c                       |   1 +
+ arch/powerpc/platforms/powernv/pci-ioda.c          |   1 -
+ arch/x86/include/asm/barrier.h                     |   2 +-
+ arch/x86/kernel/cpu/mcheck/mce-severity.c          |   5 +
+ arch/x86/kernel/cpu/mcheck/mce.c                   |  44 +-
+ arch/x86/kernel/quirks.c                           |  11 +-
+ arch/x86/kernel/traps.c                            |  14 +-
+ arch/x86/mm/init.c                                 |   4 +-
+ arch/xtensa/kernel/traps.c                         |   2 +-
+ crypto/asymmetric_keys/x509_cert_parser.c          |   9 +
+ drivers/block/rbd.c                                |   2 +-
+ drivers/block/zram/zram_drv.c                      | 750 +++++++++------------
+ drivers/block/zram/zram_drv.h                      |  18 +-
+ drivers/bluetooth/hci_qca.c                        |   6 +
+ drivers/char/ipmi/ipmi_bt_sm.c                     |   3 +-
+ drivers/clk/at91/clk-pll.c                         |  13 +-
+ drivers/clk/renesas/renesas-cpg-mssr.c             |   9 +-
+ drivers/cpufreq/cpu-boost.c                        |  15 +-
+ drivers/cpufreq/cpu_input_boost.c                  | 138 +++-
+ drivers/cpuidle/cpuidle-powernv.c                  |  32 +-
+ drivers/devfreq/devfreq.c                          |   2 +-
+ drivers/devfreq/governor_bw_hwmon.c                |   3 +-
+ drivers/devfreq/governor_bw_vbif.c                 |   3 +-
+ drivers/devfreq/governor_cache_hwmon.c             |   3 +-
+ drivers/devfreq/governor_cpufreq.c                 |   3 +-
+ drivers/devfreq/governor_gpubw_mon.c               |   3 +-
+ drivers/devfreq/governor_memlat.c                  |   3 +-
+ drivers/devfreq/governor_msm_adreno_tz.c           |   2 +-
+ drivers/devfreq/governor_performance.c             |  24 +-
+ drivers/devfreq/governor_powersave.c               |   5 +-
+ drivers/devfreq/governor_simpleondemand.c          |   3 +-
+ drivers/devfreq/governor_userspace.c               |   3 +-
+ drivers/gpu/drm/msm/dsi-staging/dsi_display.c      |  99 ---
+ drivers/gpu/drm/msm/sde/sde_hw_color_proc_v4.c     |  30 +-
+ drivers/iio/buffer/kfifo_buf.c                     |   4 +-
+ drivers/infiniband/hw/hfi1/hfi.h                   |   1 +
+ drivers/infiniband/hw/hfi1/init.c                  |  13 +
+ drivers/infiniband/hw/mlx4/mad.c                   |   1 -
+ drivers/infiniband/hw/mlx5/cq.c                    |  15 +-
+ drivers/infiniband/hw/qib/qib.h                    |   4 +-
+ drivers/infiniband/hw/qib/qib_file_ops.c           |  10 +-
+ drivers/infiniband/hw/qib/qib_init.c               |  13 +
+ drivers/infiniband/hw/qib/qib_user_pages.c         |  20 +-
+ drivers/infiniband/ulp/isert/ib_isert.c            |  28 +-
+ drivers/input/mouse/elan_i2c.h                     |   2 +
+ drivers/input/mouse/elan_i2c_core.c                |   3 +-
+ drivers/input/mouse/elan_i2c_smbus.c               |  10 +-
+ drivers/input/mouse/elantech.c                     |  11 +-
+ drivers/md/dm-thin.c                               |  11 +-
+ drivers/md/md.c                                    |   4 +-
+ drivers/media/dvb-core/dvb_frontend.c              |  23 +-
+ .../platform/msm/vidc/governors/msm_vidc_dyn_gov.c |   2 +-
+ drivers/media/usb/cx231xx/cx231xx-cards.c          |   3 +
+ drivers/media/v4l2-core/v4l2-compat-ioctl32.c      |   2 +-
+ drivers/mfd/intel-lpss.c                           |   4 +-
+ drivers/mtd/chips/cfi_cmdset_0002.c                |  21 +-
+ drivers/mtd/ubi/build.c                            |   3 +
+ drivers/mtd/ubi/eba.c                              |  90 ++-
+ drivers/mtd/ubi/wl.c                               |   4 +-
+ drivers/net/usb/cdc_ncm.c                          |   4 +-
+ drivers/nvdimm/bus.c                               |  14 +-
+ drivers/of/unittest.c                              |   8 +-
+ drivers/pci/hotplug/pciehp.h                       |   2 +-
+ drivers/pci/hotplug/pciehp_core.c                  |   2 +-
+ drivers/pci/hotplug/pciehp_hpc.c                   |  13 +-
+ drivers/pci/quirks.c                               |  20 +
+ drivers/pwm/pwm-lpss-platform.c                    |   5 +
+ drivers/pwm/pwm-lpss.c                             |  30 +
+ drivers/pwm/pwm-lpss.h                             |   2 +
+ drivers/rpmsg/qcom_smd.c                           |  18 +-
+ drivers/s390/scsi/zfcp_dbf.c                       |  40 ++
+ drivers/s390/scsi/zfcp_erp.c                       | 123 +++-
+ drivers/s390/scsi/zfcp_ext.h                       |   5 +
+ drivers/s390/scsi/zfcp_scsi.c                      |  18 +-
+ drivers/scsi/qla2xxx/qla_init.c                    |   3 +-
+ drivers/tty/serial/sh-sci.c                        |   8 +-
+ drivers/usb/core/hub.c                             |   4 +-
+ drivers/video/backlight/as3711_bl.c                |  33 +-
+ drivers/video/backlight/max8925_bl.c               |   4 +-
+ drivers/video/backlight/tps65217_bl.c              |   4 +-
+ drivers/video/fbdev/uvesafb.c                      |   3 +-
+ drivers/w1/w1.c                                    |   2 +-
+ drivers/xen/events/events_base.c                   |   2 -
+ fs/btrfs/inode.c                                   |  37 +-
+ fs/exec.c                                          |  18 +
+ fs/fuse/control.c                                  |  13 +-
+ fs/fuse/dir.c                                      |  13 +-
+ fs/fuse/inode.c                                    |   1 +
+ fs/nfs/callback_proc.c                             |   7 +-
+ fs/nfs/nfs4idmap.c                                 |   5 +-
+ fs/nfsd/nfs4xdr.c                                  |   5 +-
+ fs/ubifs/journal.c                                 |   2 +-
+ fs/udf/directory.c                                 |   3 +
+ include/linux/binfmts.h                            |   1 +
+ include/linux/blkdev.h                             |   4 +-
+ include/linux/compiler.h                           |   2 +-
+ include/linux/cpu_input_boost.h                    |   4 +
+ include/linux/devfreq.h                            |   5 +-
+ include/linux/iio/buffer.h                         |   6 +-
+ include/linux/sched.h                              |   1 +
+ kernel/fork.c                                      |   5 +
+ kernel/power/main.c                                |  61 --
+ kernel/printk/nmi.c                                |   5 +-
+ kernel/sched/boost.c                               |   7 +
+ kernel/sched/cpufreq_schedutil.c                   |   7 +-
+ kernel/sched/fair.c                                |  25 +-
+ kernel/sched/sched.h                               |   1 +
+ kernel/sched/tune.c                                |  72 +-
+ kernel/time/time.c                                 |   6 +-
+ lib/vsprintf.c                                     |   3 -
+ scripts/fetch-latest-wireguard.sh                  |  18 +-
+ sound/pci/hda/patch_realtek.c                      |  11 +-
+ sound/soc/cirrus/edb93xx.c                         |   2 +-
+ sound/soc/cirrus/ep93xx-i2s.c                      |  26 +-
+ sound/soc/cirrus/snappercl15.c                     |   2 +-
+ sound/soc/soc-dapm.c                               |   2 +
+ tools/perf/util/dso.c                              |   2 +
+ .../perf/util/intel-pt-decoder/intel-pt-decoder.c  |  23 +-
+ .../perf/util/intel-pt-decoder/intel-pt-decoder.h  |   9 +
+ .../util/intel-pt-decoder/intel-pt-pkt-decoder.c   |   2 +-
+ tools/perf/util/intel-pt.c                         |   5 +
+ 138 files changed, 1505 insertions(+), 1210 deletions(-)
+ delete mode 100644 Documentation/ABI/obsolete/sysfs-block-zram
+
+
+http://github.com/nathanchance/AnyKernel2/commits/op6-flash-8.1.0
+
+Nathan Chancellor (2):
+      op6: anykernel.sh: Make sure we clean up if we ever decide to bail out
+      op6: anykernel.sh: Remove unused props
+
+ anykernel.sh | 37 ++++++++++++++++++++++++-------------
+ 1 file changed, 24 insertions(+), 13 deletions(-)
