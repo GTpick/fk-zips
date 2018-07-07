@@ -1,2 +1,2 @@
-1.13 - July 3rd, 2018
-* Linux 3.18.114
+1.14 - July 6th, 2018
+* Memory allocation overflow protection
