@@ -1,3 +1,5 @@
-4.26 - July 3rd, 2018 
-* Linux 4.4.139
-* Merge Qualcomm updates (LA.UM.6.4.r1-09000-8x98.0)
+4.27 - July 6th, 2018
+* Merge Qualcomm updates (LA.UM.6.2.r1-09300-sdm660.0)
+* Memory allocation overflow protection
+
+NOTE: WE DO NOT HAVE OB13/OB11 SOURCE, THIS IS NOT COMPATIBLE WITH THOSE BUILDS
