@@ -1,2 +1,4 @@
-2.49 - July 3rd, 2018
-* Linux 4.4.139
+2.50 - July 6th, 2018
+* Add vibration control from flar2
+* Qualcomm updates
+* Memory allocation overflow protection
