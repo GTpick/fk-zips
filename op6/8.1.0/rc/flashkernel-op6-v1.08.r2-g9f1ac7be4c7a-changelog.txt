@@ -1,2 +1,0 @@
-1.08 - July 10th, 2018
-* Fix pairing Bluetooth devices and weird freezes/reboot after LA.UM.6.3.r4-04300-sdm845.0 merge

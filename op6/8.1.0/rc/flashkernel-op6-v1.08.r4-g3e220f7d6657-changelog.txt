@@ -1,7 +1,0 @@
-1.08 - July 12th, 2018
-* Linux 4.9.112
-* WireGuard snapshot 0.0.20180708
-* Fix some issues after LA.UM.6.3.r4-04300-sdm845.0:
-  * Headphone jack delay
-  * Pairing Bluetooth devices
-  * Weird freezes/reboots
