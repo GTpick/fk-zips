@@ -1,6 +1,1 @@
-4.28 - July 6th, 2018
-* Merge Qualcomm updates (LA.UM.6.2.r1-09300-sdm660.0)
-* Memory allocation overflow protection
-- Fix Treble check as some ROMs are setting the prop to false...
-
-NOTE: WE DO NOT HAVE OB13/OB11 SOURCE, THIS IS NOT COMPATIBLE WITH THOSE BUILDS
+flashkernel-op5-v4.29-changelog.txt
