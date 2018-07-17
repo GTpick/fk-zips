@@ -1,3 +1,0 @@
-1.10 - July 14th, 2018
-* Disable Avengers theme by default
-Flashable zips are available at https://nathanchance.me/downloads/kernels/op6/other-zips/ to enable and disable the theme. They can be flashed with FKM or EXKM and you only need to do it once per ROM flash.
