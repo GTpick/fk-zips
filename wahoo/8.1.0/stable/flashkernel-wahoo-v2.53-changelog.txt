@@ -1,2 +1,4 @@
 2.53 - July 18th, 2018
-* This is the same as 2.52 (Linux 4.4.141) with a fixed installer for TWRP on Android P. Feel zero need to upgrade if you are on 2.52.
+* WireGuard snapshot 0.0.20180718
+* Fix installer for TWRP on Android P
+If neither of these are relevant to you, feel no need to upgrade from 2.52 (Linux 4.4.141).
