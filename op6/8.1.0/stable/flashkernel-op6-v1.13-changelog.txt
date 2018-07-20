@@ -1,0 +1,5 @@
+1.13 - July 19th, 2018
+* Merge Qualcomm updates (LA.UM.6.3.r4-04500-sdm845.0)
+* Dynamic schedtune boost updates
+* WireGuard snapshot 0.0.20180718
+* AnyKernel2 updates

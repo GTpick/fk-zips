@@ -1,3 +1,0 @@
-1.11 - July 17th, 2018
-* Linux 4.9.113
-* Merge OxygenOS 5.1.9 updates
