@@ -1,0 +1,4 @@
+2.59 - July 29th, 2018
+* Binder updates from kernel/common
+* EAS updates from kernel/common and Qualcomm
+* Qualcomm driver fixes/updates
