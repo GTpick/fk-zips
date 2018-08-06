@@ -1,0 +1,5 @@
+1.17 - August 3rd, 2018
+* Linux 4.9.117
+* Merge Qualcomm updates (LA.UM.6.3.r4-04700-sdm845.0)
+* Binder updates from kernel/common
+* WireGuard snapshot 0.0.20180802
