@@ -1,0 +1,8 @@
+3.01 - August 9th, 2018
+* Linux 4.4.147-rc1
+* Disable test IO scheduler
+* Two small schedutil patches
+* Binder updates from kernel/common
+* OOM tunable updates as suggested by Harsh
+
+NOTE: 3.01 will only be the first two points but I want the other three tested.
