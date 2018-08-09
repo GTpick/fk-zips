@@ -1,6 +1,0 @@
-3.00 - August 6th, 2018
-* Merge Android P updates
-* Linux 4.4.146
-* EAS updates from kernel/common
-* Qualcomm driver fixes/updates
-* WireGuard snapshot 0.0.20180802
