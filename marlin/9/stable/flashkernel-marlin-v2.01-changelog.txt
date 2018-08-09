@@ -1,5 +1,0 @@
-2.01 - August 7th, 2018
-* Fix script error that used the wrong branch for 2.00
-* Merge Android P updates
-* WireGuard snapshot 0.0.20180802
-* Fix PAN emulation (from kernel/common's Gerrit)
