@@ -1,4 +1,0 @@
-3.01 - August 6th, 2018
-* Two small schedutil patches
-* Binder updates from kernel/common
-* OOM tunable updates as suggested by Harsh
