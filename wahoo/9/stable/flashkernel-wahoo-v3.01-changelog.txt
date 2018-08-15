@@ -1,3 +1,0 @@
-3.01 - August 9th, 2018
-* Linux 4.4.147
-* Disable test IO scheduler and interactive governor
