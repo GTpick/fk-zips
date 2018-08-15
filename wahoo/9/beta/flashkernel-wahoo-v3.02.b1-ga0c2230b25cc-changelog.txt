@@ -1,5 +1,0 @@
-3.02 - August 9th, 2018
-* Small mainline commits found by @YaroST12
-* Two small schedutil patches
-* Binder updates from kernel/common
-* OOM tunable updates as suggested by Harsh
