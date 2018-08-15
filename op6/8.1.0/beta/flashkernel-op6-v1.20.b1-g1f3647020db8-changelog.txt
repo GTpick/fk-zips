@@ -1,3 +1,0 @@
-1.20 - August 9th, 2018
-* 32-bit vDSO from the Pixel kernels for faster operations in 32-bit executables
-* Small improvements from mainline found by @YaroST12

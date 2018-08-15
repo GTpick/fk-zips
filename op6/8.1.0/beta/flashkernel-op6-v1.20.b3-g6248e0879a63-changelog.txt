@@ -1,6 +1,0 @@
-1.20 - August 16th, 2018
-* Linux 4.9.120-rc1
-* Build the Wi-Fi driver into the kernel image instead of using the system's prebuilt one
-* 32-bit vDSO from the Pixel kernels for faster operations in 32-bit executables
-* Small improvements from mainline found by @YaroST12
-* WireGuard snapshot 0.0.20180809
