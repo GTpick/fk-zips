@@ -1,0 +1,4 @@
+1.19 - August 9th, 2018
+* Linux 4.9.119
+* Disable all unnecessary governors
+* Remove all warnings spamming dmesg due to prebuilt Wi-Fi driver :(
