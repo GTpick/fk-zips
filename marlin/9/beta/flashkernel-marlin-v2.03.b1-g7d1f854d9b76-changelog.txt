@@ -1,3 +1,0 @@
-2.03 - August 9th, 2018
-* Add Sultan's app boost mechanism (pushes CPU to max frequency when opening apps for the first time)
-* Improvements from mainline found by @YaroST12
