@@ -1,0 +1,2 @@
+1.22 - August 17th, 2018
+* Sultan's devfreq boost (should help with cold app opens)
