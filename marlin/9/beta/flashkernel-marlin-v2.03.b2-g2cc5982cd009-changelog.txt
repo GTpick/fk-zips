@@ -1,5 +1,0 @@
-2.03 - August 17th, 2018
-* Linux 3.18.119-rc1
-* Add Sultan's app boost mechanism (pushes CPU to max frequency when opening apps for the first time)
-* Improvements from mainline found by @YaroST12
-* WireGuard snapshot 0.0.20180809
