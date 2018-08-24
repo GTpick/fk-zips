@@ -1,3 +1,0 @@
-1.23 - August 25th, 2018
-* Linux 4.9.124-rc1
-* Reset low memory killer back to kernel/common (android-4.9)
