@@ -1,4 +1,0 @@
-3.07 - August 30th, 2018
-* Optimization patches from Sultan
-* Patches from Qualcomm
-* Hopefully fix odd crashes for people...
