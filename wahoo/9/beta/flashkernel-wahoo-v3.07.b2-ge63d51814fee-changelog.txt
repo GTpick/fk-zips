@@ -1,5 +1,0 @@
-3.07 - September 2nd, 2018
-* Sultan's LMK driver
-* Optimization patches from Sultan
-* Patches from Qualcomm
-* Hopefully fix odd crashes for people...
