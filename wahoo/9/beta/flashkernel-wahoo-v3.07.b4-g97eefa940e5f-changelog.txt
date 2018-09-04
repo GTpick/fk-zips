@@ -1,0 +1,6 @@
+3.07 - September 5th, 2018
+* Linux 4.4.154-rc1
+* Sultan's LMK driver
+* Optimization patches from Sultan
+* Patches from Qualcomm
+* Hopefully fix odd crashes for people...
