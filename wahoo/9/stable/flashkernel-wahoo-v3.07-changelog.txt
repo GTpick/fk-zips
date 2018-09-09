@@ -1,7 +1,0 @@
-3.07 - September 5th, 2018
-* Linux 4.4.154
-* September 2018 security update
-* Optimization patches from Sultan
-* WireGuard snapshot 0.0.20180904
-* Patches from Qualcomm
-* Hopefully fix odd random crashes for people
