@@ -1,3 +1,0 @@
-3.09 - September 9th, 2018
-* Sultan's LMK driver
-* Small optimization patches from Qualcomm and CopperheadOS
