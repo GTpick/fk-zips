@@ -1,3 +1,0 @@
-3.08 - September 9th, 2018
-* Linux 4.4.155
-* Attempt to fix panics/freezes, round 2
