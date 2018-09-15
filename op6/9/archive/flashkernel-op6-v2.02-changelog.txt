@@ -1,0 +1,5 @@
+2.02 - September 11th, 2018
+* Merge OxygenOS Open Beta 2 updates
+* Build Wi-Fi driver into kernel image
+* Fix wake boosting (thanks to pappschlumpf)
+* WireGuard snapshot 0.0.20180910
