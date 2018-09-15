@@ -1,4 +1,0 @@
-3.09 - September 13th, 2018
-* Linux 4.4.156-rc2
-* Small optimization patches from Qualcomm and CopperheadOS
-* WireGuard snapshot 0.0.20180910
