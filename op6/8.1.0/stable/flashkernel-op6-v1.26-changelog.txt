@@ -1,3 +1,0 @@
-1.26 - September 11th, 2018
-* Fix wake boosting (thanks to pappschlumpf)
-* WireGuard snapshot 0.0.20180910
