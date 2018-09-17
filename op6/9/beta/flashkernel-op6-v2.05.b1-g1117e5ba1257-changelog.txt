@@ -1,0 +1,2 @@
+2.04 - September 17th, 2018
+* Merge Qualcomm updates (LA.UM.7.3.r1-05100-sdm845.0)
