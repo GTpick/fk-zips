@@ -1,3 +1,0 @@
-2.03 - September 15th, 2018
-* Linux 4.9.127
-* Revert back to stock wlan driver
