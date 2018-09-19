@@ -1,3 +1,0 @@
-2.04 - September 16th 2018
-* Merge Open Beta 3 updates
-NOTE: THIS UPDATE IS ONLY FOR OPEN BETA 3
