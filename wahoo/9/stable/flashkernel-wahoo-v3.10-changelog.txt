@@ -1,0 +1,4 @@
+3.10 - September 19th, 2018
+* Linux 4.4.157
+* Qualcomm updates
+* WireGuard snapshot 0.0.20180918
