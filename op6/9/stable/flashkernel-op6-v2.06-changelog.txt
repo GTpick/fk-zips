@@ -1,0 +1,2 @@
+2.06 - September 23rd, 2018
+* Merge OxygenOS 6.0 updates

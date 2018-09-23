@@ -1,4 +1,0 @@
-2.05 - September 19th, 2018
-* Linux 4.9.128
-* Merge Qualcomm updates (LA.UM.7.3.r1-05100-sdm845.0)
-* WireGuard snapshot 0.0.20180918
