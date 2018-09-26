@@ -1,2 +1,0 @@
-3.11 - September 23rd, 2018
-* Remove mainline backport of memory allocation overflow protection (causing reboots for some people)
