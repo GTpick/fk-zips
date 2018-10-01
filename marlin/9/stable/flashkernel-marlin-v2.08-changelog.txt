@@ -1,0 +1,2 @@
+2.08 - October 1st, 2018
+* Merge October 2018 security update
