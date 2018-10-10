@@ -1,3 +1,0 @@
-3.14 - October 1st, 2018
-* Merge October 2018 security update
-* kernel/common patches
