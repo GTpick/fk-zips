@@ -1,3 +1,0 @@
-3.17 - October 20th, 2018
-* Linux 4.4.162
-* WireGuard snapshot 0.0.20181018
