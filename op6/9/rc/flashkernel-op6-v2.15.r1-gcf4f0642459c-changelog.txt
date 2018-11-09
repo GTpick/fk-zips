@@ -1,0 +1,5 @@
+2.15 - November 10th, 2018
+* Linux 4.9.136-rc1
+* Merge Qualcomm updates (LA.UM.7.3.r1-06100-sdm845.0)
+* Merge OnePlus Open Beta updates
+* Fix some potential jank
