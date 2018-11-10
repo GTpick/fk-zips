@@ -1,2 +1,0 @@
-2.14 - November 5th, 2018
-* Merge OnePlus updates
