@@ -1,0 +1,5 @@
+3.19 - November 10th, 2018
+* Linux 4.4.163
+* Add some EAS commits from the Pixel 3 and msm-4.9 sources
+* Add kernel/common's mainline ZRAM backport with zstd algorithm
+* Some other Qualcomm commits
